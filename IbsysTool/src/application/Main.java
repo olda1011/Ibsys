@@ -1,11 +1,12 @@
 package application;
 
-import generated.Input;
-import generated.Results;
-
 import java.io.InputStream;
 
 import javax.xml.bind.JAXB;
+
+import calculator.BasicCalculation;
+import generated.Input;
+import generated.Results;
 
 public class Main {
 
@@ -16,5 +17,7 @@ public class Main {
 		InputStream resultData = Main.class.getResourceAsStream("input.xml");
 		Results results = JAXB.unmarshal(resultData, Results.class);
 		System.out.println(results.toString());
+
+		System.out.println(BasicCalculation.benötigteWaren(input));
 	}
 }
