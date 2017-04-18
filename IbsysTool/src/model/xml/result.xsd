@@ -1,0 +1,487 @@
+
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="results">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="warehousestock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="article" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      <xs:attribute type="xs:short" name="amount" use="optional"/>
+                      <xs:attribute type="xs:short" name="startamount" use="optional"/>
+                      <xs:attribute type="xs:string" name="pct" use="optional"/>
+                      <xs:attribute type="xs:string" name="price" use="optional"/>
+                      <xs:attribute type="xs:string" name="stockvalue" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="totalstockvalue"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="inwardstockmovement">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="orderperiod" use="optional"/>
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      <xs:attribute type="xs:byte" name="mode" use="optional"/>
+                      <xs:attribute type="xs:byte" name="article" use="optional"/>
+                      <xs:attribute type="xs:short" name="amount" use="optional"/>
+                      <xs:attribute type="xs:short" name="time" use="optional"/>
+                      <xs:attribute type="xs:string" name="materialcosts" use="optional"/>
+                      <xs:attribute type="xs:string" name="ordercosts" use="optional"/>
+                      <xs:attribute type="xs:string" name="entirecosts" use="optional"/>
+                      <xs:attribute type="xs:string" name="piececosts" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="futureinwardstockmovement">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="orderperiod" use="optional"/>
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      <xs:attribute type="xs:byte" name="mode" use="optional"/>
+                      <xs:attribute type="xs:byte" name="article" use="optional"/>
+                      <xs:attribute type="xs:short" name="amount" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="idletimecosts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workplace" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      <xs:attribute type="xs:byte" name="setupevents" use="optional"/>
+                      <xs:attribute type="xs:short" name="idletime" use="optional"/>
+                      <xs:attribute type="xs:string" name="wageidletimecosts" use="optional"/>
+                      <xs:attribute type="xs:string" name="wagecosts" use="optional"/>
+                      <xs:attribute type="xs:string" name="machineidletimecosts" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sum">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="setupevents"/>
+                      <xs:attribute type="xs:short" name="idletime"/>
+                      <xs:attribute type="xs:string" name="wageidletimecosts"/>
+                      <xs:attribute type="xs:string" name="wagecosts"/>
+                      <xs:attribute type="xs:string" name="machineidletimecosts"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="waitinglistworkstations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workplace" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="waitinglist" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="period"/>
+                            <xs:attribute type="xs:byte" name="order"/>
+                            <xs:attribute type="xs:byte" name="firstbatch"/>
+                            <xs:attribute type="xs:byte" name="lastbatch"/>
+                            <xs:attribute type="xs:byte" name="item"/>
+                            <xs:attribute type="xs:byte" name="amount"/>
+                            <xs:attribute type="xs:byte" name="timeneed"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:byte" name="timeneed" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="waitingliststock"/>
+        <xs:element name="ordersinwork">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workplace">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="id"/>
+                      <xs:attribute type="xs:byte" name="period"/>
+                      <xs:attribute type="xs:byte" name="order"/>
+                      <xs:attribute type="xs:byte" name="batch"/>
+                      <xs:attribute type="xs:byte" name="item"/>
+                      <xs:attribute type="xs:byte" name="amount"/>
+                      <xs:attribute type="xs:byte" name="timeneed"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="completedorders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="batch" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="id" use="optional"/>
+                            <xs:attribute type="xs:byte" name="amount" use="optional"/>
+                            <xs:attribute type="xs:short" name="cycletime" use="optional"/>
+                            <xs:attribute type="xs:string" name="cost" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="period" use="optional"/>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:byte" name="item" use="optional"/>
+                  <xs:attribute type="xs:short" name="quantity" use="optional"/>
+                  <xs:attribute type="xs:string" name="cost" use="optional"/>
+                  <xs:attribute type="xs:string" name="averageunitcosts" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cycletimes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      <xs:attribute type="xs:byte" name="period" use="optional"/>
+                      <xs:attribute type="xs:string" name="starttime" use="optional"/>
+                      <xs:attribute type="xs:string" name="finishtime" use="optional"/>
+                      <xs:attribute type="xs:short" name="cycletimemin" use="optional"/>
+                      <xs:attribute type="xs:string" name="cycletimefactor" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="startedorders"/>
+            <xs:attribute type="xs:byte" name="waitingorders"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="general">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="capacity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:int" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:int" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="possiblecapacity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:int" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:int" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="relpossiblenormalcapacity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="productivetime">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:int" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="effiency">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="sellwish">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:short" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="salesquantity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:short" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="deliveryreliability">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="idletime">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:int" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="idletimecosts">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="storevalue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="storagecosts">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="defectivegoods">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="quantity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="costs">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="normalsale">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="salesprice">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="profit">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="profitperunit">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:byte" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="directsale">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="profit">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="contractpenalty">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="marketplacesale">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="profit">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="summary">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="profit">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="current"/>
+                            <xs:attribute type="xs:string" name="average"/>
+                            <xs:attribute type="xs:string" name="all"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:short" name="game"/>
+      <xs:attribute type="xs:byte" name="group"/>
+      <xs:attribute type="xs:byte" name="period"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
