@@ -1,11 +1,18 @@
 package application;
 
 import java.io.InputStream;
+import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.bind.JAXB;
+import javax.xml.bind.JAXBElement;
 
 import generated.Results;
+import generated.Results.Ordersinwork;
+import generated.Results.Waitinglistworkstations.Workplace;
+import generated.Results.Waitinglistworkstations.Workplace.Waitinglist;
 import generated.Results.Warehousestock.Article;
 
 public class Main {
@@ -27,13 +34,13 @@ public class Main {
 		System.out.println("Der geplante Lagerbestand beträgt: " + geplanterLagerbestand);
 		System.out.println();
 
-		List<Article> articles = results.getWarehousestock()
-				.getArticle();
 		// Matrix anlegen
 
-		final int[][] P1Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP1, 1, articles);
+		final int[][] P1Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP1, 1, results);
+		final int[][] P2Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP2, 2, results);
+		final int[][] P3Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP3, 3, results);
 
-		printMatrizen(P1Prod, P1Prod, P1Prod);
+		printMatrizen(P1Prod, P2Prod, P3Prod);
 
 	}
 
@@ -68,7 +75,7 @@ public class Main {
 		}
 		System.out.println("Für P3 besteht folgende Matrix:");
 		System.out.println(
-				"Artikel | geplanterVerkauf | geplanter Lagerbestand | Lagerbestand | Vorperiode | Aufträge Wartschlange | Aufträge Bearbeitung");
+				"Artikelnummer | verbindl. Aufträge | geplanter Lagerbestand | Lagerbestand d. Vorperiode | Aufträge Wartschlange | Aufträge Bearbeitung | Produktionsaufträge");
 		for (int i = 0; i < p3Prod.length; i++) {
 			for (int j = 0; j < p3Prod[i].length; j++) {
 				if (j == 6) {
@@ -83,7 +90,15 @@ public class Main {
 	}
 
 	private static int[][] matrixAnlegen(int geplanterLagerbestand, int geplantVerkauf,
-			int produktionFall, List<Article> articles) {
+			int produktionFall, Results results) {
+		// Artikel ermitteln
+		List<Article> articles = results.getWarehousestock()
+				.getArticle();
+		// In Warteschlange befüllen
+		Map<Integer, Integer> artikelInWarteschlange = warteschlangeErmitteln(results);
+		// In Bearbeitungsaufträge befüllen
+		Map<Integer, Integer> artikelInBearbeitung = bearbeitungErmitteln(results);
+
 		int[][] matrix = null;
 		if (produktionFall == 1) {
 			int[][] matrix1 = {
@@ -138,6 +153,17 @@ public class Main {
 		if (matrix == null) {
 			return null;
 		}
+
+		for (Integer artikelNummer : artikelInWarteschlange.keySet()) {
+			ersetzeWarteschlangenItems(matrix, artikelNummer,
+					artikelInWarteschlange.get(artikelNummer));
+		}
+
+		for (Integer artikelNummer : artikelInBearbeitung.keySet()) {
+			ersetzeInBearbeitungItems(matrix, artikelNummer,
+					artikelInBearbeitung.get(artikelNummer));
+		}
+
 		// Produktion P1 berechnen
 
 		matrix[0][6] = matrix[0][1] + matrix[0][2] - matrix[0][3] - matrix[0][4] - matrix[0][5];
@@ -178,6 +204,81 @@ public class Main {
 		matrix[11][6] = matrix[11][1] + matrix[11][2] - matrix[11][3] - matrix[11][4]
 				- matrix[11][5];
 		return matrix;
+	}
+
+	private static Map<Integer, Integer> bearbeitungErmitteln(Results results) {
+		Map<Integer, Integer> inBearbeitung = new HashMap<>();
+		Ordersinwork ordersinwork = results.getOrdersinwork();
+		List<generated.Results.Ordersinwork.Workplace> workplaces = ordersinwork.getWorkplace();
+		for (generated.Results.Ordersinwork.Workplace workplace : workplaces) {
+			Integer itemNummer = Integer.parseInt("" + workplace.getItem());
+			Integer anzahl = Integer.parseInt("" + workplace.getAmount());
+			if (inBearbeitung.containsKey(itemNummer)) {
+				Integer anzahlVorhanden = inBearbeitung.get(itemNummer) + anzahl;
+				inBearbeitung.put(itemNummer, anzahlVorhanden);
+			} else {
+				inBearbeitung.put(itemNummer, anzahl);
+			}
+		}
+		return inBearbeitung;
+	}
+
+	private static void ersetzeWarteschlangenItems(int[][] matrix, Integer artikelNummer,
+			Integer artikelMenge) {
+		int zeilenNummer = artikelVorhanden(matrix, artikelNummer);
+		// 12 bedeutet nicht vorhanden, da matrix nur bis 12 geht
+		if (zeilenNummer != 12) {
+			matrix[zeilenNummer][4] = artikelMenge;
+		}
+	}
+
+	private static void ersetzeInBearbeitungItems(int[][] matrix, Integer artikelNummer,
+			Integer artikelMenge) {
+		int zeilenNummer = artikelVorhanden(matrix, artikelNummer);
+		// 12 bedeutet nicht vorhanden, da matrix nur bis 12 geht
+		if (zeilenNummer != 12) {
+			matrix[zeilenNummer][5] = artikelMenge;
+		}
+	}
+
+	private static int artikelVorhanden(int[][] matrix, Integer artikelNummer) {
+		for (int i = 0; i < 12; i++) {
+			if (matrix[i][0] == artikelNummer)
+				return i;
+		}
+		// 12 bedeutet nicht vorhanden, da matrix nur bis 12 geht
+		return 12;
+	}
+
+	private static Map<Integer, Integer> warteschlangeErmitteln(Results results) {
+		Map<Integer, Integer> warteschlange = new HashMap<>();
+
+		List<Workplace> workplaces = results.getWaitinglistworkstations()
+				.getWorkplace();
+		for (Workplace workplace : workplaces) {
+			Byte id = workplace.getId();
+			if (workplace.getContent() != null) {
+				List<Serializable> content = workplace.getContent();
+				for (Serializable serializable : content) {
+					JAXBElement<Waitinglist> test = (JAXBElement<Waitinglist>) serializable;
+
+					Waitinglist waitinglist = test.getValue();
+					Integer itemNummer = Integer.parseInt("" + waitinglist.getItem());
+					Integer anzahl = Integer.parseInt("" + waitinglist.getAmount());
+					if (anzahl < 0)
+						anzahl = anzahl + 256;
+
+					if (warteschlange.containsKey(itemNummer)) {
+						Integer anzahlVorhanden = warteschlange.get(itemNummer) + anzahl;
+						warteschlange.put(itemNummer, anzahlVorhanden);
+					} else {
+						warteschlange.put(itemNummer, anzahl);
+					}
+				}
+			}
+		}
+		return warteschlange;
+
 	}
 
 	private static int findAmountById(List<Article> articles, int i) {
