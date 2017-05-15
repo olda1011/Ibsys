@@ -17,11 +17,19 @@ import generated.Results.Warehousestock.Article;
 
 public class Main {
 
+	public static int[][] prognosens;
+	public static int[][] p1Prod;
+	public static int[][] p2Prod;
+	public static int[][] p3Prod;
+	public static int[][] p1KaufteileVerwendungs;
+	public static int[][] p2KaufteileVerwendungs;
+	public static int[][] p3KaufteileVerwendungs;
+
 	private Main() {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main() {
 		InputStream resultData = Main.class.getResourceAsStream("resultservlet.xml");
 		Results results = JAXB.unmarshal(resultData, Results.class);
 
@@ -30,7 +38,7 @@ public class Main {
 		int geplantVerkaufP2 = 250;
 		int geplantVerkaufP3 = 100;
 
-		final int[][] Prognosen = { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 },
+		prognosens = new int[][] { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 },
 				{ 3, 100, 50, 200, 200 } };
 
 		System.out.println("Folgende Mengen sollen verkauft werden in der nächsten Periode:\n");
@@ -43,27 +51,26 @@ public class Main {
 
 		// Matrix für Disposition anlegen
 
-		final int[][] P1Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP1, 1, results);
-		final int[][] P2Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP2, 2, results);
-		final int[][] P3Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP3, 3, results);
+		p1Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP1, 1, results);
+		p2Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP2, 2, results);
+		p3Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP3, 3, results);
 
 		// printMatrizen(P1Prod, P2Prod, P3Prod);
 
+		printMatrizen(p1Prod, p2Prod, p3Prod);
+
 		// Kaufteilbedarf errechnen
 
-		final int[][] p1KaufteileVerwendung = generiereKaufteileVerwendung(1, P1Prod, Prognosen,
-				results);
-		final int[][] p2KaufteileVerwendung = generiereKaufteileVerwendung(2, P2Prod, Prognosen,
-				results);
-		final int[][] p3KaufteileVerwendung = generiereKaufteileVerwendung(3, P3Prod, Prognosen,
-				results);
+		p1KaufteileVerwendungs = generiereKaufteileVerwendung(1, p1Prod, prognosens, results);
+		p2KaufteileVerwendungs = generiereKaufteileVerwendung(2, p2Prod, prognosens, results);
+		p3KaufteileVerwendungs = generiereKaufteileVerwendung(3, p3Prod, prognosens, results);
 
 		System.out.println("Folgende Kaufteile für P1 werden benötigt:");
-		printKaufteilmatrix(p1KaufteileVerwendung);
+		printKaufteilmatrix(p1KaufteileVerwendungs);
 		System.out.println("Folgende Kaufteile für P2 werden benötigt:");
-		printKaufteilmatrix(p2KaufteileVerwendung);
+		printKaufteilmatrix(p2KaufteileVerwendungs);
 		System.out.println("Folgende Kaufteile für P3 werden benötigt:");
-		printKaufteilmatrix(p3KaufteileVerwendung);
+		printKaufteilmatrix(p3KaufteileVerwendungs);
 	}
 
 	private static int[][] generiereKaufteileVerwendung(int produkt, int[][] Prod,
@@ -329,7 +336,7 @@ public class Main {
 		int[][] matrix = null;
 		if (produktionFall == 1) {
 			int[][] matrix1 = {
-					{ 1, 0, geplantVerkauf, geplanterLagerbestand, findAmountById(articles, 1), 0,
+					{ 1, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 1), 0,
 							0, 0 },
 					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
 					{ 51, 0, 0, geplanterLagerbestand, findAmountById(articles, 51), 0, 0, 0 },
@@ -345,7 +352,7 @@ public class Main {
 			matrix = matrix1;
 		} else if (produktionFall == 2) {
 			int[][] matrix2 = {
-					{ 2, 0, geplantVerkauf, geplanterLagerbestand, findAmountById(articles, 2), 0,
+					{ 2, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 2), 0,
 							0, 0 },
 					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
 					{ 56, 0, 0, geplanterLagerbestand, findAmountById(articles, 56), 0, 0, 0 },
@@ -361,7 +368,7 @@ public class Main {
 			matrix = matrix2;
 		} else if (produktionFall == 3) {
 			int[][] matrix3 = {
-					{ 3, 0, geplantVerkauf, geplanterLagerbestand, findAmountById(articles, 3), 0,
+					{ 3, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 3), 0,
 							0, 0 },
 					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
 					{ 31, 0, 0, geplanterLagerbestand, findAmountById(articles, 31), 0, 0, 0 },
