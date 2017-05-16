@@ -62,8 +62,7 @@ public class IbsysGUI {
 		planningPanel.add(PaneContainer);
 
 		MaterialPlanning materialPlanningObject = new MaterialPlanning();
-		JTabbedPane materialPlanningPane = materialPlanningObject.materialPlanning();
-		PaneContainer.addTab("Material Planning", null, materialPlanningPane, null);
+		PaneContainer.addTab("Material Planning", null, MaterialPlanning.materialPlanning(), null);
 
 		CapacityPlanning capacityPlanningObject = new CapacityPlanning();
 		JTabbedPane capacityPlanningPane = capacityPlanningObject.capacityPlanning();
@@ -73,11 +72,6 @@ public class IbsysGUI {
 		JPanel purchasePlanningPanel = purchasePlanningObject.purchasePlanning();
 		PaneContainer.addTab("PurchasePlanning", null, purchasePlanningPanel , null);
 
-		JTabbedPane tabbedPane_5 = new JTabbedPane(JTabbedPane.TOP);
-		PaneContainer.addTab("Purchase Planning", null, tabbedPane_5, null);
-
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		PaneContainer.addTab("Direct Sales", null, tabbedPane, null);
 
 		JPanel viewPanel = new JPanel();
 		frame.getContentPane()
