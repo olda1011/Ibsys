@@ -68,6 +68,10 @@ public class IbsysGUI {
 		CapacityPlanning capacityPlanningObject = new CapacityPlanning();
 		JTabbedPane capacityPlanningPane = capacityPlanningObject.capacityPlanning();
 		PaneContainer.addTab("Capacity Planning", null, capacityPlanningPane, null);
+		
+		PurchasePlanning purchasePlanningObject = new PurchasePlanning();
+		JPanel purchasePlanningPanel = purchasePlanningObject.purchasePlanning();
+		PaneContainer.addTab("PurchasePlanning", null, purchasePlanningPanel , null);
 
 		JTabbedPane tabbedPane_5 = new JTabbedPane(JTabbedPane.TOP);
 		PaneContainer.addTab("Purchase Planning", null, tabbedPane_5, null);
