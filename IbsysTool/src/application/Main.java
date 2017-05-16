@@ -21,9 +21,11 @@ public class Main {
 	public static int[][] p1Prod;
 	public static int[][] p2Prod;
 	public static int[][] p3Prod;
-	public static int[][] p1KaufteileVerwendungs;
-	public static int[][] p2KaufteileVerwendungs;
-	public static int[][] p3KaufteileVerwendungs;
+	public static int[][] p1KaufteileVerwendung;
+	public static int[][] p2KaufteileVerwendung;
+	public static int[][] p3KaufteileVerwendung;
+
+	public static int[][] kaufteileVerwendungMerged;
 
 	private Main() {
 
@@ -61,16 +63,73 @@ public class Main {
 
 		// Kaufteilbedarf errechnen
 
-		p1KaufteileVerwendungs = generiereKaufteileVerwendung(1, p1Prod, prognosens, results);
-		p2KaufteileVerwendungs = generiereKaufteileVerwendung(2, p2Prod, prognosens, results);
-		p3KaufteileVerwendungs = generiereKaufteileVerwendung(3, p3Prod, prognosens, results);
+		p1KaufteileVerwendung = generiereKaufteileVerwendung(1, p1Prod, prognosens, results);
+		p2KaufteileVerwendung = generiereKaufteileVerwendung(2, p2Prod, prognosens, results);
+		p3KaufteileVerwendung = generiereKaufteileVerwendung(3, p3Prod, prognosens, results);
+
+		kaufteileVerwendungMerged = mergeKautfteileVerwendung(p1KaufteileVerwendung,
+				p2KaufteileVerwendung, p3KaufteileVerwendung);
 
 		System.out.println("Folgende Kaufteile für P1 werden benötigt:");
-		printKaufteilmatrix(p1KaufteileVerwendungs);
+		printKaufteilmatrix(p1KaufteileVerwendung);
 		System.out.println("Folgende Kaufteile für P2 werden benötigt:");
-		printKaufteilmatrix(p2KaufteileVerwendungs);
+		printKaufteilmatrix(p2KaufteileVerwendung);
 		System.out.println("Folgende Kaufteile für P3 werden benötigt:");
-		printKaufteilmatrix(p3KaufteileVerwendungs);
+		printKaufteilmatrix(p3KaufteileVerwendung);
+	}
+
+	private static int[][] mergeKautfteileVerwendung(int[][] p1KaufteileVerwendung2,
+			int[][] p2KaufteileVerwendung2, int[][] p3KaufteileVerwendung2) {
+		int[][] merged = { { 21, 0, 0, 0, 0, 0 }, { 22, 0, 0, 0, 0, 0 }, { 23, 0, 0, 0, 0, 0 },
+				{ 24, 0, 0, 0, 0, 0 }, { 25, 0, 0, 0, 0, 0 }, { 27, 0, 0, 0, 0, 0 },
+				{ 28, 0, 0, 0, 0, 0 }, { 32, 0, 0, 0, 0, 0 }, { 33, 0, 0, 0, 0, 0 },
+				{ 34, 0, 0, 0, 0, 0 }, { 35, 0, 0, 0, 0, 0 }, { 36, 0, 0, 0, 0, 0 },
+				{ 37, 0, 0, 0, 0, 0 }, { 38, 0, 0, 0, 0, 0 }, { 39, 0, 0, 0, 0, 0 },
+				{ 40, 0, 0, 0, 0, 0 }, { 41, 0, 0, 0, 0, 0 }, { 42, 0, 0, 0, 0, 0 },
+				{ 43, 0, 0, 0, 0, 0 }, { 44, 0, 0, 0, 0, 0 }, { 45, 0, 0, 0, 0, 0 },
+				{ 46, 0, 0, 0, 0, 0 }, { 47, 0, 0, 0, 0, 0 }, { 48, 0, 0, 0, 0, 0 },
+				{ 52, 0, 0, 0, 0, 0 }, { 53, 0, 0, 0, 0, 0 }, { 57, 0, 0, 0, 0, 0 },
+				{ 58, 0, 0, 0, 0, 0 }, { 59, 0, 0, 0, 0, 0 } };
+
+		for (int i = 0; i < p1KaufteileVerwendung2.length; i++) {
+			for (int j = 0; j < p1KaufteileVerwendung2[i].length; j++) {
+				if (j == 0) {
+
+				} else if (j == 1) {
+					merged[i][j] = p1KaufteileVerwendung2[i][j];
+				} else {
+					merged[i][j] += p1KaufteileVerwendung2[i][j];
+				}
+			}
+
+		}
+		for (int i = 0; i < p2KaufteileVerwendung2.length; i++) {
+			for (int j = 0; j < p2KaufteileVerwendung2[i].length; j++) {
+				if (j == 0) {
+
+				} else if (j == 1) {
+					merged[i][j] = p2KaufteileVerwendung2[i][j];
+				} else {
+					merged[i][j] += p2KaufteileVerwendung2[i][j];
+				}
+			}
+
+		}
+		for (int i = 0; i < p3KaufteileVerwendung2.length; i++) {
+			for (int j = 0; j < p3KaufteileVerwendung2[i].length; j++) {
+				if (j == 0) {
+
+				} else if (j == 1) {
+					merged[i][j] = p3KaufteileVerwendung2[i][j];
+				} else {
+					merged[i][j] += p3KaufteileVerwendung2[i][j];
+				}
+			}
+
+		}
+
+		// TODO Auto-generated method stub
+		return merged;
 	}
 
 	private static int[][] generiereKaufteileVerwendung(int produkt, int[][] Prod,

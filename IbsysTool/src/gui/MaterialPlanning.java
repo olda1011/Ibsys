@@ -102,6 +102,671 @@ public class MaterialPlanning {
 	private static JTextField tf2_0301;
 	private static JTextField tf2_0102;
 	private static JTextField tf2_0101;
+
+	public static JTextField getTf2_0301() {
+		return tf2_0301;
+	}
+
+	public static JTextField getTf2_0102() {
+		return tf2_0102;
+	}
+
+	public static JTextField getTf2_0101() {
+		return tf2_0101;
+	}
+
+	public static JTextField getTf2_0103() {
+		return tf2_0103;
+	}
+
+	public static JTextField getTf2_0104() {
+		return tf2_0104;
+	}
+
+	public static JTextField getTf2_0105() {
+		return tf2_0105;
+	}
+
+	public static JTextField getTf2_0106() {
+		return tf2_0106;
+	}
+
+	public static JTextField getTf2_0107() {
+		return tf2_0107;
+	}
+
+	public static JTextField getTf2_0108() {
+		return tf2_0108;
+	}
+
+	public static JTextField getTf2_0109() {
+		return tf2_0109;
+	}
+
+	public static JTextField getTf2_0110() {
+		return tf2_0110;
+	}
+
+	public static JTextField getTf2_0111() {
+		return tf2_0111;
+	}
+
+	public static JTextField getTf2_0112() {
+		return tf2_0112;
+	}
+
+	public static JTextField getTf2_0202() {
+		return tf2_0202;
+	}
+
+	public static JTextField getTf2_0302() {
+		return tf2_0302;
+	}
+
+	public static JTextField getTf2_0203() {
+		return tf2_0203;
+	}
+
+	public static JTextField getTf2_0206() {
+		return tf2_0206;
+	}
+
+	public static JTextField getTf2_0205() {
+		return tf2_0205;
+	}
+
+	public static JTextField getTf2_0204() {
+		return tf2_0204;
+	}
+
+	public static JTextField getTf2_0207() {
+		return tf2_0207;
+	}
+
+	public static JTextField getTf2_0208() {
+		return tf2_0208;
+	}
+
+	public static JTextField getTf2_0209() {
+		return tf2_0209;
+	}
+
+	public static JTextField getTf2_0210() {
+		return tf2_0210;
+	}
+
+	public static JTextField getTf2_0211() {
+		return tf2_0211;
+	}
+
+	public static JTextField getTf2_0212() {
+		return tf2_0212;
+	}
+
+	public static JTextField getTf2_0303() {
+		return tf2_0303;
+	}
+
+	public static JTextField getTf2_0304() {
+		return tf2_0304;
+	}
+
+	public static JTextField getTf2_0305() {
+		return tf2_0305;
+	}
+
+	public static JTextField getTf2_0306() {
+		return tf2_0306;
+	}
+
+	public static JTextField getTf2_0307() {
+		return tf2_0307;
+	}
+
+	public static JTextField getTf2_0308() {
+		return tf2_0308;
+	}
+
+	public static JTextField getTf2_0309() {
+		return tf2_0309;
+	}
+
+	public static JTextField getTf2_0310() {
+		return tf2_0310;
+	}
+
+	public static JTextField getTf2_0311() {
+		return tf2_0311;
+	}
+
+	public static JTextField getTf2_0312() {
+		return tf2_0312;
+	}
+
+	public static JTextField getTf2_0402() {
+		return tf2_0402;
+	}
+
+	public static JTextField getTf2_0403() {
+		return tf2_0403;
+	}
+
+	public static JTextField getTf2_0404() {
+		return tf2_0404;
+	}
+
+	public static JTextField getTf2_0405() {
+		return tf2_0405;
+	}
+
+	public static JTextField getTf2_0406() {
+		return tf2_0406;
+	}
+
+	public static JTextField getTf2_0407() {
+		return tf2_0407;
+	}
+
+	public static JTextField getTf2_0408() {
+		return tf2_0408;
+	}
+
+	public static JTextField getTf2_0409() {
+		return tf2_0409;
+	}
+
+	public static JTextField getTf2_0410() {
+		return tf2_0410;
+	}
+
+	public static JTextField getTf2_0411() {
+		return tf2_0411;
+	}
+
+	public static JTextField getTf2_0412() {
+		return tf2_0412;
+	}
+
+	public static JTextField getTf2_0401() {
+		return tf2_0401;
+	}
+
+	public static JTextField getTf2_0501() {
+		return tf2_0501;
+	}
+
+	public static JTextField getTf2_0502() {
+		return tf2_0502;
+	}
+
+	public static JTextField getTf2_0503() {
+		return tf2_0503;
+	}
+
+	public static JTextField getTf2_0504() {
+		return tf2_0504;
+	}
+
+	public static JTextField getTf2_0505() {
+		return tf2_0505;
+	}
+
+	public static JTextField getTf2_0506() {
+		return tf2_0506;
+	}
+
+	public static JTextField getTf2_0507() {
+		return tf2_0507;
+	}
+
+	public static JTextField getTf2_0508() {
+		return tf2_0508;
+	}
+
+	public static JTextField getTf2_0509() {
+		return tf2_0509;
+	}
+
+	public static JTextField getTf2_0510() {
+		return tf2_0510;
+	}
+
+	public static JTextField getTf2_0511() {
+		return tf2_0511;
+	}
+
+	public static JTextField getTf2_0512() {
+		return tf2_0512;
+	}
+
+	public static JTextField getTf2_0601() {
+		return tf2_0601;
+	}
+
+	public static JTextField getTf2_0602() {
+		return tf2_0602;
+	}
+
+	public static JTextField getTf2_0603() {
+		return tf2_0603;
+	}
+
+	public static JTextField getTf2_0604() {
+		return tf2_0604;
+	}
+
+	public static JTextField getTf2_0605() {
+		return tf2_0605;
+	}
+
+	public static JTextField getTf2_0606() {
+		return tf2_0606;
+	}
+
+	public static JTextField getTf2_0607() {
+		return tf2_0607;
+	}
+
+	public static JTextField getTf2_0608() {
+		return tf2_0608;
+	}
+
+	public static JTextField getTf2_0609() {
+		return tf2_0609;
+	}
+
+	public static JTextField getTf2_0610() {
+		return tf2_0610;
+	}
+
+	public static JTextField getTf2_0611() {
+		return tf2_0611;
+	}
+
+	public static JTextField getTf2_0612() {
+		return tf2_0612;
+	}
+
+	public static JTextField getTf2_0701() {
+		return tf2_0701;
+	}
+
+	public static JTextField getTf2_0702() {
+		return tf2_0702;
+	}
+
+	public static JTextField getTf2_0703() {
+		return tf2_0703;
+	}
+
+	public static JTextField getTf2_0704() {
+		return tf2_0704;
+	}
+
+	public static JTextField getTf2_0705() {
+		return tf2_0705;
+	}
+
+	public static JTextField getTf2_0706() {
+		return tf2_0706;
+	}
+
+	public static JTextField getTf2_0707() {
+		return tf2_0707;
+	}
+
+	public static JTextField getTf2_0708() {
+		return tf2_0708;
+	}
+
+	public static JTextField getTf2_0709() {
+		return tf2_0709;
+	}
+
+	public static JTextField getTf2_0710() {
+		return tf2_0710;
+	}
+
+	public static JTextField getTf2_0711() {
+		return tf2_0711;
+	}
+
+	public static JTextField getTf2_0712() {
+		return tf2_0712;
+	}
+
+	public static JTextField getTf3_0101() {
+		return tf3_0101;
+	}
+
+	public static JTextField getTf3_0301() {
+		return tf3_0301;
+	}
+
+	public static JTextField getTf3_0401() {
+		return tf3_0401;
+	}
+
+	public static JTextField getTf3_0501() {
+		return tf3_0501;
+	}
+
+	public static JTextField getTf3_0601() {
+		return tf3_0601;
+	}
+
+	public static JTextField getTf3_0701() {
+		return tf3_0701;
+	}
+
+	public static JTextField getTf3_0102() {
+		return tf3_0102;
+	}
+
+	public static JTextField getTf3_0202() {
+		return tf3_0202;
+	}
+
+	public static JTextField getTf3_0302() {
+		return tf3_0302;
+	}
+
+	public static JTextField getTf3_0402() {
+		return tf3_0402;
+	}
+
+	public static JTextField getTf3_0502() {
+		return tf3_0502;
+	}
+
+	public static JTextField getTf3_0602() {
+		return tf3_0602;
+	}
+
+	public static JTextField getTf3_0702() {
+		return tf3_0702;
+	}
+
+	public static JTextField getTf3_0103() {
+		return tf3_0103;
+	}
+
+	public static JTextField getTf3_0203() {
+		return tf3_0203;
+	}
+
+	public static JTextField getTf3_0303() {
+		return tf3_0303;
+	}
+
+	public static JTextField getTf3_0403() {
+		return tf3_0403;
+	}
+
+	public static JTextField getTf3_0503() {
+		return tf3_0503;
+	}
+
+	public static JTextField getTf3_0603() {
+		return tf3_0603;
+	}
+
+	public static JTextField getTf3_0703() {
+		return tf3_0703;
+	}
+
+	public static JTextField getTf3_0104() {
+		return tf3_0104;
+	}
+
+	public static JTextField getTf3_0204() {
+		return tf3_0204;
+	}
+
+	public static JTextField getTf3_0304() {
+		return tf3_0304;
+	}
+
+	public static JTextField getTf3_0404() {
+		return tf3_0404;
+	}
+
+	public static JTextField getTf3_0504() {
+		return tf3_0504;
+	}
+
+	public static JTextField getTf3_0604() {
+		return tf3_0604;
+	}
+
+	public static JTextField getTf3_0704() {
+		return tf3_0704;
+	}
+
+	public static JTextField getTf3_0105() {
+		return tf3_0105;
+	}
+
+	public static JTextField getTf3_0205() {
+		return tf3_0205;
+	}
+
+	public static JTextField getTf3_0305() {
+		return tf3_0305;
+	}
+
+	public static JTextField getTf3_0405() {
+		return tf3_0405;
+	}
+
+	public static JTextField getTf3_0505() {
+		return tf3_0505;
+	}
+
+	public static JTextField getTf3_0605() {
+		return tf3_0605;
+	}
+
+	public static JTextField getTf3_0705() {
+		return tf3_0705;
+	}
+
+	public static JTextField getTf3_0106() {
+		return tf3_0106;
+	}
+
+	public static JTextField getTf3_0206() {
+		return tf3_0206;
+	}
+
+	public static JTextField getTf3_0306() {
+		return tf3_0306;
+	}
+
+	public static JTextField getTf3_0406() {
+		return tf3_0406;
+	}
+
+	public static JTextField getTf3_0506() {
+		return tf3_0506;
+	}
+
+	public static JTextField getTf3_0606() {
+		return tf3_0606;
+	}
+
+	public static JTextField getTf3_0706() {
+		return tf3_0706;
+	}
+
+	public static JTextField getTf3_0107() {
+		return tf3_0107;
+	}
+
+	public static JTextField getTf3_0207() {
+		return tf3_0207;
+	}
+
+	public static JTextField getTf3_0307() {
+		return tf3_0307;
+	}
+
+	public static JTextField getTf3_0407() {
+		return tf3_0407;
+	}
+
+	public static JTextField getTf3_0507() {
+		return tf3_0507;
+	}
+
+	public static JTextField getTf3_0607() {
+		return tf3_0607;
+	}
+
+	public static JTextField getTf3_0707() {
+		return tf3_0707;
+	}
+
+	public static JTextField getTf3_0108() {
+		return tf3_0108;
+	}
+
+	public static JTextField getTf3_0208() {
+		return tf3_0208;
+	}
+
+	public static JTextField getTf3_0308() {
+		return tf3_0308;
+	}
+
+	public static JTextField getTf3_0408() {
+		return tf3_0408;
+	}
+
+	public static JTextField getTf3_0508() {
+		return tf3_0508;
+	}
+
+	public static JTextField getTf3_0608() {
+		return tf3_0608;
+	}
+
+	public static JTextField getTf3_0708() {
+		return tf3_0708;
+	}
+
+	public static JTextField getTf3_0109() {
+		return tf3_0109;
+	}
+
+	public static JTextField getTf3_0209() {
+		return tf3_0209;
+	}
+
+	public static JTextField getTf3_0309() {
+		return tf3_0309;
+	}
+
+	public static JTextField getTf3_0409() {
+		return tf3_0409;
+	}
+
+	public static JTextField getTf3_0509() {
+		return tf3_0509;
+	}
+
+	public static JTextField getTf3_0609() {
+		return tf3_0609;
+	}
+
+	public static JTextField getTf3_0709() {
+		return tf3_0709;
+	}
+
+	public static JTextField getTf3_0110() {
+		return tf3_0110;
+	}
+
+	public static JTextField getTf3_0210() {
+		return tf3_0210;
+	}
+
+	public static JTextField getTf3_0310() {
+		return tf3_0310;
+	}
+
+	public static JTextField getTf3_0410() {
+		return tf3_0410;
+	}
+
+	public static JTextField getTf3_0510() {
+		return tf3_0510;
+	}
+
+	public static JTextField getTf3_0610() {
+		return tf3_0610;
+	}
+
+	public static JTextField getTf3_0710() {
+		return tf3_0710;
+	}
+
+	public static JTextField getTf3_0111() {
+		return tf3_0111;
+	}
+
+	public static JTextField getTf3_0211() {
+		return tf3_0211;
+	}
+
+	public static JTextField getTf3_0311() {
+		return tf3_0311;
+	}
+
+	public static JTextField getTf3_0411() {
+		return tf3_0411;
+	}
+
+	public static JTextField getTf3_0511() {
+		return tf3_0511;
+	}
+
+	public static JTextField getTf3_0611() {
+		return tf3_0611;
+	}
+
+	public static JTextField getTf3_0711() {
+		return tf3_0711;
+	}
+
+	public static JTextField getTf3_0112() {
+		return tf3_0112;
+	}
+
+	public static JTextField getTf3_0212() {
+		return tf3_0212;
+	}
+
+	public static JTextField getTf3_0312() {
+		return tf3_0312;
+	}
+
+	public static JTextField getTf3_0412() {
+		return tf3_0412;
+	}
+
+	public static JTextField getTf3_0512() {
+		return tf3_0512;
+	}
+
+	public static JTextField getTf3_0612() {
+		return tf3_0612;
+	}
+
+	public static JTextField getTf3_0712() {
+		return tf3_0712;
+	}
+
 	private static JTextField tf2_0103;
 	private static JTextField tf2_0104;
 	private static JTextField tf2_0105;
@@ -1886,1616 +2551,1616 @@ public class MaterialPlanning {
 		gbc_label_183.gridx = 15;
 		gbc_label_183.gridy = 18;
 		p1_panel.add(label_183, gbc_label_183);
-		
-				// -------------P2----------------------------
-		
-				JPanel p2_panel = new JPanel();
-				materialplanningPane.addTab("P2", null, p2_panel, null);
-				GridBagLayout gbl_p2_panel = new GridBagLayout();
-				gbl_p2_panel.columnWidths = new int[] { 0, 0, 85, 0, 85, 0, 85, 10, 85, 0, 85, 0, 85, 0, 85,
-						27, 0, 0 };
-				gbl_p2_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-						0, 0 };
-				gbl_p2_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0,
-						0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, Double.MIN_VALUE };
-				gbl_p2_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-						0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
-				p2_panel.setLayout(gbl_p2_panel);
-				
-						JLabel l2_warehousestock = new JLabel("Warehouse stock");
-						GridBagConstraints gbc_l2_warehousestock = new GridBagConstraints();
-						gbc_l2_warehousestock.gridwidth = 3;
-						gbc_l2_warehousestock.insets = new Insets(0, 0, 5, 5);
-						gbc_l2_warehousestock.gridx = 6;
-						gbc_l2_warehousestock.gridy = 1;
-						p2_panel.add(l2_warehousestock, gbc_l2_warehousestock);
-						
-								JLabel l2_salesorders = new JLabel("Sales Orders");
-								GridBagConstraints gbc_l2_salesorders = new GridBagConstraints();
-								gbc_l2_salesorders.insets = new Insets(0, 0, 5, 5);
-								gbc_l2_salesorders.gridx = 2;
-								gbc_l2_salesorders.gridy = 2;
-								p2_panel.add(l2_salesorders, gbc_l2_salesorders);
-								
-										JLabel l2_follwingperiod = new JLabel("following period");
-										GridBagConstraints gbc_l2_follwingperiod = new GridBagConstraints();
-										gbc_l2_follwingperiod.insets = new Insets(0, 0, 5, 5);
-										gbc_l2_follwingperiod.gridx = 6;
-										gbc_l2_follwingperiod.gridy = 2;
-										p2_panel.add(l2_follwingperiod, gbc_l2_follwingperiod);
-										
-												JLabel l2_passedperiod = new JLabel("passed period");
-												GridBagConstraints gbc_l2_passedperiod = new GridBagConstraints();
-												gbc_l2_passedperiod.insets = new Insets(0, 0, 5, 5);
-												gbc_l2_passedperiod.gridx = 8;
-												gbc_l2_passedperiod.gridy = 2;
-												p2_panel.add(l2_passedperiod, gbc_l2_passedperiod);
-												
-														JLabel l2_waitingqueue = new JLabel("Waiting queue");
-														GridBagConstraints gbc_l2_waitingqueue = new GridBagConstraints();
-														gbc_l2_waitingqueue.insets = new Insets(0, 0, 5, 5);
-														gbc_l2_waitingqueue.gridx = 10;
-														gbc_l2_waitingqueue.gridy = 2;
-														p2_panel.add(l2_waitingqueue, gbc_l2_waitingqueue);
-														
-																JLabel l2_workinprogress = new JLabel("Work in progress");
-																GridBagConstraints gbc_l2_workinprogress = new GridBagConstraints();
-																gbc_l2_workinprogress.insets = new Insets(0, 0, 5, 5);
-																gbc_l2_workinprogress.gridx = 12;
-																gbc_l2_workinprogress.gridy = 2;
-																p2_panel.add(l2_workinprogress, gbc_l2_workinprogress);
-																
-																		JLabel l2_productionorders = new JLabel("Production orders");
-																		GridBagConstraints gbc_l2_productionorders = new GridBagConstraints();
-																		gbc_l2_productionorders.insets = new Insets(0, 0, 5, 5);
-																		gbc_l2_productionorders.gridx = 14;
-																		gbc_l2_productionorders.gridy = 2;
-																		p2_panel.add(l2_productionorders, gbc_l2_productionorders);
-																		
-																				JLabel lblNewLabel = new JLabel("P2");
-																				GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
-																				gbc_lblNewLabel.anchor = GridBagConstraints.WEST;
-																				gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
-																				gbc_lblNewLabel.gridx = 1;
-																				gbc_lblNewLabel.gridy = 3;
-																				p2_panel.add(lblNewLabel, gbc_lblNewLabel);
-																				
-																						tf2_0101 = new JTextField();
-																						tf2_0101.setColumns(10);
-																						GridBagConstraints gbc_tf2_0101 = new GridBagConstraints();
-																						gbc_tf2_0101.anchor = GridBagConstraints.NORTH;
-																						gbc_tf2_0101.insets = new Insets(0, 0, 5, 5);
-																						gbc_tf2_0101.fill = GridBagConstraints.HORIZONTAL;
-																						gbc_tf2_0101.gridx = 2;
-																						gbc_tf2_0101.gridy = 3;
-																						p2_panel.add(tf2_0101, gbc_tf2_0101);
-																						
-																								JLabel lblNewLabel_2 = new JLabel("+");
-																								GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
-																								gbc_lblNewLabel_2.gridwidth = 3;
-																								gbc_lblNewLabel_2.fill = GridBagConstraints.VERTICAL;
-																								gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
-																								gbc_lblNewLabel_2.gridx = 3;
-																								gbc_lblNewLabel_2.gridy = 3;
-																								p2_panel.add(lblNewLabel_2, gbc_lblNewLabel_2);
-																								
-																										tf2_0301 = new JTextField();
-																										GridBagConstraints gbc_tf2_0301 = new GridBagConstraints();
-																										gbc_tf2_0301.insets = new Insets(0, 0, 5, 5);
-																										gbc_tf2_0301.fill = GridBagConstraints.HORIZONTAL;
-																										gbc_tf2_0301.gridx = 6;
-																										gbc_tf2_0301.gridy = 3;
-																										p2_panel.add(tf2_0301, gbc_tf2_0301);
-																										tf2_0301.setColumns(10);
-																										
-																												JLabel label_33 = new JLabel("-");
-																												GridBagConstraints gbc_label_33 = new GridBagConstraints();
-																												gbc_label_33.anchor = GridBagConstraints.EAST;
-																												gbc_label_33.insets = new Insets(0, 0, 5, 5);
-																												gbc_label_33.gridx = 7;
-																												gbc_label_33.gridy = 3;
-																												p2_panel.add(label_33, gbc_label_33);
-																												
-																														tf2_0401 = new JTextField();
-																														tf2_0401.setColumns(10);
-																														GridBagConstraints gbc_tf2_0401 = new GridBagConstraints();
-																														gbc_tf2_0401.insets = new Insets(0, 0, 5, 5);
-																														gbc_tf2_0401.fill = GridBagConstraints.HORIZONTAL;
-																														gbc_tf2_0401.gridx = 8;
-																														gbc_tf2_0401.gridy = 3;
-																														p2_panel.add(tf2_0401, gbc_tf2_0401);
-																														
-																																JLabel label_47 = new JLabel("-");
-																																GridBagConstraints gbc_label_47 = new GridBagConstraints();
-																																gbc_label_47.anchor = GridBagConstraints.EAST;
-																																gbc_label_47.insets = new Insets(0, 0, 5, 5);
-																																gbc_label_47.gridx = 9;
-																																gbc_label_47.gridy = 3;
-																																p2_panel.add(label_47, gbc_label_47);
-																																
-																																		tf2_0501 = new JTextField();
-																																		tf2_0501.setColumns(10);
-																																		GridBagConstraints gbc_tf2_0501 = new GridBagConstraints();
-																																		gbc_tf2_0501.insets = new Insets(0, 0, 5, 5);
-																																		gbc_tf2_0501.fill = GridBagConstraints.HORIZONTAL;
-																																		gbc_tf2_0501.gridx = 10;
-																																		gbc_tf2_0501.gridy = 3;
-																																		p2_panel.add(tf2_0501, gbc_tf2_0501);
-																																		
-																																				JLabel label_2 = new JLabel("-");
-																																				GridBagConstraints gbc_label_2 = new GridBagConstraints();
-																																				gbc_label_2.anchor = GridBagConstraints.EAST;
-																																				gbc_label_2.insets = new Insets(0, 0, 5, 5);
-																																				gbc_label_2.gridx = 11;
-																																				gbc_label_2.gridy = 3;
-																																				p2_panel.add(label_2, gbc_label_2);
-																																				
-																																						tf2_0601 = new JTextField();
-																																						tf2_0601.setColumns(10);
-																																						GridBagConstraints gbc_tf2_0601 = new GridBagConstraints();
-																																						gbc_tf2_0601.insets = new Insets(0, 0, 5, 5);
-																																						gbc_tf2_0601.fill = GridBagConstraints.HORIZONTAL;
-																																						gbc_tf2_0601.gridx = 12;
-																																						gbc_tf2_0601.gridy = 3;
-																																						p2_panel.add(tf2_0601, gbc_tf2_0601);
-																																						
-																																								JLabel label_58 = new JLabel("=");
-																																								GridBagConstraints gbc_label_58 = new GridBagConstraints();
-																																								gbc_label_58.anchor = GridBagConstraints.EAST;
-																																								gbc_label_58.insets = new Insets(0, 0, 5, 5);
-																																								gbc_label_58.gridx = 13;
-																																								gbc_label_58.gridy = 3;
-																																								p2_panel.add(label_58, gbc_label_58);
-																																								
-																																										tf2_0701 = new JTextField();
-																																										tf2_0701.setColumns(10);
-																																										GridBagConstraints gbc_tf2_0701 = new GridBagConstraints();
-																																										gbc_tf2_0701.insets = new Insets(0, 0, 5, 5);
-																																										gbc_tf2_0701.fill = GridBagConstraints.HORIZONTAL;
-																																										gbc_tf2_0701.gridx = 14;
-																																										gbc_tf2_0701.gridy = 3;
-																																										p2_panel.add(tf2_0701, gbc_tf2_0701);
-																																										
-																																												JLabel lblP_2 = new JLabel("P2");
-																																												GridBagConstraints gbc_lblP_2 = new GridBagConstraints();
-																																												gbc_lblP_2.anchor = GridBagConstraints.EAST;
-																																												gbc_lblP_2.insets = new Insets(0, 0, 5, 5);
-																																												gbc_lblP_2.gridx = 15;
-																																												gbc_lblP_2.gridy = 3;
-																																												p2_panel.add(lblP_2, gbc_lblP_2);
-																																												
-																																												JSeparator separator_4 = new JSeparator();
-																																												GridBagConstraints gbc_separator_4 = new GridBagConstraints();
-																																												gbc_separator_4.fill = GridBagConstraints.HORIZONTAL;
-																																												gbc_separator_4.gridwidth = 15;
-																																												gbc_separator_4.insets = new Insets(0, 0, 5, 5);
-																																												gbc_separator_4.gridx = 1;
-																																												gbc_separator_4.gridy = 4;
-																																												p2_panel.add(separator_4, gbc_separator_4);
-																																												
-																																														JLabel lblNewLabel_1 = new JLabel("E26");
-																																														GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
-																																														gbc_lblNewLabel_1.anchor = GridBagConstraints.WEST;
-																																														gbc_lblNewLabel_1.insets = new Insets(0, 0, 5, 5);
-																																														gbc_lblNewLabel_1.gridx = 1;
-																																														gbc_lblNewLabel_1.gridy = 5;
-																																														p2_panel.add(lblNewLabel_1, gbc_lblNewLabel_1);
-																																														
-																																																tf2_0102 = new JTextField();
-																																																GridBagConstraints gbc_tf2_0102 = new GridBagConstraints();
-																																																gbc_tf2_0102.insets = new Insets(0, 0, 5, 5);
-																																																gbc_tf2_0102.fill = GridBagConstraints.HORIZONTAL;
-																																																gbc_tf2_0102.gridx = 2;
-																																																gbc_tf2_0102.gridy = 5;
-																																																p2_panel.add(tf2_0102, gbc_tf2_0102);
-																																																tf2_0102.setColumns(10);
-																																																
-																																																		JLabel lblNewLabel_4 = new JLabel("+");
-																																																		GridBagConstraints gbc_lblNewLabel_4 = new GridBagConstraints();
-																																																		gbc_lblNewLabel_4.anchor = GridBagConstraints.EAST;
-																																																		gbc_lblNewLabel_4.insets = new Insets(0, 0, 5, 5);
-																																																		gbc_lblNewLabel_4.gridx = 3;
-																																																		gbc_lblNewLabel_4.gridy = 5;
-																																																		p2_panel.add(lblNewLabel_4, gbc_lblNewLabel_4);
-																																																		
-																																																				tf2_0202 = new JTextField();
-																																																				tf2_0202.setColumns(10);
-																																																				GridBagConstraints gbc_tf2_0202 = new GridBagConstraints();
-																																																				gbc_tf2_0202.insets = new Insets(0, 0, 5, 5);
-																																																				gbc_tf2_0202.fill = GridBagConstraints.HORIZONTAL;
-																																																				gbc_tf2_0202.gridx = 4;
-																																																				gbc_tf2_0202.gridy = 5;
-																																																				p2_panel.add(tf2_0202, gbc_tf2_0202);
-																																																				
-																																																						JLabel label_21 = new JLabel("+");
-																																																						GridBagConstraints gbc_label_21 = new GridBagConstraints();
-																																																						gbc_label_21.anchor = GridBagConstraints.EAST;
-																																																						gbc_label_21.insets = new Insets(0, 0, 5, 5);
-																																																						gbc_label_21.gridx = 5;
-																																																						gbc_label_21.gridy = 5;
-																																																						p2_panel.add(label_21, gbc_label_21);
-																																																						
-																																																								tf2_0302 = new JTextField();
-																																																								tf2_0302.setColumns(10);
-																																																								GridBagConstraints gbc_tf2_0302 = new GridBagConstraints();
-																																																								gbc_tf2_0302.insets = new Insets(0, 0, 5, 5);
-																																																								gbc_tf2_0302.fill = GridBagConstraints.HORIZONTAL;
-																																																								gbc_tf2_0302.gridx = 6;
-																																																								gbc_tf2_0302.gridy = 5;
-																																																								p2_panel.add(tf2_0302, gbc_tf2_0302);
-																																																								
-																																																										JLabel label = new JLabel("-");
-																																																										GridBagConstraints gbc_label = new GridBagConstraints();
-																																																										gbc_label.insets = new Insets(0, 0, 5, 5);
-																																																										gbc_label.anchor = GridBagConstraints.EAST;
-																																																										gbc_label.gridx = 7;
-																																																										gbc_label.gridy = 5;
-																																																										p2_panel.add(label, gbc_label);
-																																																										
-																																																												tf2_0402 = new JTextField();
-																																																												tf2_0402.setColumns(10);
-																																																												GridBagConstraints gbc_tf2_0402 = new GridBagConstraints();
-																																																												gbc_tf2_0402.insets = new Insets(0, 0, 5, 5);
-																																																												gbc_tf2_0402.fill = GridBagConstraints.HORIZONTAL;
-																																																												gbc_tf2_0402.gridx = 8;
-																																																												gbc_tf2_0402.gridy = 5;
-																																																												p2_panel.add(tf2_0402, gbc_tf2_0402);
-																																																												
-																																																														JLabel label_46 = new JLabel("-");
-																																																														GridBagConstraints gbc_label_46 = new GridBagConstraints();
-																																																														gbc_label_46.anchor = GridBagConstraints.EAST;
-																																																														gbc_label_46.insets = new Insets(0, 0, 5, 5);
-																																																														gbc_label_46.gridx = 9;
-																																																														gbc_label_46.gridy = 5;
-																																																														p2_panel.add(label_46, gbc_label_46);
-																																																														
-																																																																tf2_0502 = new JTextField();
-																																																																tf2_0502.setColumns(10);
-																																																																GridBagConstraints gbc_tf2_0502 = new GridBagConstraints();
-																																																																gbc_tf2_0502.insets = new Insets(0, 0, 5, 5);
-																																																																gbc_tf2_0502.fill = GridBagConstraints.HORIZONTAL;
-																																																																gbc_tf2_0502.gridx = 10;
-																																																																gbc_tf2_0502.gridy = 5;
-																																																																p2_panel.add(tf2_0502, gbc_tf2_0502);
-																																																																
-																																																																		JLabel label_3 = new JLabel("-");
-																																																																		GridBagConstraints gbc_label_3 = new GridBagConstraints();
-																																																																		gbc_label_3.anchor = GridBagConstraints.EAST;
-																																																																		gbc_label_3.insets = new Insets(0, 0, 5, 5);
-																																																																		gbc_label_3.gridx = 11;
-																																																																		gbc_label_3.gridy = 5;
-																																																																		p2_panel.add(label_3, gbc_label_3);
-																																																																		
-																																																																				tf2_0602 = new JTextField();
-																																																																				tf2_0602.setColumns(10);
-																																																																				GridBagConstraints gbc_tf2_0602 = new GridBagConstraints();
-																																																																				gbc_tf2_0602.insets = new Insets(0, 0, 5, 5);
-																																																																				gbc_tf2_0602.fill = GridBagConstraints.HORIZONTAL;
-																																																																				gbc_tf2_0602.gridx = 12;
-																																																																				gbc_tf2_0602.gridy = 5;
-																																																																				p2_panel.add(tf2_0602, gbc_tf2_0602);
-																																																																				
-																																																																						JLabel label_59 = new JLabel("=");
-																																																																						GridBagConstraints gbc_label_59 = new GridBagConstraints();
-																																																																						gbc_label_59.anchor = GridBagConstraints.EAST;
-																																																																						gbc_label_59.insets = new Insets(0, 0, 5, 5);
-																																																																						gbc_label_59.gridx = 13;
-																																																																						gbc_label_59.gridy = 5;
-																																																																						p2_panel.add(label_59, gbc_label_59);
-																																																																						
-																																																																								tf2_0702 = new JTextField();
-																																																																								tf2_0702.setColumns(10);
-																																																																								GridBagConstraints gbc_tf2_0702 = new GridBagConstraints();
-																																																																								gbc_tf2_0702.insets = new Insets(0, 0, 5, 5);
-																																																																								gbc_tf2_0702.fill = GridBagConstraints.HORIZONTAL;
-																																																																								gbc_tf2_0702.gridx = 14;
-																																																																								gbc_tf2_0702.gridy = 5;
-																																																																								p2_panel.add(tf2_0702, gbc_tf2_0702);
-																																																																								
-																																																																										JLabel label_71 = new JLabel("E26");
-																																																																										GridBagConstraints gbc_label_71 = new GridBagConstraints();
-																																																																										gbc_label_71.anchor = GridBagConstraints.EAST;
-																																																																										gbc_label_71.insets = new Insets(0, 0, 5, 5);
-																																																																										gbc_label_71.gridx = 15;
-																																																																										gbc_label_71.gridy = 5;
-																																																																										p2_panel.add(label_71, gbc_label_71);
-																																																																										
-																																																																												JLabel lblE = new JLabel("E56");
-																																																																												GridBagConstraints gbc_lblE = new GridBagConstraints();
-																																																																												gbc_lblE.anchor = GridBagConstraints.WEST;
-																																																																												gbc_lblE.insets = new Insets(0, 0, 5, 5);
-																																																																												gbc_lblE.gridx = 1;
-																																																																												gbc_lblE.gridy = 6;
-																																																																												p2_panel.add(lblE, gbc_lblE);
-																																																																												
-																																																																														tf2_0103 = new JTextField();
-																																																																														tf2_0103.setColumns(10);
-																																																																														GridBagConstraints gbc_tf2_0103 = new GridBagConstraints();
-																																																																														gbc_tf2_0103.insets = new Insets(0, 0, 5, 5);
-																																																																														gbc_tf2_0103.fill = GridBagConstraints.HORIZONTAL;
-																																																																														gbc_tf2_0103.gridx = 2;
-																																																																														gbc_tf2_0103.gridy = 6;
-																																																																														p2_panel.add(tf2_0103, gbc_tf2_0103);
-																																																																														
-																																																																																JLabel label_11 = new JLabel("+");
-																																																																																GridBagConstraints gbc_label_11 = new GridBagConstraints();
-																																																																																gbc_label_11.anchor = GridBagConstraints.EAST;
-																																																																																gbc_label_11.insets = new Insets(0, 0, 5, 5);
-																																																																																gbc_label_11.gridx = 3;
-																																																																																gbc_label_11.gridy = 6;
-																																																																																p2_panel.add(label_11, gbc_label_11);
-																																																																																
-																																																																																		tf2_0203 = new JTextField();
-																																																																																		tf2_0203.setColumns(10);
-																																																																																		GridBagConstraints gbc_tf2_0203 = new GridBagConstraints();
-																																																																																		gbc_tf2_0203.insets = new Insets(0, 0, 5, 5);
-																																																																																		gbc_tf2_0203.fill = GridBagConstraints.HORIZONTAL;
-																																																																																		gbc_tf2_0203.gridx = 4;
-																																																																																		gbc_tf2_0203.gridy = 6;
-																																																																																		p2_panel.add(tf2_0203, gbc_tf2_0203);
-																																																																																		
-																																																																																				JLabel label_22 = new JLabel("+");
-																																																																																				GridBagConstraints gbc_label_22 = new GridBagConstraints();
-																																																																																				gbc_label_22.anchor = GridBagConstraints.EAST;
-																																																																																				gbc_label_22.insets = new Insets(0, 0, 5, 5);
-																																																																																				gbc_label_22.gridx = 5;
-																																																																																				gbc_label_22.gridy = 6;
-																																																																																				p2_panel.add(label_22, gbc_label_22);
-																																																																																				
-																																																																																						tf2_0303 = new JTextField();
-																																																																																						tf2_0303.setColumns(10);
-																																																																																						GridBagConstraints gbc_tf2_0303 = new GridBagConstraints();
-																																																																																						gbc_tf2_0303.insets = new Insets(0, 0, 5, 5);
-																																																																																						gbc_tf2_0303.fill = GridBagConstraints.HORIZONTAL;
-																																																																																						gbc_tf2_0303.gridx = 6;
-																																																																																						gbc_tf2_0303.gridy = 6;
-																																																																																						p2_panel.add(tf2_0303, gbc_tf2_0303);
-																																																																																						
-																																																																																								JLabel label_35 = new JLabel("-");
-																																																																																								GridBagConstraints gbc_label_35 = new GridBagConstraints();
-																																																																																								gbc_label_35.anchor = GridBagConstraints.EAST;
-																																																																																								gbc_label_35.insets = new Insets(0, 0, 5, 5);
-																																																																																								gbc_label_35.gridx = 7;
-																																																																																								gbc_label_35.gridy = 6;
-																																																																																								p2_panel.add(label_35, gbc_label_35);
-																																																																																								
-																																																																																										tf2_0403 = new JTextField();
-																																																																																										tf2_0403.setColumns(10);
-																																																																																										GridBagConstraints gbc_tf2_0403 = new GridBagConstraints();
-																																																																																										gbc_tf2_0403.insets = new Insets(0, 0, 5, 5);
-																																																																																										gbc_tf2_0403.fill = GridBagConstraints.HORIZONTAL;
-																																																																																										gbc_tf2_0403.gridx = 8;
-																																																																																										gbc_tf2_0403.gridy = 6;
-																																																																																										p2_panel.add(tf2_0403, gbc_tf2_0403);
-																																																																																										
-																																																																																												JLabel label_48 = new JLabel("-");
-																																																																																												GridBagConstraints gbc_label_48 = new GridBagConstraints();
-																																																																																												gbc_label_48.anchor = GridBagConstraints.EAST;
-																																																																																												gbc_label_48.insets = new Insets(0, 0, 5, 5);
-																																																																																												gbc_label_48.gridx = 9;
-																																																																																												gbc_label_48.gridy = 6;
-																																																																																												p2_panel.add(label_48, gbc_label_48);
-																																																																																												
-																																																																																														tf2_0503 = new JTextField();
-																																																																																														tf2_0503.setColumns(10);
-																																																																																														GridBagConstraints gbc_tf2_0503 = new GridBagConstraints();
-																																																																																														gbc_tf2_0503.insets = new Insets(0, 0, 5, 5);
-																																																																																														gbc_tf2_0503.fill = GridBagConstraints.HORIZONTAL;
-																																																																																														gbc_tf2_0503.gridx = 10;
-																																																																																														gbc_tf2_0503.gridy = 6;
-																																																																																														p2_panel.add(tf2_0503, gbc_tf2_0503);
-																																																																																														
-																																																																																																JLabel label_4 = new JLabel("-");
-																																																																																																GridBagConstraints gbc_label_4 = new GridBagConstraints();
-																																																																																																gbc_label_4.anchor = GridBagConstraints.EAST;
-																																																																																																gbc_label_4.insets = new Insets(0, 0, 5, 5);
-																																																																																																gbc_label_4.gridx = 11;
-																																																																																																gbc_label_4.gridy = 6;
-																																																																																																p2_panel.add(label_4, gbc_label_4);
-																																																																																																
-																																																																																																		tf2_0603 = new JTextField();
-																																																																																																		tf2_0603.setColumns(10);
-																																																																																																		GridBagConstraints gbc_tf2_0603 = new GridBagConstraints();
-																																																																																																		gbc_tf2_0603.insets = new Insets(0, 0, 5, 5);
-																																																																																																		gbc_tf2_0603.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																		gbc_tf2_0603.gridx = 12;
-																																																																																																		gbc_tf2_0603.gridy = 6;
-																																																																																																		p2_panel.add(tf2_0603, gbc_tf2_0603);
-																																																																																																		
-																																																																																																				JLabel label_60 = new JLabel("=");
-																																																																																																				GridBagConstraints gbc_label_60 = new GridBagConstraints();
-																																																																																																				gbc_label_60.anchor = GridBagConstraints.EAST;
-																																																																																																				gbc_label_60.insets = new Insets(0, 0, 5, 5);
-																																																																																																				gbc_label_60.gridx = 13;
-																																																																																																				gbc_label_60.gridy = 6;
-																																																																																																				p2_panel.add(label_60, gbc_label_60);
-																																																																																																				
-																																																																																																						tf2_0703 = new JTextField();
-																																																																																																						tf2_0703.setColumns(10);
-																																																																																																						GridBagConstraints gbc_tf2_0703 = new GridBagConstraints();
-																																																																																																						gbc_tf2_0703.insets = new Insets(0, 0, 5, 5);
-																																																																																																						gbc_tf2_0703.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																						gbc_tf2_0703.gridx = 14;
-																																																																																																						gbc_tf2_0703.gridy = 6;
-																																																																																																						p2_panel.add(tf2_0703, gbc_tf2_0703);
-																																																																																																						
-																																																																																																								JLabel lblE_11 = new JLabel("E56");
-																																																																																																								GridBagConstraints gbc_lblE_11 = new GridBagConstraints();
-																																																																																																								gbc_lblE_11.anchor = GridBagConstraints.EAST;
-																																																																																																								gbc_lblE_11.insets = new Insets(0, 0, 5, 5);
-																																																																																																								gbc_lblE_11.gridx = 15;
-																																																																																																								gbc_lblE_11.gridy = 6;
-																																																																																																								p2_panel.add(lblE_11, gbc_lblE_11);
-																																																																																																								
-																																																																																																								JSeparator separator_6 = new JSeparator();
-																																																																																																								GridBagConstraints gbc_separator_6 = new GridBagConstraints();
-																																																																																																								gbc_separator_6.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																								gbc_separator_6.gridwidth = 15;
-																																																																																																								gbc_separator_6.insets = new Insets(0, 0, 5, 5);
-																																																																																																								gbc_separator_6.gridx = 1;
-																																																																																																								gbc_separator_6.gridy = 7;
-																																																																																																								p2_panel.add(separator_6, gbc_separator_6);
-																																																																																																								
-																																																																																																										JLabel lblE_1 = new JLabel("E16");
-																																																																																																										GridBagConstraints gbc_lblE_1 = new GridBagConstraints();
-																																																																																																										gbc_lblE_1.anchor = GridBagConstraints.WEST;
-																																																																																																										gbc_lblE_1.insets = new Insets(0, 0, 5, 5);
-																																																																																																										gbc_lblE_1.gridx = 1;
-																																																																																																										gbc_lblE_1.gridy = 8;
-																																																																																																										p2_panel.add(lblE_1, gbc_lblE_1);
-																																																																																																										
-																																																																																																												tf2_0104 = new JTextField();
-																																																																																																												tf2_0104.setColumns(10);
-																																																																																																												GridBagConstraints gbc_tf2_0104 = new GridBagConstraints();
-																																																																																																												gbc_tf2_0104.insets = new Insets(0, 0, 5, 5);
-																																																																																																												gbc_tf2_0104.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																												gbc_tf2_0104.gridx = 2;
-																																																																																																												gbc_tf2_0104.gridy = 8;
-																																																																																																												p2_panel.add(tf2_0104, gbc_tf2_0104);
-																																																																																																												
-																																																																																																														JLabel label_12 = new JLabel("+");
-																																																																																																														GridBagConstraints gbc_label_12 = new GridBagConstraints();
-																																																																																																														gbc_label_12.anchor = GridBagConstraints.EAST;
-																																																																																																														gbc_label_12.insets = new Insets(0, 0, 5, 5);
-																																																																																																														gbc_label_12.gridx = 3;
-																																																																																																														gbc_label_12.gridy = 8;
-																																																																																																														p2_panel.add(label_12, gbc_label_12);
-																																																																																																														
-																																																																																																																tf2_0204 = new JTextField();
-																																																																																																																tf2_0204.setColumns(10);
-																																																																																																																GridBagConstraints gbc_tf2_0204 = new GridBagConstraints();
-																																																																																																																gbc_tf2_0204.insets = new Insets(0, 0, 5, 5);
-																																																																																																																gbc_tf2_0204.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																gbc_tf2_0204.gridx = 4;
-																																																																																																																gbc_tf2_0204.gridy = 8;
-																																																																																																																p2_panel.add(tf2_0204, gbc_tf2_0204);
-																																																																																																																
-																																																																																																																		JLabel label_23 = new JLabel("+");
-																																																																																																																		GridBagConstraints gbc_label_23 = new GridBagConstraints();
-																																																																																																																		gbc_label_23.anchor = GridBagConstraints.EAST;
-																																																																																																																		gbc_label_23.insets = new Insets(0, 0, 5, 5);
-																																																																																																																		gbc_label_23.gridx = 5;
-																																																																																																																		gbc_label_23.gridy = 8;
-																																																																																																																		p2_panel.add(label_23, gbc_label_23);
-																																																																																																																		
-																																																																																																																				tf2_0304 = new JTextField();
-																																																																																																																				tf2_0304.setColumns(10);
-																																																																																																																				GridBagConstraints gbc_tf2_0304 = new GridBagConstraints();
-																																																																																																																				gbc_tf2_0304.insets = new Insets(0, 0, 5, 5);
-																																																																																																																				gbc_tf2_0304.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																				gbc_tf2_0304.gridx = 6;
-																																																																																																																				gbc_tf2_0304.gridy = 8;
-																																																																																																																				p2_panel.add(tf2_0304, gbc_tf2_0304);
-																																																																																																																				
-																																																																																																																						JLabel label_36 = new JLabel("-");
-																																																																																																																						GridBagConstraints gbc_label_36 = new GridBagConstraints();
-																																																																																																																						gbc_label_36.anchor = GridBagConstraints.EAST;
-																																																																																																																						gbc_label_36.insets = new Insets(0, 0, 5, 5);
-																																																																																																																						gbc_label_36.gridx = 7;
-																																																																																																																						gbc_label_36.gridy = 8;
-																																																																																																																						p2_panel.add(label_36, gbc_label_36);
-																																																																																																																						
-																																																																																																																								tf2_0404 = new JTextField();
-																																																																																																																								tf2_0404.setColumns(10);
-																																																																																																																								GridBagConstraints gbc_tf2_0404 = new GridBagConstraints();
-																																																																																																																								gbc_tf2_0404.insets = new Insets(0, 0, 5, 5);
-																																																																																																																								gbc_tf2_0404.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																								gbc_tf2_0404.gridx = 8;
-																																																																																																																								gbc_tf2_0404.gridy = 8;
-																																																																																																																								p2_panel.add(tf2_0404, gbc_tf2_0404);
-																																																																																																																								
-																																																																																																																										JLabel label_49 = new JLabel("-");
-																																																																																																																										GridBagConstraints gbc_label_49 = new GridBagConstraints();
-																																																																																																																										gbc_label_49.anchor = GridBagConstraints.EAST;
-																																																																																																																										gbc_label_49.insets = new Insets(0, 0, 5, 5);
-																																																																																																																										gbc_label_49.gridx = 9;
-																																																																																																																										gbc_label_49.gridy = 8;
-																																																																																																																										p2_panel.add(label_49, gbc_label_49);
-																																																																																																																										
-																																																																																																																												tf2_0504 = new JTextField();
-																																																																																																																												tf2_0504.setColumns(10);
-																																																																																																																												GridBagConstraints gbc_tf2_0504 = new GridBagConstraints();
-																																																																																																																												gbc_tf2_0504.insets = new Insets(0, 0, 5, 5);
-																																																																																																																												gbc_tf2_0504.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																												gbc_tf2_0504.gridx = 10;
-																																																																																																																												gbc_tf2_0504.gridy = 8;
-																																																																																																																												p2_panel.add(tf2_0504, gbc_tf2_0504);
-																																																																																																																												
-																																																																																																																														JLabel label_5 = new JLabel("-");
-																																																																																																																														GridBagConstraints gbc_label_5 = new GridBagConstraints();
-																																																																																																																														gbc_label_5.anchor = GridBagConstraints.EAST;
-																																																																																																																														gbc_label_5.insets = new Insets(0, 0, 5, 5);
-																																																																																																																														gbc_label_5.gridx = 11;
-																																																																																																																														gbc_label_5.gridy = 8;
-																																																																																																																														p2_panel.add(label_5, gbc_label_5);
-																																																																																																																														
-																																																																																																																																tf2_0604 = new JTextField();
-																																																																																																																																tf2_0604.setColumns(10);
-																																																																																																																																GridBagConstraints gbc_tf2_0604 = new GridBagConstraints();
-																																																																																																																																gbc_tf2_0604.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																gbc_tf2_0604.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																gbc_tf2_0604.gridx = 12;
-																																																																																																																																gbc_tf2_0604.gridy = 8;
-																																																																																																																																p2_panel.add(tf2_0604, gbc_tf2_0604);
-																																																																																																																																
-																																																																																																																																		JLabel label_61 = new JLabel("=");
-																																																																																																																																		GridBagConstraints gbc_label_61 = new GridBagConstraints();
-																																																																																																																																		gbc_label_61.anchor = GridBagConstraints.EAST;
-																																																																																																																																		gbc_label_61.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																		gbc_label_61.gridx = 13;
-																																																																																																																																		gbc_label_61.gridy = 8;
-																																																																																																																																		p2_panel.add(label_61, gbc_label_61);
-																																																																																																																																		
-																																																																																																																																				tf2_0704 = new JTextField();
-																																																																																																																																				tf2_0704.setColumns(10);
-																																																																																																																																				GridBagConstraints gbc_tf2_0704 = new GridBagConstraints();
-																																																																																																																																				gbc_tf2_0704.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																				gbc_tf2_0704.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																				gbc_tf2_0704.gridx = 14;
-																																																																																																																																				gbc_tf2_0704.gridy = 8;
-																																																																																																																																				p2_panel.add(tf2_0704, gbc_tf2_0704);
-																																																																																																																																				
-																																																																																																																																						JLabel label_73 = new JLabel("E16");
-																																																																																																																																						GridBagConstraints gbc_label_73 = new GridBagConstraints();
-																																																																																																																																						gbc_label_73.anchor = GridBagConstraints.EAST;
-																																																																																																																																						gbc_label_73.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																						gbc_label_73.gridx = 15;
-																																																																																																																																						gbc_label_73.gridy = 8;
-																																																																																																																																						p2_panel.add(label_73, gbc_label_73);
-																																																																																																																																						
-																																																																																																																																								JLabel lblE_2 = new JLabel("E17");
-																																																																																																																																								GridBagConstraints gbc_lblE_2 = new GridBagConstraints();
-																																																																																																																																								gbc_lblE_2.anchor = GridBagConstraints.WEST;
-																																																																																																																																								gbc_lblE_2.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																								gbc_lblE_2.gridx = 1;
-																																																																																																																																								gbc_lblE_2.gridy = 9;
-																																																																																																																																								p2_panel.add(lblE_2, gbc_lblE_2);
-																																																																																																																																								
-																																																																																																																																										tf2_0105 = new JTextField();
-																																																																																																																																										tf2_0105.setColumns(10);
-																																																																																																																																										GridBagConstraints gbc_tf2_0105 = new GridBagConstraints();
-																																																																																																																																										gbc_tf2_0105.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																										gbc_tf2_0105.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																										gbc_tf2_0105.gridx = 2;
-																																																																																																																																										gbc_tf2_0105.gridy = 9;
-																																																																																																																																										p2_panel.add(tf2_0105, gbc_tf2_0105);
-																																																																																																																																										
-																																																																																																																																												JLabel label_13 = new JLabel("+");
-																																																																																																																																												GridBagConstraints gbc_label_13 = new GridBagConstraints();
-																																																																																																																																												gbc_label_13.anchor = GridBagConstraints.EAST;
-																																																																																																																																												gbc_label_13.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																												gbc_label_13.gridx = 3;
-																																																																																																																																												gbc_label_13.gridy = 9;
-																																																																																																																																												p2_panel.add(label_13, gbc_label_13);
-																																																																																																																																												
-																																																																																																																																														tf2_0205 = new JTextField();
-																																																																																																																																														tf2_0205.setColumns(10);
-																																																																																																																																														GridBagConstraints gbc_tf2_0205 = new GridBagConstraints();
-																																																																																																																																														gbc_tf2_0205.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																														gbc_tf2_0205.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																														gbc_tf2_0205.gridx = 4;
-																																																																																																																																														gbc_tf2_0205.gridy = 9;
-																																																																																																																																														p2_panel.add(tf2_0205, gbc_tf2_0205);
-																																																																																																																																														
-																																																																																																																																																JLabel label_24 = new JLabel("+");
-																																																																																																																																																GridBagConstraints gbc_label_24 = new GridBagConstraints();
-																																																																																																																																																gbc_label_24.anchor = GridBagConstraints.EAST;
-																																																																																																																																																gbc_label_24.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																gbc_label_24.gridx = 5;
-																																																																																																																																																gbc_label_24.gridy = 9;
-																																																																																																																																																p2_panel.add(label_24, gbc_label_24);
-																																																																																																																																																
-																																																																																																																																																		tf2_0305 = new JTextField();
-																																																																																																																																																		tf2_0305.setColumns(10);
-																																																																																																																																																		GridBagConstraints gbc_tf2_0305 = new GridBagConstraints();
-																																																																																																																																																		gbc_tf2_0305.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																		gbc_tf2_0305.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																		gbc_tf2_0305.gridx = 6;
-																																																																																																																																																		gbc_tf2_0305.gridy = 9;
-																																																																																																																																																		p2_panel.add(tf2_0305, gbc_tf2_0305);
-																																																																																																																																																		
-																																																																																																																																																				JLabel label_37 = new JLabel("-");
-																																																																																																																																																				GridBagConstraints gbc_label_37 = new GridBagConstraints();
-																																																																																																																																																				gbc_label_37.anchor = GridBagConstraints.EAST;
-																																																																																																																																																				gbc_label_37.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																				gbc_label_37.gridx = 7;
-																																																																																																																																																				gbc_label_37.gridy = 9;
-																																																																																																																																																				p2_panel.add(label_37, gbc_label_37);
-																																																																																																																																																				
-																																																																																																																																																						tf2_0405 = new JTextField();
-																																																																																																																																																						tf2_0405.setColumns(10);
-																																																																																																																																																						GridBagConstraints gbc_tf2_0405 = new GridBagConstraints();
-																																																																																																																																																						gbc_tf2_0405.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																						gbc_tf2_0405.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																						gbc_tf2_0405.gridx = 8;
-																																																																																																																																																						gbc_tf2_0405.gridy = 9;
-																																																																																																																																																						p2_panel.add(tf2_0405, gbc_tf2_0405);
-																																																																																																																																																						
-																																																																																																																																																								JLabel label_50 = new JLabel("-");
-																																																																																																																																																								GridBagConstraints gbc_label_50 = new GridBagConstraints();
-																																																																																																																																																								gbc_label_50.anchor = GridBagConstraints.EAST;
-																																																																																																																																																								gbc_label_50.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																								gbc_label_50.gridx = 9;
-																																																																																																																																																								gbc_label_50.gridy = 9;
-																																																																																																																																																								p2_panel.add(label_50, gbc_label_50);
-																																																																																																																																																								
-																																																																																																																																																										tf2_0505 = new JTextField();
-																																																																																																																																																										tf2_0505.setColumns(10);
-																																																																																																																																																										GridBagConstraints gbc_tf2_0505 = new GridBagConstraints();
-																																																																																																																																																										gbc_tf2_0505.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																										gbc_tf2_0505.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																										gbc_tf2_0505.gridx = 10;
-																																																																																																																																																										gbc_tf2_0505.gridy = 9;
-																																																																																																																																																										p2_panel.add(tf2_0505, gbc_tf2_0505);
-																																																																																																																																																										
-																																																																																																																																																												JLabel label_6 = new JLabel("-");
-																																																																																																																																																												GridBagConstraints gbc_label_6 = new GridBagConstraints();
-																																																																																																																																																												gbc_label_6.anchor = GridBagConstraints.EAST;
-																																																																																																																																																												gbc_label_6.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																												gbc_label_6.gridx = 11;
-																																																																																																																																																												gbc_label_6.gridy = 9;
-																																																																																																																																																												p2_panel.add(label_6, gbc_label_6);
-																																																																																																																																																												
-																																																																																																																																																														tf2_0605 = new JTextField();
-																																																																																																																																																														tf2_0605.setColumns(10);
-																																																																																																																																																														GridBagConstraints gbc_tf2_0605 = new GridBagConstraints();
-																																																																																																																																																														gbc_tf2_0605.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																														gbc_tf2_0605.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																														gbc_tf2_0605.gridx = 12;
-																																																																																																																																																														gbc_tf2_0605.gridy = 9;
-																																																																																																																																																														p2_panel.add(tf2_0605, gbc_tf2_0605);
-																																																																																																																																																														
-																																																																																																																																																																JLabel label_62 = new JLabel("=");
-																																																																																																																																																																GridBagConstraints gbc_label_62 = new GridBagConstraints();
-																																																																																																																																																																gbc_label_62.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																gbc_label_62.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																gbc_label_62.gridx = 13;
-																																																																																																																																																																gbc_label_62.gridy = 9;
-																																																																																																																																																																p2_panel.add(label_62, gbc_label_62);
-																																																																																																																																																																
-																																																																																																																																																																		tf2_0705 = new JTextField();
-																																																																																																																																																																		tf2_0705.setColumns(10);
-																																																																																																																																																																		GridBagConstraints gbc_tf2_0705 = new GridBagConstraints();
-																																																																																																																																																																		gbc_tf2_0705.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																		gbc_tf2_0705.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																		gbc_tf2_0705.gridx = 14;
-																																																																																																																																																																		gbc_tf2_0705.gridy = 9;
-																																																																																																																																																																		p2_panel.add(tf2_0705, gbc_tf2_0705);
-																																																																																																																																																																		
-																																																																																																																																																																				JLabel label_74 = new JLabel("E17");
-																																																																																																																																																																				GridBagConstraints gbc_label_74 = new GridBagConstraints();
-																																																																																																																																																																				gbc_label_74.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																				gbc_label_74.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																				gbc_label_74.gridx = 15;
-																																																																																																																																																																				gbc_label_74.gridy = 9;
-																																																																																																																																																																				p2_panel.add(label_74, gbc_label_74);
-																																																																																																																																																																				
-																																																																																																																																																																						JLabel lblE_3 = new JLabel("E55");
-																																																																																																																																																																						GridBagConstraints gbc_lblE_3 = new GridBagConstraints();
-																																																																																																																																																																						gbc_lblE_3.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																						gbc_lblE_3.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																						gbc_lblE_3.gridx = 1;
-																																																																																																																																																																						gbc_lblE_3.gridy = 10;
-																																																																																																																																																																						p2_panel.add(lblE_3, gbc_lblE_3);
-																																																																																																																																																																						
-																																																																																																																																																																								tf2_0106 = new JTextField();
-																																																																																																																																																																								tf2_0106.setColumns(10);
-																																																																																																																																																																								GridBagConstraints gbc_tf2_0106 = new GridBagConstraints();
-																																																																																																																																																																								gbc_tf2_0106.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																								gbc_tf2_0106.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																								gbc_tf2_0106.gridx = 2;
-																																																																																																																																																																								gbc_tf2_0106.gridy = 10;
-																																																																																																																																																																								p2_panel.add(tf2_0106, gbc_tf2_0106);
-																																																																																																																																																																								
-																																																																																																																																																																										JLabel label_14 = new JLabel("+");
-																																																																																																																																																																										GridBagConstraints gbc_label_14 = new GridBagConstraints();
-																																																																																																																																																																										gbc_label_14.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																										gbc_label_14.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																										gbc_label_14.gridx = 3;
-																																																																																																																																																																										gbc_label_14.gridy = 10;
-																																																																																																																																																																										p2_panel.add(label_14, gbc_label_14);
-																																																																																																																																																																										
-																																																																																																																																																																												tf2_0206 = new JTextField();
-																																																																																																																																																																												tf2_0206.setColumns(10);
-																																																																																																																																																																												GridBagConstraints gbc_tf2_0206 = new GridBagConstraints();
-																																																																																																																																																																												gbc_tf2_0206.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																												gbc_tf2_0206.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																												gbc_tf2_0206.gridx = 4;
-																																																																																																																																																																												gbc_tf2_0206.gridy = 10;
-																																																																																																																																																																												p2_panel.add(tf2_0206, gbc_tf2_0206);
-																																																																																																																																																																												
-																																																																																																																																																																														JLabel label_25 = new JLabel("+");
-																																																																																																																																																																														GridBagConstraints gbc_label_25 = new GridBagConstraints();
-																																																																																																																																																																														gbc_label_25.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																														gbc_label_25.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																														gbc_label_25.gridx = 5;
-																																																																																																																																																																														gbc_label_25.gridy = 10;
-																																																																																																																																																																														p2_panel.add(label_25, gbc_label_25);
-																																																																																																																																																																														
-																																																																																																																																																																																tf2_0306 = new JTextField();
-																																																																																																																																																																																tf2_0306.setColumns(10);
-																																																																																																																																																																																GridBagConstraints gbc_tf2_0306 = new GridBagConstraints();
-																																																																																																																																																																																gbc_tf2_0306.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																gbc_tf2_0306.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																gbc_tf2_0306.gridx = 6;
-																																																																																																																																																																																gbc_tf2_0306.gridy = 10;
-																																																																																																																																																																																p2_panel.add(tf2_0306, gbc_tf2_0306);
-																																																																																																																																																																																
-																																																																																																																																																																																		JLabel label_38 = new JLabel("-");
-																																																																																																																																																																																		GridBagConstraints gbc_label_38 = new GridBagConstraints();
-																																																																																																																																																																																		gbc_label_38.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																		gbc_label_38.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																		gbc_label_38.gridx = 7;
-																																																																																																																																																																																		gbc_label_38.gridy = 10;
-																																																																																																																																																																																		p2_panel.add(label_38, gbc_label_38);
-																																																																																																																																																																																		
-																																																																																																																																																																																				tf2_0406 = new JTextField();
-																																																																																																																																																																																				tf2_0406.setColumns(10);
-																																																																																																																																																																																				GridBagConstraints gbc_tf2_0406 = new GridBagConstraints();
-																																																																																																																																																																																				gbc_tf2_0406.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																				gbc_tf2_0406.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																				gbc_tf2_0406.gridx = 8;
-																																																																																																																																																																																				gbc_tf2_0406.gridy = 10;
-																																																																																																																																																																																				p2_panel.add(tf2_0406, gbc_tf2_0406);
-																																																																																																																																																																																				
-																																																																																																																																																																																						JLabel label_51 = new JLabel("-");
-																																																																																																																																																																																						GridBagConstraints gbc_label_51 = new GridBagConstraints();
-																																																																																																																																																																																						gbc_label_51.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																						gbc_label_51.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																						gbc_label_51.gridx = 9;
-																																																																																																																																																																																						gbc_label_51.gridy = 10;
-																																																																																																																																																																																						p2_panel.add(label_51, gbc_label_51);
-																																																																																																																																																																																						
-																																																																																																																																																																																								tf2_0506 = new JTextField();
-																																																																																																																																																																																								tf2_0506.setColumns(10);
-																																																																																																																																																																																								GridBagConstraints gbc_tf2_0506 = new GridBagConstraints();
-																																																																																																																																																																																								gbc_tf2_0506.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																								gbc_tf2_0506.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																								gbc_tf2_0506.gridx = 10;
-																																																																																																																																																																																								gbc_tf2_0506.gridy = 10;
-																																																																																																																																																																																								p2_panel.add(tf2_0506, gbc_tf2_0506);
-																																																																																																																																																																																								
-																																																																																																																																																																																										JLabel label_7 = new JLabel("-");
-																																																																																																																																																																																										GridBagConstraints gbc_label_7 = new GridBagConstraints();
-																																																																																																																																																																																										gbc_label_7.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																										gbc_label_7.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																										gbc_label_7.gridx = 11;
-																																																																																																																																																																																										gbc_label_7.gridy = 10;
-																																																																																																																																																																																										p2_panel.add(label_7, gbc_label_7);
-																																																																																																																																																																																										
-																																																																																																																																																																																												tf2_0606 = new JTextField();
-																																																																																																																																																																																												tf2_0606.setColumns(10);
-																																																																																																																																																																																												GridBagConstraints gbc_tf2_0606 = new GridBagConstraints();
-																																																																																																																																																																																												gbc_tf2_0606.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																												gbc_tf2_0606.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																												gbc_tf2_0606.gridx = 12;
-																																																																																																																																																																																												gbc_tf2_0606.gridy = 10;
-																																																																																																																																																																																												p2_panel.add(tf2_0606, gbc_tf2_0606);
-																																																																																																																																																																																												
-																																																																																																																																																																																														JLabel label_63 = new JLabel("=");
-																																																																																																																																																																																														GridBagConstraints gbc_label_63 = new GridBagConstraints();
-																																																																																																																																																																																														gbc_label_63.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																														gbc_label_63.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																														gbc_label_63.gridx = 13;
-																																																																																																																																																																																														gbc_label_63.gridy = 10;
-																																																																																																																																																																																														p2_panel.add(label_63, gbc_label_63);
-																																																																																																																																																																																														
-																																																																																																																																																																																																tf2_0706 = new JTextField();
-																																																																																																																																																																																																tf2_0706.setColumns(10);
-																																																																																																																																																																																																GridBagConstraints gbc_tf2_0706 = new GridBagConstraints();
-																																																																																																																																																																																																gbc_tf2_0706.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																gbc_tf2_0706.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																gbc_tf2_0706.gridx = 14;
-																																																																																																																																																																																																gbc_tf2_0706.gridy = 10;
-																																																																																																																																																																																																p2_panel.add(tf2_0706, gbc_tf2_0706);
-																																																																																																																																																																																																
-																																																																																																																																																																																																		JLabel lblE_10 = new JLabel("E55");
-																																																																																																																																																																																																		GridBagConstraints gbc_lblE_10 = new GridBagConstraints();
-																																																																																																																																																																																																		gbc_lblE_10.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																		gbc_lblE_10.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																		gbc_lblE_10.gridx = 15;
-																																																																																																																																																																																																		gbc_lblE_10.gridy = 10;
-																																																																																																																																																																																																		p2_panel.add(lblE_10, gbc_lblE_10);
-																																																																																																																																																																																																		
-																																																																																																																																																																																																		JSeparator separator_5 = new JSeparator();
-																																																																																																																																																																																																		GridBagConstraints gbc_separator_5 = new GridBagConstraints();
-																																																																																																																																																																																																		gbc_separator_5.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																		gbc_separator_5.gridwidth = 15;
-																																																																																																																																																																																																		gbc_separator_5.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																		gbc_separator_5.gridx = 1;
-																																																																																																																																																																																																		gbc_separator_5.gridy = 11;
-																																																																																																																																																																																																		p2_panel.add(separator_5, gbc_separator_5);
-																																																																																																																																																																																																		
-																																																																																																																																																																																																				JLabel lblE_4 = new JLabel("E5");
-																																																																																																																																																																																																				GridBagConstraints gbc_lblE_4 = new GridBagConstraints();
-																																																																																																																																																																																																				gbc_lblE_4.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																				gbc_lblE_4.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																				gbc_lblE_4.gridx = 1;
-																																																																																																																																																																																																				gbc_lblE_4.gridy = 12;
-																																																																																																																																																																																																				p2_panel.add(lblE_4, gbc_lblE_4);
-																																																																																																																																																																																																				
-																																																																																																																																																																																																						tf2_0107 = new JTextField();
-																																																																																																																																																																																																						tf2_0107.setColumns(10);
-																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0107 = new GridBagConstraints();
-																																																																																																																																																																																																						gbc_tf2_0107.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																						gbc_tf2_0107.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																						gbc_tf2_0107.gridx = 2;
-																																																																																																																																																																																																						gbc_tf2_0107.gridy = 12;
-																																																																																																																																																																																																						p2_panel.add(tf2_0107, gbc_tf2_0107);
-																																																																																																																																																																																																						
-																																																																																																																																																																																																								JLabel label_15 = new JLabel("+");
-																																																																																																																																																																																																								GridBagConstraints gbc_label_15 = new GridBagConstraints();
-																																																																																																																																																																																																								gbc_label_15.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																								gbc_label_15.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																								gbc_label_15.gridx = 3;
-																																																																																																																																																																																																								gbc_label_15.gridy = 12;
-																																																																																																																																																																																																								p2_panel.add(label_15, gbc_label_15);
-																																																																																																																																																																																																								
-																																																																																																																																																																																																										tf2_0207 = new JTextField();
-																																																																																																																																																																																																										tf2_0207.setColumns(10);
-																																																																																																																																																																																																										GridBagConstraints gbc_tf2_0207 = new GridBagConstraints();
-																																																																																																																																																																																																										gbc_tf2_0207.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																										gbc_tf2_0207.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																										gbc_tf2_0207.gridx = 4;
-																																																																																																																																																																																																										gbc_tf2_0207.gridy = 12;
-																																																																																																																																																																																																										p2_panel.add(tf2_0207, gbc_tf2_0207);
-																																																																																																																																																																																																										
-																																																																																																																																																																																																												JLabel label_26 = new JLabel("+");
-																																																																																																																																																																																																												GridBagConstraints gbc_label_26 = new GridBagConstraints();
-																																																																																																																																																																																																												gbc_label_26.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																												gbc_label_26.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																												gbc_label_26.gridx = 5;
-																																																																																																																																																																																																												gbc_label_26.gridy = 12;
-																																																																																																																																																																																																												p2_panel.add(label_26, gbc_label_26);
-																																																																																																																																																																																																												
-																																																																																																																																																																																																														tf2_0307 = new JTextField();
-																																																																																																																																																																																																														tf2_0307.setColumns(10);
-																																																																																																																																																																																																														GridBagConstraints gbc_tf2_0307 = new GridBagConstraints();
-																																																																																																																																																																																																														gbc_tf2_0307.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																														gbc_tf2_0307.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																														gbc_tf2_0307.gridx = 6;
-																																																																																																																																																																																																														gbc_tf2_0307.gridy = 12;
-																																																																																																																																																																																																														p2_panel.add(tf2_0307, gbc_tf2_0307);
-																																																																																																																																																																																																														
-																																																																																																																																																																																																																JLabel label_39 = new JLabel("-");
-																																																																																																																																																																																																																GridBagConstraints gbc_label_39 = new GridBagConstraints();
-																																																																																																																																																																																																																gbc_label_39.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																gbc_label_39.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																gbc_label_39.gridx = 7;
-																																																																																																																																																																																																																gbc_label_39.gridy = 12;
-																																																																																																																																																																																																																p2_panel.add(label_39, gbc_label_39);
-																																																																																																																																																																																																																
-																																																																																																																																																																																																																		tf2_0407 = new JTextField();
-																																																																																																																																																																																																																		tf2_0407.setColumns(10);
-																																																																																																																																																																																																																		GridBagConstraints gbc_tf2_0407 = new GridBagConstraints();
-																																																																																																																																																																																																																		gbc_tf2_0407.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																		gbc_tf2_0407.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																		gbc_tf2_0407.gridx = 8;
-																																																																																																																																																																																																																		gbc_tf2_0407.gridy = 12;
-																																																																																																																																																																																																																		p2_panel.add(tf2_0407, gbc_tf2_0407);
-																																																																																																																																																																																																																		
-																																																																																																																																																																																																																				JLabel label_52 = new JLabel("-");
-																																																																																																																																																																																																																				GridBagConstraints gbc_label_52 = new GridBagConstraints();
-																																																																																																																																																																																																																				gbc_label_52.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																				gbc_label_52.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																				gbc_label_52.gridx = 9;
-																																																																																																																																																																																																																				gbc_label_52.gridy = 12;
-																																																																																																																																																																																																																				p2_panel.add(label_52, gbc_label_52);
-																																																																																																																																																																																																																				
-																																																																																																																																																																																																																						tf2_0507 = new JTextField();
-																																																																																																																																																																																																																						tf2_0507.setColumns(10);
-																																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0507 = new GridBagConstraints();
-																																																																																																																																																																																																																						gbc_tf2_0507.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																						gbc_tf2_0507.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																						gbc_tf2_0507.gridx = 10;
-																																																																																																																																																																																																																						gbc_tf2_0507.gridy = 12;
-																																																																																																																																																																																																																						p2_panel.add(tf2_0507, gbc_tf2_0507);
-																																																																																																																																																																																																																						
-																																																																																																																																																																																																																								JLabel label_8 = new JLabel("-");
-																																																																																																																																																																																																																								GridBagConstraints gbc_label_8 = new GridBagConstraints();
-																																																																																																																																																																																																																								gbc_label_8.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																								gbc_label_8.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																								gbc_label_8.gridx = 11;
-																																																																																																																																																																																																																								gbc_label_8.gridy = 12;
-																																																																																																																																																																																																																								p2_panel.add(label_8, gbc_label_8);
-																																																																																																																																																																																																																								
-																																																																																																																																																																																																																										tf2_0607 = new JTextField();
-																																																																																																																																																																																																																										tf2_0607.setColumns(10);
-																																																																																																																																																																																																																										GridBagConstraints gbc_tf2_0607 = new GridBagConstraints();
-																																																																																																																																																																																																																										gbc_tf2_0607.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																										gbc_tf2_0607.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																										gbc_tf2_0607.gridx = 12;
-																																																																																																																																																																																																																										gbc_tf2_0607.gridy = 12;
-																																																																																																																																																																																																																										p2_panel.add(tf2_0607, gbc_tf2_0607);
-																																																																																																																																																																																																																										
-																																																																																																																																																																																																																												JLabel label_64 = new JLabel("=");
-																																																																																																																																																																																																																												GridBagConstraints gbc_label_64 = new GridBagConstraints();
-																																																																																																																																																																																																																												gbc_label_64.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																												gbc_label_64.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																												gbc_label_64.gridx = 13;
-																																																																																																																																																																																																																												gbc_label_64.gridy = 12;
-																																																																																																																																																																																																																												p2_panel.add(label_64, gbc_label_64);
-																																																																																																																																																																																																																												
-																																																																																																																																																																																																																														tf2_0707 = new JTextField();
-																																																																																																																																																																																																																														tf2_0707.setColumns(10);
-																																																																																																																																																																																																																														GridBagConstraints gbc_tf2_0707 = new GridBagConstraints();
-																																																																																																																																																																																																																														gbc_tf2_0707.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																														gbc_tf2_0707.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																														gbc_tf2_0707.gridx = 14;
-																																																																																																																																																																																																																														gbc_tf2_0707.gridy = 12;
-																																																																																																																																																																																																																														p2_panel.add(tf2_0707, gbc_tf2_0707);
-																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																JLabel lblE_16 = new JLabel("E5");
-																																																																																																																																																																																																																																GridBagConstraints gbc_lblE_16 = new GridBagConstraints();
-																																																																																																																																																																																																																																gbc_lblE_16.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																gbc_lblE_16.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																gbc_lblE_16.gridx = 15;
-																																																																																																																																																																																																																																gbc_lblE_16.gridy = 12;
-																																																																																																																																																																																																																																p2_panel.add(lblE_16, gbc_lblE_16);
-																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																		JLabel lblE_5 = new JLabel("E11");
-																																																																																																																																																																																																																																		GridBagConstraints gbc_lblE_5 = new GridBagConstraints();
-																																																																																																																																																																																																																																		gbc_lblE_5.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																																																		gbc_lblE_5.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																		gbc_lblE_5.gridx = 1;
-																																																																																																																																																																																																																																		gbc_lblE_5.gridy = 13;
-																																																																																																																																																																																																																																		p2_panel.add(lblE_5, gbc_lblE_5);
-																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																				tf2_0108 = new JTextField();
-																																																																																																																																																																																																																																				tf2_0108.setColumns(10);
-																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0108 = new GridBagConstraints();
-																																																																																																																																																																																																																																				gbc_tf2_0108.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																				gbc_tf2_0108.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																				gbc_tf2_0108.gridx = 2;
-																																																																																																																																																																																																																																				gbc_tf2_0108.gridy = 13;
-																																																																																																																																																																																																																																				p2_panel.add(tf2_0108, gbc_tf2_0108);
-																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																						JLabel label_16 = new JLabel("+");
-																																																																																																																																																																																																																																						GridBagConstraints gbc_label_16 = new GridBagConstraints();
-																																																																																																																																																																																																																																						gbc_label_16.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																						gbc_label_16.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																						gbc_label_16.gridx = 3;
-																																																																																																																																																																																																																																						gbc_label_16.gridy = 13;
-																																																																																																																																																																																																																																						p2_panel.add(label_16, gbc_label_16);
-																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																								tf2_0208 = new JTextField();
-																																																																																																																																																																																																																																								tf2_0208.setColumns(10);
-																																																																																																																																																																																																																																								GridBagConstraints gbc_tf2_0208 = new GridBagConstraints();
-																																																																																																																																																																																																																																								gbc_tf2_0208.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																								gbc_tf2_0208.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																								gbc_tf2_0208.gridx = 4;
-																																																																																																																																																																																																																																								gbc_tf2_0208.gridy = 13;
-																																																																																																																																																																																																																																								p2_panel.add(tf2_0208, gbc_tf2_0208);
-																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																										JLabel label_27 = new JLabel("+");
-																																																																																																																																																																																																																																										GridBagConstraints gbc_label_27 = new GridBagConstraints();
-																																																																																																																																																																																																																																										gbc_label_27.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																										gbc_label_27.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																										gbc_label_27.gridx = 5;
-																																																																																																																																																																																																																																										gbc_label_27.gridy = 13;
-																																																																																																																																																																																																																																										p2_panel.add(label_27, gbc_label_27);
-																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																												tf2_0308 = new JTextField();
-																																																																																																																																																																																																																																												tf2_0308.setColumns(10);
-																																																																																																																																																																																																																																												GridBagConstraints gbc_tf2_0308 = new GridBagConstraints();
-																																																																																																																																																																																																																																												gbc_tf2_0308.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																												gbc_tf2_0308.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																												gbc_tf2_0308.gridx = 6;
-																																																																																																																																																																																																																																												gbc_tf2_0308.gridy = 13;
-																																																																																																																																																																																																																																												p2_panel.add(tf2_0308, gbc_tf2_0308);
-																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																														JLabel label_40 = new JLabel("-");
-																																																																																																																																																																																																																																														GridBagConstraints gbc_label_40 = new GridBagConstraints();
-																																																																																																																																																																																																																																														gbc_label_40.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																														gbc_label_40.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																														gbc_label_40.gridx = 7;
-																																																																																																																																																																																																																																														gbc_label_40.gridy = 13;
-																																																																																																																																																																																																																																														p2_panel.add(label_40, gbc_label_40);
-																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																tf2_0408 = new JTextField();
-																																																																																																																																																																																																																																																tf2_0408.setColumns(10);
-																																																																																																																																																																																																																																																GridBagConstraints gbc_tf2_0408 = new GridBagConstraints();
-																																																																																																																																																																																																																																																gbc_tf2_0408.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																gbc_tf2_0408.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																gbc_tf2_0408.gridx = 8;
-																																																																																																																																																																																																																																																gbc_tf2_0408.gridy = 13;
-																																																																																																																																																																																																																																																p2_panel.add(tf2_0408, gbc_tf2_0408);
-																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																		JLabel label_53 = new JLabel("-");
-																																																																																																																																																																																																																																																		GridBagConstraints gbc_label_53 = new GridBagConstraints();
-																																																																																																																																																																																																																																																		gbc_label_53.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																		gbc_label_53.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																		gbc_label_53.gridx = 9;
-																																																																																																																																																																																																																																																		gbc_label_53.gridy = 13;
-																																																																																																																																																																																																																																																		p2_panel.add(label_53, gbc_label_53);
-																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																				tf2_0508 = new JTextField();
-																																																																																																																																																																																																																																																				tf2_0508.setColumns(10);
-																																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0508 = new GridBagConstraints();
-																																																																																																																																																																																																																																																				gbc_tf2_0508.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																				gbc_tf2_0508.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																				gbc_tf2_0508.gridx = 10;
-																																																																																																																																																																																																																																																				gbc_tf2_0508.gridy = 13;
-																																																																																																																																																																																																																																																				p2_panel.add(tf2_0508, gbc_tf2_0508);
-																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																						JLabel label_9 = new JLabel("-");
-																																																																																																																																																																																																																																																						GridBagConstraints gbc_label_9 = new GridBagConstraints();
-																																																																																																																																																																																																																																																						gbc_label_9.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																						gbc_label_9.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																						gbc_label_9.gridx = 11;
-																																																																																																																																																																																																																																																						gbc_label_9.gridy = 13;
-																																																																																																																																																																																																																																																						p2_panel.add(label_9, gbc_label_9);
-																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																								tf2_0608 = new JTextField();
-																																																																																																																																																																																																																																																								tf2_0608.setColumns(10);
-																																																																																																																																																																																																																																																								GridBagConstraints gbc_tf2_0608 = new GridBagConstraints();
-																																																																																																																																																																																																																																																								gbc_tf2_0608.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																								gbc_tf2_0608.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																								gbc_tf2_0608.gridx = 12;
-																																																																																																																																																																																																																																																								gbc_tf2_0608.gridy = 13;
-																																																																																																																																																																																																																																																								p2_panel.add(tf2_0608, gbc_tf2_0608);
-																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																										JLabel label_65 = new JLabel("=");
-																																																																																																																																																																																																																																																										GridBagConstraints gbc_label_65 = new GridBagConstraints();
-																																																																																																																																																																																																																																																										gbc_label_65.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																										gbc_label_65.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																										gbc_label_65.gridx = 13;
-																																																																																																																																																																																																																																																										gbc_label_65.gridy = 13;
-																																																																																																																																																																																																																																																										p2_panel.add(label_65, gbc_label_65);
-																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																												tf2_0708 = new JTextField();
-																																																																																																																																																																																																																																																												tf2_0708.setColumns(10);
-																																																																																																																																																																																																																																																												GridBagConstraints gbc_tf2_0708 = new GridBagConstraints();
-																																																																																																																																																																																																																																																												gbc_tf2_0708.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																												gbc_tf2_0708.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																												gbc_tf2_0708.gridx = 14;
-																																																																																																																																																																																																																																																												gbc_tf2_0708.gridy = 13;
-																																																																																																																																																																																																																																																												p2_panel.add(tf2_0708, gbc_tf2_0708);
-																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																														JLabel lblE_15 = new JLabel("E11");
-																																																																																																																																																																																																																																																														GridBagConstraints gbc_lblE_15 = new GridBagConstraints();
-																																																																																																																																																																																																																																																														gbc_lblE_15.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																														gbc_lblE_15.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																														gbc_lblE_15.gridx = 15;
-																																																																																																																																																																																																																																																														gbc_lblE_15.gridy = 13;
-																																																																																																																																																																																																																																																														p2_panel.add(lblE_15, gbc_lblE_15);
-																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																JLabel lblE_6 = new JLabel("E54");
-																																																																																																																																																																																																																																																																GridBagConstraints gbc_lblE_6 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																gbc_lblE_6.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																																																																																gbc_lblE_6.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																gbc_lblE_6.gridx = 1;
-																																																																																																																																																																																																																																																																gbc_lblE_6.gridy = 14;
-																																																																																																																																																																																																																																																																p2_panel.add(lblE_6, gbc_lblE_6);
-																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																		tf2_0109 = new JTextField();
-																																																																																																																																																																																																																																																																		tf2_0109.setColumns(10);
-																																																																																																																																																																																																																																																																		GridBagConstraints gbc_tf2_0109 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																		gbc_tf2_0109.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																		gbc_tf2_0109.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																		gbc_tf2_0109.gridx = 2;
-																																																																																																																																																																																																																																																																		gbc_tf2_0109.gridy = 14;
-																																																																																																																																																																																																																																																																		p2_panel.add(tf2_0109, gbc_tf2_0109);
-																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																				JLabel label_17 = new JLabel("+");
-																																																																																																																																																																																																																																																																				GridBagConstraints gbc_label_17 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																				gbc_label_17.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																				gbc_label_17.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																				gbc_label_17.gridx = 3;
-																																																																																																																																																																																																																																																																				gbc_label_17.gridy = 14;
-																																																																																																																																																																																																																																																																				p2_panel.add(label_17, gbc_label_17);
-																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																						tf2_0209 = new JTextField();
-																																																																																																																																																																																																																																																																						tf2_0209.setColumns(10);
-																																																																																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0209 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																						gbc_tf2_0209.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																						gbc_tf2_0209.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																						gbc_tf2_0209.gridx = 4;
-																																																																																																																																																																																																																																																																						gbc_tf2_0209.gridy = 14;
-																																																																																																																																																																																																																																																																						p2_panel.add(tf2_0209, gbc_tf2_0209);
-																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																								JLabel label_28 = new JLabel("+");
-																																																																																																																																																																																																																																																																								GridBagConstraints gbc_label_28 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																								gbc_label_28.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																								gbc_label_28.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																								gbc_label_28.gridx = 5;
-																																																																																																																																																																																																																																																																								gbc_label_28.gridy = 14;
-																																																																																																																																																																																																																																																																								p2_panel.add(label_28, gbc_label_28);
-																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																										tf2_0309 = new JTextField();
-																																																																																																																																																																																																																																																																										tf2_0309.setColumns(10);
-																																																																																																																																																																																																																																																																										GridBagConstraints gbc_tf2_0309 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																										gbc_tf2_0309.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																										gbc_tf2_0309.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																										gbc_tf2_0309.gridx = 6;
-																																																																																																																																																																																																																																																																										gbc_tf2_0309.gridy = 14;
-																																																																																																																																																																																																																																																																										p2_panel.add(tf2_0309, gbc_tf2_0309);
-																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																												JLabel label_41 = new JLabel("-");
-																																																																																																																																																																																																																																																																												GridBagConstraints gbc_label_41 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																												gbc_label_41.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																												gbc_label_41.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																												gbc_label_41.gridx = 7;
-																																																																																																																																																																																																																																																																												gbc_label_41.gridy = 14;
-																																																																																																																																																																																																																																																																												p2_panel.add(label_41, gbc_label_41);
-																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																														tf2_0409 = new JTextField();
-																																																																																																																																																																																																																																																																														tf2_0409.setColumns(10);
-																																																																																																																																																																																																																																																																														GridBagConstraints gbc_tf2_0409 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																														gbc_tf2_0409.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																														gbc_tf2_0409.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																														gbc_tf2_0409.gridx = 8;
-																																																																																																																																																																																																																																																																														gbc_tf2_0409.gridy = 14;
-																																																																																																																																																																																																																																																																														p2_panel.add(tf2_0409, gbc_tf2_0409);
-																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																JLabel label_54 = new JLabel("-");
-																																																																																																																																																																																																																																																																																GridBagConstraints gbc_label_54 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																gbc_label_54.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																gbc_label_54.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																gbc_label_54.gridx = 9;
-																																																																																																																																																																																																																																																																																gbc_label_54.gridy = 14;
-																																																																																																																																																																																																																																																																																p2_panel.add(label_54, gbc_label_54);
-																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																		tf2_0509 = new JTextField();
-																																																																																																																																																																																																																																																																																		tf2_0509.setColumns(10);
-																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_tf2_0509 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																		gbc_tf2_0509.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																		gbc_tf2_0509.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																		gbc_tf2_0509.gridx = 10;
-																																																																																																																																																																																																																																																																																		gbc_tf2_0509.gridy = 14;
-																																																																																																																																																																																																																																																																																		p2_panel.add(tf2_0509, gbc_tf2_0509);
-																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																				JLabel label_10 = new JLabel("-");
-																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_label_10 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																				gbc_label_10.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																				gbc_label_10.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																				gbc_label_10.gridx = 11;
-																																																																																																																																																																																																																																																																																				gbc_label_10.gridy = 14;
-																																																																																																																																																																																																																																																																																				p2_panel.add(label_10, gbc_label_10);
-																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																						tf2_0609 = new JTextField();
-																																																																																																																																																																																																																																																																																						tf2_0609.setColumns(10);
-																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0609 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																						gbc_tf2_0609.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																						gbc_tf2_0609.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																						gbc_tf2_0609.gridx = 12;
-																																																																																																																																																																																																																																																																																						gbc_tf2_0609.gridy = 14;
-																																																																																																																																																																																																																																																																																						p2_panel.add(tf2_0609, gbc_tf2_0609);
-																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																								JLabel label_66 = new JLabel("=");
-																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_label_66 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																								gbc_label_66.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																								gbc_label_66.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																								gbc_label_66.gridx = 13;
-																																																																																																																																																																																																																																																																																								gbc_label_66.gridy = 14;
-																																																																																																																																																																																																																																																																																								p2_panel.add(label_66, gbc_label_66);
-																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																										tf2_0709 = new JTextField();
-																																																																																																																																																																																																																																																																																										tf2_0709.setColumns(10);
-																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_tf2_0709 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																										gbc_tf2_0709.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																										gbc_tf2_0709.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																										gbc_tf2_0709.gridx = 14;
-																																																																																																																																																																																																																																																																																										gbc_tf2_0709.gridy = 14;
-																																																																																																																																																																																																																																																																																										p2_panel.add(tf2_0709, gbc_tf2_0709);
-																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																												JLabel lblE_14 = new JLabel("E54");
-																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_lblE_14 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																												gbc_lblE_14.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																												gbc_lblE_14.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																												gbc_lblE_14.gridx = 15;
-																																																																																																																																																																																																																																																																																												gbc_lblE_14.gridy = 14;
-																																																																																																																																																																																																																																																																																												p2_panel.add(lblE_14, gbc_lblE_14);
-																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																												JSeparator separator_7 = new JSeparator();
-																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_separator_7 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																												gbc_separator_7.gridwidth = 15;
-																																																																																																																																																																																																																																																																																												gbc_separator_7.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																												gbc_separator_7.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																												gbc_separator_7.gridx = 1;
-																																																																																																																																																																																																																																																																																												gbc_separator_7.gridy = 15;
-																																																																																																																																																																																																																																																																																												p2_panel.add(separator_7, gbc_separator_7);
-																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																														JLabel lblE_7 = new JLabel("E8");
-																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_lblE_7 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																														gbc_lblE_7.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																																																																																																														gbc_lblE_7.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																														gbc_lblE_7.gridx = 1;
-																																																																																																																																																																																																																																																																																														gbc_lblE_7.gridy = 16;
-																																																																																																																																																																																																																																																																																														p2_panel.add(lblE_7, gbc_lblE_7);
-																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																tf2_0110 = new JTextField();
-																																																																																																																																																																																																																																																																																																tf2_0110.setColumns(10);
-																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_tf2_0110 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																gbc_tf2_0110.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																gbc_tf2_0110.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																gbc_tf2_0110.gridx = 2;
-																																																																																																																																																																																																																																																																																																gbc_tf2_0110.gridy = 16;
-																																																																																																																																																																																																																																																																																																p2_panel.add(tf2_0110, gbc_tf2_0110);
-																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																		JLabel label_18 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_label_18 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																		gbc_label_18.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																		gbc_label_18.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																		gbc_label_18.gridx = 3;
-																																																																																																																																																																																																																																																																																																		gbc_label_18.gridy = 16;
-																																																																																																																																																																																																																																																																																																		p2_panel.add(label_18, gbc_label_18);
-																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																				tf2_0210 = new JTextField();
-																																																																																																																																																																																																																																																																																																				tf2_0210.setColumns(10);
-																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0210 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																				gbc_tf2_0210.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																				gbc_tf2_0210.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																				gbc_tf2_0210.gridx = 4;
-																																																																																																																																																																																																																																																																																																				gbc_tf2_0210.gridy = 16;
-																																																																																																																																																																																																																																																																																																				p2_panel.add(tf2_0210, gbc_tf2_0210);
-																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																						JLabel label_29 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_label_29 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																						gbc_label_29.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																						gbc_label_29.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																						gbc_label_29.gridx = 5;
-																																																																																																																																																																																																																																																																																																						gbc_label_29.gridy = 16;
-																																																																																																																																																																																																																																																																																																						p2_panel.add(label_29, gbc_label_29);
-																																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																																								tf2_0310 = new JTextField();
-																																																																																																																																																																																																																																																																																																								tf2_0310.setColumns(10);
-																																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_tf2_0310 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																								gbc_tf2_0310.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																								gbc_tf2_0310.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																								gbc_tf2_0310.gridx = 6;
-																																																																																																																																																																																																																																																																																																								gbc_tf2_0310.gridy = 16;
-																																																																																																																																																																																																																																																																																																								p2_panel.add(tf2_0310, gbc_tf2_0310);
-																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																										JLabel label_42 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_label_42 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																										gbc_label_42.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																										gbc_label_42.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																										gbc_label_42.gridx = 7;
-																																																																																																																																																																																																																																																																																																										gbc_label_42.gridy = 16;
-																																																																																																																																																																																																																																																																																																										p2_panel.add(label_42, gbc_label_42);
-																																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																																												tf2_0410 = new JTextField();
-																																																																																																																																																																																																																																																																																																												tf2_0410.setColumns(10);
-																																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_tf2_0410 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																												gbc_tf2_0410.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																												gbc_tf2_0410.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																												gbc_tf2_0410.gridx = 8;
-																																																																																																																																																																																																																																																																																																												gbc_tf2_0410.gridy = 16;
-																																																																																																																																																																																																																																																																																																												p2_panel.add(tf2_0410, gbc_tf2_0410);
-																																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																																														JLabel label_55 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_label_55 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																														gbc_label_55.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																														gbc_label_55.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																														gbc_label_55.gridx = 9;
-																																																																																																																																																																																																																																																																																																														gbc_label_55.gridy = 16;
-																																																																																																																																																																																																																																																																																																														p2_panel.add(label_55, gbc_label_55);
-																																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																																tf2_0510 = new JTextField();
-																																																																																																																																																																																																																																																																																																																tf2_0510.setColumns(10);
-																																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_tf2_0510 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																gbc_tf2_0510.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																gbc_tf2_0510.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																gbc_tf2_0510.gridx = 10;
-																																																																																																																																																																																																																																																																																																																gbc_tf2_0510.gridy = 16;
-																																																																																																																																																																																																																																																																																																																p2_panel.add(tf2_0510, gbc_tf2_0510);
-																																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																																		JLabel label_32 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_label_32 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																		gbc_label_32.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																		gbc_label_32.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																		gbc_label_32.gridx = 11;
-																																																																																																																																																																																																																																																																																																																		gbc_label_32.gridy = 16;
-																																																																																																																																																																																																																																																																																																																		p2_panel.add(label_32, gbc_label_32);
-																																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																																				tf2_0610 = new JTextField();
-																																																																																																																																																																																																																																																																																																																				tf2_0610.setColumns(10);
-																																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0610 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																				gbc_tf2_0610.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																				gbc_tf2_0610.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																				gbc_tf2_0610.gridx = 12;
-																																																																																																																																																																																																																																																																																																																				gbc_tf2_0610.gridy = 16;
-																																																																																																																																																																																																																																																																																																																				p2_panel.add(tf2_0610, gbc_tf2_0610);
-																																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																																						JLabel label_67 = new JLabel("=");
-																																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_label_67 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																						gbc_label_67.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																						gbc_label_67.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																						gbc_label_67.gridx = 13;
-																																																																																																																																																																																																																																																																																																																						gbc_label_67.gridy = 16;
-																																																																																																																																																																																																																																																																																																																						p2_panel.add(label_67, gbc_label_67);
-																																																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																																																								tf2_0710 = new JTextField();
-																																																																																																																																																																																																																																																																																																																								tf2_0710.setColumns(10);
-																																																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_tf2_0710 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																								gbc_tf2_0710.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																								gbc_tf2_0710.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																								gbc_tf2_0710.gridx = 14;
-																																																																																																																																																																																																																																																																																																																								gbc_tf2_0710.gridy = 16;
-																																																																																																																																																																																																																																																																																																																								p2_panel.add(tf2_0710, gbc_tf2_0710);
-																																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																																										JLabel label_79 = new JLabel("E7");
-																																																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_label_79 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																										gbc_label_79.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																										gbc_label_79.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																										gbc_label_79.gridx = 15;
-																																																																																																																																																																																																																																																																																																																										gbc_label_79.gridy = 16;
-																																																																																																																																																																																																																																																																																																																										p2_panel.add(label_79, gbc_label_79);
-																																																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																																																												JLabel lblE_8 = new JLabel("E14");
-																																																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_lblE_8 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																												gbc_lblE_8.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																																																																																																																																												gbc_lblE_8.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																												gbc_lblE_8.gridx = 1;
-																																																																																																																																																																																																																																																																																																																												gbc_lblE_8.gridy = 17;
-																																																																																																																																																																																																																																																																																																																												p2_panel.add(lblE_8, gbc_lblE_8);
-																																																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																																																														tf2_0111 = new JTextField();
-																																																																																																																																																																																																																																																																																																																														tf2_0111.setColumns(10);
-																																																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_tf2_0111 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																														gbc_tf2_0111.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																														gbc_tf2_0111.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																														gbc_tf2_0111.gridx = 2;
-																																																																																																																																																																																																																																																																																																																														gbc_tf2_0111.gridy = 17;
-																																																																																																																																																																																																																																																																																																																														p2_panel.add(tf2_0111, gbc_tf2_0111);
-																																																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																																																JLabel label_19 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_label_19 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																gbc_label_19.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																gbc_label_19.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																gbc_label_19.gridx = 3;
-																																																																																																																																																																																																																																																																																																																																gbc_label_19.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																p2_panel.add(label_19, gbc_label_19);
-																																																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																																																		tf2_0211 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																		tf2_0211.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_tf2_0211 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0211.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0211.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0211.gridx = 4;
-																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0211.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																		p2_panel.add(tf2_0211, gbc_tf2_0211);
-																																																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																																																				JLabel label_30 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_label_30 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																				gbc_label_30.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																				gbc_label_30.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																				gbc_label_30.gridx = 5;
-																																																																																																																																																																																																																																																																																																																																				gbc_label_30.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																				p2_panel.add(label_30, gbc_label_30);
-																																																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																																																						tf2_0311 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																						tf2_0311.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0311 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0311.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0311.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0311.gridx = 6;
-																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0311.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																						p2_panel.add(tf2_0311, gbc_tf2_0311);
-																																																																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																																																																								JLabel label_43 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_label_43 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																								gbc_label_43.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																								gbc_label_43.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																								gbc_label_43.gridx = 7;
-																																																																																																																																																																																																																																																																																																																																								gbc_label_43.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																								p2_panel.add(label_43, gbc_label_43);
-																																																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																																																										tf2_0411 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																										tf2_0411.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_tf2_0411 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																										gbc_tf2_0411.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																										gbc_tf2_0411.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																										gbc_tf2_0411.gridx = 8;
-																																																																																																																																																																																																																																																																																																																																										gbc_tf2_0411.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																										p2_panel.add(tf2_0411, gbc_tf2_0411);
-																																																																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																																																																												JLabel label_56 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_label_56 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																												gbc_label_56.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																												gbc_label_56.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																												gbc_label_56.gridx = 9;
-																																																																																																																																																																																																																																																																																																																																												gbc_label_56.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																												p2_panel.add(label_56, gbc_label_56);
-																																																																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																																																																														tf2_0511 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																														tf2_0511.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_tf2_0511 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																														gbc_tf2_0511.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																														gbc_tf2_0511.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																														gbc_tf2_0511.gridx = 10;
-																																																																																																																																																																																																																																																																																																																																														gbc_tf2_0511.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																														p2_panel.add(tf2_0511, gbc_tf2_0511);
-																																																																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																																																																JLabel label_34 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_label_34 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																gbc_label_34.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																gbc_label_34.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																																gbc_label_34.gridx = 11;
-																																																																																																																																																																																																																																																																																																																																																gbc_label_34.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																																p2_panel.add(label_34, gbc_label_34);
-																																																																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																																																																		tf2_0611 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																		tf2_0611.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_tf2_0611 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0611.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0611.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0611.gridx = 12;
-																																																																																																																																																																																																																																																																																																																																																		gbc_tf2_0611.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																																		p2_panel.add(tf2_0611, gbc_tf2_0611);
-																																																																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																																																																				JLabel label_68 = new JLabel("=");
-																																																																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_label_68 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																				gbc_label_68.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																				gbc_label_68.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																																				gbc_label_68.gridx = 13;
-																																																																																																																																																																																																																																																																																																																																																				gbc_label_68.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																																				p2_panel.add(label_68, gbc_label_68);
-																																																																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																																																																						tf2_0711 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																						tf2_0711.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_tf2_0711 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0711.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0711.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0711.gridx = 14;
-																																																																																																																																																																																																																																																																																																																																																						gbc_tf2_0711.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																																						p2_panel.add(tf2_0711, gbc_tf2_0711);
-																																																																																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																																																																																								JLabel lblE_13 = new JLabel("E14");
-																																																																																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_lblE_13 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																								gbc_lblE_13.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																								gbc_lblE_13.insets = new Insets(0, 0, 5, 5);
-																																																																																																																																																																																																																																																																																																																																																								gbc_lblE_13.gridx = 15;
-																																																																																																																																																																																																																																																																																																																																																								gbc_lblE_13.gridy = 17;
-																																																																																																																																																																																																																																																																																																																																																								p2_panel.add(lblE_13, gbc_lblE_13);
-																																																																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																																																																										JLabel lblE_9 = new JLabel("E19");
-																																																																																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_lblE_9 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																										gbc_lblE_9.anchor = GridBagConstraints.WEST;
-																																																																																																																																																																																																																																																																																																																																																										gbc_lblE_9.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																										gbc_lblE_9.gridx = 1;
-																																																																																																																																																																																																																																																																																																																																																										gbc_lblE_9.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																										p2_panel.add(lblE_9, gbc_lblE_9);
-																																																																																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																																																																																												tf2_0112 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																												tf2_0112.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_tf2_0112 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0112.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0112.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0112.gridx = 2;
-																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0112.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																												p2_panel.add(tf2_0112, gbc_tf2_0112);
-																																																																																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																																																																																														JLabel label_20 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_label_20 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																														gbc_label_20.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																														gbc_label_20.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																														gbc_label_20.gridx = 3;
-																																																																																																																																																																																																																																																																																																																																																														gbc_label_20.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																														p2_panel.add(label_20, gbc_label_20);
-																																																																																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																																																																																tf2_0212 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																tf2_0212.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_tf2_0212 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0212.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0212.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0212.gridx = 4;
-																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0212.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																p2_panel.add(tf2_0212, gbc_tf2_0212);
-																																																																																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																																																																																		JLabel label_31 = new JLabel("+");
-																																																																																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_label_31 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																		gbc_label_31.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																		gbc_label_31.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																		gbc_label_31.gridx = 5;
-																																																																																																																																																																																																																																																																																																																																																																		gbc_label_31.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																		p2_panel.add(label_31, gbc_label_31);
-																																																																																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																																																																																				tf2_0312 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																				tf2_0312.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0312 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0312.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0312.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0312.gridx = 6;
-																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0312.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																				p2_panel.add(tf2_0312, gbc_tf2_0312);
-																																																																																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																																																																																						JLabel label_44 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_label_44 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																						gbc_label_44.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																						gbc_label_44.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																						gbc_label_44.gridx = 7;
-																																																																																																																																																																																																																																																																																																																																																																						gbc_label_44.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																						p2_panel.add(label_44, gbc_label_44);
-																																																																																																																																																																																																																																																																																																																																																																						
-																																																																																																																																																																																																																																																																																																																																																																								tf2_0412 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																								tf2_0412.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																								GridBagConstraints gbc_tf2_0412 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																								gbc_tf2_0412.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																								gbc_tf2_0412.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																								gbc_tf2_0412.gridx = 8;
-																																																																																																																																																																																																																																																																																																																																																																								gbc_tf2_0412.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																								p2_panel.add(tf2_0412, gbc_tf2_0412);
-																																																																																																																																																																																																																																																																																																																																																																								
-																																																																																																																																																																																																																																																																																																																																																																										JLabel label_57 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																																																										GridBagConstraints gbc_label_57 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																										gbc_label_57.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																										gbc_label_57.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																										gbc_label_57.gridx = 9;
-																																																																																																																																																																																																																																																																																																																																																																										gbc_label_57.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																										p2_panel.add(label_57, gbc_label_57);
-																																																																																																																																																																																																																																																																																																																																																																										
-																																																																																																																																																																																																																																																																																																																																																																												tf2_0512 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																												tf2_0512.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																												GridBagConstraints gbc_tf2_0512 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0512.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0512.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0512.gridx = 10;
-																																																																																																																																																																																																																																																																																																																																																																												gbc_tf2_0512.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																												p2_panel.add(tf2_0512, gbc_tf2_0512);
-																																																																																																																																																																																																																																																																																																																																																																												
-																																																																																																																																																																																																																																																																																																																																																																														JLabel label_45 = new JLabel("-");
-																																																																																																																																																																																																																																																																																																																																																																														GridBagConstraints gbc_label_45 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																														gbc_label_45.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																														gbc_label_45.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																														gbc_label_45.gridx = 11;
-																																																																																																																																																																																																																																																																																																																																																																														gbc_label_45.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																														p2_panel.add(label_45, gbc_label_45);
-																																																																																																																																																																																																																																																																																																																																																																														
-																																																																																																																																																																																																																																																																																																																																																																																tf2_0612 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																																tf2_0612.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																																GridBagConstraints gbc_tf2_0612 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0612.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0612.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0612.gridx = 12;
-																																																																																																																																																																																																																																																																																																																																																																																gbc_tf2_0612.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																																p2_panel.add(tf2_0612, gbc_tf2_0612);
-																																																																																																																																																																																																																																																																																																																																																																																
-																																																																																																																																																																																																																																																																																																																																																																																		JLabel label_69 = new JLabel("=");
-																																																																																																																																																																																																																																																																																																																																																																																		GridBagConstraints gbc_label_69 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																																		gbc_label_69.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																																		gbc_label_69.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																																		gbc_label_69.gridx = 13;
-																																																																																																																																																																																																																																																																																																																																																																																		gbc_label_69.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																																		p2_panel.add(label_69, gbc_label_69);
-																																																																																																																																																																																																																																																																																																																																																																																		
-																																																																																																																																																																																																																																																																																																																																																																																				tf2_0712 = new JTextField();
-																																																																																																																																																																																																																																																																																																																																																																																				tf2_0712.setColumns(10);
-																																																																																																																																																																																																																																																																																																																																																																																				GridBagConstraints gbc_tf2_0712 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0712.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0712.fill = GridBagConstraints.HORIZONTAL;
-																																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0712.gridx = 14;
-																																																																																																																																																																																																																																																																																																																																																																																				gbc_tf2_0712.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																																				p2_panel.add(tf2_0712, gbc_tf2_0712);
-																																																																																																																																																																																																																																																																																																																																																																																				
-																																																																																																																																																																																																																																																																																																																																																																																						JLabel lblE_12 = new JLabel("E19");
-																																																																																																																																																																																																																																																																																																																																																																																						GridBagConstraints gbc_lblE_12 = new GridBagConstraints();
-																																																																																																																																																																																																																																																																																																																																																																																						gbc_lblE_12.anchor = GridBagConstraints.EAST;
-																																																																																																																																																																																																																																																																																																																																																																																						gbc_lblE_12.insets = new Insets(0, 0, 0, 5);
-																																																																																																																																																																																																																																																																																																																																																																																						gbc_lblE_12.gridx = 15;
-																																																																																																																																																																																																																																																																																																																																																																																						gbc_lblE_12.gridy = 18;
-																																																																																																																																																																																																																																																																																																																																																																																						p2_panel.add(lblE_12, gbc_lblE_12);
+
+		// -------------P2----------------------------
+
+		JPanel p2_panel = new JPanel();
+		materialplanningPane.addTab("P2", null, p2_panel, null);
+		GridBagLayout gbl_p2_panel = new GridBagLayout();
+		gbl_p2_panel.columnWidths = new int[] { 0, 0, 85, 0, 85, 0, 85, 10, 85, 0, 85, 0, 85, 0, 85,
+				27, 0, 0 };
+		gbl_p2_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0 };
+		gbl_p2_panel.columnWeights = new double[] { 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0,
+				0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, Double.MIN_VALUE };
+		gbl_p2_panel.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
+		p2_panel.setLayout(gbl_p2_panel);
+
+		JLabel l2_warehousestock = new JLabel("Warehouse stock");
+		GridBagConstraints gbc_l2_warehousestock = new GridBagConstraints();
+		gbc_l2_warehousestock.gridwidth = 3;
+		gbc_l2_warehousestock.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_warehousestock.gridx = 6;
+		gbc_l2_warehousestock.gridy = 1;
+		p2_panel.add(l2_warehousestock, gbc_l2_warehousestock);
+
+		JLabel l2_salesorders = new JLabel("Sales Orders");
+		GridBagConstraints gbc_l2_salesorders = new GridBagConstraints();
+		gbc_l2_salesorders.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_salesorders.gridx = 2;
+		gbc_l2_salesorders.gridy = 2;
+		p2_panel.add(l2_salesorders, gbc_l2_salesorders);
+
+		JLabel l2_follwingperiod = new JLabel("following period");
+		GridBagConstraints gbc_l2_follwingperiod = new GridBagConstraints();
+		gbc_l2_follwingperiod.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_follwingperiod.gridx = 6;
+		gbc_l2_follwingperiod.gridy = 2;
+		p2_panel.add(l2_follwingperiod, gbc_l2_follwingperiod);
+
+		JLabel l2_passedperiod = new JLabel("passed period");
+		GridBagConstraints gbc_l2_passedperiod = new GridBagConstraints();
+		gbc_l2_passedperiod.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_passedperiod.gridx = 8;
+		gbc_l2_passedperiod.gridy = 2;
+		p2_panel.add(l2_passedperiod, gbc_l2_passedperiod);
+
+		JLabel l2_waitingqueue = new JLabel("Waiting queue");
+		GridBagConstraints gbc_l2_waitingqueue = new GridBagConstraints();
+		gbc_l2_waitingqueue.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_waitingqueue.gridx = 10;
+		gbc_l2_waitingqueue.gridy = 2;
+		p2_panel.add(l2_waitingqueue, gbc_l2_waitingqueue);
+
+		JLabel l2_workinprogress = new JLabel("Work in progress");
+		GridBagConstraints gbc_l2_workinprogress = new GridBagConstraints();
+		gbc_l2_workinprogress.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_workinprogress.gridx = 12;
+		gbc_l2_workinprogress.gridy = 2;
+		p2_panel.add(l2_workinprogress, gbc_l2_workinprogress);
+
+		JLabel l2_productionorders = new JLabel("Production orders");
+		GridBagConstraints gbc_l2_productionorders = new GridBagConstraints();
+		gbc_l2_productionorders.insets = new Insets(0, 0, 5, 5);
+		gbc_l2_productionorders.gridx = 14;
+		gbc_l2_productionorders.gridy = 2;
+		p2_panel.add(l2_productionorders, gbc_l2_productionorders);
+
+		JLabel lblNewLabel = new JLabel("P2");
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.anchor = GridBagConstraints.WEST;
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel.gridx = 1;
+		gbc_lblNewLabel.gridy = 3;
+		p2_panel.add(lblNewLabel, gbc_lblNewLabel);
+
+		tf2_0101 = new JTextField();
+		tf2_0101.setColumns(10);
+		GridBagConstraints gbc_tf2_0101 = new GridBagConstraints();
+		gbc_tf2_0101.anchor = GridBagConstraints.NORTH;
+		gbc_tf2_0101.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0101.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0101.gridx = 2;
+		gbc_tf2_0101.gridy = 3;
+		p2_panel.add(tf2_0101, gbc_tf2_0101);
+
+		JLabel lblNewLabel_2 = new JLabel("+");
+		GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
+		gbc_lblNewLabel_2.gridwidth = 3;
+		gbc_lblNewLabel_2.fill = GridBagConstraints.VERTICAL;
+		gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel_2.gridx = 3;
+		gbc_lblNewLabel_2.gridy = 3;
+		p2_panel.add(lblNewLabel_2, gbc_lblNewLabel_2);
+
+		tf2_0301 = new JTextField();
+		GridBagConstraints gbc_tf2_0301 = new GridBagConstraints();
+		gbc_tf2_0301.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0301.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0301.gridx = 6;
+		gbc_tf2_0301.gridy = 3;
+		p2_panel.add(tf2_0301, gbc_tf2_0301);
+		tf2_0301.setColumns(10);
+
+		JLabel label_33 = new JLabel("-");
+		GridBagConstraints gbc_label_33 = new GridBagConstraints();
+		gbc_label_33.anchor = GridBagConstraints.EAST;
+		gbc_label_33.insets = new Insets(0, 0, 5, 5);
+		gbc_label_33.gridx = 7;
+		gbc_label_33.gridy = 3;
+		p2_panel.add(label_33, gbc_label_33);
+
+		tf2_0401 = new JTextField();
+		tf2_0401.setColumns(10);
+		GridBagConstraints gbc_tf2_0401 = new GridBagConstraints();
+		gbc_tf2_0401.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0401.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0401.gridx = 8;
+		gbc_tf2_0401.gridy = 3;
+		p2_panel.add(tf2_0401, gbc_tf2_0401);
+
+		JLabel label_47 = new JLabel("-");
+		GridBagConstraints gbc_label_47 = new GridBagConstraints();
+		gbc_label_47.anchor = GridBagConstraints.EAST;
+		gbc_label_47.insets = new Insets(0, 0, 5, 5);
+		gbc_label_47.gridx = 9;
+		gbc_label_47.gridy = 3;
+		p2_panel.add(label_47, gbc_label_47);
+
+		tf2_0501 = new JTextField();
+		tf2_0501.setColumns(10);
+		GridBagConstraints gbc_tf2_0501 = new GridBagConstraints();
+		gbc_tf2_0501.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0501.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0501.gridx = 10;
+		gbc_tf2_0501.gridy = 3;
+		p2_panel.add(tf2_0501, gbc_tf2_0501);
+
+		JLabel label_2 = new JLabel("-");
+		GridBagConstraints gbc_label_2 = new GridBagConstraints();
+		gbc_label_2.anchor = GridBagConstraints.EAST;
+		gbc_label_2.insets = new Insets(0, 0, 5, 5);
+		gbc_label_2.gridx = 11;
+		gbc_label_2.gridy = 3;
+		p2_panel.add(label_2, gbc_label_2);
+
+		tf2_0601 = new JTextField();
+		tf2_0601.setColumns(10);
+		GridBagConstraints gbc_tf2_0601 = new GridBagConstraints();
+		gbc_tf2_0601.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0601.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0601.gridx = 12;
+		gbc_tf2_0601.gridy = 3;
+		p2_panel.add(tf2_0601, gbc_tf2_0601);
+
+		JLabel label_58 = new JLabel("=");
+		GridBagConstraints gbc_label_58 = new GridBagConstraints();
+		gbc_label_58.anchor = GridBagConstraints.EAST;
+		gbc_label_58.insets = new Insets(0, 0, 5, 5);
+		gbc_label_58.gridx = 13;
+		gbc_label_58.gridy = 3;
+		p2_panel.add(label_58, gbc_label_58);
+
+		tf2_0701 = new JTextField();
+		tf2_0701.setColumns(10);
+		GridBagConstraints gbc_tf2_0701 = new GridBagConstraints();
+		gbc_tf2_0701.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0701.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0701.gridx = 14;
+		gbc_tf2_0701.gridy = 3;
+		p2_panel.add(tf2_0701, gbc_tf2_0701);
+
+		JLabel lblP_2 = new JLabel("P2");
+		GridBagConstraints gbc_lblP_2 = new GridBagConstraints();
+		gbc_lblP_2.anchor = GridBagConstraints.EAST;
+		gbc_lblP_2.insets = new Insets(0, 0, 5, 5);
+		gbc_lblP_2.gridx = 15;
+		gbc_lblP_2.gridy = 3;
+		p2_panel.add(lblP_2, gbc_lblP_2);
+
+		JSeparator separator_4 = new JSeparator();
+		GridBagConstraints gbc_separator_4 = new GridBagConstraints();
+		gbc_separator_4.fill = GridBagConstraints.HORIZONTAL;
+		gbc_separator_4.gridwidth = 15;
+		gbc_separator_4.insets = new Insets(0, 0, 5, 5);
+		gbc_separator_4.gridx = 1;
+		gbc_separator_4.gridy = 4;
+		p2_panel.add(separator_4, gbc_separator_4);
+
+		JLabel lblNewLabel_1 = new JLabel("E26");
+		GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
+		gbc_lblNewLabel_1.anchor = GridBagConstraints.WEST;
+		gbc_lblNewLabel_1.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel_1.gridx = 1;
+		gbc_lblNewLabel_1.gridy = 5;
+		p2_panel.add(lblNewLabel_1, gbc_lblNewLabel_1);
+
+		tf2_0102 = new JTextField();
+		GridBagConstraints gbc_tf2_0102 = new GridBagConstraints();
+		gbc_tf2_0102.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0102.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0102.gridx = 2;
+		gbc_tf2_0102.gridy = 5;
+		p2_panel.add(tf2_0102, gbc_tf2_0102);
+		tf2_0102.setColumns(10);
+
+		JLabel lblNewLabel_4 = new JLabel("+");
+		GridBagConstraints gbc_lblNewLabel_4 = new GridBagConstraints();
+		gbc_lblNewLabel_4.anchor = GridBagConstraints.EAST;
+		gbc_lblNewLabel_4.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel_4.gridx = 3;
+		gbc_lblNewLabel_4.gridy = 5;
+		p2_panel.add(lblNewLabel_4, gbc_lblNewLabel_4);
+
+		tf2_0202 = new JTextField();
+		tf2_0202.setColumns(10);
+		GridBagConstraints gbc_tf2_0202 = new GridBagConstraints();
+		gbc_tf2_0202.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0202.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0202.gridx = 4;
+		gbc_tf2_0202.gridy = 5;
+		p2_panel.add(tf2_0202, gbc_tf2_0202);
+
+		JLabel label_21 = new JLabel("+");
+		GridBagConstraints gbc_label_21 = new GridBagConstraints();
+		gbc_label_21.anchor = GridBagConstraints.EAST;
+		gbc_label_21.insets = new Insets(0, 0, 5, 5);
+		gbc_label_21.gridx = 5;
+		gbc_label_21.gridy = 5;
+		p2_panel.add(label_21, gbc_label_21);
+
+		tf2_0302 = new JTextField();
+		tf2_0302.setColumns(10);
+		GridBagConstraints gbc_tf2_0302 = new GridBagConstraints();
+		gbc_tf2_0302.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0302.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0302.gridx = 6;
+		gbc_tf2_0302.gridy = 5;
+		p2_panel.add(tf2_0302, gbc_tf2_0302);
+
+		JLabel label = new JLabel("-");
+		GridBagConstraints gbc_label = new GridBagConstraints();
+		gbc_label.insets = new Insets(0, 0, 5, 5);
+		gbc_label.anchor = GridBagConstraints.EAST;
+		gbc_label.gridx = 7;
+		gbc_label.gridy = 5;
+		p2_panel.add(label, gbc_label);
+
+		tf2_0402 = new JTextField();
+		tf2_0402.setColumns(10);
+		GridBagConstraints gbc_tf2_0402 = new GridBagConstraints();
+		gbc_tf2_0402.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0402.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0402.gridx = 8;
+		gbc_tf2_0402.gridy = 5;
+		p2_panel.add(tf2_0402, gbc_tf2_0402);
+
+		JLabel label_46 = new JLabel("-");
+		GridBagConstraints gbc_label_46 = new GridBagConstraints();
+		gbc_label_46.anchor = GridBagConstraints.EAST;
+		gbc_label_46.insets = new Insets(0, 0, 5, 5);
+		gbc_label_46.gridx = 9;
+		gbc_label_46.gridy = 5;
+		p2_panel.add(label_46, gbc_label_46);
+
+		tf2_0502 = new JTextField();
+		tf2_0502.setColumns(10);
+		GridBagConstraints gbc_tf2_0502 = new GridBagConstraints();
+		gbc_tf2_0502.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0502.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0502.gridx = 10;
+		gbc_tf2_0502.gridy = 5;
+		p2_panel.add(tf2_0502, gbc_tf2_0502);
+
+		JLabel label_3 = new JLabel("-");
+		GridBagConstraints gbc_label_3 = new GridBagConstraints();
+		gbc_label_3.anchor = GridBagConstraints.EAST;
+		gbc_label_3.insets = new Insets(0, 0, 5, 5);
+		gbc_label_3.gridx = 11;
+		gbc_label_3.gridy = 5;
+		p2_panel.add(label_3, gbc_label_3);
+
+		tf2_0602 = new JTextField();
+		tf2_0602.setColumns(10);
+		GridBagConstraints gbc_tf2_0602 = new GridBagConstraints();
+		gbc_tf2_0602.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0602.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0602.gridx = 12;
+		gbc_tf2_0602.gridy = 5;
+		p2_panel.add(tf2_0602, gbc_tf2_0602);
+
+		JLabel label_59 = new JLabel("=");
+		GridBagConstraints gbc_label_59 = new GridBagConstraints();
+		gbc_label_59.anchor = GridBagConstraints.EAST;
+		gbc_label_59.insets = new Insets(0, 0, 5, 5);
+		gbc_label_59.gridx = 13;
+		gbc_label_59.gridy = 5;
+		p2_panel.add(label_59, gbc_label_59);
+
+		tf2_0702 = new JTextField();
+		tf2_0702.setColumns(10);
+		GridBagConstraints gbc_tf2_0702 = new GridBagConstraints();
+		gbc_tf2_0702.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0702.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0702.gridx = 14;
+		gbc_tf2_0702.gridy = 5;
+		p2_panel.add(tf2_0702, gbc_tf2_0702);
+
+		JLabel label_71 = new JLabel("E26");
+		GridBagConstraints gbc_label_71 = new GridBagConstraints();
+		gbc_label_71.anchor = GridBagConstraints.EAST;
+		gbc_label_71.insets = new Insets(0, 0, 5, 5);
+		gbc_label_71.gridx = 15;
+		gbc_label_71.gridy = 5;
+		p2_panel.add(label_71, gbc_label_71);
+
+		JLabel lblE = new JLabel("E56");
+		GridBagConstraints gbc_lblE = new GridBagConstraints();
+		gbc_lblE.anchor = GridBagConstraints.WEST;
+		gbc_lblE.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE.gridx = 1;
+		gbc_lblE.gridy = 6;
+		p2_panel.add(lblE, gbc_lblE);
+
+		tf2_0103 = new JTextField();
+		tf2_0103.setColumns(10);
+		GridBagConstraints gbc_tf2_0103 = new GridBagConstraints();
+		gbc_tf2_0103.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0103.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0103.gridx = 2;
+		gbc_tf2_0103.gridy = 6;
+		p2_panel.add(tf2_0103, gbc_tf2_0103);
+
+		JLabel label_11 = new JLabel("+");
+		GridBagConstraints gbc_label_11 = new GridBagConstraints();
+		gbc_label_11.anchor = GridBagConstraints.EAST;
+		gbc_label_11.insets = new Insets(0, 0, 5, 5);
+		gbc_label_11.gridx = 3;
+		gbc_label_11.gridy = 6;
+		p2_panel.add(label_11, gbc_label_11);
+
+		tf2_0203 = new JTextField();
+		tf2_0203.setColumns(10);
+		GridBagConstraints gbc_tf2_0203 = new GridBagConstraints();
+		gbc_tf2_0203.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0203.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0203.gridx = 4;
+		gbc_tf2_0203.gridy = 6;
+		p2_panel.add(tf2_0203, gbc_tf2_0203);
+
+		JLabel label_22 = new JLabel("+");
+		GridBagConstraints gbc_label_22 = new GridBagConstraints();
+		gbc_label_22.anchor = GridBagConstraints.EAST;
+		gbc_label_22.insets = new Insets(0, 0, 5, 5);
+		gbc_label_22.gridx = 5;
+		gbc_label_22.gridy = 6;
+		p2_panel.add(label_22, gbc_label_22);
+
+		tf2_0303 = new JTextField();
+		tf2_0303.setColumns(10);
+		GridBagConstraints gbc_tf2_0303 = new GridBagConstraints();
+		gbc_tf2_0303.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0303.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0303.gridx = 6;
+		gbc_tf2_0303.gridy = 6;
+		p2_panel.add(tf2_0303, gbc_tf2_0303);
+
+		JLabel label_35 = new JLabel("-");
+		GridBagConstraints gbc_label_35 = new GridBagConstraints();
+		gbc_label_35.anchor = GridBagConstraints.EAST;
+		gbc_label_35.insets = new Insets(0, 0, 5, 5);
+		gbc_label_35.gridx = 7;
+		gbc_label_35.gridy = 6;
+		p2_panel.add(label_35, gbc_label_35);
+
+		tf2_0403 = new JTextField();
+		tf2_0403.setColumns(10);
+		GridBagConstraints gbc_tf2_0403 = new GridBagConstraints();
+		gbc_tf2_0403.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0403.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0403.gridx = 8;
+		gbc_tf2_0403.gridy = 6;
+		p2_panel.add(tf2_0403, gbc_tf2_0403);
+
+		JLabel label_48 = new JLabel("-");
+		GridBagConstraints gbc_label_48 = new GridBagConstraints();
+		gbc_label_48.anchor = GridBagConstraints.EAST;
+		gbc_label_48.insets = new Insets(0, 0, 5, 5);
+		gbc_label_48.gridx = 9;
+		gbc_label_48.gridy = 6;
+		p2_panel.add(label_48, gbc_label_48);
+
+		tf2_0503 = new JTextField();
+		tf2_0503.setColumns(10);
+		GridBagConstraints gbc_tf2_0503 = new GridBagConstraints();
+		gbc_tf2_0503.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0503.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0503.gridx = 10;
+		gbc_tf2_0503.gridy = 6;
+		p2_panel.add(tf2_0503, gbc_tf2_0503);
+
+		JLabel label_4 = new JLabel("-");
+		GridBagConstraints gbc_label_4 = new GridBagConstraints();
+		gbc_label_4.anchor = GridBagConstraints.EAST;
+		gbc_label_4.insets = new Insets(0, 0, 5, 5);
+		gbc_label_4.gridx = 11;
+		gbc_label_4.gridy = 6;
+		p2_panel.add(label_4, gbc_label_4);
+
+		tf2_0603 = new JTextField();
+		tf2_0603.setColumns(10);
+		GridBagConstraints gbc_tf2_0603 = new GridBagConstraints();
+		gbc_tf2_0603.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0603.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0603.gridx = 12;
+		gbc_tf2_0603.gridy = 6;
+		p2_panel.add(tf2_0603, gbc_tf2_0603);
+
+		JLabel label_60 = new JLabel("=");
+		GridBagConstraints gbc_label_60 = new GridBagConstraints();
+		gbc_label_60.anchor = GridBagConstraints.EAST;
+		gbc_label_60.insets = new Insets(0, 0, 5, 5);
+		gbc_label_60.gridx = 13;
+		gbc_label_60.gridy = 6;
+		p2_panel.add(label_60, gbc_label_60);
+
+		tf2_0703 = new JTextField();
+		tf2_0703.setColumns(10);
+		GridBagConstraints gbc_tf2_0703 = new GridBagConstraints();
+		gbc_tf2_0703.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0703.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0703.gridx = 14;
+		gbc_tf2_0703.gridy = 6;
+		p2_panel.add(tf2_0703, gbc_tf2_0703);
+
+		JLabel lblE_11 = new JLabel("E56");
+		GridBagConstraints gbc_lblE_11 = new GridBagConstraints();
+		gbc_lblE_11.anchor = GridBagConstraints.EAST;
+		gbc_lblE_11.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_11.gridx = 15;
+		gbc_lblE_11.gridy = 6;
+		p2_panel.add(lblE_11, gbc_lblE_11);
+
+		JSeparator separator_6 = new JSeparator();
+		GridBagConstraints gbc_separator_6 = new GridBagConstraints();
+		gbc_separator_6.fill = GridBagConstraints.HORIZONTAL;
+		gbc_separator_6.gridwidth = 15;
+		gbc_separator_6.insets = new Insets(0, 0, 5, 5);
+		gbc_separator_6.gridx = 1;
+		gbc_separator_6.gridy = 7;
+		p2_panel.add(separator_6, gbc_separator_6);
+
+		JLabel lblE_1 = new JLabel("E16");
+		GridBagConstraints gbc_lblE_1 = new GridBagConstraints();
+		gbc_lblE_1.anchor = GridBagConstraints.WEST;
+		gbc_lblE_1.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_1.gridx = 1;
+		gbc_lblE_1.gridy = 8;
+		p2_panel.add(lblE_1, gbc_lblE_1);
+
+		tf2_0104 = new JTextField();
+		tf2_0104.setColumns(10);
+		GridBagConstraints gbc_tf2_0104 = new GridBagConstraints();
+		gbc_tf2_0104.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0104.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0104.gridx = 2;
+		gbc_tf2_0104.gridy = 8;
+		p2_panel.add(tf2_0104, gbc_tf2_0104);
+
+		JLabel label_12 = new JLabel("+");
+		GridBagConstraints gbc_label_12 = new GridBagConstraints();
+		gbc_label_12.anchor = GridBagConstraints.EAST;
+		gbc_label_12.insets = new Insets(0, 0, 5, 5);
+		gbc_label_12.gridx = 3;
+		gbc_label_12.gridy = 8;
+		p2_panel.add(label_12, gbc_label_12);
+
+		tf2_0204 = new JTextField();
+		tf2_0204.setColumns(10);
+		GridBagConstraints gbc_tf2_0204 = new GridBagConstraints();
+		gbc_tf2_0204.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0204.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0204.gridx = 4;
+		gbc_tf2_0204.gridy = 8;
+		p2_panel.add(tf2_0204, gbc_tf2_0204);
+
+		JLabel label_23 = new JLabel("+");
+		GridBagConstraints gbc_label_23 = new GridBagConstraints();
+		gbc_label_23.anchor = GridBagConstraints.EAST;
+		gbc_label_23.insets = new Insets(0, 0, 5, 5);
+		gbc_label_23.gridx = 5;
+		gbc_label_23.gridy = 8;
+		p2_panel.add(label_23, gbc_label_23);
+
+		tf2_0304 = new JTextField();
+		tf2_0304.setColumns(10);
+		GridBagConstraints gbc_tf2_0304 = new GridBagConstraints();
+		gbc_tf2_0304.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0304.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0304.gridx = 6;
+		gbc_tf2_0304.gridy = 8;
+		p2_panel.add(tf2_0304, gbc_tf2_0304);
+
+		JLabel label_36 = new JLabel("-");
+		GridBagConstraints gbc_label_36 = new GridBagConstraints();
+		gbc_label_36.anchor = GridBagConstraints.EAST;
+		gbc_label_36.insets = new Insets(0, 0, 5, 5);
+		gbc_label_36.gridx = 7;
+		gbc_label_36.gridy = 8;
+		p2_panel.add(label_36, gbc_label_36);
+
+		tf2_0404 = new JTextField();
+		tf2_0404.setColumns(10);
+		GridBagConstraints gbc_tf2_0404 = new GridBagConstraints();
+		gbc_tf2_0404.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0404.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0404.gridx = 8;
+		gbc_tf2_0404.gridy = 8;
+		p2_panel.add(tf2_0404, gbc_tf2_0404);
+
+		JLabel label_49 = new JLabel("-");
+		GridBagConstraints gbc_label_49 = new GridBagConstraints();
+		gbc_label_49.anchor = GridBagConstraints.EAST;
+		gbc_label_49.insets = new Insets(0, 0, 5, 5);
+		gbc_label_49.gridx = 9;
+		gbc_label_49.gridy = 8;
+		p2_panel.add(label_49, gbc_label_49);
+
+		tf2_0504 = new JTextField();
+		tf2_0504.setColumns(10);
+		GridBagConstraints gbc_tf2_0504 = new GridBagConstraints();
+		gbc_tf2_0504.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0504.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0504.gridx = 10;
+		gbc_tf2_0504.gridy = 8;
+		p2_panel.add(tf2_0504, gbc_tf2_0504);
+
+		JLabel label_5 = new JLabel("-");
+		GridBagConstraints gbc_label_5 = new GridBagConstraints();
+		gbc_label_5.anchor = GridBagConstraints.EAST;
+		gbc_label_5.insets = new Insets(0, 0, 5, 5);
+		gbc_label_5.gridx = 11;
+		gbc_label_5.gridy = 8;
+		p2_panel.add(label_5, gbc_label_5);
+
+		tf2_0604 = new JTextField();
+		tf2_0604.setColumns(10);
+		GridBagConstraints gbc_tf2_0604 = new GridBagConstraints();
+		gbc_tf2_0604.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0604.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0604.gridx = 12;
+		gbc_tf2_0604.gridy = 8;
+		p2_panel.add(tf2_0604, gbc_tf2_0604);
+
+		JLabel label_61 = new JLabel("=");
+		GridBagConstraints gbc_label_61 = new GridBagConstraints();
+		gbc_label_61.anchor = GridBagConstraints.EAST;
+		gbc_label_61.insets = new Insets(0, 0, 5, 5);
+		gbc_label_61.gridx = 13;
+		gbc_label_61.gridy = 8;
+		p2_panel.add(label_61, gbc_label_61);
+
+		tf2_0704 = new JTextField();
+		tf2_0704.setColumns(10);
+		GridBagConstraints gbc_tf2_0704 = new GridBagConstraints();
+		gbc_tf2_0704.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0704.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0704.gridx = 14;
+		gbc_tf2_0704.gridy = 8;
+		p2_panel.add(tf2_0704, gbc_tf2_0704);
+
+		JLabel label_73 = new JLabel("E16");
+		GridBagConstraints gbc_label_73 = new GridBagConstraints();
+		gbc_label_73.anchor = GridBagConstraints.EAST;
+		gbc_label_73.insets = new Insets(0, 0, 5, 5);
+		gbc_label_73.gridx = 15;
+		gbc_label_73.gridy = 8;
+		p2_panel.add(label_73, gbc_label_73);
+
+		JLabel lblE_2 = new JLabel("E17");
+		GridBagConstraints gbc_lblE_2 = new GridBagConstraints();
+		gbc_lblE_2.anchor = GridBagConstraints.WEST;
+		gbc_lblE_2.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_2.gridx = 1;
+		gbc_lblE_2.gridy = 9;
+		p2_panel.add(lblE_2, gbc_lblE_2);
+
+		tf2_0105 = new JTextField();
+		tf2_0105.setColumns(10);
+		GridBagConstraints gbc_tf2_0105 = new GridBagConstraints();
+		gbc_tf2_0105.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0105.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0105.gridx = 2;
+		gbc_tf2_0105.gridy = 9;
+		p2_panel.add(tf2_0105, gbc_tf2_0105);
+
+		JLabel label_13 = new JLabel("+");
+		GridBagConstraints gbc_label_13 = new GridBagConstraints();
+		gbc_label_13.anchor = GridBagConstraints.EAST;
+		gbc_label_13.insets = new Insets(0, 0, 5, 5);
+		gbc_label_13.gridx = 3;
+		gbc_label_13.gridy = 9;
+		p2_panel.add(label_13, gbc_label_13);
+
+		tf2_0205 = new JTextField();
+		tf2_0205.setColumns(10);
+		GridBagConstraints gbc_tf2_0205 = new GridBagConstraints();
+		gbc_tf2_0205.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0205.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0205.gridx = 4;
+		gbc_tf2_0205.gridy = 9;
+		p2_panel.add(tf2_0205, gbc_tf2_0205);
+
+		JLabel label_24 = new JLabel("+");
+		GridBagConstraints gbc_label_24 = new GridBagConstraints();
+		gbc_label_24.anchor = GridBagConstraints.EAST;
+		gbc_label_24.insets = new Insets(0, 0, 5, 5);
+		gbc_label_24.gridx = 5;
+		gbc_label_24.gridy = 9;
+		p2_panel.add(label_24, gbc_label_24);
+
+		tf2_0305 = new JTextField();
+		tf2_0305.setColumns(10);
+		GridBagConstraints gbc_tf2_0305 = new GridBagConstraints();
+		gbc_tf2_0305.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0305.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0305.gridx = 6;
+		gbc_tf2_0305.gridy = 9;
+		p2_panel.add(tf2_0305, gbc_tf2_0305);
+
+		JLabel label_37 = new JLabel("-");
+		GridBagConstraints gbc_label_37 = new GridBagConstraints();
+		gbc_label_37.anchor = GridBagConstraints.EAST;
+		gbc_label_37.insets = new Insets(0, 0, 5, 5);
+		gbc_label_37.gridx = 7;
+		gbc_label_37.gridy = 9;
+		p2_panel.add(label_37, gbc_label_37);
+
+		tf2_0405 = new JTextField();
+		tf2_0405.setColumns(10);
+		GridBagConstraints gbc_tf2_0405 = new GridBagConstraints();
+		gbc_tf2_0405.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0405.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0405.gridx = 8;
+		gbc_tf2_0405.gridy = 9;
+		p2_panel.add(tf2_0405, gbc_tf2_0405);
+
+		JLabel label_50 = new JLabel("-");
+		GridBagConstraints gbc_label_50 = new GridBagConstraints();
+		gbc_label_50.anchor = GridBagConstraints.EAST;
+		gbc_label_50.insets = new Insets(0, 0, 5, 5);
+		gbc_label_50.gridx = 9;
+		gbc_label_50.gridy = 9;
+		p2_panel.add(label_50, gbc_label_50);
+
+		tf2_0505 = new JTextField();
+		tf2_0505.setColumns(10);
+		GridBagConstraints gbc_tf2_0505 = new GridBagConstraints();
+		gbc_tf2_0505.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0505.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0505.gridx = 10;
+		gbc_tf2_0505.gridy = 9;
+		p2_panel.add(tf2_0505, gbc_tf2_0505);
+
+		JLabel label_6 = new JLabel("-");
+		GridBagConstraints gbc_label_6 = new GridBagConstraints();
+		gbc_label_6.anchor = GridBagConstraints.EAST;
+		gbc_label_6.insets = new Insets(0, 0, 5, 5);
+		gbc_label_6.gridx = 11;
+		gbc_label_6.gridy = 9;
+		p2_panel.add(label_6, gbc_label_6);
+
+		tf2_0605 = new JTextField();
+		tf2_0605.setColumns(10);
+		GridBagConstraints gbc_tf2_0605 = new GridBagConstraints();
+		gbc_tf2_0605.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0605.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0605.gridx = 12;
+		gbc_tf2_0605.gridy = 9;
+		p2_panel.add(tf2_0605, gbc_tf2_0605);
+
+		JLabel label_62 = new JLabel("=");
+		GridBagConstraints gbc_label_62 = new GridBagConstraints();
+		gbc_label_62.anchor = GridBagConstraints.EAST;
+		gbc_label_62.insets = new Insets(0, 0, 5, 5);
+		gbc_label_62.gridx = 13;
+		gbc_label_62.gridy = 9;
+		p2_panel.add(label_62, gbc_label_62);
+
+		tf2_0705 = new JTextField();
+		tf2_0705.setColumns(10);
+		GridBagConstraints gbc_tf2_0705 = new GridBagConstraints();
+		gbc_tf2_0705.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0705.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0705.gridx = 14;
+		gbc_tf2_0705.gridy = 9;
+		p2_panel.add(tf2_0705, gbc_tf2_0705);
+
+		JLabel label_74 = new JLabel("E17");
+		GridBagConstraints gbc_label_74 = new GridBagConstraints();
+		gbc_label_74.anchor = GridBagConstraints.EAST;
+		gbc_label_74.insets = new Insets(0, 0, 5, 5);
+		gbc_label_74.gridx = 15;
+		gbc_label_74.gridy = 9;
+		p2_panel.add(label_74, gbc_label_74);
+
+		JLabel lblE_3 = new JLabel("E55");
+		GridBagConstraints gbc_lblE_3 = new GridBagConstraints();
+		gbc_lblE_3.anchor = GridBagConstraints.WEST;
+		gbc_lblE_3.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_3.gridx = 1;
+		gbc_lblE_3.gridy = 10;
+		p2_panel.add(lblE_3, gbc_lblE_3);
+
+		tf2_0106 = new JTextField();
+		tf2_0106.setColumns(10);
+		GridBagConstraints gbc_tf2_0106 = new GridBagConstraints();
+		gbc_tf2_0106.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0106.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0106.gridx = 2;
+		gbc_tf2_0106.gridy = 10;
+		p2_panel.add(tf2_0106, gbc_tf2_0106);
+
+		JLabel label_14 = new JLabel("+");
+		GridBagConstraints gbc_label_14 = new GridBagConstraints();
+		gbc_label_14.anchor = GridBagConstraints.EAST;
+		gbc_label_14.insets = new Insets(0, 0, 5, 5);
+		gbc_label_14.gridx = 3;
+		gbc_label_14.gridy = 10;
+		p2_panel.add(label_14, gbc_label_14);
+
+		tf2_0206 = new JTextField();
+		tf2_0206.setColumns(10);
+		GridBagConstraints gbc_tf2_0206 = new GridBagConstraints();
+		gbc_tf2_0206.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0206.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0206.gridx = 4;
+		gbc_tf2_0206.gridy = 10;
+		p2_panel.add(tf2_0206, gbc_tf2_0206);
+
+		JLabel label_25 = new JLabel("+");
+		GridBagConstraints gbc_label_25 = new GridBagConstraints();
+		gbc_label_25.anchor = GridBagConstraints.EAST;
+		gbc_label_25.insets = new Insets(0, 0, 5, 5);
+		gbc_label_25.gridx = 5;
+		gbc_label_25.gridy = 10;
+		p2_panel.add(label_25, gbc_label_25);
+
+		tf2_0306 = new JTextField();
+		tf2_0306.setColumns(10);
+		GridBagConstraints gbc_tf2_0306 = new GridBagConstraints();
+		gbc_tf2_0306.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0306.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0306.gridx = 6;
+		gbc_tf2_0306.gridy = 10;
+		p2_panel.add(tf2_0306, gbc_tf2_0306);
+
+		JLabel label_38 = new JLabel("-");
+		GridBagConstraints gbc_label_38 = new GridBagConstraints();
+		gbc_label_38.anchor = GridBagConstraints.EAST;
+		gbc_label_38.insets = new Insets(0, 0, 5, 5);
+		gbc_label_38.gridx = 7;
+		gbc_label_38.gridy = 10;
+		p2_panel.add(label_38, gbc_label_38);
+
+		tf2_0406 = new JTextField();
+		tf2_0406.setColumns(10);
+		GridBagConstraints gbc_tf2_0406 = new GridBagConstraints();
+		gbc_tf2_0406.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0406.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0406.gridx = 8;
+		gbc_tf2_0406.gridy = 10;
+		p2_panel.add(tf2_0406, gbc_tf2_0406);
+
+		JLabel label_51 = new JLabel("-");
+		GridBagConstraints gbc_label_51 = new GridBagConstraints();
+		gbc_label_51.anchor = GridBagConstraints.EAST;
+		gbc_label_51.insets = new Insets(0, 0, 5, 5);
+		gbc_label_51.gridx = 9;
+		gbc_label_51.gridy = 10;
+		p2_panel.add(label_51, gbc_label_51);
+
+		tf2_0506 = new JTextField();
+		tf2_0506.setColumns(10);
+		GridBagConstraints gbc_tf2_0506 = new GridBagConstraints();
+		gbc_tf2_0506.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0506.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0506.gridx = 10;
+		gbc_tf2_0506.gridy = 10;
+		p2_panel.add(tf2_0506, gbc_tf2_0506);
+
+		JLabel label_7 = new JLabel("-");
+		GridBagConstraints gbc_label_7 = new GridBagConstraints();
+		gbc_label_7.anchor = GridBagConstraints.EAST;
+		gbc_label_7.insets = new Insets(0, 0, 5, 5);
+		gbc_label_7.gridx = 11;
+		gbc_label_7.gridy = 10;
+		p2_panel.add(label_7, gbc_label_7);
+
+		tf2_0606 = new JTextField();
+		tf2_0606.setColumns(10);
+		GridBagConstraints gbc_tf2_0606 = new GridBagConstraints();
+		gbc_tf2_0606.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0606.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0606.gridx = 12;
+		gbc_tf2_0606.gridy = 10;
+		p2_panel.add(tf2_0606, gbc_tf2_0606);
+
+		JLabel label_63 = new JLabel("=");
+		GridBagConstraints gbc_label_63 = new GridBagConstraints();
+		gbc_label_63.anchor = GridBagConstraints.EAST;
+		gbc_label_63.insets = new Insets(0, 0, 5, 5);
+		gbc_label_63.gridx = 13;
+		gbc_label_63.gridy = 10;
+		p2_panel.add(label_63, gbc_label_63);
+
+		tf2_0706 = new JTextField();
+		tf2_0706.setColumns(10);
+		GridBagConstraints gbc_tf2_0706 = new GridBagConstraints();
+		gbc_tf2_0706.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0706.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0706.gridx = 14;
+		gbc_tf2_0706.gridy = 10;
+		p2_panel.add(tf2_0706, gbc_tf2_0706);
+
+		JLabel lblE_10 = new JLabel("E55");
+		GridBagConstraints gbc_lblE_10 = new GridBagConstraints();
+		gbc_lblE_10.anchor = GridBagConstraints.EAST;
+		gbc_lblE_10.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_10.gridx = 15;
+		gbc_lblE_10.gridy = 10;
+		p2_panel.add(lblE_10, gbc_lblE_10);
+
+		JSeparator separator_5 = new JSeparator();
+		GridBagConstraints gbc_separator_5 = new GridBagConstraints();
+		gbc_separator_5.fill = GridBagConstraints.HORIZONTAL;
+		gbc_separator_5.gridwidth = 15;
+		gbc_separator_5.insets = new Insets(0, 0, 5, 5);
+		gbc_separator_5.gridx = 1;
+		gbc_separator_5.gridy = 11;
+		p2_panel.add(separator_5, gbc_separator_5);
+
+		JLabel lblE_4 = new JLabel("E5");
+		GridBagConstraints gbc_lblE_4 = new GridBagConstraints();
+		gbc_lblE_4.anchor = GridBagConstraints.WEST;
+		gbc_lblE_4.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_4.gridx = 1;
+		gbc_lblE_4.gridy = 12;
+		p2_panel.add(lblE_4, gbc_lblE_4);
+
+		tf2_0107 = new JTextField();
+		tf2_0107.setColumns(10);
+		GridBagConstraints gbc_tf2_0107 = new GridBagConstraints();
+		gbc_tf2_0107.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0107.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0107.gridx = 2;
+		gbc_tf2_0107.gridy = 12;
+		p2_panel.add(tf2_0107, gbc_tf2_0107);
+
+		JLabel label_15 = new JLabel("+");
+		GridBagConstraints gbc_label_15 = new GridBagConstraints();
+		gbc_label_15.anchor = GridBagConstraints.EAST;
+		gbc_label_15.insets = new Insets(0, 0, 5, 5);
+		gbc_label_15.gridx = 3;
+		gbc_label_15.gridy = 12;
+		p2_panel.add(label_15, gbc_label_15);
+
+		tf2_0207 = new JTextField();
+		tf2_0207.setColumns(10);
+		GridBagConstraints gbc_tf2_0207 = new GridBagConstraints();
+		gbc_tf2_0207.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0207.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0207.gridx = 4;
+		gbc_tf2_0207.gridy = 12;
+		p2_panel.add(tf2_0207, gbc_tf2_0207);
+
+		JLabel label_26 = new JLabel("+");
+		GridBagConstraints gbc_label_26 = new GridBagConstraints();
+		gbc_label_26.anchor = GridBagConstraints.EAST;
+		gbc_label_26.insets = new Insets(0, 0, 5, 5);
+		gbc_label_26.gridx = 5;
+		gbc_label_26.gridy = 12;
+		p2_panel.add(label_26, gbc_label_26);
+
+		tf2_0307 = new JTextField();
+		tf2_0307.setColumns(10);
+		GridBagConstraints gbc_tf2_0307 = new GridBagConstraints();
+		gbc_tf2_0307.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0307.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0307.gridx = 6;
+		gbc_tf2_0307.gridy = 12;
+		p2_panel.add(tf2_0307, gbc_tf2_0307);
+
+		JLabel label_39 = new JLabel("-");
+		GridBagConstraints gbc_label_39 = new GridBagConstraints();
+		gbc_label_39.anchor = GridBagConstraints.EAST;
+		gbc_label_39.insets = new Insets(0, 0, 5, 5);
+		gbc_label_39.gridx = 7;
+		gbc_label_39.gridy = 12;
+		p2_panel.add(label_39, gbc_label_39);
+
+		tf2_0407 = new JTextField();
+		tf2_0407.setColumns(10);
+		GridBagConstraints gbc_tf2_0407 = new GridBagConstraints();
+		gbc_tf2_0407.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0407.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0407.gridx = 8;
+		gbc_tf2_0407.gridy = 12;
+		p2_panel.add(tf2_0407, gbc_tf2_0407);
+
+		JLabel label_52 = new JLabel("-");
+		GridBagConstraints gbc_label_52 = new GridBagConstraints();
+		gbc_label_52.anchor = GridBagConstraints.EAST;
+		gbc_label_52.insets = new Insets(0, 0, 5, 5);
+		gbc_label_52.gridx = 9;
+		gbc_label_52.gridy = 12;
+		p2_panel.add(label_52, gbc_label_52);
+
+		tf2_0507 = new JTextField();
+		tf2_0507.setColumns(10);
+		GridBagConstraints gbc_tf2_0507 = new GridBagConstraints();
+		gbc_tf2_0507.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0507.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0507.gridx = 10;
+		gbc_tf2_0507.gridy = 12;
+		p2_panel.add(tf2_0507, gbc_tf2_0507);
+
+		JLabel label_8 = new JLabel("-");
+		GridBagConstraints gbc_label_8 = new GridBagConstraints();
+		gbc_label_8.anchor = GridBagConstraints.EAST;
+		gbc_label_8.insets = new Insets(0, 0, 5, 5);
+		gbc_label_8.gridx = 11;
+		gbc_label_8.gridy = 12;
+		p2_panel.add(label_8, gbc_label_8);
+
+		tf2_0607 = new JTextField();
+		tf2_0607.setColumns(10);
+		GridBagConstraints gbc_tf2_0607 = new GridBagConstraints();
+		gbc_tf2_0607.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0607.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0607.gridx = 12;
+		gbc_tf2_0607.gridy = 12;
+		p2_panel.add(tf2_0607, gbc_tf2_0607);
+
+		JLabel label_64 = new JLabel("=");
+		GridBagConstraints gbc_label_64 = new GridBagConstraints();
+		gbc_label_64.anchor = GridBagConstraints.EAST;
+		gbc_label_64.insets = new Insets(0, 0, 5, 5);
+		gbc_label_64.gridx = 13;
+		gbc_label_64.gridy = 12;
+		p2_panel.add(label_64, gbc_label_64);
+
+		tf2_0707 = new JTextField();
+		tf2_0707.setColumns(10);
+		GridBagConstraints gbc_tf2_0707 = new GridBagConstraints();
+		gbc_tf2_0707.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0707.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0707.gridx = 14;
+		gbc_tf2_0707.gridy = 12;
+		p2_panel.add(tf2_0707, gbc_tf2_0707);
+
+		JLabel lblE_16 = new JLabel("E5");
+		GridBagConstraints gbc_lblE_16 = new GridBagConstraints();
+		gbc_lblE_16.anchor = GridBagConstraints.EAST;
+		gbc_lblE_16.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_16.gridx = 15;
+		gbc_lblE_16.gridy = 12;
+		p2_panel.add(lblE_16, gbc_lblE_16);
+
+		JLabel lblE_5 = new JLabel("E11");
+		GridBagConstraints gbc_lblE_5 = new GridBagConstraints();
+		gbc_lblE_5.anchor = GridBagConstraints.WEST;
+		gbc_lblE_5.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_5.gridx = 1;
+		gbc_lblE_5.gridy = 13;
+		p2_panel.add(lblE_5, gbc_lblE_5);
+
+		tf2_0108 = new JTextField();
+		tf2_0108.setColumns(10);
+		GridBagConstraints gbc_tf2_0108 = new GridBagConstraints();
+		gbc_tf2_0108.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0108.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0108.gridx = 2;
+		gbc_tf2_0108.gridy = 13;
+		p2_panel.add(tf2_0108, gbc_tf2_0108);
+
+		JLabel label_16 = new JLabel("+");
+		GridBagConstraints gbc_label_16 = new GridBagConstraints();
+		gbc_label_16.anchor = GridBagConstraints.EAST;
+		gbc_label_16.insets = new Insets(0, 0, 5, 5);
+		gbc_label_16.gridx = 3;
+		gbc_label_16.gridy = 13;
+		p2_panel.add(label_16, gbc_label_16);
+
+		tf2_0208 = new JTextField();
+		tf2_0208.setColumns(10);
+		GridBagConstraints gbc_tf2_0208 = new GridBagConstraints();
+		gbc_tf2_0208.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0208.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0208.gridx = 4;
+		gbc_tf2_0208.gridy = 13;
+		p2_panel.add(tf2_0208, gbc_tf2_0208);
+
+		JLabel label_27 = new JLabel("+");
+		GridBagConstraints gbc_label_27 = new GridBagConstraints();
+		gbc_label_27.anchor = GridBagConstraints.EAST;
+		gbc_label_27.insets = new Insets(0, 0, 5, 5);
+		gbc_label_27.gridx = 5;
+		gbc_label_27.gridy = 13;
+		p2_panel.add(label_27, gbc_label_27);
+
+		tf2_0308 = new JTextField();
+		tf2_0308.setColumns(10);
+		GridBagConstraints gbc_tf2_0308 = new GridBagConstraints();
+		gbc_tf2_0308.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0308.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0308.gridx = 6;
+		gbc_tf2_0308.gridy = 13;
+		p2_panel.add(tf2_0308, gbc_tf2_0308);
+
+		JLabel label_40 = new JLabel("-");
+		GridBagConstraints gbc_label_40 = new GridBagConstraints();
+		gbc_label_40.anchor = GridBagConstraints.EAST;
+		gbc_label_40.insets = new Insets(0, 0, 5, 5);
+		gbc_label_40.gridx = 7;
+		gbc_label_40.gridy = 13;
+		p2_panel.add(label_40, gbc_label_40);
+
+		tf2_0408 = new JTextField();
+		tf2_0408.setColumns(10);
+		GridBagConstraints gbc_tf2_0408 = new GridBagConstraints();
+		gbc_tf2_0408.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0408.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0408.gridx = 8;
+		gbc_tf2_0408.gridy = 13;
+		p2_panel.add(tf2_0408, gbc_tf2_0408);
+
+		JLabel label_53 = new JLabel("-");
+		GridBagConstraints gbc_label_53 = new GridBagConstraints();
+		gbc_label_53.anchor = GridBagConstraints.EAST;
+		gbc_label_53.insets = new Insets(0, 0, 5, 5);
+		gbc_label_53.gridx = 9;
+		gbc_label_53.gridy = 13;
+		p2_panel.add(label_53, gbc_label_53);
+
+		tf2_0508 = new JTextField();
+		tf2_0508.setColumns(10);
+		GridBagConstraints gbc_tf2_0508 = new GridBagConstraints();
+		gbc_tf2_0508.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0508.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0508.gridx = 10;
+		gbc_tf2_0508.gridy = 13;
+		p2_panel.add(tf2_0508, gbc_tf2_0508);
+
+		JLabel label_9 = new JLabel("-");
+		GridBagConstraints gbc_label_9 = new GridBagConstraints();
+		gbc_label_9.anchor = GridBagConstraints.EAST;
+		gbc_label_9.insets = new Insets(0, 0, 5, 5);
+		gbc_label_9.gridx = 11;
+		gbc_label_9.gridy = 13;
+		p2_panel.add(label_9, gbc_label_9);
+
+		tf2_0608 = new JTextField();
+		tf2_0608.setColumns(10);
+		GridBagConstraints gbc_tf2_0608 = new GridBagConstraints();
+		gbc_tf2_0608.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0608.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0608.gridx = 12;
+		gbc_tf2_0608.gridy = 13;
+		p2_panel.add(tf2_0608, gbc_tf2_0608);
+
+		JLabel label_65 = new JLabel("=");
+		GridBagConstraints gbc_label_65 = new GridBagConstraints();
+		gbc_label_65.anchor = GridBagConstraints.EAST;
+		gbc_label_65.insets = new Insets(0, 0, 5, 5);
+		gbc_label_65.gridx = 13;
+		gbc_label_65.gridy = 13;
+		p2_panel.add(label_65, gbc_label_65);
+
+		tf2_0708 = new JTextField();
+		tf2_0708.setColumns(10);
+		GridBagConstraints gbc_tf2_0708 = new GridBagConstraints();
+		gbc_tf2_0708.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0708.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0708.gridx = 14;
+		gbc_tf2_0708.gridy = 13;
+		p2_panel.add(tf2_0708, gbc_tf2_0708);
+
+		JLabel lblE_15 = new JLabel("E11");
+		GridBagConstraints gbc_lblE_15 = new GridBagConstraints();
+		gbc_lblE_15.anchor = GridBagConstraints.EAST;
+		gbc_lblE_15.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_15.gridx = 15;
+		gbc_lblE_15.gridy = 13;
+		p2_panel.add(lblE_15, gbc_lblE_15);
+
+		JLabel lblE_6 = new JLabel("E54");
+		GridBagConstraints gbc_lblE_6 = new GridBagConstraints();
+		gbc_lblE_6.anchor = GridBagConstraints.WEST;
+		gbc_lblE_6.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_6.gridx = 1;
+		gbc_lblE_6.gridy = 14;
+		p2_panel.add(lblE_6, gbc_lblE_6);
+
+		tf2_0109 = new JTextField();
+		tf2_0109.setColumns(10);
+		GridBagConstraints gbc_tf2_0109 = new GridBagConstraints();
+		gbc_tf2_0109.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0109.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0109.gridx = 2;
+		gbc_tf2_0109.gridy = 14;
+		p2_panel.add(tf2_0109, gbc_tf2_0109);
+
+		JLabel label_17 = new JLabel("+");
+		GridBagConstraints gbc_label_17 = new GridBagConstraints();
+		gbc_label_17.anchor = GridBagConstraints.EAST;
+		gbc_label_17.insets = new Insets(0, 0, 5, 5);
+		gbc_label_17.gridx = 3;
+		gbc_label_17.gridy = 14;
+		p2_panel.add(label_17, gbc_label_17);
+
+		tf2_0209 = new JTextField();
+		tf2_0209.setColumns(10);
+		GridBagConstraints gbc_tf2_0209 = new GridBagConstraints();
+		gbc_tf2_0209.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0209.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0209.gridx = 4;
+		gbc_tf2_0209.gridy = 14;
+		p2_panel.add(tf2_0209, gbc_tf2_0209);
+
+		JLabel label_28 = new JLabel("+");
+		GridBagConstraints gbc_label_28 = new GridBagConstraints();
+		gbc_label_28.anchor = GridBagConstraints.EAST;
+		gbc_label_28.insets = new Insets(0, 0, 5, 5);
+		gbc_label_28.gridx = 5;
+		gbc_label_28.gridy = 14;
+		p2_panel.add(label_28, gbc_label_28);
+
+		tf2_0309 = new JTextField();
+		tf2_0309.setColumns(10);
+		GridBagConstraints gbc_tf2_0309 = new GridBagConstraints();
+		gbc_tf2_0309.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0309.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0309.gridx = 6;
+		gbc_tf2_0309.gridy = 14;
+		p2_panel.add(tf2_0309, gbc_tf2_0309);
+
+		JLabel label_41 = new JLabel("-");
+		GridBagConstraints gbc_label_41 = new GridBagConstraints();
+		gbc_label_41.anchor = GridBagConstraints.EAST;
+		gbc_label_41.insets = new Insets(0, 0, 5, 5);
+		gbc_label_41.gridx = 7;
+		gbc_label_41.gridy = 14;
+		p2_panel.add(label_41, gbc_label_41);
+
+		tf2_0409 = new JTextField();
+		tf2_0409.setColumns(10);
+		GridBagConstraints gbc_tf2_0409 = new GridBagConstraints();
+		gbc_tf2_0409.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0409.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0409.gridx = 8;
+		gbc_tf2_0409.gridy = 14;
+		p2_panel.add(tf2_0409, gbc_tf2_0409);
+
+		JLabel label_54 = new JLabel("-");
+		GridBagConstraints gbc_label_54 = new GridBagConstraints();
+		gbc_label_54.anchor = GridBagConstraints.EAST;
+		gbc_label_54.insets = new Insets(0, 0, 5, 5);
+		gbc_label_54.gridx = 9;
+		gbc_label_54.gridy = 14;
+		p2_panel.add(label_54, gbc_label_54);
+
+		tf2_0509 = new JTextField();
+		tf2_0509.setColumns(10);
+		GridBagConstraints gbc_tf2_0509 = new GridBagConstraints();
+		gbc_tf2_0509.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0509.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0509.gridx = 10;
+		gbc_tf2_0509.gridy = 14;
+		p2_panel.add(tf2_0509, gbc_tf2_0509);
+
+		JLabel label_10 = new JLabel("-");
+		GridBagConstraints gbc_label_10 = new GridBagConstraints();
+		gbc_label_10.anchor = GridBagConstraints.EAST;
+		gbc_label_10.insets = new Insets(0, 0, 5, 5);
+		gbc_label_10.gridx = 11;
+		gbc_label_10.gridy = 14;
+		p2_panel.add(label_10, gbc_label_10);
+
+		tf2_0609 = new JTextField();
+		tf2_0609.setColumns(10);
+		GridBagConstraints gbc_tf2_0609 = new GridBagConstraints();
+		gbc_tf2_0609.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0609.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0609.gridx = 12;
+		gbc_tf2_0609.gridy = 14;
+		p2_panel.add(tf2_0609, gbc_tf2_0609);
+
+		JLabel label_66 = new JLabel("=");
+		GridBagConstraints gbc_label_66 = new GridBagConstraints();
+		gbc_label_66.anchor = GridBagConstraints.EAST;
+		gbc_label_66.insets = new Insets(0, 0, 5, 5);
+		gbc_label_66.gridx = 13;
+		gbc_label_66.gridy = 14;
+		p2_panel.add(label_66, gbc_label_66);
+
+		tf2_0709 = new JTextField();
+		tf2_0709.setColumns(10);
+		GridBagConstraints gbc_tf2_0709 = new GridBagConstraints();
+		gbc_tf2_0709.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0709.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0709.gridx = 14;
+		gbc_tf2_0709.gridy = 14;
+		p2_panel.add(tf2_0709, gbc_tf2_0709);
+
+		JLabel lblE_14 = new JLabel("E54");
+		GridBagConstraints gbc_lblE_14 = new GridBagConstraints();
+		gbc_lblE_14.anchor = GridBagConstraints.EAST;
+		gbc_lblE_14.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_14.gridx = 15;
+		gbc_lblE_14.gridy = 14;
+		p2_panel.add(lblE_14, gbc_lblE_14);
+
+		JSeparator separator_7 = new JSeparator();
+		GridBagConstraints gbc_separator_7 = new GridBagConstraints();
+		gbc_separator_7.gridwidth = 15;
+		gbc_separator_7.fill = GridBagConstraints.HORIZONTAL;
+		gbc_separator_7.insets = new Insets(0, 0, 5, 5);
+		gbc_separator_7.gridx = 1;
+		gbc_separator_7.gridy = 15;
+		p2_panel.add(separator_7, gbc_separator_7);
+
+		JLabel lblE_7 = new JLabel("E8");
+		GridBagConstraints gbc_lblE_7 = new GridBagConstraints();
+		gbc_lblE_7.anchor = GridBagConstraints.WEST;
+		gbc_lblE_7.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_7.gridx = 1;
+		gbc_lblE_7.gridy = 16;
+		p2_panel.add(lblE_7, gbc_lblE_7);
+
+		tf2_0110 = new JTextField();
+		tf2_0110.setColumns(10);
+		GridBagConstraints gbc_tf2_0110 = new GridBagConstraints();
+		gbc_tf2_0110.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0110.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0110.gridx = 2;
+		gbc_tf2_0110.gridy = 16;
+		p2_panel.add(tf2_0110, gbc_tf2_0110);
+
+		JLabel label_18 = new JLabel("+");
+		GridBagConstraints gbc_label_18 = new GridBagConstraints();
+		gbc_label_18.anchor = GridBagConstraints.EAST;
+		gbc_label_18.insets = new Insets(0, 0, 5, 5);
+		gbc_label_18.gridx = 3;
+		gbc_label_18.gridy = 16;
+		p2_panel.add(label_18, gbc_label_18);
+
+		tf2_0210 = new JTextField();
+		tf2_0210.setColumns(10);
+		GridBagConstraints gbc_tf2_0210 = new GridBagConstraints();
+		gbc_tf2_0210.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0210.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0210.gridx = 4;
+		gbc_tf2_0210.gridy = 16;
+		p2_panel.add(tf2_0210, gbc_tf2_0210);
+
+		JLabel label_29 = new JLabel("+");
+		GridBagConstraints gbc_label_29 = new GridBagConstraints();
+		gbc_label_29.anchor = GridBagConstraints.EAST;
+		gbc_label_29.insets = new Insets(0, 0, 5, 5);
+		gbc_label_29.gridx = 5;
+		gbc_label_29.gridy = 16;
+		p2_panel.add(label_29, gbc_label_29);
+
+		tf2_0310 = new JTextField();
+		tf2_0310.setColumns(10);
+		GridBagConstraints gbc_tf2_0310 = new GridBagConstraints();
+		gbc_tf2_0310.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0310.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0310.gridx = 6;
+		gbc_tf2_0310.gridy = 16;
+		p2_panel.add(tf2_0310, gbc_tf2_0310);
+
+		JLabel label_42 = new JLabel("-");
+		GridBagConstraints gbc_label_42 = new GridBagConstraints();
+		gbc_label_42.anchor = GridBagConstraints.EAST;
+		gbc_label_42.insets = new Insets(0, 0, 5, 5);
+		gbc_label_42.gridx = 7;
+		gbc_label_42.gridy = 16;
+		p2_panel.add(label_42, gbc_label_42);
+
+		tf2_0410 = new JTextField();
+		tf2_0410.setColumns(10);
+		GridBagConstraints gbc_tf2_0410 = new GridBagConstraints();
+		gbc_tf2_0410.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0410.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0410.gridx = 8;
+		gbc_tf2_0410.gridy = 16;
+		p2_panel.add(tf2_0410, gbc_tf2_0410);
+
+		JLabel label_55 = new JLabel("-");
+		GridBagConstraints gbc_label_55 = new GridBagConstraints();
+		gbc_label_55.anchor = GridBagConstraints.EAST;
+		gbc_label_55.insets = new Insets(0, 0, 5, 5);
+		gbc_label_55.gridx = 9;
+		gbc_label_55.gridy = 16;
+		p2_panel.add(label_55, gbc_label_55);
+
+		tf2_0510 = new JTextField();
+		tf2_0510.setColumns(10);
+		GridBagConstraints gbc_tf2_0510 = new GridBagConstraints();
+		gbc_tf2_0510.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0510.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0510.gridx = 10;
+		gbc_tf2_0510.gridy = 16;
+		p2_panel.add(tf2_0510, gbc_tf2_0510);
+
+		JLabel label_32 = new JLabel("-");
+		GridBagConstraints gbc_label_32 = new GridBagConstraints();
+		gbc_label_32.anchor = GridBagConstraints.EAST;
+		gbc_label_32.insets = new Insets(0, 0, 5, 5);
+		gbc_label_32.gridx = 11;
+		gbc_label_32.gridy = 16;
+		p2_panel.add(label_32, gbc_label_32);
+
+		tf2_0610 = new JTextField();
+		tf2_0610.setColumns(10);
+		GridBagConstraints gbc_tf2_0610 = new GridBagConstraints();
+		gbc_tf2_0610.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0610.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0610.gridx = 12;
+		gbc_tf2_0610.gridy = 16;
+		p2_panel.add(tf2_0610, gbc_tf2_0610);
+
+		JLabel label_67 = new JLabel("=");
+		GridBagConstraints gbc_label_67 = new GridBagConstraints();
+		gbc_label_67.anchor = GridBagConstraints.EAST;
+		gbc_label_67.insets = new Insets(0, 0, 5, 5);
+		gbc_label_67.gridx = 13;
+		gbc_label_67.gridy = 16;
+		p2_panel.add(label_67, gbc_label_67);
+
+		tf2_0710 = new JTextField();
+		tf2_0710.setColumns(10);
+		GridBagConstraints gbc_tf2_0710 = new GridBagConstraints();
+		gbc_tf2_0710.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0710.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0710.gridx = 14;
+		gbc_tf2_0710.gridy = 16;
+		p2_panel.add(tf2_0710, gbc_tf2_0710);
+
+		JLabel label_79 = new JLabel("E7");
+		GridBagConstraints gbc_label_79 = new GridBagConstraints();
+		gbc_label_79.anchor = GridBagConstraints.EAST;
+		gbc_label_79.insets = new Insets(0, 0, 5, 5);
+		gbc_label_79.gridx = 15;
+		gbc_label_79.gridy = 16;
+		p2_panel.add(label_79, gbc_label_79);
+
+		JLabel lblE_8 = new JLabel("E14");
+		GridBagConstraints gbc_lblE_8 = new GridBagConstraints();
+		gbc_lblE_8.anchor = GridBagConstraints.WEST;
+		gbc_lblE_8.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_8.gridx = 1;
+		gbc_lblE_8.gridy = 17;
+		p2_panel.add(lblE_8, gbc_lblE_8);
+
+		tf2_0111 = new JTextField();
+		tf2_0111.setColumns(10);
+		GridBagConstraints gbc_tf2_0111 = new GridBagConstraints();
+		gbc_tf2_0111.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0111.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0111.gridx = 2;
+		gbc_tf2_0111.gridy = 17;
+		p2_panel.add(tf2_0111, gbc_tf2_0111);
+
+		JLabel label_19 = new JLabel("+");
+		GridBagConstraints gbc_label_19 = new GridBagConstraints();
+		gbc_label_19.anchor = GridBagConstraints.EAST;
+		gbc_label_19.insets = new Insets(0, 0, 5, 5);
+		gbc_label_19.gridx = 3;
+		gbc_label_19.gridy = 17;
+		p2_panel.add(label_19, gbc_label_19);
+
+		tf2_0211 = new JTextField();
+		tf2_0211.setColumns(10);
+		GridBagConstraints gbc_tf2_0211 = new GridBagConstraints();
+		gbc_tf2_0211.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0211.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0211.gridx = 4;
+		gbc_tf2_0211.gridy = 17;
+		p2_panel.add(tf2_0211, gbc_tf2_0211);
+
+		JLabel label_30 = new JLabel("+");
+		GridBagConstraints gbc_label_30 = new GridBagConstraints();
+		gbc_label_30.anchor = GridBagConstraints.EAST;
+		gbc_label_30.insets = new Insets(0, 0, 5, 5);
+		gbc_label_30.gridx = 5;
+		gbc_label_30.gridy = 17;
+		p2_panel.add(label_30, gbc_label_30);
+
+		tf2_0311 = new JTextField();
+		tf2_0311.setColumns(10);
+		GridBagConstraints gbc_tf2_0311 = new GridBagConstraints();
+		gbc_tf2_0311.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0311.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0311.gridx = 6;
+		gbc_tf2_0311.gridy = 17;
+		p2_panel.add(tf2_0311, gbc_tf2_0311);
+
+		JLabel label_43 = new JLabel("-");
+		GridBagConstraints gbc_label_43 = new GridBagConstraints();
+		gbc_label_43.anchor = GridBagConstraints.EAST;
+		gbc_label_43.insets = new Insets(0, 0, 5, 5);
+		gbc_label_43.gridx = 7;
+		gbc_label_43.gridy = 17;
+		p2_panel.add(label_43, gbc_label_43);
+
+		tf2_0411 = new JTextField();
+		tf2_0411.setColumns(10);
+		GridBagConstraints gbc_tf2_0411 = new GridBagConstraints();
+		gbc_tf2_0411.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0411.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0411.gridx = 8;
+		gbc_tf2_0411.gridy = 17;
+		p2_panel.add(tf2_0411, gbc_tf2_0411);
+
+		JLabel label_56 = new JLabel("-");
+		GridBagConstraints gbc_label_56 = new GridBagConstraints();
+		gbc_label_56.anchor = GridBagConstraints.EAST;
+		gbc_label_56.insets = new Insets(0, 0, 5, 5);
+		gbc_label_56.gridx = 9;
+		gbc_label_56.gridy = 17;
+		p2_panel.add(label_56, gbc_label_56);
+
+		tf2_0511 = new JTextField();
+		tf2_0511.setColumns(10);
+		GridBagConstraints gbc_tf2_0511 = new GridBagConstraints();
+		gbc_tf2_0511.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0511.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0511.gridx = 10;
+		gbc_tf2_0511.gridy = 17;
+		p2_panel.add(tf2_0511, gbc_tf2_0511);
+
+		JLabel label_34 = new JLabel("-");
+		GridBagConstraints gbc_label_34 = new GridBagConstraints();
+		gbc_label_34.anchor = GridBagConstraints.EAST;
+		gbc_label_34.insets = new Insets(0, 0, 5, 5);
+		gbc_label_34.gridx = 11;
+		gbc_label_34.gridy = 17;
+		p2_panel.add(label_34, gbc_label_34);
+
+		tf2_0611 = new JTextField();
+		tf2_0611.setColumns(10);
+		GridBagConstraints gbc_tf2_0611 = new GridBagConstraints();
+		gbc_tf2_0611.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0611.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0611.gridx = 12;
+		gbc_tf2_0611.gridy = 17;
+		p2_panel.add(tf2_0611, gbc_tf2_0611);
+
+		JLabel label_68 = new JLabel("=");
+		GridBagConstraints gbc_label_68 = new GridBagConstraints();
+		gbc_label_68.anchor = GridBagConstraints.EAST;
+		gbc_label_68.insets = new Insets(0, 0, 5, 5);
+		gbc_label_68.gridx = 13;
+		gbc_label_68.gridy = 17;
+		p2_panel.add(label_68, gbc_label_68);
+
+		tf2_0711 = new JTextField();
+		tf2_0711.setColumns(10);
+		GridBagConstraints gbc_tf2_0711 = new GridBagConstraints();
+		gbc_tf2_0711.insets = new Insets(0, 0, 5, 5);
+		gbc_tf2_0711.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0711.gridx = 14;
+		gbc_tf2_0711.gridy = 17;
+		p2_panel.add(tf2_0711, gbc_tf2_0711);
+
+		JLabel lblE_13 = new JLabel("E14");
+		GridBagConstraints gbc_lblE_13 = new GridBagConstraints();
+		gbc_lblE_13.anchor = GridBagConstraints.EAST;
+		gbc_lblE_13.insets = new Insets(0, 0, 5, 5);
+		gbc_lblE_13.gridx = 15;
+		gbc_lblE_13.gridy = 17;
+		p2_panel.add(lblE_13, gbc_lblE_13);
+
+		JLabel lblE_9 = new JLabel("E19");
+		GridBagConstraints gbc_lblE_9 = new GridBagConstraints();
+		gbc_lblE_9.anchor = GridBagConstraints.WEST;
+		gbc_lblE_9.insets = new Insets(0, 0, 0, 5);
+		gbc_lblE_9.gridx = 1;
+		gbc_lblE_9.gridy = 18;
+		p2_panel.add(lblE_9, gbc_lblE_9);
+
+		tf2_0112 = new JTextField();
+		tf2_0112.setColumns(10);
+		GridBagConstraints gbc_tf2_0112 = new GridBagConstraints();
+		gbc_tf2_0112.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0112.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0112.gridx = 2;
+		gbc_tf2_0112.gridy = 18;
+		p2_panel.add(tf2_0112, gbc_tf2_0112);
+
+		JLabel label_20 = new JLabel("+");
+		GridBagConstraints gbc_label_20 = new GridBagConstraints();
+		gbc_label_20.anchor = GridBagConstraints.EAST;
+		gbc_label_20.insets = new Insets(0, 0, 0, 5);
+		gbc_label_20.gridx = 3;
+		gbc_label_20.gridy = 18;
+		p2_panel.add(label_20, gbc_label_20);
+
+		tf2_0212 = new JTextField();
+		tf2_0212.setColumns(10);
+		GridBagConstraints gbc_tf2_0212 = new GridBagConstraints();
+		gbc_tf2_0212.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0212.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0212.gridx = 4;
+		gbc_tf2_0212.gridy = 18;
+		p2_panel.add(tf2_0212, gbc_tf2_0212);
+
+		JLabel label_31 = new JLabel("+");
+		GridBagConstraints gbc_label_31 = new GridBagConstraints();
+		gbc_label_31.anchor = GridBagConstraints.EAST;
+		gbc_label_31.insets = new Insets(0, 0, 0, 5);
+		gbc_label_31.gridx = 5;
+		gbc_label_31.gridy = 18;
+		p2_panel.add(label_31, gbc_label_31);
+
+		tf2_0312 = new JTextField();
+		tf2_0312.setColumns(10);
+		GridBagConstraints gbc_tf2_0312 = new GridBagConstraints();
+		gbc_tf2_0312.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0312.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0312.gridx = 6;
+		gbc_tf2_0312.gridy = 18;
+		p2_panel.add(tf2_0312, gbc_tf2_0312);
+
+		JLabel label_44 = new JLabel("-");
+		GridBagConstraints gbc_label_44 = new GridBagConstraints();
+		gbc_label_44.anchor = GridBagConstraints.EAST;
+		gbc_label_44.insets = new Insets(0, 0, 0, 5);
+		gbc_label_44.gridx = 7;
+		gbc_label_44.gridy = 18;
+		p2_panel.add(label_44, gbc_label_44);
+
+		tf2_0412 = new JTextField();
+		tf2_0412.setColumns(10);
+		GridBagConstraints gbc_tf2_0412 = new GridBagConstraints();
+		gbc_tf2_0412.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0412.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0412.gridx = 8;
+		gbc_tf2_0412.gridy = 18;
+		p2_panel.add(tf2_0412, gbc_tf2_0412);
+
+		JLabel label_57 = new JLabel("-");
+		GridBagConstraints gbc_label_57 = new GridBagConstraints();
+		gbc_label_57.anchor = GridBagConstraints.EAST;
+		gbc_label_57.insets = new Insets(0, 0, 0, 5);
+		gbc_label_57.gridx = 9;
+		gbc_label_57.gridy = 18;
+		p2_panel.add(label_57, gbc_label_57);
+
+		tf2_0512 = new JTextField();
+		tf2_0512.setColumns(10);
+		GridBagConstraints gbc_tf2_0512 = new GridBagConstraints();
+		gbc_tf2_0512.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0512.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0512.gridx = 10;
+		gbc_tf2_0512.gridy = 18;
+		p2_panel.add(tf2_0512, gbc_tf2_0512);
+
+		JLabel label_45 = new JLabel("-");
+		GridBagConstraints gbc_label_45 = new GridBagConstraints();
+		gbc_label_45.anchor = GridBagConstraints.EAST;
+		gbc_label_45.insets = new Insets(0, 0, 0, 5);
+		gbc_label_45.gridx = 11;
+		gbc_label_45.gridy = 18;
+		p2_panel.add(label_45, gbc_label_45);
+
+		tf2_0612 = new JTextField();
+		tf2_0612.setColumns(10);
+		GridBagConstraints gbc_tf2_0612 = new GridBagConstraints();
+		gbc_tf2_0612.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0612.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0612.gridx = 12;
+		gbc_tf2_0612.gridy = 18;
+		p2_panel.add(tf2_0612, gbc_tf2_0612);
+
+		JLabel label_69 = new JLabel("=");
+		GridBagConstraints gbc_label_69 = new GridBagConstraints();
+		gbc_label_69.anchor = GridBagConstraints.EAST;
+		gbc_label_69.insets = new Insets(0, 0, 0, 5);
+		gbc_label_69.gridx = 13;
+		gbc_label_69.gridy = 18;
+		p2_panel.add(label_69, gbc_label_69);
+
+		tf2_0712 = new JTextField();
+		tf2_0712.setColumns(10);
+		GridBagConstraints gbc_tf2_0712 = new GridBagConstraints();
+		gbc_tf2_0712.insets = new Insets(0, 0, 0, 5);
+		gbc_tf2_0712.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tf2_0712.gridx = 14;
+		gbc_tf2_0712.gridy = 18;
+		p2_panel.add(tf2_0712, gbc_tf2_0712);
+
+		JLabel lblE_12 = new JLabel("E19");
+		GridBagConstraints gbc_lblE_12 = new GridBagConstraints();
+		gbc_lblE_12.anchor = GridBagConstraints.EAST;
+		gbc_lblE_12.insets = new Insets(0, 0, 0, 5);
+		gbc_lblE_12.gridx = 15;
+		gbc_lblE_12.gridy = 18;
+		p2_panel.add(lblE_12, gbc_lblE_12);
 
 		// -------------------P3----------------------------------
 
@@ -3672,7 +4337,7 @@ public class MaterialPlanning {
 		gbc_lblP_3.gridx = 15;
 		gbc_lblP_3.gridy = 3;
 		p3_panel.add(lblP_3, gbc_lblP_3);
-		
+
 		JSeparator separator_8 = new JSeparator();
 		GridBagConstraints gbc_separator_8 = new GridBagConstraints();
 		gbc_separator_8.fill = GridBagConstraints.HORIZONTAL;
@@ -3935,7 +4600,7 @@ public class MaterialPlanning {
 		gbc_lblE_32.gridx = 15;
 		gbc_lblE_32.gridy = 6;
 		p3_panel.add(lblE_32, gbc_lblE_32);
-		
+
 		JSeparator separator_9 = new JSeparator();
 		GridBagConstraints gbc_separator_9 = new GridBagConstraints();
 		gbc_separator_9.fill = GridBagConstraints.HORIZONTAL;
@@ -4325,7 +4990,7 @@ public class MaterialPlanning {
 		gbc_lblE_31.gridx = 15;
 		gbc_lblE_31.gridy = 10;
 		p3_panel.add(lblE_31, gbc_lblE_31);
-		
+
 		JSeparator separator_10 = new JSeparator();
 		GridBagConstraints gbc_separator_10 = new GridBagConstraints();
 		gbc_separator_10.gridwidth = 15;
@@ -4715,7 +5380,7 @@ public class MaterialPlanning {
 		gbc_lblE_30.gridx = 15;
 		gbc_lblE_30.gridy = 14;
 		p3_panel.add(lblE_30, gbc_lblE_30);
-		
+
 		JSeparator separator_11 = new JSeparator();
 		GridBagConstraints gbc_separator_11 = new GridBagConstraints();
 		gbc_separator_11.gridwidth = 15;
