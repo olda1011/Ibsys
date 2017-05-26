@@ -17,7 +17,7 @@ import generated.Results.Warehousestock.Article;
 
 public class Main {
 
-	public static int[][] prognosens;
+	public static int[][] prognosen;
 	public static int[][] p1Prod;
 	public static int[][] p2Prod;
 	public static int[][] p3Prod;
@@ -26,6 +26,8 @@ public class Main {
 	public static int[][] p3KaufteileVerwendung;
 
 	public static int[][] kaufteileVerwendungMerged;
+	public static Results results;
+	public static int geplanterLagerbestand;
 
 	private Main() {
 
@@ -33,29 +35,26 @@ public class Main {
 
 	public static void main() {
 		InputStream resultData = Main.class.getResourceAsStream("resultservlet.xml");
-		Results results = JAXB.unmarshal(resultData, Results.class);
+		results = JAXB.unmarshal(resultData, Results.class);
 
-		int geplanterLagerbestand = 50;
-		int geplantVerkaufP1 = 150;
-		int geplantVerkaufP2 = 250;
-		int geplantVerkaufP3 = 100;
+		geplanterLagerbestand = 50;
 
-		prognosens = new int[][] { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 },
+		prognosen = new int[][] { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 },
 				{ 3, 100, 50, 200, 200 } };
 
 		System.out.println("Folgende Mengen sollen verkauft werden in der nächsten Periode:\n");
-		System.out.println("P1: " + geplantVerkaufP1);
-		System.out.println("P2: " + geplantVerkaufP2);
-		System.out.println("P3: " + geplantVerkaufP3);
+		System.out.println("P1: " + prognosen[0][1]);
+		System.out.println("P2: " + prognosen[1][1]);
+		System.out.println("P3: " + prognosen[2][1]);
 		System.out.println();
 		System.out.println("Der geplante Lagerbestand beträgt: " + geplanterLagerbestand);
 		System.out.println();
 
 		// Matrix für Disposition anlegen
 
-		p1Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP1, 1, results);
-		p2Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP2, 2, results);
-		p3Prod = matrixAnlegen(geplanterLagerbestand, geplantVerkaufP3, 3, results);
+		p1Prod = matrixAnlegen(geplanterLagerbestand, prognosen[0][1], 1, results);
+		p2Prod = matrixAnlegen(geplanterLagerbestand, prognosen[1][1], 2, results);
+		p3Prod = matrixAnlegen(geplanterLagerbestand, prognosen[2][1], 3, results);
 
 		// printMatrizen(P1Prod, P2Prod, P3Prod);
 
@@ -63,9 +62,9 @@ public class Main {
 
 		// Kaufteilbedarf errechnen
 
-		p1KaufteileVerwendung = generiereKaufteileVerwendung(1, p1Prod, prognosens, results);
-		p2KaufteileVerwendung = generiereKaufteileVerwendung(2, p2Prod, prognosens, results);
-		p3KaufteileVerwendung = generiereKaufteileVerwendung(3, p3Prod, prognosens, results);
+		p1KaufteileVerwendung = generiereKaufteileVerwendung(1, p1Prod, prognosen, results);
+		p2KaufteileVerwendung = generiereKaufteileVerwendung(2, p2Prod, prognosen, results);
+		p3KaufteileVerwendung = generiereKaufteileVerwendung(3, p3Prod, prognosen, results);
 
 		kaufteileVerwendungMerged = mergeKautfteileVerwendung(p1KaufteileVerwendung,
 				p2KaufteileVerwendung, p3KaufteileVerwendung);
@@ -78,7 +77,7 @@ public class Main {
 		printKaufteilmatrix(p3KaufteileVerwendung);
 	}
 
-	private static int[][] mergeKautfteileVerwendung(int[][] p1KaufteileVerwendung2,
+	public static int[][] mergeKautfteileVerwendung(int[][] p1KaufteileVerwendung2,
 			int[][] p2KaufteileVerwendung2, int[][] p3KaufteileVerwendung2) {
 		int[][] merged = { { 21, 0, 0, 0, 0, 0 }, { 22, 0, 0, 0, 0, 0 }, { 23, 0, 0, 0, 0, 0 },
 				{ 24, 0, 0, 0, 0, 0 }, { 25, 0, 0, 0, 0, 0 }, { 27, 0, 0, 0, 0, 0 },
@@ -132,8 +131,8 @@ public class Main {
 		return merged;
 	}
 
-	private static int[][] generiereKaufteileVerwendung(int produkt, int[][] Prod,
-			int[][] Prognosen, Results results) {
+	public static int[][] generiereKaufteileVerwendung(int produkt, int[][] Prod, int[][] Prognosen,
+			Results results) {
 		int[][] matrix = null;
 		List<Article> articles = results.getWarehousestock()
 				.getArticle();
@@ -382,7 +381,7 @@ public class Main {
 		System.out.println();
 	}
 
-	private static int[][] matrixAnlegen(int geplanterLagerbestand, int geplantVerkauf,
+	public static int[][] matrixAnlegen(int geplanterLagerbestand, int geplantVerkauf,
 			int produktionFall, Results results) {
 		// Artikel ermitteln
 		List<Article> articles = results.getWarehousestock()
@@ -392,15 +391,26 @@ public class Main {
 		// In Bearbeitungsaufträge befüllen
 		Map<Integer, Integer> artikelInBearbeitung = bearbeitungErmitteln(results);
 
+		int menge26 = findAmountById(articles, 26);
+		int mod26 = menge26 % 3;
+		menge26 = menge26 / 3;
+		int menge16 = findAmountById(articles, 16);
+		int mod16 = menge16 % 3;
+		menge16 = menge16 / 3;
+		int menge17 = findAmountById(articles, 17);
+		int mod17 = menge17 % 3;
+		menge17 = menge17 / 3;
+
 		int[][] matrix = null;
+
 		if (produktionFall == 1) {
 			int[][] matrix1 = {
 					{ 1, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 1), 0,
 							0, 0 },
-					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
+					{ 26, 0, 0, geplanterLagerbestand, menge26 + mod26, 0, 0, 0 },
 					{ 51, 0, 0, geplanterLagerbestand, findAmountById(articles, 51), 0, 0, 0 },
-					{ 16, 0, 0, geplanterLagerbestand, findAmountById(articles, 16), 0, 0, 0 },
-					{ 17, 0, 0, geplanterLagerbestand, findAmountById(articles, 17), 0, 0, 0 },
+					{ 16, 0, 0, geplanterLagerbestand, menge16 + mod16, 0, 0, 0 },
+					{ 17, 0, 0, geplanterLagerbestand, menge17 + mod17, 0, 0, 0 },
 					{ 50, 0, 0, geplanterLagerbestand, findAmountById(articles, 50), 0, 0, 0 },
 					{ 4, 0, 0, geplanterLagerbestand, findAmountById(articles, 4), 0, 0, 0 },
 					{ 10, 0, 0, geplanterLagerbestand, findAmountById(articles, 10), 0, 0, 0 },
@@ -413,10 +423,10 @@ public class Main {
 			int[][] matrix2 = {
 					{ 2, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 2), 0,
 							0, 0 },
-					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
+					{ 26, 0, 0, geplanterLagerbestand, mod26, 0, 0, 0 },
 					{ 56, 0, 0, geplanterLagerbestand, findAmountById(articles, 56), 0, 0, 0 },
-					{ 16, 0, 0, geplanterLagerbestand, findAmountById(articles, 16), 0, 0, 0 },
-					{ 17, 0, 0, geplanterLagerbestand, findAmountById(articles, 17), 0, 0, 0 },
+					{ 16, 0, 0, geplanterLagerbestand, mod16, 0, 0, 0 },
+					{ 17, 0, 0, geplanterLagerbestand, mod17, 0, 0, 0 },
 					{ 55, 0, 0, geplanterLagerbestand, findAmountById(articles, 55), 0, 0, 0 },
 					{ 5, 0, 0, geplanterLagerbestand, findAmountById(articles, 5), 0, 0, 0 },
 					{ 11, 0, 0, geplanterLagerbestand, findAmountById(articles, 11), 0, 0, 0 },
@@ -429,10 +439,10 @@ public class Main {
 			int[][] matrix3 = {
 					{ 3, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 3), 0,
 							0, 0 },
-					{ 26, 0, 0, geplanterLagerbestand, findAmountById(articles, 26), 0, 0, 0 },
+					{ 26, 0, 0, geplanterLagerbestand, mod26, 0, 0, 0 },
 					{ 31, 0, 0, geplanterLagerbestand, findAmountById(articles, 31), 0, 0, 0 },
-					{ 16, 0, 0, geplanterLagerbestand, findAmountById(articles, 16), 0, 0, 0 },
-					{ 17, 0, 0, geplanterLagerbestand, findAmountById(articles, 17), 0, 0, 0 },
+					{ 16, 0, 0, geplanterLagerbestand, mod16, 0, 0, 0 },
+					{ 17, 0, 0, geplanterLagerbestand, mod17, 0, 0, 0 },
 					{ 30, 0, 0, geplanterLagerbestand, findAmountById(articles, 30), 0, 0, 0 },
 					{ 6, 0, 0, geplanterLagerbestand, findAmountById(articles, 6), 0, 0, 0 },
 					{ 12, 0, 0, geplanterLagerbestand, findAmountById(articles, 12), 0, 0, 0 },
@@ -469,6 +479,15 @@ public class Main {
 		matrix[2][1] = matrix[0][7];
 		matrix[2][2] = matrix[0][5];
 
+		int modWarte26 = matrix[1][5] % 3;
+		int modWiP26 = matrix[1][6] % 3;
+		matrix[1][5] = matrix[1][5] / 3;
+		matrix[1][6] = matrix[1][6] / 3;
+		if (produktionFall == 1) {
+			matrix[1][5] += modWarte26;
+			matrix[1][6] += modWiP26;
+		}
+
 		matrix[1][7] = matrix[1][1] + matrix[1][2] + matrix[1][3] - matrix[1][4] - matrix[1][5]
 				- matrix[1][6];
 		matrix[2][7] = matrix[2][1] + matrix[2][2] + matrix[2][3] - matrix[2][4] - matrix[2][5]
@@ -483,6 +502,26 @@ public class Main {
 
 		matrix[5][1] = matrix[2][7];
 		matrix[5][2] = matrix[2][5];
+
+		int modwarte16 = matrix[3][5] % 3;
+		int modWip16 = matrix[3][6] % 3;
+
+		int modwarte17 = matrix[4][5] % 3;
+		int modWip17 = matrix[4][6] % 3;
+
+		matrix[3][5] = matrix[3][5] / 3;
+		matrix[3][6] = matrix[3][6] / 3;
+
+		matrix[4][5] = matrix[4][5] / 3;
+		matrix[4][6] = matrix[4][6] / 3;
+
+		if (produktionFall == 1) {
+			matrix[3][5] += modwarte16;
+			matrix[3][6] += modWip16;
+
+			matrix[4][5] += modwarte17;
+			matrix[4][6] += modWip17;
+		}
 
 		matrix[3][7] = matrix[3][1] + matrix[3][2] + matrix[3][3] - matrix[3][4] - matrix[3][5]
 				- matrix[3][6];
@@ -524,7 +563,81 @@ public class Main {
 				- matrix[10][5] - matrix[10][6];
 		matrix[11][7] = matrix[11][1] + matrix[11][2] + matrix[11][3] - matrix[11][4]
 				- matrix[11][5] - matrix[11][6];
+
 		return matrix;
+	}
+
+	public static int[][] calculateProduction(int[][] prodMatrix) {
+
+		// Produktion berechnen
+
+		prodMatrix[0][7] = prodMatrix[0][1] + prodMatrix[0][2] + prodMatrix[0][3] - prodMatrix[0][4]
+				- prodMatrix[0][5] - prodMatrix[0][6];
+
+		// Produktion in geplanter Verkauf übertragen
+		prodMatrix[1][1] = prodMatrix[0][7];
+		prodMatrix[1][2] = prodMatrix[0][5];
+
+		prodMatrix[2][1] = prodMatrix[0][7];
+		prodMatrix[2][2] = prodMatrix[0][5];
+
+		prodMatrix[1][7] = prodMatrix[1][1] + prodMatrix[1][2] + prodMatrix[1][3] - prodMatrix[1][4]
+				- prodMatrix[1][5] - prodMatrix[1][6];
+		prodMatrix[2][7] = prodMatrix[2][1] + prodMatrix[2][2] + prodMatrix[2][3] - prodMatrix[2][4]
+				- prodMatrix[2][5] - prodMatrix[2][6];
+
+		// Produktion in geplanter Verkauf übertragen
+		prodMatrix[3][1] = prodMatrix[2][7];
+		prodMatrix[3][2] = prodMatrix[2][5];
+
+		prodMatrix[4][1] = prodMatrix[2][7];
+		prodMatrix[4][2] = prodMatrix[2][5];
+
+		prodMatrix[5][1] = prodMatrix[2][7];
+		prodMatrix[5][2] = prodMatrix[2][5];
+
+		prodMatrix[3][7] = prodMatrix[3][1] + prodMatrix[3][2] + prodMatrix[3][3] - prodMatrix[3][4]
+				- prodMatrix[3][5] - prodMatrix[3][6];
+		prodMatrix[4][7] = prodMatrix[4][1] + prodMatrix[4][2] + prodMatrix[4][3] - prodMatrix[4][4]
+				- prodMatrix[4][5] - prodMatrix[4][6];
+		prodMatrix[5][7] = prodMatrix[5][1] + prodMatrix[5][2] + prodMatrix[5][3] - prodMatrix[5][4]
+				- prodMatrix[5][5] - prodMatrix[5][6];
+
+		// Produktion in geplanter Verkauf übertragen
+		prodMatrix[6][1] = prodMatrix[5][7];
+		prodMatrix[6][2] = prodMatrix[5][5];
+
+		prodMatrix[7][1] = prodMatrix[5][7];
+		prodMatrix[7][2] = prodMatrix[5][5];
+
+		prodMatrix[8][1] = prodMatrix[5][7];
+		prodMatrix[8][2] = prodMatrix[5][5];
+
+		prodMatrix[6][7] = prodMatrix[6][1] + prodMatrix[6][2] + prodMatrix[6][3] - prodMatrix[6][4]
+				- prodMatrix[6][5] - prodMatrix[6][6];
+		prodMatrix[7][7] = prodMatrix[7][1] + prodMatrix[7][2] + prodMatrix[7][3] - prodMatrix[7][4]
+				- prodMatrix[7][5] - prodMatrix[7][6];
+		prodMatrix[8][7] = prodMatrix[8][1] + prodMatrix[8][2] + prodMatrix[8][3] - prodMatrix[8][4]
+				- prodMatrix[8][5] - prodMatrix[8][6];
+
+		// Produktion in geplanter Verkauf übertragen
+		prodMatrix[9][1] = prodMatrix[8][7];
+		prodMatrix[9][2] = prodMatrix[8][5];
+
+		prodMatrix[10][1] = prodMatrix[8][7];
+		prodMatrix[10][2] = prodMatrix[8][5];
+
+		prodMatrix[11][1] = prodMatrix[8][7];
+		prodMatrix[11][2] = prodMatrix[8][5];
+
+		prodMatrix[9][7] = prodMatrix[9][1] + prodMatrix[9][2] + prodMatrix[9][3] - prodMatrix[9][4]
+				- prodMatrix[9][5] - prodMatrix[9][6];
+		prodMatrix[10][7] = prodMatrix[10][1] + prodMatrix[10][2] + prodMatrix[10][3]
+				- prodMatrix[10][4] - prodMatrix[10][5] - prodMatrix[10][6];
+		prodMatrix[11][7] = prodMatrix[11][1] + prodMatrix[11][2] + prodMatrix[11][3]
+				- prodMatrix[11][4] - prodMatrix[11][5] - prodMatrix[11][6];
+
+		return prodMatrix;
 	}
 
 	private static Map<Integer, Integer> bearbeitungErmitteln(Results results) {

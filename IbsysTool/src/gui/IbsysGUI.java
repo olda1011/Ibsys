@@ -17,6 +17,9 @@ import util.Utility;
 public class IbsysGUI {
 
 	private JFrame frame;
+	public static PurchasePlanning purchasePlanningObject;
+	public static MaterialPlanning materialPlanningObject;
+	public static CapacityPlanning capacityPlanningObject;
 
 	/**
 	 * Launch the application.
@@ -61,14 +64,14 @@ public class IbsysGUI {
 		JTabbedPane PaneContainer = new JTabbedPane(JTabbedPane.TOP);
 		planningPanel.add(PaneContainer);
 
-		MaterialPlanning materialPlanningObject = new MaterialPlanning();
+		materialPlanningObject = new MaterialPlanning();
 		PaneContainer.addTab("Material Planning", null, MaterialPlanning.materialPlanning(), null);
 
-		CapacityPlanning capacityPlanningObject = new CapacityPlanning();
+		capacityPlanningObject = new CapacityPlanning();
 		JTabbedPane capacityPlanningPane = capacityPlanningObject.capacityPlanning();
 		PaneContainer.addTab("Capacity Planning", null, capacityPlanningPane, null);
 
-		PurchasePlanning purchasePlanningObject = new PurchasePlanning();
+		purchasePlanningObject = new PurchasePlanning();
 		JPanel purchasePlanningPanel = purchasePlanningObject.purchasePlanning();
 		PaneContainer.addTab("PurchasePlanning", null, purchasePlanningPanel, null);
 
@@ -89,8 +92,7 @@ public class IbsysGUI {
 		mnView.add(mntmRessources);
 
 		try {
-			Utility.initializeValues(materialPlanningObject, capacityPlanningObject,
-					purchasePlanningObject);
+			Utility.initValues();
 		} catch (NoSuchMethodException | SecurityException | IllegalAccessException
 				| IllegalArgumentException | InvocationTargetException e) {
 			// TODO Auto-generated catch block

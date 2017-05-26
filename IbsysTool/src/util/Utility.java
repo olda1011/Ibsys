@@ -7,17 +7,42 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 
 import application.Main;
-import gui.CapacityPlanning;
-import gui.MaterialPlanning;
+import gui.IbsysGUI;
 import gui.PurchasePlanning;
 
 public class Utility {
 
-	public static void initializeValues(MaterialPlanning materialPlanningObject,
-			CapacityPlanning capacityPlanningObject, PurchasePlanning purchasePlanningObject)
-			throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public void calculateAfterChange() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+
+		// Produktionsprogramm berechnen
+
+		Main.p1Prod = Main.calculateProduction(Main.p1Prod);
+		Main.p2Prod = Main.calculateProduction(Main.p2Prod);
+		Main.p3Prod = Main.calculateProduction(Main.p3Prod);
+
+		// Kaufteilbedarf errechnen
+
+		Main.p1KaufteileVerwendung = Main.generiereKaufteileVerwendung(1, Main.p1Prod,
+				Main.prognosen, Main.results);
+		Main.p2KaufteileVerwendung = Main.generiereKaufteileVerwendung(2, Main.p2Prod,
+				Main.prognosen, Main.results);
+		Main.p3KaufteileVerwendung = Main.generiereKaufteileVerwendung(3, Main.p3Prod,
+				Main.prognosen, Main.results);
+		Main.kaufteileVerwendungMerged = Main.mergeKautfteileVerwendung(Main.p1KaufteileVerwendung,
+				Main.p2KaufteileVerwendung, Main.p3KaufteileVerwendung);
+
+		fillValues();
+	}
+
+	public static void initValues() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		Main.main();
+		fillValues();
+	}
+
+	public static void fillValues() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
 		int[][] p1Prod = Main.p1Prod;
 		int[][] p2Prod = Main.p2Prod;
@@ -35,7 +60,7 @@ public class Utility {
 					} else {
 						methodName = "getTf1_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = materialPlanningObject.getClass()
+					Method method = IbsysGUI.materialPlanningObject.getClass()
 							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
@@ -58,7 +83,7 @@ public class Utility {
 					} else {
 						methodName = "getTf2_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = materialPlanningObject.getClass()
+					Method method = IbsysGUI.materialPlanningObject.getClass()
 							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
@@ -81,7 +106,7 @@ public class Utility {
 					} else {
 						methodName = "getTf3_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = materialPlanningObject.getClass()
+					Method method = IbsysGUI.materialPlanningObject.getClass()
 							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
@@ -91,6 +116,9 @@ public class Utility {
 				}
 			}
 		}
+
+		// Purchase Planning init
+
 		int[][] kaufteileVerwendungMerged = Main.kaufteileVerwendungMerged;
 		JTable purchasePlanningTable = PurchasePlanning.getTable();
 
@@ -104,7 +132,6 @@ public class Utility {
 			}
 
 		}
-		// Purchase Planning init
 
 	}
 
