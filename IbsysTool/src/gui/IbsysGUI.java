@@ -3,15 +3,21 @@ package gui;
 import java.awt.CardLayout;
 import java.awt.EventQueue;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.lang.reflect.InvocationTargetException;
 
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
+import application.Main;
 import util.Utility;
 
 public class IbsysGUI {
@@ -82,22 +88,56 @@ public class IbsysGUI {
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
 
-		JMenu mnView = new JMenu("View");
+		JMenu mnView = new JMenu("Data");
 		menuBar.add(mnView);
 
-		JMenuItem mntmPlanning = new JMenuItem("Planning");
+		JMenuItem mntmPlanning = new JMenuItem("Open XML Data ...");
 		mnView.add(mntmPlanning);
 
-		JMenuItem mntmRessources = new JMenuItem("Ressources");
+		JMenuItem mntmRessources = new JMenuItem("Close Program");
+		mntmRessources.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+			}
+		});
 		mnView.add(mntmRessources);
+		mntmPlanning.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				JFileChooser chooser = new JFileChooser();
+				int showOpenDialog = chooser.showOpenDialog(null);
 
-		try {
-			Utility.initValues();
-		} catch (NoSuchMethodException | SecurityException | IllegalAccessException
-				| IllegalArgumentException | InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+				if (showOpenDialog == JFileChooser.APPROVE_OPTION) {
+
+					String path = chooser.getSelectedFile()
+							.getPath();
+					try {
+						if (Main.loadXmlData(path)) {
+							JOptionPane.showMessageDialog(new JFrame(),
+									"Please choose a valid file which is not empty!", "Error",
+									JOptionPane.ERROR_MESSAGE);
+						} else {
+							try {
+								Utility.initValues();
+							} catch (NoSuchMethodException | SecurityException
+									| IllegalAccessException | IllegalArgumentException
+									| InvocationTargetException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(new JFrame(),
+								"Please choose a valid file! The file has to be a .xml file!",
+								"Error", JOptionPane.ERROR_MESSAGE);
+
+					}
+
+				}
+			}
+		});
 
 	}
 

@@ -1,13 +1,15 @@
 package application;
 
-import java.io.InputStream;
+import java.io.File;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.xml.bind.JAXB;
+import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 import generated.Results;
 import generated.Results.Ordersinwork;
@@ -34,8 +36,6 @@ public class Main {
 	}
 
 	public static void main() {
-		InputStream resultData = Main.class.getResourceAsStream("resultservlet.xml");
-		results = JAXB.unmarshal(resultData, Results.class);
 
 		geplanterLagerbestand = 50;
 
@@ -75,6 +75,24 @@ public class Main {
 		printKaufteilmatrix(p2KaufteileVerwendung);
 		System.out.println("Folgende Kaufteile für P3 werden benötigt:");
 		printKaufteilmatrix(p3KaufteileVerwendung);
+	}
+
+	public static boolean loadXmlData(String path) {
+		File file = new File(path);
+		JAXBContext jaxbContext;
+		try {
+			jaxbContext = JAXBContext.newInstance(Results.class);
+			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+			results = (Results) jaxbUnmarshaller.unmarshal(file);
+
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (results == null) {
+			return true;
+		}
+		return false;
 	}
 
 	public static int[][] mergeKautfteileVerwendung(int[][] p1KaufteileVerwendung2,
