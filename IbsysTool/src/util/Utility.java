@@ -12,23 +12,20 @@ import gui.PurchasePlanning;
 
 public class Utility {
 
-	public void calculateAfterChange() throws NoSuchMethodException, SecurityException,
+	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException,
 			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
 		// Produktionsprogramm berechnen
 
-		Main.p1Prod = Main.calculateProduction(Main.p1Prod);
-		Main.p2Prod = Main.calculateProduction(Main.p2Prod);
-		Main.p3Prod = Main.calculateProduction(Main.p3Prod);
+		Main.p1Prod = Main.calculateProduction(Main.p1Prod, 1);
+		Main.p2Prod = Main.calculateProduction(Main.p2Prod, 2);
+		Main.p3Prod = Main.calculateProduction(Main.p3Prod, 3);
 
 		// Kaufteilbedarf errechnen
 
-		Main.p1KaufteileVerwendung = Main.generiereKaufteileVerwendung(1, Main.p1Prod,
-				Main.prognosen, Main.results);
-		Main.p2KaufteileVerwendung = Main.generiereKaufteileVerwendung(2, Main.p2Prod,
-				Main.prognosen, Main.results);
-		Main.p3KaufteileVerwendung = Main.generiereKaufteileVerwendung(3, Main.p3Prod,
-				Main.prognosen, Main.results);
+		Main.p1KaufteileVerwendung = Main.generiereKaufteileVerwendung(1, Main.p1Prod);
+		Main.p2KaufteileVerwendung = Main.generiereKaufteileVerwendung(2, Main.p2Prod);
+		Main.p3KaufteileVerwendung = Main.generiereKaufteileVerwendung(3, Main.p3Prod);
 		Main.kaufteileVerwendungMerged = Main.mergeKautfteileVerwendung(Main.p1KaufteileVerwendung,
 				Main.p2KaufteileVerwendung, Main.p3KaufteileVerwendung);
 

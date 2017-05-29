@@ -91,18 +91,18 @@ public class IbsysGUI {
 		JMenu mnView = new JMenu("Data");
 		menuBar.add(mnView);
 
-		JMenuItem mntmPlanning = new JMenuItem("Open XML Data ...");
-		mnView.add(mntmPlanning);
+		JMenuItem openDialog = new JMenuItem("Open XML Data ...");
+		mnView.add(openDialog);
 
-		JMenuItem mntmRessources = new JMenuItem("Close Program");
-		mntmRessources.addActionListener(new ActionListener() {
+		JMenuItem closeApp = new JMenuItem("Close Program");
+		closeApp.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
 			}
 		});
-		mnView.add(mntmRessources);
-		mntmPlanning.addActionListener(new ActionListener() {
+		mnView.add(closeApp);
+		openDialog.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser chooser = new JFileChooser();
