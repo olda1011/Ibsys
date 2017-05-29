@@ -120,6 +120,86 @@ public class IbsysGUI {
 						} else {
 							try {
 								Utility.initValues();
+								MaterialPlanning.getTf1_0101()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0301()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0302()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0303()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0304()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0305()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0306()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0307()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0308()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0309()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0310()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0311()
+										.setEditable(true);
+								MaterialPlanning.getTf1_0312()
+										.setEditable(true);
+
+								MaterialPlanning.getTf2_0101()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0301()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0302()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0303()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0304()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0305()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0306()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0307()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0308()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0309()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0310()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0311()
+										.setEditable(true);
+								MaterialPlanning.getTf2_0312()
+										.setEditable(true);
+
+								MaterialPlanning.getTf3_0101()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0301()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0302()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0303()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0304()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0305()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0306()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0307()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0308()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0309()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0310()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0311()
+										.setEditable(true);
+								MaterialPlanning.getTf3_0312()
+										.setEditable(true);
 							} catch (NoSuchMethodException | SecurityException
 									| IllegalAccessException | IllegalArgumentException
 									| InvocationTargetException e) {

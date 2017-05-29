@@ -5778,6 +5778,20 @@ public class MaterialPlanning {
 		gbc_lblE_27.gridy = 18;
 		p3_panel.add(lblE_27, gbc_lblE_27);
 
+		tf1_0101.setEditable(false);
+		tf1_0301.setEditable(false);
+		tf1_0302.setEditable(false);
+		tf1_0303.setEditable(false);
+		tf1_0304.setEditable(false);
+		tf1_0305.setEditable(false);
+		tf1_0306.setEditable(false);
+		tf1_0307.setEditable(false);
+		tf1_0308.setEditable(false);
+		tf1_0309.setEditable(false);
+		tf1_0310.setEditable(false);
+		tf1_0311.setEditable(false);
+		tf1_0312.setEditable(false);
+
 		tf1_0401.setEditable(false);
 		tf1_0501.setEditable(false);
 		tf1_0601.setEditable(false);
@@ -6138,6 +6152,7 @@ public class MaterialPlanning {
 					JOptionPane.showMessageDialog(new JFrame(),
 							"Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
+
 				}
 			}
 		});
