@@ -18,9 +18,9 @@ import javax.swing.ScrollPaneConstants;
 
 public class CapacityPlanning {
 	
-	private JTextField cptf1_;
-	private JTextField textField_250;
-	private JTextField textField_251;
+	private JTextField cptf1_49;
+	private JTextField cptf1_54;
+	private JTextField cptf1_29;
 	private JTextField textField_252;
 	private JTextField textField_253;
 	private JTextField textField_254;
@@ -29,210 +29,207 @@ public class CapacityPlanning {
 	private JTextField textField_257;
 	private JTextField textField_258;
 	private JTextField textField_279;
-	private JTextField textField_249;
+	private JTextField cptf3_51;
 	private JTextField textField_259;
-	private JTextField textField_260;
+	private JTextField cptf3_56;
 	private JTextField textField_261;
-	private JTextField textField_262;
+	private JTextField cptf3_31;
 	private JTextField textField_263;
 	private JTextField textField_264;
 	private JTextField textField_265;
 	private JTextField textField_266;
 	private JTextField textField_267;
 	private JTextField textField_268;
-	private JTextField textField_269;
+	private JTextField cptf2_50;
 	private JTextField textField_270;
-	private JTextField textField_271;
+	private JTextField cptf2_55;
 	private JTextField textField_272;
-	private JTextField textField_273;
+	private JTextField cptf2_30;
 	private JTextField textField_274;
 	private JTextField textField_275;
 	private JTextField textField_276;
 	private JTextField textField_277;
 	private JTextField textField_278;
 	private JTextField textField_280;
-	private JTextField textField_83;
+	private JTextField cptf4_1;
 	private JTextField textField_84;
-	private JTextField textField_85;
+	private JTextField cptf4_2;
 	private JTextField textField_86;
-	private JTextField textField_87;
+	private JTextField cptf4_3;
 	private JTextField textField_88;
 	private JTextField textField_89;
 	private JTextField textField_90;
 	private JTextField textField_91;
 	private JTextField textField_92;
 	private JTextField textField_93;
-	private JTextField textField;
+	private JTextField cptf6_18;
 	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField cptf6_19;
 	private JTextField textField_3;
-	private JTextField textField_4;
+	private JTextField cptf6_20;
 	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTextField textField_7;
 	private JTextField textField_8;
 	private JTextField textField_9;
 	private JTextField textField_10;
-	private JTextField textField_11;
+	private JTextField cptf6_16;
 	private JTextField textField_12;
-	private JTextField textField_13;
-	private JTextField textField_14;
-	private JTextField textField_15;
-	private JTextField textField_16;
-	private JTextField textField_17;
-	private JTextField textField_18;
-	private JTextField textField_19;
-	private JTextField textField_20;
-	private JTextField textField_21;
-	private JTextField textField_22;
-	private JTextField textField_23;
-	private JTextField textField_24;
-	private JTextField textField_25;
-	private JTextField textField_26;
+	private JTextField cptf7_10;
 	private JTextField textField_27;
-	private JTextField textField_28;
+	private JTextField cptf7_13;
 	private JTextField textField_29;
-	private JTextField textField_30;
+	private JTextField cptf7_14;
 	private JTextField textField_31;
-	private JTextField textField_32;
+	private JTextField cptf7_15;
 	private JTextField textField_33;
 	private JTextField textField_34;
 	private JTextField textField_35;
 	private JTextField textField_36;
 	private JTextField textField_37;
 	private JTextField textField_38;
-	private JTextField textField_39;
-	private JTextField textField_40;
+	private JTextField cptf7_11;
+	private JTextField cptf7_12;
 	private JTextField textField_41;
 	private JTextField textField_42;
-	private JTextField textField_43;
+	private JTextField cptf7_18;
 	private JTextField textField_44;
-	private JTextField textField_45;
+	private JTextField cptf7_19;
 	private JTextField textField_46;
-	private JTextField textField_47;
+	private JTextField cptf7_20;
 	private JTextField textField_48;
-	private JTextField textField_51;
+	private JTextField cptf8_10;
 	private JTextField textField_52;
-	private JTextField textField_53;
+	private JTextField cptf8_11;
 	private JTextField textField_54;
-	private JTextField textField_55;
+	private JTextField cptf8_12;
 	private JTextField textField_56;
-	private JTextField textField_57;
+	private JTextField cptf8_13;
 	private JTextField textField_58;
-	private JTextField textField_59;
+	private JTextField cptf8_14;
 	private JTextField textField_60;
-	private JTextField textField_61;
+	private JTextField cptf8_15;
 	private JTextField textField_62;
-	private JTextField textField_63;
+	private JTextField cptf8_18;
 	private JTextField textField_64;
-	private JTextField textField_65;
+	private JTextField cptf8_19;
 	private JTextField textField_66;
-	private JTextField textField_67;
+	private JTextField cptf8_20;
 	private JTextField textField_68;
 	private JTextField textField_71;
 	private JTextField textField_72;
 	private JTextField textField_73;
 	private JTextField textField_74;
 	private JTextField textField_75;
-	private JTextField textField_49;
+	private JTextField cptf7_26;
 	private JTextField textField_50;
-	private JTextField textField_69;
+	private JTextField cptf9_10;
 	private JTextField textField_70;
-	private JTextField textField_76;
+	private JTextField cptf9_11;
 	private JTextField textField_77;
-	private JTextField textField_78;
+	private JTextField cptf9_12;
 	private JTextField textField_79;
-	private JTextField textField_80;
+	private JTextField cptf9_13;
 	private JTextField textField_81;
-	private JTextField textField_82;
+	private JTextField cptf9_14;
 	private JTextField textField_94;
-	private JTextField textField_95;
+	private JTextField cptf9_15;
 	private JTextField textField_96;
-	private JTextField textField_97;
+	private JTextField cptf9_18;
 	private JTextField textField_98;
-	private JTextField textField_99;
+	private JTextField cptf9_19;
 	private JTextField textField_100;
-	private JTextField textField_101;
+	private JTextField cptf9_20;
 	private JTextField textField_102;
 	private JTextField textField_103;
 	private JTextField textField_104;
 	private JTextField textField_105;
 	private JTextField textField_106;
 	private JTextField textField_107;
-	private JTextField textField_108;
+	private JTextField cptf10_4;
 	private JTextField textField_109;
-	private JTextField textField_110;
+	private JTextField cptf10_5;
 	private JTextField textField_111;
-	private JTextField textField_112;
+	private JTextField cptf10_6;
 	private JTextField textField_113;
-	private JTextField textField_114;
+	private JTextField cptf10_7;
 	private JTextField textField_115;
-	private JTextField textField_116;
+	private JTextField cptf10_8;
 	private JTextField textField_117;
-	private JTextField textField_118;
+	private JTextField cptf10_9;
 	private JTextField textField_119;
 	private JTextField textField_126;
 	private JTextField textField_127;
 	private JTextField textField_128;
 	private JTextField textField_129;
 	private JTextField textField_130;
-	private JTextField textField_131;
+	private JTextField cptf11_4;
 	private JTextField textField_132;
-	private JTextField textField_133;
+	private JTextField cptf11_5;
 	private JTextField textField_134;
-	private JTextField textField_135;
+	private JTextField cptf11_6;
 	private JTextField textField_136;
-	private JTextField textField_137;
+	private JTextField cptf11_7;
 	private JTextField textField_138;
-	private JTextField textField_139;
+	private JTextField cptf11_8;
 	private JTextField textField_140;
-	private JTextField textField_141;
+	private JTextField cptf11_9;
 	private JTextField textField_142;
 	private JTextField textField_149;
 	private JTextField textField_150;
 	private JTextField textField_151;
 	private JTextField textField_152;
 	private JTextField textField_153;
-	private JTextField textField_120;
+	private JTextField cptf12_10;
 	private JTextField textField_121;
-	private JTextField textField_122;
+	private JTextField cptf12_11;
 	private JTextField textField_123;
-	private JTextField textField_124;
+	private JTextField cptf12_12;
 	private JTextField textField_125;
-	private JTextField textField_143;
+	private JTextField cptf12_13;
 	private JTextField textField_144;
-	private JTextField textField_145;
+	private JTextField cptf12_14;
 	private JTextField textField_146;
-	private JTextField textField_147;
+	private JTextField cptf12_15;
 	private JTextField textField_148;
 	private JTextField textField_160;
 	private JTextField textField_161;
 	private JTextField textField_162;
 	private JTextField textField_163;
 	private JTextField textField_164;
-	private JTextField textField_154;
+	private JTextField cptf13_10;
 	private JTextField textField_155;
-	private JTextField textField_156;
+	private JTextField cptf13_11;
 	private JTextField textField_157;
-	private JTextField textField_158;
+	private JTextField cptf13_12;
 	private JTextField textField_159;
-	private JTextField textField_165;
+	private JTextField cptf13_13;
 	private JTextField textField_166;
-	private JTextField textField_167;
+	private JTextField cptf13_14;
 	private JTextField textField_168;
-	private JTextField textField_169;
+	private JTextField cptf13_15;
 	private JTextField textField_170;
-	private JTextField textField_171;
-	private JTextField textField_172;
-	private JTextField textField_173;
-	private JTextField textField_174;
-	private JTextField textField_175;
-	private JTextField textField_176;
 	private JTextField textField_177;
 	private JTextField textField_178;
 	private JTextField textField_179;
 	private JTextField textField_180;
 	private JTextField textField_181;
+	private JTextField cptf14_16;
+	private JTextField textField_172;
+	private JTextField textField_184;
+	private JTextField textField_185;
+	private JTextField textField_186;
+	private JTextField textField_187;
+	private JTextField textField_188;
+	private JTextField cptf15_17;
+	private JTextField textField_190;
+	private JTextField cptf15_26;
+	private JTextField textField_192;
+	private JTextField textField_197;
+	private JTextField textField_198;
+	private JTextField textField_199;
+	private JTextField textField_200;
+	private JTextField textField_201;
 
 	public CapacityPlanning() {
 		super();
@@ -245,6 +242,257 @@ public class CapacityPlanning {
 	public JTabbedPane capacityPlanning(){
 	
 	JTabbedPane capacityplanningPane = new JTabbedPane(JTabbedPane.TOP);
+	
+	
+	JPanel cpp_workstation1 = new JPanel();
+	capacityplanningPane.addTab("W1", null, cpp_workstation1, null);
+	GridBagLayout gbl_cpp_workstation1 = new GridBagLayout();
+	gbl_cpp_workstation1.columnWidths = new int[] {30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0};
+	gbl_cpp_workstation1.rowHeights = new int[] {40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30};
+	gbl_cpp_workstation1.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+	gbl_cpp_workstation1.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+	cpp_workstation1.setLayout(gbl_cpp_workstation1);
+	
+	JLabel cpl1_workstation = new JLabel("Arbeitsplatz");
+	GridBagConstraints gbc_cpl1_workstation = new GridBagConstraints();
+	gbc_cpl1_workstation.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_workstation.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_workstation.gridx = 1;
+	gbc_cpl1_workstation.gridy = 1;
+	cpp_workstation1.add(cpl1_workstation, gbc_cpl1_workstation);
+	
+	JLabel lblNewLabel_13 = new JLabel("1");
+	GridBagConstraints gbc_lblNewLabel_13 = new GridBagConstraints();
+	gbc_lblNewLabel_13.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_13.gridx = 2;
+	gbc_lblNewLabel_13.gridy = 1;
+	cpp_workstation1.add(lblNewLabel_13, gbc_lblNewLabel_13);
+	
+	JLabel cpl1_frontwheelcomplete = new JLabel("Vorderrad Komplett");
+	GridBagConstraints gbc_cpl1_frontwheelcomplete = new GridBagConstraints();
+	gbc_cpl1_frontwheelcomplete.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_frontwheelcomplete.gridheight = 3;
+	gbc_cpl1_frontwheelcomplete.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_frontwheelcomplete.gridx = 1;
+	gbc_cpl1_frontwheelcomplete.gridy = 3;
+	cpp_workstation1.add(cpl1_frontwheelcomplete, gbc_cpl1_frontwheelcomplete);
+	
+	JLabel cpl1_c = new JLabel("K");
+	GridBagConstraints gbc_cpl1_c = new GridBagConstraints();
+	gbc_cpl1_c.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_c.gridx = 3;
+	gbc_cpl1_c.gridy = 3;
+	cpp_workstation1.add(cpl1_c, gbc_cpl1_c);
+	
+	JLabel lblNewLabel_3 = new JLabel("E49");
+	GridBagConstraints gbc_lblNewLabel_3 = new GridBagConstraints();
+	gbc_lblNewLabel_3.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_3.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_3.gridx = 4;
+	gbc_lblNewLabel_3.gridy = 3;
+	cpp_workstation1.add(lblNewLabel_3, gbc_lblNewLabel_3);
+	
+	cptf1_49 = new JTextField();
+	GridBagConstraints gbc_cptf1_49 = new GridBagConstraints();
+	gbc_cptf1_49.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf1_49.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf1_49.gridx = 5;
+	gbc_cptf1_49.gridy = 3;
+	cpp_workstation1.add(cptf1_49, gbc_cptf1_49);
+	cptf1_49.setColumns(10);
+	
+	JLabel lblNewLabel_9 = new JLabel("x6 =");
+	GridBagConstraints gbc_lblNewLabel_9 = new GridBagConstraints();
+	gbc_lblNewLabel_9.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_9.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_9.gridx = 6;
+	gbc_lblNewLabel_9.gridy = 3;
+	cpp_workstation1.add(lblNewLabel_9, gbc_lblNewLabel_9);
+	
+	textField_252 = new JTextField();
+	textField_252.setColumns(10);
+	GridBagConstraints gbc_textField_252 = new GridBagConstraints();
+	gbc_textField_252.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_252.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_252.gridx = 7;
+	gbc_textField_252.gridy = 3;
+	cpp_workstation1.add(textField_252, gbc_textField_252);
+	
+	JLabel cpl1_l = new JLabel("D");
+	GridBagConstraints gbc_cpl1_l = new GridBagConstraints();
+	gbc_cpl1_l.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_l.gridx = 3;
+	gbc_cpl1_l.gridy = 4;
+	cpp_workstation1.add(cpl1_l, gbc_cpl1_l);
+	
+	JLabel lblNewLabel_6 = new JLabel("E54");
+	GridBagConstraints gbc_lblNewLabel_6 = new GridBagConstraints();
+	gbc_lblNewLabel_6.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_6.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_6.gridx = 4;
+	gbc_lblNewLabel_6.gridy = 4;
+	cpp_workstation1.add(lblNewLabel_6, gbc_lblNewLabel_6);
+	
+	cptf1_54 = new JTextField();
+	GridBagConstraints gbc_cptf1_54 = new GridBagConstraints();
+	gbc_cptf1_54.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf1_54.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf1_54.gridx = 5;
+	gbc_cptf1_54.gridy = 4;
+	cpp_workstation1.add(cptf1_54, gbc_cptf1_54);
+	cptf1_54.setColumns(10);
+	
+	JLabel lblNewLabel_10 = new JLabel("x6 =");
+	GridBagConstraints gbc_lblNewLabel_10 = new GridBagConstraints();
+	gbc_lblNewLabel_10.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_10.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_10.gridx = 6;
+	gbc_lblNewLabel_10.gridy = 4;
+	cpp_workstation1.add(lblNewLabel_10, gbc_lblNewLabel_10);
+	
+	textField_253 = new JTextField();
+	textField_253.setColumns(10);
+	GridBagConstraints gbc_textField_253 = new GridBagConstraints();
+	gbc_textField_253.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_253.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_253.gridx = 7;
+	gbc_textField_253.gridy = 4;
+	cpp_workstation1.add(textField_253, gbc_textField_253);
+	
+	JLabel cpl1_m = new JLabel("H");
+	GridBagConstraints gbc_cpl1_m = new GridBagConstraints();
+	gbc_cpl1_m.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_m.gridx = 3;
+	gbc_cpl1_m.gridy = 5;
+	cpp_workstation1.add(cpl1_m, gbc_cpl1_m);
+	
+	JLabel lblNewLabel_7 = new JLabel("E29");
+	GridBagConstraints gbc_lblNewLabel_7 = new GridBagConstraints();
+	gbc_lblNewLabel_7.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_7.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_7.gridx = 4;
+	gbc_lblNewLabel_7.gridy = 5;
+	cpp_workstation1.add(lblNewLabel_7, gbc_lblNewLabel_7);
+	
+	cptf1_29 = new JTextField();
+	GridBagConstraints gbc_cptf1_29 = new GridBagConstraints();
+	gbc_cptf1_29.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf1_29.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf1_29.gridx = 5;
+	gbc_cptf1_29.gridy = 5;
+	cpp_workstation1.add(cptf1_29, gbc_cptf1_29);
+	cptf1_29.setColumns(10);
+	
+	JLabel lblNewLabel_11 = new JLabel("x6 =");
+	GridBagConstraints gbc_lblNewLabel_11 = new GridBagConstraints();
+	gbc_lblNewLabel_11.anchor = GridBagConstraints.EAST;
+	gbc_lblNewLabel_11.insets = new Insets(0, 0, 5, 5);
+	gbc_lblNewLabel_11.gridx = 6;
+	gbc_lblNewLabel_11.gridy = 5;
+	cpp_workstation1.add(lblNewLabel_11, gbc_lblNewLabel_11);
+	
+	textField_254 = new JTextField();
+	textField_254.setColumns(10);
+	GridBagConstraints gbc_textField_254 = new GridBagConstraints();
+	gbc_textField_254.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_254.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_254.gridx = 7;
+	gbc_textField_254.gridy = 5;
+	cpp_workstation1.add(textField_254, gbc_textField_254);
+	
+	JSeparator separator_1 = new JSeparator();
+	GridBagConstraints gbc_separator_1 = new GridBagConstraints();
+	gbc_separator_1.fill = GridBagConstraints.HORIZONTAL;
+	gbc_separator_1.gridwidth = 7;
+	gbc_separator_1.insets = new Insets(0, 0, 5, 5);
+	gbc_separator_1.gridx = 1;
+	gbc_separator_1.gridy = 6;
+	cpp_workstation1.add(separator_1, gbc_separator_1);
+	
+	JLabel cpl1_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+	GridBagConstraints gbc_cpl1_capacityrequirements = new GridBagConstraints();
+	gbc_cpl1_capacityrequirements.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_capacityrequirements.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_capacityrequirements.gridx = 1;
+	gbc_cpl1_capacityrequirements.gridy = 7;
+	cpp_workstation1.add(cpl1_capacityrequirements, gbc_cpl1_capacityrequirements);
+	
+	textField_255 = new JTextField();
+	textField_255.setColumns(10);
+	GridBagConstraints gbc_textField_255 = new GridBagConstraints();
+	gbc_textField_255.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_255.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_255.gridx = 7;
+	gbc_textField_255.gridy = 7;
+	cpp_workstation1.add(textField_255, gbc_textField_255);
+	
+	JLabel cpl1_setuptime = new JLabel("R\u00FCstzeit");
+	GridBagConstraints gbc_cpl1_setuptime = new GridBagConstraints();
+	gbc_cpl1_setuptime.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_setuptime.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_setuptime.gridx = 1;
+	gbc_cpl1_setuptime.gridy = 8;
+	cpp_workstation1.add(cpl1_setuptime, gbc_cpl1_setuptime);
+	
+	textField_256 = new JTextField();
+	textField_256.setColumns(10);
+	GridBagConstraints gbc_textField_256 = new GridBagConstraints();
+	gbc_textField_256.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_256.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_256.gridx = 7;
+	gbc_textField_256.gridy = 8;
+	cpp_workstation1.add(textField_256, gbc_textField_256);
+	
+	JLabel lblTotaleKapazitt = new JLabel("Totale Kapazit\u00E4t");
+	GridBagConstraints gbc_lblTotaleKapazitt = new GridBagConstraints();
+	gbc_lblTotaleKapazitt.anchor = GridBagConstraints.WEST;
+	gbc_lblTotaleKapazitt.insets = new Insets(0, 0, 5, 5);
+	gbc_lblTotaleKapazitt.gridx = 1;
+	gbc_lblTotaleKapazitt.gridy = 9;
+	cpp_workstation1.add(lblTotaleKapazitt, gbc_lblTotaleKapazitt);
+	
+	textField_257 = new JTextField();
+	textField_257.setColumns(10);
+	GridBagConstraints gbc_textField_257 = new GridBagConstraints();
+	gbc_textField_257.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_257.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_257.gridx = 7;
+	gbc_textField_257.gridy = 9;
+	cpp_workstation1.add(textField_257, gbc_textField_257);
+	
+	JLabel cpl1_workload = new JLabel("Auslastung %");
+	GridBagConstraints gbc_cpl1_workload = new GridBagConstraints();
+	gbc_cpl1_workload.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_workload.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_workload.gridx = 1;
+	gbc_cpl1_workload.gridy = 10;
+	cpp_workstation1.add(cpl1_workload, gbc_cpl1_workload);
+	
+	textField_258 = new JTextField();
+	textField_258.setColumns(10);
+	GridBagConstraints gbc_textField_258 = new GridBagConstraints();
+	gbc_textField_258.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_258.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_258.gridx = 7;
+	gbc_textField_258.gridy = 10;
+	cpp_workstation1.add(textField_258, gbc_textField_258);
+	
+	JLabel cpl1_overtime = new JLabel("\u00DCberstunden (min) ");
+	GridBagConstraints gbc_cpl1_overtime = new GridBagConstraints();
+	gbc_cpl1_overtime.anchor = GridBagConstraints.WEST;
+	gbc_cpl1_overtime.insets = new Insets(0, 0, 5, 5);
+	gbc_cpl1_overtime.gridx = 1;
+	gbc_cpl1_overtime.gridy = 11;
+	cpp_workstation1.add(cpl1_overtime, gbc_cpl1_overtime);
+	
+	textField_279 = new JTextField();
+	textField_279.setColumns(10);
+	GridBagConstraints gbc_textField_279 = new GridBagConstraints();
+	gbc_textField_279.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_279.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_279.gridx = 7;
+	gbc_textField_279.gridy = 11;
+	cpp_workstation1.add(textField_279, gbc_textField_279);
 	
 	JPanel cpp_workstation2 = new JPanel();
 	capacityplanningPane.addTab("W2", null, cpp_workstation2, null);
@@ -294,16 +542,16 @@ public class CapacityPlanning {
 	gbc_lblE_33.gridy = 3;
 	cpp_workstation2.add(lblE_33, gbc_lblE_33);
 	
-	textField_269 = new JTextField();
-	textField_269.setColumns(10);
-	GridBagConstraints gbc_textField_269 = new GridBagConstraints();
-	gbc_textField_269.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_269.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_269.gridx = 5;
-	gbc_textField_269.gridy = 3;
-	cpp_workstation2.add(textField_269, gbc_textField_269);
+	cptf2_50 = new JTextField();
+	cptf2_50.setColumns(10);
+	GridBagConstraints gbc_cptf2_50 = new GridBagConstraints();
+	gbc_cptf2_50.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf2_50.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf2_50.gridx = 5;
+	gbc_cptf2_50.gridy = 3;
+	cpp_workstation2.add(cptf2_50, gbc_cptf2_50);
 	
-	JLabel lblX = new JLabel("x5");
+	JLabel lblX = new JLabel("x5 =");
 	GridBagConstraints gbc_lblX = new GridBagConstraints();
 	gbc_lblX.anchor = GridBagConstraints.EAST;
 	gbc_lblX.insets = new Insets(0, 0, 5, 5);
@@ -335,16 +583,16 @@ public class CapacityPlanning {
 	gbc_lblE_34.gridy = 4;
 	cpp_workstation2.add(lblE_34, gbc_lblE_34);
 	
-	textField_271 = new JTextField();
-	textField_271.setColumns(10);
-	GridBagConstraints gbc_textField_271 = new GridBagConstraints();
-	gbc_textField_271.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_271.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_271.gridx = 5;
-	gbc_textField_271.gridy = 4;
-	cpp_workstation2.add(textField_271, gbc_textField_271);
+	cptf2_55 = new JTextField();
+	cptf2_55.setColumns(10);
+	GridBagConstraints gbc_cptf2_55 = new GridBagConstraints();
+	gbc_cptf2_55.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf2_55.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf2_55.gridx = 5;
+	gbc_cptf2_55.gridy = 4;
+	cpp_workstation2.add(cptf2_55, gbc_cptf2_55);
 	
-	JLabel lblX_1 = new JLabel("x5");
+	JLabel lblX_1 = new JLabel("x5 =");
 	GridBagConstraints gbc_lblX_1 = new GridBagConstraints();
 	gbc_lblX_1.anchor = GridBagConstraints.EAST;
 	gbc_lblX_1.insets = new Insets(0, 0, 5, 5);
@@ -376,16 +624,16 @@ public class CapacityPlanning {
 	gbc_lblE_35.gridy = 5;
 	cpp_workstation2.add(lblE_35, gbc_lblE_35);
 	
-	textField_273 = new JTextField();
-	textField_273.setColumns(10);
-	GridBagConstraints gbc_textField_273 = new GridBagConstraints();
-	gbc_textField_273.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_273.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_273.gridx = 5;
-	gbc_textField_273.gridy = 5;
-	cpp_workstation2.add(textField_273, gbc_textField_273);
+	cptf2_30 = new JTextField();
+	cptf2_30.setColumns(10);
+	GridBagConstraints gbc_cptf2_30 = new GridBagConstraints();
+	gbc_cptf2_30.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf2_30.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf2_30.gridx = 5;
+	gbc_cptf2_30.gridy = 5;
+	cpp_workstation2.add(cptf2_30, gbc_cptf2_30);
 	
-	JLabel lblX_2 = new JLabel("x5");
+	JLabel lblX_2 = new JLabel("x5 =");
 	GridBagConstraints gbc_lblX_2 = new GridBagConstraints();
 	gbc_lblX_2.anchor = GridBagConstraints.EAST;
 	gbc_lblX_2.insets = new Insets(0, 0, 5, 5);
@@ -544,16 +792,16 @@ public class CapacityPlanning {
 	gbc_lblE_36.gridy = 3;
 	cpp_workstation3.add(lblE_36, gbc_lblE_36);
 	
-	textField_249 = new JTextField();
-	textField_249.setColumns(10);
-	GridBagConstraints gbc_textField_249 = new GridBagConstraints();
-	gbc_textField_249.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_249.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_249.gridx = 5;
-	gbc_textField_249.gridy = 3;
-	cpp_workstation3.add(textField_249, gbc_textField_249);
+	cptf3_51 = new JTextField();
+	cptf3_51.setColumns(10);
+	GridBagConstraints gbc_cptf3_51 = new GridBagConstraints();
+	gbc_cptf3_51.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf3_51.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf3_51.gridx = 5;
+	gbc_cptf3_51.gridy = 3;
+	cpp_workstation3.add(cptf3_51, gbc_cptf3_51);
 	
-	JLabel lblX_3 = new JLabel("x5");
+	JLabel lblX_3 = new JLabel("x5 =");
 	GridBagConstraints gbc_lblX_3 = new GridBagConstraints();
 	gbc_lblX_3.anchor = GridBagConstraints.EAST;
 	gbc_lblX_3.insets = new Insets(0, 0, 5, 5);
@@ -585,16 +833,16 @@ public class CapacityPlanning {
 	gbc_lblE_37.gridy = 4;
 	cpp_workstation3.add(lblE_37, gbc_lblE_37);
 	
-	textField_260 = new JTextField();
-	textField_260.setColumns(10);
-	GridBagConstraints gbc_textField_260 = new GridBagConstraints();
-	gbc_textField_260.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_260.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_260.gridx = 5;
-	gbc_textField_260.gridy = 4;
-	cpp_workstation3.add(textField_260, gbc_textField_260);
+	cptf3_56 = new JTextField();
+	cptf3_56.setColumns(10);
+	GridBagConstraints gbc_cptf3_56 = new GridBagConstraints();
+	gbc_cptf3_56.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf3_56.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf3_56.gridx = 5;
+	gbc_cptf3_56.gridy = 4;
+	cpp_workstation3.add(cptf3_56, gbc_cptf3_56);
 	
-	JLabel label_89 = new JLabel("x6");
+	JLabel label_89 = new JLabel("x6 =");
 	GridBagConstraints gbc_label_89 = new GridBagConstraints();
 	gbc_label_89.anchor = GridBagConstraints.EAST;
 	gbc_label_89.insets = new Insets(0, 0, 5, 5);
@@ -626,16 +874,16 @@ public class CapacityPlanning {
 	gbc_lblE_38.gridy = 5;
 	cpp_workstation3.add(lblE_38, gbc_lblE_38);
 	
-	textField_262 = new JTextField();
-	textField_262.setColumns(10);
-	GridBagConstraints gbc_textField_262 = new GridBagConstraints();
-	gbc_textField_262.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_262.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_262.gridx = 5;
-	gbc_textField_262.gridy = 5;
-	cpp_workstation3.add(textField_262, gbc_textField_262);
+	cptf3_31 = new JTextField();
+	cptf3_31.setColumns(10);
+	GridBagConstraints gbc_cptf3_31 = new GridBagConstraints();
+	gbc_cptf3_31.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf3_31.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf3_31.gridx = 5;
+	gbc_cptf3_31.gridy = 5;
+	cpp_workstation3.add(cptf3_31, gbc_cptf3_31);
 	
-	JLabel label_206 = new JLabel("x6");
+	JLabel label_206 = new JLabel("x6 =");
 	GridBagConstraints gbc_label_206 = new GridBagConstraints();
 	gbc_label_206.anchor = GridBagConstraints.EAST;
 	gbc_label_206.insets = new Insets(0, 0, 5, 5);
@@ -794,16 +1042,16 @@ public class CapacityPlanning {
 	gbc_lblP_4.gridy = 3;
 	cpp_workstation4.add(lblP_4, gbc_lblP_4);
 	
-	textField_83 = new JTextField();
-	textField_83.setColumns(10);
-	GridBagConstraints gbc_textField_83 = new GridBagConstraints();
-	gbc_textField_83.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_83.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_83.gridx = 5;
-	gbc_textField_83.gridy = 3;
-	cpp_workstation4.add(textField_83, gbc_textField_83);
+	cptf4_1 = new JTextField();
+	cptf4_1.setColumns(10);
+	GridBagConstraints gbc_cptf4_1 = new GridBagConstraints();
+	gbc_cptf4_1.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf4_1.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf4_1.gridx = 5;
+	gbc_cptf4_1.gridy = 3;
+	cpp_workstation4.add(cptf4_1, gbc_cptf4_1);
 	
-	JLabel lblX_4 = new JLabel("x6");
+	JLabel lblX_4 = new JLabel("x6 =");
 	GridBagConstraints gbc_lblX_4 = new GridBagConstraints();
 	gbc_lblX_4.anchor = GridBagConstraints.EAST;
 	gbc_lblX_4.insets = new Insets(0, 0, 5, 5);
@@ -835,16 +1083,16 @@ public class CapacityPlanning {
 	gbc_lblP_5.gridy = 4;
 	cpp_workstation4.add(lblP_5, gbc_lblP_5);
 	
-	textField_85 = new JTextField();
-	textField_85.setColumns(10);
-	GridBagConstraints gbc_textField_85 = new GridBagConstraints();
-	gbc_textField_85.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_85.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_85.gridx = 5;
-	gbc_textField_85.gridy = 4;
-	cpp_workstation4.add(textField_85, gbc_textField_85);
+	cptf4_2 = new JTextField();
+	cptf4_2.setColumns(10);
+	GridBagConstraints gbc_cptf4_2 = new GridBagConstraints();
+	gbc_cptf4_2.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf4_2.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf4_2.gridx = 5;
+	gbc_cptf4_2.gridy = 4;
+	cpp_workstation4.add(cptf4_2, gbc_cptf4_2);
 	
-	JLabel lblX_5 = new JLabel("x7");
+	JLabel lblX_5 = new JLabel("x7 =");
 	GridBagConstraints gbc_lblX_5 = new GridBagConstraints();
 	gbc_lblX_5.anchor = GridBagConstraints.EAST;
 	gbc_lblX_5.insets = new Insets(0, 0, 5, 5);
@@ -876,16 +1124,16 @@ public class CapacityPlanning {
 	gbc_lblP_6.gridy = 5;
 	cpp_workstation4.add(lblP_6, gbc_lblP_6);
 	
-	textField_87 = new JTextField();
-	textField_87.setColumns(10);
-	GridBagConstraints gbc_textField_87 = new GridBagConstraints();
-	gbc_textField_87.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_87.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_87.gridx = 5;
-	gbc_textField_87.gridy = 5;
-	cpp_workstation4.add(textField_87, gbc_textField_87);
+	cptf4_3 = new JTextField();
+	cptf4_3.setColumns(10);
+	GridBagConstraints gbc_cptf4_3 = new GridBagConstraints();
+	gbc_cptf4_3.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf4_3.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf4_3.gridx = 5;
+	gbc_cptf4_3.gridy = 5;
+	cpp_workstation4.add(cptf4_3, gbc_cptf4_3);
 	
-	JLabel lblX_6 = new JLabel("x7");
+	JLabel lblX_6 = new JLabel("x7 =");
 	GridBagConstraints gbc_lblX_6 = new GridBagConstraints();
 	gbc_lblX_6.anchor = GridBagConstraints.EAST;
 	gbc_lblX_6.insets = new Insets(0, 0, 5, 5);
@@ -1045,16 +1293,16 @@ public class CapacityPlanning {
 	gbc_lblE.gridy = 3;
 	cpp_workstation6.add(lblE, gbc_lblE);
 	
-	textField_11 = new JTextField();
-	textField_11.setColumns(10);
-	GridBagConstraints gbc_textField_11 = new GridBagConstraints();
-	gbc_textField_11.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_11.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_11.gridx = 5;
-	gbc_textField_11.gridy = 3;
-	cpp_workstation6.add(textField_11, gbc_textField_11);
+	cptf6_16 = new JTextField();
+	cptf6_16.setColumns(10);
+	GridBagConstraints gbc_cptf6_16 = new GridBagConstraints();
+	gbc_cptf6_16.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf6_16.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf6_16.gridx = 5;
+	gbc_cptf6_16.gridy = 3;
+	cpp_workstation6.add(cptf6_16, gbc_cptf6_16);
 	
-	JLabel lblX_7 = new JLabel("x2");
+	JLabel lblX_7 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_7 = new GridBagConstraints();
 	gbc_lblX_7.anchor = GridBagConstraints.EAST;
 	gbc_lblX_7.insets = new Insets(0, 0, 5, 5);
@@ -1095,16 +1343,16 @@ public class CapacityPlanning {
 	gbc_lblE_1.gridy = 5;
 	cpp_workstation6.add(lblE_1, gbc_lblE_1);
 	
-	textField = new JTextField();
-	textField.setColumns(10);
-	GridBagConstraints gbc_textField = new GridBagConstraints();
-	gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField.insets = new Insets(0, 0, 5, 5);
-	gbc_textField.gridx = 5;
-	gbc_textField.gridy = 5;
-	cpp_workstation6.add(textField, gbc_textField);
+	cptf6_18 = new JTextField();
+	cptf6_18.setColumns(10);
+	GridBagConstraints gbc_cptf6_18 = new GridBagConstraints();
+	gbc_cptf6_18.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf6_18.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf6_18.gridx = 5;
+	gbc_cptf6_18.gridy = 5;
+	cpp_workstation6.add(cptf6_18, gbc_cptf6_18);
 	
-	JLabel lblX_8 = new JLabel("x3");
+	JLabel lblX_8 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_8 = new GridBagConstraints();
 	gbc_lblX_8.anchor = GridBagConstraints.EAST;
 	gbc_lblX_8.insets = new Insets(0, 0, 5, 5);
@@ -1136,16 +1384,16 @@ public class CapacityPlanning {
 	gbc_lblE_2.gridy = 6;
 	cpp_workstation6.add(lblE_2, gbc_lblE_2);
 	
-	textField_2 = new JTextField();
-	textField_2.setColumns(10);
-	GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-	gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_2.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_2.gridx = 5;
-	gbc_textField_2.gridy = 6;
-	cpp_workstation6.add(textField_2, gbc_textField_2);
+	cptf6_19 = new JTextField();
+	cptf6_19.setColumns(10);
+	GridBagConstraints gbc_cptf6_19 = new GridBagConstraints();
+	gbc_cptf6_19.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf6_19.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf6_19.gridx = 5;
+	gbc_cptf6_19.gridy = 6;
+	cpp_workstation6.add(cptf6_19, gbc_cptf6_19);
 	
-	JLabel lblX_9 = new JLabel("x3");
+	JLabel lblX_9 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_9 = new GridBagConstraints();
 	gbc_lblX_9.anchor = GridBagConstraints.EAST;
 	gbc_lblX_9.insets = new Insets(0, 0, 5, 5);
@@ -1177,16 +1425,16 @@ public class CapacityPlanning {
 	gbc_lblE_3.gridy = 7;
 	cpp_workstation6.add(lblE_3, gbc_lblE_3);
 	
-	textField_4 = new JTextField();
-	textField_4.setColumns(10);
-	GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-	gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_4.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_4.gridx = 5;
-	gbc_textField_4.gridy = 7;
-	cpp_workstation6.add(textField_4, gbc_textField_4);
+	cptf6_20 = new JTextField();
+	cptf6_20.setColumns(10);
+	GridBagConstraints gbc_cptf6_20 = new GridBagConstraints();
+	gbc_cptf6_20.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf6_20.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf6_20.gridx = 5;
+	gbc_cptf6_20.gridy = 7;
+	cpp_workstation6.add(cptf6_20, gbc_cptf6_20);
 	
-	JLabel lblX_10 = new JLabel("x3");
+	JLabel lblX_10 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_10 = new GridBagConstraints();
 	gbc_lblX_10.anchor = GridBagConstraints.EAST;
 	gbc_lblX_10.insets = new Insets(0, 0, 5, 5);
@@ -1347,16 +1595,16 @@ public class CapacityPlanning {
 	gbc_lblE_4.gridy = 3;
 	cpp_workstation7.add(lblE_4, gbc_lblE_4);
 	
-	textField_26 = new JTextField();
-	textField_26.setColumns(10);
-	GridBagConstraints gbc_textField_26 = new GridBagConstraints();
-	gbc_textField_26.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_26.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_26.gridx = 5;
-	gbc_textField_26.gridy = 3;
-	cpp_workstation7.add(textField_26, gbc_textField_26);
+	cptf7_10 = new JTextField();
+	cptf7_10.setColumns(10);
+	GridBagConstraints gbc_cptf7_10 = new GridBagConstraints();
+	gbc_cptf7_10.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_10.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_10.gridx = 5;
+	gbc_cptf7_10.gridy = 3;
+	cpp_workstation7.add(cptf7_10, gbc_cptf7_10);
 	
-	JLabel lblX_14 = new JLabel("x2");
+	JLabel lblX_14 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_14 = new GridBagConstraints();
 	gbc_lblX_14.anchor = GridBagConstraints.EAST;
 	gbc_lblX_14.insets = new Insets(0, 0, 5, 5);
@@ -1388,16 +1636,16 @@ public class CapacityPlanning {
 	gbc_lblE_5.gridy = 4;
 	cpp_workstation7.add(lblE_5, gbc_lblE_5);
 	
-	textField_39 = new JTextField();
-	GridBagConstraints gbc_textField_39 = new GridBagConstraints();
-	gbc_textField_39.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_39.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_39.gridx = 5;
-	gbc_textField_39.gridy = 4;
-	cpp_workstation7.add(textField_39, gbc_textField_39);
-	textField_39.setColumns(10);
+	cptf7_11 = new JTextField();
+	GridBagConstraints gbc_cptf7_11 = new GridBagConstraints();
+	gbc_cptf7_11.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_11.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_11.gridx = 5;
+	gbc_cptf7_11.gridy = 4;
+	cpp_workstation7.add(cptf7_11, gbc_cptf7_11);
+	cptf7_11.setColumns(10);
 	
-	JLabel label_7 = new JLabel("x2");
+	JLabel label_7 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_7 = new GridBagConstraints();
 	gbc_label_7.insets = new Insets(0, 0, 5, 5);
 	gbc_label_7.anchor = GridBagConstraints.EAST;
@@ -1429,16 +1677,16 @@ public class CapacityPlanning {
 	gbc_lblE_6.gridy = 5;
 	cpp_workstation7.add(lblE_6, gbc_lblE_6);
 	
-	textField_40 = new JTextField();
-	textField_40.setColumns(10);
-	GridBagConstraints gbc_textField_40 = new GridBagConstraints();
-	gbc_textField_40.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_40.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_40.gridx = 5;
-	gbc_textField_40.gridy = 5;
-	cpp_workstation7.add(textField_40, gbc_textField_40);
+	cptf7_12 = new JTextField();
+	cptf7_12.setColumns(10);
+	GridBagConstraints gbc_cptf7_12 = new GridBagConstraints();
+	gbc_cptf7_12.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_12.gridx = 5;
+	gbc_cptf7_12.gridy = 5;
+	cpp_workstation7.add(cptf7_12, gbc_cptf7_12);
 	
-	JLabel label_8 = new JLabel("x2");
+	JLabel label_8 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_8 = new GridBagConstraints();
 	gbc_label_8.insets = new Insets(0, 0, 5, 5);
 	gbc_label_8.anchor = GridBagConstraints.EAST;
@@ -1479,16 +1727,16 @@ public class CapacityPlanning {
 	gbc_lblE_7.gridy = 7;
 	cpp_workstation7.add(lblE_7, gbc_lblE_7);
 	
-	textField_28 = new JTextField();
-	textField_28.setColumns(10);
-	GridBagConstraints gbc_textField_28 = new GridBagConstraints();
-	gbc_textField_28.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_28.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_28.gridx = 5;
-	gbc_textField_28.gridy = 7;
-	cpp_workstation7.add(textField_28, gbc_textField_28);
+	cptf7_13 = new JTextField();
+	cptf7_13.setColumns(10);
+	GridBagConstraints gbc_cptf7_13 = new GridBagConstraints();
+	gbc_cptf7_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_13.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_13.gridx = 5;
+	gbc_cptf7_13.gridy = 7;
+	cpp_workstation7.add(cptf7_13, gbc_cptf7_13);
 	
-	JLabel lblX_11 = new JLabel("x2");
+	JLabel lblX_11 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_11 = new GridBagConstraints();
 	gbc_lblX_11.anchor = GridBagConstraints.EAST;
 	gbc_lblX_11.insets = new Insets(0, 0, 5, 5);
@@ -1520,16 +1768,16 @@ public class CapacityPlanning {
 	gbc_lblE_8.gridy = 8;
 	cpp_workstation7.add(lblE_8, gbc_lblE_8);
 	
-	textField_30 = new JTextField();
-	textField_30.setColumns(10);
-	GridBagConstraints gbc_textField_30 = new GridBagConstraints();
-	gbc_textField_30.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_30.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_30.gridx = 5;
-	gbc_textField_30.gridy = 8;
-	cpp_workstation7.add(textField_30, gbc_textField_30);
+	cptf7_14 = new JTextField();
+	cptf7_14.setColumns(10);
+	GridBagConstraints gbc_cptf7_14 = new GridBagConstraints();
+	gbc_cptf7_14.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_14.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_14.gridx = 5;
+	gbc_cptf7_14.gridy = 8;
+	cpp_workstation7.add(cptf7_14, gbc_cptf7_14);
 	
-	JLabel lblX_12 = new JLabel("x2");
+	JLabel lblX_12 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_12 = new GridBagConstraints();
 	gbc_lblX_12.anchor = GridBagConstraints.EAST;
 	gbc_lblX_12.insets = new Insets(0, 0, 5, 5);
@@ -1561,16 +1809,16 @@ public class CapacityPlanning {
 	gbc_lblE_9.gridy = 9;
 	cpp_workstation7.add(lblE_9, gbc_lblE_9);
 	
-	textField_32 = new JTextField();
-	textField_32.setColumns(10);
-	GridBagConstraints gbc_textField_32 = new GridBagConstraints();
-	gbc_textField_32.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_32.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_32.gridx = 5;
-	gbc_textField_32.gridy = 9;
-	cpp_workstation7.add(textField_32, gbc_textField_32);
+	cptf7_15 = new JTextField();
+	cptf7_15.setColumns(10);
+	GridBagConstraints gbc_cptf7_15 = new GridBagConstraints();
+	gbc_cptf7_15.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_15.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_15.gridx = 5;
+	gbc_cptf7_15.gridy = 9;
+	cpp_workstation7.add(cptf7_15, gbc_cptf7_15);
 	
-	JLabel lblX_13 = new JLabel("x2");
+	JLabel lblX_13 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_13 = new GridBagConstraints();
 	gbc_lblX_13.anchor = GridBagConstraints.EAST;
 	gbc_lblX_13.insets = new Insets(0, 0, 5, 5);
@@ -1610,16 +1858,16 @@ public class CapacityPlanning {
 	gbc_lblE_10.gridy = 11;
 	cpp_workstation7.add(lblE_10, gbc_lblE_10);
 	
-	textField_43 = new JTextField();
-	textField_43.setColumns(10);
-	GridBagConstraints gbc_textField_43 = new GridBagConstraints();
-	gbc_textField_43.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_43.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_43.gridx = 5;
-	gbc_textField_43.gridy = 11;
-	cpp_workstation7.add(textField_43, gbc_textField_43);
+	cptf7_18 = new JTextField();
+	cptf7_18.setColumns(10);
+	GridBagConstraints gbc_cptf7_18 = new GridBagConstraints();
+	gbc_cptf7_18.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_18.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_18.gridx = 5;
+	gbc_cptf7_18.gridy = 11;
+	cpp_workstation7.add(cptf7_18, gbc_cptf7_18);
 	
-	JLabel lblX_15 = new JLabel("x2");
+	JLabel lblX_15 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_15 = new GridBagConstraints();
 	gbc_lblX_15.insets = new Insets(0, 0, 5, 5);
 	gbc_lblX_15.anchor = GridBagConstraints.EAST;
@@ -1651,16 +1899,16 @@ public class CapacityPlanning {
 	gbc_lblE_11.gridy = 12;
 	cpp_workstation7.add(lblE_11, gbc_lblE_11);
 	
-	textField_45 = new JTextField();
-	textField_45.setColumns(10);
-	GridBagConstraints gbc_textField_45 = new GridBagConstraints();
-	gbc_textField_45.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_45.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_45.gridx = 5;
-	gbc_textField_45.gridy = 12;
-	cpp_workstation7.add(textField_45, gbc_textField_45);
+	cptf7_19 = new JTextField();
+	cptf7_19.setColumns(10);
+	GridBagConstraints gbc_cptf7_19 = new GridBagConstraints();
+	gbc_cptf7_19.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_19.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_19.gridx = 5;
+	gbc_cptf7_19.gridy = 12;
+	cpp_workstation7.add(cptf7_19, gbc_cptf7_19);
 	
-	JLabel lblX_16 = new JLabel("x2");
+	JLabel lblX_16 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_16 = new GridBagConstraints();
 	gbc_lblX_16.insets = new Insets(0, 0, 5, 5);
 	gbc_lblX_16.anchor = GridBagConstraints.EAST;
@@ -1692,16 +1940,16 @@ public class CapacityPlanning {
 	gbc_lblE_12.gridy = 13;
 	cpp_workstation7.add(lblE_12, gbc_lblE_12);
 	
-	textField_47 = new JTextField();
-	textField_47.setColumns(10);
-	GridBagConstraints gbc_textField_47 = new GridBagConstraints();
-	gbc_textField_47.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_47.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_47.gridx = 5;
-	gbc_textField_47.gridy = 13;
-	cpp_workstation7.add(textField_47, gbc_textField_47);
+	cptf7_20 = new JTextField();
+	cptf7_20.setColumns(10);
+	GridBagConstraints gbc_cptf7_20 = new GridBagConstraints();
+	gbc_cptf7_20.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_20.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_20.gridx = 5;
+	gbc_cptf7_20.gridy = 13;
+	cpp_workstation7.add(cptf7_20, gbc_cptf7_20);
 	
-	JLabel lblX_17 = new JLabel("x2");
+	JLabel lblX_17 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_17 = new GridBagConstraints();
 	gbc_lblX_17.insets = new Insets(0, 0, 5, 5);
 	gbc_lblX_17.anchor = GridBagConstraints.EAST;
@@ -1740,16 +1988,16 @@ public class CapacityPlanning {
 	gbc_lblE_13.gridy = 15;
 	cpp_workstation7.add(lblE_13, gbc_lblE_13);
 	
-	textField_49 = new JTextField();
-	textField_49.setColumns(10);
-	GridBagConstraints gbc_textField_49 = new GridBagConstraints();
-	gbc_textField_49.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_49.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_49.gridx = 5;
-	gbc_textField_49.gridy = 15;
-	cpp_workstation7.add(textField_49, gbc_textField_49);
+	cptf7_26 = new JTextField();
+	cptf7_26.setColumns(10);
+	GridBagConstraints gbc_cptf7_26 = new GridBagConstraints();
+	gbc_cptf7_26.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf7_26.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf7_26.gridx = 5;
+	gbc_cptf7_26.gridy = 15;
+	cpp_workstation7.add(cptf7_26, gbc_cptf7_26);
 	
-	JLabel label_17 = new JLabel("x2");
+	JLabel label_17 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_17 = new GridBagConstraints();
 	gbc_label_17.anchor = GridBagConstraints.EAST;
 	gbc_label_17.insets = new Insets(0, 0, 5, 5);
@@ -1910,16 +2158,16 @@ public class CapacityPlanning {
 	gbc_label_35.gridy = 3;
 	cpp_workstation8.add(label_35, gbc_label_35);
 	
-	textField_51 = new JTextField();
-	textField_51.setColumns(10);
-	GridBagConstraints gbc_textField_51 = new GridBagConstraints();
-	gbc_textField_51.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_51.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_51.gridx = 5;
-	gbc_textField_51.gridy = 3;
-	cpp_workstation8.add(textField_51, gbc_textField_51);
+	cptf8_10 = new JTextField();
+	cptf8_10.setColumns(10);
+	GridBagConstraints gbc_cptf8_10 = new GridBagConstraints();
+	gbc_cptf8_10.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_10.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_10.gridx = 5;
+	gbc_cptf8_10.gridy = 3;
+	cpp_workstation8.add(cptf8_10, gbc_cptf8_10);
 	
-	JLabel lblX_18 = new JLabel("x1");
+	JLabel lblX_18 = new JLabel("x1 =");
 	GridBagConstraints gbc_lblX_18 = new GridBagConstraints();
 	gbc_lblX_18.anchor = GridBagConstraints.EAST;
 	gbc_lblX_18.insets = new Insets(0, 0, 5, 5);
@@ -1951,16 +2199,16 @@ public class CapacityPlanning {
 	gbc_label_38.gridy = 4;
 	cpp_workstation8.add(label_38, gbc_label_38);
 	
-	textField_53 = new JTextField();
-	textField_53.setColumns(10);
-	GridBagConstraints gbc_textField_53 = new GridBagConstraints();
-	gbc_textField_53.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_53.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_53.gridx = 5;
-	gbc_textField_53.gridy = 4;
-	cpp_workstation8.add(textField_53, gbc_textField_53);
+	cptf8_11 = new JTextField();
+	cptf8_11.setColumns(10);
+	GridBagConstraints gbc_cptf8_11 = new GridBagConstraints();
+	gbc_cptf8_11.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_11.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_11.gridx = 5;
+	gbc_cptf8_11.gridy = 4;
+	cpp_workstation8.add(cptf8_11, gbc_cptf8_11);
 	
-	JLabel label_39 = new JLabel("x2");
+	JLabel label_39 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_39 = new GridBagConstraints();
 	gbc_label_39.anchor = GridBagConstraints.EAST;
 	gbc_label_39.insets = new Insets(0, 0, 5, 5);
@@ -1992,16 +2240,16 @@ public class CapacityPlanning {
 	gbc_label_41.gridy = 5;
 	cpp_workstation8.add(label_41, gbc_label_41);
 	
-	textField_55 = new JTextField();
-	textField_55.setColumns(10);
-	GridBagConstraints gbc_textField_55 = new GridBagConstraints();
-	gbc_textField_55.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_55.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_55.gridx = 5;
-	gbc_textField_55.gridy = 5;
-	cpp_workstation8.add(textField_55, gbc_textField_55);
+	cptf8_12 = new JTextField();
+	cptf8_12.setColumns(10);
+	GridBagConstraints gbc_cptf8_12 = new GridBagConstraints();
+	gbc_cptf8_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_12.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_12.gridx = 5;
+	gbc_cptf8_12.gridy = 5;
+	cpp_workstation8.add(cptf8_12, gbc_cptf8_12);
 	
-	JLabel label_42 = new JLabel("x2");
+	JLabel label_42 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_42 = new GridBagConstraints();
 	gbc_label_42.anchor = GridBagConstraints.EAST;
 	gbc_label_42.insets = new Insets(0, 0, 5, 5);
@@ -2042,16 +2290,16 @@ public class CapacityPlanning {
 	gbc_label_45.gridy = 7;
 	cpp_workstation8.add(label_45, gbc_label_45);
 	
-	textField_57 = new JTextField();
-	textField_57.setColumns(10);
-	GridBagConstraints gbc_textField_57 = new GridBagConstraints();
-	gbc_textField_57.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_57.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_57.gridx = 5;
-	gbc_textField_57.gridy = 7;
-	cpp_workstation8.add(textField_57, gbc_textField_57);
+	cptf8_13 = new JTextField();
+	cptf8_13.setColumns(10);
+	GridBagConstraints gbc_cptf8_13 = new GridBagConstraints();
+	gbc_cptf8_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_13.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_13.gridx = 5;
+	gbc_cptf8_13.gridy = 7;
+	cpp_workstation8.add(cptf8_13, gbc_cptf8_13);
 	
-	JLabel lblX_19 = new JLabel("x1");
+	JLabel lblX_19 = new JLabel("x1 =");
 	GridBagConstraints gbc_lblX_19 = new GridBagConstraints();
 	gbc_lblX_19.anchor = GridBagConstraints.EAST;
 	gbc_lblX_19.insets = new Insets(0, 0, 5, 5);
@@ -2083,16 +2331,16 @@ public class CapacityPlanning {
 	gbc_label_48.gridy = 8;
 	cpp_workstation8.add(label_48, gbc_label_48);
 	
-	textField_59 = new JTextField();
-	textField_59.setColumns(10);
-	GridBagConstraints gbc_textField_59 = new GridBagConstraints();
-	gbc_textField_59.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_59.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_59.gridx = 5;
-	gbc_textField_59.gridy = 8;
-	cpp_workstation8.add(textField_59, gbc_textField_59);
+	cptf8_14 = new JTextField();
+	cptf8_14.setColumns(10);
+	GridBagConstraints gbc_cptf8_14 = new GridBagConstraints();
+	gbc_cptf8_14.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_14.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_14.gridx = 5;
+	gbc_cptf8_14.gridy = 8;
+	cpp_workstation8.add(cptf8_14, gbc_cptf8_14);
 	
-	JLabel label_49 = new JLabel("x2");
+	JLabel label_49 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_49 = new GridBagConstraints();
 	gbc_label_49.anchor = GridBagConstraints.EAST;
 	gbc_label_49.insets = new Insets(0, 0, 5, 5);
@@ -2124,16 +2372,16 @@ public class CapacityPlanning {
 	gbc_label_51.gridy = 9;
 	cpp_workstation8.add(label_51, gbc_label_51);
 	
-	textField_61 = new JTextField();
-	textField_61.setColumns(10);
-	GridBagConstraints gbc_textField_61 = new GridBagConstraints();
-	gbc_textField_61.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_61.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_61.gridx = 5;
-	gbc_textField_61.gridy = 9;
-	cpp_workstation8.add(textField_61, gbc_textField_61);
+	cptf8_15 = new JTextField();
+	cptf8_15.setColumns(10);
+	GridBagConstraints gbc_cptf8_15 = new GridBagConstraints();
+	gbc_cptf8_15.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_15.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_15.gridx = 5;
+	gbc_cptf8_15.gridy = 9;
+	cpp_workstation8.add(cptf8_15, gbc_cptf8_15);
 	
-	JLabel label_52 = new JLabel("x2");
+	JLabel label_52 = new JLabel("x2 =");
 	GridBagConstraints gbc_label_52 = new GridBagConstraints();
 	gbc_label_52.anchor = GridBagConstraints.EAST;
 	gbc_label_52.insets = new Insets(0, 0, 5, 5);
@@ -2173,16 +2421,16 @@ public class CapacityPlanning {
 	gbc_label_55.gridy = 11;
 	cpp_workstation8.add(label_55, gbc_label_55);
 	
-	textField_63 = new JTextField();
-	textField_63.setColumns(10);
-	GridBagConstraints gbc_textField_63 = new GridBagConstraints();
-	gbc_textField_63.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_63.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_63.gridx = 5;
-	gbc_textField_63.gridy = 11;
-	cpp_workstation8.add(textField_63, gbc_textField_63);
+	cptf8_18 = new JTextField();
+	cptf8_18.setColumns(10);
+	GridBagConstraints gbc_cptf8_18 = new GridBagConstraints();
+	gbc_cptf8_18.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_18.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_18.gridx = 5;
+	gbc_cptf8_18.gridy = 11;
+	cpp_workstation8.add(cptf8_18, gbc_cptf8_18);
 	
-	JLabel lblX_22 = new JLabel("x3");
+	JLabel lblX_22 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_22 = new GridBagConstraints();
 	gbc_lblX_22.anchor = GridBagConstraints.EAST;
 	gbc_lblX_22.insets = new Insets(0, 0, 5, 5);
@@ -2214,16 +2462,16 @@ public class CapacityPlanning {
 	gbc_label_58.gridy = 12;
 	cpp_workstation8.add(label_58, gbc_label_58);
 	
-	textField_65 = new JTextField();
-	textField_65.setColumns(10);
-	GridBagConstraints gbc_textField_65 = new GridBagConstraints();
-	gbc_textField_65.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_65.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_65.gridx = 5;
-	gbc_textField_65.gridy = 12;
-	cpp_workstation8.add(textField_65, gbc_textField_65);
+	cptf8_19 = new JTextField();
+	cptf8_19.setColumns(10);
+	GridBagConstraints gbc_cptf8_19 = new GridBagConstraints();
+	gbc_cptf8_19.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_19.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_19.gridx = 5;
+	gbc_cptf8_19.gridy = 12;
+	cpp_workstation8.add(cptf8_19, gbc_cptf8_19);
 	
-	JLabel lblX_21 = new JLabel("x3");
+	JLabel lblX_21 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_21 = new GridBagConstraints();
 	gbc_lblX_21.anchor = GridBagConstraints.EAST;
 	gbc_lblX_21.insets = new Insets(0, 0, 5, 5);
@@ -2255,16 +2503,16 @@ public class CapacityPlanning {
 	gbc_label_61.gridy = 13;
 	cpp_workstation8.add(label_61, gbc_label_61);
 	
-	textField_67 = new JTextField();
-	textField_67.setColumns(10);
-	GridBagConstraints gbc_textField_67 = new GridBagConstraints();
-	gbc_textField_67.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_67.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_67.gridx = 5;
-	gbc_textField_67.gridy = 13;
-	cpp_workstation8.add(textField_67, gbc_textField_67);
+	cptf8_20 = new JTextField();
+	cptf8_20.setColumns(10);
+	GridBagConstraints gbc_cptf8_20 = new GridBagConstraints();
+	gbc_cptf8_20.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf8_20.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf8_20.gridx = 5;
+	gbc_cptf8_20.gridy = 13;
+	cpp_workstation8.add(cptf8_20, gbc_cptf8_20);
 	
-	JLabel lblX_20 = new JLabel("x3");
+	JLabel lblX_20 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_20 = new GridBagConstraints();
 	gbc_lblX_20.anchor = GridBagConstraints.EAST;
 	gbc_lblX_20.insets = new Insets(0, 0, 5, 5);
@@ -2375,257 +2623,6 @@ public class CapacityPlanning {
 	gbc_textField_75.gridy = 19;
 	cpp_workstation8.add(textField_75, gbc_textField_75);
 	
-	
-	JPanel cpp_workstation1 = new JPanel();
-	capacityplanningPane.addTab("W1", null, cpp_workstation1, null);
-	GridBagLayout gbl_cpp_workstation1 = new GridBagLayout();
-	gbl_cpp_workstation1.columnWidths = new int[] {30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0};
-	gbl_cpp_workstation1.rowHeights = new int[] {40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30};
-	gbl_cpp_workstation1.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-	gbl_cpp_workstation1.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-	cpp_workstation1.setLayout(gbl_cpp_workstation1);
-	
-	JLabel cpl1_workstation = new JLabel("Arbeitsplatz");
-	GridBagConstraints gbc_cpl1_workstation = new GridBagConstraints();
-	gbc_cpl1_workstation.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_workstation.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_workstation.gridx = 1;
-	gbc_cpl1_workstation.gridy = 1;
-	cpp_workstation1.add(cpl1_workstation, gbc_cpl1_workstation);
-	
-	JLabel lblNewLabel_13 = new JLabel("1");
-	GridBagConstraints gbc_lblNewLabel_13 = new GridBagConstraints();
-	gbc_lblNewLabel_13.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_13.gridx = 2;
-	gbc_lblNewLabel_13.gridy = 1;
-	cpp_workstation1.add(lblNewLabel_13, gbc_lblNewLabel_13);
-	
-	JLabel cpl1_frontwheelcomplete = new JLabel("Vorderrad Komplett");
-	GridBagConstraints gbc_cpl1_frontwheelcomplete = new GridBagConstraints();
-	gbc_cpl1_frontwheelcomplete.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_frontwheelcomplete.gridheight = 3;
-	gbc_cpl1_frontwheelcomplete.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_frontwheelcomplete.gridx = 1;
-	gbc_cpl1_frontwheelcomplete.gridy = 3;
-	cpp_workstation1.add(cpl1_frontwheelcomplete, gbc_cpl1_frontwheelcomplete);
-	
-	JLabel cpl1_c = new JLabel("K");
-	GridBagConstraints gbc_cpl1_c = new GridBagConstraints();
-	gbc_cpl1_c.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_c.gridx = 3;
-	gbc_cpl1_c.gridy = 3;
-	cpp_workstation1.add(cpl1_c, gbc_cpl1_c);
-	
-	JLabel lblNewLabel_3 = new JLabel("E49");
-	GridBagConstraints gbc_lblNewLabel_3 = new GridBagConstraints();
-	gbc_lblNewLabel_3.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_3.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_3.gridx = 4;
-	gbc_lblNewLabel_3.gridy = 3;
-	cpp_workstation1.add(lblNewLabel_3, gbc_lblNewLabel_3);
-	
-	cptf1_ = new JTextField();
-	GridBagConstraints gbc_cptf1_ = new GridBagConstraints();
-	gbc_cptf1_.insets = new Insets(0, 0, 5, 5);
-	gbc_cptf1_.fill = GridBagConstraints.HORIZONTAL;
-	gbc_cptf1_.gridx = 5;
-	gbc_cptf1_.gridy = 3;
-	cpp_workstation1.add(cptf1_, gbc_cptf1_);
-	cptf1_.setColumns(10);
-	
-	JLabel lblNewLabel_9 = new JLabel("x6");
-	GridBagConstraints gbc_lblNewLabel_9 = new GridBagConstraints();
-	gbc_lblNewLabel_9.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_9.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_9.gridx = 6;
-	gbc_lblNewLabel_9.gridy = 3;
-	cpp_workstation1.add(lblNewLabel_9, gbc_lblNewLabel_9);
-	
-	textField_252 = new JTextField();
-	textField_252.setColumns(10);
-	GridBagConstraints gbc_textField_252 = new GridBagConstraints();
-	gbc_textField_252.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_252.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_252.gridx = 7;
-	gbc_textField_252.gridy = 3;
-	cpp_workstation1.add(textField_252, gbc_textField_252);
-	
-	JLabel cpl1_l = new JLabel("D");
-	GridBagConstraints gbc_cpl1_l = new GridBagConstraints();
-	gbc_cpl1_l.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_l.gridx = 3;
-	gbc_cpl1_l.gridy = 4;
-	cpp_workstation1.add(cpl1_l, gbc_cpl1_l);
-	
-	JLabel lblNewLabel_6 = new JLabel("E54");
-	GridBagConstraints gbc_lblNewLabel_6 = new GridBagConstraints();
-	gbc_lblNewLabel_6.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_6.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_6.gridx = 4;
-	gbc_lblNewLabel_6.gridy = 4;
-	cpp_workstation1.add(lblNewLabel_6, gbc_lblNewLabel_6);
-	
-	textField_250 = new JTextField();
-	GridBagConstraints gbc_textField_250 = new GridBagConstraints();
-	gbc_textField_250.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_250.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_250.gridx = 5;
-	gbc_textField_250.gridy = 4;
-	cpp_workstation1.add(textField_250, gbc_textField_250);
-	textField_250.setColumns(10);
-	
-	JLabel lblNewLabel_10 = new JLabel("x6");
-	GridBagConstraints gbc_lblNewLabel_10 = new GridBagConstraints();
-	gbc_lblNewLabel_10.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_10.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_10.gridx = 6;
-	gbc_lblNewLabel_10.gridy = 4;
-	cpp_workstation1.add(lblNewLabel_10, gbc_lblNewLabel_10);
-	
-	textField_253 = new JTextField();
-	textField_253.setColumns(10);
-	GridBagConstraints gbc_textField_253 = new GridBagConstraints();
-	gbc_textField_253.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_253.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_253.gridx = 7;
-	gbc_textField_253.gridy = 4;
-	cpp_workstation1.add(textField_253, gbc_textField_253);
-	
-	JLabel cpl1_m = new JLabel("H");
-	GridBagConstraints gbc_cpl1_m = new GridBagConstraints();
-	gbc_cpl1_m.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_m.gridx = 3;
-	gbc_cpl1_m.gridy = 5;
-	cpp_workstation1.add(cpl1_m, gbc_cpl1_m);
-	
-	JLabel lblNewLabel_7 = new JLabel("E29");
-	GridBagConstraints gbc_lblNewLabel_7 = new GridBagConstraints();
-	gbc_lblNewLabel_7.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_7.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_7.gridx = 4;
-	gbc_lblNewLabel_7.gridy = 5;
-	cpp_workstation1.add(lblNewLabel_7, gbc_lblNewLabel_7);
-	
-	textField_251 = new JTextField();
-	GridBagConstraints gbc_textField_251 = new GridBagConstraints();
-	gbc_textField_251.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_251.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_251.gridx = 5;
-	gbc_textField_251.gridy = 5;
-	cpp_workstation1.add(textField_251, gbc_textField_251);
-	textField_251.setColumns(10);
-	
-	JLabel lblNewLabel_11 = new JLabel("x6");
-	GridBagConstraints gbc_lblNewLabel_11 = new GridBagConstraints();
-	gbc_lblNewLabel_11.anchor = GridBagConstraints.EAST;
-	gbc_lblNewLabel_11.insets = new Insets(0, 0, 5, 5);
-	gbc_lblNewLabel_11.gridx = 6;
-	gbc_lblNewLabel_11.gridy = 5;
-	cpp_workstation1.add(lblNewLabel_11, gbc_lblNewLabel_11);
-	
-	textField_254 = new JTextField();
-	textField_254.setColumns(10);
-	GridBagConstraints gbc_textField_254 = new GridBagConstraints();
-	gbc_textField_254.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_254.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_254.gridx = 7;
-	gbc_textField_254.gridy = 5;
-	cpp_workstation1.add(textField_254, gbc_textField_254);
-	
-	JSeparator separator_1 = new JSeparator();
-	GridBagConstraints gbc_separator_1 = new GridBagConstraints();
-	gbc_separator_1.fill = GridBagConstraints.HORIZONTAL;
-	gbc_separator_1.gridwidth = 7;
-	gbc_separator_1.insets = new Insets(0, 0, 5, 5);
-	gbc_separator_1.gridx = 1;
-	gbc_separator_1.gridy = 6;
-	cpp_workstation1.add(separator_1, gbc_separator_1);
-	
-	JLabel cpl1_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
-	GridBagConstraints gbc_cpl1_capacityrequirements = new GridBagConstraints();
-	gbc_cpl1_capacityrequirements.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_capacityrequirements.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_capacityrequirements.gridx = 1;
-	gbc_cpl1_capacityrequirements.gridy = 7;
-	cpp_workstation1.add(cpl1_capacityrequirements, gbc_cpl1_capacityrequirements);
-	
-	textField_255 = new JTextField();
-	textField_255.setColumns(10);
-	GridBagConstraints gbc_textField_255 = new GridBagConstraints();
-	gbc_textField_255.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_255.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_255.gridx = 7;
-	gbc_textField_255.gridy = 7;
-	cpp_workstation1.add(textField_255, gbc_textField_255);
-	
-	JLabel cpl1_setuptime = new JLabel("R\u00FCstzeit");
-	GridBagConstraints gbc_cpl1_setuptime = new GridBagConstraints();
-	gbc_cpl1_setuptime.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_setuptime.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_setuptime.gridx = 1;
-	gbc_cpl1_setuptime.gridy = 8;
-	cpp_workstation1.add(cpl1_setuptime, gbc_cpl1_setuptime);
-	
-	textField_256 = new JTextField();
-	textField_256.setColumns(10);
-	GridBagConstraints gbc_textField_256 = new GridBagConstraints();
-	gbc_textField_256.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_256.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_256.gridx = 7;
-	gbc_textField_256.gridy = 8;
-	cpp_workstation1.add(textField_256, gbc_textField_256);
-	
-	JLabel lblTotaleKapazitt = new JLabel("Totale Kapazit\u00E4t");
-	GridBagConstraints gbc_lblTotaleKapazitt = new GridBagConstraints();
-	gbc_lblTotaleKapazitt.anchor = GridBagConstraints.WEST;
-	gbc_lblTotaleKapazitt.insets = new Insets(0, 0, 5, 5);
-	gbc_lblTotaleKapazitt.gridx = 1;
-	gbc_lblTotaleKapazitt.gridy = 9;
-	cpp_workstation1.add(lblTotaleKapazitt, gbc_lblTotaleKapazitt);
-	
-	textField_257 = new JTextField();
-	textField_257.setColumns(10);
-	GridBagConstraints gbc_textField_257 = new GridBagConstraints();
-	gbc_textField_257.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_257.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_257.gridx = 7;
-	gbc_textField_257.gridy = 9;
-	cpp_workstation1.add(textField_257, gbc_textField_257);
-	
-	JLabel cpl1_workload = new JLabel("Auslastung %");
-	GridBagConstraints gbc_cpl1_workload = new GridBagConstraints();
-	gbc_cpl1_workload.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_workload.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_workload.gridx = 1;
-	gbc_cpl1_workload.gridy = 10;
-	cpp_workstation1.add(cpl1_workload, gbc_cpl1_workload);
-	
-	textField_258 = new JTextField();
-	textField_258.setColumns(10);
-	GridBagConstraints gbc_textField_258 = new GridBagConstraints();
-	gbc_textField_258.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_258.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_258.gridx = 7;
-	gbc_textField_258.gridy = 10;
-	cpp_workstation1.add(textField_258, gbc_textField_258);
-	
-	JLabel cpl1_overtime = new JLabel("\u00DCberstunden (min) ");
-	GridBagConstraints gbc_cpl1_overtime = new GridBagConstraints();
-	gbc_cpl1_overtime.anchor = GridBagConstraints.WEST;
-	gbc_cpl1_overtime.insets = new Insets(0, 0, 5, 5);
-	gbc_cpl1_overtime.gridx = 1;
-	gbc_cpl1_overtime.gridy = 11;
-	cpp_workstation1.add(cpl1_overtime, gbc_cpl1_overtime);
-	
-	textField_279 = new JTextField();
-	textField_279.setColumns(10);
-	GridBagConstraints gbc_textField_279 = new GridBagConstraints();
-	gbc_textField_279.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_279.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_279.gridx = 7;
-	gbc_textField_279.gridy = 11;
-	cpp_workstation1.add(textField_279, gbc_textField_279);
-	
 	JPanel cpp_workstation9 = new JPanel();
 	JScrollPane cpsp_workstation9 = new JScrollPane(cpp_workstation9);
 	cpsp_workstation9.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
@@ -2676,16 +2673,16 @@ public class CapacityPlanning {
 	gbc_label_36.gridy = 3;
 	cpp_workstation9.add(label_36, gbc_label_36);
 	
-	textField_69 = new JTextField();
-	textField_69.setColumns(10);
-	GridBagConstraints gbc_textField_69 = new GridBagConstraints();
-	gbc_textField_69.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_69.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_69.gridx = 5;
-	gbc_textField_69.gridy = 3;
-	cpp_workstation9.add(textField_69, gbc_textField_69);
+	cptf9_10 = new JTextField();
+	cptf9_10.setColumns(10);
+	GridBagConstraints gbc_cptf9_10 = new GridBagConstraints();
+	gbc_cptf9_10.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_10.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_10.gridx = 5;
+	gbc_cptf9_10.gridy = 3;
+	cpp_workstation9.add(cptf9_10, gbc_cptf9_10);
 	
-	JLabel lblX_23 = new JLabel("x3");
+	JLabel lblX_23 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_23 = new GridBagConstraints();
 	gbc_lblX_23.anchor = GridBagConstraints.EAST;
 	gbc_lblX_23.insets = new Insets(0, 0, 5, 5);
@@ -2717,16 +2714,16 @@ public class CapacityPlanning {
 	gbc_label_59.gridy = 4;
 	cpp_workstation9.add(label_59, gbc_label_59);
 	
-	textField_76 = new JTextField();
-	textField_76.setColumns(10);
-	GridBagConstraints gbc_textField_76 = new GridBagConstraints();
-	gbc_textField_76.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_76.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_76.gridx = 5;
-	gbc_textField_76.gridy = 4;
-	cpp_workstation9.add(textField_76, gbc_textField_76);
+	cptf9_11 = new JTextField();
+	cptf9_11.setColumns(10);
+	GridBagConstraints gbc_cptf9_11 = new GridBagConstraints();
+	gbc_cptf9_11.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_11.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_11.gridx = 5;
+	gbc_cptf9_11.gridy = 4;
+	cpp_workstation9.add(cptf9_11, gbc_cptf9_11);
 	
-	JLabel lblX_24 = new JLabel("x3");
+	JLabel lblX_24 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_24 = new GridBagConstraints();
 	gbc_lblX_24.anchor = GridBagConstraints.EAST;
 	gbc_lblX_24.insets = new Insets(0, 0, 5, 5);
@@ -2758,16 +2755,16 @@ public class CapacityPlanning {
 	gbc_label_64.gridy = 5;
 	cpp_workstation9.add(label_64, gbc_label_64);
 	
-	textField_78 = new JTextField();
-	textField_78.setColumns(10);
-	GridBagConstraints gbc_textField_78 = new GridBagConstraints();
-	gbc_textField_78.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_78.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_78.gridx = 5;
-	gbc_textField_78.gridy = 5;
-	cpp_workstation9.add(textField_78, gbc_textField_78);
+	cptf9_12 = new JTextField();
+	cptf9_12.setColumns(10);
+	GridBagConstraints gbc_cptf9_12 = new GridBagConstraints();
+	gbc_cptf9_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_12.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_12.gridx = 5;
+	gbc_cptf9_12.gridy = 5;
+	cpp_workstation9.add(cptf9_12, gbc_cptf9_12);
 	
-	JLabel lblX_25 = new JLabel("x3");
+	JLabel lblX_25 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_25 = new GridBagConstraints();
 	gbc_lblX_25.anchor = GridBagConstraints.EAST;
 	gbc_lblX_25.insets = new Insets(0, 0, 5, 5);
@@ -2808,16 +2805,16 @@ public class CapacityPlanning {
 	gbc_label_74.gridy = 7;
 	cpp_workstation9.add(label_74, gbc_label_74);
 	
-	textField_80 = new JTextField();
-	textField_80.setColumns(10);
-	GridBagConstraints gbc_textField_80 = new GridBagConstraints();
-	gbc_textField_80.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_80.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_80.gridx = 5;
-	gbc_textField_80.gridy = 7;
-	cpp_workstation9.add(textField_80, gbc_textField_80);
+	cptf9_13 = new JTextField();
+	cptf9_13.setColumns(10);
+	GridBagConstraints gbc_cptf9_13 = new GridBagConstraints();
+	gbc_cptf9_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_13.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_13.gridx = 5;
+	gbc_cptf9_13.gridy = 7;
+	cpp_workstation9.add(cptf9_13, gbc_cptf9_13);
 	
-	JLabel lblX_26 = new JLabel("x3");
+	JLabel lblX_26 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_26 = new GridBagConstraints();
 	gbc_lblX_26.anchor = GridBagConstraints.EAST;
 	gbc_lblX_26.insets = new Insets(0, 0, 5, 5);
@@ -2849,16 +2846,16 @@ public class CapacityPlanning {
 	gbc_label_78.gridy = 8;
 	cpp_workstation9.add(label_78, gbc_label_78);
 	
-	textField_82 = new JTextField();
-	textField_82.setColumns(10);
-	GridBagConstraints gbc_textField_82 = new GridBagConstraints();
-	gbc_textField_82.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_82.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_82.gridx = 5;
-	gbc_textField_82.gridy = 8;
-	cpp_workstation9.add(textField_82, gbc_textField_82);
+	cptf9_14 = new JTextField();
+	cptf9_14.setColumns(10);
+	GridBagConstraints gbc_cptf9_14 = new GridBagConstraints();
+	gbc_cptf9_14.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_14.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_14.gridx = 5;
+	gbc_cptf9_14.gridy = 8;
+	cpp_workstation9.add(cptf9_14, gbc_cptf9_14);
 	
-	JLabel lblX_27 = new JLabel("x3");
+	JLabel lblX_27 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_27 = new GridBagConstraints();
 	gbc_lblX_27.anchor = GridBagConstraints.EAST;
 	gbc_lblX_27.insets = new Insets(0, 0, 5, 5);
@@ -2890,16 +2887,16 @@ public class CapacityPlanning {
 	gbc_label_81.gridy = 9;
 	cpp_workstation9.add(label_81, gbc_label_81);
 	
-	textField_95 = new JTextField();
-	textField_95.setColumns(10);
-	GridBagConstraints gbc_textField_95 = new GridBagConstraints();
-	gbc_textField_95.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_95.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_95.gridx = 5;
-	gbc_textField_95.gridy = 9;
-	cpp_workstation9.add(textField_95, gbc_textField_95);
+	cptf9_15 = new JTextField();
+	cptf9_15.setColumns(10);
+	GridBagConstraints gbc_cptf9_15 = new GridBagConstraints();
+	gbc_cptf9_15.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_15.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_15.gridx = 5;
+	gbc_cptf9_15.gridy = 9;
+	cpp_workstation9.add(cptf9_15, gbc_cptf9_15);
 	
-	JLabel lblX_28 = new JLabel("x3");
+	JLabel lblX_28 = new JLabel("x3 =");
 	GridBagConstraints gbc_lblX_28 = new GridBagConstraints();
 	gbc_lblX_28.anchor = GridBagConstraints.EAST;
 	gbc_lblX_28.insets = new Insets(0, 0, 5, 5);
@@ -2939,16 +2936,16 @@ public class CapacityPlanning {
 	gbc_label_85.gridy = 11;
 	cpp_workstation9.add(label_85, gbc_label_85);
 	
-	textField_97 = new JTextField();
-	textField_97.setColumns(10);
-	GridBagConstraints gbc_textField_97 = new GridBagConstraints();
-	gbc_textField_97.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_97.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_97.gridx = 5;
-	gbc_textField_97.gridy = 11;
-	cpp_workstation9.add(textField_97, gbc_textField_97);
+	cptf9_18 = new JTextField();
+	cptf9_18.setColumns(10);
+	GridBagConstraints gbc_cptf9_18 = new GridBagConstraints();
+	gbc_cptf9_18.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_18.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_18.gridx = 5;
+	gbc_cptf9_18.gridy = 11;
+	cpp_workstation9.add(cptf9_18, gbc_cptf9_18);
 	
-	JLabel lblX_29 = new JLabel("x2");
+	JLabel lblX_29 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_29 = new GridBagConstraints();
 	gbc_lblX_29.anchor = GridBagConstraints.EAST;
 	gbc_lblX_29.insets = new Insets(0, 0, 5, 5);
@@ -2980,16 +2977,16 @@ public class CapacityPlanning {
 	gbc_label_88.gridy = 12;
 	cpp_workstation9.add(label_88, gbc_label_88);
 	
-	textField_99 = new JTextField();
-	textField_99.setColumns(10);
-	GridBagConstraints gbc_textField_99 = new GridBagConstraints();
-	gbc_textField_99.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_99.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_99.gridx = 5;
-	gbc_textField_99.gridy = 12;
-	cpp_workstation9.add(textField_99, gbc_textField_99);
+	cptf9_19 = new JTextField();
+	cptf9_19.setColumns(10);
+	GridBagConstraints gbc_cptf9_19 = new GridBagConstraints();
+	gbc_cptf9_19.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_19.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_19.gridx = 5;
+	gbc_cptf9_19.gridy = 12;
+	cpp_workstation9.add(cptf9_19, gbc_cptf9_19);
 	
-	JLabel lblX_30 = new JLabel("x2");
+	JLabel lblX_30 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_30 = new GridBagConstraints();
 	gbc_lblX_30.anchor = GridBagConstraints.EAST;
 	gbc_lblX_30.insets = new Insets(0, 0, 5, 5);
@@ -3021,16 +3018,16 @@ public class CapacityPlanning {
 	gbc_label_92.gridy = 13;
 	cpp_workstation9.add(label_92, gbc_label_92);
 	
-	textField_101 = new JTextField();
-	textField_101.setColumns(10);
-	GridBagConstraints gbc_textField_101 = new GridBagConstraints();
-	gbc_textField_101.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_101.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_101.gridx = 5;
-	gbc_textField_101.gridy = 13;
-	cpp_workstation9.add(textField_101, gbc_textField_101);
+	cptf9_20 = new JTextField();
+	cptf9_20.setColumns(10);
+	GridBagConstraints gbc_cptf9_20 = new GridBagConstraints();
+	gbc_cptf9_20.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf9_20.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf9_20.gridx = 5;
+	gbc_cptf9_20.gridy = 13;
+	cpp_workstation9.add(cptf9_20, gbc_cptf9_20);
 	
-	JLabel lblX_31 = new JLabel("x2");
+	JLabel lblX_31 = new JLabel("x2 =");
 	GridBagConstraints gbc_lblX_31 = new GridBagConstraints();
 	gbc_lblX_31.anchor = GridBagConstraints.EAST;
 	gbc_lblX_31.insets = new Insets(0, 0, 5, 5);
@@ -3192,16 +3189,16 @@ public class CapacityPlanning {
 	gbc_lblE_14.gridy = 3;
 	cpp_workstation10.add(lblE_14, gbc_lblE_14);
 	
-	textField_108 = new JTextField();
-	textField_108.setColumns(10);
-	GridBagConstraints gbc_textField_108 = new GridBagConstraints();
-	gbc_textField_108.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_108.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_108.gridx = 5;
-	gbc_textField_108.gridy = 3;
-	cpp_workstation10.add(textField_108, gbc_textField_108);
+	cptf10_4 = new JTextField();
+	cptf10_4.setColumns(10);
+	GridBagConstraints gbc_cptf10_4 = new GridBagConstraints();
+	gbc_cptf10_4.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_4.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_4.gridx = 5;
+	gbc_cptf10_4.gridy = 3;
+	cpp_workstation10.add(cptf10_4, gbc_cptf10_4);
 	
-	JLabel lblX_32 = new JLabel("x4");
+	JLabel lblX_32 = new JLabel("x4 =");
 	GridBagConstraints gbc_lblX_32 = new GridBagConstraints();
 	gbc_lblX_32.anchor = GridBagConstraints.EAST;
 	gbc_lblX_32.insets = new Insets(0, 0, 5, 5);
@@ -3233,16 +3230,16 @@ public class CapacityPlanning {
 	gbc_lblE_15.gridy = 4;
 	cpp_workstation10.add(lblE_15, gbc_lblE_15);
 	
-	textField_110 = new JTextField();
-	textField_110.setColumns(10);
-	GridBagConstraints gbc_textField_110 = new GridBagConstraints();
-	gbc_textField_110.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_110.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_110.gridx = 5;
-	gbc_textField_110.gridy = 4;
-	cpp_workstation10.add(textField_110, gbc_textField_110);
+	cptf10_5 = new JTextField();
+	cptf10_5.setColumns(10);
+	GridBagConstraints gbc_cptf10_5 = new GridBagConstraints();
+	gbc_cptf10_5.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_5.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_5.gridx = 5;
+	gbc_cptf10_5.gridy = 4;
+	cpp_workstation10.add(cptf10_5, gbc_cptf10_5);
 	
-	JLabel label_65 = new JLabel("x4");
+	JLabel label_65 = new JLabel("x4 =");
 	GridBagConstraints gbc_label_65 = new GridBagConstraints();
 	gbc_label_65.insets = new Insets(0, 0, 5, 5);
 	gbc_label_65.anchor = GridBagConstraints.EAST;
@@ -3274,16 +3271,16 @@ public class CapacityPlanning {
 	gbc_lblE_16.gridy = 5;
 	cpp_workstation10.add(lblE_16, gbc_lblE_16);
 	
-	textField_112 = new JTextField();
-	textField_112.setColumns(10);
-	GridBagConstraints gbc_textField_112 = new GridBagConstraints();
-	gbc_textField_112.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_112.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_112.gridx = 5;
-	gbc_textField_112.gridy = 5;
-	cpp_workstation10.add(textField_112, gbc_textField_112);
+	cptf10_6 = new JTextField();
+	cptf10_6.setColumns(10);
+	GridBagConstraints gbc_cptf10_6 = new GridBagConstraints();
+	gbc_cptf10_6.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_6.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_6.gridx = 5;
+	gbc_cptf10_6.gridy = 5;
+	cpp_workstation10.add(cptf10_6, gbc_cptf10_6);
 	
-	JLabel label_79 = new JLabel("x4");
+	JLabel label_79 = new JLabel("x4 =");
 	GridBagConstraints gbc_label_79 = new GridBagConstraints();
 	gbc_label_79.insets = new Insets(0, 0, 5, 5);
 	gbc_label_79.anchor = GridBagConstraints.EAST;
@@ -3324,16 +3321,16 @@ public class CapacityPlanning {
 	gbc_lblE_17.gridy = 7;
 	cpp_workstation10.add(lblE_17, gbc_lblE_17);
 	
-	textField_114 = new JTextField();
-	textField_114.setColumns(10);
-	GridBagConstraints gbc_textField_114 = new GridBagConstraints();
-	gbc_textField_114.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_114.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_114.gridx = 5;
-	gbc_textField_114.gridy = 7;
-	cpp_workstation10.add(textField_114, gbc_textField_114);
+	cptf10_7 = new JTextField();
+	cptf10_7.setColumns(10);
+	GridBagConstraints gbc_cptf10_7 = new GridBagConstraints();
+	gbc_cptf10_7.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_7.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_7.gridx = 5;
+	gbc_cptf10_7.gridy = 7;
+	cpp_workstation10.add(cptf10_7, gbc_cptf10_7);
 	
-	JLabel label_82 = new JLabel("x4");
+	JLabel label_82 = new JLabel("x4 =");
 	GridBagConstraints gbc_label_82 = new GridBagConstraints();
 	gbc_label_82.insets = new Insets(0, 0, 5, 5);
 	gbc_label_82.anchor = GridBagConstraints.EAST;
@@ -3365,16 +3362,16 @@ public class CapacityPlanning {
 	gbc_lblE_18.gridy = 8;
 	cpp_workstation10.add(lblE_18, gbc_lblE_18);
 	
-	textField_116 = new JTextField();
-	textField_116.setColumns(10);
-	GridBagConstraints gbc_textField_116 = new GridBagConstraints();
-	gbc_textField_116.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_116.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_116.gridx = 5;
-	gbc_textField_116.gridy = 8;
-	cpp_workstation10.add(textField_116, gbc_textField_116);
+	cptf10_8 = new JTextField();
+	cptf10_8.setColumns(10);
+	GridBagConstraints gbc_cptf10_8 = new GridBagConstraints();
+	gbc_cptf10_8.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_8.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_8.gridx = 5;
+	gbc_cptf10_8.gridy = 8;
+	cpp_workstation10.add(cptf10_8, gbc_cptf10_8);
 	
-	JLabel label_90 = new JLabel("x4");
+	JLabel label_90 = new JLabel("x4 =");
 	GridBagConstraints gbc_label_90 = new GridBagConstraints();
 	gbc_label_90.insets = new Insets(0, 0, 5, 5);
 	gbc_label_90.anchor = GridBagConstraints.EAST;
@@ -3406,16 +3403,16 @@ public class CapacityPlanning {
 	gbc_lblE_19.gridy = 9;
 	cpp_workstation10.add(lblE_19, gbc_lblE_19);
 	
-	textField_118 = new JTextField();
-	textField_118.setColumns(10);
-	GridBagConstraints gbc_textField_118 = new GridBagConstraints();
-	gbc_textField_118.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_118.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_118.gridx = 5;
-	gbc_textField_118.gridy = 9;
-	cpp_workstation10.add(textField_118, gbc_textField_118);
+	cptf10_9 = new JTextField();
+	cptf10_9.setColumns(10);
+	GridBagConstraints gbc_cptf10_9 = new GridBagConstraints();
+	gbc_cptf10_9.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf10_9.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf10_9.gridx = 5;
+	gbc_cptf10_9.gridy = 9;
+	cpp_workstation10.add(cptf10_9, gbc_cptf10_9);
 	
-	JLabel label_93 = new JLabel("x4");
+	JLabel label_93 = new JLabel("x4 =");
 	GridBagConstraints gbc_label_93 = new GridBagConstraints();
 	gbc_label_93.insets = new Insets(0, 0, 5, 5);
 	gbc_label_93.anchor = GridBagConstraints.EAST;
@@ -3577,16 +3574,16 @@ public class CapacityPlanning {
 	gbc_lblE_20.gridy = 3;
 	cpp_workstation11.add(lblE_20, gbc_lblE_20);
 	
-	textField_131 = new JTextField();
-	textField_131.setColumns(10);
-	GridBagConstraints gbc_textField_131 = new GridBagConstraints();
-	gbc_textField_131.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_131.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_131.gridx = 5;
-	gbc_textField_131.gridy = 3;
-	cpp_workstation11.add(textField_131, gbc_textField_131);
+	cptf11_4 = new JTextField();
+	cptf11_4.setColumns(10);
+	GridBagConstraints gbc_cptf11_4 = new GridBagConstraints();
+	gbc_cptf11_4.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_4.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_4.gridx = 5;
+	gbc_cptf11_4.gridy = 3;
+	cpp_workstation11.add(cptf11_4, gbc_cptf11_4);
 	
-	JLabel label_132 = new JLabel("x3");
+	JLabel label_132 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_132 = new GridBagConstraints();
 	gbc_label_132.anchor = GridBagConstraints.EAST;
 	gbc_label_132.insets = new Insets(0, 0, 5, 5);
@@ -3618,16 +3615,16 @@ public class CapacityPlanning {
 	gbc_lblE_21.gridy = 4;
 	cpp_workstation11.add(lblE_21, gbc_lblE_21);
 	
-	textField_133 = new JTextField();
-	textField_133.setColumns(10);
-	GridBagConstraints gbc_textField_133 = new GridBagConstraints();
-	gbc_textField_133.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_133.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_133.gridx = 5;
-	gbc_textField_133.gridy = 4;
-	cpp_workstation11.add(textField_133, gbc_textField_133);
+	cptf11_5 = new JTextField();
+	cptf11_5.setColumns(10);
+	GridBagConstraints gbc_cptf11_5 = new GridBagConstraints();
+	gbc_cptf11_5.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_5.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_5.gridx = 5;
+	gbc_cptf11_5.gridy = 4;
+	cpp_workstation11.add(cptf11_5, gbc_cptf11_5);
 	
-	JLabel label_135 = new JLabel("x3");
+	JLabel label_135 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_135 = new GridBagConstraints();
 	gbc_label_135.anchor = GridBagConstraints.EAST;
 	gbc_label_135.insets = new Insets(0, 0, 5, 5);
@@ -3659,16 +3656,16 @@ public class CapacityPlanning {
 	gbc_lblE_22.gridy = 5;
 	cpp_workstation11.add(lblE_22, gbc_lblE_22);
 	
-	textField_135 = new JTextField();
-	textField_135.setColumns(10);
-	GridBagConstraints gbc_textField_135 = new GridBagConstraints();
-	gbc_textField_135.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_135.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_135.gridx = 5;
-	gbc_textField_135.gridy = 5;
-	cpp_workstation11.add(textField_135, gbc_textField_135);
+	cptf11_6 = new JTextField();
+	cptf11_6.setColumns(10);
+	GridBagConstraints gbc_cptf11_6 = new GridBagConstraints();
+	gbc_cptf11_6.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_6.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_6.gridx = 5;
+	gbc_cptf11_6.gridy = 5;
+	cpp_workstation11.add(cptf11_6, gbc_cptf11_6);
 	
-	JLabel label_138 = new JLabel("x3");
+	JLabel label_138 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_138 = new GridBagConstraints();
 	gbc_label_138.anchor = GridBagConstraints.EAST;
 	gbc_label_138.insets = new Insets(0, 0, 5, 5);
@@ -3709,16 +3706,16 @@ public class CapacityPlanning {
 	gbc_lblE_23.gridy = 7;
 	cpp_workstation11.add(lblE_23, gbc_lblE_23);
 	
-	textField_137 = new JTextField();
-	textField_137.setColumns(10);
-	GridBagConstraints gbc_textField_137 = new GridBagConstraints();
-	gbc_textField_137.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_137.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_137.gridx = 5;
-	gbc_textField_137.gridy = 7;
-	cpp_workstation11.add(textField_137, gbc_textField_137);
+	cptf11_7 = new JTextField();
+	cptf11_7.setColumns(10);
+	GridBagConstraints gbc_cptf11_7 = new GridBagConstraints();
+	gbc_cptf11_7.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_7.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_7.gridx = 5;
+	gbc_cptf11_7.gridy = 7;
+	cpp_workstation11.add(cptf11_7, gbc_cptf11_7);
 	
-	JLabel label_142 = new JLabel("x3");
+	JLabel label_142 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_142 = new GridBagConstraints();
 	gbc_label_142.anchor = GridBagConstraints.EAST;
 	gbc_label_142.insets = new Insets(0, 0, 5, 5);
@@ -3750,16 +3747,16 @@ public class CapacityPlanning {
 	gbc_lblE_24.gridy = 8;
 	cpp_workstation11.add(lblE_24, gbc_lblE_24);
 	
-	textField_139 = new JTextField();
-	textField_139.setColumns(10);
-	GridBagConstraints gbc_textField_139 = new GridBagConstraints();
-	gbc_textField_139.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_139.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_139.gridx = 5;
-	gbc_textField_139.gridy = 8;
-	cpp_workstation11.add(textField_139, gbc_textField_139);
+	cptf11_8 = new JTextField();
+	cptf11_8.setColumns(10);
+	GridBagConstraints gbc_cptf11_8 = new GridBagConstraints();
+	gbc_cptf11_8.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_8.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_8.gridx = 5;
+	gbc_cptf11_8.gridy = 8;
+	cpp_workstation11.add(cptf11_8, gbc_cptf11_8);
 	
-	JLabel label_145 = new JLabel("x3");
+	JLabel label_145 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_145 = new GridBagConstraints();
 	gbc_label_145.anchor = GridBagConstraints.EAST;
 	gbc_label_145.insets = new Insets(0, 0, 5, 5);
@@ -3791,16 +3788,16 @@ public class CapacityPlanning {
 	gbc_lblE_25.gridy = 9;
 	cpp_workstation11.add(lblE_25, gbc_lblE_25);
 	
-	textField_141 = new JTextField();
-	textField_141.setColumns(10);
-	GridBagConstraints gbc_textField_141 = new GridBagConstraints();
-	gbc_textField_141.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_141.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_141.gridx = 5;
-	gbc_textField_141.gridy = 9;
-	cpp_workstation11.add(textField_141, gbc_textField_141);
+	cptf11_9 = new JTextField();
+	cptf11_9.setColumns(10);
+	GridBagConstraints gbc_cptf11_9 = new GridBagConstraints();
+	gbc_cptf11_9.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf11_9.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf11_9.gridx = 5;
+	gbc_cptf11_9.gridy = 9;
+	cpp_workstation11.add(cptf11_9, gbc_cptf11_9);
 	
-	JLabel label_148 = new JLabel("x3");
+	JLabel label_148 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_148 = new GridBagConstraints();
 	gbc_label_148.anchor = GridBagConstraints.EAST;
 	gbc_label_148.insets = new Insets(0, 0, 5, 5);
@@ -3912,7 +3909,10 @@ public class CapacityPlanning {
 	cpp_workstation11.add(textField_153, gbc_textField_153);
 	
 	JPanel cpp_workstation12 = new JPanel();
-	capacityplanningPane.addTab("New tab", null, cpp_workstation12, null);
+	JScrollPane cpsp_workstation12 = new JScrollPane(cpp_workstation12);
+	cpsp_workstation12.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	cpsp_workstation12.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	capacityplanningPane.addTab("W12", null, cpsp_workstation12, null);
 	GridBagLayout gbl_cpp_workstation12 = new GridBagLayout();
 	gbl_cpp_workstation12.columnWidths = new int[]{30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0};
 	gbl_cpp_workstation12.rowHeights = new int[]{40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0};
@@ -3928,7 +3928,7 @@ public class CapacityPlanning {
 	gbc_label_100.gridy = 1;
 	cpp_workstation12.add(label_100, gbc_label_100);
 	
-	JLabel label_101 = new JLabel("9");
+	JLabel label_101 = new JLabel("12");
 	GridBagConstraints gbc_label_101 = new GridBagConstraints();
 	gbc_label_101.insets = new Insets(0, 0, 5, 5);
 	gbc_label_101.gridx = 2;
@@ -3958,16 +3958,16 @@ public class CapacityPlanning {
 	gbc_label_105.gridy = 3;
 	cpp_workstation12.add(label_105, gbc_label_105);
 	
-	textField_120 = new JTextField();
-	textField_120.setColumns(10);
-	GridBagConstraints gbc_textField_120 = new GridBagConstraints();
-	gbc_textField_120.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_120.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_120.gridx = 5;
-	gbc_textField_120.gridy = 3;
-	cpp_workstation12.add(textField_120, gbc_textField_120);
+	cptf12_10 = new JTextField();
+	cptf12_10.setColumns(10);
+	GridBagConstraints gbc_cptf12_10 = new GridBagConstraints();
+	gbc_cptf12_10.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_10.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_10.gridx = 5;
+	gbc_cptf12_10.gridy = 3;
+	cpp_workstation12.add(cptf12_10, gbc_cptf12_10);
 	
-	JLabel label_107 = new JLabel("x3");
+	JLabel label_107 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_107 = new GridBagConstraints();
 	gbc_label_107.anchor = GridBagConstraints.EAST;
 	gbc_label_107.insets = new Insets(0, 0, 5, 5);
@@ -3999,16 +3999,16 @@ public class CapacityPlanning {
 	gbc_label_110.gridy = 4;
 	cpp_workstation12.add(label_110, gbc_label_110);
 	
-	textField_122 = new JTextField();
-	textField_122.setColumns(10);
-	GridBagConstraints gbc_textField_122 = new GridBagConstraints();
-	gbc_textField_122.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_122.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_122.gridx = 5;
-	gbc_textField_122.gridy = 4;
-	cpp_workstation12.add(textField_122, gbc_textField_122);
+	cptf12_11 = new JTextField();
+	cptf12_11.setColumns(10);
+	GridBagConstraints gbc_cptf12_11 = new GridBagConstraints();
+	gbc_cptf12_11.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_11.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_11.gridx = 5;
+	gbc_cptf12_11.gridy = 4;
+	cpp_workstation12.add(cptf12_11, gbc_cptf12_11);
 	
-	JLabel label_111 = new JLabel("x3");
+	JLabel label_111 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_111 = new GridBagConstraints();
 	gbc_label_111.anchor = GridBagConstraints.EAST;
 	gbc_label_111.insets = new Insets(0, 0, 5, 5);
@@ -4040,16 +4040,16 @@ public class CapacityPlanning {
 	gbc_label_113.gridy = 5;
 	cpp_workstation12.add(label_113, gbc_label_113);
 	
-	textField_124 = new JTextField();
-	textField_124.setColumns(10);
-	GridBagConstraints gbc_textField_124 = new GridBagConstraints();
-	gbc_textField_124.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_124.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_124.gridx = 5;
-	gbc_textField_124.gridy = 5;
-	cpp_workstation12.add(textField_124, gbc_textField_124);
+	cptf12_12 = new JTextField();
+	cptf12_12.setColumns(10);
+	GridBagConstraints gbc_cptf12_12 = new GridBagConstraints();
+	gbc_cptf12_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_12.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_12.gridx = 5;
+	gbc_cptf12_12.gridy = 5;
+	cpp_workstation12.add(cptf12_12, gbc_cptf12_12);
 	
-	JLabel label_114 = new JLabel("x3");
+	JLabel label_114 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_114 = new GridBagConstraints();
 	gbc_label_114.anchor = GridBagConstraints.EAST;
 	gbc_label_114.insets = new Insets(0, 0, 5, 5);
@@ -4090,16 +4090,16 @@ public class CapacityPlanning {
 	gbc_label_117.gridy = 7;
 	cpp_workstation12.add(label_117, gbc_label_117);
 	
-	textField_143 = new JTextField();
-	textField_143.setColumns(10);
-	GridBagConstraints gbc_textField_143 = new GridBagConstraints();
-	gbc_textField_143.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_143.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_143.gridx = 5;
-	gbc_textField_143.gridy = 7;
-	cpp_workstation12.add(textField_143, gbc_textField_143);
+	cptf12_13 = new JTextField();
+	cptf12_13.setColumns(10);
+	GridBagConstraints gbc_cptf12_13 = new GridBagConstraints();
+	gbc_cptf12_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_13.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_13.gridx = 5;
+	gbc_cptf12_13.gridy = 7;
+	cpp_workstation12.add(cptf12_13, gbc_cptf12_13);
 	
-	JLabel label_118 = new JLabel("x3");
+	JLabel label_118 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_118 = new GridBagConstraints();
 	gbc_label_118.anchor = GridBagConstraints.EAST;
 	gbc_label_118.insets = new Insets(0, 0, 5, 5);
@@ -4131,16 +4131,16 @@ public class CapacityPlanning {
 	gbc_label_120.gridy = 8;
 	cpp_workstation12.add(label_120, gbc_label_120);
 	
-	textField_145 = new JTextField();
-	textField_145.setColumns(10);
-	GridBagConstraints gbc_textField_145 = new GridBagConstraints();
-	gbc_textField_145.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_145.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_145.gridx = 5;
-	gbc_textField_145.gridy = 8;
-	cpp_workstation12.add(textField_145, gbc_textField_145);
+	cptf12_14 = new JTextField();
+	cptf12_14.setColumns(10);
+	GridBagConstraints gbc_cptf12_14 = new GridBagConstraints();
+	gbc_cptf12_14.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_14.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_14.gridx = 5;
+	gbc_cptf12_14.gridy = 8;
+	cpp_workstation12.add(cptf12_14, gbc_cptf12_14);
 	
-	JLabel label_121 = new JLabel("x3");
+	JLabel label_121 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_121 = new GridBagConstraints();
 	gbc_label_121.anchor = GridBagConstraints.EAST;
 	gbc_label_121.insets = new Insets(0, 0, 5, 5);
@@ -4172,16 +4172,16 @@ public class CapacityPlanning {
 	gbc_label_131.gridy = 9;
 	cpp_workstation12.add(label_131, gbc_label_131);
 	
-	textField_147 = new JTextField();
-	textField_147.setColumns(10);
-	GridBagConstraints gbc_textField_147 = new GridBagConstraints();
-	gbc_textField_147.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_147.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_147.gridx = 5;
-	gbc_textField_147.gridy = 9;
-	cpp_workstation12.add(textField_147, gbc_textField_147);
+	cptf12_15 = new JTextField();
+	cptf12_15.setColumns(10);
+	GridBagConstraints gbc_cptf12_15 = new GridBagConstraints();
+	gbc_cptf12_15.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf12_15.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf12_15.gridx = 5;
+	gbc_cptf12_15.gridy = 9;
+	cpp_workstation12.add(cptf12_15, gbc_cptf12_15);
 	
-	JLabel label_134 = new JLabel("x3");
+	JLabel label_134 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_134 = new GridBagConstraints();
 	gbc_label_134.anchor = GridBagConstraints.EAST;
 	gbc_label_134.insets = new Insets(0, 0, 5, 5);
@@ -4292,14 +4292,17 @@ public class CapacityPlanning {
 	gbc_textField_164.gridy = 15;
 	cpp_workstation12.add(textField_164, gbc_textField_164);
 	
-	JPanel panel = new JPanel();
-	capacityplanningPane.addTab("New tab", null, panel, null);
-	GridBagLayout gbl_panel = new GridBagLayout();
-	gbl_panel.columnWidths = new int[]{30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0};
-	gbl_panel.rowHeights = new int[]{40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0};
-	gbl_panel.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0, Double.MIN_VALUE};
-	gbl_panel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE};
-	panel.setLayout(gbl_panel);
+	JPanel cpp_workstation13 = new JPanel();
+	JScrollPane cpsp_workstation13 = new JScrollPane(cpp_workstation13);
+	cpsp_workstation13.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	cpsp_workstation13.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	capacityplanningPane.addTab("W13", null, cpsp_workstation13, null);
+	GridBagLayout gbl_cpp_workstation13 = new GridBagLayout();
+	gbl_cpp_workstation13.columnWidths = new int[]{30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0};
+	gbl_cpp_workstation13.rowHeights = new int[]{40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0};
+	gbl_cpp_workstation13.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0, Double.MIN_VALUE};
+	gbl_cpp_workstation13.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE};
+	cpp_workstation13.setLayout(gbl_cpp_workstation13);
 	
 	JLabel label_137 = new JLabel("Arbeitsplatz");
 	GridBagConstraints gbc_label_137 = new GridBagConstraints();
@@ -4307,14 +4310,14 @@ public class CapacityPlanning {
 	gbc_label_137.insets = new Insets(0, 0, 5, 5);
 	gbc_label_137.gridx = 1;
 	gbc_label_137.gridy = 1;
-	panel.add(label_137, gbc_label_137);
+	cpp_workstation13.add(label_137, gbc_label_137);
 	
-	JLabel label_139 = new JLabel("9");
+	JLabel label_139 = new JLabel("13");
 	GridBagConstraints gbc_label_139 = new GridBagConstraints();
 	gbc_label_139.insets = new Insets(0, 0, 5, 5);
 	gbc_label_139.gridx = 2;
 	gbc_label_139.gridy = 1;
-	panel.add(label_139, gbc_label_139);
+	cpp_workstation13.add(label_139, gbc_label_139);
 	
 	JLabel label_141 = new JLabel("Schutzblech hinten");
 	GridBagConstraints gbc_label_141 = new GridBagConstraints();
@@ -4322,14 +4325,14 @@ public class CapacityPlanning {
 	gbc_label_141.insets = new Insets(0, 0, 5, 5);
 	gbc_label_141.gridx = 1;
 	gbc_label_141.gridy = 3;
-	panel.add(label_141, gbc_label_141);
+	cpp_workstation13.add(label_141, gbc_label_141);
 	
 	JLabel label_144 = new JLabel("K");
 	GridBagConstraints gbc_label_144 = new GridBagConstraints();
 	gbc_label_144.insets = new Insets(0, 0, 5, 5);
 	gbc_label_144.gridx = 3;
 	gbc_label_144.gridy = 3;
-	panel.add(label_144, gbc_label_144);
+	cpp_workstation13.add(label_144, gbc_label_144);
 	
 	JLabel label_147 = new JLabel("E10");
 	GridBagConstraints gbc_label_147 = new GridBagConstraints();
@@ -4337,24 +4340,24 @@ public class CapacityPlanning {
 	gbc_label_147.insets = new Insets(0, 0, 5, 5);
 	gbc_label_147.gridx = 4;
 	gbc_label_147.gridy = 3;
-	panel.add(label_147, gbc_label_147);
+	cpp_workstation13.add(label_147, gbc_label_147);
 	
-	textField_154 = new JTextField();
-	textField_154.setColumns(10);
-	GridBagConstraints gbc_textField_154 = new GridBagConstraints();
-	gbc_textField_154.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_154.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_154.gridx = 5;
-	gbc_textField_154.gridy = 3;
-	panel.add(textField_154, gbc_textField_154);
+	cptf13_10 = new JTextField();
+	cptf13_10.setColumns(10);
+	GridBagConstraints gbc_cptf13_10 = new GridBagConstraints();
+	gbc_cptf13_10.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_10.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_10.gridx = 5;
+	gbc_cptf13_10.gridy = 3;
+	cpp_workstation13.add(cptf13_10, gbc_cptf13_10);
 	
-	JLabel label_149 = new JLabel("x3");
-	GridBagConstraints gbc_label_149 = new GridBagConstraints();
-	gbc_label_149.anchor = GridBagConstraints.EAST;
-	gbc_label_149.insets = new Insets(0, 0, 5, 5);
-	gbc_label_149.gridx = 6;
-	gbc_label_149.gridy = 3;
-	panel.add(label_149, gbc_label_149);
+	JLabel lblX_33 = new JLabel("x2 =");
+	GridBagConstraints gbc_lblX_33 = new GridBagConstraints();
+	gbc_lblX_33.anchor = GridBagConstraints.EAST;
+	gbc_lblX_33.insets = new Insets(0, 0, 5, 5);
+	gbc_lblX_33.gridx = 6;
+	gbc_lblX_33.gridy = 3;
+	cpp_workstation13.add(lblX_33, gbc_lblX_33);
 	
 	textField_155 = new JTextField();
 	textField_155.setColumns(10);
@@ -4363,14 +4366,14 @@ public class CapacityPlanning {
 	gbc_textField_155.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_155.gridx = 7;
 	gbc_textField_155.gridy = 3;
-	panel.add(textField_155, gbc_textField_155);
+	cpp_workstation13.add(textField_155, gbc_textField_155);
 	
 	JLabel label_150 = new JLabel("D");
 	GridBagConstraints gbc_label_150 = new GridBagConstraints();
 	gbc_label_150.insets = new Insets(0, 0, 5, 5);
 	gbc_label_150.gridx = 3;
 	gbc_label_150.gridy = 4;
-	panel.add(label_150, gbc_label_150);
+	cpp_workstation13.add(label_150, gbc_label_150);
 	
 	JLabel label_151 = new JLabel("E11");
 	GridBagConstraints gbc_label_151 = new GridBagConstraints();
@@ -4378,24 +4381,24 @@ public class CapacityPlanning {
 	gbc_label_151.insets = new Insets(0, 0, 5, 5);
 	gbc_label_151.gridx = 4;
 	gbc_label_151.gridy = 4;
-	panel.add(label_151, gbc_label_151);
+	cpp_workstation13.add(label_151, gbc_label_151);
 	
-	textField_156 = new JTextField();
-	textField_156.setColumns(10);
-	GridBagConstraints gbc_textField_156 = new GridBagConstraints();
-	gbc_textField_156.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_156.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_156.gridx = 5;
-	gbc_textField_156.gridy = 4;
-	panel.add(textField_156, gbc_textField_156);
+	cptf13_11 = new JTextField();
+	cptf13_11.setColumns(10);
+	GridBagConstraints gbc_cptf13_11 = new GridBagConstraints();
+	gbc_cptf13_11.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_11.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_11.gridx = 5;
+	gbc_cptf13_11.gridy = 4;
+	cpp_workstation13.add(cptf13_11, gbc_cptf13_11);
 	
-	JLabel label_152 = new JLabel("x3");
-	GridBagConstraints gbc_label_152 = new GridBagConstraints();
-	gbc_label_152.anchor = GridBagConstraints.EAST;
-	gbc_label_152.insets = new Insets(0, 0, 5, 5);
-	gbc_label_152.gridx = 6;
-	gbc_label_152.gridy = 4;
-	panel.add(label_152, gbc_label_152);
+	JLabel lblX_34 = new JLabel("x2 =");
+	GridBagConstraints gbc_lblX_34 = new GridBagConstraints();
+	gbc_lblX_34.anchor = GridBagConstraints.EAST;
+	gbc_lblX_34.insets = new Insets(0, 0, 5, 5);
+	gbc_lblX_34.gridx = 6;
+	gbc_lblX_34.gridy = 4;
+	cpp_workstation13.add(lblX_34, gbc_lblX_34);
 	
 	textField_157 = new JTextField();
 	textField_157.setColumns(10);
@@ -4404,14 +4407,14 @@ public class CapacityPlanning {
 	gbc_textField_157.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_157.gridx = 7;
 	gbc_textField_157.gridy = 4;
-	panel.add(textField_157, gbc_textField_157);
+	cpp_workstation13.add(textField_157, gbc_textField_157);
 	
 	JLabel label_153 = new JLabel("H");
 	GridBagConstraints gbc_label_153 = new GridBagConstraints();
 	gbc_label_153.insets = new Insets(0, 0, 5, 5);
 	gbc_label_153.gridx = 3;
 	gbc_label_153.gridy = 5;
-	panel.add(label_153, gbc_label_153);
+	cpp_workstation13.add(label_153, gbc_label_153);
 	
 	JLabel label_164 = new JLabel("E12");
 	GridBagConstraints gbc_label_164 = new GridBagConstraints();
@@ -4419,24 +4422,24 @@ public class CapacityPlanning {
 	gbc_label_164.insets = new Insets(0, 0, 5, 5);
 	gbc_label_164.gridx = 4;
 	gbc_label_164.gridy = 5;
-	panel.add(label_164, gbc_label_164);
+	cpp_workstation13.add(label_164, gbc_label_164);
 	
-	textField_158 = new JTextField();
-	textField_158.setColumns(10);
-	GridBagConstraints gbc_textField_158 = new GridBagConstraints();
-	gbc_textField_158.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_158.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_158.gridx = 5;
-	gbc_textField_158.gridy = 5;
-	panel.add(textField_158, gbc_textField_158);
+	cptf13_12 = new JTextField();
+	cptf13_12.setColumns(10);
+	GridBagConstraints gbc_cptf13_12 = new GridBagConstraints();
+	gbc_cptf13_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_12.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_12.gridx = 5;
+	gbc_cptf13_12.gridy = 5;
+	cpp_workstation13.add(cptf13_12, gbc_cptf13_12);
 	
-	JLabel label_165 = new JLabel("x3");
-	GridBagConstraints gbc_label_165 = new GridBagConstraints();
-	gbc_label_165.anchor = GridBagConstraints.EAST;
-	gbc_label_165.insets = new Insets(0, 0, 5, 5);
-	gbc_label_165.gridx = 6;
-	gbc_label_165.gridy = 5;
-	panel.add(label_165, gbc_label_165);
+	JLabel lblX_35 = new JLabel("x2 =");
+	GridBagConstraints gbc_lblX_35 = new GridBagConstraints();
+	gbc_lblX_35.anchor = GridBagConstraints.EAST;
+	gbc_lblX_35.insets = new Insets(0, 0, 5, 5);
+	gbc_lblX_35.gridx = 6;
+	gbc_lblX_35.gridy = 5;
+	cpp_workstation13.add(lblX_35, gbc_lblX_35);
 	
 	textField_159 = new JTextField();
 	textField_159.setColumns(10);
@@ -4445,7 +4448,7 @@ public class CapacityPlanning {
 	gbc_textField_159.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_159.gridx = 7;
 	gbc_textField_159.gridy = 5;
-	panel.add(textField_159, gbc_textField_159);
+	cpp_workstation13.add(textField_159, gbc_textField_159);
 	
 	JLabel label_166 = new JLabel("Schutzblech Vorne");
 	GridBagConstraints gbc_label_166 = new GridBagConstraints();
@@ -4454,14 +4457,14 @@ public class CapacityPlanning {
 	gbc_label_166.insets = new Insets(0, 0, 5, 5);
 	gbc_label_166.gridx = 1;
 	gbc_label_166.gridy = 7;
-	panel.add(label_166, gbc_label_166);
+	cpp_workstation13.add(label_166, gbc_label_166);
 	
 	JLabel label_167 = new JLabel("K");
 	GridBagConstraints gbc_label_167 = new GridBagConstraints();
 	gbc_label_167.insets = new Insets(0, 0, 5, 5);
 	gbc_label_167.gridx = 3;
 	gbc_label_167.gridy = 7;
-	panel.add(label_167, gbc_label_167);
+	cpp_workstation13.add(label_167, gbc_label_167);
 	
 	JLabel label_168 = new JLabel("E13");
 	GridBagConstraints gbc_label_168 = new GridBagConstraints();
@@ -4469,24 +4472,24 @@ public class CapacityPlanning {
 	gbc_label_168.insets = new Insets(0, 0, 5, 5);
 	gbc_label_168.gridx = 4;
 	gbc_label_168.gridy = 7;
-	panel.add(label_168, gbc_label_168);
+	cpp_workstation13.add(label_168, gbc_label_168);
 	
-	textField_165 = new JTextField();
-	textField_165.setColumns(10);
-	GridBagConstraints gbc_textField_165 = new GridBagConstraints();
-	gbc_textField_165.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_165.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_165.gridx = 5;
-	gbc_textField_165.gridy = 7;
-	panel.add(textField_165, gbc_textField_165);
+	cptf13_13 = new JTextField();
+	cptf13_13.setColumns(10);
+	GridBagConstraints gbc_cptf13_13 = new GridBagConstraints();
+	gbc_cptf13_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_13.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_13.gridx = 5;
+	gbc_cptf13_13.gridy = 7;
+	cpp_workstation13.add(cptf13_13, gbc_cptf13_13);
 	
-	JLabel label_169 = new JLabel("x3");
-	GridBagConstraints gbc_label_169 = new GridBagConstraints();
-	gbc_label_169.anchor = GridBagConstraints.EAST;
-	gbc_label_169.insets = new Insets(0, 0, 5, 5);
-	gbc_label_169.gridx = 6;
-	gbc_label_169.gridy = 7;
-	panel.add(label_169, gbc_label_169);
+	JLabel lblX_36 = new JLabel("x2 =");
+	GridBagConstraints gbc_lblX_36 = new GridBagConstraints();
+	gbc_lblX_36.anchor = GridBagConstraints.EAST;
+	gbc_lblX_36.insets = new Insets(0, 0, 5, 5);
+	gbc_lblX_36.gridx = 6;
+	gbc_lblX_36.gridy = 7;
+	cpp_workstation13.add(lblX_36, gbc_lblX_36);
 	
 	textField_166 = new JTextField();
 	textField_166.setColumns(10);
@@ -4495,14 +4498,14 @@ public class CapacityPlanning {
 	gbc_textField_166.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_166.gridx = 7;
 	gbc_textField_166.gridy = 7;
-	panel.add(textField_166, gbc_textField_166);
+	cpp_workstation13.add(textField_166, gbc_textField_166);
 	
 	JLabel label_170 = new JLabel("D");
 	GridBagConstraints gbc_label_170 = new GridBagConstraints();
 	gbc_label_170.insets = new Insets(0, 0, 5, 5);
 	gbc_label_170.gridx = 3;
 	gbc_label_170.gridy = 8;
-	panel.add(label_170, gbc_label_170);
+	cpp_workstation13.add(label_170, gbc_label_170);
 	
 	JLabel label_171 = new JLabel("E14");
 	GridBagConstraints gbc_label_171 = new GridBagConstraints();
@@ -4510,24 +4513,24 @@ public class CapacityPlanning {
 	gbc_label_171.insets = new Insets(0, 0, 5, 5);
 	gbc_label_171.gridx = 4;
 	gbc_label_171.gridy = 8;
-	panel.add(label_171, gbc_label_171);
+	cpp_workstation13.add(label_171, gbc_label_171);
 	
-	textField_167 = new JTextField();
-	textField_167.setColumns(10);
-	GridBagConstraints gbc_textField_167 = new GridBagConstraints();
-	gbc_textField_167.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_167.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_167.gridx = 5;
-	gbc_textField_167.gridy = 8;
-	panel.add(textField_167, gbc_textField_167);
+	cptf13_14 = new JTextField();
+	cptf13_14.setColumns(10);
+	GridBagConstraints gbc_cptf13_14 = new GridBagConstraints();
+	gbc_cptf13_14.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_14.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_14.gridx = 5;
+	gbc_cptf13_14.gridy = 8;
+	cpp_workstation13.add(cptf13_14, gbc_cptf13_14);
 	
-	JLabel label_172 = new JLabel("x3");
+	JLabel label_172 = new JLabel("x3 =");
 	GridBagConstraints gbc_label_172 = new GridBagConstraints();
 	gbc_label_172.anchor = GridBagConstraints.EAST;
 	gbc_label_172.insets = new Insets(0, 0, 5, 5);
 	gbc_label_172.gridx = 6;
 	gbc_label_172.gridy = 8;
-	panel.add(label_172, gbc_label_172);
+	cpp_workstation13.add(label_172, gbc_label_172);
 	
 	textField_168 = new JTextField();
 	textField_168.setColumns(10);
@@ -4536,14 +4539,14 @@ public class CapacityPlanning {
 	gbc_textField_168.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_168.gridx = 7;
 	gbc_textField_168.gridy = 8;
-	panel.add(textField_168, gbc_textField_168);
+	cpp_workstation13.add(textField_168, gbc_textField_168);
 	
 	JLabel label_173 = new JLabel("H");
 	GridBagConstraints gbc_label_173 = new GridBagConstraints();
 	gbc_label_173.insets = new Insets(0, 0, 5, 5);
 	gbc_label_173.gridx = 3;
 	gbc_label_173.gridy = 9;
-	panel.add(label_173, gbc_label_173);
+	cpp_workstation13.add(label_173, gbc_label_173);
 	
 	JLabel label_174 = new JLabel("E15");
 	GridBagConstraints gbc_label_174 = new GridBagConstraints();
@@ -4551,24 +4554,24 @@ public class CapacityPlanning {
 	gbc_label_174.insets = new Insets(0, 0, 5, 5);
 	gbc_label_174.gridx = 4;
 	gbc_label_174.gridy = 9;
-	panel.add(label_174, gbc_label_174);
+	cpp_workstation13.add(label_174, gbc_label_174);
 	
-	textField_169 = new JTextField();
-	textField_169.setColumns(10);
-	GridBagConstraints gbc_textField_169 = new GridBagConstraints();
-	gbc_textField_169.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_169.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_169.gridx = 5;
-	gbc_textField_169.gridy = 9;
-	panel.add(textField_169, gbc_textField_169);
+	cptf13_15 = new JTextField();
+	cptf13_15.setColumns(10);
+	GridBagConstraints gbc_cptf13_15 = new GridBagConstraints();
+	gbc_cptf13_15.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf13_15.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf13_15.gridx = 5;
+	gbc_cptf13_15.gridy = 9;
+	cpp_workstation13.add(cptf13_15, gbc_cptf13_15);
 	
-	JLabel label_175 = new JLabel("x3");
-	GridBagConstraints gbc_label_175 = new GridBagConstraints();
-	gbc_label_175.anchor = GridBagConstraints.EAST;
-	gbc_label_175.insets = new Insets(0, 0, 5, 5);
-	gbc_label_175.gridx = 6;
-	gbc_label_175.gridy = 9;
-	panel.add(label_175, gbc_label_175);
+	JLabel lblX_37 = new JLabel("x2 =");
+	GridBagConstraints gbc_lblX_37 = new GridBagConstraints();
+	gbc_lblX_37.anchor = GridBagConstraints.EAST;
+	gbc_lblX_37.insets = new Insets(0, 0, 5, 5);
+	gbc_lblX_37.gridx = 6;
+	gbc_lblX_37.gridy = 9;
+	cpp_workstation13.add(lblX_37, gbc_lblX_37);
 	
 	textField_170 = new JTextField();
 	textField_170.setColumns(10);
@@ -4577,138 +4580,7 @@ public class CapacityPlanning {
 	gbc_textField_170.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_170.gridx = 7;
 	gbc_textField_170.gridy = 9;
-	panel.add(textField_170, gbc_textField_170);
-	
-	JLabel label_176 = new JLabel("Rahmen");
-	GridBagConstraints gbc_label_176 = new GridBagConstraints();
-	gbc_label_176.gridheight = 3;
-	gbc_label_176.insets = new Insets(0, 0, 5, 5);
-	gbc_label_176.gridx = 1;
-	gbc_label_176.gridy = 11;
-	panel.add(label_176, gbc_label_176);
-	
-	JLabel label_177 = new JLabel("K");
-	GridBagConstraints gbc_label_177 = new GridBagConstraints();
-	gbc_label_177.insets = new Insets(0, 0, 5, 5);
-	gbc_label_177.gridx = 3;
-	gbc_label_177.gridy = 11;
-	panel.add(label_177, gbc_label_177);
-	
-	JLabel label_178 = new JLabel("E18");
-	GridBagConstraints gbc_label_178 = new GridBagConstraints();
-	gbc_label_178.anchor = GridBagConstraints.EAST;
-	gbc_label_178.insets = new Insets(0, 0, 5, 5);
-	gbc_label_178.gridx = 4;
-	gbc_label_178.gridy = 11;
-	panel.add(label_178, gbc_label_178);
-	
-	textField_171 = new JTextField();
-	textField_171.setColumns(10);
-	GridBagConstraints gbc_textField_171 = new GridBagConstraints();
-	gbc_textField_171.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_171.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_171.gridx = 5;
-	gbc_textField_171.gridy = 11;
-	panel.add(textField_171, gbc_textField_171);
-	
-	JLabel label_179 = new JLabel("x2");
-	GridBagConstraints gbc_label_179 = new GridBagConstraints();
-	gbc_label_179.anchor = GridBagConstraints.EAST;
-	gbc_label_179.insets = new Insets(0, 0, 5, 5);
-	gbc_label_179.gridx = 6;
-	gbc_label_179.gridy = 11;
-	panel.add(label_179, gbc_label_179);
-	
-	textField_172 = new JTextField();
-	textField_172.setColumns(10);
-	GridBagConstraints gbc_textField_172 = new GridBagConstraints();
-	gbc_textField_172.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_172.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_172.gridx = 7;
-	gbc_textField_172.gridy = 11;
-	panel.add(textField_172, gbc_textField_172);
-	
-	JLabel label_180 = new JLabel("D");
-	GridBagConstraints gbc_label_180 = new GridBagConstraints();
-	gbc_label_180.insets = new Insets(0, 0, 5, 5);
-	gbc_label_180.gridx = 3;
-	gbc_label_180.gridy = 12;
-	panel.add(label_180, gbc_label_180);
-	
-	JLabel label_181 = new JLabel("E19");
-	GridBagConstraints gbc_label_181 = new GridBagConstraints();
-	gbc_label_181.anchor = GridBagConstraints.EAST;
-	gbc_label_181.insets = new Insets(0, 0, 5, 5);
-	gbc_label_181.gridx = 4;
-	gbc_label_181.gridy = 12;
-	panel.add(label_181, gbc_label_181);
-	
-	textField_173 = new JTextField();
-	textField_173.setColumns(10);
-	GridBagConstraints gbc_textField_173 = new GridBagConstraints();
-	gbc_textField_173.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_173.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_173.gridx = 5;
-	gbc_textField_173.gridy = 12;
-	panel.add(textField_173, gbc_textField_173);
-	
-	JLabel label_182 = new JLabel("x2");
-	GridBagConstraints gbc_label_182 = new GridBagConstraints();
-	gbc_label_182.anchor = GridBagConstraints.EAST;
-	gbc_label_182.insets = new Insets(0, 0, 5, 5);
-	gbc_label_182.gridx = 6;
-	gbc_label_182.gridy = 12;
-	panel.add(label_182, gbc_label_182);
-	
-	textField_174 = new JTextField();
-	textField_174.setColumns(10);
-	GridBagConstraints gbc_textField_174 = new GridBagConstraints();
-	gbc_textField_174.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_174.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_174.gridx = 7;
-	gbc_textField_174.gridy = 12;
-	panel.add(textField_174, gbc_textField_174);
-	
-	JLabel label_183 = new JLabel("H");
-	GridBagConstraints gbc_label_183 = new GridBagConstraints();
-	gbc_label_183.insets = new Insets(0, 0, 5, 5);
-	gbc_label_183.gridx = 3;
-	gbc_label_183.gridy = 13;
-	panel.add(label_183, gbc_label_183);
-	
-	JLabel label_184 = new JLabel("E20");
-	GridBagConstraints gbc_label_184 = new GridBagConstraints();
-	gbc_label_184.anchor = GridBagConstraints.EAST;
-	gbc_label_184.insets = new Insets(0, 0, 5, 5);
-	gbc_label_184.gridx = 4;
-	gbc_label_184.gridy = 13;
-	panel.add(label_184, gbc_label_184);
-	
-	textField_175 = new JTextField();
-	textField_175.setColumns(10);
-	GridBagConstraints gbc_textField_175 = new GridBagConstraints();
-	gbc_textField_175.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_175.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_175.gridx = 5;
-	gbc_textField_175.gridy = 13;
-	panel.add(textField_175, gbc_textField_175);
-	
-	JLabel label_185 = new JLabel("x2");
-	GridBagConstraints gbc_label_185 = new GridBagConstraints();
-	gbc_label_185.anchor = GridBagConstraints.EAST;
-	gbc_label_185.insets = new Insets(0, 0, 5, 5);
-	gbc_label_185.gridx = 6;
-	gbc_label_185.gridy = 13;
-	panel.add(label_185, gbc_label_185);
-	
-	textField_176 = new JTextField();
-	textField_176.setColumns(10);
-	GridBagConstraints gbc_textField_176 = new GridBagConstraints();
-	gbc_textField_176.fill = GridBagConstraints.HORIZONTAL;
-	gbc_textField_176.insets = new Insets(0, 0, 5, 5);
-	gbc_textField_176.gridx = 7;
-	gbc_textField_176.gridy = 13;
-	panel.add(textField_176, gbc_textField_176);
+	cpp_workstation13.add(textField_170, gbc_textField_170);
 	
 	JSeparator separator_11 = new JSeparator();
 	GridBagConstraints gbc_separator_11 = new GridBagConstraints();
@@ -4716,16 +4588,16 @@ public class CapacityPlanning {
 	gbc_separator_11.gridwidth = 7;
 	gbc_separator_11.insets = new Insets(0, 0, 5, 5);
 	gbc_separator_11.gridx = 1;
-	gbc_separator_11.gridy = 14;
-	panel.add(separator_11, gbc_separator_11);
+	gbc_separator_11.gridy = 10;
+	cpp_workstation13.add(separator_11, gbc_separator_11);
 	
 	JLabel label_186 = new JLabel("Kapazit\u00E4tsbedarf ");
 	GridBagConstraints gbc_label_186 = new GridBagConstraints();
 	gbc_label_186.anchor = GridBagConstraints.WEST;
 	gbc_label_186.insets = new Insets(0, 0, 5, 5);
 	gbc_label_186.gridx = 1;
-	gbc_label_186.gridy = 15;
-	panel.add(label_186, gbc_label_186);
+	gbc_label_186.gridy = 11;
+	cpp_workstation13.add(label_186, gbc_label_186);
 	
 	textField_177 = new JTextField();
 	textField_177.setColumns(10);
@@ -4733,16 +4605,16 @@ public class CapacityPlanning {
 	gbc_textField_177.fill = GridBagConstraints.HORIZONTAL;
 	gbc_textField_177.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_177.gridx = 7;
-	gbc_textField_177.gridy = 15;
-	panel.add(textField_177, gbc_textField_177);
+	gbc_textField_177.gridy = 11;
+	cpp_workstation13.add(textField_177, gbc_textField_177);
 	
 	JLabel label_187 = new JLabel("R\u00FCstzeit");
 	GridBagConstraints gbc_label_187 = new GridBagConstraints();
 	gbc_label_187.anchor = GridBagConstraints.WEST;
 	gbc_label_187.insets = new Insets(0, 0, 5, 5);
 	gbc_label_187.gridx = 1;
-	gbc_label_187.gridy = 16;
-	panel.add(label_187, gbc_label_187);
+	gbc_label_187.gridy = 12;
+	cpp_workstation13.add(label_187, gbc_label_187);
 	
 	textField_178 = new JTextField();
 	textField_178.setColumns(10);
@@ -4750,16 +4622,16 @@ public class CapacityPlanning {
 	gbc_textField_178.fill = GridBagConstraints.HORIZONTAL;
 	gbc_textField_178.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_178.gridx = 7;
-	gbc_textField_178.gridy = 16;
-	panel.add(textField_178, gbc_textField_178);
+	gbc_textField_178.gridy = 12;
+	cpp_workstation13.add(textField_178, gbc_textField_178);
 	
 	JLabel label_188 = new JLabel("Totale Kapazit\u00E4t");
 	GridBagConstraints gbc_label_188 = new GridBagConstraints();
 	gbc_label_188.anchor = GridBagConstraints.WEST;
 	gbc_label_188.insets = new Insets(0, 0, 5, 5);
 	gbc_label_188.gridx = 1;
-	gbc_label_188.gridy = 17;
-	panel.add(label_188, gbc_label_188);
+	gbc_label_188.gridy = 13;
+	cpp_workstation13.add(label_188, gbc_label_188);
 	
 	textField_179 = new JTextField();
 	textField_179.setColumns(10);
@@ -4767,16 +4639,16 @@ public class CapacityPlanning {
 	gbc_textField_179.fill = GridBagConstraints.HORIZONTAL;
 	gbc_textField_179.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_179.gridx = 7;
-	gbc_textField_179.gridy = 17;
-	panel.add(textField_179, gbc_textField_179);
+	gbc_textField_179.gridy = 13;
+	cpp_workstation13.add(textField_179, gbc_textField_179);
 	
 	JLabel label_189 = new JLabel("Auslastung %");
 	GridBagConstraints gbc_label_189 = new GridBagConstraints();
 	gbc_label_189.anchor = GridBagConstraints.WEST;
 	gbc_label_189.insets = new Insets(0, 0, 5, 5);
 	gbc_label_189.gridx = 1;
-	gbc_label_189.gridy = 18;
-	panel.add(label_189, gbc_label_189);
+	gbc_label_189.gridy = 14;
+	cpp_workstation13.add(label_189, gbc_label_189);
 	
 	textField_180 = new JTextField();
 	textField_180.setColumns(10);
@@ -4784,16 +4656,16 @@ public class CapacityPlanning {
 	gbc_textField_180.fill = GridBagConstraints.HORIZONTAL;
 	gbc_textField_180.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_180.gridx = 7;
-	gbc_textField_180.gridy = 18;
-	panel.add(textField_180, gbc_textField_180);
+	gbc_textField_180.gridy = 14;
+	cpp_workstation13.add(textField_180, gbc_textField_180);
 	
 	JLabel label_190 = new JLabel("\u00DCberstunden (min) ");
 	GridBagConstraints gbc_label_190 = new GridBagConstraints();
 	gbc_label_190.anchor = GridBagConstraints.WEST;
 	gbc_label_190.insets = new Insets(0, 0, 5, 5);
 	gbc_label_190.gridx = 1;
-	gbc_label_190.gridy = 19;
-	panel.add(label_190, gbc_label_190);
+	gbc_label_190.gridy = 15;
+	cpp_workstation13.add(label_190, gbc_label_190);
 	
 	textField_181 = new JTextField();
 	textField_181.setColumns(10);
@@ -4801,8 +4673,390 @@ public class CapacityPlanning {
 	gbc_textField_181.fill = GridBagConstraints.HORIZONTAL;
 	gbc_textField_181.insets = new Insets(0, 0, 5, 5);
 	gbc_textField_181.gridx = 7;
-	gbc_textField_181.gridy = 19;
-	panel.add(textField_181, gbc_textField_181);
+	gbc_textField_181.gridy = 15;
+	cpp_workstation13.add(textField_181, gbc_textField_181);
+	
+	JPanel cpp_workstation14 = new JPanel();
+	capacityplanningPane.addTab("W14", null, cpp_workstation14, null);
+	GridBagLayout gbl_cpp_workstation14 = new GridBagLayout();
+	gbl_cpp_workstation14.columnWidths = new int[]{30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0};
+	gbl_cpp_workstation14.rowHeights = new int[]{40, 0, 30, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0};
+	gbl_cpp_workstation14.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0, Double.MIN_VALUE};
+	gbl_cpp_workstation14.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+	cpp_workstation14.setLayout(gbl_cpp_workstation14);
+	
+	JLabel label_149 = new JLabel("Arbeitsplatz");
+	GridBagConstraints gbc_label_149 = new GridBagConstraints();
+	gbc_label_149.anchor = GridBagConstraints.WEST;
+	gbc_label_149.insets = new Insets(0, 0, 5, 5);
+	gbc_label_149.gridx = 1;
+	gbc_label_149.gridy = 1;
+	cpp_workstation14.add(label_149, gbc_label_149);
+	
+	JLabel label_152 = new JLabel("14");
+	GridBagConstraints gbc_label_152 = new GridBagConstraints();
+	gbc_label_152.insets = new Insets(0, 0, 5, 5);
+	gbc_label_152.gridx = 2;
+	gbc_label_152.gridy = 1;
+	cpp_workstation14.add(label_152, gbc_label_152);
+	
+	JLabel label_165 = new JLabel("Lenker");
+	GridBagConstraints gbc_label_165 = new GridBagConstraints();
+	gbc_label_165.insets = new Insets(0, 0, 5, 5);
+	gbc_label_165.gridx = 1;
+	gbc_label_165.gridy = 3;
+	cpp_workstation14.add(label_165, gbc_label_165);
+	
+	JLabel label_169 = new JLabel("KDH");
+	GridBagConstraints gbc_label_169 = new GridBagConstraints();
+	gbc_label_169.insets = new Insets(0, 0, 5, 5);
+	gbc_label_169.gridx = 3;
+	gbc_label_169.gridy = 3;
+	cpp_workstation14.add(label_169, gbc_label_169);
+	
+	JLabel label_175 = new JLabel("E16");
+	GridBagConstraints gbc_label_175 = new GridBagConstraints();
+	gbc_label_175.anchor = GridBagConstraints.EAST;
+	gbc_label_175.insets = new Insets(0, 0, 5, 5);
+	gbc_label_175.gridx = 4;
+	gbc_label_175.gridy = 3;
+	cpp_workstation14.add(label_175, gbc_label_175);
+	
+	cptf14_16 = new JTextField();
+	cptf14_16.setColumns(10);
+	GridBagConstraints gbc_cptf14_16 = new GridBagConstraints();
+	gbc_cptf14_16.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf14_16.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf14_16.gridx = 5;
+	gbc_cptf14_16.gridy = 3;
+	cpp_workstation14.add(cptf14_16, gbc_cptf14_16);
+	
+	JLabel label_176 = new JLabel("x3 =");
+	GridBagConstraints gbc_label_176 = new GridBagConstraints();
+	gbc_label_176.anchor = GridBagConstraints.EAST;
+	gbc_label_176.insets = new Insets(0, 0, 5, 5);
+	gbc_label_176.gridx = 6;
+	gbc_label_176.gridy = 3;
+	cpp_workstation14.add(label_176, gbc_label_176);
+	
+	textField_172 = new JTextField();
+	textField_172.setColumns(10);
+	GridBagConstraints gbc_textField_172 = new GridBagConstraints();
+	gbc_textField_172.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_172.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_172.gridx = 7;
+	gbc_textField_172.gridy = 3;
+	cpp_workstation14.add(textField_172, gbc_textField_172);
+	
+	JSeparator separator_12 = new JSeparator();
+	GridBagConstraints gbc_separator_12 = new GridBagConstraints();
+	gbc_separator_12.fill = GridBagConstraints.HORIZONTAL;
+	gbc_separator_12.gridwidth = 7;
+	gbc_separator_12.insets = new Insets(0, 0, 5, 5);
+	gbc_separator_12.gridx = 1;
+	gbc_separator_12.gridy = 4;
+	cpp_workstation14.add(separator_12, gbc_separator_12);
+	
+	JLabel label_192 = new JLabel("Kapazit\u00E4tsbedarf ");
+	GridBagConstraints gbc_label_192 = new GridBagConstraints();
+	gbc_label_192.anchor = GridBagConstraints.WEST;
+	gbc_label_192.insets = new Insets(0, 0, 5, 5);
+	gbc_label_192.gridx = 1;
+	gbc_label_192.gridy = 5;
+	cpp_workstation14.add(label_192, gbc_label_192);
+	
+	textField_184 = new JTextField();
+	textField_184.setColumns(10);
+	GridBagConstraints gbc_textField_184 = new GridBagConstraints();
+	gbc_textField_184.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_184.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_184.gridx = 7;
+	gbc_textField_184.gridy = 5;
+	cpp_workstation14.add(textField_184, gbc_textField_184);
+	
+	JLabel label_193 = new JLabel("R\u00FCstzeit");
+	GridBagConstraints gbc_label_193 = new GridBagConstraints();
+	gbc_label_193.anchor = GridBagConstraints.WEST;
+	gbc_label_193.insets = new Insets(0, 0, 5, 5);
+	gbc_label_193.gridx = 1;
+	gbc_label_193.gridy = 6;
+	cpp_workstation14.add(label_193, gbc_label_193);
+	
+	textField_185 = new JTextField();
+	textField_185.setColumns(10);
+	GridBagConstraints gbc_textField_185 = new GridBagConstraints();
+	gbc_textField_185.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_185.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_185.gridx = 7;
+	gbc_textField_185.gridy = 6;
+	cpp_workstation14.add(textField_185, gbc_textField_185);
+	
+	JLabel label_194 = new JLabel("Totale Kapazit\u00E4t");
+	GridBagConstraints gbc_label_194 = new GridBagConstraints();
+	gbc_label_194.anchor = GridBagConstraints.WEST;
+	gbc_label_194.insets = new Insets(0, 0, 5, 5);
+	gbc_label_194.gridx = 1;
+	gbc_label_194.gridy = 7;
+	cpp_workstation14.add(label_194, gbc_label_194);
+	
+	textField_186 = new JTextField();
+	textField_186.setColumns(10);
+	GridBagConstraints gbc_textField_186 = new GridBagConstraints();
+	gbc_textField_186.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_186.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_186.gridx = 7;
+	gbc_textField_186.gridy = 7;
+	cpp_workstation14.add(textField_186, gbc_textField_186);
+	
+	JLabel label_195 = new JLabel("Auslastung %");
+	GridBagConstraints gbc_label_195 = new GridBagConstraints();
+	gbc_label_195.anchor = GridBagConstraints.WEST;
+	gbc_label_195.insets = new Insets(0, 0, 5, 5);
+	gbc_label_195.gridx = 1;
+	gbc_label_195.gridy = 8;
+	cpp_workstation14.add(label_195, gbc_label_195);
+	
+	textField_187 = new JTextField();
+	textField_187.setColumns(10);
+	GridBagConstraints gbc_textField_187 = new GridBagConstraints();
+	gbc_textField_187.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_187.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_187.gridx = 7;
+	gbc_textField_187.gridy = 8;
+	cpp_workstation14.add(textField_187, gbc_textField_187);
+	
+	JLabel label_196 = new JLabel("\u00DCberstunden (min) ");
+	GridBagConstraints gbc_label_196 = new GridBagConstraints();
+	gbc_label_196.anchor = GridBagConstraints.WEST;
+	gbc_label_196.insets = new Insets(0, 0, 5, 5);
+	gbc_label_196.gridx = 1;
+	gbc_label_196.gridy = 9;
+	cpp_workstation14.add(label_196, gbc_label_196);
+	
+	textField_188 = new JTextField();
+	textField_188.setColumns(10);
+	GridBagConstraints gbc_textField_188 = new GridBagConstraints();
+	gbc_textField_188.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_188.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_188.gridx = 7;
+	gbc_textField_188.gridy = 9;
+	cpp_workstation14.add(textField_188, gbc_textField_188);
+	
+	JPanel cpp_workstation15 = new JPanel();
+	capacityplanningPane.addTab("W15", null, cpp_workstation15, null);
+	GridBagLayout gbl_cpp_workstation15 = new GridBagLayout();
+	gbl_cpp_workstation15.columnWidths = new int[]{30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0};
+	gbl_cpp_workstation15.rowHeights = new int[]{40, 0, 30, 0, 30, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0};
+	gbl_cpp_workstation15.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0, Double.MIN_VALUE};
+	gbl_cpp_workstation15.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+	cpp_workstation15.setLayout(gbl_cpp_workstation15);
+	
+	JLabel label_197 = new JLabel("Arbeitsplatz");
+	GridBagConstraints gbc_label_197 = new GridBagConstraints();
+	gbc_label_197.anchor = GridBagConstraints.WEST;
+	gbc_label_197.insets = new Insets(0, 0, 5, 5);
+	gbc_label_197.gridx = 1;
+	gbc_label_197.gridy = 1;
+	cpp_workstation15.add(label_197, gbc_label_197);
+	
+	JLabel label_198 = new JLabel("15");
+	GridBagConstraints gbc_label_198 = new GridBagConstraints();
+	gbc_label_198.insets = new Insets(0, 0, 5, 5);
+	gbc_label_198.gridx = 2;
+	gbc_label_198.gridy = 1;
+	cpp_workstation15.add(label_198, gbc_label_198);
+	
+	JLabel label_199 = new JLabel("Sattel");
+	GridBagConstraints gbc_label_199 = new GridBagConstraints();
+	gbc_label_199.anchor = GridBagConstraints.WEST;
+	gbc_label_199.insets = new Insets(0, 0, 5, 5);
+	gbc_label_199.gridx = 1;
+	gbc_label_199.gridy = 3;
+	cpp_workstation15.add(label_199, gbc_label_199);
+	
+	JLabel label_200 = new JLabel("KDH");
+	GridBagConstraints gbc_label_200 = new GridBagConstraints();
+	gbc_label_200.insets = new Insets(0, 0, 5, 5);
+	gbc_label_200.gridx = 3;
+	gbc_label_200.gridy = 3;
+	cpp_workstation15.add(label_200, gbc_label_200);
+	
+	JLabel lblE_26 = new JLabel("E17");
+	GridBagConstraints gbc_lblE_26 = new GridBagConstraints();
+	gbc_lblE_26.anchor = GridBagConstraints.EAST;
+	gbc_lblE_26.insets = new Insets(0, 0, 5, 5);
+	gbc_lblE_26.gridx = 4;
+	gbc_lblE_26.gridy = 3;
+	cpp_workstation15.add(lblE_26, gbc_lblE_26);
+	
+	cptf15_17 = new JTextField();
+	cptf15_17.setColumns(10);
+	GridBagConstraints gbc_cptf15_17 = new GridBagConstraints();
+	gbc_cptf15_17.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf15_17.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf15_17.gridx = 5;
+	gbc_cptf15_17.gridy = 3;
+	cpp_workstation15.add(cptf15_17, gbc_cptf15_17);
+	
+	JLabel label_202 = new JLabel("x2 =");
+	GridBagConstraints gbc_label_202 = new GridBagConstraints();
+	gbc_label_202.anchor = GridBagConstraints.EAST;
+	gbc_label_202.insets = new Insets(0, 0, 5, 5);
+	gbc_label_202.gridx = 6;
+	gbc_label_202.gridy = 3;
+	cpp_workstation15.add(label_202, gbc_label_202);
+	
+	textField_190 = new JTextField();
+	textField_190.setColumns(10);
+	GridBagConstraints gbc_textField_190 = new GridBagConstraints();
+	gbc_textField_190.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_190.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_190.gridx = 7;
+	gbc_textField_190.gridy = 3;
+	cpp_workstation15.add(textField_190, gbc_textField_190);
+	
+	JLabel label_203 = new JLabel("Pedale");
+	GridBagConstraints gbc_label_203 = new GridBagConstraints();
+	gbc_label_203.anchor = GridBagConstraints.WEST;
+	gbc_label_203.insets = new Insets(0, 0, 5, 5);
+	gbc_label_203.gridx = 1;
+	gbc_label_203.gridy = 5;
+	cpp_workstation15.add(label_203, gbc_label_203);
+	
+	JLabel label_204 = new JLabel("KDH");
+	GridBagConstraints gbc_label_204 = new GridBagConstraints();
+	gbc_label_204.insets = new Insets(0, 0, 5, 5);
+	gbc_label_204.gridx = 3;
+	gbc_label_204.gridy = 5;
+	cpp_workstation15.add(label_204, gbc_label_204);
+	
+	JLabel label_205 = new JLabel("E26");
+	GridBagConstraints gbc_label_205 = new GridBagConstraints();
+	gbc_label_205.anchor = GridBagConstraints.EAST;
+	gbc_label_205.insets = new Insets(0, 0, 5, 5);
+	gbc_label_205.gridx = 4;
+	gbc_label_205.gridy = 5;
+	cpp_workstation15.add(label_205, gbc_label_205);
+	
+	cptf15_26 = new JTextField();
+	cptf15_26.setColumns(10);
+	GridBagConstraints gbc_cptf15_26 = new GridBagConstraints();
+	gbc_cptf15_26.fill = GridBagConstraints.HORIZONTAL;
+	gbc_cptf15_26.insets = new Insets(0, 0, 5, 5);
+	gbc_cptf15_26.gridx = 5;
+	gbc_cptf15_26.gridy = 5;
+	cpp_workstation15.add(cptf15_26, gbc_cptf15_26);
+	
+	JLabel label_207 = new JLabel("x3 =");
+	GridBagConstraints gbc_label_207 = new GridBagConstraints();
+	gbc_label_207.anchor = GridBagConstraints.EAST;
+	gbc_label_207.insets = new Insets(0, 0, 5, 5);
+	gbc_label_207.gridx = 6;
+	gbc_label_207.gridy = 5;
+	cpp_workstation15.add(label_207, gbc_label_207);
+	
+	textField_192 = new JTextField();
+	textField_192.setColumns(10);
+	GridBagConstraints gbc_textField_192 = new GridBagConstraints();
+	gbc_textField_192.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_192.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_192.gridx = 7;
+	gbc_textField_192.gridy = 5;
+	cpp_workstation15.add(textField_192, gbc_textField_192);
+	
+	JSeparator separator_13 = new JSeparator();
+	GridBagConstraints gbc_separator_13 = new GridBagConstraints();
+	gbc_separator_13.fill = GridBagConstraints.HORIZONTAL;
+	gbc_separator_13.gridwidth = 7;
+	gbc_separator_13.insets = new Insets(0, 0, 5, 5);
+	gbc_separator_13.gridx = 1;
+	gbc_separator_13.gridy = 6;
+	cpp_workstation15.add(separator_13, gbc_separator_13);
+	
+	JLabel label_214 = new JLabel("Kapazit\u00E4tsbedarf ");
+	GridBagConstraints gbc_label_214 = new GridBagConstraints();
+	gbc_label_214.anchor = GridBagConstraints.WEST;
+	gbc_label_214.insets = new Insets(0, 0, 5, 5);
+	gbc_label_214.gridx = 1;
+	gbc_label_214.gridy = 7;
+	cpp_workstation15.add(label_214, gbc_label_214);
+	
+	textField_197 = new JTextField();
+	textField_197.setColumns(10);
+	GridBagConstraints gbc_textField_197 = new GridBagConstraints();
+	gbc_textField_197.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_197.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_197.gridx = 7;
+	gbc_textField_197.gridy = 7;
+	cpp_workstation15.add(textField_197, gbc_textField_197);
+	
+	JLabel label_215 = new JLabel("R\u00FCstzeit");
+	GridBagConstraints gbc_label_215 = new GridBagConstraints();
+	gbc_label_215.anchor = GridBagConstraints.WEST;
+	gbc_label_215.insets = new Insets(0, 0, 5, 5);
+	gbc_label_215.gridx = 1;
+	gbc_label_215.gridy = 8;
+	cpp_workstation15.add(label_215, gbc_label_215);
+	
+	textField_198 = new JTextField();
+	textField_198.setColumns(10);
+	GridBagConstraints gbc_textField_198 = new GridBagConstraints();
+	gbc_textField_198.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_198.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_198.gridx = 7;
+	gbc_textField_198.gridy = 8;
+	cpp_workstation15.add(textField_198, gbc_textField_198);
+	
+	JLabel label_216 = new JLabel("Totale Kapazit\u00E4t");
+	GridBagConstraints gbc_label_216 = new GridBagConstraints();
+	gbc_label_216.anchor = GridBagConstraints.WEST;
+	gbc_label_216.insets = new Insets(0, 0, 5, 5);
+	gbc_label_216.gridx = 1;
+	gbc_label_216.gridy = 9;
+	cpp_workstation15.add(label_216, gbc_label_216);
+	
+	textField_199 = new JTextField();
+	textField_199.setColumns(10);
+	GridBagConstraints gbc_textField_199 = new GridBagConstraints();
+	gbc_textField_199.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_199.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_199.gridx = 7;
+	gbc_textField_199.gridy = 9;
+	cpp_workstation15.add(textField_199, gbc_textField_199);
+	
+	JLabel label_217 = new JLabel("Auslastung %");
+	GridBagConstraints gbc_label_217 = new GridBagConstraints();
+	gbc_label_217.anchor = GridBagConstraints.WEST;
+	gbc_label_217.insets = new Insets(0, 0, 5, 5);
+	gbc_label_217.gridx = 1;
+	gbc_label_217.gridy = 10;
+	cpp_workstation15.add(label_217, gbc_label_217);
+	
+	textField_200 = new JTextField();
+	textField_200.setColumns(10);
+	GridBagConstraints gbc_textField_200 = new GridBagConstraints();
+	gbc_textField_200.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_200.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_200.gridx = 7;
+	gbc_textField_200.gridy = 10;
+	cpp_workstation15.add(textField_200, gbc_textField_200);
+	
+	JLabel label_218 = new JLabel("\u00DCberstunden (min) ");
+	GridBagConstraints gbc_label_218 = new GridBagConstraints();
+	gbc_label_218.anchor = GridBagConstraints.WEST;
+	gbc_label_218.insets = new Insets(0, 0, 5, 5);
+	gbc_label_218.gridx = 1;
+	gbc_label_218.gridy = 11;
+	cpp_workstation15.add(label_218, gbc_label_218);
+	
+	textField_201 = new JTextField();
+	textField_201.setColumns(10);
+	GridBagConstraints gbc_textField_201 = new GridBagConstraints();
+	gbc_textField_201.fill = GridBagConstraints.HORIZONTAL;
+	gbc_textField_201.insets = new Insets(0, 0, 5, 5);
+	gbc_textField_201.gridx = 7;
+	gbc_textField_201.gridy = 11;
+	cpp_workstation15.add(textField_201, gbc_textField_201);
 	
 	return capacityplanningPane;
 	}
