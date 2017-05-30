@@ -7,13 +7,14 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 
 import application.Main;
+import gui.CapacityPlanning;
 import gui.IbsysGUI;
 import gui.PurchasePlanning;
 
 public class Utility {
 
-	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 
 		// Produktionsprogramm berechnen
 
@@ -32,14 +33,14 @@ public class Utility {
 		fillValues();
 	}
 
-	public static void initValues() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void initValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 		Main.main();
 		fillValues();
 	}
 
-	public static void fillValues() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void fillValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 
 		int[][] p1Prod = Main.p1Prod;
 		int[][] p2Prod = Main.p2Prod;
@@ -57,8 +58,7 @@ public class Utility {
 					} else {
 						methodName = "getTf1_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p1Prod[i][j + 1]);
@@ -80,8 +80,7 @@ public class Utility {
 					} else {
 						methodName = "getTf2_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p2Prod[i][j + 1]);
@@ -103,8 +102,7 @@ public class Utility {
 					} else {
 						methodName = "getTf3_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p3Prod[i][j + 1]);
@@ -129,6 +127,92 @@ public class Utility {
 			}
 
 		}
+
+		// Capacity Planning init
+
+		// p1
+		for (int i = 0; i <= 11; i++) {
+			int productvalue = p1Prod[i][7];
+			int productid = p1Prod[i][0];
+			for (int j = 1; j <= 15; j++) {
+				String methodName = null;
+				methodName = "getCptf" + j + "_" + productid;
+				System.out.println(methodName);
+				Method method = null;
+				try {
+					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				} catch (Exception e) {
+
+				}
+				if (method != null) {
+					JTextField invoke = (JTextField) method.invoke(methodName);
+					if ((productid == 16 || productid == 17 || productid == 26)) {
+
+					} else {
+						invoke.setText("" + productvalue);
+					}
+				}
+			}
+		}
+
+		// p2
+		for (int i = 0; i <= 11; i++) {
+			int productvalue = p2Prod[i][7];
+			int productid = p2Prod[i][0];
+			for (int j = 1; j <= 15; j++) {
+				String methodName = null;
+				methodName = "getCptf" + j + "_" + productid;
+				System.out.println(methodName);
+				Method method = null;
+				try {
+					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				} catch (Exception e) {
+
+				}
+				if (method != null) {
+					JTextField invoke = (JTextField) method.invoke(methodName);
+					if ((productid == 16 || productid == 17 || productid == 26)) {
+
+					} else {
+						invoke.setText("" + productvalue);
+					}
+				}
+			}
+		}
+
+		// p3
+		for (int i = 0; i <= 11; i++) {
+			int productvalue = p3Prod[i][7];
+			int productid = p3Prod[i][0];
+			for (int j = 1; j <= 15; j++) {
+				String methodName = null;
+				methodName = "getCptf" + j + "_" + productid;
+				System.out.println(methodName);
+				Method method = null;
+				try {
+					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				} catch (Exception e) {
+
+				}
+				if (method != null) {
+					JTextField invoke = (JTextField) method.invoke(methodName);
+					if ((productid == 16 || productid == 17 || productid == 26)) {
+					} else {
+						invoke.setText("" + productvalue);
+					}
+				}
+			}
+		}
+
+		// 16 17 26
+		int e16 = p3Prod[3][7] + p2Prod[3][7] + p1Prod[3][7];
+		int e17 = p3Prod[4][7] + p2Prod[4][7] + p1Prod[4][7];
+		int e26 = p3Prod[1][7] + p2Prod[1][7] + p1Prod[1][7];
+		CapacityPlanning.getCptf14_16().setText("" + e16);
+		CapacityPlanning.getCptf6_16().setText("" + e16);
+		CapacityPlanning.getCptf15_17().setText("" + e17);
+		CapacityPlanning.getCptf7_26().setText("" + e26);
+		CapacityPlanning.getCptf15_26().setText("" + e26);
 
 	}
 
