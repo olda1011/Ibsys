@@ -5778,6 +5778,638 @@ public class MaterialPlanning {
 		gbc_lblE_27.gridy = 18;
 		p3_panel.add(lblE_27, gbc_lblE_27);
 
+		disableEditable();
+
+		tf1_0101.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[0][1] = Integer.parseInt(tf1_0101.getText());
+					Utility.calculateAfterChange();
+
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0301.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[0][3] = Integer.parseInt(tf1_0301.getText());
+					Main.p2Prod[0][3] = Integer.parseInt(tf1_0301.getText());
+					Main.p3Prod[0][3] = Integer.parseInt(tf1_0301.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0302.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[1][3] = Integer.parseInt(tf1_0302.getText());
+					Main.p2Prod[1][3] = Integer.parseInt(tf1_0302.getText());
+					Main.p3Prod[1][3] = Integer.parseInt(tf1_0302.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0303.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[2][3] = Integer.parseInt(tf1_0303.getText());
+					Main.p2Prod[2][3] = Integer.parseInt(tf1_0303.getText());
+					Main.p3Prod[2][3] = Integer.parseInt(tf1_0303.getText());
+
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0304.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[3][3] = Integer.parseInt(tf1_0304.getText());
+					Main.p2Prod[3][3] = Integer.parseInt(tf1_0304.getText());
+					Main.p3Prod[3][3] = Integer.parseInt(tf1_0304.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0305.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[4][3] = Integer.parseInt(tf1_0305.getText());
+					Main.p2Prod[4][3] = Integer.parseInt(tf1_0305.getText());
+					Main.p3Prod[4][3] = Integer.parseInt(tf1_0305.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0306.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[5][3] = Integer.parseInt(tf1_0306.getText());
+					Main.p2Prod[5][3] = Integer.parseInt(tf1_0306.getText());
+					Main.p3Prod[5][3] = Integer.parseInt(tf1_0306.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0307.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[6][3] = Integer.parseInt(tf1_0307.getText());
+					Main.p2Prod[6][3] = Integer.parseInt(tf1_0307.getText());
+					Main.p3Prod[6][3] = Integer.parseInt(tf1_0307.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0308.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[7][3] = Integer.parseInt(tf1_0308.getText());
+					Main.p2Prod[7][3] = Integer.parseInt(tf1_0308.getText());
+					Main.p3Prod[7][3] = Integer.parseInt(tf1_0308.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0309.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[8][3] = Integer.parseInt(tf1_0309.getText());
+					Main.p2Prod[8][3] = Integer.parseInt(tf1_0309.getText());
+					Main.p3Prod[8][3] = Integer.parseInt(tf1_0309.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0310.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[9][3] = Integer.parseInt(tf1_0310.getText());
+					Main.p2Prod[9][3] = Integer.parseInt(tf1_0310.getText());
+					Main.p3Prod[9][3] = Integer.parseInt(tf1_0310.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0311.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[10][3] = Integer.parseInt(tf1_0311.getText());
+					Main.p2Prod[10][3] = Integer.parseInt(tf1_0311.getText());
+					Main.p3Prod[10][3] = Integer.parseInt(tf1_0311.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf1_0312.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p1Prod[11][3] = Integer.parseInt(tf1_0312.getText());
+					Main.p2Prod[11][3] = Integer.parseInt(tf1_0312.getText());
+					Main.p3Prod[11][3] = Integer.parseInt(tf1_0312.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+
+				}
+			}
+		});
+
+		tf2_0101.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[0][1] = Integer.parseInt(tf2_0101.getText());
+					Utility.calculateAfterChange();
+
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0301.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[0][3] = Integer.parseInt(tf2_0301.getText());
+					Main.p1Prod[0][3] = Integer.parseInt(tf2_0301.getText());
+					Main.p3Prod[0][3] = Integer.parseInt(tf2_0301.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0302.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[1][3] = Integer.parseInt(tf2_0302.getText());
+					Main.p1Prod[1][3] = Integer.parseInt(tf2_0302.getText());
+					Main.p3Prod[1][3] = Integer.parseInt(tf2_0302.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0303.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[2][3] = Integer.parseInt(tf2_0303.getText());
+					Main.p1Prod[2][3] = Integer.parseInt(tf2_0303.getText());
+					Main.p3Prod[2][3] = Integer.parseInt(tf2_0303.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0304.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[3][3] = Integer.parseInt(tf2_0304.getText());
+					Main.p1Prod[3][3] = Integer.parseInt(tf2_0304.getText());
+					Main.p3Prod[3][3] = Integer.parseInt(tf2_0304.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0305.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[4][3] = Integer.parseInt(tf2_0305.getText());
+					Main.p1Prod[4][3] = Integer.parseInt(tf2_0305.getText());
+					Main.p3Prod[4][3] = Integer.parseInt(tf2_0305.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0306.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[5][3] = Integer.parseInt(tf2_0306.getText());
+					Main.p1Prod[5][3] = Integer.parseInt(tf2_0306.getText());
+					Main.p3Prod[5][3] = Integer.parseInt(tf2_0306.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0307.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[6][3] = Integer.parseInt(tf2_0307.getText());
+					Main.p1Prod[6][3] = Integer.parseInt(tf2_0307.getText());
+					Main.p3Prod[6][3] = Integer.parseInt(tf2_0307.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0308.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[7][3] = Integer.parseInt(tf2_0308.getText());
+					Main.p1Prod[7][3] = Integer.parseInt(tf2_0308.getText());
+					Main.p3Prod[7][3] = Integer.parseInt(tf2_0308.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0309.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[8][3] = Integer.parseInt(tf2_0309.getText());
+					Main.p1Prod[8][3] = Integer.parseInt(tf2_0309.getText());
+					Main.p3Prod[8][3] = Integer.parseInt(tf2_0309.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0310.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[9][3] = Integer.parseInt(tf2_0310.getText());
+					Main.p1Prod[9][3] = Integer.parseInt(tf2_0310.getText());
+					Main.p3Prod[9][3] = Integer.parseInt(tf2_0310.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0311.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[10][3] = Integer.parseInt(tf2_0311.getText());
+					Main.p1Prod[10][3] = Integer.parseInt(tf2_0311.getText());
+					Main.p3Prod[10][3] = Integer.parseInt(tf2_0311.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf2_0312.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p2Prod[11][3] = Integer.parseInt(tf2_0312.getText());
+					Main.p1Prod[11][3] = Integer.parseInt(tf2_0312.getText());
+					Main.p3Prod[11][3] = Integer.parseInt(tf2_0312.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+
+				}
+			}
+		});
+
+		tf3_0101.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[0][1] = Integer.parseInt(tf3_0101.getText());
+					Utility.calculateAfterChange();
+
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0301.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[0][3] = Integer.parseInt(tf3_0301.getText());
+					Main.p2Prod[0][3] = Integer.parseInt(tf3_0301.getText());
+					Main.p1Prod[0][3] = Integer.parseInt(tf3_0301.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0302.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[1][3] = Integer.parseInt(tf3_0302.getText());
+					Main.p1Prod[1][3] = Integer.parseInt(tf3_0302.getText());
+					Main.p2Prod[1][3] = Integer.parseInt(tf3_0302.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0303.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[2][3] = Integer.parseInt(tf3_0303.getText());
+					Main.p2Prod[2][3] = Integer.parseInt(tf3_0303.getText());
+					Main.p1Prod[2][3] = Integer.parseInt(tf3_0303.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0304.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[3][3] = Integer.parseInt(tf3_0304.getText());
+					Main.p2Prod[3][3] = Integer.parseInt(tf3_0304.getText());
+					Main.p1Prod[3][3] = Integer.parseInt(tf3_0304.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0305.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[4][3] = Integer.parseInt(tf3_0305.getText());
+					Main.p2Prod[4][3] = Integer.parseInt(tf3_0305.getText());
+					Main.p1Prod[4][3] = Integer.parseInt(tf3_0305.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0306.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[5][3] = Integer.parseInt(tf3_0306.getText());
+					Main.p2Prod[5][3] = Integer.parseInt(tf3_0306.getText());
+					Main.p1Prod[5][3] = Integer.parseInt(tf3_0306.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0307.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[6][3] = Integer.parseInt(tf3_0307.getText());
+					Main.p2Prod[6][3] = Integer.parseInt(tf3_0307.getText());
+					Main.p1Prod[6][3] = Integer.parseInt(tf3_0307.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0308.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[7][3] = Integer.parseInt(tf3_0308.getText());
+					Main.p2Prod[7][3] = Integer.parseInt(tf3_0308.getText());
+					Main.p1Prod[7][3] = Integer.parseInt(tf3_0308.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0309.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[8][3] = Integer.parseInt(tf3_0309.getText());
+					Main.p2Prod[8][3] = Integer.parseInt(tf3_0309.getText());
+					Main.p1Prod[8][3] = Integer.parseInt(tf3_0309.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0310.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[9][3] = Integer.parseInt(tf3_0310.getText());
+					Main.p2Prod[9][3] = Integer.parseInt(tf3_0310.getText());
+					Main.p1Prod[9][3] = Integer.parseInt(tf3_0310.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0311.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[10][3] = Integer.parseInt(tf3_0311.getText());
+					Main.p2Prod[10][3] = Integer.parseInt(tf3_0311.getText());
+					Main.p1Prod[10][3] = Integer.parseInt(tf3_0311.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		tf3_0312.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Main.p3Prod[11][3] = Integer.parseInt(tf3_0312.getText());
+					Main.p2Prod[11][3] = Integer.parseInt(tf3_0312.getText());
+					Main.p1Prod[11][3] = Integer.parseInt(tf3_0312.getText());
+					Utility.calculateAfterChange();
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(new JFrame(),
+							"Please choose only valid numbers! (0-9)", "Error",
+							JOptionPane.ERROR_MESSAGE);
+
+				}
+			}
+		});
+
+		return materialplanningPane;
+	}
+
+	private static void disableEditable() {
+
 		tf1_0101.setEditable(false);
 		tf1_0301.setEditable(false);
 		tf1_0302.setEditable(false);
@@ -5791,6 +6423,34 @@ public class MaterialPlanning {
 		tf1_0310.setEditable(false);
 		tf1_0311.setEditable(false);
 		tf1_0312.setEditable(false);
+
+		tf2_0101.setEditable(false);
+		tf2_0301.setEditable(false);
+		tf2_0302.setEditable(false);
+		tf2_0303.setEditable(false);
+		tf2_0304.setEditable(false);
+		tf2_0305.setEditable(false);
+		tf2_0306.setEditable(false);
+		tf2_0307.setEditable(false);
+		tf2_0308.setEditable(false);
+		tf2_0309.setEditable(false);
+		tf2_0310.setEditable(false);
+		tf2_0311.setEditable(false);
+		tf2_0312.setEditable(false);
+
+		tf3_0101.setEditable(false);
+		tf3_0301.setEditable(false);
+		tf3_0302.setEditable(false);
+		tf3_0303.setEditable(false);
+		tf3_0304.setEditable(false);
+		tf3_0305.setEditable(false);
+		tf3_0306.setEditable(false);
+		tf3_0307.setEditable(false);
+		tf3_0308.setEditable(false);
+		tf3_0309.setEditable(false);
+		tf3_0310.setEditable(false);
+		tf3_0311.setEditable(false);
+		tf3_0312.setEditable(false);
 
 		tf1_0401.setEditable(false);
 		tf1_0501.setEditable(false);
@@ -5973,191 +6633,164 @@ public class MaterialPlanning {
 		tf1_0711.setEditable(false);
 		tf1_0712.setEditable(false);
 
-		tf1_0101.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[0][1] = Integer.parseInt(tf1_0101.getText());
-					Utility.calculateAfterChange();
+		tf2_0102.setEditable(false);
+		tf2_0103.setEditable(false);
+		tf2_0104.setEditable(false);
+		tf2_0105.setEditable(false);
+		tf2_0106.setEditable(false);
+		tf2_0107.setEditable(false);
+		tf2_0108.setEditable(false);
+		tf2_0109.setEditable(false);
+		tf2_0110.setEditable(false);
+		tf2_0111.setEditable(false);
+		tf2_0112.setEditable(false);
 
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		tf2_0202.setEditable(false);
+		tf2_0203.setEditable(false);
+		tf2_0204.setEditable(false);
+		tf2_0205.setEditable(false);
+		tf2_0206.setEditable(false);
+		tf2_0207.setEditable(false);
+		tf2_0208.setEditable(false);
+		tf2_0209.setEditable(false);
+		tf2_0210.setEditable(false);
+		tf2_0211.setEditable(false);
+		tf2_0212.setEditable(false);
 
-		tf1_0301.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[0][3] = Integer.parseInt(tf1_0301.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		tf2_0701.setEditable(false);
+		tf2_0702.setEditable(false);
+		tf2_0703.setEditable(false);
+		tf2_0704.setEditable(false);
+		tf2_0705.setEditable(false);
+		tf2_0706.setEditable(false);
+		tf2_0707.setEditable(false);
+		tf2_0708.setEditable(false);
+		tf2_0709.setEditable(false);
+		tf2_0710.setEditable(false);
+		tf2_0711.setEditable(false);
+		tf2_0712.setEditable(false);
 
-		tf1_0302.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[1][3] = Integer.parseInt(tf1_0302.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		tf3_0102.setEditable(false);
+		tf3_0103.setEditable(false);
+		tf3_0104.setEditable(false);
+		tf3_0105.setEditable(false);
+		tf3_0106.setEditable(false);
+		tf3_0107.setEditable(false);
+		tf3_0108.setEditable(false);
+		tf3_0109.setEditable(false);
+		tf3_0110.setEditable(false);
+		tf3_0111.setEditable(false);
+		tf3_0112.setEditable(false);
 
-		tf1_0303.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[2][3] = Integer.parseInt(tf1_0303.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		tf3_0202.setEditable(false);
+		tf3_0203.setEditable(false);
+		tf3_0204.setEditable(false);
+		tf3_0205.setEditable(false);
+		tf3_0206.setEditable(false);
+		tf3_0207.setEditable(false);
+		tf3_0208.setEditable(false);
+		tf3_0209.setEditable(false);
+		tf3_0210.setEditable(false);
+		tf3_0211.setEditable(false);
+		tf3_0212.setEditable(false);
 
-		tf1_0304.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[3][3] = Integer.parseInt(tf1_0304.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		tf3_0701.setEditable(false);
+		tf3_0702.setEditable(false);
+		tf3_0703.setEditable(false);
+		tf3_0704.setEditable(false);
+		tf3_0705.setEditable(false);
+		tf3_0706.setEditable(false);
+		tf3_0707.setEditable(false);
+		tf3_0708.setEditable(false);
+		tf3_0709.setEditable(false);
+		tf3_0710.setEditable(false);
+		tf3_0711.setEditable(false);
+		tf3_0712.setEditable(false);
 
-		tf1_0305.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[4][3] = Integer.parseInt(tf1_0305.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+	}
 
-		tf1_0306.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[5][3] = Integer.parseInt(tf1_0306.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+	public static void enableEditable() {
+		MaterialPlanning.getTf1_0101()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0301()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0302()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0303()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0304()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0305()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0306()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0307()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0308()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0309()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0310()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0311()
+				.setEditable(true);
+		MaterialPlanning.getTf1_0312()
+				.setEditable(true);
 
-		tf1_0307.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[6][3] = Integer.parseInt(tf1_0307.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		MaterialPlanning.getTf2_0101()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0301()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0302()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0303()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0304()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0305()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0306()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0307()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0308()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0309()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0310()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0311()
+				.setEditable(true);
+		MaterialPlanning.getTf2_0312()
+				.setEditable(true);
 
-		tf1_0308.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[7][3] = Integer.parseInt(tf1_0308.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
+		MaterialPlanning.getTf3_0101()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0301()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0302()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0303()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0304()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0305()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0306()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0307()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0308()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0309()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0310()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0311()
+				.setEditable(true);
+		MaterialPlanning.getTf3_0312()
+				.setEditable(true);
 
-		tf1_0309.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[8][3] = Integer.parseInt(tf1_0309.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
-
-		tf1_0310.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[9][3] = Integer.parseInt(tf1_0310.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
-
-		tf1_0311.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[10][3] = Integer.parseInt(tf1_0311.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-				}
-			}
-		});
-
-		tf1_0312.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Main.p1Prod[11][3] = Integer.parseInt(tf1_0312.getText());
-					Utility.calculateAfterChange();
-				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
-							JOptionPane.ERROR_MESSAGE);
-
-				}
-			}
-		});
-
-		return materialplanningPane;
 	}
 
 	public static JTextField getTf1_0101() {
