@@ -134,7 +134,6 @@ public class IbsysGUI {
 						JOptionPane.showMessageDialog(new JFrame(),
 								"Please choose a valid file! The file has to be a .xml file!",
 								"Error", JOptionPane.ERROR_MESSAGE);
-
 					}
 
 				}

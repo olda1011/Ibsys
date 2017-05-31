@@ -42,14 +42,6 @@ public class Main {
 		prognosen = new int[][] { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 },
 				{ 3, 100, 50, 200, 200 } };
 
-		System.out.println("Folgende Mengen sollen verkauft werden in der nächsten Periode:\n");
-		System.out.println("P1: " + prognosen[0][1]);
-		System.out.println("P2: " + prognosen[1][1]);
-		System.out.println("P3: " + prognosen[2][1]);
-		System.out.println();
-		System.out.println("Der geplante Lagerbestand beträgt: " + geplanterLagerbestand);
-		System.out.println();
-
 		// Matrix für Disposition anlegen
 
 		p1Prod = matrixAnlegen(geplanterLagerbestand, prognosen[0][1], 1, results);
@@ -58,7 +50,7 @@ public class Main {
 
 		// printMatrizen(P1Prod, P2Prod, P3Prod);
 
-		printMatrizen(p1Prod, p2Prod, p3Prod);
+		// printMatrizen(p1Prod, p2Prod, p3Prod);
 
 		// Kaufteilbedarf errechnen
 
@@ -69,12 +61,12 @@ public class Main {
 		kaufteileVerwendungMerged = mergeKautfteileVerwendung(p1KaufteileVerwendung,
 				p2KaufteileVerwendung, p3KaufteileVerwendung);
 
-		System.out.println("Folgende Kaufteile für P1 werden benötigt:");
-		printKaufteilmatrix(p1KaufteileVerwendung);
-		System.out.println("Folgende Kaufteile für P2 werden benötigt:");
-		printKaufteilmatrix(p2KaufteileVerwendung);
-		System.out.println("Folgende Kaufteile für P3 werden benötigt:");
-		printKaufteilmatrix(p3KaufteileVerwendung);
+		// System.out.println("Folgende Kaufteile für P1 werden benötigt:");
+		// printKaufteilmatrix(p1KaufteileVerwendung);
+		// System.out.println("Folgende Kaufteile für P2 werden benötigt:");
+		// printKaufteilmatrix(p2KaufteileVerwendung);
+		// System.out.println("Folgende Kaufteile für P3 werden benötigt:");
+		// printKaufteilmatrix(p3KaufteileVerwendung);
 	}
 
 	public static boolean loadXmlData(String path) {

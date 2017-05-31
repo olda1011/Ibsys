@@ -1090,11 +1090,12 @@ public class CapacityPlanning {
 		capacityplanningPane.addTab("W1", null, cpp_workstation1, null);
 		GridBagLayout gbl_cpp_workstation1 = new GridBagLayout();
 		gbl_cpp_workstation1.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
-		gbl_cpp_workstation1.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation1.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation1.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+		gbl_cpp_workstation1.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30,
+				30 };
+		gbl_cpp_workstation1.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation1.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation1.setLayout(gbl_cpp_workstation1);
 
 		JLabel cpl1_workstation = new JLabel("Arbeitsplatz");
@@ -1137,6 +1138,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_3, gbc_lblNewLabel_3);
 
 		cptf1_49 = new JTextField();
+		cptf1_49.setEditable(false);
 		GridBagConstraints gbc_cptf1_49 = new GridBagConstraints();
 		gbc_cptf1_49.insets = new Insets(0, 0, 5, 5);
 		gbc_cptf1_49.fill = GridBagConstraints.HORIZONTAL;
@@ -1154,6 +1156,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_9, gbc_lblNewLabel_9);
 
 		textField_252 = new JTextField();
+		textField_252.setEditable(false);
 		textField_252.setColumns(10);
 		GridBagConstraints gbc_textField_252 = new GridBagConstraints();
 		gbc_textField_252.insets = new Insets(0, 0, 5, 5);
@@ -1178,6 +1181,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_6, gbc_lblNewLabel_6);
 
 		cptf1_54 = new JTextField();
+		cptf1_54.setEditable(false);
 		GridBagConstraints gbc_cptf1_54 = new GridBagConstraints();
 		gbc_cptf1_54.insets = new Insets(0, 0, 5, 5);
 		gbc_cptf1_54.fill = GridBagConstraints.HORIZONTAL;
@@ -1195,6 +1199,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_10, gbc_lblNewLabel_10);
 
 		textField_253 = new JTextField();
+		textField_253.setEditable(false);
 		textField_253.setColumns(10);
 		GridBagConstraints gbc_textField_253 = new GridBagConstraints();
 		gbc_textField_253.insets = new Insets(0, 0, 5, 5);
@@ -1219,6 +1224,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_7, gbc_lblNewLabel_7);
 
 		cptf1_29 = new JTextField();
+		cptf1_29.setEditable(false);
 		GridBagConstraints gbc_cptf1_29 = new GridBagConstraints();
 		gbc_cptf1_29.insets = new Insets(0, 0, 5, 5);
 		gbc_cptf1_29.fill = GridBagConstraints.HORIZONTAL;
@@ -1236,6 +1242,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblNewLabel_11, gbc_lblNewLabel_11);
 
 		textField_254 = new JTextField();
+		textField_254.setEditable(false);
 		textField_254.setColumns(10);
 		GridBagConstraints gbc_textField_254 = new GridBagConstraints();
 		gbc_textField_254.insets = new Insets(0, 0, 5, 5);
@@ -1262,6 +1269,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(cpl1_capacityrequirements, gbc_cpl1_capacityrequirements);
 
 		textField_255 = new JTextField();
+		textField_255.setEditable(false);
 		textField_255.setColumns(10);
 		GridBagConstraints gbc_textField_255 = new GridBagConstraints();
 		gbc_textField_255.insets = new Insets(0, 0, 5, 5);
@@ -1279,6 +1287,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(cpl1_setuptime, gbc_cpl1_setuptime);
 
 		textField_256 = new JTextField();
+		textField_256.setEditable(false);
 		textField_256.setColumns(10);
 		GridBagConstraints gbc_textField_256 = new GridBagConstraints();
 		gbc_textField_256.insets = new Insets(0, 0, 5, 5);
@@ -1296,6 +1305,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(lblTotaleKapazitt, gbc_lblTotaleKapazitt);
 
 		textField_257 = new JTextField();
+		textField_257.setEditable(false);
 		textField_257.setColumns(10);
 		GridBagConstraints gbc_textField_257 = new GridBagConstraints();
 		gbc_textField_257.insets = new Insets(0, 0, 5, 5);
@@ -1313,6 +1323,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(cpl1_workload, gbc_cpl1_workload);
 
 		textField_258 = new JTextField();
+		textField_258.setEditable(false);
 		textField_258.setColumns(10);
 		GridBagConstraints gbc_textField_258 = new GridBagConstraints();
 		gbc_textField_258.insets = new Insets(0, 0, 5, 5);
@@ -1330,6 +1341,7 @@ public class CapacityPlanning {
 		cpp_workstation1.add(cpl1_overtime, gbc_cpl1_overtime);
 
 		textField_279 = new JTextField();
+		textField_279.setEditable(false);
 		textField_279.setColumns(10);
 		GridBagConstraints gbc_textField_279 = new GridBagConstraints();
 		gbc_textField_279.insets = new Insets(0, 0, 5, 5);
@@ -1342,11 +1354,12 @@ public class CapacityPlanning {
 		capacityplanningPane.addTab("W2", null, cpp_workstation2, null);
 		GridBagLayout gbl_cpp_workstation2 = new GridBagLayout();
 		gbl_cpp_workstation2.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
-		gbl_cpp_workstation2.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation2.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation2.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+		gbl_cpp_workstation2.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30,
+				30 };
+		gbl_cpp_workstation2.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, Double.MIN_VALUE };
+		gbl_cpp_workstation2.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation2.setLayout(gbl_cpp_workstation2);
 
 		JLabel cpl2_workstation = new JLabel("Arbeitsplatz");
@@ -1389,6 +1402,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblE_33, gbc_lblE_33);
 
 		cptf2_50 = new JTextField();
+		cptf2_50.setEditable(false);
 		cptf2_50.setColumns(10);
 		GridBagConstraints gbc_cptf2_50 = new GridBagConstraints();
 		gbc_cptf2_50.fill = GridBagConstraints.HORIZONTAL;
@@ -1406,6 +1420,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblX, gbc_lblX);
 
 		textField_270 = new JTextField();
+		textField_270.setEditable(false);
 		textField_270.setColumns(10);
 		GridBagConstraints gbc_textField_270 = new GridBagConstraints();
 		gbc_textField_270.fill = GridBagConstraints.HORIZONTAL;
@@ -1430,6 +1445,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblE_34, gbc_lblE_34);
 
 		cptf2_55 = new JTextField();
+		cptf2_55.setEditable(false);
 		cptf2_55.setColumns(10);
 		GridBagConstraints gbc_cptf2_55 = new GridBagConstraints();
 		gbc_cptf2_55.fill = GridBagConstraints.HORIZONTAL;
@@ -1447,6 +1463,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblX_1, gbc_lblX_1);
 
 		textField_272 = new JTextField();
+		textField_272.setEditable(false);
 		textField_272.setColumns(10);
 		GridBagConstraints gbc_textField_272 = new GridBagConstraints();
 		gbc_textField_272.fill = GridBagConstraints.HORIZONTAL;
@@ -1471,6 +1488,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblE_35, gbc_lblE_35);
 
 		cptf2_30 = new JTextField();
+		cptf2_30.setEditable(false);
 		cptf2_30.setColumns(10);
 		GridBagConstraints gbc_cptf2_30 = new GridBagConstraints();
 		gbc_cptf2_30.fill = GridBagConstraints.HORIZONTAL;
@@ -1488,6 +1506,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(lblX_2, gbc_lblX_2);
 
 		textField_274 = new JTextField();
+		textField_274.setEditable(false);
 		textField_274.setColumns(10);
 		GridBagConstraints gbc_textField_274 = new GridBagConstraints();
 		gbc_textField_274.fill = GridBagConstraints.HORIZONTAL;
@@ -1514,6 +1533,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(cpl2_capacityrequirements, gbc_cpl2_capacityrequirements);
 
 		textField_275 = new JTextField();
+		textField_275.setEditable(false);
 		textField_275.setColumns(10);
 		GridBagConstraints gbc_textField_275 = new GridBagConstraints();
 		gbc_textField_275.fill = GridBagConstraints.HORIZONTAL;
@@ -1531,6 +1551,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(cpl2_setuptime, gbc_cpl2_setuptime);
 
 		textField_276 = new JTextField();
+		textField_276.setEditable(false);
 		textField_276.setColumns(10);
 		GridBagConstraints gbc_textField_276 = new GridBagConstraints();
 		gbc_textField_276.fill = GridBagConstraints.HORIZONTAL;
@@ -1548,6 +1569,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(cpl2_totalcapacity, gbc_cpl2_totalcapacity);
 
 		textField_277 = new JTextField();
+		textField_277.setEditable(false);
 		textField_277.setColumns(10);
 		GridBagConstraints gbc_textField_277 = new GridBagConstraints();
 		gbc_textField_277.fill = GridBagConstraints.HORIZONTAL;
@@ -1565,6 +1587,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(cpl2_workload, gbc_cpl2_workload);
 
 		textField_278 = new JTextField();
+		textField_278.setEditable(false);
 		textField_278.setColumns(10);
 		GridBagConstraints gbc_textField_278 = new GridBagConstraints();
 		gbc_textField_278.fill = GridBagConstraints.HORIZONTAL;
@@ -1582,6 +1605,7 @@ public class CapacityPlanning {
 		cpp_workstation2.add(cpl2_overtime, gbc_cpl2_overtime);
 
 		textField_280 = new JTextField();
+		textField_280.setEditable(false);
 		textField_280.setColumns(10);
 		GridBagConstraints gbc_textField_280 = new GridBagConstraints();
 		gbc_textField_280.fill = GridBagConstraints.HORIZONTAL;
@@ -1594,11 +1618,12 @@ public class CapacityPlanning {
 		capacityplanningPane.addTab("W3", null, cpp_workstation3, null);
 		GridBagLayout gbl_cpp_workstation3 = new GridBagLayout();
 		gbl_cpp_workstation3.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
-		gbl_cpp_workstation3.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation3.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation3.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+		gbl_cpp_workstation3.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30,
+				30 };
+		gbl_cpp_workstation3.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, Double.MIN_VALUE };
+		gbl_cpp_workstation3.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation3.setLayout(gbl_cpp_workstation3);
 
 		JLabel cpl3_workstation = new JLabel("Arbeitsplatz");
@@ -1641,6 +1666,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(lblE_36, gbc_lblE_36);
 
 		cptf3_51 = new JTextField();
+		cptf3_51.setEditable(false);
 		cptf3_51.setColumns(10);
 		GridBagConstraints gbc_cptf3_51 = new GridBagConstraints();
 		gbc_cptf3_51.fill = GridBagConstraints.HORIZONTAL;
@@ -1658,6 +1684,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(lblX_3, gbc_lblX_3);
 
 		textField_259 = new JTextField();
+		textField_259.setEditable(false);
 		textField_259.setColumns(10);
 		GridBagConstraints gbc_textField_259 = new GridBagConstraints();
 		gbc_textField_259.fill = GridBagConstraints.HORIZONTAL;
@@ -1682,6 +1709,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(lblE_37, gbc_lblE_37);
 
 		cptf3_56 = new JTextField();
+		cptf3_56.setEditable(false);
 		cptf3_56.setColumns(10);
 		GridBagConstraints gbc_cptf3_56 = new GridBagConstraints();
 		gbc_cptf3_56.fill = GridBagConstraints.HORIZONTAL;
@@ -1699,6 +1727,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(label_89, gbc_label_89);
 
 		textField_261 = new JTextField();
+		textField_261.setEditable(false);
 		textField_261.setColumns(10);
 		GridBagConstraints gbc_textField_261 = new GridBagConstraints();
 		gbc_textField_261.fill = GridBagConstraints.HORIZONTAL;
@@ -1723,6 +1752,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(lblE_38, gbc_lblE_38);
 
 		cptf3_31 = new JTextField();
+		cptf3_31.setEditable(false);
 		cptf3_31.setColumns(10);
 		GridBagConstraints gbc_cptf3_31 = new GridBagConstraints();
 		gbc_cptf3_31.fill = GridBagConstraints.HORIZONTAL;
@@ -1740,6 +1770,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(label_206, gbc_label_206);
 
 		textField_263 = new JTextField();
+		textField_263.setEditable(false);
 		textField_263.setColumns(10);
 		GridBagConstraints gbc_textField_263 = new GridBagConstraints();
 		gbc_textField_263.fill = GridBagConstraints.HORIZONTAL;
@@ -1766,6 +1797,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(cpl3_capacityrequirements, gbc_cpl3_capacityrequirements);
 
 		textField_264 = new JTextField();
+		textField_264.setEditable(false);
 		textField_264.setColumns(10);
 		GridBagConstraints gbc_textField_264 = new GridBagConstraints();
 		gbc_textField_264.fill = GridBagConstraints.HORIZONTAL;
@@ -1783,6 +1815,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(cpl3_setuptime, gbc_cpl3_setuptime);
 
 		textField_265 = new JTextField();
+		textField_265.setEditable(false);
 		textField_265.setColumns(10);
 		GridBagConstraints gbc_textField_265 = new GridBagConstraints();
 		gbc_textField_265.fill = GridBagConstraints.HORIZONTAL;
@@ -1800,6 +1833,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(cpl3_totalcapacity, gbc_cpl3_totalcapacity);
 
 		textField_266 = new JTextField();
+		textField_266.setEditable(false);
 		textField_266.setColumns(10);
 		GridBagConstraints gbc_textField_266 = new GridBagConstraints();
 		gbc_textField_266.fill = GridBagConstraints.HORIZONTAL;
@@ -1817,6 +1851,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(cpl3_workload, gbc_cpl3_workload);
 
 		textField_267 = new JTextField();
+		textField_267.setEditable(false);
 		textField_267.setColumns(10);
 		GridBagConstraints gbc_textField_267 = new GridBagConstraints();
 		gbc_textField_267.fill = GridBagConstraints.HORIZONTAL;
@@ -1834,6 +1869,7 @@ public class CapacityPlanning {
 		cpp_workstation3.add(cpl3_overtime, gbc_cpl3_overtime);
 
 		textField_268 = new JTextField();
+		textField_268.setEditable(false);
 		textField_268.setColumns(10);
 		GridBagConstraints gbc_textField_268 = new GridBagConstraints();
 		gbc_textField_268.fill = GridBagConstraints.HORIZONTAL;
@@ -1846,11 +1882,12 @@ public class CapacityPlanning {
 		capacityplanningPane.addTab("W4", null, cpp_workstation4, null);
 		GridBagLayout gbl_cpp_workstation4 = new GridBagLayout();
 		gbl_cpp_workstation4.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
-		gbl_cpp_workstation4.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation4.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation4.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+		gbl_cpp_workstation4.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30,
+				30 };
+		gbl_cpp_workstation4.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, Double.MIN_VALUE };
+		gbl_cpp_workstation4.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation4.setLayout(gbl_cpp_workstation4);
 
 		JLabel cpl4_workstation = new JLabel("Arbeitsplatz");
@@ -1893,6 +1930,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblP_4, gbc_lblP_4);
 
 		cptf4_1 = new JTextField();
+		cptf4_1.setEditable(false);
 		cptf4_1.setColumns(10);
 		GridBagConstraints gbc_cptf4_1 = new GridBagConstraints();
 		gbc_cptf4_1.fill = GridBagConstraints.HORIZONTAL;
@@ -1910,6 +1948,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblX_4, gbc_lblX_4);
 
 		textField_84 = new JTextField();
+		textField_84.setEditable(false);
 		textField_84.setColumns(10);
 		GridBagConstraints gbc_textField_84 = new GridBagConstraints();
 		gbc_textField_84.fill = GridBagConstraints.HORIZONTAL;
@@ -1934,6 +1973,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblP_5, gbc_lblP_5);
 
 		cptf4_2 = new JTextField();
+		cptf4_2.setEditable(false);
 		cptf4_2.setColumns(10);
 		GridBagConstraints gbc_cptf4_2 = new GridBagConstraints();
 		gbc_cptf4_2.fill = GridBagConstraints.HORIZONTAL;
@@ -1951,6 +1991,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblX_5, gbc_lblX_5);
 
 		textField_86 = new JTextField();
+		textField_86.setEditable(false);
 		textField_86.setColumns(10);
 		GridBagConstraints gbc_textField_86 = new GridBagConstraints();
 		gbc_textField_86.fill = GridBagConstraints.HORIZONTAL;
@@ -1975,6 +2016,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblP_6, gbc_lblP_6);
 
 		cptf4_3 = new JTextField();
+		cptf4_3.setEditable(false);
 		cptf4_3.setColumns(10);
 		GridBagConstraints gbc_cptf4_3 = new GridBagConstraints();
 		gbc_cptf4_3.fill = GridBagConstraints.HORIZONTAL;
@@ -1992,6 +2034,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(lblX_6, gbc_lblX_6);
 
 		textField_88 = new JTextField();
+		textField_88.setEditable(false);
 		textField_88.setColumns(10);
 		GridBagConstraints gbc_textField_88 = new GridBagConstraints();
 		gbc_textField_88.fill = GridBagConstraints.HORIZONTAL;
@@ -2018,6 +2061,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(cpl4_capacityrequirements, gbc_cpl4_capacityrequirements);
 
 		textField_89 = new JTextField();
+		textField_89.setEditable(false);
 		textField_89.setColumns(10);
 		GridBagConstraints gbc_textField_89 = new GridBagConstraints();
 		gbc_textField_89.fill = GridBagConstraints.HORIZONTAL;
@@ -2035,6 +2079,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(cpl4_setuptime, gbc_cpl4_setuptime);
 
 		textField_90 = new JTextField();
+		textField_90.setEditable(false);
 		textField_90.setColumns(10);
 		GridBagConstraints gbc_textField_90 = new GridBagConstraints();
 		gbc_textField_90.fill = GridBagConstraints.HORIZONTAL;
@@ -2052,6 +2097,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(cpl4_totalcapacity, gbc_cpl4_totalcapacity);
 
 		textField_91 = new JTextField();
+		textField_91.setEditable(false);
 		textField_91.setColumns(10);
 		GridBagConstraints gbc_textField_91 = new GridBagConstraints();
 		gbc_textField_91.fill = GridBagConstraints.HORIZONTAL;
@@ -2069,6 +2115,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(cpl4_workload, gbc_cpl4_workload);
 
 		textField_92 = new JTextField();
+		textField_92.setEditable(false);
 		textField_92.setColumns(10);
 		GridBagConstraints gbc_textField_92 = new GridBagConstraints();
 		gbc_textField_92.fill = GridBagConstraints.HORIZONTAL;
@@ -2086,6 +2133,7 @@ public class CapacityPlanning {
 		cpp_workstation4.add(cpl4_overtime, gbc_cpl4_overtime);
 
 		textField_93 = new JTextField();
+		textField_93.setEditable(false);
 		textField_93.setColumns(10);
 		GridBagConstraints gbc_textField_93 = new GridBagConstraints();
 		gbc_textField_93.fill = GridBagConstraints.HORIZONTAL;
@@ -2100,12 +2148,14 @@ public class CapacityPlanning {
 		cpsp_workstation6.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W6", null, cpsp_workstation6, null);
 		GridBagLayout gbl_cpp_workstation6 = new GridBagLayout();
-		gbl_cpp_workstation6.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation6.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation6.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation6.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation6.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation6.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0,
+				30, 30, 0 };
+		gbl_cpp_workstation6.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation6.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation6.setLayout(gbl_cpp_workstation6);
 
 		JLabel label = new JLabel("Arbeitsplatz");
@@ -2147,6 +2197,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblE, gbc_lblE);
 
 		cptf6_16 = new JTextField();
+		cptf6_16.setEditable(false);
 		cptf6_16.setColumns(10);
 		GridBagConstraints gbc_cptf6_16 = new GridBagConstraints();
 		gbc_cptf6_16.fill = GridBagConstraints.HORIZONTAL;
@@ -2164,6 +2215,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblX_7, gbc_lblX_7);
 
 		textField_12 = new JTextField();
+		textField_12.setEditable(false);
 		textField_12.setColumns(10);
 		GridBagConstraints gbc_textField_12 = new GridBagConstraints();
 		gbc_textField_12.insets = new Insets(0, 0, 5, 5);
@@ -2197,6 +2249,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblE_1, gbc_lblE_1);
 
 		cptf6_18 = new JTextField();
+		cptf6_18.setEditable(false);
 		cptf6_18.setColumns(10);
 		GridBagConstraints gbc_cptf6_18 = new GridBagConstraints();
 		gbc_cptf6_18.fill = GridBagConstraints.HORIZONTAL;
@@ -2214,6 +2267,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblX_8, gbc_lblX_8);
 
 		textField_1 = new JTextField();
+		textField_1.setEditable(false);
 		textField_1.setColumns(10);
 		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
 		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
@@ -2238,6 +2292,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblE_2, gbc_lblE_2);
 
 		cptf6_19 = new JTextField();
+		cptf6_19.setEditable(false);
 		cptf6_19.setColumns(10);
 		GridBagConstraints gbc_cptf6_19 = new GridBagConstraints();
 		gbc_cptf6_19.fill = GridBagConstraints.HORIZONTAL;
@@ -2255,6 +2310,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblX_9, gbc_lblX_9);
 
 		textField_3 = new JTextField();
+		textField_3.setEditable(false);
 		textField_3.setColumns(10);
 		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
 		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
@@ -2279,6 +2335,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblE_3, gbc_lblE_3);
 
 		cptf6_20 = new JTextField();
+		cptf6_20.setEditable(false);
 		cptf6_20.setColumns(10);
 		GridBagConstraints gbc_cptf6_20 = new GridBagConstraints();
 		gbc_cptf6_20.fill = GridBagConstraints.HORIZONTAL;
@@ -2296,6 +2353,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(lblX_10, gbc_lblX_10);
 
 		textField_5 = new JTextField();
+		textField_5.setEditable(false);
 		textField_5.setColumns(10);
 		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
 		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
@@ -2322,6 +2380,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(label_12, gbc_label_12);
 
 		textField_6 = new JTextField();
+		textField_6.setEditable(false);
 		textField_6.setColumns(10);
 		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
 		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
@@ -2339,6 +2398,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(label_13, gbc_label_13);
 
 		textField_7 = new JTextField();
+		textField_7.setEditable(false);
 		textField_7.setColumns(10);
 		GridBagConstraints gbc_textField_7 = new GridBagConstraints();
 		gbc_textField_7.fill = GridBagConstraints.HORIZONTAL;
@@ -2356,6 +2416,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(label_14, gbc_label_14);
 
 		textField_8 = new JTextField();
+		textField_8.setEditable(false);
 		textField_8.setColumns(10);
 		GridBagConstraints gbc_textField_8 = new GridBagConstraints();
 		gbc_textField_8.fill = GridBagConstraints.HORIZONTAL;
@@ -2373,6 +2434,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(label_15, gbc_label_15);
 
 		textField_9 = new JTextField();
+		textField_9.setEditable(false);
 		textField_9.setColumns(10);
 		GridBagConstraints gbc_textField_9 = new GridBagConstraints();
 		gbc_textField_9.fill = GridBagConstraints.HORIZONTAL;
@@ -2390,6 +2452,7 @@ public class CapacityPlanning {
 		cpp_workstation6.add(label_16, gbc_label_16);
 
 		textField_10 = new JTextField();
+		textField_10.setEditable(false);
 		textField_10.setColumns(10);
 		GridBagConstraints gbc_textField_10 = new GridBagConstraints();
 		gbc_textField_10.fill = GridBagConstraints.HORIZONTAL;
@@ -2404,13 +2467,15 @@ public class CapacityPlanning {
 		cpsp_workstation7.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W7", null, cpsp_workstation7, null);
 		GridBagLayout gbl_cpp_workstation7 = new GridBagLayout();
-		gbl_cpp_workstation7.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation7.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 0, 0, 0,
-				0, 0, 30, 30, 0 };
-		gbl_cpp_workstation7.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation7.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation7.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
+		gbl_cpp_workstation7.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation7.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
-		gbl_cpp_workstation7.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation7.setLayout(gbl_cpp_workstation7);
 
 		JLabel label_4 = new JLabel("Arbeitsplatz");
@@ -2453,6 +2518,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_4, gbc_lblE_4);
 
 		cptf7_10 = new JTextField();
+		cptf7_10.setEditable(false);
 		cptf7_10.setColumns(10);
 		GridBagConstraints gbc_cptf7_10 = new GridBagConstraints();
 		gbc_cptf7_10.fill = GridBagConstraints.HORIZONTAL;
@@ -2470,6 +2536,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_14, gbc_lblX_14);
 
 		textField_27 = new JTextField();
+		textField_27.setEditable(false);
 		textField_27.setColumns(10);
 		GridBagConstraints gbc_textField_27 = new GridBagConstraints();
 		gbc_textField_27.fill = GridBagConstraints.HORIZONTAL;
@@ -2494,6 +2561,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_5, gbc_lblE_5);
 
 		cptf7_11 = new JTextField();
+		cptf7_11.setEditable(false);
 		GridBagConstraints gbc_cptf7_11 = new GridBagConstraints();
 		gbc_cptf7_11.insets = new Insets(0, 0, 5, 5);
 		gbc_cptf7_11.fill = GridBagConstraints.HORIZONTAL;
@@ -2511,6 +2579,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_7, gbc_label_7);
 
 		textField_41 = new JTextField();
+		textField_41.setEditable(false);
 		textField_41.setColumns(10);
 		GridBagConstraints gbc_textField_41 = new GridBagConstraints();
 		gbc_textField_41.insets = new Insets(0, 0, 5, 5);
@@ -2535,6 +2604,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_6, gbc_lblE_6);
 
 		cptf7_12 = new JTextField();
+		cptf7_12.setEditable(false);
 		cptf7_12.setColumns(10);
 		GridBagConstraints gbc_cptf7_12 = new GridBagConstraints();
 		gbc_cptf7_12.insets = new Insets(0, 0, 5, 5);
@@ -2552,6 +2622,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_8, gbc_label_8);
 
 		textField_42 = new JTextField();
+		textField_42.setEditable(false);
 		textField_42.setColumns(10);
 		GridBagConstraints gbc_textField_42 = new GridBagConstraints();
 		gbc_textField_42.insets = new Insets(0, 0, 5, 5);
@@ -2585,6 +2656,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_7, gbc_lblE_7);
 
 		cptf7_13 = new JTextField();
+		cptf7_13.setEditable(false);
 		cptf7_13.setColumns(10);
 		GridBagConstraints gbc_cptf7_13 = new GridBagConstraints();
 		gbc_cptf7_13.fill = GridBagConstraints.HORIZONTAL;
@@ -2602,6 +2674,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_11, gbc_lblX_11);
 
 		textField_29 = new JTextField();
+		textField_29.setEditable(false);
 		textField_29.setColumns(10);
 		GridBagConstraints gbc_textField_29 = new GridBagConstraints();
 		gbc_textField_29.fill = GridBagConstraints.HORIZONTAL;
@@ -2626,6 +2699,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_8, gbc_lblE_8);
 
 		cptf7_14 = new JTextField();
+		cptf7_14.setEditable(false);
 		cptf7_14.setColumns(10);
 		GridBagConstraints gbc_cptf7_14 = new GridBagConstraints();
 		gbc_cptf7_14.fill = GridBagConstraints.HORIZONTAL;
@@ -2643,6 +2717,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_12, gbc_lblX_12);
 
 		textField_31 = new JTextField();
+		textField_31.setEditable(false);
 		textField_31.setColumns(10);
 		GridBagConstraints gbc_textField_31 = new GridBagConstraints();
 		gbc_textField_31.fill = GridBagConstraints.HORIZONTAL;
@@ -2667,6 +2742,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_9, gbc_lblE_9);
 
 		cptf7_15 = new JTextField();
+		cptf7_15.setEditable(false);
 		cptf7_15.setColumns(10);
 		GridBagConstraints gbc_cptf7_15 = new GridBagConstraints();
 		gbc_cptf7_15.fill = GridBagConstraints.HORIZONTAL;
@@ -2684,6 +2760,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_13, gbc_lblX_13);
 
 		textField_33 = new JTextField();
+		textField_33.setEditable(false);
 		textField_33.setColumns(10);
 		GridBagConstraints gbc_textField_33 = new GridBagConstraints();
 		gbc_textField_33.fill = GridBagConstraints.HORIZONTAL;
@@ -2716,6 +2793,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_10, gbc_lblE_10);
 
 		cptf7_18 = new JTextField();
+		cptf7_18.setEditable(false);
 		cptf7_18.setColumns(10);
 		GridBagConstraints gbc_cptf7_18 = new GridBagConstraints();
 		gbc_cptf7_18.insets = new Insets(0, 0, 5, 5);
@@ -2733,6 +2811,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_15, gbc_lblX_15);
 
 		textField_44 = new JTextField();
+		textField_44.setEditable(false);
 		textField_44.setColumns(10);
 		GridBagConstraints gbc_textField_44 = new GridBagConstraints();
 		gbc_textField_44.insets = new Insets(0, 0, 5, 5);
@@ -2757,6 +2836,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_11, gbc_lblE_11);
 
 		cptf7_19 = new JTextField();
+		cptf7_19.setEditable(false);
 		cptf7_19.setColumns(10);
 		GridBagConstraints gbc_cptf7_19 = new GridBagConstraints();
 		gbc_cptf7_19.insets = new Insets(0, 0, 5, 5);
@@ -2774,6 +2854,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_16, gbc_lblX_16);
 
 		textField_46 = new JTextField();
+		textField_46.setEditable(false);
 		textField_46.setColumns(10);
 		GridBagConstraints gbc_textField_46 = new GridBagConstraints();
 		gbc_textField_46.insets = new Insets(0, 0, 5, 5);
@@ -2798,6 +2879,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_12, gbc_lblE_12);
 
 		cptf7_20 = new JTextField();
+		cptf7_20.setEditable(false);
 		cptf7_20.setColumns(10);
 		GridBagConstraints gbc_cptf7_20 = new GridBagConstraints();
 		gbc_cptf7_20.insets = new Insets(0, 0, 5, 5);
@@ -2815,6 +2897,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblX_17, gbc_lblX_17);
 
 		textField_48 = new JTextField();
+		textField_48.setEditable(false);
 		textField_48.setColumns(10);
 		GridBagConstraints gbc_textField_48 = new GridBagConstraints();
 		gbc_textField_48.insets = new Insets(0, 0, 5, 5);
@@ -2846,6 +2929,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(lblE_13, gbc_lblE_13);
 
 		cptf7_26 = new JTextField();
+		cptf7_26.setEditable(false);
 		cptf7_26.setColumns(10);
 		GridBagConstraints gbc_cptf7_26 = new GridBagConstraints();
 		gbc_cptf7_26.insets = new Insets(0, 0, 5, 5);
@@ -2863,6 +2947,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_17, gbc_label_17);
 
 		textField_50 = new JTextField();
+		textField_50.setEditable(false);
 		textField_50.setColumns(10);
 		GridBagConstraints gbc_textField_50 = new GridBagConstraints();
 		gbc_textField_50.insets = new Insets(0, 0, 5, 5);
@@ -2889,6 +2974,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_27, gbc_label_27);
 
 		textField_34 = new JTextField();
+		textField_34.setEditable(false);
 		textField_34.setColumns(10);
 		GridBagConstraints gbc_textField_34 = new GridBagConstraints();
 		gbc_textField_34.fill = GridBagConstraints.HORIZONTAL;
@@ -2906,6 +2992,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_28, gbc_label_28);
 
 		textField_35 = new JTextField();
+		textField_35.setEditable(false);
 		textField_35.setColumns(10);
 		GridBagConstraints gbc_textField_35 = new GridBagConstraints();
 		gbc_textField_35.fill = GridBagConstraints.HORIZONTAL;
@@ -2923,6 +3010,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_29, gbc_label_29);
 
 		textField_36 = new JTextField();
+		textField_36.setEditable(false);
 		textField_36.setColumns(10);
 		GridBagConstraints gbc_textField_36 = new GridBagConstraints();
 		gbc_textField_36.fill = GridBagConstraints.HORIZONTAL;
@@ -2940,6 +3028,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_30, gbc_label_30);
 
 		textField_37 = new JTextField();
+		textField_37.setEditable(false);
 		textField_37.setColumns(10);
 		GridBagConstraints gbc_textField_37 = new GridBagConstraints();
 		gbc_textField_37.fill = GridBagConstraints.HORIZONTAL;
@@ -2957,6 +3046,7 @@ public class CapacityPlanning {
 		cpp_workstation7.add(label_31, gbc_label_31);
 
 		textField_38 = new JTextField();
+		textField_38.setEditable(false);
 		textField_38.setColumns(10);
 		GridBagConstraints gbc_textField_38 = new GridBagConstraints();
 		gbc_textField_38.fill = GridBagConstraints.HORIZONTAL;
@@ -2971,13 +3061,15 @@ public class CapacityPlanning {
 		cpsp_workstation8.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W8", null, cpsp_workstation8, null);
 		GridBagLayout gbl_cpp_workstation8 = new GridBagLayout();
-		gbl_cpp_workstation8.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation8.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0,
-				30, 30, 0 };
-		gbl_cpp_workstation8.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation8.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation8.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0,
+				30, 0, 0, 0, 0, 0, 30, 30, 0 };
+		gbl_cpp_workstation8.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation8.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
-		gbl_cpp_workstation8.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation8.setLayout(gbl_cpp_workstation8);
 
 		JLabel label_26 = new JLabel("Arbeitsplatz");
@@ -3020,6 +3112,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_35, gbc_label_35);
 
 		cptf8_10 = new JTextField();
+		cptf8_10.setEditable(false);
 		cptf8_10.setColumns(10);
 		GridBagConstraints gbc_cptf8_10 = new GridBagConstraints();
 		gbc_cptf8_10.fill = GridBagConstraints.HORIZONTAL;
@@ -3037,6 +3130,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(lblX_18, gbc_lblX_18);
 
 		textField_52 = new JTextField();
+		textField_52.setEditable(false);
 		textField_52.setColumns(10);
 		GridBagConstraints gbc_textField_52 = new GridBagConstraints();
 		gbc_textField_52.fill = GridBagConstraints.HORIZONTAL;
@@ -3061,6 +3155,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_38, gbc_label_38);
 
 		cptf8_11 = new JTextField();
+		cptf8_11.setEditable(false);
 		cptf8_11.setColumns(10);
 		GridBagConstraints gbc_cptf8_11 = new GridBagConstraints();
 		gbc_cptf8_11.fill = GridBagConstraints.HORIZONTAL;
@@ -3078,6 +3173,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_39, gbc_label_39);
 
 		textField_54 = new JTextField();
+		textField_54.setEditable(false);
 		textField_54.setColumns(10);
 		GridBagConstraints gbc_textField_54 = new GridBagConstraints();
 		gbc_textField_54.fill = GridBagConstraints.HORIZONTAL;
@@ -3102,6 +3198,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_41, gbc_label_41);
 
 		cptf8_12 = new JTextField();
+		cptf8_12.setEditable(false);
 		cptf8_12.setColumns(10);
 		GridBagConstraints gbc_cptf8_12 = new GridBagConstraints();
 		gbc_cptf8_12.fill = GridBagConstraints.HORIZONTAL;
@@ -3119,6 +3216,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_42, gbc_label_42);
 
 		textField_56 = new JTextField();
+		textField_56.setEditable(false);
 		textField_56.setColumns(10);
 		GridBagConstraints gbc_textField_56 = new GridBagConstraints();
 		gbc_textField_56.fill = GridBagConstraints.HORIZONTAL;
@@ -3152,6 +3250,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_45, gbc_label_45);
 
 		cptf8_13 = new JTextField();
+		cptf8_13.setEditable(false);
 		cptf8_13.setColumns(10);
 		GridBagConstraints gbc_cptf8_13 = new GridBagConstraints();
 		gbc_cptf8_13.fill = GridBagConstraints.HORIZONTAL;
@@ -3169,6 +3268,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(lblX_19, gbc_lblX_19);
 
 		textField_58 = new JTextField();
+		textField_58.setEditable(false);
 		textField_58.setColumns(10);
 		GridBagConstraints gbc_textField_58 = new GridBagConstraints();
 		gbc_textField_58.fill = GridBagConstraints.HORIZONTAL;
@@ -3193,6 +3293,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_48, gbc_label_48);
 
 		cptf8_14 = new JTextField();
+		cptf8_14.setEditable(false);
 		cptf8_14.setColumns(10);
 		GridBagConstraints gbc_cptf8_14 = new GridBagConstraints();
 		gbc_cptf8_14.fill = GridBagConstraints.HORIZONTAL;
@@ -3210,6 +3311,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_49, gbc_label_49);
 
 		textField_60 = new JTextField();
+		textField_60.setEditable(false);
 		textField_60.setColumns(10);
 		GridBagConstraints gbc_textField_60 = new GridBagConstraints();
 		gbc_textField_60.fill = GridBagConstraints.HORIZONTAL;
@@ -3234,6 +3336,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_51, gbc_label_51);
 
 		cptf8_15 = new JTextField();
+		cptf8_15.setEditable(false);
 		cptf8_15.setColumns(10);
 		GridBagConstraints gbc_cptf8_15 = new GridBagConstraints();
 		gbc_cptf8_15.fill = GridBagConstraints.HORIZONTAL;
@@ -3251,6 +3354,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_52, gbc_label_52);
 
 		textField_62 = new JTextField();
+		textField_62.setEditable(false);
 		textField_62.setColumns(10);
 		GridBagConstraints gbc_textField_62 = new GridBagConstraints();
 		gbc_textField_62.fill = GridBagConstraints.HORIZONTAL;
@@ -3283,6 +3387,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_55, gbc_label_55);
 
 		cptf8_18 = new JTextField();
+		cptf8_18.setEditable(false);
 		cptf8_18.setColumns(10);
 		GridBagConstraints gbc_cptf8_18 = new GridBagConstraints();
 		gbc_cptf8_18.fill = GridBagConstraints.HORIZONTAL;
@@ -3300,6 +3405,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(lblX_22, gbc_lblX_22);
 
 		textField_64 = new JTextField();
+		textField_64.setEditable(false);
 		textField_64.setColumns(10);
 		GridBagConstraints gbc_textField_64 = new GridBagConstraints();
 		gbc_textField_64.fill = GridBagConstraints.HORIZONTAL;
@@ -3324,6 +3430,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_58, gbc_label_58);
 
 		cptf8_19 = new JTextField();
+		cptf8_19.setEditable(false);
 		cptf8_19.setColumns(10);
 		GridBagConstraints gbc_cptf8_19 = new GridBagConstraints();
 		gbc_cptf8_19.fill = GridBagConstraints.HORIZONTAL;
@@ -3341,6 +3448,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(lblX_21, gbc_lblX_21);
 
 		textField_66 = new JTextField();
+		textField_66.setEditable(false);
 		textField_66.setColumns(10);
 		GridBagConstraints gbc_textField_66 = new GridBagConstraints();
 		gbc_textField_66.fill = GridBagConstraints.HORIZONTAL;
@@ -3365,6 +3473,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_61, gbc_label_61);
 
 		cptf8_20 = new JTextField();
+		cptf8_20.setEditable(false);
 		cptf8_20.setColumns(10);
 		GridBagConstraints gbc_cptf8_20 = new GridBagConstraints();
 		gbc_cptf8_20.fill = GridBagConstraints.HORIZONTAL;
@@ -3382,6 +3491,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(lblX_20, gbc_lblX_20);
 
 		textField_68 = new JTextField();
+		textField_68.setEditable(false);
 		textField_68.setColumns(10);
 		GridBagConstraints gbc_textField_68 = new GridBagConstraints();
 		gbc_textField_68.fill = GridBagConstraints.HORIZONTAL;
@@ -3408,6 +3518,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_67, gbc_label_67);
 
 		textField_71 = new JTextField();
+		textField_71.setEditable(false);
 		textField_71.setColumns(10);
 		GridBagConstraints gbc_textField_71 = new GridBagConstraints();
 		gbc_textField_71.fill = GridBagConstraints.HORIZONTAL;
@@ -3425,6 +3536,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_68, gbc_label_68);
 
 		textField_72 = new JTextField();
+		textField_72.setEditable(false);
 		textField_72.setColumns(10);
 		GridBagConstraints gbc_textField_72 = new GridBagConstraints();
 		gbc_textField_72.fill = GridBagConstraints.HORIZONTAL;
@@ -3442,6 +3554,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_69, gbc_label_69);
 
 		textField_73 = new JTextField();
+		textField_73.setEditable(false);
 		textField_73.setColumns(10);
 		GridBagConstraints gbc_textField_73 = new GridBagConstraints();
 		gbc_textField_73.fill = GridBagConstraints.HORIZONTAL;
@@ -3459,6 +3572,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_70, gbc_label_70);
 
 		textField_74 = new JTextField();
+		textField_74.setEditable(false);
 		textField_74.setColumns(10);
 		GridBagConstraints gbc_textField_74 = new GridBagConstraints();
 		gbc_textField_74.fill = GridBagConstraints.HORIZONTAL;
@@ -3476,6 +3590,7 @@ public class CapacityPlanning {
 		cpp_workstation8.add(label_71, gbc_label_71);
 
 		textField_75 = new JTextField();
+		textField_75.setEditable(false);
 		textField_75.setColumns(10);
 		GridBagConstraints gbc_textField_75 = new GridBagConstraints();
 		gbc_textField_75.fill = GridBagConstraints.HORIZONTAL;
@@ -3490,13 +3605,15 @@ public class CapacityPlanning {
 		cpsp_workstation9.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W9", null, cpsp_workstation9, null);
 		GridBagLayout gbl_cpp_workstation9 = new GridBagLayout();
-		gbl_cpp_workstation9.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation9.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0,
-				30, 30, 0 };
-		gbl_cpp_workstation9.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation9.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation9.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				30, 0, 0, 0, 0, 0, 30, 30, 0 };
+		gbl_cpp_workstation9.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation9.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
-		gbl_cpp_workstation9.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation9.setLayout(gbl_cpp_workstation9);
 
 		JLabel label_10 = new JLabel("Arbeitsplatz");
@@ -3539,6 +3656,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_36, gbc_label_36);
 
 		cptf9_10 = new JTextField();
+		cptf9_10.setEditable(false);
 		cptf9_10.setColumns(10);
 		GridBagConstraints gbc_cptf9_10 = new GridBagConstraints();
 		gbc_cptf9_10.fill = GridBagConstraints.HORIZONTAL;
@@ -3556,6 +3674,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_23, gbc_lblX_23);
 
 		textField_70 = new JTextField();
+		textField_70.setEditable(false);
 		textField_70.setColumns(10);
 		GridBagConstraints gbc_textField_70 = new GridBagConstraints();
 		gbc_textField_70.fill = GridBagConstraints.HORIZONTAL;
@@ -3580,6 +3699,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_59, gbc_label_59);
 
 		cptf9_11 = new JTextField();
+		cptf9_11.setEditable(false);
 		cptf9_11.setColumns(10);
 		GridBagConstraints gbc_cptf9_11 = new GridBagConstraints();
 		gbc_cptf9_11.fill = GridBagConstraints.HORIZONTAL;
@@ -3597,6 +3717,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_24, gbc_lblX_24);
 
 		textField_77 = new JTextField();
+		textField_77.setEditable(false);
 		textField_77.setColumns(10);
 		GridBagConstraints gbc_textField_77 = new GridBagConstraints();
 		gbc_textField_77.fill = GridBagConstraints.HORIZONTAL;
@@ -3621,6 +3742,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_64, gbc_label_64);
 
 		cptf9_12 = new JTextField();
+		cptf9_12.setEditable(false);
 		cptf9_12.setColumns(10);
 		GridBagConstraints gbc_cptf9_12 = new GridBagConstraints();
 		gbc_cptf9_12.fill = GridBagConstraints.HORIZONTAL;
@@ -3638,6 +3760,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_25, gbc_lblX_25);
 
 		textField_79 = new JTextField();
+		textField_79.setEditable(false);
 		textField_79.setColumns(10);
 		GridBagConstraints gbc_textField_79 = new GridBagConstraints();
 		gbc_textField_79.fill = GridBagConstraints.HORIZONTAL;
@@ -3671,6 +3794,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_74, gbc_label_74);
 
 		cptf9_13 = new JTextField();
+		cptf9_13.setEditable(false);
 		cptf9_13.setColumns(10);
 		GridBagConstraints gbc_cptf9_13 = new GridBagConstraints();
 		gbc_cptf9_13.fill = GridBagConstraints.HORIZONTAL;
@@ -3688,6 +3812,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_26, gbc_lblX_26);
 
 		textField_81 = new JTextField();
+		textField_81.setEditable(false);
 		textField_81.setColumns(10);
 		GridBagConstraints gbc_textField_81 = new GridBagConstraints();
 		gbc_textField_81.fill = GridBagConstraints.HORIZONTAL;
@@ -3712,6 +3837,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_78, gbc_label_78);
 
 		cptf9_14 = new JTextField();
+		cptf9_14.setEditable(false);
 		cptf9_14.setColumns(10);
 		GridBagConstraints gbc_cptf9_14 = new GridBagConstraints();
 		gbc_cptf9_14.fill = GridBagConstraints.HORIZONTAL;
@@ -3729,6 +3855,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_27, gbc_lblX_27);
 
 		textField_94 = new JTextField();
+		textField_94.setEditable(false);
 		textField_94.setColumns(10);
 		GridBagConstraints gbc_textField_94 = new GridBagConstraints();
 		gbc_textField_94.fill = GridBagConstraints.HORIZONTAL;
@@ -3753,6 +3880,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_81, gbc_label_81);
 
 		cptf9_15 = new JTextField();
+		cptf9_15.setEditable(false);
 		cptf9_15.setColumns(10);
 		GridBagConstraints gbc_cptf9_15 = new GridBagConstraints();
 		gbc_cptf9_15.fill = GridBagConstraints.HORIZONTAL;
@@ -3770,6 +3898,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_28, gbc_lblX_28);
 
 		textField_96 = new JTextField();
+		textField_96.setEditable(false);
 		textField_96.setColumns(10);
 		GridBagConstraints gbc_textField_96 = new GridBagConstraints();
 		gbc_textField_96.fill = GridBagConstraints.HORIZONTAL;
@@ -3802,6 +3931,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_85, gbc_label_85);
 
 		cptf9_18 = new JTextField();
+		cptf9_18.setEditable(false);
 		cptf9_18.setColumns(10);
 		GridBagConstraints gbc_cptf9_18 = new GridBagConstraints();
 		gbc_cptf9_18.fill = GridBagConstraints.HORIZONTAL;
@@ -3819,6 +3949,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_29, gbc_lblX_29);
 
 		textField_98 = new JTextField();
+		textField_98.setEditable(false);
 		textField_98.setColumns(10);
 		GridBagConstraints gbc_textField_98 = new GridBagConstraints();
 		gbc_textField_98.fill = GridBagConstraints.HORIZONTAL;
@@ -3843,6 +3974,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_88, gbc_label_88);
 
 		cptf9_19 = new JTextField();
+		cptf9_19.setEditable(false);
 		cptf9_19.setColumns(10);
 		GridBagConstraints gbc_cptf9_19 = new GridBagConstraints();
 		gbc_cptf9_19.fill = GridBagConstraints.HORIZONTAL;
@@ -3860,6 +3992,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_30, gbc_lblX_30);
 
 		textField_100 = new JTextField();
+		textField_100.setEditable(false);
 		textField_100.setColumns(10);
 		GridBagConstraints gbc_textField_100 = new GridBagConstraints();
 		gbc_textField_100.fill = GridBagConstraints.HORIZONTAL;
@@ -3884,6 +4017,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_92, gbc_label_92);
 
 		cptf9_20 = new JTextField();
+		cptf9_20.setEditable(false);
 		cptf9_20.setColumns(10);
 		GridBagConstraints gbc_cptf9_20 = new GridBagConstraints();
 		gbc_cptf9_20.fill = GridBagConstraints.HORIZONTAL;
@@ -3901,6 +4035,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(lblX_31, gbc_lblX_31);
 
 		textField_102 = new JTextField();
+		textField_102.setEditable(false);
 		textField_102.setColumns(10);
 		GridBagConstraints gbc_textField_102 = new GridBagConstraints();
 		gbc_textField_102.fill = GridBagConstraints.HORIZONTAL;
@@ -3927,6 +4062,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_94, gbc_label_94);
 
 		textField_103 = new JTextField();
+		textField_103.setEditable(false);
 		textField_103.setColumns(10);
 		GridBagConstraints gbc_textField_103 = new GridBagConstraints();
 		gbc_textField_103.fill = GridBagConstraints.HORIZONTAL;
@@ -3944,6 +4080,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_95, gbc_label_95);
 
 		textField_104 = new JTextField();
+		textField_104.setEditable(false);
 		textField_104.setColumns(10);
 		GridBagConstraints gbc_textField_104 = new GridBagConstraints();
 		gbc_textField_104.fill = GridBagConstraints.HORIZONTAL;
@@ -3961,6 +4098,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_96, gbc_label_96);
 
 		textField_105 = new JTextField();
+		textField_105.setEditable(false);
 		textField_105.setColumns(10);
 		GridBagConstraints gbc_textField_105 = new GridBagConstraints();
 		gbc_textField_105.fill = GridBagConstraints.HORIZONTAL;
@@ -3978,6 +4116,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_97, gbc_label_97);
 
 		textField_106 = new JTextField();
+		textField_106.setEditable(false);
 		textField_106.setColumns(10);
 		GridBagConstraints gbc_textField_106 = new GridBagConstraints();
 		gbc_textField_106.fill = GridBagConstraints.HORIZONTAL;
@@ -3995,6 +4134,7 @@ public class CapacityPlanning {
 		cpp_workstation9.add(label_98, gbc_label_98);
 
 		textField_107 = new JTextField();
+		textField_107.setEditable(false);
 		textField_107.setColumns(10);
 		GridBagConstraints gbc_textField_107 = new GridBagConstraints();
 		gbc_textField_107.fill = GridBagConstraints.HORIZONTAL;
@@ -4009,12 +4149,14 @@ public class CapacityPlanning {
 		cpsp_workstation10.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W10", null, cpsp_workstation10, null);
 		GridBagLayout gbl_cpp_workstation10 = new GridBagLayout();
-		gbl_cpp_workstation10.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation10.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation10.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation10.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation10.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation10.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				0, 0, 30, 30, 0 };
+		gbl_cpp_workstation10.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation10.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation10.setLayout(gbl_cpp_workstation10);
 
 		JLabel label_46 = new JLabel("Arbeitsplatz");
@@ -4057,6 +4199,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_14, gbc_lblE_14);
 
 		cptf10_4 = new JTextField();
+		cptf10_4.setEditable(false);
 		cptf10_4.setColumns(10);
 		GridBagConstraints gbc_cptf10_4 = new GridBagConstraints();
 		gbc_cptf10_4.fill = GridBagConstraints.HORIZONTAL;
@@ -4074,6 +4217,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblX_32, gbc_lblX_32);
 
 		textField_109 = new JTextField();
+		textField_109.setEditable(false);
 		textField_109.setColumns(10);
 		GridBagConstraints gbc_textField_109 = new GridBagConstraints();
 		gbc_textField_109.fill = GridBagConstraints.HORIZONTAL;
@@ -4098,6 +4242,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_15, gbc_lblE_15);
 
 		cptf10_5 = new JTextField();
+		cptf10_5.setEditable(false);
 		cptf10_5.setColumns(10);
 		GridBagConstraints gbc_cptf10_5 = new GridBagConstraints();
 		gbc_cptf10_5.fill = GridBagConstraints.HORIZONTAL;
@@ -4115,6 +4260,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_65, gbc_label_65);
 
 		textField_111 = new JTextField();
+		textField_111.setEditable(false);
 		textField_111.setColumns(10);
 		GridBagConstraints gbc_textField_111 = new GridBagConstraints();
 		gbc_textField_111.fill = GridBagConstraints.HORIZONTAL;
@@ -4139,6 +4285,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_16, gbc_lblE_16);
 
 		cptf10_6 = new JTextField();
+		cptf10_6.setEditable(false);
 		cptf10_6.setColumns(10);
 		GridBagConstraints gbc_cptf10_6 = new GridBagConstraints();
 		gbc_cptf10_6.fill = GridBagConstraints.HORIZONTAL;
@@ -4156,6 +4303,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_79, gbc_label_79);
 
 		textField_113 = new JTextField();
+		textField_113.setEditable(false);
 		textField_113.setColumns(10);
 		GridBagConstraints gbc_textField_113 = new GridBagConstraints();
 		gbc_textField_113.fill = GridBagConstraints.HORIZONTAL;
@@ -4189,6 +4337,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_17, gbc_lblE_17);
 
 		cptf10_7 = new JTextField();
+		cptf10_7.setEditable(false);
 		cptf10_7.setColumns(10);
 		GridBagConstraints gbc_cptf10_7 = new GridBagConstraints();
 		gbc_cptf10_7.fill = GridBagConstraints.HORIZONTAL;
@@ -4206,6 +4355,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_82, gbc_label_82);
 
 		textField_115 = new JTextField();
+		textField_115.setEditable(false);
 		textField_115.setColumns(10);
 		GridBagConstraints gbc_textField_115 = new GridBagConstraints();
 		gbc_textField_115.fill = GridBagConstraints.HORIZONTAL;
@@ -4230,6 +4380,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_18, gbc_lblE_18);
 
 		cptf10_8 = new JTextField();
+		cptf10_8.setEditable(false);
 		cptf10_8.setColumns(10);
 		GridBagConstraints gbc_cptf10_8 = new GridBagConstraints();
 		gbc_cptf10_8.fill = GridBagConstraints.HORIZONTAL;
@@ -4247,6 +4398,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_90, gbc_label_90);
 
 		textField_117 = new JTextField();
+		textField_117.setEditable(false);
 		textField_117.setColumns(10);
 		GridBagConstraints gbc_textField_117 = new GridBagConstraints();
 		gbc_textField_117.fill = GridBagConstraints.HORIZONTAL;
@@ -4271,6 +4423,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(lblE_19, gbc_lblE_19);
 
 		cptf10_9 = new JTextField();
+		cptf10_9.setEditable(false);
 		cptf10_9.setColumns(10);
 		GridBagConstraints gbc_cptf10_9 = new GridBagConstraints();
 		gbc_cptf10_9.fill = GridBagConstraints.HORIZONTAL;
@@ -4288,6 +4441,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_93, gbc_label_93);
 
 		textField_119 = new JTextField();
+		textField_119.setEditable(false);
 		textField_119.setColumns(10);
 		GridBagConstraints gbc_textField_119 = new GridBagConstraints();
 		gbc_textField_119.fill = GridBagConstraints.HORIZONTAL;
@@ -4314,6 +4468,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_122, gbc_label_122);
 
 		textField_126 = new JTextField();
+		textField_126.setEditable(false);
 		textField_126.setColumns(10);
 		GridBagConstraints gbc_textField_126 = new GridBagConstraints();
 		gbc_textField_126.fill = GridBagConstraints.HORIZONTAL;
@@ -4331,6 +4486,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_123, gbc_label_123);
 
 		textField_127 = new JTextField();
+		textField_127.setEditable(false);
 		textField_127.setColumns(10);
 		GridBagConstraints gbc_textField_127 = new GridBagConstraints();
 		gbc_textField_127.fill = GridBagConstraints.HORIZONTAL;
@@ -4348,6 +4504,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_124, gbc_label_124);
 
 		textField_128 = new JTextField();
+		textField_128.setEditable(false);
 		textField_128.setColumns(10);
 		GridBagConstraints gbc_textField_128 = new GridBagConstraints();
 		gbc_textField_128.fill = GridBagConstraints.HORIZONTAL;
@@ -4365,6 +4522,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_125, gbc_label_125);
 
 		textField_129 = new JTextField();
+		textField_129.setEditable(false);
 		textField_129.setColumns(10);
 		GridBagConstraints gbc_textField_129 = new GridBagConstraints();
 		gbc_textField_129.fill = GridBagConstraints.HORIZONTAL;
@@ -4382,6 +4540,7 @@ public class CapacityPlanning {
 		cpp_workstation10.add(label_126, gbc_label_126);
 
 		textField_130 = new JTextField();
+		textField_130.setEditable(false);
 		textField_130.setColumns(10);
 		GridBagConstraints gbc_textField_130 = new GridBagConstraints();
 		gbc_textField_130.fill = GridBagConstraints.HORIZONTAL;
@@ -4396,12 +4555,14 @@ public class CapacityPlanning {
 		cpsp_workstation11.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W11", null, cpsp_workstation11, null);
 		GridBagLayout gbl_cpp_workstation11 = new GridBagLayout();
-		gbl_cpp_workstation11.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation11.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation11.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation11.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation11.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation11.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				0, 0, 30, 30, 0 };
+		gbl_cpp_workstation11.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation11.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation11.setLayout(gbl_cpp_workstation11);
 
 		JLabel label_127 = new JLabel("Arbeitsplatz");
@@ -4444,6 +4605,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_20, gbc_lblE_20);
 
 		cptf11_4 = new JTextField();
+		cptf11_4.setEditable(false);
 		cptf11_4.setColumns(10);
 		GridBagConstraints gbc_cptf11_4 = new GridBagConstraints();
 		gbc_cptf11_4.fill = GridBagConstraints.HORIZONTAL;
@@ -4461,6 +4623,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_132, gbc_label_132);
 
 		textField_132 = new JTextField();
+		textField_132.setEditable(false);
 		textField_132.setColumns(10);
 		GridBagConstraints gbc_textField_132 = new GridBagConstraints();
 		gbc_textField_132.fill = GridBagConstraints.HORIZONTAL;
@@ -4485,6 +4648,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_21, gbc_lblE_21);
 
 		cptf11_5 = new JTextField();
+		cptf11_5.setEditable(false);
 		cptf11_5.setColumns(10);
 		GridBagConstraints gbc_cptf11_5 = new GridBagConstraints();
 		gbc_cptf11_5.fill = GridBagConstraints.HORIZONTAL;
@@ -4502,6 +4666,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_135, gbc_label_135);
 
 		textField_134 = new JTextField();
+		textField_134.setEditable(false);
 		textField_134.setColumns(10);
 		GridBagConstraints gbc_textField_134 = new GridBagConstraints();
 		gbc_textField_134.fill = GridBagConstraints.HORIZONTAL;
@@ -4526,6 +4691,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_22, gbc_lblE_22);
 
 		cptf11_6 = new JTextField();
+		cptf11_6.setEditable(false);
 		cptf11_6.setColumns(10);
 		GridBagConstraints gbc_cptf11_6 = new GridBagConstraints();
 		gbc_cptf11_6.fill = GridBagConstraints.HORIZONTAL;
@@ -4543,6 +4709,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_138, gbc_label_138);
 
 		textField_136 = new JTextField();
+		textField_136.setEditable(false);
 		textField_136.setColumns(10);
 		GridBagConstraints gbc_textField_136 = new GridBagConstraints();
 		gbc_textField_136.fill = GridBagConstraints.HORIZONTAL;
@@ -4576,6 +4743,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_23, gbc_lblE_23);
 
 		cptf11_7 = new JTextField();
+		cptf11_7.setEditable(false);
 		cptf11_7.setColumns(10);
 		GridBagConstraints gbc_cptf11_7 = new GridBagConstraints();
 		gbc_cptf11_7.fill = GridBagConstraints.HORIZONTAL;
@@ -4593,6 +4761,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_142, gbc_label_142);
 
 		textField_138 = new JTextField();
+		textField_138.setEditable(false);
 		textField_138.setColumns(10);
 		GridBagConstraints gbc_textField_138 = new GridBagConstraints();
 		gbc_textField_138.fill = GridBagConstraints.HORIZONTAL;
@@ -4617,6 +4786,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_24, gbc_lblE_24);
 
 		cptf11_8 = new JTextField();
+		cptf11_8.setEditable(false);
 		cptf11_8.setColumns(10);
 		GridBagConstraints gbc_cptf11_8 = new GridBagConstraints();
 		gbc_cptf11_8.fill = GridBagConstraints.HORIZONTAL;
@@ -4634,6 +4804,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_145, gbc_label_145);
 
 		textField_140 = new JTextField();
+		textField_140.setEditable(false);
 		textField_140.setColumns(10);
 		GridBagConstraints gbc_textField_140 = new GridBagConstraints();
 		gbc_textField_140.fill = GridBagConstraints.HORIZONTAL;
@@ -4658,6 +4829,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(lblE_25, gbc_lblE_25);
 
 		cptf11_9 = new JTextField();
+		cptf11_9.setEditable(false);
 		cptf11_9.setColumns(10);
 		GridBagConstraints gbc_cptf11_9 = new GridBagConstraints();
 		gbc_cptf11_9.fill = GridBagConstraints.HORIZONTAL;
@@ -4675,6 +4847,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_148, gbc_label_148);
 
 		textField_142 = new JTextField();
+		textField_142.setEditable(false);
 		textField_142.setColumns(10);
 		GridBagConstraints gbc_textField_142 = new GridBagConstraints();
 		gbc_textField_142.fill = GridBagConstraints.HORIZONTAL;
@@ -4701,6 +4874,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_159, gbc_label_159);
 
 		textField_149 = new JTextField();
+		textField_149.setEditable(false);
 		textField_149.setColumns(10);
 		GridBagConstraints gbc_textField_149 = new GridBagConstraints();
 		gbc_textField_149.fill = GridBagConstraints.HORIZONTAL;
@@ -4718,6 +4892,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_160, gbc_label_160);
 
 		textField_150 = new JTextField();
+		textField_150.setEditable(false);
 		textField_150.setColumns(10);
 		GridBagConstraints gbc_textField_150 = new GridBagConstraints();
 		gbc_textField_150.fill = GridBagConstraints.HORIZONTAL;
@@ -4735,6 +4910,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_161, gbc_label_161);
 
 		textField_151 = new JTextField();
+		textField_151.setEditable(false);
 		textField_151.setColumns(10);
 		GridBagConstraints gbc_textField_151 = new GridBagConstraints();
 		gbc_textField_151.fill = GridBagConstraints.HORIZONTAL;
@@ -4752,6 +4928,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_162, gbc_label_162);
 
 		textField_152 = new JTextField();
+		textField_152.setEditable(false);
 		textField_152.setColumns(10);
 		GridBagConstraints gbc_textField_152 = new GridBagConstraints();
 		gbc_textField_152.fill = GridBagConstraints.HORIZONTAL;
@@ -4769,6 +4946,7 @@ public class CapacityPlanning {
 		cpp_workstation11.add(label_163, gbc_label_163);
 
 		textField_153 = new JTextField();
+		textField_153.setEditable(false);
 		textField_153.setColumns(10);
 		GridBagConstraints gbc_textField_153 = new GridBagConstraints();
 		gbc_textField_153.fill = GridBagConstraints.HORIZONTAL;
@@ -4783,12 +4961,14 @@ public class CapacityPlanning {
 		cpsp_workstation12.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W12", null, cpsp_workstation12, null);
 		GridBagLayout gbl_cpp_workstation12 = new GridBagLayout();
-		gbl_cpp_workstation12.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation12.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation12.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation12.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation12.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation12.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				0, 0, 30, 30, 0 };
+		gbl_cpp_workstation12.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation12.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation12.setLayout(gbl_cpp_workstation12);
 
 		JLabel label_100 = new JLabel("Arbeitsplatz");
@@ -4831,6 +5011,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_105, gbc_label_105);
 
 		cptf12_10 = new JTextField();
+		cptf12_10.setEditable(false);
 		cptf12_10.setColumns(10);
 		GridBagConstraints gbc_cptf12_10 = new GridBagConstraints();
 		gbc_cptf12_10.fill = GridBagConstraints.HORIZONTAL;
@@ -4848,6 +5029,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_107, gbc_label_107);
 
 		textField_121 = new JTextField();
+		textField_121.setEditable(false);
 		textField_121.setColumns(10);
 		GridBagConstraints gbc_textField_121 = new GridBagConstraints();
 		gbc_textField_121.fill = GridBagConstraints.HORIZONTAL;
@@ -4872,6 +5054,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_110, gbc_label_110);
 
 		cptf12_11 = new JTextField();
+		cptf12_11.setEditable(false);
 		cptf12_11.setColumns(10);
 		GridBagConstraints gbc_cptf12_11 = new GridBagConstraints();
 		gbc_cptf12_11.fill = GridBagConstraints.HORIZONTAL;
@@ -4889,6 +5072,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_111, gbc_label_111);
 
 		textField_123 = new JTextField();
+		textField_123.setEditable(false);
 		textField_123.setColumns(10);
 		GridBagConstraints gbc_textField_123 = new GridBagConstraints();
 		gbc_textField_123.fill = GridBagConstraints.HORIZONTAL;
@@ -4913,6 +5097,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_113, gbc_label_113);
 
 		cptf12_12 = new JTextField();
+		cptf12_12.setEditable(false);
 		cptf12_12.setColumns(10);
 		GridBagConstraints gbc_cptf12_12 = new GridBagConstraints();
 		gbc_cptf12_12.fill = GridBagConstraints.HORIZONTAL;
@@ -4930,6 +5115,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_114, gbc_label_114);
 
 		textField_125 = new JTextField();
+		textField_125.setEditable(false);
 		textField_125.setColumns(10);
 		GridBagConstraints gbc_textField_125 = new GridBagConstraints();
 		gbc_textField_125.fill = GridBagConstraints.HORIZONTAL;
@@ -4963,6 +5149,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_117, gbc_label_117);
 
 		cptf12_13 = new JTextField();
+		cptf12_13.setEditable(false);
 		cptf12_13.setColumns(10);
 		GridBagConstraints gbc_cptf12_13 = new GridBagConstraints();
 		gbc_cptf12_13.fill = GridBagConstraints.HORIZONTAL;
@@ -4980,6 +5167,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_118, gbc_label_118);
 
 		textField_144 = new JTextField();
+		textField_144.setEditable(false);
 		textField_144.setColumns(10);
 		GridBagConstraints gbc_textField_144 = new GridBagConstraints();
 		gbc_textField_144.fill = GridBagConstraints.HORIZONTAL;
@@ -5004,6 +5192,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_120, gbc_label_120);
 
 		cptf12_14 = new JTextField();
+		cptf12_14.setEditable(false);
 		cptf12_14.setColumns(10);
 		GridBagConstraints gbc_cptf12_14 = new GridBagConstraints();
 		gbc_cptf12_14.fill = GridBagConstraints.HORIZONTAL;
@@ -5021,6 +5210,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_121, gbc_label_121);
 
 		textField_146 = new JTextField();
+		textField_146.setEditable(false);
 		textField_146.setColumns(10);
 		GridBagConstraints gbc_textField_146 = new GridBagConstraints();
 		gbc_textField_146.fill = GridBagConstraints.HORIZONTAL;
@@ -5045,6 +5235,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_131, gbc_label_131);
 
 		cptf12_15 = new JTextField();
+		cptf12_15.setEditable(false);
 		cptf12_15.setColumns(10);
 		GridBagConstraints gbc_cptf12_15 = new GridBagConstraints();
 		gbc_cptf12_15.fill = GridBagConstraints.HORIZONTAL;
@@ -5062,6 +5253,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_134, gbc_label_134);
 
 		textField_148 = new JTextField();
+		textField_148.setEditable(false);
 		textField_148.setColumns(10);
 		GridBagConstraints gbc_textField_148 = new GridBagConstraints();
 		gbc_textField_148.fill = GridBagConstraints.HORIZONTAL;
@@ -5088,6 +5280,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_154, gbc_label_154);
 
 		textField_160 = new JTextField();
+		textField_160.setEditable(false);
 		textField_160.setColumns(10);
 		GridBagConstraints gbc_textField_160 = new GridBagConstraints();
 		gbc_textField_160.fill = GridBagConstraints.HORIZONTAL;
@@ -5105,6 +5298,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_155, gbc_label_155);
 
 		textField_161 = new JTextField();
+		textField_161.setEditable(false);
 		textField_161.setColumns(10);
 		GridBagConstraints gbc_textField_161 = new GridBagConstraints();
 		gbc_textField_161.fill = GridBagConstraints.HORIZONTAL;
@@ -5122,6 +5316,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_156, gbc_label_156);
 
 		textField_162 = new JTextField();
+		textField_162.setEditable(false);
 		textField_162.setColumns(10);
 		GridBagConstraints gbc_textField_162 = new GridBagConstraints();
 		gbc_textField_162.fill = GridBagConstraints.HORIZONTAL;
@@ -5139,6 +5334,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_157, gbc_label_157);
 
 		textField_163 = new JTextField();
+		textField_163.setEditable(false);
 		textField_163.setColumns(10);
 		GridBagConstraints gbc_textField_163 = new GridBagConstraints();
 		gbc_textField_163.fill = GridBagConstraints.HORIZONTAL;
@@ -5156,6 +5352,7 @@ public class CapacityPlanning {
 		cpp_workstation12.add(label_158, gbc_label_158);
 
 		textField_164 = new JTextField();
+		textField_164.setEditable(false);
 		textField_164.setColumns(10);
 		GridBagConstraints gbc_textField_164 = new GridBagConstraints();
 		gbc_textField_164.fill = GridBagConstraints.HORIZONTAL;
@@ -5170,12 +5367,14 @@ public class CapacityPlanning {
 		cpsp_workstation13.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		capacityplanningPane.addTab("W13", null, cpsp_workstation13, null);
 		GridBagLayout gbl_cpp_workstation13 = new GridBagLayout();
-		gbl_cpp_workstation13.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation13.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation13.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation13.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation13.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation13.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0,
+				0, 0, 30, 30, 0 };
+		gbl_cpp_workstation13.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation13.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation13.setLayout(gbl_cpp_workstation13);
 
 		JLabel label_137 = new JLabel("Arbeitsplatz");
@@ -5218,6 +5417,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_147, gbc_label_147);
 
 		cptf13_10 = new JTextField();
+		cptf13_10.setEditable(false);
 		cptf13_10.setColumns(10);
 		GridBagConstraints gbc_cptf13_10 = new GridBagConstraints();
 		gbc_cptf13_10.fill = GridBagConstraints.HORIZONTAL;
@@ -5235,6 +5435,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(lblX_33, gbc_lblX_33);
 
 		textField_155 = new JTextField();
+		textField_155.setEditable(false);
 		textField_155.setColumns(10);
 		GridBagConstraints gbc_textField_155 = new GridBagConstraints();
 		gbc_textField_155.fill = GridBagConstraints.HORIZONTAL;
@@ -5259,6 +5460,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_151, gbc_label_151);
 
 		cptf13_11 = new JTextField();
+		cptf13_11.setEditable(false);
 		cptf13_11.setColumns(10);
 		GridBagConstraints gbc_cptf13_11 = new GridBagConstraints();
 		gbc_cptf13_11.fill = GridBagConstraints.HORIZONTAL;
@@ -5276,6 +5478,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(lblX_34, gbc_lblX_34);
 
 		textField_157 = new JTextField();
+		textField_157.setEditable(false);
 		textField_157.setColumns(10);
 		GridBagConstraints gbc_textField_157 = new GridBagConstraints();
 		gbc_textField_157.fill = GridBagConstraints.HORIZONTAL;
@@ -5300,6 +5503,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_164, gbc_label_164);
 
 		cptf13_12 = new JTextField();
+		cptf13_12.setEditable(false);
 		cptf13_12.setColumns(10);
 		GridBagConstraints gbc_cptf13_12 = new GridBagConstraints();
 		gbc_cptf13_12.fill = GridBagConstraints.HORIZONTAL;
@@ -5317,6 +5521,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(lblX_35, gbc_lblX_35);
 
 		textField_159 = new JTextField();
+		textField_159.setEditable(false);
 		textField_159.setColumns(10);
 		GridBagConstraints gbc_textField_159 = new GridBagConstraints();
 		gbc_textField_159.fill = GridBagConstraints.HORIZONTAL;
@@ -5350,6 +5555,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_168, gbc_label_168);
 
 		cptf13_13 = new JTextField();
+		cptf13_13.setEditable(false);
 		cptf13_13.setColumns(10);
 		GridBagConstraints gbc_cptf13_13 = new GridBagConstraints();
 		gbc_cptf13_13.fill = GridBagConstraints.HORIZONTAL;
@@ -5367,6 +5573,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(lblX_36, gbc_lblX_36);
 
 		textField_166 = new JTextField();
+		textField_166.setEditable(false);
 		textField_166.setColumns(10);
 		GridBagConstraints gbc_textField_166 = new GridBagConstraints();
 		gbc_textField_166.fill = GridBagConstraints.HORIZONTAL;
@@ -5391,6 +5598,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_171, gbc_label_171);
 
 		cptf13_14 = new JTextField();
+		cptf13_14.setEditable(false);
 		cptf13_14.setColumns(10);
 		GridBagConstraints gbc_cptf13_14 = new GridBagConstraints();
 		gbc_cptf13_14.fill = GridBagConstraints.HORIZONTAL;
@@ -5408,6 +5616,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_172, gbc_label_172);
 
 		textField_168 = new JTextField();
+		textField_168.setEditable(false);
 		textField_168.setColumns(10);
 		GridBagConstraints gbc_textField_168 = new GridBagConstraints();
 		gbc_textField_168.fill = GridBagConstraints.HORIZONTAL;
@@ -5432,6 +5641,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_174, gbc_label_174);
 
 		cptf13_15 = new JTextField();
+		cptf13_15.setEditable(false);
 		cptf13_15.setColumns(10);
 		GridBagConstraints gbc_cptf13_15 = new GridBagConstraints();
 		gbc_cptf13_15.fill = GridBagConstraints.HORIZONTAL;
@@ -5449,6 +5659,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(lblX_37, gbc_lblX_37);
 
 		textField_170 = new JTextField();
+		textField_170.setEditable(false);
 		textField_170.setColumns(10);
 		GridBagConstraints gbc_textField_170 = new GridBagConstraints();
 		gbc_textField_170.fill = GridBagConstraints.HORIZONTAL;
@@ -5475,6 +5686,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_186, gbc_label_186);
 
 		textField_177 = new JTextField();
+		textField_177.setEditable(false);
 		textField_177.setColumns(10);
 		GridBagConstraints gbc_textField_177 = new GridBagConstraints();
 		gbc_textField_177.fill = GridBagConstraints.HORIZONTAL;
@@ -5492,6 +5704,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_187, gbc_label_187);
 
 		textField_178 = new JTextField();
+		textField_178.setEditable(false);
 		textField_178.setColumns(10);
 		GridBagConstraints gbc_textField_178 = new GridBagConstraints();
 		gbc_textField_178.fill = GridBagConstraints.HORIZONTAL;
@@ -5509,6 +5722,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_188, gbc_label_188);
 
 		textField_179 = new JTextField();
+		textField_179.setEditable(false);
 		textField_179.setColumns(10);
 		GridBagConstraints gbc_textField_179 = new GridBagConstraints();
 		gbc_textField_179.fill = GridBagConstraints.HORIZONTAL;
@@ -5526,6 +5740,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_189, gbc_label_189);
 
 		textField_180 = new JTextField();
+		textField_180.setEditable(false);
 		textField_180.setColumns(10);
 		GridBagConstraints gbc_textField_180 = new GridBagConstraints();
 		gbc_textField_180.fill = GridBagConstraints.HORIZONTAL;
@@ -5543,6 +5758,7 @@ public class CapacityPlanning {
 		cpp_workstation13.add(label_190, gbc_label_190);
 
 		textField_181 = new JTextField();
+		textField_181.setEditable(false);
 		textField_181.setColumns(10);
 		GridBagConstraints gbc_textField_181 = new GridBagConstraints();
 		gbc_textField_181.fill = GridBagConstraints.HORIZONTAL;
@@ -5554,12 +5770,13 @@ public class CapacityPlanning {
 		JPanel cpp_workstation14 = new JPanel();
 		capacityplanningPane.addTab("W14", null, cpp_workstation14, null);
 		GridBagLayout gbl_cpp_workstation14 = new GridBagLayout();
-		gbl_cpp_workstation14.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
+		gbl_cpp_workstation14.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0,
+				0 };
 		gbl_cpp_workstation14.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation14.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation14.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+		gbl_cpp_workstation14.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation14.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation14.setLayout(gbl_cpp_workstation14);
 
 		JLabel label_149 = new JLabel("Arbeitsplatz");
@@ -5601,6 +5818,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_175, gbc_label_175);
 
 		cptf14_16 = new JTextField();
+		cptf14_16.setEditable(false);
 		cptf14_16.setColumns(10);
 		GridBagConstraints gbc_cptf14_16 = new GridBagConstraints();
 		gbc_cptf14_16.fill = GridBagConstraints.HORIZONTAL;
@@ -5618,6 +5836,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_176, gbc_label_176);
 
 		textField_172 = new JTextField();
+		textField_172.setEditable(false);
 		textField_172.setColumns(10);
 		GridBagConstraints gbc_textField_172 = new GridBagConstraints();
 		gbc_textField_172.fill = GridBagConstraints.HORIZONTAL;
@@ -5644,6 +5863,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_192, gbc_label_192);
 
 		textField_184 = new JTextField();
+		textField_184.setEditable(false);
 		textField_184.setColumns(10);
 		GridBagConstraints gbc_textField_184 = new GridBagConstraints();
 		gbc_textField_184.fill = GridBagConstraints.HORIZONTAL;
@@ -5661,6 +5881,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_193, gbc_label_193);
 
 		textField_185 = new JTextField();
+		textField_185.setEditable(false);
 		textField_185.setColumns(10);
 		GridBagConstraints gbc_textField_185 = new GridBagConstraints();
 		gbc_textField_185.fill = GridBagConstraints.HORIZONTAL;
@@ -5678,6 +5899,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_194, gbc_label_194);
 
 		textField_186 = new JTextField();
+		textField_186.setEditable(false);
 		textField_186.setColumns(10);
 		GridBagConstraints gbc_textField_186 = new GridBagConstraints();
 		gbc_textField_186.fill = GridBagConstraints.HORIZONTAL;
@@ -5695,6 +5917,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_195, gbc_label_195);
 
 		textField_187 = new JTextField();
+		textField_187.setEditable(false);
 		textField_187.setColumns(10);
 		GridBagConstraints gbc_textField_187 = new GridBagConstraints();
 		gbc_textField_187.fill = GridBagConstraints.HORIZONTAL;
@@ -5712,6 +5935,7 @@ public class CapacityPlanning {
 		cpp_workstation14.add(label_196, gbc_label_196);
 
 		textField_188 = new JTextField();
+		textField_188.setEditable(false);
 		textField_188.setColumns(10);
 		GridBagConstraints gbc_textField_188 = new GridBagConstraints();
 		gbc_textField_188.fill = GridBagConstraints.HORIZONTAL;
@@ -5723,12 +5947,14 @@ public class CapacityPlanning {
 		JPanel cpp_workstation15 = new JPanel();
 		capacityplanningPane.addTab("W15", null, cpp_workstation15, null);
 		GridBagLayout gbl_cpp_workstation15 = new GridBagLayout();
-		gbl_cpp_workstation15.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
-		gbl_cpp_workstation15.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 30, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation15.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 4.9E-324, 0.0,
-				Double.MIN_VALUE };
-		gbl_cpp_workstation15.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation15.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0,
+				0 };
+		gbl_cpp_workstation15.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 30, 0, 0, 0, 0, 0, 30,
+				30, 0 };
+		gbl_cpp_workstation15.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				1.0, 4.9E-324, 0.0, Double.MIN_VALUE };
+		gbl_cpp_workstation15.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation15.setLayout(gbl_cpp_workstation15);
 
 		JLabel label_197 = new JLabel("Arbeitsplatz");
@@ -5770,6 +5996,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(lblE_26, gbc_lblE_26);
 
 		cptf15_17 = new JTextField();
+		cptf15_17.setEditable(false);
 		cptf15_17.setColumns(10);
 		GridBagConstraints gbc_cptf15_17 = new GridBagConstraints();
 		gbc_cptf15_17.fill = GridBagConstraints.HORIZONTAL;
@@ -5787,6 +6014,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_202, gbc_label_202);
 
 		textField_190 = new JTextField();
+		textField_190.setEditable(false);
 		textField_190.setColumns(10);
 		GridBagConstraints gbc_textField_190 = new GridBagConstraints();
 		gbc_textField_190.fill = GridBagConstraints.HORIZONTAL;
@@ -5819,6 +6047,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_205, gbc_label_205);
 
 		cptf15_26 = new JTextField();
+		cptf15_26.setEditable(false);
 		cptf15_26.setColumns(10);
 		GridBagConstraints gbc_cptf15_26 = new GridBagConstraints();
 		gbc_cptf15_26.fill = GridBagConstraints.HORIZONTAL;
@@ -5836,6 +6065,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_207, gbc_label_207);
 
 		textField_192 = new JTextField();
+		textField_192.setEditable(false);
 		textField_192.setColumns(10);
 		GridBagConstraints gbc_textField_192 = new GridBagConstraints();
 		gbc_textField_192.fill = GridBagConstraints.HORIZONTAL;
@@ -5862,6 +6092,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_214, gbc_label_214);
 
 		textField_197 = new JTextField();
+		textField_197.setEditable(false);
 		textField_197.setColumns(10);
 		GridBagConstraints gbc_textField_197 = new GridBagConstraints();
 		gbc_textField_197.fill = GridBagConstraints.HORIZONTAL;
@@ -5879,6 +6110,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_215, gbc_label_215);
 
 		textField_198 = new JTextField();
+		textField_198.setEditable(false);
 		textField_198.setColumns(10);
 		GridBagConstraints gbc_textField_198 = new GridBagConstraints();
 		gbc_textField_198.fill = GridBagConstraints.HORIZONTAL;
@@ -5896,6 +6128,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_216, gbc_label_216);
 
 		textField_199 = new JTextField();
+		textField_199.setEditable(false);
 		textField_199.setColumns(10);
 		GridBagConstraints gbc_textField_199 = new GridBagConstraints();
 		gbc_textField_199.fill = GridBagConstraints.HORIZONTAL;
@@ -5913,6 +6146,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_217, gbc_label_217);
 
 		textField_200 = new JTextField();
+		textField_200.setEditable(false);
 		textField_200.setColumns(10);
 		GridBagConstraints gbc_textField_200 = new GridBagConstraints();
 		gbc_textField_200.fill = GridBagConstraints.HORIZONTAL;
@@ -5930,6 +6164,7 @@ public class CapacityPlanning {
 		cpp_workstation15.add(label_218, gbc_label_218);
 
 		textField_201 = new JTextField();
+		textField_201.setEditable(false);
 		textField_201.setColumns(10);
 		GridBagConstraints gbc_textField_201 = new GridBagConstraints();
 		gbc_textField_201.fill = GridBagConstraints.HORIZONTAL;
