@@ -3,6 +3,7 @@ package util;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
@@ -130,80 +131,6 @@ public class Utility {
 
 		// Capacity Planning init
 
-		// p1
-		for (int i = 0; i <= 11; i++) {
-			int productvalue = p1Prod[i][7];
-			int productid = p1Prod[i][0];
-			for (int j = 1; j <= 15; j++) {
-				String methodName = null;
-				methodName = "getCptf" + j + "_" + productid;
-				System.out.println(methodName);
-				Method method = null;
-				try {
-					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
-				} catch (Exception e) {
-
-				}
-				if (method != null) {
-					JTextField invoke = (JTextField) method.invoke(methodName);
-					if ((productid == 16 || productid == 17 || productid == 26)) {
-
-					} else {
-						invoke.setText("" + productvalue);
-					}
-				}
-			}
-		}
-
-		// p2
-		for (int i = 0; i <= 11; i++) {
-			int productvalue = p2Prod[i][7];
-			int productid = p2Prod[i][0];
-			for (int j = 1; j <= 15; j++) {
-				String methodName = null;
-				methodName = "getCptf" + j + "_" + productid;
-				System.out.println(methodName);
-				Method method = null;
-				try {
-					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
-				} catch (Exception e) {
-
-				}
-				if (method != null) {
-					JTextField invoke = (JTextField) method.invoke(methodName);
-					if ((productid == 16 || productid == 17 || productid == 26)) {
-
-					} else {
-						invoke.setText("" + productvalue);
-					}
-				}
-			}
-		}
-
-		// p3
-		for (int i = 0; i <= 11; i++) {
-			int productvalue = p3Prod[i][7];
-			int productid = p3Prod[i][0];
-			for (int j = 1; j <= 15; j++) {
-				String methodName = null;
-				methodName = "getCptf" + j + "_" + productid;
-				System.out.println(methodName);
-				Method method = null;
-				try {
-					method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
-				} catch (Exception e) {
-
-				}
-				if (method != null) {
-					JTextField invoke = (JTextField) method.invoke(methodName);
-					if ((productid == 16 || productid == 17 || productid == 26)) {
-					} else {
-						invoke.setText("" + productvalue);
-					}
-				}
-			}
-		}
-
 		// 16 17 26
 		int e16 = p3Prod[3][7] + p2Prod[3][7] + p1Prod[3][7];
 		int e17 = p3Prod[4][7] + p2Prod[4][7] + p1Prod[4][7];
@@ -214,6 +141,65 @@ public class Utility {
 		CapacityPlanning.getCptf7_26().setText("" + e26);
 		CapacityPlanning.getCptf15_26().setText("" + e26);
 
+		// p1 p2 p3
+		for (int i = 0; i <= 11; i++) {
+			int productvalue3 = p3Prod[i][7];
+			int productid3 = p3Prod[i][0];
+			int productvalue2 = p2Prod[i][7];
+			int productid2 = p2Prod[i][0];
+			int productvalue1 = p1Prod[i][7];
+			int productid1 = p1Prod[i][0];
+			capacityFill(productvalue1, productid1);
+			capacityFill(productvalue2, productid2);
+			capacityFill(productvalue3, productid3);
+		}
+	}
+
+	private static void capacityFill(int productValue, int productId)
+			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+
+		for (int j = 1; j <= 15; j++) {
+			String methodName = "getCptf" + j + "_" + productId;
+			String methodNameMult = "getCpl" + j + "_" + productId;
+			String methodNameResult = "getCptfr" + j + "_" + productId;
+			Method method = null;
+			Method methodMult = null;
+			Method methodResult = null;
+			int sharedValue = 0;
+			int mult = 0;
+			try {
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				methodMult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameMult);
+				methodResult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameResult);
+			} catch (Exception e) {
+
+			}
+			if (method != null) {
+				JTextField invoke = (JTextField) method.invoke(methodName);
+				if ((productId == 16 || productId == 17 || productId == 26)) {
+					sharedValue = Integer.parseInt(invoke.getText());
+				} else {
+					invoke.setText("" + productValue);
+				}
+			}
+
+			if (methodMult != null) {
+				JLabel invoke = (JLabel) methodMult.invoke(methodNameMult);
+
+				mult = Integer.parseInt(invoke.getText().replaceAll("\\D", ""));
+			}
+
+			if (methodResult != null) {
+				JTextField invoke = (JTextField) methodResult.invoke(methodNameResult);
+				if ((productId == 16 || productId == 17 || productId == 26)) {
+					invoke.setText("" + sharedValue * mult);
+				} else {
+					invoke.setText("" + productValue * mult);
+
+				}
+
+			}
+		}
 	}
 
 }
