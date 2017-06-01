@@ -153,6 +153,93 @@ public class Utility {
 			capacityFill(productvalue2, productid2);
 			capacityFill(productvalue3, productid3);
 		}
+
+		for (int j = 1; j <= 15; j++) {
+			String methodNameK = "getCptf" + j + "_k";
+			String methodNameR = "getCptf" + j + "_r";
+			String methodNameT = "getCptf" + j + "_t";
+			String methodNameA = "getCptf" + j + "_a";
+			String methodNameU = "getCptf" + j + "_u";
+			Method methodK = null;
+			Method methodR = null;
+			Method methodT = null;
+			Method methodA = null;
+			Method methodU = null;
+			try {
+				methodK = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameK);
+				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
+				methodT = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameT);
+				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
+			} catch (Exception e) {
+
+			}
+			if (methodK != null && methodR != null && methodT != null && methodU != null) {
+				JTextField invokeK = (JTextField) methodK.invoke(methodNameK);
+				JTextField invokeR = (JTextField) methodR.invoke(methodNameR);
+				JTextField invokeT = (JTextField) methodT.invoke(methodNameT);
+				JTextField invokeA = (JTextField) methodA.invoke(methodNameA);
+				JTextField invokeU = (JTextField) methodU.invoke(methodNameU);
+				int capacity = getCapacityOfWorkstation(j);
+				int setuptime = getSetupTimeOfWorkstation(j);
+				int totalcapacity = capacity + setuptime;
+				int workload = totalcapacity * 100 / 2400;
+				int overtime = (totalcapacity - 2400) > 0 ? totalcapacity - 2400 : 0;
+				invokeK.setText("" + capacity);
+				invokeR.setText("" + setuptime);
+				invokeT.setText("" + totalcapacity);
+				invokeA.setText("" + workload);
+				invokeU.setText("" + overtime);
+
+			}
+		}
+
+	}
+
+	private static int getCapacityOfWorkstation(int workstation)
+			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		int capacity = 0;
+		for (int i = 1; i <= 56; i++) {
+			String methodName = "getCptfr" + workstation + "_" + i;
+			Method method = null;
+
+			try {
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+			} catch (Exception e) {
+
+			}
+			if (method != null) {
+				JTextField invoke = (JTextField) method.invoke(methodName);
+				capacity += Integer.parseInt(invoke.getText());
+				System.out.println(capacity);
+			}
+		}
+		return capacity;
+	}
+
+	private static int getSetupTimeOfWorkstation(int workstation)
+			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		int setuptime = 0;
+		for (int i = 1; i <= 56; i++) {
+			String methodName = "getCptfr" + workstation + "_" + i;
+			Method method = null;
+			int value = 0;
+
+			try {
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+			} catch (Exception e) {
+
+			}
+			if (method != null) {
+				JTextField invoke = (JTextField) method.invoke(methodName);
+				value = Integer.parseInt(invoke.getText());
+				if (value > 0) {
+					setuptime += Main.setuptime[workstation];
+				}
+
+			}
+		}
+		return setuptime;
 	}
 
 	private static void capacityFill(int productValue, int productId)
