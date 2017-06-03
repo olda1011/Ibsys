@@ -134,8 +134,8 @@ public class IbsysGUI {
 		mnView.add(closeApp);
 
 		try {
-			BufferedImage buttonIcon = ImageIO
-					.read(new File("C://Users//dolsson//workspace2//IbsysTool//src//german.png"));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblgerman = new JLabel(imageIcon);
 			menuBar.add(lblgerman);
@@ -148,8 +148,8 @@ public class IbsysGUI {
 		}
 
 		try {
-			BufferedImage buttonIcon = ImageIO
-					.read(new File("C://Users//dolsson//workspace2//IbsysTool//src//english.png"));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblEnglish = new JLabel(imageIcon);
 			menuBar.add(lblEnglish);
