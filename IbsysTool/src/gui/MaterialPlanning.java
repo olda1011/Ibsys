@@ -940,6 +940,8 @@ public class MaterialPlanning {
 	private static JTextField tf3_0512;
 	private static JTextField tf3_0612;
 	private static JTextField tf3_0712;
+	public static JLabel l1_salesorder;
+	public static JLabel l1_followingperiod;
 
 	public MaterialPlanning() {
 		// TODO Auto-generated constructor stub
@@ -973,14 +975,14 @@ public class MaterialPlanning {
 		gbc_l1_warehousestock.gridy = 1;
 		p1_panel.add(l1_warehousestock, gbc_l1_warehousestock);
 
-		JLabel l1_salesorder = new JLabel("Sales Orders");
+		l1_salesorder = new JLabel("Sales Orders");
 		GridBagConstraints gbc_l1_salesorder = new GridBagConstraints();
 		gbc_l1_salesorder.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_salesorder.gridx = 2;
 		gbc_l1_salesorder.gridy = 2;
 		p1_panel.add(l1_salesorder, gbc_l1_salesorder);
 
-		JLabel l1_followingperiod = new JLabel("following period");
+		l1_followingperiod = new JLabel("following period");
 		GridBagConstraints gbc_l1_followingperiod = new GridBagConstraints();
 		gbc_l1_followingperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_followingperiod.gridx = 6;
