@@ -8,7 +8,6 @@ import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JViewport;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -35,34 +34,27 @@ public class PurchasePlanning {
 		purchasePlanningPanel = new JPanel();
 		purchasePlanningPanel.setLayout(new BorderLayout(0, 0));
 		table = new JTable(new DefaultTableModel(new Object[][] {
-				{ "K21", null, null, null, null, null }, { "K22", null, null, null, null, null },
-				{ "K23", null, null, null, null, null }, { "K24", null, null, null, null, null },
-				{ "K25", null, null, null, null, null }, { "K27", null, null, null, null, null },
-				{ "K28", null, null, null, null, null }, { "K32", null, null, null, null, null },
-				{ "K33", null, null, null, null, null }, { "K34", null, null, null, null, null },
-				{ "K35", null, null, null, null, null }, { "K36", null, null, null, null, null },
-				{ "K37", null, null, null, null, null }, { "K38", null, null, null, null, null },
-				{ "K39", null, null, null, null, null }, { "K40", null, null, null, null, null },
-				{ "K41", null, null, null, null, null }, { "K42", null, null, null, null, null },
-				{ "K43", null, null, null, null, null }, { "K44", null, null, null, null, null },
-				{ "K45", null, null, null, null, null }, { "K46", null, null, null, null, null },
-				{ "K47", null, null, null, null, null }, { "K48", null, null, null, null, null },
-				{ "K52", null, null, null, null, null }, { "K53", null, null, null, null, null },
-				{ "K57", null, null, null, null, null }, { "K58", null, null, null, null, null },
-				{ "K59", null, null, null, null, null }, },
-				new String[] { "Kaufteile", "Lager", "Bedarf N", "Bedarf N+1", "Bedarf N+2",
-						"Bedarf N+3" }));
+				{ "21", null, null, null, null, null }, { "22", null, null, null, null, null },
+				{ "23", null, null, null, null, null }, { "24", null, null, null, null, null },
+				{ "25", null, null, null, null, null }, { "27", null, null, null, null, null },
+				{ "28", null, null, null, null, null }, { "32", null, null, null, null, null },
+				{ "33", null, null, null, null, null }, { "34", null, null, null, null, null },
+				{ "35", null, null, null, null, null }, { "36", null, null, null, null, null },
+				{ "37", null, null, null, null, null }, { "38", null, null, null, null, null },
+				{ "39", null, null, null, null, null }, { "40", null, null, null, null, null },
+				{ "41", null, null, null, null, null }, { "42", null, null, null, null, null },
+				{ "43", null, null, null, null, null }, { "44", null, null, null, null, null },
+				{ "45", null, null, null, null, null }, { "46", null, null, null, null, null },
+				{ "47", null, null, null, null, null }, { "48", null, null, null, null, null },
+				{ "52", null, null, null, null, null }, { "53", null, null, null, null, null },
+				{ "57", null, null, null, null, null }, { "58", null, null, null, null, null },
+				{ "59", null, null, null, null, null }, },
+				new String[] { "Purchaseitems", "Inventory", "Needed in N", "Needed in N+1",
+						"Needed in N+2", "Needed in N+3" }));
 
 		table.setDefaultRenderer(Object.class, new CellRenderer());
 
 		purchasePlanningPanel.add(new JScrollPane(table));
-
-		JScrollPane component = (JScrollPane) purchasePlanningPanel.getComponent(0);
-		JViewport component2 = (JViewport) component.getComponent(0);
-		JTable table = (JTable) component2.getComponent(0);
-		table.getColumnModel()
-				.getColumn(0)
-				.setHeaderValue("Test");
 
 		return purchasePlanningPanel;
 	}
