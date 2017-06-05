@@ -224,7 +224,6 @@ public class IbsysGUI {
 
 						File selectedFile = chooser.getSelectedFile();
 						String path = selectedFile.getPath();
-						char charAt = path.charAt((path.length() - 4));
 						if (path.charAt((path.length() - 4)) == '.'
 								&& path.charAt((path.length() - 3)) == 'x'
 								&& path.charAt((path.length() - 2)) == 'm'

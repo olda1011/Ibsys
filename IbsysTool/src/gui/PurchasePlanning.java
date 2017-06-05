@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JViewport;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -17,6 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class PurchasePlanning {
 	public static JTable table;
+	public static JPanel purchasePlanningPanel;
 
 	/**
 	 * 
@@ -30,7 +32,7 @@ public class PurchasePlanning {
 	 */
 	public JPanel purchasePlanning() {
 
-		JPanel purchasePlanningPanel = new JPanel();
+		purchasePlanningPanel = new JPanel();
 		purchasePlanningPanel.setLayout(new BorderLayout(0, 0));
 		table = new JTable(new DefaultTableModel(new Object[][] {
 				{ "K21", null, null, null, null, null }, { "K22", null, null, null, null, null },
@@ -54,6 +56,13 @@ public class PurchasePlanning {
 		table.setDefaultRenderer(Object.class, new CellRenderer());
 
 		purchasePlanningPanel.add(new JScrollPane(table));
+
+		JScrollPane component = (JScrollPane) purchasePlanningPanel.getComponent(0);
+		JViewport component2 = (JViewport) component.getComponent(0);
+		JTable table = (JTable) component2.getComponent(0);
+		table.getColumnModel()
+				.getColumn(0)
+				.setHeaderValue("Test");
 
 		return purchasePlanningPanel;
 	}
