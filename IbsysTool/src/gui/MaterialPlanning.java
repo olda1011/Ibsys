@@ -942,6 +942,25 @@ public class MaterialPlanning {
 	private static JTextField tf3_0712;
 	public static JLabel l1_salesorder;
 	public static JLabel l1_followingperiod;
+	public static JLabel l1_passedperiod;
+	public static JLabel l1_waitingqueue;
+	public static JLabel l1_workinprogress;
+	public static JLabel l1_productionorders;
+	public static JLabel l1_warehousestock;
+	public static JLabel l3_warehousestock;
+	public static JLabel l3_salesorders;
+	public static JLabel l3_followingperiod;
+	public static JLabel l3_passedperiod;
+	public static JLabel l3_waitingqueue;
+	public static JLabel l3_workinprogress;
+	public static JLabel l3_productionorders;
+	public static JLabel l2_warehousestock;
+	public static JLabel l2_salesorders;
+	public static JLabel l2_follwingperiod;
+	public static JLabel l2_passedperiod;
+	public static JLabel l2_waitingqueue;
+	public static JLabel l2_workinprogress;
+	public static JLabel l2_productionorders;
 
 	public MaterialPlanning() {
 		// TODO Auto-generated constructor stub
@@ -967,7 +986,7 @@ public class MaterialPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		p1_panel.setLayout(gbl_p1_panel);
 
-		JLabel l1_warehousestock = new JLabel("Warehouse stock");
+		l1_warehousestock = new JLabel("Warehouse stock");
 		GridBagConstraints gbc_l1_warehousestock = new GridBagConstraints();
 		gbc_l1_warehousestock.gridwidth = 3;
 		gbc_l1_warehousestock.insets = new Insets(0, 0, 5, 5);
@@ -989,28 +1008,28 @@ public class MaterialPlanning {
 		gbc_l1_followingperiod.gridy = 2;
 		p1_panel.add(l1_followingperiod, gbc_l1_followingperiod);
 
-		JLabel l1_passedperiod = new JLabel("passed period");
+		l1_passedperiod = new JLabel("passed period");
 		GridBagConstraints gbc_l1_passedperiod = new GridBagConstraints();
 		gbc_l1_passedperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_passedperiod.gridx = 8;
 		gbc_l1_passedperiod.gridy = 2;
 		p1_panel.add(l1_passedperiod, gbc_l1_passedperiod);
 
-		JLabel l1_waitingqueue = new JLabel("Waiting queue");
+		l1_waitingqueue = new JLabel("Waiting queue");
 		GridBagConstraints gbc_l1_waitingqueue = new GridBagConstraints();
 		gbc_l1_waitingqueue.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_waitingqueue.gridx = 10;
 		gbc_l1_waitingqueue.gridy = 2;
 		p1_panel.add(l1_waitingqueue, gbc_l1_waitingqueue);
 
-		JLabel l1_workinprogress = new JLabel("Work in progress");
+		l1_workinprogress = new JLabel("Work in progress");
 		GridBagConstraints gbc_l1_workinprogress = new GridBagConstraints();
 		gbc_l1_workinprogress.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_workinprogress.gridx = 12;
 		gbc_l1_workinprogress.gridy = 2;
 		p1_panel.add(l1_workinprogress, gbc_l1_workinprogress);
 
-		JLabel l1_productionorders = new JLabel("Production orders");
+		l1_productionorders = new JLabel("Production orders");
 		GridBagConstraints gbc_l1_productionorders = new GridBagConstraints();
 		gbc_l1_productionorders.insets = new Insets(0, 0, 5, 5);
 		gbc_l1_productionorders.gridx = 14;
@@ -2576,7 +2595,7 @@ public class MaterialPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		p2_panel.setLayout(gbl_p2_panel);
 
-		JLabel l2_warehousestock = new JLabel("Warehouse stock");
+		l2_warehousestock = new JLabel("Warehouse stock");
 		GridBagConstraints gbc_l2_warehousestock = new GridBagConstraints();
 		gbc_l2_warehousestock.gridwidth = 3;
 		gbc_l2_warehousestock.insets = new Insets(0, 0, 5, 5);
@@ -2584,42 +2603,42 @@ public class MaterialPlanning {
 		gbc_l2_warehousestock.gridy = 1;
 		p2_panel.add(l2_warehousestock, gbc_l2_warehousestock);
 
-		JLabel l2_salesorders = new JLabel("Sales Orders");
+		l2_salesorders = new JLabel("Sales Orders");
 		GridBagConstraints gbc_l2_salesorders = new GridBagConstraints();
 		gbc_l2_salesorders.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_salesorders.gridx = 2;
 		gbc_l2_salesorders.gridy = 2;
 		p2_panel.add(l2_salesorders, gbc_l2_salesorders);
 
-		JLabel l2_follwingperiod = new JLabel("following period");
+		l2_follwingperiod = new JLabel("following period");
 		GridBagConstraints gbc_l2_follwingperiod = new GridBagConstraints();
 		gbc_l2_follwingperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_follwingperiod.gridx = 6;
 		gbc_l2_follwingperiod.gridy = 2;
 		p2_panel.add(l2_follwingperiod, gbc_l2_follwingperiod);
 
-		JLabel l2_passedperiod = new JLabel("passed period");
+		l2_passedperiod = new JLabel("passed period");
 		GridBagConstraints gbc_l2_passedperiod = new GridBagConstraints();
 		gbc_l2_passedperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_passedperiod.gridx = 8;
 		gbc_l2_passedperiod.gridy = 2;
 		p2_panel.add(l2_passedperiod, gbc_l2_passedperiod);
 
-		JLabel l2_waitingqueue = new JLabel("Waiting queue");
+		l2_waitingqueue = new JLabel("Waiting queue");
 		GridBagConstraints gbc_l2_waitingqueue = new GridBagConstraints();
 		gbc_l2_waitingqueue.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_waitingqueue.gridx = 10;
 		gbc_l2_waitingqueue.gridy = 2;
 		p2_panel.add(l2_waitingqueue, gbc_l2_waitingqueue);
 
-		JLabel l2_workinprogress = new JLabel("Work in progress");
+		l2_workinprogress = new JLabel("Work in progress");
 		GridBagConstraints gbc_l2_workinprogress = new GridBagConstraints();
 		gbc_l2_workinprogress.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_workinprogress.gridx = 12;
 		gbc_l2_workinprogress.gridy = 2;
 		p2_panel.add(l2_workinprogress, gbc_l2_workinprogress);
 
-		JLabel l2_productionorders = new JLabel("Production orders");
+		l2_productionorders = new JLabel("Production orders");
 		GridBagConstraints gbc_l2_productionorders = new GridBagConstraints();
 		gbc_l2_productionorders.insets = new Insets(0, 0, 5, 5);
 		gbc_l2_productionorders.gridx = 14;
@@ -4186,7 +4205,7 @@ public class MaterialPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		p3_panel.setLayout(gbl_p3_panel);
 
-		JLabel l3_warehousestock = new JLabel("Warehouse stock");
+		l3_warehousestock = new JLabel("Warehouse stock");
 		GridBagConstraints gbc_l3_warehousestock = new GridBagConstraints();
 		gbc_l3_warehousestock.gridwidth = 3;
 		gbc_l3_warehousestock.insets = new Insets(0, 0, 5, 5);
@@ -4194,42 +4213,42 @@ public class MaterialPlanning {
 		gbc_l3_warehousestock.gridy = 1;
 		p3_panel.add(l3_warehousestock, gbc_l3_warehousestock);
 
-		JLabel l3_salesorders = new JLabel("Sales Orders");
+		l3_salesorders = new JLabel("Sales Orders");
 		GridBagConstraints gbc_l3_salesorders = new GridBagConstraints();
 		gbc_l3_salesorders.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_salesorders.gridx = 2;
 		gbc_l3_salesorders.gridy = 2;
 		p3_panel.add(l3_salesorders, gbc_l3_salesorders);
 
-		JLabel l3_followingperiod = new JLabel("following period");
+		l3_followingperiod = new JLabel("following period");
 		GridBagConstraints gbc_l3_followingperiod = new GridBagConstraints();
 		gbc_l3_followingperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_followingperiod.gridx = 6;
 		gbc_l3_followingperiod.gridy = 2;
 		p3_panel.add(l3_followingperiod, gbc_l3_followingperiod);
 
-		JLabel l3_passedperiod = new JLabel("passed period");
+		l3_passedperiod = new JLabel("passed period");
 		GridBagConstraints gbc_l3_passedperiod = new GridBagConstraints();
 		gbc_l3_passedperiod.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_passedperiod.gridx = 8;
 		gbc_l3_passedperiod.gridy = 2;
 		p3_panel.add(l3_passedperiod, gbc_l3_passedperiod);
 
-		JLabel l3_waitingqueue = new JLabel("Waiting queue");
+		l3_waitingqueue = new JLabel("Waiting queue");
 		GridBagConstraints gbc_l3_waitingqueue = new GridBagConstraints();
 		gbc_l3_waitingqueue.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_waitingqueue.gridx = 10;
 		gbc_l3_waitingqueue.gridy = 2;
 		p3_panel.add(l3_waitingqueue, gbc_l3_waitingqueue);
 
-		JLabel l3_workinprogress = new JLabel("Work in progress");
+		l3_workinprogress = new JLabel("Work in progress");
 		GridBagConstraints gbc_l3_workinprogress = new GridBagConstraints();
 		gbc_l3_workinprogress.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_workinprogress.gridx = 12;
 		gbc_l3_workinprogress.gridy = 2;
 		p3_panel.add(l3_workinprogress, gbc_l3_workinprogress);
 
-		JLabel l3_productionorders = new JLabel("Production orders");
+		l3_productionorders = new JLabel("Production orders");
 		GridBagConstraints gbc_l3_productionorders = new GridBagConstraints();
 		gbc_l3_productionorders.insets = new Insets(0, 0, 5, 5);
 		gbc_l3_productionorders.gridx = 14;
