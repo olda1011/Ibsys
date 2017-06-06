@@ -1182,6 +1182,188 @@ public class CapacityPlanning {
 	private static JLabel cpl6_20;
 	private static JLabel cpl7_20;
 	private static JLabel cpl8_20;
+	public static JLabel cpl1_workstation;
+	public static JLabel cpl1_frontwheelcomplete;
+	public static JLabel cpl1_capacityrequirements;
+	public static JLabel cpl1_setuptime;
+	public static JLabel cpl1_totalcapacity;
+	public static JLabel cpl1_workload;
+	public static JLabel cpl1_overtime;
+	public static JLabel cpl2_workstation;
+	public static JLabel cpl2_frameandwheels;
+	public static JLabel cpl2_capacityrequirements;
+	public static JLabel cpl2_setuptime;
+	public static JLabel cpl2_totalcapacity;
+	public static JLabel cpl2_workload;
+	public static JLabel cpl2_overtime;
+	public static JLabel cpl3_workstation;
+	public static JLabel cpl3_bicyclewithoutpedal;
+	public static JLabel cpl3_capacityrequirements;
+	public static JLabel cpl3_setuptime;
+	public static JLabel cpl3_totalcapacity;
+	public static JLabel cpl3_workload;
+	public static JLabel cpl3_overtime;
+	public static JLabel cpl4_workstation;
+	public static JLabel cpl4_bicyclecomplete;
+	public static JLabel cpl4_setuptime;
+	public static JLabel cpl4_totalcapacity;
+	public static JLabel cpl4_workload;
+	public static JLabel cpl4_overtime;
+	public static JLabel lblLenker;
+	public static JLabel lblKdh;
+	public static JLabel cpl6_capacityrequirements;
+	public static JLabel cpl6_setuptime;
+	public static JLabel cpl6_workload;
+	public static JLabel cpl6_overtime;
+	public static JLabel lblSchutzblechHinten;
+	public static JLabel lblSchutzblechVorne;
+	public static JLabel lblRahmen;
+	public static JLabel lblPedale;
+	public static JLabel lblKdh_1;
+	public static JLabel cpl7_capacityrequirements;
+	public static JLabel cpl7_setuptime;
+	public static JLabel cpl7_totalcapacity;
+	public static JLabel cpl7_workload;
+	public static JLabel cpl7_overtime;
+	public static JLabel cpl1_c;
+	public static JLabel cpl1_l;
+	public static JLabel cpl1_m;
+	public static JLabel cpl2_c;
+	public static JLabel cpl2_l;
+	public static JLabel cpl2_m;
+	public static JLabel cpl3_c;
+	public static JLabel cpl3_l;
+	public static JLabel cpl3_m;
+	public static JLabel cpl4_l;
+	public static JLabel cpl4_m;
+	public static JLabel cpl4_capacityrequirements;
+	public static JLabel label;
+	public static JLabel label_9;
+	public static JLabel cpl6_totalcapacity;
+	public static JLabel label_4;
+	public static JLabel lblK;
+	public static JLabel lblD;
+	public static JLabel lblH;
+	public static JLabel label_18;
+	public static JLabel label_21;
+	public static JLabel label_24;
+	public static JLabel label_20;
+	public static JLabel label_22;
+	public static JLabel label_23;
+	public static JLabel label_26;
+	public static JLabel label_33;
+	public static JLabel label_34;
+	public static JLabel label_37;
+	public static JLabel label_40;
+	public static JLabel label_43;
+	public static JLabel label_44;
+	public static JLabel label_47;
+	public static JLabel label_57;
+	public static JLabel label_60;
+	public static JLabel cpl8_capacityrequirements;
+	public static JLabel cpl8_setuptime;
+	public static JLabel cpl8_totalcapacity;
+	public static JLabel cpl8_workload;
+	public static JLabel cpl8_overtime;
+	public static JLabel label_10;
+	public static JLabel label_19;
+	public static JLabel label_25;
+	public static JLabel label_56;
+	public static JLabel label_63;
+	public static JLabel label_66;
+	public static JLabel label_73;
+	public static JLabel label_77;
+	public static JLabel label_80;
+	public static JLabel label_83;
+	public static JLabel label_84;
+	public static JLabel label_87;
+	public static JLabel label_91;
+	public static JLabel cpl9_capacityrequirements;
+	public static JLabel cpl9_setuptime;
+	public static JLabel cpl9_totalcapacity;
+	public static JLabel cpl9_workload;
+	public static JLabel cpl9_overtime;
+	public static JLabel label_46;
+	public static JLabel lblHinterrad;
+	public static JLabel label_76;
+	public static JLabel label_86;
+	public static JLabel label_99;
+	public static JLabel lblVorderrad;
+	public static JLabel label_103;
+	public static JLabel label_106;
+	public static JLabel cpl10_capacityrequirements;
+	public static JLabel cpl10_setuptime;
+	public static JLabel cpl10_totalcapacity;
+	public static JLabel cpl10_workload;
+	public static JLabel cpl10_overtime;
+	public static JLabel label_127;
+	public static JLabel lblHinterrad_1;
+	public static JLabel label_130;
+	public static JLabel label_133;
+	public static JLabel label_136;
+	public static JLabel lblVorderrad_1;
+	public static JLabel label_140;
+	public static JLabel label_143;
+	public static JLabel label_146;
+	public static JLabel cpl11_capacityrequirements;
+	public static JLabel cpl11_setuptime;
+	public static JLabel cpl11_totalcapacity;
+	public static JLabel   cpl11_workload;
+	public static JLabel cpl11_overtime;
+	public static JLabel label_100;
+	public static JLabel label_102;
+	public static JLabel label_104;
+	public static JLabel label_108;
+	public static JLabel label_112;
+	public static JLabel label_115;
+	public static JLabel label_116;
+	public static JLabel label_119;
+	public static JLabel label_129;
+	public static JLabel label_154;
+	public static JLabel label_155;
+	public static JLabel label_156;
+	public static JLabel label_157;
+	public static JLabel label_158;
+	public static JLabel label_137;
+	public static JLabel label_141;
+	public static JLabel label_144;
+	public static JLabel label_150;
+	public static JLabel label_153;
+	public static JLabel label_166;
+	public static JLabel label_167;
+	public static JLabel label_170;
+	public static JLabel label_173;
+	public static JLabel label_186;
+	public static JLabel label_187;
+	public static JLabel label_188;
+	public static JLabel label_189;
+	public static JLabel label_190;
+	public static JLabel label_149;
+	public static JLabel label_165;
+	public static JLabel label_169;
+	public static JLabel label_192;
+	public static JLabel label_193;
+	public static JLabel label_194;
+	public static JLabel label_195;
+	public static JLabel label_196;
+	public static JLabel label_197;
+	public static JLabel label_199;
+	public static JLabel label_200;
+	public static JLabel label_203;
+	public static JLabel label_204;
+	public static JLabel label_214;
+	public static JLabel label_215;
+	public static JLabel label_216;
+	public static JLabel label_217;
+	public static JLabel label_218;
+	public static JLabel cpl4_c;
+	public static JLabel label_2;
+	public static JLabel label_3;
+	public static JLabel label_6;
+	public static JLabel label_50;
+	public static JLabel label_53;
+	public static JLabel label_54;
+	public static JLabel label_109;
 
 	public static JTextField getCptfr1_49() {
 		return cptfr1_49;
@@ -3186,7 +3368,7 @@ public class CapacityPlanning {
 				Double.MIN_VALUE };
 		cpp_workstation1.setLayout(gbl_cpp_workstation1);
 
-		JLabel cpl1_workstation = new JLabel("Arbeitsplatz");
+		cpl1_workstation = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_cpl1_workstation = new GridBagConstraints();
 		gbc_cpl1_workstation.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_workstation.insets = new Insets(0, 0, 5, 5);
@@ -3201,7 +3383,7 @@ public class CapacityPlanning {
 		gbc_lblNewLabel_13.gridy = 1;
 		cpp_workstation1.add(lblNewLabel_13, gbc_lblNewLabel_13);
 
-		JLabel cpl1_frontwheelcomplete = new JLabel("Vorderrad Komplett");
+		cpl1_frontwheelcomplete = new JLabel("Vorderrad Komplett");
 		GridBagConstraints gbc_cpl1_frontwheelcomplete = new GridBagConstraints();
 		gbc_cpl1_frontwheelcomplete.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_frontwheelcomplete.gridheight = 3;
@@ -3210,7 +3392,7 @@ public class CapacityPlanning {
 		gbc_cpl1_frontwheelcomplete.gridy = 3;
 		cpp_workstation1.add(cpl1_frontwheelcomplete, gbc_cpl1_frontwheelcomplete);
 
-		JLabel cpl1_c = new JLabel("K");
+		cpl1_c = new JLabel("K");
 		GridBagConstraints gbc_cpl1_c = new GridBagConstraints();
 		gbc_cpl1_c.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl1_c.gridx = 3;
@@ -3253,7 +3435,7 @@ public class CapacityPlanning {
 		gbc_cptfr1_49.gridy = 3;
 		cpp_workstation1.add(cptfr1_49, gbc_cptfr1_49);
 
-		JLabel cpl1_l = new JLabel("D");
+		cpl1_l = new JLabel("D");
 		GridBagConstraints gbc_cpl1_l = new GridBagConstraints();
 		gbc_cpl1_l.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl1_l.gridx = 3;
@@ -3296,7 +3478,7 @@ public class CapacityPlanning {
 		gbc_cptfr1_54.gridy = 4;
 		cpp_workstation1.add(cptfr1_54, gbc_cptfr1_54);
 
-		JLabel cpl1_m = new JLabel("H");
+		cpl1_m = new JLabel("H");
 		GridBagConstraints gbc_cpl1_m = new GridBagConstraints();
 		gbc_cpl1_m.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl1_m.gridx = 3;
@@ -3348,7 +3530,7 @@ public class CapacityPlanning {
 		gbc_separator_1.gridy = 6;
 		cpp_workstation1.add(separator_1, gbc_separator_1);
 
-		JLabel cpl1_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl1_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl1_capacityrequirements = new GridBagConstraints();
 		gbc_cpl1_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -3366,7 +3548,7 @@ public class CapacityPlanning {
 		gbc_cptf1_k.gridy = 7;
 		cpp_workstation1.add(cptf1_k, gbc_cptf1_k);
 
-		JLabel cpl1_setuptime = new JLabel("R\u00FCstzeit");
+		cpl1_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl1_setuptime = new GridBagConstraints();
 		gbc_cpl1_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -3384,7 +3566,7 @@ public class CapacityPlanning {
 		gbc_cptf1_r.gridy = 8;
 		cpp_workstation1.add(cptf1_r, gbc_cptf1_r);
 
-		JLabel cpl1_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl1_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl1_totalcapacity = new GridBagConstraints();
 		gbc_cpl1_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -3402,7 +3584,7 @@ public class CapacityPlanning {
 		gbc_cptf1_t.gridy = 9;
 		cpp_workstation1.add(cptf1_t, gbc_cptf1_t);
 
-		JLabel cpl1_workload = new JLabel("Auslastung %");
+		cpl1_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl1_workload = new GridBagConstraints();
 		gbc_cpl1_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_workload.insets = new Insets(0, 0, 5, 5);
@@ -3420,7 +3602,7 @@ public class CapacityPlanning {
 		gbc_cptf1_a.gridy = 10;
 		cpp_workstation1.add(cptf1_a, gbc_cptf1_a);
 
-		JLabel cpl1_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl1_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl1_overtime = new GridBagConstraints();
 		gbc_cpl1_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_overtime.insets = new Insets(0, 0, 5, 5);
@@ -3449,7 +3631,7 @@ public class CapacityPlanning {
 				Double.MIN_VALUE };
 		cpp_workstation2.setLayout(gbl_cpp_workstation2);
 
-		JLabel cpl2_workstation = new JLabel("Arbeitsplatz");
+		cpl2_workstation = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_cpl2_workstation = new GridBagConstraints();
 		gbc_cpl2_workstation.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_workstation.insets = new Insets(0, 0, 5, 5);
@@ -3464,7 +3646,7 @@ public class CapacityPlanning {
 		gbc_label_253.gridy = 1;
 		cpp_workstation2.add(label_253, gbc_label_253);
 
-		JLabel cpl2_frameandwheels = new JLabel("Rahmen und R\u00E4der");
+		cpl2_frameandwheels = new JLabel("Rahmen und R\u00E4der");
 		GridBagConstraints gbc_cpl2_frameandwheels = new GridBagConstraints();
 		gbc_cpl2_frameandwheels.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_frameandwheels.gridheight = 3;
@@ -3473,7 +3655,7 @@ public class CapacityPlanning {
 		gbc_cpl2_frameandwheels.gridy = 3;
 		cpp_workstation2.add(cpl2_frameandwheels, gbc_cpl2_frameandwheels);
 
-		JLabel cpl2_c = new JLabel("K");
+		cpl2_c = new JLabel("K");
 		GridBagConstraints gbc_cpl2_c = new GridBagConstraints();
 		gbc_cpl2_c.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl2_c.gridx = 3;
@@ -3516,7 +3698,7 @@ public class CapacityPlanning {
 		gbc_cptfr2_50.gridy = 3;
 		cpp_workstation2.add(cptfr2_50, gbc_cptfr2_50);
 
-		JLabel cpl2_l = new JLabel("D");
+		cpl2_l = new JLabel("D");
 		GridBagConstraints gbc_cpl2_l = new GridBagConstraints();
 		gbc_cpl2_l.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl2_l.gridx = 3;
@@ -3559,7 +3741,7 @@ public class CapacityPlanning {
 		gbc_cptfr2_55.gridy = 4;
 		cpp_workstation2.add(cptfr2_55, gbc_cptfr2_55);
 
-		JLabel cpl2_m = new JLabel("H");
+		cpl2_m = new JLabel("H");
 		GridBagConstraints gbc_cpl2_m = new GridBagConstraints();
 		gbc_cpl2_m.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl2_m.gridx = 3;
@@ -3611,7 +3793,7 @@ public class CapacityPlanning {
 		gbc_separator_2.gridy = 6;
 		cpp_workstation2.add(separator_2, gbc_separator_2);
 
-		JLabel cpl2_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl2_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl2_capacityrequirements = new GridBagConstraints();
 		gbc_cpl2_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -3629,7 +3811,7 @@ public class CapacityPlanning {
 		gbc_cptf2_k.gridy = 7;
 		cpp_workstation2.add(cptf2_k, gbc_cptf2_k);
 
-		JLabel cpl2_setuptime = new JLabel("R\u00FCstzeit");
+		cpl2_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl2_setuptime = new GridBagConstraints();
 		gbc_cpl2_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -3647,7 +3829,7 @@ public class CapacityPlanning {
 		gbc_cptf2_r.gridy = 8;
 		cpp_workstation2.add(cptf2_r, gbc_cptf2_r);
 
-		JLabel cpl2_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl2_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl2_totalcapacity = new GridBagConstraints();
 		gbc_cpl2_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -3665,7 +3847,7 @@ public class CapacityPlanning {
 		gbc_cptf2_t.gridy = 9;
 		cpp_workstation2.add(cptf2_t, gbc_cptf2_t);
 
-		JLabel cpl2_workload = new JLabel("Auslastung %");
+		cpl2_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl2_workload = new GridBagConstraints();
 		gbc_cpl2_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_workload.insets = new Insets(0, 0, 5, 5);
@@ -3683,7 +3865,7 @@ public class CapacityPlanning {
 		gbc_cptf2_a.gridy = 10;
 		cpp_workstation2.add(cptf2_a, gbc_cptf2_a);
 
-		JLabel cpl2_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl2_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl2_overtime = new GridBagConstraints();
 		gbc_cpl2_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_overtime.insets = new Insets(0, 0, 5, 5);
@@ -3712,7 +3894,7 @@ public class CapacityPlanning {
 				Double.MIN_VALUE };
 		cpp_workstation3.setLayout(gbl_cpp_workstation3);
 
-		JLabel cpl3_workstation = new JLabel("Arbeitsplatz");
+		cpl3_workstation = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_cpl3_workstation = new GridBagConstraints();
 		gbc_cpl3_workstation.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_workstation.insets = new Insets(0, 0, 5, 5);
@@ -3727,7 +3909,7 @@ public class CapacityPlanning {
 		gbc_label_72.gridy = 1;
 		cpp_workstation3.add(label_72, gbc_label_72);
 
-		JLabel cpl3_bicyclewithoutpedal = new JLabel("Fahrrad ohne Pedale");
+		cpl3_bicyclewithoutpedal = new JLabel("Fahrrad ohne Pedale");
 		GridBagConstraints gbc_cpl3_bicyclewithoutpedal = new GridBagConstraints();
 		gbc_cpl3_bicyclewithoutpedal.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_bicyclewithoutpedal.gridheight = 3;
@@ -3736,7 +3918,7 @@ public class CapacityPlanning {
 		gbc_cpl3_bicyclewithoutpedal.gridy = 3;
 		cpp_workstation3.add(cpl3_bicyclewithoutpedal, gbc_cpl3_bicyclewithoutpedal);
 
-		JLabel cpl3_c = new JLabel("K");
+		cpl3_c = new JLabel("K");
 		GridBagConstraints gbc_cpl3_c = new GridBagConstraints();
 		gbc_cpl3_c.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl3_c.gridx = 3;
@@ -3779,7 +3961,7 @@ public class CapacityPlanning {
 		gbc_cptfr3_51.gridy = 3;
 		cpp_workstation3.add(cptfr3_51, gbc_cptfr3_51);
 
-		JLabel cpl3_l = new JLabel("D");
+		cpl3_l = new JLabel("D");
 		GridBagConstraints gbc_cpl3_l = new GridBagConstraints();
 		gbc_cpl3_l.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl3_l.gridx = 3;
@@ -3822,7 +4004,7 @@ public class CapacityPlanning {
 		gbc_cptfr3_56.gridy = 4;
 		cpp_workstation3.add(cptfr3_56, gbc_cptfr3_56);
 
-		JLabel cpl3_m = new JLabel("H");
+		cpl3_m = new JLabel("H");
 		GridBagConstraints gbc_cpl3_m = new GridBagConstraints();
 		gbc_cpl3_m.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl3_m.gridx = 3;
@@ -3874,7 +4056,7 @@ public class CapacityPlanning {
 		gbc_separator_3.gridy = 6;
 		cpp_workstation3.add(separator_3, gbc_separator_3);
 
-		JLabel cpl3_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl3_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl3_capacityrequirements = new GridBagConstraints();
 		gbc_cpl3_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -3892,7 +4074,7 @@ public class CapacityPlanning {
 		gbc_cptf3_k.gridy = 7;
 		cpp_workstation3.add(cptf3_k, gbc_cptf3_k);
 
-		JLabel cpl3_setuptime = new JLabel("R\u00FCstzeit");
+		cpl3_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl3_setuptime = new GridBagConstraints();
 		gbc_cpl3_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -3910,7 +4092,7 @@ public class CapacityPlanning {
 		gbc_cptf3_r.gridy = 8;
 		cpp_workstation3.add(cptf3_r, gbc_cptf3_r);
 
-		JLabel cpl3_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl3_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl3_totalcapacity = new GridBagConstraints();
 		gbc_cpl3_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -3928,7 +4110,7 @@ public class CapacityPlanning {
 		gbc_cptf3_t.gridy = 9;
 		cpp_workstation3.add(cptf3_t, gbc_cptf3_t);
 
-		JLabel cpl3_workload = new JLabel("Auslastung %");
+		cpl3_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl3_workload = new GridBagConstraints();
 		gbc_cpl3_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_workload.insets = new Insets(0, 0, 5, 5);
@@ -3946,7 +4128,7 @@ public class CapacityPlanning {
 		gbc_cptf3_a.gridy = 10;
 		cpp_workstation3.add(cptf3_a, gbc_cptf3_a);
 
-		JLabel cpl3_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl3_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl3_overtime = new GridBagConstraints();
 		gbc_cpl3_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_overtime.insets = new Insets(0, 0, 5, 5);
@@ -3975,7 +4157,7 @@ public class CapacityPlanning {
 				Double.MIN_VALUE };
 		cpp_workstation4.setLayout(gbl_cpp_workstation4);
 
-		JLabel cpl4_workstation = new JLabel("Arbeitsplatz");
+		cpl4_workstation = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_cpl4_workstation = new GridBagConstraints();
 		gbc_cpl4_workstation.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_workstation.insets = new Insets(0, 0, 5, 5);
@@ -3990,7 +4172,7 @@ public class CapacityPlanning {
 		gbc_label_75.gridy = 1;
 		cpp_workstation4.add(label_75, gbc_label_75);
 
-		JLabel cpl4_bicyclecomplete = new JLabel("Fahrrad komplett");
+		cpl4_bicyclecomplete = new JLabel("Fahrrad komplett");
 		GridBagConstraints gbc_cpl4_bicyclecomplete = new GridBagConstraints();
 		gbc_cpl4_bicyclecomplete.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_bicyclecomplete.gridheight = 3;
@@ -3999,7 +4181,7 @@ public class CapacityPlanning {
 		gbc_cpl4_bicyclecomplete.gridy = 3;
 		cpp_workstation4.add(cpl4_bicyclecomplete, gbc_cpl4_bicyclecomplete);
 
-		JLabel cpl4_c = new JLabel("K");
+		cpl4_c = new JLabel("K");
 		GridBagConstraints gbc_cpl4_c = new GridBagConstraints();
 		gbc_cpl4_c.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl4_c.gridx = 3;
@@ -4024,7 +4206,7 @@ public class CapacityPlanning {
 		gbc_cptf4_1.gridy = 3;
 		cpp_workstation4.add(cptf4_1, gbc_cptf4_1);
 
-		cpl4_1 = new JLabel("x6 =");
+		JLabel cpl4_1 = new JLabel("x6 =");
 		GridBagConstraints gbc_cpl4_1 = new GridBagConstraints();
 		gbc_cpl4_1.anchor = GridBagConstraints.EAST;
 		gbc_cpl4_1.insets = new Insets(0, 0, 5, 5);
@@ -4042,7 +4224,7 @@ public class CapacityPlanning {
 		gbc_cptfr4_1.gridy = 3;
 		cpp_workstation4.add(cptfr4_1, gbc_cptfr4_1);
 
-		JLabel cpl4_l = new JLabel("D");
+		cpl4_l = new JLabel("D");
 		GridBagConstraints gbc_cpl4_l = new GridBagConstraints();
 		gbc_cpl4_l.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl4_l.gridx = 3;
@@ -4067,7 +4249,7 @@ public class CapacityPlanning {
 		gbc_cptf4_2.gridy = 4;
 		cpp_workstation4.add(cptf4_2, gbc_cptf4_2);
 
-		cpl4_2 = new JLabel("x7 =");
+		JLabel cpl4_2 = new JLabel("x7 =");
 		GridBagConstraints gbc_cpl4_2 = new GridBagConstraints();
 		gbc_cpl4_2.anchor = GridBagConstraints.EAST;
 		gbc_cpl4_2.insets = new Insets(0, 0, 5, 5);
@@ -4085,7 +4267,7 @@ public class CapacityPlanning {
 		gbc_cptfr4_2.gridy = 4;
 		cpp_workstation4.add(cptfr4_2, gbc_cptfr4_2);
 
-		JLabel cpl4_m = new JLabel("H");
+		cpl4_m = new JLabel("H");
 		GridBagConstraints gbc_cpl4_m = new GridBagConstraints();
 		gbc_cpl4_m.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl4_m.gridx = 3;
@@ -4137,7 +4319,7 @@ public class CapacityPlanning {
 		gbc_separator.gridy = 6;
 		cpp_workstation4.add(separator, gbc_separator);
 
-		JLabel cpl4_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl4_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl4_capacityrequirements = new GridBagConstraints();
 		gbc_cpl4_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -4155,7 +4337,7 @@ public class CapacityPlanning {
 		gbc_cptf4_k.gridy = 7;
 		cpp_workstation4.add(cptf4_k, gbc_cptf4_k);
 
-		JLabel cpl4_setuptime = new JLabel("R\u00FCstzeit");
+		cpl4_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl4_setuptime = new GridBagConstraints();
 		gbc_cpl4_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -4173,7 +4355,7 @@ public class CapacityPlanning {
 		gbc_cptf4_r.gridy = 8;
 		cpp_workstation4.add(cptf4_r, gbc_cptf4_r);
 
-		JLabel cpl4_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl4_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl4_totalcapacity = new GridBagConstraints();
 		gbc_cpl4_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -4191,7 +4373,7 @@ public class CapacityPlanning {
 		gbc_cptf4_t.gridy = 9;
 		cpp_workstation4.add(cptf4_t, gbc_cptf4_t);
 
-		JLabel cpl4_workload = new JLabel("Auslastung %");
+		cpl4_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl4_workload = new GridBagConstraints();
 		gbc_cpl4_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_workload.insets = new Insets(0, 0, 5, 5);
@@ -4209,7 +4391,7 @@ public class CapacityPlanning {
 		gbc_cptf4_a.gridy = 10;
 		cpp_workstation4.add(cptf4_a, gbc_cptf4_a);
 
-		JLabel cpl4_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl4_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl4_overtime = new GridBagConstraints();
 		gbc_cpl4_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_overtime.insets = new Insets(0, 0, 5, 5);
@@ -4241,7 +4423,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation6.setLayout(gbl_cpp_workstation6);
 
-		JLabel label = new JLabel("Arbeitsplatz");
+		label = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label = new GridBagConstraints();
 		gbc_label.anchor = GridBagConstraints.WEST;
 		gbc_label.insets = new Insets(0, 0, 5, 5);
@@ -4256,7 +4438,7 @@ public class CapacityPlanning {
 		gbc_label_1.gridy = 1;
 		cpp_workstation6.add(label_1, gbc_label_1);
 
-		JLabel lblLenker = new JLabel("Lenker");
+		lblLenker = new JLabel("Lenker");
 		GridBagConstraints gbc_lblLenker = new GridBagConstraints();
 		gbc_lblLenker.anchor = GridBagConstraints.WEST;
 		gbc_lblLenker.insets = new Insets(0, 0, 5, 5);
@@ -4264,7 +4446,7 @@ public class CapacityPlanning {
 		gbc_lblLenker.gridy = 3;
 		cpp_workstation6.add(lblLenker, gbc_lblLenker);
 
-		JLabel lblKdh = new JLabel("KDH");
+		lblKdh = new JLabel("KDH");
 		GridBagConstraints gbc_lblKdh = new GridBagConstraints();
 		gbc_lblKdh.insets = new Insets(0, 0, 5, 5);
 		gbc_lblKdh.gridx = 3;
@@ -4307,7 +4489,7 @@ public class CapacityPlanning {
 		gbc_cptfr6_16.gridy = 3;
 		cpp_workstation6.add(cptfr6_16, gbc_cptfr6_16);
 
-		JLabel label_2 = new JLabel("Fahrrad komplett");
+		label_2 = new JLabel("Fahrrad komplett");
 		GridBagConstraints gbc_label_2 = new GridBagConstraints();
 		gbc_label_2.anchor = GridBagConstraints.WEST;
 		gbc_label_2.gridheight = 3;
@@ -4316,7 +4498,7 @@ public class CapacityPlanning {
 		gbc_label_2.gridy = 5;
 		cpp_workstation6.add(label_2, gbc_label_2);
 
-		JLabel label_3 = new JLabel("K");
+		label_3 = new JLabel("K");
 		GridBagConstraints gbc_label_3 = new GridBagConstraints();
 		gbc_label_3.insets = new Insets(0, 0, 5, 5);
 		gbc_label_3.gridx = 3;
@@ -4359,7 +4541,7 @@ public class CapacityPlanning {
 		gbc_cptfr6_18.gridy = 5;
 		cpp_workstation6.add(cptfr6_18, gbc_cptfr6_18);
 
-		JLabel label_6 = new JLabel("D");
+		label_6 = new JLabel("D");
 		GridBagConstraints gbc_label_6 = new GridBagConstraints();
 		gbc_label_6.insets = new Insets(0, 0, 5, 5);
 		gbc_label_6.gridx = 3;
@@ -4402,7 +4584,7 @@ public class CapacityPlanning {
 		gbc_cptfr6_19.gridy = 6;
 		cpp_workstation6.add(cptfr6_19, gbc_cptfr6_19);
 
-		JLabel label_9 = new JLabel("H");
+		label_9 = new JLabel("H");
 		GridBagConstraints gbc_label_9 = new GridBagConstraints();
 		gbc_label_9.insets = new Insets(0, 0, 5, 5);
 		gbc_label_9.gridx = 3;
@@ -4454,7 +4636,7 @@ public class CapacityPlanning {
 		gbc_separator_4.gridy = 8;
 		cpp_workstation6.add(separator_4, gbc_separator_4);
 
-		JLabel cpl6_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl6_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl6_capacityrequirements = new GridBagConstraints();
 		gbc_cpl6_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -4472,7 +4654,7 @@ public class CapacityPlanning {
 		gbc_cptf6_k.gridy = 9;
 		cpp_workstation6.add(cptf6_k, gbc_cptf6_k);
 
-		JLabel cpl6_setuptime = new JLabel("R\u00FCstzeit");
+		cpl6_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl6_setuptime = new GridBagConstraints();
 		gbc_cpl6_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -4490,7 +4672,7 @@ public class CapacityPlanning {
 		gbc_cptf6_r.gridy = 10;
 		cpp_workstation6.add(cptf6_r, gbc_cptf6_r);
 
-		JLabel cpl6_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl6_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl6_totalcapacity = new GridBagConstraints();
 		gbc_cpl6_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -4508,7 +4690,7 @@ public class CapacityPlanning {
 		gbc_cptf6_t.gridy = 11;
 		cpp_workstation6.add(cptf6_t, gbc_cptf6_t);
 
-		JLabel cpl6_workload = new JLabel("Auslastung %");
+		cpl6_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl6_workload = new GridBagConstraints();
 		gbc_cpl6_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_workload.insets = new Insets(0, 0, 5, 5);
@@ -4526,7 +4708,7 @@ public class CapacityPlanning {
 		gbc_cptf6_a.gridy = 12;
 		cpp_workstation6.add(cptf6_a, gbc_cptf6_a);
 
-		JLabel cpl6_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl6_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl6_overtime = new GridBagConstraints();
 		gbc_cpl6_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_overtime.insets = new Insets(0, 0, 5, 5);
@@ -4559,7 +4741,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation7.setLayout(gbl_cpp_workstation7);
 
-		JLabel label_4 = new JLabel("Arbeitsplatz");
+		label_4 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_4 = new GridBagConstraints();
 		gbc_label_4.anchor = GridBagConstraints.WEST;
 		gbc_label_4.insets = new Insets(0, 0, 5, 5);
@@ -4574,7 +4756,7 @@ public class CapacityPlanning {
 		gbc_label_5.gridy = 1;
 		cpp_workstation7.add(label_5, gbc_label_5);
 
-		JLabel lblSchutzblechHinten = new JLabel("Schutzblech hinten");
+		lblSchutzblechHinten = new JLabel("Schutzblech hinten");
 		GridBagConstraints gbc_lblSchutzblechHinten = new GridBagConstraints();
 		gbc_lblSchutzblechHinten.anchor = GridBagConstraints.WEST;
 		gbc_lblSchutzblechHinten.gridheight = 3;
@@ -4583,7 +4765,7 @@ public class CapacityPlanning {
 		gbc_lblSchutzblechHinten.gridy = 3;
 		cpp_workstation7.add(lblSchutzblechHinten, gbc_lblSchutzblechHinten);
 
-		JLabel lblK = new JLabel("K");
+		lblK = new JLabel("K");
 		GridBagConstraints gbc_lblK = new GridBagConstraints();
 		gbc_lblK.insets = new Insets(0, 0, 5, 5);
 		gbc_lblK.gridx = 3;
@@ -4626,7 +4808,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_10.gridy = 3;
 		cpp_workstation7.add(cptfr7_10, gbc_cptfr7_10);
 
-		JLabel lblD = new JLabel("D");
+		lblD = new JLabel("D");
 		GridBagConstraints gbc_lblD = new GridBagConstraints();
 		gbc_lblD.insets = new Insets(0, 0, 5, 5);
 		gbc_lblD.gridx = 3;
@@ -4669,7 +4851,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_11.gridy = 4;
 		cpp_workstation7.add(cptfr7_11, gbc_cptfr7_11);
 
-		JLabel lblH = new JLabel("H");
+		lblH = new JLabel("H");
 		GridBagConstraints gbc_lblH = new GridBagConstraints();
 		gbc_lblH.insets = new Insets(0, 0, 5, 5);
 		gbc_lblH.gridx = 3;
@@ -4712,7 +4894,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_12.gridy = 5;
 		cpp_workstation7.add(cptfr7_12, gbc_cptfr7_12);
 
-		JLabel lblSchutzblechVorne = new JLabel("Schutzblech Vorne");
+		lblSchutzblechVorne = new JLabel("Schutzblech Vorne");
 		GridBagConstraints gbc_lblSchutzblechVorne = new GridBagConstraints();
 		gbc_lblSchutzblechVorne.anchor = GridBagConstraints.WEST;
 		gbc_lblSchutzblechVorne.gridheight = 3;
@@ -4721,7 +4903,7 @@ public class CapacityPlanning {
 		gbc_lblSchutzblechVorne.gridy = 7;
 		cpp_workstation7.add(lblSchutzblechVorne, gbc_lblSchutzblechVorne);
 
-		JLabel label_18 = new JLabel("K");
+		label_18 = new JLabel("K");
 		GridBagConstraints gbc_label_18 = new GridBagConstraints();
 		gbc_label_18.insets = new Insets(0, 0, 5, 5);
 		gbc_label_18.gridx = 3;
@@ -4764,7 +4946,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_13.gridy = 7;
 		cpp_workstation7.add(cptfr7_13, gbc_cptfr7_13);
 
-		JLabel label_21 = new JLabel("D");
+		label_21 = new JLabel("D");
 		GridBagConstraints gbc_label_21 = new GridBagConstraints();
 		gbc_label_21.insets = new Insets(0, 0, 5, 5);
 		gbc_label_21.gridx = 3;
@@ -4807,7 +4989,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_14.gridy = 8;
 		cpp_workstation7.add(cptfr7_14, gbc_cptfr7_14);
 
-		JLabel label_24 = new JLabel("H");
+		label_24 = new JLabel("H");
 		GridBagConstraints gbc_label_24 = new GridBagConstraints();
 		gbc_label_24.insets = new Insets(0, 0, 5, 5);
 		gbc_label_24.gridx = 3;
@@ -4850,7 +5032,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_15.gridy = 9;
 		cpp_workstation7.add(cptfr7_15, gbc_cptfr7_15);
 
-		JLabel lblRahmen = new JLabel("Rahmen");
+		lblRahmen = new JLabel("Rahmen");
 		GridBagConstraints gbc_lblRahmen = new GridBagConstraints();
 		gbc_lblRahmen.gridheight = 3;
 		gbc_lblRahmen.insets = new Insets(0, 0, 5, 5);
@@ -4858,7 +5040,7 @@ public class CapacityPlanning {
 		gbc_lblRahmen.gridy = 11;
 		cpp_workstation7.add(lblRahmen, gbc_lblRahmen);
 
-		JLabel label_20 = new JLabel("K");
+		label_20 = new JLabel("K");
 		GridBagConstraints gbc_label_20 = new GridBagConstraints();
 		gbc_label_20.insets = new Insets(0, 0, 5, 5);
 		gbc_label_20.gridx = 3;
@@ -4901,7 +5083,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_18.gridy = 11;
 		cpp_workstation7.add(cptfr7_18, gbc_cptfr7_18);
 
-		JLabel label_22 = new JLabel("D");
+		label_22 = new JLabel("D");
 		GridBagConstraints gbc_label_22 = new GridBagConstraints();
 		gbc_label_22.insets = new Insets(0, 0, 5, 5);
 		gbc_label_22.gridx = 3;
@@ -4944,7 +5126,7 @@ public class CapacityPlanning {
 		gbc_cptfr7_19.gridy = 12;
 		cpp_workstation7.add(cptfr7_19, gbc_cptfr7_19);
 
-		JLabel label_23 = new JLabel("H");
+		label_23 = new JLabel("H");
 		GridBagConstraints gbc_label_23 = new GridBagConstraints();
 		gbc_label_23.insets = new Insets(0, 0, 5, 5);
 		gbc_label_23.gridx = 3;
@@ -4987,14 +5169,14 @@ public class CapacityPlanning {
 		gbc_cptfr7_20.gridy = 13;
 		cpp_workstation7.add(cptfr7_20, gbc_cptfr7_20);
 
-		JLabel lblPedale = new JLabel("Pedale");
+		lblPedale = new JLabel("Pedale");
 		GridBagConstraints gbc_lblPedale = new GridBagConstraints();
 		gbc_lblPedale.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPedale.gridx = 1;
 		gbc_lblPedale.gridy = 15;
 		cpp_workstation7.add(lblPedale, gbc_lblPedale);
 
-		JLabel lblKdh_1 = new JLabel("KDH");
+		lblKdh_1 = new JLabel("KDH");
 		GridBagConstraints gbc_lblKdh_1 = new GridBagConstraints();
 		gbc_lblKdh_1.insets = new Insets(0, 0, 5, 5);
 		gbc_lblKdh_1.gridx = 3;
@@ -5046,7 +5228,7 @@ public class CapacityPlanning {
 		gbc_separator_5.gridy = 16;
 		cpp_workstation7.add(separator_5, gbc_separator_5);
 
-		JLabel cpl7_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl7_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl7_capacityrequirements = new GridBagConstraints();
 		gbc_cpl7_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -5064,7 +5246,7 @@ public class CapacityPlanning {
 		gbc_cptf7_k.gridy = 17;
 		cpp_workstation7.add(cptf7_k, gbc_cptf7_k);
 
-		JLabel cpl7_setuptime = new JLabel("R\u00FCstzeit");
+		cpl7_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl7_setuptime = new GridBagConstraints();
 		gbc_cpl7_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -5082,7 +5264,7 @@ public class CapacityPlanning {
 		gbc_cptf7_r.gridy = 18;
 		cpp_workstation7.add(cptf7_r, gbc_cptf7_r);
 
-		JLabel cpl7_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl7_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl7_totalcapacity = new GridBagConstraints();
 		gbc_cpl7_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -5100,7 +5282,7 @@ public class CapacityPlanning {
 		gbc_cptf7_t.gridy = 19;
 		cpp_workstation7.add(cptf7_t, gbc_cptf7_t);
 
-		JLabel cpl7_workload = new JLabel("Auslastung %");
+		cpl7_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl7_workload = new GridBagConstraints();
 		gbc_cpl7_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_workload.insets = new Insets(0, 0, 5, 5);
@@ -5118,7 +5300,7 @@ public class CapacityPlanning {
 		gbc_cptf7_a.gridy = 20;
 		cpp_workstation7.add(cptf7_a, gbc_cptf7_a);
 
-		JLabel cpl7_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl7_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl7_overtime = new GridBagConstraints();
 		gbc_cpl7_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_overtime.insets = new Insets(0, 0, 5, 5);
@@ -5151,7 +5333,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation8.setLayout(gbl_cpp_workstation8);
 
-		JLabel label_26 = new JLabel("Arbeitsplatz");
+		label_26 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_26 = new GridBagConstraints();
 		gbc_label_26.anchor = GridBagConstraints.WEST;
 		gbc_label_26.insets = new Insets(0, 0, 5, 5);
@@ -5166,7 +5348,7 @@ public class CapacityPlanning {
 		gbc_label_32.gridy = 1;
 		cpp_workstation8.add(label_32, gbc_label_32);
 
-		JLabel label_33 = new JLabel("Schutzblech hinten");
+		label_33 = new JLabel("Schutzblech hinten");
 		GridBagConstraints gbc_label_33 = new GridBagConstraints();
 		gbc_label_33.anchor = GridBagConstraints.WEST;
 		gbc_label_33.gridheight = 3;
@@ -5175,7 +5357,7 @@ public class CapacityPlanning {
 		gbc_label_33.gridy = 3;
 		cpp_workstation8.add(label_33, gbc_label_33);
 
-		JLabel label_34 = new JLabel("K");
+		label_34 = new JLabel("K");
 		GridBagConstraints gbc_label_34 = new GridBagConstraints();
 		gbc_label_34.insets = new Insets(0, 0, 5, 5);
 		gbc_label_34.gridx = 3;
@@ -5218,7 +5400,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_10.gridy = 3;
 		cpp_workstation8.add(cptfr8_10, gbc_cptfr8_10);
 
-		JLabel label_37 = new JLabel("D");
+		label_37 = new JLabel("D");
 		GridBagConstraints gbc_label_37 = new GridBagConstraints();
 		gbc_label_37.insets = new Insets(0, 0, 5, 5);
 		gbc_label_37.gridx = 3;
@@ -5261,7 +5443,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_11.gridy = 4;
 		cpp_workstation8.add(cptfr8_11, gbc_cptfr8_11);
 
-		JLabel label_40 = new JLabel("H");
+		label_40 = new JLabel("H");
 		GridBagConstraints gbc_label_40 = new GridBagConstraints();
 		gbc_label_40.insets = new Insets(0, 0, 5, 5);
 		gbc_label_40.gridx = 3;
@@ -5304,7 +5486,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_12.gridy = 5;
 		cpp_workstation8.add(cptfr8_12, gbc_cptfr8_12);
 
-		JLabel label_43 = new JLabel("Schutzblech Vorne");
+		label_43 = new JLabel("Schutzblech Vorne");
 		GridBagConstraints gbc_label_43 = new GridBagConstraints();
 		gbc_label_43.anchor = GridBagConstraints.WEST;
 		gbc_label_43.gridheight = 3;
@@ -5313,7 +5495,7 @@ public class CapacityPlanning {
 		gbc_label_43.gridy = 7;
 		cpp_workstation8.add(label_43, gbc_label_43);
 
-		JLabel label_44 = new JLabel("K");
+		label_44 = new JLabel("K");
 		GridBagConstraints gbc_label_44 = new GridBagConstraints();
 		gbc_label_44.insets = new Insets(0, 0, 5, 5);
 		gbc_label_44.gridx = 3;
@@ -5356,7 +5538,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_13.gridy = 7;
 		cpp_workstation8.add(cptfr8_13, gbc_cptfr8_13);
 
-		JLabel label_47 = new JLabel("D");
+		label_47 = new JLabel("D");
 		GridBagConstraints gbc_label_47 = new GridBagConstraints();
 		gbc_label_47.insets = new Insets(0, 0, 5, 5);
 		gbc_label_47.gridx = 3;
@@ -5399,7 +5581,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_14.gridy = 8;
 		cpp_workstation8.add(cptfr8_14, gbc_cptfr8_14);
 
-		JLabel label_50 = new JLabel("H");
+		label_50 = new JLabel("H");
 		GridBagConstraints gbc_label_50 = new GridBagConstraints();
 		gbc_label_50.insets = new Insets(0, 0, 5, 5);
 		gbc_label_50.gridx = 3;
@@ -5442,7 +5624,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_15.gridy = 9;
 		cpp_workstation8.add(cptfr8_15, gbc_cptfr8_15);
 
-		JLabel label_53 = new JLabel("Rahmen");
+		label_53 = new JLabel("Rahmen");
 		GridBagConstraints gbc_label_53 = new GridBagConstraints();
 		gbc_label_53.gridheight = 3;
 		gbc_label_53.insets = new Insets(0, 0, 5, 5);
@@ -5450,7 +5632,7 @@ public class CapacityPlanning {
 		gbc_label_53.gridy = 11;
 		cpp_workstation8.add(label_53, gbc_label_53);
 
-		JLabel label_54 = new JLabel("K");
+		label_54 = new JLabel("K");
 		GridBagConstraints gbc_label_54 = new GridBagConstraints();
 		gbc_label_54.insets = new Insets(0, 0, 5, 5);
 		gbc_label_54.gridx = 3;
@@ -5493,7 +5675,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_18.gridy = 11;
 		cpp_workstation8.add(cptfr8_18, gbc_cptfr8_18);
 
-		JLabel label_57 = new JLabel("D");
+		label_57 = new JLabel("D");
 		GridBagConstraints gbc_label_57 = new GridBagConstraints();
 		gbc_label_57.insets = new Insets(0, 0, 5, 5);
 		gbc_label_57.gridx = 3;
@@ -5536,7 +5718,7 @@ public class CapacityPlanning {
 		gbc_cptfr8_19.gridy = 12;
 		cpp_workstation8.add(cptfr8_19, gbc_cptfr8_19);
 
-		JLabel label_60 = new JLabel("H");
+		label_60 = new JLabel("H");
 		GridBagConstraints gbc_label_60 = new GridBagConstraints();
 		gbc_label_60.insets = new Insets(0, 0, 5, 5);
 		gbc_label_60.gridx = 3;
@@ -5588,7 +5770,7 @@ public class CapacityPlanning {
 		gbc_separator_6.gridy = 14;
 		cpp_workstation8.add(separator_6, gbc_separator_6);
 
-		JLabel cpl8_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl8_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl8_capacityrequirements = new GridBagConstraints();
 		gbc_cpl8_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -5606,7 +5788,7 @@ public class CapacityPlanning {
 		gbc_cptf8_k.gridy = 15;
 		cpp_workstation8.add(cptf8_k, gbc_cptf8_k);
 
-		JLabel cpl8_setuptime = new JLabel("R\u00FCstzeit");
+		cpl8_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl8_setuptime = new GridBagConstraints();
 		gbc_cpl8_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -5624,7 +5806,7 @@ public class CapacityPlanning {
 		gbc_cptf8_r.gridy = 16;
 		cpp_workstation8.add(cptf8_r, gbc_cptf8_r);
 
-		JLabel cpl8_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl8_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl8_totalcapacity = new GridBagConstraints();
 		gbc_cpl8_totalcapacity.fill = GridBagConstraints.HORIZONTAL;
 		gbc_cpl8_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -5642,7 +5824,7 @@ public class CapacityPlanning {
 		gbc_cptf8_t.gridy = 17;
 		cpp_workstation8.add(cptf8_t, gbc_cptf8_t);
 
-		JLabel cpl8_workload = new JLabel("Auslastung %");
+		cpl8_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl8_workload = new GridBagConstraints();
 		gbc_cpl8_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_workload.insets = new Insets(0, 0, 5, 5);
@@ -5660,7 +5842,7 @@ public class CapacityPlanning {
 		gbc_cptf8_a.gridy = 18;
 		cpp_workstation8.add(cptf8_a, gbc_cptf8_a);
 
-		JLabel cpl8_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl8_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl8_overtime = new GridBagConstraints();
 		gbc_cpl8_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_overtime.insets = new Insets(0, 0, 5, 5);
@@ -5693,7 +5875,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation9.setLayout(gbl_cpp_workstation9);
 
-		JLabel label_10 = new JLabel("Arbeitsplatz");
+		label_10 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_10 = new GridBagConstraints();
 		gbc_label_10.anchor = GridBagConstraints.WEST;
 		gbc_label_10.insets = new Insets(0, 0, 5, 5);
@@ -5708,7 +5890,7 @@ public class CapacityPlanning {
 		gbc_label_11.gridy = 1;
 		cpp_workstation9.add(label_11, gbc_label_11);
 
-		JLabel label_19 = new JLabel("Schutzblech hinten");
+		label_19 = new JLabel("Schutzblech hinten");
 		GridBagConstraints gbc_label_19 = new GridBagConstraints();
 		gbc_label_19.anchor = GridBagConstraints.WEST;
 		gbc_label_19.gridheight = 3;
@@ -5717,7 +5899,7 @@ public class CapacityPlanning {
 		gbc_label_19.gridy = 3;
 		cpp_workstation9.add(label_19, gbc_label_19);
 
-		JLabel label_25 = new JLabel("K");
+		label_25 = new JLabel("K");
 		GridBagConstraints gbc_label_25 = new GridBagConstraints();
 		gbc_label_25.insets = new Insets(0, 0, 5, 5);
 		gbc_label_25.gridx = 3;
@@ -5760,7 +5942,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_10.gridy = 3;
 		cpp_workstation9.add(cptfr9_10, gbc_cptfr9_10);
 
-		JLabel label_56 = new JLabel("D");
+		label_56 = new JLabel("D");
 		GridBagConstraints gbc_label_56 = new GridBagConstraints();
 		gbc_label_56.insets = new Insets(0, 0, 5, 5);
 		gbc_label_56.gridx = 3;
@@ -5803,7 +5985,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_11.gridy = 4;
 		cpp_workstation9.add(cptfr9_11, gbc_cptfr9_11);
 
-		JLabel label_63 = new JLabel("H");
+		label_63 = new JLabel("H");
 		GridBagConstraints gbc_label_63 = new GridBagConstraints();
 		gbc_label_63.insets = new Insets(0, 0, 5, 5);
 		gbc_label_63.gridx = 3;
@@ -5846,7 +6028,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_12.gridy = 5;
 		cpp_workstation9.add(cptfr9_12, gbc_cptfr9_12);
 
-		JLabel label_66 = new JLabel("Schutzblech Vorne");
+		label_66 = new JLabel("Schutzblech Vorne");
 		GridBagConstraints gbc_label_66 = new GridBagConstraints();
 		gbc_label_66.anchor = GridBagConstraints.WEST;
 		gbc_label_66.gridheight = 3;
@@ -5855,7 +6037,7 @@ public class CapacityPlanning {
 		gbc_label_66.gridy = 7;
 		cpp_workstation9.add(label_66, gbc_label_66);
 
-		JLabel label_73 = new JLabel("K");
+		label_73 = new JLabel("K");
 		GridBagConstraints gbc_label_73 = new GridBagConstraints();
 		gbc_label_73.insets = new Insets(0, 0, 5, 5);
 		gbc_label_73.gridx = 3;
@@ -5898,7 +6080,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_13.gridy = 7;
 		cpp_workstation9.add(cptfr9_13, gbc_cptfr9_13);
 
-		JLabel label_77 = new JLabel("D");
+		label_77 = new JLabel("D");
 		GridBagConstraints gbc_label_77 = new GridBagConstraints();
 		gbc_label_77.insets = new Insets(0, 0, 5, 5);
 		gbc_label_77.gridx = 3;
@@ -5941,7 +6123,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_14.gridy = 8;
 		cpp_workstation9.add(cptfr9_14, gbc_cptfr9_14);
 
-		JLabel label_80 = new JLabel("H");
+		label_80 = new JLabel("H");
 		GridBagConstraints gbc_label_80 = new GridBagConstraints();
 		gbc_label_80.insets = new Insets(0, 0, 5, 5);
 		gbc_label_80.gridx = 3;
@@ -5984,7 +6166,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_15.gridy = 9;
 		cpp_workstation9.add(cptfr9_15, gbc_cptfr9_15);
 
-		JLabel label_83 = new JLabel("Rahmen");
+		label_83 = new JLabel("Rahmen");
 		GridBagConstraints gbc_label_83 = new GridBagConstraints();
 		gbc_label_83.gridheight = 3;
 		gbc_label_83.insets = new Insets(0, 0, 5, 5);
@@ -5992,7 +6174,7 @@ public class CapacityPlanning {
 		gbc_label_83.gridy = 11;
 		cpp_workstation9.add(label_83, gbc_label_83);
 
-		JLabel label_84 = new JLabel("K");
+		label_84 = new JLabel("K");
 		GridBagConstraints gbc_label_84 = new GridBagConstraints();
 		gbc_label_84.insets = new Insets(0, 0, 5, 5);
 		gbc_label_84.gridx = 3;
@@ -6035,7 +6217,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_18.gridy = 11;
 		cpp_workstation9.add(cptfr9_18, gbc_cptfr9_18);
 
-		JLabel label_87 = new JLabel("D");
+		label_87 = new JLabel("D");
 		GridBagConstraints gbc_label_87 = new GridBagConstraints();
 		gbc_label_87.insets = new Insets(0, 0, 5, 5);
 		gbc_label_87.gridx = 3;
@@ -6078,7 +6260,7 @@ public class CapacityPlanning {
 		gbc_cptfr9_19.gridy = 12;
 		cpp_workstation9.add(cptfr9_19, gbc_cptfr9_19);
 
-		JLabel label_91 = new JLabel("H");
+		label_91 = new JLabel("H");
 		GridBagConstraints gbc_label_91 = new GridBagConstraints();
 		gbc_label_91.insets = new Insets(0, 0, 5, 5);
 		gbc_label_91.gridx = 3;
@@ -6130,7 +6312,7 @@ public class CapacityPlanning {
 		gbc_separator_7.gridy = 14;
 		cpp_workstation9.add(separator_7, gbc_separator_7);
 
-		JLabel cpl9_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl9_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl9_capacityrequirements = new GridBagConstraints();
 		gbc_cpl9_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -6148,7 +6330,7 @@ public class CapacityPlanning {
 		gbc_cptf9_k.gridy = 15;
 		cpp_workstation9.add(cptf9_k, gbc_cptf9_k);
 
-		JLabel cpl9_setuptime = new JLabel("R\u00FCstzeit");
+		cpl9_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl9_setuptime = new GridBagConstraints();
 		gbc_cpl9_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -6166,7 +6348,7 @@ public class CapacityPlanning {
 		gbc_cptf9_r.gridy = 16;
 		cpp_workstation9.add(cptf9_r, gbc_cptf9_r);
 
-		JLabel cpl9_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl9_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl9_totalcapacity = new GridBagConstraints();
 		gbc_cpl9_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -6184,7 +6366,7 @@ public class CapacityPlanning {
 		gbc_cptf9_t.gridy = 17;
 		cpp_workstation9.add(cptf9_t, gbc_cptf9_t);
 
-		JLabel cpl9_workload = new JLabel("Auslastung %");
+		cpl9_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl9_workload = new GridBagConstraints();
 		gbc_cpl9_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_workload.insets = new Insets(0, 0, 5, 5);
@@ -6202,7 +6384,7 @@ public class CapacityPlanning {
 		gbc_cptf9_a.gridy = 18;
 		cpp_workstation9.add(cptf9_a, gbc_cptf9_a);
 
-		JLabel cpl9_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl9_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl9_overtime = new GridBagConstraints();
 		gbc_cpl9_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_overtime.insets = new Insets(0, 0, 5, 5);
@@ -6234,7 +6416,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation10.setLayout(gbl_cpp_workstation10);
 
-		JLabel label_46 = new JLabel("Arbeitsplatz");
+		label_46 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_46 = new GridBagConstraints();
 		gbc_label_46.anchor = GridBagConstraints.WEST;
 		gbc_label_46.insets = new Insets(0, 0, 5, 5);
@@ -6249,7 +6431,7 @@ public class CapacityPlanning {
 		gbc_label_62.gridy = 1;
 		cpp_workstation10.add(label_62, gbc_label_62);
 
-		JLabel lblHinterrad = new JLabel("Hinterrad");
+		lblHinterrad = new JLabel("Hinterrad");
 		GridBagConstraints gbc_lblHinterrad = new GridBagConstraints();
 		gbc_lblHinterrad.anchor = GridBagConstraints.WEST;
 		gbc_lblHinterrad.gridheight = 3;
@@ -6258,7 +6440,7 @@ public class CapacityPlanning {
 		gbc_lblHinterrad.gridy = 3;
 		cpp_workstation10.add(lblHinterrad, gbc_lblHinterrad);
 
-		JLabel label_76 = new JLabel("K");
+		label_76 = new JLabel("K");
 		GridBagConstraints gbc_label_76 = new GridBagConstraints();
 		gbc_label_76.insets = new Insets(0, 0, 5, 5);
 		gbc_label_76.gridx = 3;
@@ -6301,7 +6483,7 @@ public class CapacityPlanning {
 		gbc_cptfr10_4.gridy = 3;
 		cpp_workstation10.add(cptfr10_4, gbc_cptfr10_4);
 
-		JLabel label_86 = new JLabel("D");
+		label_86 = new JLabel("D");
 		GridBagConstraints gbc_label_86 = new GridBagConstraints();
 		gbc_label_86.insets = new Insets(0, 0, 5, 5);
 		gbc_label_86.gridx = 3;
@@ -6344,7 +6526,7 @@ public class CapacityPlanning {
 		gbc_cptfr10_5.gridy = 4;
 		cpp_workstation10.add(cptfr10_5, gbc_cptfr10_5);
 
-		JLabel label_99 = new JLabel("H");
+		label_99 = new JLabel("H");
 		GridBagConstraints gbc_label_99 = new GridBagConstraints();
 		gbc_label_99.insets = new Insets(0, 0, 5, 5);
 		gbc_label_99.gridx = 3;
@@ -6387,7 +6569,7 @@ public class CapacityPlanning {
 		gbc_cptfr10_6.gridy = 5;
 		cpp_workstation10.add(cptfr10_6, gbc_cptfr10_6);
 
-		JLabel lblVorderrad = new JLabel("Vorderrad");
+		lblVorderrad = new JLabel("Vorderrad");
 		GridBagConstraints gbc_lblVorderrad = new GridBagConstraints();
 		gbc_lblVorderrad.anchor = GridBagConstraints.WEST;
 		gbc_lblVorderrad.gridheight = 3;
@@ -6396,7 +6578,7 @@ public class CapacityPlanning {
 		gbc_lblVorderrad.gridy = 7;
 		cpp_workstation10.add(lblVorderrad, gbc_lblVorderrad);
 
-		JLabel label_103 = new JLabel("K");
+		label_103 = new JLabel("K");
 		GridBagConstraints gbc_label_103 = new GridBagConstraints();
 		gbc_label_103.insets = new Insets(0, 0, 5, 5);
 		gbc_label_103.gridx = 3;
@@ -6439,7 +6621,7 @@ public class CapacityPlanning {
 		gbc_cptfr10_7.gridy = 7;
 		cpp_workstation10.add(cptfr10_7, gbc_cptfr10_7);
 
-		JLabel label_106 = new JLabel("D");
+		label_106 = new JLabel("D");
 		GridBagConstraints gbc_label_106 = new GridBagConstraints();
 		gbc_label_106.insets = new Insets(0, 0, 5, 5);
 		gbc_label_106.gridx = 3;
@@ -6482,7 +6664,7 @@ public class CapacityPlanning {
 		gbc_cptfr10_8.gridy = 8;
 		cpp_workstation10.add(cptfr10_8, gbc_cptfr10_8);
 
-		JLabel label_109 = new JLabel("H");
+		label_109 = new JLabel("H");
 		GridBagConstraints gbc_label_109 = new GridBagConstraints();
 		gbc_label_109.insets = new Insets(0, 0, 5, 5);
 		gbc_label_109.gridx = 3;
@@ -6534,7 +6716,7 @@ public class CapacityPlanning {
 		gbc_separator_8.gridy = 10;
 		cpp_workstation10.add(separator_8, gbc_separator_8);
 
-		JLabel cpl10_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl10_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl10_capacityrequirements = new GridBagConstraints();
 		gbc_cpl10_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -6552,7 +6734,7 @@ public class CapacityPlanning {
 		gbc_cptf10_k.gridy = 11;
 		cpp_workstation10.add(cptf10_k, gbc_cptf10_k);
 
-		JLabel cpl10_setuptime = new JLabel("R\u00FCstzeit");
+		cpl10_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl10_setuptime = new GridBagConstraints();
 		gbc_cpl10_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -6570,7 +6752,7 @@ public class CapacityPlanning {
 		gbc_cptf10_r.gridy = 12;
 		cpp_workstation10.add(cptf10_r, gbc_cptf10_r);
 
-		JLabel cpl10_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl10_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl10_totalcapacity = new GridBagConstraints();
 		gbc_cpl10_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -6588,7 +6770,7 @@ public class CapacityPlanning {
 		gbc_cptf10_t.gridy = 13;
 		cpp_workstation10.add(cptf10_t, gbc_cptf10_t);
 
-		JLabel cpl10_workload = new JLabel("Auslastung %");
+		cpl10_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl10_workload = new GridBagConstraints();
 		gbc_cpl10_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_workload.insets = new Insets(0, 0, 5, 5);
@@ -6606,7 +6788,7 @@ public class CapacityPlanning {
 		gbc_cptf10_a.gridy = 14;
 		cpp_workstation10.add(cptf10_a, gbc_cptf10_a);
 
-		JLabel cpl10_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl10_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl10_overtime = new GridBagConstraints();
 		gbc_cpl10_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_overtime.insets = new Insets(0, 0, 5, 5);
@@ -6638,7 +6820,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation11.setLayout(gbl_cpp_workstation11);
 
-		JLabel label_127 = new JLabel("Arbeitsplatz");
+		label_127 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_127 = new GridBagConstraints();
 		gbc_label_127.anchor = GridBagConstraints.WEST;
 		gbc_label_127.insets = new Insets(0, 0, 5, 5);
@@ -6653,7 +6835,7 @@ public class CapacityPlanning {
 		gbc_label_128.gridy = 1;
 		cpp_workstation11.add(label_128, gbc_label_128);
 
-		JLabel lblHinterrad_1 = new JLabel("Hinterrad");
+		lblHinterrad_1 = new JLabel("Hinterrad");
 		GridBagConstraints gbc_lblHinterrad_1 = new GridBagConstraints();
 		gbc_lblHinterrad_1.anchor = GridBagConstraints.WEST;
 		gbc_lblHinterrad_1.gridheight = 3;
@@ -6662,7 +6844,7 @@ public class CapacityPlanning {
 		gbc_lblHinterrad_1.gridy = 3;
 		cpp_workstation11.add(lblHinterrad_1, gbc_lblHinterrad_1);
 
-		JLabel label_130 = new JLabel("K");
+		label_130 = new JLabel("K");
 		GridBagConstraints gbc_label_130 = new GridBagConstraints();
 		gbc_label_130.insets = new Insets(0, 0, 5, 5);
 		gbc_label_130.gridx = 3;
@@ -6705,7 +6887,7 @@ public class CapacityPlanning {
 		gbc_cptfr11_4.gridy = 3;
 		cpp_workstation11.add(cptfr11_4, gbc_cptfr11_4);
 
-		JLabel label_133 = new JLabel("D");
+		label_133 = new JLabel("D");
 		GridBagConstraints gbc_label_133 = new GridBagConstraints();
 		gbc_label_133.insets = new Insets(0, 0, 5, 5);
 		gbc_label_133.gridx = 3;
@@ -6748,7 +6930,7 @@ public class CapacityPlanning {
 		gbc_cptfr11_5.gridy = 4;
 		cpp_workstation11.add(cptfr11_5, gbc_cptfr11_5);
 
-		JLabel label_136 = new JLabel("H");
+		label_136 = new JLabel("H");
 		GridBagConstraints gbc_label_136 = new GridBagConstraints();
 		gbc_label_136.insets = new Insets(0, 0, 5, 5);
 		gbc_label_136.gridx = 3;
@@ -6791,7 +6973,7 @@ public class CapacityPlanning {
 		gbc_cptfr11_6.gridy = 5;
 		cpp_workstation11.add(cptfr11_6, gbc_cptfr11_6);
 
-		JLabel lblVorderrad_1 = new JLabel("Vorderrad");
+		lblVorderrad_1 = new JLabel("Vorderrad");
 		GridBagConstraints gbc_lblVorderrad_1 = new GridBagConstraints();
 		gbc_lblVorderrad_1.anchor = GridBagConstraints.WEST;
 		gbc_lblVorderrad_1.gridheight = 3;
@@ -6800,7 +6982,7 @@ public class CapacityPlanning {
 		gbc_lblVorderrad_1.gridy = 7;
 		cpp_workstation11.add(lblVorderrad_1, gbc_lblVorderrad_1);
 
-		JLabel label_140 = new JLabel("K");
+		label_140 = new JLabel("K");
 		GridBagConstraints gbc_label_140 = new GridBagConstraints();
 		gbc_label_140.insets = new Insets(0, 0, 5, 5);
 		gbc_label_140.gridx = 3;
@@ -6843,7 +7025,7 @@ public class CapacityPlanning {
 		gbc_cptfr11_7.gridy = 7;
 		cpp_workstation11.add(cptfr11_7, gbc_cptfr11_7);
 
-		JLabel label_143 = new JLabel("D");
+		label_143 = new JLabel("D");
 		GridBagConstraints gbc_label_143 = new GridBagConstraints();
 		gbc_label_143.insets = new Insets(0, 0, 5, 5);
 		gbc_label_143.gridx = 3;
@@ -6886,7 +7068,7 @@ public class CapacityPlanning {
 		gbc_cptfr11_8.gridy = 8;
 		cpp_workstation11.add(cptfr11_8, gbc_cptfr11_8);
 
-		JLabel label_146 = new JLabel("H");
+		label_146 = new JLabel("H");
 		GridBagConstraints gbc_label_146 = new GridBagConstraints();
 		gbc_label_146.insets = new Insets(0, 0, 5, 5);
 		gbc_label_146.gridx = 3;
@@ -6938,7 +7120,7 @@ public class CapacityPlanning {
 		gbc_separator_9.gridy = 10;
 		cpp_workstation11.add(separator_9, gbc_separator_9);
 
-		JLabel cpl11_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
+		cpl11_capacityrequirements = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_cpl11_capacityrequirements = new GridBagConstraints();
 		gbc_cpl11_capacityrequirements.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_capacityrequirements.insets = new Insets(0, 0, 5, 5);
@@ -6956,7 +7138,7 @@ public class CapacityPlanning {
 		gbc_cptf11_k.gridy = 11;
 		cpp_workstation11.add(cptf11_k, gbc_cptf11_k);
 
-		JLabel cpl11_setuptime = new JLabel("R\u00FCstzeit");
+		cpl11_setuptime = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_cpl11_setuptime = new GridBagConstraints();
 		gbc_cpl11_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -6974,7 +7156,7 @@ public class CapacityPlanning {
 		gbc_cptf11_r.gridy = 12;
 		cpp_workstation11.add(cptf11_r, gbc_cptf11_r);
 
-		JLabel cpl11_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
+		cpl11_totalcapacity = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_cpl11_totalcapacity = new GridBagConstraints();
 		gbc_cpl11_totalcapacity.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_totalcapacity.insets = new Insets(0, 0, 5, 5);
@@ -6992,13 +7174,13 @@ public class CapacityPlanning {
 		gbc_cptf11_t.gridy = 13;
 		cpp_workstation11.add(cptf11_t, gbc_cptf11_t);
 
-		JLabel cpl11_workload = new JLabel("Auslastung %");
+		cpl11_workload = new JLabel("Auslastung %");
 		GridBagConstraints gbc_cpl11_workload = new GridBagConstraints();
 		gbc_cpl11_workload.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_workload.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl11_workload.gridx = 1;
 		gbc_cpl11_workload.gridy = 14;
-		cpp_workstation11.add(cpl11_workload, gbc_cpl11_workload);
+		cpp_workstation11.add(  cpl11_workload, gbc_cpl11_workload);
 
 		cptf11_a = new JTextField();
 		cptf11_a.setEditable(false);
@@ -7010,7 +7192,7 @@ public class CapacityPlanning {
 		gbc_cptf11_a.gridy = 14;
 		cpp_workstation11.add(cptf11_a, gbc_cptf11_a);
 
-		JLabel cpl11_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl11_overtime = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_cpl11_overtime = new GridBagConstraints();
 		gbc_cpl11_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_overtime.insets = new Insets(0, 0, 5, 5);
@@ -7042,7 +7224,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation12.setLayout(gbl_cpp_workstation12);
 
-		JLabel label_100 = new JLabel("Arbeitsplatz");
+		label_100 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_100 = new GridBagConstraints();
 		gbc_label_100.anchor = GridBagConstraints.WEST;
 		gbc_label_100.insets = new Insets(0, 0, 5, 5);
@@ -7057,7 +7239,7 @@ public class CapacityPlanning {
 		gbc_label_101.gridy = 1;
 		cpp_workstation12.add(label_101, gbc_label_101);
 
-		JLabel label_102 = new JLabel("Schutzblech hinten");
+		label_102 = new JLabel("Schutzblech hinten");
 		GridBagConstraints gbc_label_102 = new GridBagConstraints();
 		gbc_label_102.anchor = GridBagConstraints.WEST;
 		gbc_label_102.gridheight = 3;
@@ -7066,7 +7248,7 @@ public class CapacityPlanning {
 		gbc_label_102.gridy = 3;
 		cpp_workstation12.add(label_102, gbc_label_102);
 
-		JLabel label_104 = new JLabel("K");
+		label_104 = new JLabel("K");
 		GridBagConstraints gbc_label_104 = new GridBagConstraints();
 		gbc_label_104.insets = new Insets(0, 0, 5, 5);
 		gbc_label_104.gridx = 3;
@@ -7109,7 +7291,7 @@ public class CapacityPlanning {
 		gbc_cptfr12_10.gridy = 3;
 		cpp_workstation12.add(cptfr12_10, gbc_cptfr12_10);
 
-		JLabel label_108 = new JLabel("D");
+		label_108 = new JLabel("D");
 		GridBagConstraints gbc_label_108 = new GridBagConstraints();
 		gbc_label_108.insets = new Insets(0, 0, 5, 5);
 		gbc_label_108.gridx = 3;
@@ -7152,7 +7334,7 @@ public class CapacityPlanning {
 		gbc_cptfr12_11.gridy = 4;
 		cpp_workstation12.add(cptfr12_11, gbc_cptfr12_11);
 
-		JLabel label_112 = new JLabel("H");
+		label_112 = new JLabel("H");
 		GridBagConstraints gbc_label_112 = new GridBagConstraints();
 		gbc_label_112.insets = new Insets(0, 0, 5, 5);
 		gbc_label_112.gridx = 3;
@@ -7195,7 +7377,7 @@ public class CapacityPlanning {
 		gbc_cptfr12_12.gridy = 5;
 		cpp_workstation12.add(cptfr12_12, gbc_cptfr12_12);
 
-		JLabel label_115 = new JLabel("Schutzblech Vorne");
+		label_115 = new JLabel("Schutzblech Vorne");
 		GridBagConstraints gbc_label_115 = new GridBagConstraints();
 		gbc_label_115.anchor = GridBagConstraints.WEST;
 		gbc_label_115.gridheight = 3;
@@ -7204,7 +7386,7 @@ public class CapacityPlanning {
 		gbc_label_115.gridy = 7;
 		cpp_workstation12.add(label_115, gbc_label_115);
 
-		JLabel label_116 = new JLabel("K");
+		label_116 = new JLabel("K");
 		GridBagConstraints gbc_label_116 = new GridBagConstraints();
 		gbc_label_116.insets = new Insets(0, 0, 5, 5);
 		gbc_label_116.gridx = 3;
@@ -7247,7 +7429,7 @@ public class CapacityPlanning {
 		gbc_cptfr12_13.gridy = 7;
 		cpp_workstation12.add(cptfr12_13, gbc_cptfr12_13);
 
-		JLabel label_119 = new JLabel("D");
+		label_119 = new JLabel("D");
 		GridBagConstraints gbc_label_119 = new GridBagConstraints();
 		gbc_label_119.insets = new Insets(0, 0, 5, 5);
 		gbc_label_119.gridx = 3;
@@ -7290,7 +7472,7 @@ public class CapacityPlanning {
 		gbc_cptfr12_14.gridy = 8;
 		cpp_workstation12.add(cptfr12_14, gbc_cptfr12_14);
 
-		JLabel label_129 = new JLabel("H");
+		label_129 = new JLabel("H");
 		GridBagConstraints gbc_label_129 = new GridBagConstraints();
 		gbc_label_129.insets = new Insets(0, 0, 5, 5);
 		gbc_label_129.gridx = 3;
@@ -7342,7 +7524,7 @@ public class CapacityPlanning {
 		gbc_separator_10.gridy = 10;
 		cpp_workstation12.add(separator_10, gbc_separator_10);
 
-		JLabel label_154 = new JLabel("Kapazit\u00E4tsbedarf ");
+		label_154 = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_label_154 = new GridBagConstraints();
 		gbc_label_154.anchor = GridBagConstraints.WEST;
 		gbc_label_154.insets = new Insets(0, 0, 5, 5);
@@ -7360,7 +7542,7 @@ public class CapacityPlanning {
 		gbc_cptf12_k.gridy = 11;
 		cpp_workstation12.add(cptf12_k, gbc_cptf12_k);
 
-		JLabel label_155 = new JLabel("R\u00FCstzeit");
+		label_155 = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_label_155 = new GridBagConstraints();
 		gbc_label_155.anchor = GridBagConstraints.WEST;
 		gbc_label_155.insets = new Insets(0, 0, 5, 5);
@@ -7378,7 +7560,7 @@ public class CapacityPlanning {
 		gbc_cptf12_r.gridy = 12;
 		cpp_workstation12.add(cptf12_r, gbc_cptf12_r);
 
-		JLabel label_156 = new JLabel("Totale Kapazit\u00E4t");
+		label_156 = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_label_156 = new GridBagConstraints();
 		gbc_label_156.anchor = GridBagConstraints.WEST;
 		gbc_label_156.insets = new Insets(0, 0, 5, 5);
@@ -7396,7 +7578,7 @@ public class CapacityPlanning {
 		gbc_cptf12_t.gridy = 13;
 		cpp_workstation12.add(cptf12_t, gbc_cptf12_t);
 
-		JLabel label_157 = new JLabel("Auslastung %");
+		label_157 = new JLabel("Auslastung %");
 		GridBagConstraints gbc_label_157 = new GridBagConstraints();
 		gbc_label_157.anchor = GridBagConstraints.WEST;
 		gbc_label_157.insets = new Insets(0, 0, 5, 5);
@@ -7414,7 +7596,7 @@ public class CapacityPlanning {
 		gbc_cptf12_a.gridy = 14;
 		cpp_workstation12.add(cptf12_a, gbc_cptf12_a);
 
-		JLabel label_158 = new JLabel("\u00DCberstunden (min) ");
+		label_158 = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_label_158 = new GridBagConstraints();
 		gbc_label_158.anchor = GridBagConstraints.WEST;
 		gbc_label_158.insets = new Insets(0, 0, 5, 5);
@@ -7446,7 +7628,7 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
 		cpp_workstation13.setLayout(gbl_cpp_workstation13);
 
-		JLabel label_137 = new JLabel("Arbeitsplatz");
+		label_137 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_137 = new GridBagConstraints();
 		gbc_label_137.anchor = GridBagConstraints.WEST;
 		gbc_label_137.insets = new Insets(0, 0, 5, 5);
@@ -7461,7 +7643,7 @@ public class CapacityPlanning {
 		gbc_label_139.gridy = 1;
 		cpp_workstation13.add(label_139, gbc_label_139);
 
-		JLabel label_141 = new JLabel("Schutzblech hinten");
+		label_141 = new JLabel("Schutzblech hinten");
 		GridBagConstraints gbc_label_141 = new GridBagConstraints();
 		gbc_label_141.anchor = GridBagConstraints.WEST;
 		gbc_label_141.gridheight = 3;
@@ -7470,7 +7652,7 @@ public class CapacityPlanning {
 		gbc_label_141.gridy = 3;
 		cpp_workstation13.add(label_141, gbc_label_141);
 
-		JLabel label_144 = new JLabel("K");
+		label_144 = new JLabel("K");
 		GridBagConstraints gbc_label_144 = new GridBagConstraints();
 		gbc_label_144.insets = new Insets(0, 0, 5, 5);
 		gbc_label_144.gridx = 3;
@@ -7513,7 +7695,7 @@ public class CapacityPlanning {
 		gbc_cptfr13_10.gridy = 3;
 		cpp_workstation13.add(cptfr13_10, gbc_cptfr13_10);
 
-		JLabel label_150 = new JLabel("D");
+		label_150 = new JLabel("D");
 		GridBagConstraints gbc_label_150 = new GridBagConstraints();
 		gbc_label_150.insets = new Insets(0, 0, 5, 5);
 		gbc_label_150.gridx = 3;
@@ -7556,7 +7738,7 @@ public class CapacityPlanning {
 		gbc_cptfr13_11.gridy = 4;
 		cpp_workstation13.add(cptfr13_11, gbc_cptfr13_11);
 
-		JLabel label_153 = new JLabel("H");
+		label_153 = new JLabel("H");
 		GridBagConstraints gbc_label_153 = new GridBagConstraints();
 		gbc_label_153.insets = new Insets(0, 0, 5, 5);
 		gbc_label_153.gridx = 3;
@@ -7599,7 +7781,7 @@ public class CapacityPlanning {
 		gbc_cptfr13_12.gridy = 5;
 		cpp_workstation13.add(cptfr13_12, gbc_cptfr13_12);
 
-		JLabel label_166 = new JLabel("Schutzblech Vorne");
+		label_166 = new JLabel("Schutzblech Vorne");
 		GridBagConstraints gbc_label_166 = new GridBagConstraints();
 		gbc_label_166.anchor = GridBagConstraints.WEST;
 		gbc_label_166.gridheight = 3;
@@ -7608,7 +7790,7 @@ public class CapacityPlanning {
 		gbc_label_166.gridy = 7;
 		cpp_workstation13.add(label_166, gbc_label_166);
 
-		JLabel label_167 = new JLabel("K");
+		label_167 = new JLabel("K");
 		GridBagConstraints gbc_label_167 = new GridBagConstraints();
 		gbc_label_167.insets = new Insets(0, 0, 5, 5);
 		gbc_label_167.gridx = 3;
@@ -7651,7 +7833,7 @@ public class CapacityPlanning {
 		gbc_cptfr13_13.gridy = 7;
 		cpp_workstation13.add(cptfr13_13, gbc_cptfr13_13);
 
-		JLabel label_170 = new JLabel("D");
+		label_170 = new JLabel("D");
 		GridBagConstraints gbc_label_170 = new GridBagConstraints();
 		gbc_label_170.insets = new Insets(0, 0, 5, 5);
 		gbc_label_170.gridx = 3;
@@ -7694,7 +7876,7 @@ public class CapacityPlanning {
 		gbc_cptfr13_14.gridy = 8;
 		cpp_workstation13.add(cptfr13_14, gbc_cptfr13_14);
 
-		JLabel label_173 = new JLabel("H");
+		label_173 = new JLabel("H");
 		GridBagConstraints gbc_label_173 = new GridBagConstraints();
 		gbc_label_173.insets = new Insets(0, 0, 5, 5);
 		gbc_label_173.gridx = 3;
@@ -7746,7 +7928,7 @@ public class CapacityPlanning {
 		gbc_separator_11.gridy = 10;
 		cpp_workstation13.add(separator_11, gbc_separator_11);
 
-		JLabel label_186 = new JLabel("Kapazit\u00E4tsbedarf ");
+		label_186 = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_label_186 = new GridBagConstraints();
 		gbc_label_186.anchor = GridBagConstraints.WEST;
 		gbc_label_186.insets = new Insets(0, 0, 5, 5);
@@ -7764,7 +7946,7 @@ public class CapacityPlanning {
 		gbc_cptf13_k.gridy = 11;
 		cpp_workstation13.add(cptf13_k, gbc_cptf13_k);
 
-		JLabel label_187 = new JLabel("R\u00FCstzeit");
+		label_187 = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_label_187 = new GridBagConstraints();
 		gbc_label_187.anchor = GridBagConstraints.WEST;
 		gbc_label_187.insets = new Insets(0, 0, 5, 5);
@@ -7782,7 +7964,7 @@ public class CapacityPlanning {
 		gbc_cptf13_r.gridy = 12;
 		cpp_workstation13.add(cptf13_r, gbc_cptf13_r);
 
-		JLabel label_188 = new JLabel("Totale Kapazit\u00E4t");
+		label_188 = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_label_188 = new GridBagConstraints();
 		gbc_label_188.anchor = GridBagConstraints.WEST;
 		gbc_label_188.insets = new Insets(0, 0, 5, 5);
@@ -7800,7 +7982,7 @@ public class CapacityPlanning {
 		gbc_cptf13_t.gridy = 13;
 		cpp_workstation13.add(cptf13_t, gbc_cptf13_t);
 
-		JLabel label_189 = new JLabel("Auslastung %");
+		label_189 = new JLabel("Auslastung %");
 		GridBagConstraints gbc_label_189 = new GridBagConstraints();
 		gbc_label_189.anchor = GridBagConstraints.WEST;
 		gbc_label_189.insets = new Insets(0, 0, 5, 5);
@@ -7818,7 +8000,7 @@ public class CapacityPlanning {
 		gbc_cptf13_a.gridy = 14;
 		cpp_workstation13.add(cptf13_a, gbc_cptf13_a);
 
-		JLabel label_190 = new JLabel("\u00DCberstunden (min) ");
+		label_190 = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_label_190 = new GridBagConstraints();
 		gbc_label_190.anchor = GridBagConstraints.WEST;
 		gbc_label_190.insets = new Insets(0, 0, 5, 5);
@@ -7847,7 +8029,7 @@ public class CapacityPlanning {
 				Double.MIN_VALUE };
 		cpp_workstation14.setLayout(gbl_cpp_workstation14);
 
-		JLabel label_149 = new JLabel("Arbeitsplatz");
+		label_149 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_149 = new GridBagConstraints();
 		gbc_label_149.anchor = GridBagConstraints.WEST;
 		gbc_label_149.insets = new Insets(0, 0, 5, 5);
@@ -7862,7 +8044,7 @@ public class CapacityPlanning {
 		gbc_label_152.gridy = 1;
 		cpp_workstation14.add(label_152, gbc_label_152);
 
-		JLabel label_165 = new JLabel("Lenker");
+		label_165 = new JLabel("Lenker");
 		GridBagConstraints gbc_label_165 = new GridBagConstraints();
 		gbc_label_165.anchor = GridBagConstraints.WEST;
 		gbc_label_165.insets = new Insets(0, 0, 5, 5);
@@ -7870,7 +8052,7 @@ public class CapacityPlanning {
 		gbc_label_165.gridy = 3;
 		cpp_workstation14.add(label_165, gbc_label_165);
 
-		JLabel label_169 = new JLabel("KDH");
+		label_169 = new JLabel("KDH");
 		GridBagConstraints gbc_label_169 = new GridBagConstraints();
 		gbc_label_169.insets = new Insets(0, 0, 5, 5);
 		gbc_label_169.gridx = 3;
@@ -7922,7 +8104,7 @@ public class CapacityPlanning {
 		gbc_separator_12.gridy = 4;
 		cpp_workstation14.add(separator_12, gbc_separator_12);
 
-		JLabel label_192 = new JLabel("Kapazit\u00E4tsbedarf ");
+		label_192 = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_label_192 = new GridBagConstraints();
 		gbc_label_192.anchor = GridBagConstraints.WEST;
 		gbc_label_192.insets = new Insets(0, 0, 5, 5);
@@ -7940,7 +8122,7 @@ public class CapacityPlanning {
 		gbc_cptf14_k.gridy = 5;
 		cpp_workstation14.add(cptf14_k, gbc_cptf14_k);
 
-		JLabel label_193 = new JLabel("R\u00FCstzeit");
+		label_193 = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_label_193 = new GridBagConstraints();
 		gbc_label_193.anchor = GridBagConstraints.WEST;
 		gbc_label_193.insets = new Insets(0, 0, 5, 5);
@@ -7958,7 +8140,7 @@ public class CapacityPlanning {
 		gbc_cptf14_r.gridy = 6;
 		cpp_workstation14.add(cptf14_r, gbc_cptf14_r);
 
-		JLabel label_194 = new JLabel("Totale Kapazit\u00E4t");
+		label_194 = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_label_194 = new GridBagConstraints();
 		gbc_label_194.anchor = GridBagConstraints.WEST;
 		gbc_label_194.insets = new Insets(0, 0, 5, 5);
@@ -7976,7 +8158,7 @@ public class CapacityPlanning {
 		gbc_cptf14_t.gridy = 7;
 		cpp_workstation14.add(cptf14_t, gbc_cptf14_t);
 
-		JLabel label_195 = new JLabel("Auslastung %");
+		label_195 = new JLabel("Auslastung %");
 		GridBagConstraints gbc_label_195 = new GridBagConstraints();
 		gbc_label_195.anchor = GridBagConstraints.WEST;
 		gbc_label_195.insets = new Insets(0, 0, 5, 5);
@@ -7994,7 +8176,7 @@ public class CapacityPlanning {
 		gbc_cptf14_a.gridy = 8;
 		cpp_workstation14.add(cptf14_a, gbc_cptf14_a);
 
-		JLabel label_196 = new JLabel("\u00DCberstunden (min) ");
+		label_196 = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_label_196 = new GridBagConstraints();
 		gbc_label_196.anchor = GridBagConstraints.WEST;
 		gbc_label_196.insets = new Insets(0, 0, 5, 5);
@@ -8023,7 +8205,7 @@ public class CapacityPlanning {
 				0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation15.setLayout(gbl_cpp_workstation15);
 
-		JLabel label_197 = new JLabel("Arbeitsplatz");
+		label_197 = new JLabel("Arbeitsplatz");
 		GridBagConstraints gbc_label_197 = new GridBagConstraints();
 		gbc_label_197.anchor = GridBagConstraints.WEST;
 		gbc_label_197.insets = new Insets(0, 0, 5, 5);
@@ -8038,7 +8220,7 @@ public class CapacityPlanning {
 		gbc_label_198.gridy = 1;
 		cpp_workstation15.add(label_198, gbc_label_198);
 
-		JLabel label_199 = new JLabel("Sattel");
+		label_199 = new JLabel("Sattel");
 		GridBagConstraints gbc_label_199 = new GridBagConstraints();
 		gbc_label_199.anchor = GridBagConstraints.WEST;
 		gbc_label_199.insets = new Insets(0, 0, 5, 5);
@@ -8046,7 +8228,7 @@ public class CapacityPlanning {
 		gbc_label_199.gridy = 3;
 		cpp_workstation15.add(label_199, gbc_label_199);
 
-		JLabel label_200 = new JLabel("KDH");
+		label_200 = new JLabel("KDH");
 		GridBagConstraints gbc_label_200 = new GridBagConstraints();
 		gbc_label_200.insets = new Insets(0, 0, 5, 5);
 		gbc_label_200.gridx = 3;
@@ -8089,7 +8271,7 @@ public class CapacityPlanning {
 		gbc_cptfr15_17.gridy = 3;
 		cpp_workstation15.add(cptfr15_17, gbc_cptfr15_17);
 
-		JLabel label_203 = new JLabel("Pedale");
+		label_203 = new JLabel("Pedale");
 		GridBagConstraints gbc_label_203 = new GridBagConstraints();
 		gbc_label_203.anchor = GridBagConstraints.WEST;
 		gbc_label_203.insets = new Insets(0, 0, 5, 5);
@@ -8097,7 +8279,7 @@ public class CapacityPlanning {
 		gbc_label_203.gridy = 5;
 		cpp_workstation15.add(label_203, gbc_label_203);
 
-		JLabel label_204 = new JLabel("KDH");
+		label_204 = new JLabel("KDH");
 		GridBagConstraints gbc_label_204 = new GridBagConstraints();
 		gbc_label_204.insets = new Insets(0, 0, 5, 5);
 		gbc_label_204.gridx = 3;
@@ -8149,7 +8331,7 @@ public class CapacityPlanning {
 		gbc_separator_13.gridy = 6;
 		cpp_workstation15.add(separator_13, gbc_separator_13);
 
-		JLabel label_214 = new JLabel("Kapazit\u00E4tsbedarf ");
+		label_214 = new JLabel("Kapazit\u00E4tsbedarf ");
 		GridBagConstraints gbc_label_214 = new GridBagConstraints();
 		gbc_label_214.anchor = GridBagConstraints.WEST;
 		gbc_label_214.insets = new Insets(0, 0, 5, 5);
@@ -8167,7 +8349,7 @@ public class CapacityPlanning {
 		gbc_cptf15_k.gridy = 7;
 		cpp_workstation15.add(cptf15_k, gbc_cptf15_k);
 
-		JLabel label_215 = new JLabel("R\u00FCstzeit");
+		label_215 = new JLabel("R\u00FCstzeit");
 		GridBagConstraints gbc_label_215 = new GridBagConstraints();
 		gbc_label_215.anchor = GridBagConstraints.WEST;
 		gbc_label_215.insets = new Insets(0, 0, 5, 5);
@@ -8185,7 +8367,7 @@ public class CapacityPlanning {
 		gbc_cptf15_r.gridy = 8;
 		cpp_workstation15.add(cptf15_r, gbc_cptf15_r);
 
-		JLabel label_216 = new JLabel("Totale Kapazit\u00E4t");
+		label_216 = new JLabel("Totale Kapazit\u00E4t");
 		GridBagConstraints gbc_label_216 = new GridBagConstraints();
 		gbc_label_216.anchor = GridBagConstraints.WEST;
 		gbc_label_216.insets = new Insets(0, 0, 5, 5);
@@ -8203,7 +8385,7 @@ public class CapacityPlanning {
 		gbc_cptf15_t.gridy = 9;
 		cpp_workstation15.add(cptf15_t, gbc_cptf15_t);
 
-		JLabel label_217 = new JLabel("Auslastung %");
+		label_217 = new JLabel("Auslastung %");
 		GridBagConstraints gbc_label_217 = new GridBagConstraints();
 		gbc_label_217.anchor = GridBagConstraints.WEST;
 		gbc_label_217.insets = new Insets(0, 0, 5, 5);
@@ -8221,7 +8403,7 @@ public class CapacityPlanning {
 		gbc_cptf15_a.gridy = 10;
 		cpp_workstation15.add(cptf15_a, gbc_cptf15_a);
 
-		JLabel label_218 = new JLabel("\u00DCberstunden (min) ");
+		label_218 = new JLabel("\u00DCberstunden (min) ");
 		GridBagConstraints gbc_label_218 = new GridBagConstraints();
 		gbc_label_218.anchor = GridBagConstraints.WEST;
 		gbc_label_218.insets = new Insets(0, 0, 5, 5);
