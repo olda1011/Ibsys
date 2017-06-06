@@ -154,6 +154,7 @@ public class Utility {
 			capacityFill(productvalue3, productid3);
 		}
 
+		// calculate
 		for (int j = 1; j <= 15; j++) {
 			String methodNameK = "getCptf" + j + "_k";
 			String methodNameR = "getCptf" + j + "_r";
