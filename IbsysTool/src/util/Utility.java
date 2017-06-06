@@ -275,7 +275,8 @@ public class Utility {
 
 			if (methodMult != null) {
 				JLabel invoke = (JLabel) methodMult.invoke(methodNameMult);
-				System.out.println("OUTPUT:" + "pv:" + productValue + ",pi:" + productId + "j:" + j);
+
+				System.out.println("OUTPUT: " + methodNameMult + "pv:" + productValue + ",pi:" + productId + "j:" + j);
 				mult = Integer.parseInt(invoke.getText().replaceAll("\\D", ""));
 			}
 

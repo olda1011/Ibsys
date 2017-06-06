@@ -4208,7 +4208,7 @@ public class CapacityPlanning {
 		gbc_cptf4_1.gridy = 3;
 		cpp_workstation4.add(cptf4_1, gbc_cptf4_1);
 
-		JLabel cpl4_1 = new JLabel("x6 =");
+		cpl4_1 = new JLabel("x6 =");
 		GridBagConstraints gbc_cpl4_1 = new GridBagConstraints();
 		gbc_cpl4_1.anchor = GridBagConstraints.EAST;
 		gbc_cpl4_1.insets = new Insets(0, 0, 5, 5);
@@ -4251,7 +4251,7 @@ public class CapacityPlanning {
 		gbc_cptf4_2.gridy = 4;
 		cpp_workstation4.add(cptf4_2, gbc_cptf4_2);
 
-		JLabel cpl4_2 = new JLabel("x7 =");
+		cpl4_2 = new JLabel("x7 =");
 		GridBagConstraints gbc_cpl4_2 = new GridBagConstraints();
 		gbc_cpl4_2.anchor = GridBagConstraints.EAST;
 		gbc_cpl4_2.insets = new Insets(0, 0, 5, 5);
