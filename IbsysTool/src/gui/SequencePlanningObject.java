@@ -5,6 +5,7 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -15,9 +16,13 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
+import util.Utility;
+
 public class SequencePlanningObject {
 	private JTable spt_table;
 	private int currentRow;
+	private static JSpinner sps_splitnumber;
+	private static DefaultTableModel model;
 
 	public int getCurrentRow() {
 		return currentRow;
@@ -25,6 +30,14 @@ public class SequencePlanningObject {
 
 	public void setCurrentRow(int currentRow) {
 		this.currentRow = currentRow;
+	}
+
+	public JTable getSpt_table() {
+		return spt_table;
+	}
+
+	public void setSpt_table(JTable spt_table) {
+		this.spt_table = spt_table;
 	}
 
 	/**
@@ -42,20 +55,17 @@ public class SequencePlanningObject {
 		sequencePlanningPane.setLayout(gbl_sequencePlanningPane);
 
 		spt_table = new JTable();
-		spt_table.setModel(
-				new DefaultTableModel(
-						new Object[][] { { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, { null, null, null }, { null, null, null },
-								{ null, null, null }, { null, null, null }, },
-						new String[] { "Priorität", "Teil", "Menge" }));
+		model = new DefaultTableModel(new String[] { "Priorität", "Teil", "Menge" }, 0);
+		for (int i = 0; i < 30; i++) {
+			model.addRow(new Object[] { i + 1, null, null });
+		}
+		spt_table.setModel(model);
+
+		spt_table.setDefaultRenderer(Object.class, new CellRenderer());
 
 		GridBagConstraints gbc = new GridBagConstraints();
 		gbc.fill = GridBagConstraints.BOTH;
-		gbc.gridheight = 23;
+		gbc.gridheight = 25;
 		gbc.gridwidth = 12;
 		gbc.insets = new Insets(0, 0, 0, 5);
 		gbc.gridx = 0;
@@ -66,7 +76,7 @@ public class SequencePlanningObject {
 		spb_up.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-
+				up();
 			}
 		});
 		GridBagConstraints gbc_spb_up = new GridBagConstraints();
@@ -80,6 +90,7 @@ public class SequencePlanningObject {
 		spb_down.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
+				down();
 			}
 		});
 
@@ -88,7 +99,8 @@ public class SequencePlanningObject {
 			public void valueChanged(ListSelectionEvent event) {
 				if (spt_table.getSelectedRow() > -1 && event.getValueIsAdjusting() == true) {
 					currentRow = spt_table.getSelectedRow();
-					System.out.println("selected" + spt_table.getSelectedRow());
+					int splitvalue = (Integer) spt_table.getValueAt(currentRow, 2) / 2;
+					sps_splitnumber.setValue(splitvalue);
 				}
 			}
 		});
@@ -101,6 +113,19 @@ public class SequencePlanningObject {
 		sequencePlanningPane.add(spb_down, gbc_spb_down);
 
 		JButton spb_split = new JButton("Split");
+		spb_split.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				int partid = (Integer) spt_table.getValueAt(spt_table.getSelectedRow(), 1);
+				int valueNew = (Integer) sps_splitnumber.getValue();
+				int valueOld = (Integer) spt_table.getValueAt(spt_table.getSelectedRow(), 2)
+						- (Integer) sps_splitnumber.getValue();
+				System.out.println(sps_splitnumber.getValue());
+				spt_table.setValueAt(valueOld, spt_table.getSelectedRow(), 2);
+				model.addRow(new Object[] { spt_table.getRowCount() + 1, partid, valueNew });
+				sps_splitnumber.setValue(valueOld / 2);
+			}
+		});
 		GridBagConstraints gbc_spb_split = new GridBagConstraints();
 		gbc_spb_split.fill = GridBagConstraints.HORIZONTAL;
 		gbc_spb_split.insets = new Insets(0, 0, 5, 0);
@@ -108,7 +133,7 @@ public class SequencePlanningObject {
 		gbc_spb_split.gridy = 2;
 		sequencePlanningPane.add(spb_split, gbc_spb_split);
 
-		JSpinner sps_splitnumber = new JSpinner();
+		sps_splitnumber = new JSpinner();
 		GridBagConstraints gbc_sps_splitnumber = new GridBagConstraints();
 		gbc_sps_splitnumber.fill = GridBagConstraints.HORIZONTAL;
 		gbc_sps_splitnumber.insets = new Insets(0, 0, 5, 0);
@@ -117,6 +142,21 @@ public class SequencePlanningObject {
 		sequencePlanningPane.add(sps_splitnumber, gbc_sps_splitnumber);
 
 		JButton spb_reset = new JButton("Reset");
+		spb_reset.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				setModel();
+				try {
+					Utility.calculateAfterChange();
+				} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException e) {
+					e.printStackTrace();
+				}
+				spt_table.setRowSelectionInterval(0, 0);
+				int splitvalue = (Integer) spt_table.getValueAt(currentRow, 2) / 2;
+				sps_splitnumber.setValue(splitvalue);
+			}
+		});
 		GridBagConstraints gbc_spb_reset = new GridBagConstraints();
 		gbc_spb_reset.fill = GridBagConstraints.HORIZONTAL;
 		gbc_spb_reset.insets = new Insets(0, 0, 5, 0);
@@ -132,5 +172,50 @@ public class SequencePlanningObject {
 		gbc_table.gridy = 0;
 
 		return sequencePlanningPane;
+	}
+
+	private void up() {
+		int row = spt_table.getSelectedRow();
+		if (row > 0 && spt_table.getValueAt(row, 1) != null && spt_table.getValueAt(row, 2) != null) {
+			int partup = (Integer) spt_table.getValueAt(row - 1, 1);
+			int amountup = (Integer) spt_table.getValueAt(row - 1, 2);
+			int part = (Integer) spt_table.getValueAt(row, 1);
+			int amount = (Integer) spt_table.getValueAt(row, 2);
+
+			spt_table.setValueAt(partup, row, 1);
+			spt_table.setValueAt(part, row - 1, 1);
+			spt_table.setValueAt(amountup, row, 2);
+			spt_table.setValueAt(amount, row - 1, 2);
+
+			spt_table.setRowSelectionInterval(row - 1, row - 1);
+		}
+
+	}
+
+	private void down() {
+		int row = spt_table.getSelectedRow();
+		if (row < spt_table.getRowCount() - 1 && spt_table.getValueAt(row, 1) != null
+				&& spt_table.getValueAt(row, 2) != null) {
+			int partdown = (Integer) spt_table.getValueAt(row + 1, 1);
+			int amountdown = (Integer) spt_table.getValueAt(row + 1, 2);
+			int part = (Integer) spt_table.getValueAt(row, 1);
+			int amount = (Integer) spt_table.getValueAt(row, 2);
+
+			spt_table.setValueAt(partdown, row, 1);
+			spt_table.setValueAt(part, row + 1, 1);
+			spt_table.setValueAt(amountdown, row, 2);
+			spt_table.setValueAt(amount, row + 1, 2);
+
+			spt_table.setRowSelectionInterval(row + 1, row + 1);
+		}
+
+	}
+
+	private void setModel() {
+		model = new DefaultTableModel(new String[] { "Priorität", "Teil", "Menge" }, 0);
+		for (int i = 0; i < 30; i++) {
+			model.addRow(new Object[] { i + 1, null, null });
+		}
+		spt_table.setModel(model);
 	}
 }
