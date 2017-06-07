@@ -42,7 +42,7 @@ public class IbsysGUI {
 	private static final String MATERIAL_PLANNING = "Material Planning";
 	private static final String SEQUENCE_PLANNING = "Sequence Planning";
 	private static final String PROGNOSEN_PLANNING = "Forecast";
-	private JFrame frame;
+	private JFrame frmSupplyChainManager;
 	public static PurchasePlanning purchasePlanningObject;
 	public static MaterialPlanning materialPlanningObject;
 	public static CapacityPlanning capacityPlanningObject;
@@ -60,7 +60,7 @@ public class IbsysGUI {
 			public void run() {
 				try {
 					IbsysGUI window = new IbsysGUI();
-					window.frame.setVisible(true);
+					window.frmSupplyChainManager.setVisible(true);
 
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -80,13 +80,14 @@ public class IbsysGUI {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 890, 581);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new CardLayout(0, 0));
+		frmSupplyChainManager = new JFrame();
+		frmSupplyChainManager.setTitle("Supply Chain Manager v1.0");
+		frmSupplyChainManager.setBounds(100, 100, 890, 581);
+		frmSupplyChainManager.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmSupplyChainManager.getContentPane().setLayout(new CardLayout(0, 0));
 
 		JPanel planningPanel = new JPanel();
-		frame.getContentPane().add(planningPanel, "name_588858563580255");
+		frmSupplyChainManager.getContentPane().add(planningPanel, "name_588858563580255");
 		planningPanel.setLayout(new GridLayout(0, 1, 0, 0));
 
 		paneContainer = new JTabbedPane(JTabbedPane.TOP);
@@ -111,10 +112,10 @@ public class IbsysGUI {
 		paneContainer.addTab(SEQUENCE_PLANNING, null, sequencePlanningPane, null);
 
 		JPanel viewPanel = new JPanel();
-		frame.getContentPane().add(viewPanel, "name_588868208714905");
+		frmSupplyChainManager.getContentPane().add(viewPanel, "name_588868208714905");
 
 		menuBar = new JMenuBar();
-		frame.setJMenuBar(menuBar);
+		frmSupplyChainManager.setJMenuBar(menuBar);
 
 		JMenu mnView = new JMenu("Data");
 
@@ -130,7 +131,7 @@ public class IbsysGUI {
 		closeApp.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+				frmSupplyChainManager.dispatchEvent(new WindowEvent(frmSupplyChainManager, WindowEvent.WINDOW_CLOSING));
 			}
 		});
 		mnView.add(closeApp);

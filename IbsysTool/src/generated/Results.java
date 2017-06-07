@@ -588,9 +588,8 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "warehousestock", "inwardstockmovement",
-		"futureinwardstockmovement", "idletimecosts", "waitinglistworkstations", "waitingliststock",
-		"ordersinwork", "completedorders", "cycletimes", "result" })
+@XmlType(name = "", propOrder = { "warehousestock", "inwardstockmovement", "futureinwardstockmovement", "idletimecosts",
+		"waitinglistworkstations", "waitingliststock", "ordersinwork", "completedorders", "cycletimes", "result" })
 @XmlRootElement(name = "results")
 public class Results {
 
@@ -3316,8 +3315,8 @@ public class Results {
 	 * 
 	 */
 	@XmlAccessorType(XmlAccessType.FIELD)
-	@XmlType(name = "", propOrder = { "general", "defectivegoods", "normalsale", "directsale",
-			"marketplacesale", "summary" })
+	@XmlType(name = "", propOrder = { "general", "defectivegoods", "normalsale", "directsale", "marketplacesale",
+			"summary" })
 	public static class Result {
 
 		@XmlElement(required = true)
@@ -4297,10 +4296,9 @@ public class Results {
 		 * 
 		 */
 		@XmlAccessorType(XmlAccessType.FIELD)
-		@XmlType(name = "", propOrder = { "capacity", "possiblecapacity",
-				"relpossiblenormalcapacity", "productivetime", "effiency", "sellwish",
-				"salesquantity", "deliveryreliability", "idletime", "idletimecosts", "storevalue",
-				"storagecosts" })
+		@XmlType(name = "", propOrder = { "capacity", "possiblecapacity", "relpossiblenormalcapacity", "productivetime",
+				"effiency", "sellwish", "salesquantity", "deliveryreliability", "idletime", "idletimecosts",
+				"storevalue", "storagecosts" })
 		public static class General {
 
 			@XmlElement(required = true)
@@ -4393,8 +4391,7 @@ public class Results {
 			 *            {@link Results.Result.General.Relpossiblenormalcapacity }
 			 * 
 			 */
-			public void setRelpossiblenormalcapacity(
-					Results.Result.General.Relpossiblenormalcapacity value) {
+			public void setRelpossiblenormalcapacity(Results.Result.General.Relpossiblenormalcapacity value) {
 				this.relpossiblenormalcapacity = value;
 			}
 
@@ -7061,7 +7058,7 @@ public class Results {
 			@XmlAttribute(name = "id")
 			protected Byte id;
 			@XmlAttribute(name = "timeneed")
-			protected Byte timeneed;
+			protected int timeneed;
 
 			/**
 			 * Gets the value of the content property.
@@ -7122,7 +7119,7 @@ public class Results {
 			 * @return possible object is {@link Byte }
 			 * 
 			 */
-			public Byte getTimeneed() {
+			public int getTimeneed() {
 				return timeneed;
 			}
 
@@ -7133,7 +7130,7 @@ public class Results {
 			 *            allowed object is {@link Byte }
 			 * 
 			 */
-			public void setTimeneed(Byte value) {
+			public void setTimeneed(int value) {
 				this.timeneed = value;
 			}
 

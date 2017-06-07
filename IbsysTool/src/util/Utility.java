@@ -244,7 +244,6 @@ public class Utility {
 			if (method != null) {
 				JTextField invoke = (JTextField) method.invoke(methodName);
 				capacity += Integer.parseInt(invoke.getText());
-				System.out.println(capacity);
 			}
 		}
 		return capacity;
