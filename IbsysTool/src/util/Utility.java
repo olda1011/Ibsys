@@ -154,6 +154,7 @@ public class Utility {
 			capacityFill(productvalue3, productid3);
 		}
 
+		// calculate
 		for (int j = 1; j <= 15; j++) {
 			String methodNameK = "getCptf" + j + "_k";
 			String methodNameR = "getCptf" + j + "_r";
@@ -194,6 +195,38 @@ public class Utility {
 			}
 		}
 
+		// fill SequencePlanning
+		int counter = 0;
+		for (int i = 11; i >= 0; i--) {
+			int p1PartID = p1Prod[i][0];
+			int p2PartID = p2Prod[i][0];
+			int p3PartID = p3Prod[i][0];
+			int p1PartAmount = p1Prod[i][7];
+			int p2PartAmount = p2Prod[i][7];
+			int p3PartAmount = p3Prod[i][7];
+			if ((p1PartID == 16 || p1PartID == 17 || p1PartID == 26)
+					|| (p2PartID == 16 || p2PartID == 17 || p2PartID == 26)
+					|| (p3PartID == 16 || p3PartID == 17 || p3PartID == 26)) {
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
+				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
+						+ p2PartAmount + " p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount + p2PartAmount + p3PartAmount,
+						counter, 2);
+				counter++;
+			} else {
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartID, counter + 1, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartID, counter + 2, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount, counter, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartAmount, counter + 1, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
+				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
+						+ p2PartAmount + "p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				counter = counter + 3;
+			}
+
+		}
 	}
 
 	private static int getCapacityOfWorkstation(int workstation)
@@ -272,7 +305,6 @@ public class Utility {
 
 			if (methodMult != null) {
 				JLabel invoke = (JLabel) methodMult.invoke(methodNameMult);
-
 				mult = Integer.parseInt(invoke.getText().replaceAll("\\D", ""));
 			}
 
