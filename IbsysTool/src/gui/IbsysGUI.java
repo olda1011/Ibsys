@@ -83,10 +83,12 @@ public class IbsysGUI {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 890, 581);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new CardLayout(0, 0));
+		frame.getContentPane()
+				.setLayout(new CardLayout(0, 0));
 
 		JPanel planningPanel = new JPanel();
-		frame.getContentPane().add(planningPanel, "name_588858563580255");
+		frame.getContentPane()
+				.add(planningPanel, "name_588858563580255");
 		planningPanel.setLayout(new GridLayout(0, 1, 0, 0));
 
 		paneContainer = new JTabbedPane(JTabbedPane.TOP);
@@ -111,7 +113,8 @@ public class IbsysGUI {
 		paneContainer.addTab(SEQUENCE_PLANNING, null, sequencePlanningPane, null);
 
 		JPanel viewPanel = new JPanel();
-		frame.getContentPane().add(viewPanel, "name_588868208714905");
+		frame.getContentPane()
+				.add(viewPanel, "name_588868208714905");
 
 		menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
@@ -136,7 +139,8 @@ public class IbsysGUI {
 		mnView.add(closeApp);
 
 		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png").getPath()));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblgerman = new JLabel(imageIcon);
 			menuBar.add(lblgerman);
@@ -149,7 +153,8 @@ public class IbsysGUI {
 		}
 
 		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png").getPath()));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblEnglish = new JLabel(imageIcon);
 			menuBar.add(lblEnglish);
@@ -167,7 +172,8 @@ public class IbsysGUI {
 
 				if (showOpenDialog == JFileChooser.APPROVE_OPTION) {
 
-					String path = chooser.getSelectedFile().getPath();
+					String path = chooser.getSelectedFile()
+							.getPath();
 					try {
 						if (Main.loadXmlData(path)) {
 							JOptionPane.showMessageDialog(new JFrame(),
@@ -178,8 +184,9 @@ public class IbsysGUI {
 								Utility.initValues();
 								MaterialPlanning.enableEditable();
 
-							} catch (NoSuchMethodException | SecurityException | IllegalAccessException
-									| IllegalArgumentException | InvocationTargetException e) {
+							} catch (NoSuchMethodException | SecurityException
+									| IllegalAccessException | IllegalArgumentException
+									| InvocationTargetException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
@@ -187,8 +194,8 @@ public class IbsysGUI {
 					} catch (Exception e) {
 						e.printStackTrace();
 						JOptionPane.showMessageDialog(new JFrame(),
-								"Please choose a valid file! The file has to be a .xml file!", "Error",
-								JOptionPane.ERROR_MESSAGE);
+								"Please choose a valid file! The file has to be a .xml file!",
+								"Error", JOptionPane.ERROR_MESSAGE);
 					}
 				}
 			}
@@ -199,13 +206,17 @@ public class IbsysGUI {
 			public void actionPerformed(ActionEvent arg0) {
 
 				JFileChooser chooser = new JFileChooser();
-				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml", "xml");
+				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml",
+						"xml");
 				chooser.addChoosableFileFilter(extensionFilter);
 				try {
-					int intValue = Main.results.getPeriod().intValue();
+					int intValue = Main.results.getPeriod()
+							.intValue();
 					Date date = new Date(System.currentTimeMillis());
-					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_" + (date.getYear() + 1900);
-					chooser.setSelectedFile(new File("period_" + intValue + "_export_" + dateString + ".xml"));
+					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_"
+							+ (date.getYear() + 1900);
+					chooser.setSelectedFile(
+							new File("period_" + intValue + "_export_" + dateString + ".xml"));
 
 					int showSaveDialog = chooser.showSaveDialog(null);
 					if (showSaveDialog == JFileChooser.CANCEL_OPTION) {
@@ -213,22 +224,29 @@ public class IbsysGUI {
 					}
 					if (showSaveDialog == JFileChooser.APPROVE_OPTION) {
 
-						Input unmarshal = JAXB.unmarshal(Main.class.getResourceAsStream("input.xml"), Input.class);
+						Input unmarshal = JAXB.unmarshal(
+								Main.class.getResourceAsStream("input.xml"), Input.class);
 
 						File selectedFile = chooser.getSelectedFile();
 						String path = selectedFile.getPath();
-						if (path.charAt((path.length() - 4)) == '.' && path.charAt((path.length() - 3)) == 'x'
-								&& path.charAt((path.length() - 2)) == 'm' && path.charAt((path.length() - 1)) == 'l') {
+						if (path.charAt((path.length() - 4)) == '.'
+								&& path.charAt((path.length() - 3)) == 'x'
+								&& path.charAt((path.length() - 2)) == 'm'
+								&& path.charAt((path.length() - 1)) == 'l') {
 
 						} else {
 							path += ".xml";
 						}
+						Input input = Utility.generateInputXmlObject();
+
 						JAXB.marshal(unmarshal, path);
 
 					}
 				} catch (Exception ex) {
-					JOptionPane.showMessageDialog(new JFrame(), "No data inserted: Please import data first!", "Error",
+					JOptionPane.showMessageDialog(new JFrame(),
+							"No data inserted: Please import data first!", "Error",
 							JOptionPane.ERROR_MESSAGE);
+					ex.printStackTrace();
 
 				}
 
@@ -468,15 +486,28 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedale");
 				CapacityPlanning.label_204.setText("K/D/H");
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Kaufteil");
-				table.getColumnModel().getColumn(1).setHeaderValue("Lagerbestand");
-				table.getColumnModel().getColumn(2).setHeaderValue("Bedarf in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Bedarf in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Bedarf in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Bedarf in N+3");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Kaufteil");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Lagerbestand");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Bedarf in N");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("Bedarf in N+1");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Bedarf in N+2");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Bedarf in N+3");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Daten");
@@ -723,15 +754,28 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedal");
 				CapacityPlanning.label_204.setText("C/F/M");
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Purchaseitem");
-				table.getColumnModel().getColumn(1).setHeaderValue("Inventory");
-				table.getColumnModel().getColumn(2).setHeaderValue("Needed in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Needed in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Needed in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Needed in N+3");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Purchaseitem");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Inventory");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Needed in N");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("Needed in N+1");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Needed in N+2");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Needed in N+3");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Data");

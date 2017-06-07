@@ -8,14 +8,23 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 
 import application.Main;
+import generated.Input;
+import generated.Input.Orderlist;
+import generated.Input.Productionlist.Production;
+import generated.Input.Qualitycontrol;
+import generated.Input.Selldirect;
+import generated.Input.Selldirect.Item;
+import generated.Input.Sellwish;
+import generated.Input.Workingtimelist;
+import generated.Input.Workingtimelist.Workingtime;
 import gui.CapacityPlanning;
 import gui.IbsysGUI;
 import gui.PurchasePlanning;
 
 public class Utility {
 
-	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
 		// Produktionsprogramm berechnen
 
@@ -34,14 +43,14 @@ public class Utility {
 		fillValues();
 	}
 
-	public static void initValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public static void initValues() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		Main.main();
 		fillValues();
 	}
 
-	public static void fillValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public static void fillValues() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
 		int[][] p1Prod = Main.p1Prod;
 		int[][] p2Prod = Main.p2Prod;
@@ -59,7 +68,8 @@ public class Utility {
 					} else {
 						methodName = "getTf1_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass()
+							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p1Prod[i][j + 1]);
@@ -81,7 +91,8 @@ public class Utility {
 					} else {
 						methodName = "getTf2_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass()
+							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p2Prod[i][j + 1]);
@@ -103,7 +114,8 @@ public class Utility {
 					} else {
 						methodName = "getTf3_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass()
+							.getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p3Prod[i][j + 1]);
@@ -135,11 +147,16 @@ public class Utility {
 		int e16 = p3Prod[3][7] + p2Prod[3][7] + p1Prod[3][7];
 		int e17 = p3Prod[4][7] + p2Prod[4][7] + p1Prod[4][7];
 		int e26 = p3Prod[1][7] + p2Prod[1][7] + p1Prod[1][7];
-		CapacityPlanning.getCptf14_16().setText("" + e16);
-		CapacityPlanning.getCptf6_16().setText("" + e16);
-		CapacityPlanning.getCptf15_17().setText("" + e17);
-		CapacityPlanning.getCptf7_26().setText("" + e26);
-		CapacityPlanning.getCptf15_26().setText("" + e26);
+		CapacityPlanning.getCptf14_16()
+				.setText("" + e16);
+		CapacityPlanning.getCptf6_16()
+				.setText("" + e16);
+		CapacityPlanning.getCptf15_17()
+				.setText("" + e17);
+		CapacityPlanning.getCptf7_26()
+				.setText("" + e26);
+		CapacityPlanning.getCptf15_26()
+				.setText("" + e26);
 
 		// p1 p2 p3
 		for (int i = 0; i <= 11; i++) {
@@ -167,11 +184,16 @@ public class Utility {
 			Method methodA = null;
 			Method methodU = null;
 			try {
-				methodK = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameK);
-				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
-				methodT = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameT);
-				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
-				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
+				methodK = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameK);
+				methodR = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameR);
+				methodT = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameT);
+				methodA = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameA);
+				methodU = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameU);
 			} catch (Exception e) {
 
 			}
@@ -207,22 +229,36 @@ public class Utility {
 			if ((p1PartID == 16 || p1PartID == 17 || p1PartID == 26)
 					|| (p2PartID == 16 || p2PartID == 17 || p2PartID == 26)
 					|| (p3PartID == 16 || p3PartID == 17 || p3PartID == 26)) {
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + " p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount + p2PartAmount + p3PartAmount,
-						counter, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p3PartAmount, counter + 2, 2);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: "
+				// + p2PartID + " Menge: " + p2PartAmount + " p3: " + p3PartID +
+				// " Menge: "
+				// + p3PartAmount + " Counter:" + counter);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p1PartID, counter, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p1PartAmount + p2PartAmount + p3PartAmount, counter, 2);
 				counter++;
 			} else {
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartID, counter + 1, 1);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartID, counter + 2, 1);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount, counter, 2);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartAmount, counter + 1, 2);
-				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + "p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p1PartID, counter, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p2PartID, counter + 1, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p3PartID, counter + 2, 1);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p1PartAmount, counter, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p2PartAmount, counter + 1, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table()
+						.setValueAt(p3PartAmount, counter + 2, 2);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: "
+				// + p2PartID + " Menge: " + p2PartAmount + "p3: " + p3PartID +
+				// " Menge: "
+				// + p3PartAmount + " Counter:" + counter);
 				counter = counter + 3;
 			}
 
@@ -237,14 +273,15 @@ public class Utility {
 			Method method = null;
 
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				method = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodName);
 			} catch (Exception e) {
 
 			}
 			if (method != null) {
 				JTextField invoke = (JTextField) method.invoke(methodName);
 				capacity += Integer.parseInt(invoke.getText());
-				System.out.println(capacity);
+				// System.out.println(capacity);
 			}
 		}
 		return capacity;
@@ -259,7 +296,8 @@ public class Utility {
 			int value = 0;
 
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				method = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodName);
 			} catch (Exception e) {
 
 			}
@@ -288,9 +326,12 @@ public class Utility {
 			int sharedValue = 0;
 			int mult = 0;
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
-				methodMult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameMult);
-				methodResult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameResult);
+				method = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodName);
+				methodMult = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameMult);
+				methodResult = IbsysGUI.capacityPlanningObject.getClass()
+						.getMethod(methodNameResult);
 			} catch (Exception e) {
 
 			}
@@ -305,7 +346,8 @@ public class Utility {
 
 			if (methodMult != null) {
 				JLabel invoke = (JLabel) methodMult.invoke(methodNameMult);
-				mult = Integer.parseInt(invoke.getText().replaceAll("\\D", ""));
+				mult = Integer.parseInt(invoke.getText()
+						.replaceAll("\\D", ""));
 			}
 
 			if (methodResult != null) {
@@ -319,6 +361,94 @@ public class Utility {
 
 			}
 		}
+	}
+
+	public static Input generateInputXmlObject() {
+		Input input = new Input();
+
+		// Qualitycontrol
+		Qualitycontrol qualitycontrol = new Qualitycontrol();
+		qualitycontrol.setDelay(null);
+		qualitycontrol.setLosequantity(null);
+		qualitycontrol.setType(null);
+		input.setQualitycontrol(qualitycontrol);
+
+		// Selldirect
+		Selldirect sellDirect = new Selldirect();
+		Item i1 = new Item();
+		i1.setArticle((byte) 1);
+		i1.setPenalty(null);
+		i1.setPrice(null);
+		i1.setQuantity(null);
+		sellDirect.getItem()
+				.add(i1);
+		Item i2 = new Item();
+		i2.setArticle((byte) 2);
+		i2.setPenalty(null);
+		i2.setPrice(null);
+		i2.setQuantity(null);
+		sellDirect.getItem()
+				.add(i2);
+		Item i3 = new Item();
+		i3.setArticle((byte) 3);
+		i3.setPenalty(null);
+		i3.setPrice(null);
+		i3.setQuantity(null);
+		sellDirect.getItem()
+				.add(i3);
+		input.setSelldirect(sellDirect);
+
+		// Sellwish
+		Sellwish sellWish = new Sellwish();
+		Input.Sellwish.Item iSW1 = new Input.Sellwish.Item();
+		iSW1.setArticle((byte) 1);
+		iSW1.setQuantity(null);
+		sellWish.getItem()
+				.add(iSW1);
+		Input.Sellwish.Item iSW2 = new Input.Sellwish.Item();
+		iSW2.setArticle((byte) 1);
+		iSW2.setQuantity(null);
+		sellWish.getItem()
+				.add(iSW2);
+		Input.Sellwish.Item iSW3 = new Input.Sellwish.Item();
+		iSW3.setArticle((byte) 1);
+		iSW3.setQuantity(null);
+		sellWish.getItem()
+				.add(iSW3);
+		input.setSellwish(sellWish);
+
+		// Order hinzufügen
+		generated.Input.Orderlist.Order order = new generated.Input.Orderlist.Order();
+		order.setArticle((byte) 0);
+		order.setModus((byte) 5);
+		order.setQuantity((short) 10);
+		input.setOrderlist(new Orderlist());
+		input.getOrderlist()
+				.getOrder()
+				.add(order);
+
+		// Productionlist
+		Input.Productionlist productionsList = new Input.Productionlist();
+		input.setProductionlist(productionsList);
+		Production p1 = new Production();
+		p1.setArticle((byte) 1);
+		p1.setQuantity((short) 1);
+
+		input.getProductionlist()
+				.getProduction()
+				.add(p1);
+
+		// Workingtime
+		input.setWorkingtimelist(new Workingtimelist());
+		Workingtime w1 = new Workingtime();
+		w1.setStation((byte) 1);
+		w1.setShift((byte) 0);
+		w1.setOvertime((short) 0);
+		input.getWorkingtimelist()
+				.getWorkingtime()
+				.add(w1);
+
+		return input;
 	}
 
 }
