@@ -183,6 +183,8 @@ public class Utility {
 				JTextField invokeU = (JTextField) methodU.invoke(methodNameU);
 				int capacity = getCapacityOfWorkstation(j);
 				int setuptime = getSetupTimeOfWorkstation(j);
+				int capacityold = Main.timeneeded[j];
+				// TEXTFIELD benennen und einfügen
 				int totalcapacity = capacity + setuptime;
 				int workload = totalcapacity * 100 / 2400;
 				int overtime = (totalcapacity - 2400) > 0 ? totalcapacity - 2400 : 0;
