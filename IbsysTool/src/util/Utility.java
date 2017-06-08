@@ -223,7 +223,7 @@ public class Utility {
 					invokeC.setSelectedIndex(0);
 					shiftvalue = 2400;
 				} else if (totalcapacity > 3866 && totalcapacity < 6666) {
-					invokeC.setSelectedIndex(2);
+					invokeC.setSelectedIndex(1);
 					shiftvalue = 4800;
 				} else if (totalcapacity > 6666 && totalcapacity < 7200) {
 					invokeC.setSelectedIndex(2);
@@ -234,15 +234,9 @@ public class Utility {
 					totalcapacity = 7200;
 				}
 
-				if (invokeC.getSelectedIndex() == 0) {
-					shiftvalue = 2400;
-				} else if (invokeC.getSelectedIndex() == 1) {
-					shiftvalue = 4800;
-				} else if (invokeC.getSelectedIndex() == 2) {
-					shiftvalue = 7200;
-				}
 				int workload = totalcapacity * 100 / shiftvalue;
 				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
+				overtime = overtime / 5;
 				invokeK.setText("" + capacity);
 				invokeV.setText("" + capacityold);
 				invokeR.setText("" + setuptime);
@@ -503,6 +497,7 @@ public class Utility {
 				}
 				int workload = totalcapacity * 100 / shiftvalue;
 				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
+				overtime = overtime / 5;
 				invokeA.setText("" + workload);
 				invokeU.setText("" + overtime);
 			}

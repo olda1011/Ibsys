@@ -5472,7 +5472,7 @@ public class CapacityPlanning {
 		gbc_cptf1_a.gridy = 11;
 		cpp_workstation1.add(cptf1_a, gbc_cptf1_a);
 
-		cpl1_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl1_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl1_overtime = new GridBagConstraints();
 		gbc_cpl1_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_overtime.insets = new Insets(0, 0, 5, 5);
@@ -5761,7 +5761,7 @@ public class CapacityPlanning {
 		gbc_cptf2_a.gridy = 11;
 		cpp_workstation2.add(cptf2_a, gbc_cptf2_a);
 
-		cpl2_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl2_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl2_overtime = new GridBagConstraints();
 		gbc_cpl2_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_overtime.insets = new Insets(0, 0, 5, 5);
@@ -6050,7 +6050,7 @@ public class CapacityPlanning {
 		gbc_cptf3_a.gridy = 11;
 		cpp_workstation3.add(cptf3_a, gbc_cptf3_a);
 
-		cpl3_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl3_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl3_overtime = new GridBagConstraints();
 		gbc_cpl3_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_overtime.insets = new Insets(0, 0, 5, 5);
@@ -6339,7 +6339,7 @@ public class CapacityPlanning {
 		gbc_cptf4_a.gridy = 11;
 		cpp_workstation4.add(cptf4_a, gbc_cptf4_a);
 
-		cpl4_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl4_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl4_overtime = new GridBagConstraints();
 		gbc_cpl4_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_overtime.insets = new Insets(0, 0, 5, 5);
@@ -6682,7 +6682,7 @@ public class CapacityPlanning {
 		gbc_cptf6_a.gridy = 13;
 		cpp_workstation6.add(cptf6_a, gbc_cptf6_a);
 
-		cpl6_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl6_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl6_overtime = new GridBagConstraints();
 		gbc_cpl6_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_overtime.insets = new Insets(0, 0, 5, 5);
@@ -7300,7 +7300,7 @@ public class CapacityPlanning {
 		gbc_cptf7_a.gridy = 21;
 		cpp_workstation7.add(cptf7_a, gbc_cptf7_a);
 
-		cpl7_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl7_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl7_overtime = new GridBagConstraints();
 		gbc_cpl7_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_overtime.insets = new Insets(0, 0, 5, 5);
@@ -7868,7 +7868,7 @@ public class CapacityPlanning {
 		gbc_cptf8_a.gridy = 19;
 		cpp_workstation8.add(cptf8_a, gbc_cptf8_a);
 
-		cpl8_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl8_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl8_overtime = new GridBagConstraints();
 		gbc_cpl8_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_overtime.insets = new Insets(0, 0, 5, 5);
@@ -8436,7 +8436,7 @@ public class CapacityPlanning {
 		gbc_cptf9_a.gridy = 19;
 		cpp_workstation9.add(cptf9_a, gbc_cptf9_a);
 
-		cpl9_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl9_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl9_overtime = new GridBagConstraints();
 		gbc_cpl9_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_overtime.insets = new Insets(0, 0, 5, 5);
@@ -8867,7 +8867,7 @@ public class CapacityPlanning {
 		gbc_cptf10_a.gridy = 15;
 		cpp_workstation10.add(cptf10_a, gbc_cptf10_a);
 
-		cpl10_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl10_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl10_overtime = new GridBagConstraints();
 		gbc_cpl10_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_overtime.insets = new Insets(0, 0, 5, 5);
@@ -9298,7 +9298,7 @@ public class CapacityPlanning {
 		gbc_cptf11_a.gridy = 15;
 		cpp_workstation11.add(cptf11_a, gbc_cptf11_a);
 
-		cpl11_overtime = new JLabel("\u00DCberstunden (min) ");
+		cpl11_overtime = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_cpl11_overtime = new GridBagConstraints();
 		gbc_cpl11_overtime.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_overtime.insets = new Insets(0, 0, 5, 5);
@@ -9729,7 +9729,7 @@ public class CapacityPlanning {
 		gbc_cptf12_a.gridy = 15;
 		cpp_workstation12.add(cptf12_a, gbc_cptf12_a);
 
-		label_158 = new JLabel("\u00DCberstunden (min) ");
+		label_158 = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_label_158 = new GridBagConstraints();
 		gbc_label_158.anchor = GridBagConstraints.WEST;
 		gbc_label_158.insets = new Insets(0, 0, 5, 5);
@@ -10160,7 +10160,7 @@ public class CapacityPlanning {
 		gbc_cptf13_a.gridy = 15;
 		cpp_workstation13.add(cptf13_a, gbc_cptf13_a);
 
-		label_190 = new JLabel("\u00DCberstunden (min) ");
+		label_190 = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_label_190 = new GridBagConstraints();
 		gbc_label_190.anchor = GridBagConstraints.WEST;
 		gbc_label_190.insets = new Insets(0, 0, 5, 5);
@@ -10362,7 +10362,7 @@ public class CapacityPlanning {
 		gbc_cptf14_a.gridy = 9;
 		cpp_workstation14.add(cptf14_a, gbc_cptf14_a);
 
-		label_196 = new JLabel("\u00DCberstunden (min) ");
+		label_196 = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_label_196 = new GridBagConstraints();
 		gbc_label_196.anchor = GridBagConstraints.WEST;
 		gbc_label_196.insets = new Insets(0, 0, 5, 5);
@@ -10615,7 +10615,7 @@ public class CapacityPlanning {
 		gbc_cptf15_a.gridy = 11;
 		cpp_workstation15.add(cptf15_a, gbc_cptf15_a);
 
-		label_218 = new JLabel("\u00DCberstunden (min) ");
+		label_218 = new JLabel("\u00DCberstunden pro Tag (min)");
 		GridBagConstraints gbc_label_218 = new GridBagConstraints();
 		gbc_label_218.anchor = GridBagConstraints.WEST;
 		gbc_label_218.insets = new Insets(0, 0, 5, 5);

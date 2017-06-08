@@ -95,7 +95,6 @@ public class Main {
 		int[] tf = new int[16];
 		List<Workplace> workplaces = results.getWaitinglistworkstations().getWorkplace();
 		for (Workplace wp : workplaces) {
-			System.out.println(wp.getTimeneed());
 			tf[wp.getId().intValue()] = wp.getTimeneed();
 		}
 		return tf;
