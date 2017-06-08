@@ -80,6 +80,7 @@ public class IbsysGUI {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+
 		frmSupplyChainManager = new JFrame();
 		frmSupplyChainManager.setTitle("Supply Chain Manager v1.0");
 		frmSupplyChainManager.setBounds(100, 100, 890, 581);
@@ -87,7 +88,9 @@ public class IbsysGUI {
 		frmSupplyChainManager.getContentPane().setLayout(new CardLayout(0, 0));
 
 		JPanel planningPanel = new JPanel();
+
 		frmSupplyChainManager.getContentPane().add(planningPanel, "name_588858563580255");
+
 		planningPanel.setLayout(new GridLayout(0, 1, 0, 0));
 
 		paneContainer = new JTabbedPane(JTabbedPane.TOP);
@@ -112,6 +115,7 @@ public class IbsysGUI {
 		paneContainer.addTab(SEQUENCE_PLANNING, null, sequencePlanningPane, null);
 
 		JPanel viewPanel = new JPanel();
+
 		frmSupplyChainManager.getContentPane().add(viewPanel, "name_588868208714905");
 
 		menuBar = new JMenuBar();
@@ -224,12 +228,15 @@ public class IbsysGUI {
 						} else {
 							path += ".xml";
 						}
+						Input input = Utility.generateInputXmlObject();
+
 						JAXB.marshal(unmarshal, path);
 
 					}
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(new JFrame(), "No data inserted: Please import data first!", "Error",
 							JOptionPane.ERROR_MESSAGE);
+					ex.printStackTrace();
 
 				}
 

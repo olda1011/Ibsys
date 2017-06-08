@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
@@ -46,12 +48,13 @@ public class SequencePlanningObject {
 	public JPanel sequencePlanning() {
 		JPanel sequencePlanningPane = new JPanel();
 		GridBagLayout gbl_sequencePlanningPane = new GridBagLayout();
-		gbl_sequencePlanningPane.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_sequencePlanningPane.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0 };
 		gbl_sequencePlanningPane.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_sequencePlanningPane.columnWeights = new double[] { 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				1.0, 0.0, Double.MIN_VALUE };
-		gbl_sequencePlanningPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,
-				Double.MIN_VALUE };
+		gbl_sequencePlanningPane.columnWeights = new double[] { 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.0, 0.0, 1.0, 0.0, Double.MIN_VALUE };
+		gbl_sequencePlanningPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0,
+				1.0, Double.MIN_VALUE };
 		sequencePlanningPane.setLayout(gbl_sequencePlanningPane);
 
 		spt_table = new JTable();
@@ -94,16 +97,18 @@ public class SequencePlanningObject {
 			}
 		});
 
-		spt_table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-			@Override
-			public void valueChanged(ListSelectionEvent event) {
-				if (spt_table.getSelectedRow() > -1 && event.getValueIsAdjusting() == true) {
-					currentRow = spt_table.getSelectedRow();
-					int splitvalue = (Integer) spt_table.getValueAt(currentRow, 2) / 2;
-					sps_splitnumber.setValue(splitvalue);
-				}
-			}
-		});
+		spt_table.getSelectionModel()
+				.addListSelectionListener(new ListSelectionListener() {
+					@Override
+					public void valueChanged(ListSelectionEvent event) {
+						if (spt_table.getSelectedRow() > -1
+								&& event.getValueIsAdjusting() == true) {
+							currentRow = spt_table.getSelectedRow();
+							int splitvalue = (Integer) spt_table.getValueAt(currentRow, 2) / 2;
+							sps_splitnumber.setValue(splitvalue);
+						}
+					}
+				});
 
 		GridBagConstraints gbc_spb_down = new GridBagConstraints();
 		gbc_spb_down.fill = GridBagConstraints.HORIZONTAL;
@@ -120,10 +125,15 @@ public class SequencePlanningObject {
 				int valueNew = (Integer) sps_splitnumber.getValue();
 				int valueOld = (Integer) spt_table.getValueAt(spt_table.getSelectedRow(), 2)
 						- (Integer) sps_splitnumber.getValue();
-				System.out.println(sps_splitnumber.getValue());
-				spt_table.setValueAt(valueOld, spt_table.getSelectedRow(), 2);
-				model.addRow(new Object[] { spt_table.getRowCount() + 1, partid, valueNew });
-				sps_splitnumber.setValue(valueOld / 2);
+				if ((Integer) sps_splitnumber.getValue() == 0) {
+					JOptionPane.showMessageDialog(new JFrame(), "Can´t split less then 1 unit.",
+							"Error", JOptionPane.ERROR_MESSAGE);
+				} else {
+					spt_table.setValueAt(valueOld, spt_table.getSelectedRow(), 2);
+					model.addRow(new Object[] { spt_table.getRowCount() + 1, partid, valueNew });
+					sps_splitnumber.setValue(valueOld / 2);
+				}
+
 			}
 		});
 		GridBagConstraints gbc_spb_split = new GridBagConstraints();
@@ -148,8 +158,8 @@ public class SequencePlanningObject {
 				setModel();
 				try {
 					Utility.calculateAfterChange();
-				} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
-						| InvocationTargetException e) {
+				} catch (NoSuchMethodException | SecurityException | IllegalAccessException
+						| IllegalArgumentException | InvocationTargetException e) {
 					e.printStackTrace();
 				}
 				spt_table.setRowSelectionInterval(0, 0);
@@ -176,7 +186,8 @@ public class SequencePlanningObject {
 
 	private void up() {
 		int row = spt_table.getSelectedRow();
-		if (row > 0 && spt_table.getValueAt(row, 1) != null && spt_table.getValueAt(row, 2) != null) {
+		if (row > 0 && spt_table.getValueAt(row, 1) != null
+				&& spt_table.getValueAt(row, 2) != null) {
 			int partup = (Integer) spt_table.getValueAt(row - 1, 1);
 			int amountup = (Integer) spt_table.getValueAt(row - 1, 2);
 			int part = (Integer) spt_table.getValueAt(row, 1);

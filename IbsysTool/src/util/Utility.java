@@ -8,6 +8,15 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 
 import application.Main;
+import generated.Input;
+import generated.Input.Orderlist;
+import generated.Input.Productionlist.Production;
+import generated.Input.Qualitycontrol;
+import generated.Input.Selldirect;
+import generated.Input.Selldirect.Item;
+import generated.Input.Sellwish;
+import generated.Input.Workingtimelist;
+import generated.Input.Workingtimelist.Workingtime;
 import gui.CapacityPlanning;
 import gui.IbsysGUI;
 import gui.PurchasePlanning;
@@ -183,7 +192,6 @@ public class Utility {
 				JTextField invokeU = (JTextField) methodU.invoke(methodNameU);
 				int capacity = getCapacityOfWorkstation(j);
 				int setuptime = getSetupTimeOfWorkstation(j);
-				int capacityold = Main.timeneeded[j];
 				// TEXTFIELD benennen und einfügen
 				int totalcapacity = capacity + setuptime;
 				int workload = totalcapacity * 100 / 2400;
@@ -210,8 +218,11 @@ public class Utility {
 					|| (p2PartID == 16 || p2PartID == 17 || p2PartID == 26)
 					|| (p3PartID == 16 || p3PartID == 17 || p3PartID == 26)) {
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + " p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: "
+				// + p2PartID + " Menge: " + p2PartAmount + " p3: " + p3PartID +
+				// " Menge: "
+				// + p3PartAmount + " Counter:" + counter);
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount + p2PartAmount + p3PartAmount,
 						counter, 2);
@@ -223,8 +234,11 @@ public class Utility {
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount, counter, 2);
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartAmount, counter + 1, 2);
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + "p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: "
+				// + p2PartID + " Menge: " + p2PartAmount + "p3: " + p3PartID +
+				// " Menge: "
+				// + p3PartAmount + " Counter:" + counter);
 				counter = counter + 3;
 			}
 
@@ -320,6 +334,82 @@ public class Utility {
 
 			}
 		}
+	}
+
+	public static Input generateInputXmlObject() {
+		Input input = new Input();
+
+		// Qualitycontrol
+		Qualitycontrol qualitycontrol = new Qualitycontrol();
+		qualitycontrol.setDelay(null);
+		qualitycontrol.setLosequantity(null);
+		qualitycontrol.setType(null);
+		input.setQualitycontrol(qualitycontrol);
+
+		// Selldirect
+		Selldirect sellDirect = new Selldirect();
+		Item i1 = new Item();
+		i1.setArticle((byte) 1);
+		i1.setPenalty(null);
+		i1.setPrice(null);
+		i1.setQuantity(null);
+		sellDirect.getItem().add(i1);
+		Item i2 = new Item();
+		i2.setArticle((byte) 2);
+		i2.setPenalty(null);
+		i2.setPrice(null);
+		i2.setQuantity(null);
+		sellDirect.getItem().add(i2);
+		Item i3 = new Item();
+		i3.setArticle((byte) 3);
+		i3.setPenalty(null);
+		i3.setPrice(null);
+		i3.setQuantity(null);
+		sellDirect.getItem().add(i3);
+		input.setSelldirect(sellDirect);
+
+		// Sellwish
+		Sellwish sellWish = new Sellwish();
+		Input.Sellwish.Item iSW1 = new Input.Sellwish.Item();
+		iSW1.setArticle((byte) 1);
+		iSW1.setQuantity(null);
+		sellWish.getItem().add(iSW1);
+		Input.Sellwish.Item iSW2 = new Input.Sellwish.Item();
+		iSW2.setArticle((byte) 1);
+		iSW2.setQuantity(null);
+		sellWish.getItem().add(iSW2);
+		Input.Sellwish.Item iSW3 = new Input.Sellwish.Item();
+		iSW3.setArticle((byte) 1);
+		iSW3.setQuantity(null);
+		sellWish.getItem().add(iSW3);
+		input.setSellwish(sellWish);
+
+		// Order hinzufügen
+		generated.Input.Orderlist.Order order = new generated.Input.Orderlist.Order();
+		order.setArticle((byte) 0);
+		order.setModus((byte) 5);
+		order.setQuantity((short) 10);
+		input.setOrderlist(new Orderlist());
+		input.getOrderlist().getOrder().add(order);
+
+		// Productionlist
+		Input.Productionlist productionsList = new Input.Productionlist();
+		input.setProductionlist(productionsList);
+		Production p1 = new Production();
+		p1.setArticle((byte) 1);
+		p1.setQuantity((short) 1);
+
+		input.getProductionlist().getProduction().add(p1);
+
+		// Workingtime
+		input.setWorkingtimelist(new Workingtimelist());
+		Workingtime w1 = new Workingtime();
+		w1.setStation((byte) 1);
+		w1.setShift((byte) 0);
+		w1.setOvertime((short) 0);
+		input.getWorkingtimelist().getWorkingtime().add(w1);
+
+		return input;
 	}
 
 }
