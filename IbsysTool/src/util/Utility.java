@@ -3,6 +3,7 @@ package util;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -39,6 +40,10 @@ public class Utility {
 		Main.p3KaufteileVerwendung = Main.generiereKaufteileVerwendung(3, Main.p3Prod);
 		Main.kaufteileVerwendungMerged = Main.mergeKautfteileVerwendung(Main.p1KaufteileVerwendung,
 				Main.p2KaufteileVerwendung, Main.p3KaufteileVerwendung);
+
+		// Warteschlangeholen
+
+		Main.timeneeded = Main.timeneedfill();
 
 		fillValues();
 	}
@@ -165,38 +170,81 @@ public class Utility {
 
 		// calculate
 		for (int j = 1; j <= 15; j++) {
+
 			String methodNameK = "getCptf" + j + "_k";
+			String methodNameV = "getCptf" + j + "_v";
 			String methodNameR = "getCptf" + j + "_r";
 			String methodNameT = "getCptf" + j + "_t";
 			String methodNameA = "getCptf" + j + "_a";
+			String methodNameC = "getCpcb" + j;
 			String methodNameU = "getCptf" + j + "_u";
 			Method methodK = null;
+			Method methodV = null;
 			Method methodR = null;
 			Method methodT = null;
 			Method methodA = null;
+			Method methodC = null;
 			Method methodU = null;
 			try {
 				methodK = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameK);
+				methodV = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameV);
 				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
 				methodT = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameT);
 				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+				methodC = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameC);
 				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
 			} catch (Exception e) {
-
 			}
-			if (methodK != null && methodR != null && methodT != null && methodU != null) {
+			if (methodK != null && methodR != null && methodT != null && methodU != null && methodV != null
+					&& methodC != null) {
 				JTextField invokeK = (JTextField) methodK.invoke(methodNameK);
+				JTextField invokeV = (JTextField) methodV.invoke(methodNameV);
 				JTextField invokeR = (JTextField) methodR.invoke(methodNameR);
 				JTextField invokeT = (JTextField) methodT.invoke(methodNameT);
 				JTextField invokeA = (JTextField) methodA.invoke(methodNameA);
+				JComboBox invokeC = (JComboBox) methodC.invoke(methodNameC);
 				JTextField invokeU = (JTextField) methodU.invoke(methodNameU);
 				int capacity = getCapacityOfWorkstation(j);
 				int setuptime = getSetupTimeOfWorkstation(j);
-				// TEXTFIELD benennen und einfügen
-				int totalcapacity = capacity + setuptime;
-				int workload = totalcapacity * 100 / 2400;
-				int overtime = (totalcapacity - 2400) > 0 ? totalcapacity - 2400 : 0;
+				int capacityold;
+				int shiftvalue = 0;
+
+				if (j == 5) {
+					capacityold = 0;
+				} else {
+					capacityold = Main.timeneeded[j];
+				}
+				if (capacityold != 0) {
+					setuptime += Main.setuptime[j];
+				}
+				int totalcapacity = capacity + setuptime + capacityold;
+
+				if (totalcapacity > 0 && totalcapacity < 3866) {
+					invokeC.setSelectedIndex(0);
+					shiftvalue = 2400;
+				} else if (totalcapacity > 3866 && totalcapacity < 6666) {
+					invokeC.setSelectedIndex(2);
+					shiftvalue = 4800;
+				} else if (totalcapacity > 6666 && totalcapacity < 7200) {
+					invokeC.setSelectedIndex(2);
+					shiftvalue = 7200;
+				} else if (totalcapacity > 7200) {
+					invokeC.setSelectedIndex(2);
+					shiftvalue = 7200;
+					totalcapacity = 7200;
+				}
+
+				if (invokeC.getSelectedIndex() == 0) {
+					shiftvalue = 2400;
+				} else if (invokeC.getSelectedIndex() == 1) {
+					shiftvalue = 4800;
+				} else if (invokeC.getSelectedIndex() == 2) {
+					shiftvalue = 7200;
+				}
+				int workload = totalcapacity * 100 / shiftvalue;
+				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
 				invokeK.setText("" + capacity);
+				invokeV.setText("" + capacityold);
 				invokeR.setText("" + setuptime);
 				invokeT.setText("" + totalcapacity);
 				invokeA.setText("" + workload);
@@ -410,6 +458,55 @@ public class Utility {
 		input.getWorkingtimelist().getWorkingtime().add(w1);
 
 		return input;
+	}
+
+	public static void calculateOvertime()
+			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		for (int j = 1; j <= 15; j++) {
+
+			String methodNameA = "getCptf" + j + "_a";
+			String methodNameC = "getCpcb" + j;
+			String methodNameU = "getCptf" + j + "_u";
+
+			Method methodA = null;
+			Method methodC = null;
+			Method methodU = null;
+			try {
+				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+				methodC = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameC);
+				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
+			} catch (Exception e) {
+			}
+			if (methodA != null && methodC != null && methodU != null) {
+
+				JTextField invokeA = (JTextField) methodA.invoke(methodNameA);
+				JComboBox invokeC = (JComboBox) methodC.invoke(methodNameC);
+				JTextField invokeU = (JTextField) methodU.invoke(methodNameU);
+				int capacity = getCapacityOfWorkstation(j);
+				int setuptime = getSetupTimeOfWorkstation(j);
+				int capacityold;
+				int shiftvalue = 0;
+
+				if (j == 5) {
+					capacityold = 0;
+				} else {
+					capacityold = Main.timeneeded[j];
+				}
+				int totalcapacity = capacity + setuptime + capacityold;
+
+				if (invokeC.getSelectedIndex() == 0) {
+					shiftvalue = 2400;
+				} else if (invokeC.getSelectedIndex() == 1) {
+					shiftvalue = 4800;
+				} else if (invokeC.getSelectedIndex() == 2) {
+					shiftvalue = 7200;
+				}
+				int workload = totalcapacity * 100 / shiftvalue;
+				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
+				invokeA.setText("" + workload);
+				invokeU.setText("" + overtime);
+			}
+		}
 	}
 
 }

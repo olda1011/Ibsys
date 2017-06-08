@@ -3,13 +3,20 @@ package gui;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
 
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
+
+import util.Utility;
 
 public class CapacityPlanning {
 
@@ -1364,34 +1371,164 @@ public class CapacityPlanning {
 	public static JLabel label_53;
 	public static JLabel label_54;
 	public static JLabel label_109;
-	private JTextField textField;
-	private JLabel lblKapazittsbedarfVorperiode;
-	private JLabel label_7;
-	private JLabel label_8;
-	private JLabel label_12;
-	private JLabel label_13;
-	private JLabel label_14;
-	private JLabel label_15;
-	private JLabel label_16;
-	private JLabel label_17;
-	private JLabel label_27;
-	private JLabel label_28;
-	private JLabel label_29;
-	private JLabel label_30;
-	private JLabel label_31;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
-	private JTextField textField_12;
-	private JTextField textField_13;
+	private static JTextField cptf4_v;
+	private static JLabel cpl4_capacityold;
+	private static JLabel cpl1_capacityold;
+	private static JLabel cpl2_capacityold;
+	private static JLabel cpl3_capacityold;
+	private static JLabel cpl6_capacityold;
+	private static JLabel cpl7_capacityold;
+	private static JLabel cpl8_capacityold;
+	private static JLabel cpl9_capacityold;
+	private static JLabel cpl10_capacityold;
+	private static JLabel cpl11_capacityold;
+	private static JLabel cpl12_capacityold;
+	private static JLabel cpl13_capacityold;
+	private static JLabel cpl14_capacityold;
+	private static JLabel cpl15_capacityold;
+	private static JTextField cptf1_v;
+	private static JTextField cptf2_v;
+	private static JTextField cptf3_v;
+	private static JTextField cptf6_v;
+	private static JTextField cptf7_v;
+	private static JTextField cptf8_v;
+	private static JTextField cptf9_v;
+	private static JTextField cptf10_v;
+	private static JTextField cptf11_v;
+	private static JTextField cptf12_v;
+	private static JTextField cptf14_v;
+	private static JTextField cptf15_v;
+	private static JTextField cptf13_v;
+	private static JComboBox cpcb15;
+	private static JComboBox cpcb14;
+	private static JComboBox cpcb13;
+	private static JComboBox cpcb12;
+	private static JComboBox cpcb11;
+	private static JComboBox cpcb10;
+	private static JComboBox cpcb9;
+	private static JComboBox cpcb8;
+	private static JComboBox cpcb7;
+	private static JComboBox cpcb6;
+	private static JComboBox cpcb4;
+	private static JComboBox cpcb3;
+	private static JComboBox cpcb2;
+	private static JComboBox cpcb1;
+
+	private static String firstShift = "1.Schicht";
+	private static String secondShift = "2.Schicht";
+	private static String thirdShift = "3.Schicht";
+
+	public static JComboBox getCpcb15() {
+		return cpcb15;
+	}
+
+	public static void setCpcb15(JComboBox cpcb15) {
+		CapacityPlanning.cpcb15 = cpcb15;
+	}
+
+	public static JComboBox getCpcb14() {
+		return cpcb14;
+	}
+
+	public static void setCpcb14(JComboBox cpcb14) {
+		CapacityPlanning.cpcb14 = cpcb14;
+	}
+
+	public static JComboBox getCpcb13() {
+		return cpcb13;
+	}
+
+	public static void setCpcb13(JComboBox cpcb13) {
+		CapacityPlanning.cpcb13 = cpcb13;
+	}
+
+	public static JComboBox getCpcb12() {
+		return cpcb12;
+	}
+
+	public static void setCpcb12(JComboBox cpcb12) {
+		CapacityPlanning.cpcb12 = cpcb12;
+	}
+
+	public static JComboBox getCpcb11() {
+		return cpcb11;
+	}
+
+	public static void setCpcb11(JComboBox cpcb11) {
+		CapacityPlanning.cpcb11 = cpcb11;
+	}
+
+	public static JComboBox getCpcb10() {
+		return cpcb10;
+	}
+
+	public static void setCpcb10(JComboBox cpcb10) {
+		CapacityPlanning.cpcb10 = cpcb10;
+	}
+
+	public static JComboBox getCpcb9() {
+		return cpcb9;
+	}
+
+	public static void setCpcb9(JComboBox cpcb9) {
+		CapacityPlanning.cpcb9 = cpcb9;
+	}
+
+	public static JComboBox getCpcb8() {
+		return cpcb8;
+	}
+
+	public static void setCpcb8(JComboBox cpcb8) {
+		CapacityPlanning.cpcb8 = cpcb8;
+	}
+
+	public static JComboBox getCpcb7() {
+		return cpcb7;
+	}
+
+	public static void setCpcb7(JComboBox cpcb7) {
+		CapacityPlanning.cpcb7 = cpcb7;
+	}
+
+	public static JComboBox getCpcb6() {
+		return cpcb6;
+	}
+
+	public static void setCpcb6(JComboBox cpcb6) {
+		CapacityPlanning.cpcb6 = cpcb6;
+	}
+
+	public static JComboBox getCpcb4() {
+		return cpcb4;
+	}
+
+	public static void setCpcb4(JComboBox cpcb4) {
+		CapacityPlanning.cpcb4 = cpcb4;
+	}
+
+	public static JComboBox getCpcb3() {
+		return cpcb3;
+	}
+
+	public static void setCpcb3(JComboBox cpcb3) {
+		CapacityPlanning.cpcb3 = cpcb3;
+	}
+
+	public static JComboBox getCpcb2() {
+		return cpcb2;
+	}
+
+	public static void setCpcb2(JComboBox cpcb2) {
+		CapacityPlanning.cpcb2 = cpcb2;
+	}
+
+	public static JComboBox getCpcb1() {
+		return cpcb1;
+	}
+
+	public static void setCpcb1(JComboBox cpcb1) {
+		CapacityPlanning.cpcb1 = cpcb1;
+	}
 
 	public static JTextField getCptfr1_49() {
 		return cptfr1_49;
@@ -3373,9 +3510,1689 @@ public class CapacityPlanning {
 		CapacityPlanning.cptf15_26 = cptf15_26;
 	}
 
+	public static JLabel getCpl1_workstation() {
+		return cpl1_workstation;
+	}
+
+	public static void setCpl1_workstation(JLabel cpl1_workstation) {
+		CapacityPlanning.cpl1_workstation = cpl1_workstation;
+	}
+
+	public static JLabel getCpl1_frontwheelcomplete() {
+		return cpl1_frontwheelcomplete;
+	}
+
+	public static void setCpl1_frontwheelcomplete(JLabel cpl1_frontwheelcomplete) {
+		CapacityPlanning.cpl1_frontwheelcomplete = cpl1_frontwheelcomplete;
+	}
+
+	public static JLabel getCpl1_capacityrequirements() {
+		return cpl1_capacityrequirements;
+	}
+
+	public static void setCpl1_capacityrequirements(JLabel cpl1_capacityrequirements) {
+		CapacityPlanning.cpl1_capacityrequirements = cpl1_capacityrequirements;
+	}
+
+	public static JLabel getCpl1_setuptime() {
+		return cpl1_setuptime;
+	}
+
+	public static void setCpl1_setuptime(JLabel cpl1_setuptime) {
+		CapacityPlanning.cpl1_setuptime = cpl1_setuptime;
+	}
+
+	public static JLabel getCpl1_totalcapacity() {
+		return cpl1_totalcapacity;
+	}
+
+	public static void setCpl1_totalcapacity(JLabel cpl1_totalcapacity) {
+		CapacityPlanning.cpl1_totalcapacity = cpl1_totalcapacity;
+	}
+
+	public static JLabel getCpl1_workload() {
+		return cpl1_workload;
+	}
+
+	public static void setCpl1_workload(JLabel cpl1_workload) {
+		CapacityPlanning.cpl1_workload = cpl1_workload;
+	}
+
+	public static JLabel getCpl1_overtime() {
+		return cpl1_overtime;
+	}
+
+	public static void setCpl1_overtime(JLabel cpl1_overtime) {
+		CapacityPlanning.cpl1_overtime = cpl1_overtime;
+	}
+
+	public static JLabel getCpl2_workstation() {
+		return cpl2_workstation;
+	}
+
+	public static void setCpl2_workstation(JLabel cpl2_workstation) {
+		CapacityPlanning.cpl2_workstation = cpl2_workstation;
+	}
+
+	public static JLabel getCpl2_frameandwheels() {
+		return cpl2_frameandwheels;
+	}
+
+	public static void setCpl2_frameandwheels(JLabel cpl2_frameandwheels) {
+		CapacityPlanning.cpl2_frameandwheels = cpl2_frameandwheels;
+	}
+
+	public static JLabel getCpl2_capacityrequirements() {
+		return cpl2_capacityrequirements;
+	}
+
+	public static void setCpl2_capacityrequirements(JLabel cpl2_capacityrequirements) {
+		CapacityPlanning.cpl2_capacityrequirements = cpl2_capacityrequirements;
+	}
+
+	public static JLabel getCpl2_setuptime() {
+		return cpl2_setuptime;
+	}
+
+	public static void setCpl2_setuptime(JLabel cpl2_setuptime) {
+		CapacityPlanning.cpl2_setuptime = cpl2_setuptime;
+	}
+
+	public static JLabel getCpl2_totalcapacity() {
+		return cpl2_totalcapacity;
+	}
+
+	public static void setCpl2_totalcapacity(JLabel cpl2_totalcapacity) {
+		CapacityPlanning.cpl2_totalcapacity = cpl2_totalcapacity;
+	}
+
+	public static JLabel getCpl2_workload() {
+		return cpl2_workload;
+	}
+
+	public static void setCpl2_workload(JLabel cpl2_workload) {
+		CapacityPlanning.cpl2_workload = cpl2_workload;
+	}
+
+	public static JLabel getCpl2_overtime() {
+		return cpl2_overtime;
+	}
+
+	public static void setCpl2_overtime(JLabel cpl2_overtime) {
+		CapacityPlanning.cpl2_overtime = cpl2_overtime;
+	}
+
+	public static JLabel getCpl3_workstation() {
+		return cpl3_workstation;
+	}
+
+	public static void setCpl3_workstation(JLabel cpl3_workstation) {
+		CapacityPlanning.cpl3_workstation = cpl3_workstation;
+	}
+
+	public static JLabel getCpl3_bicyclewithoutpedal() {
+		return cpl3_bicyclewithoutpedal;
+	}
+
+	public static void setCpl3_bicyclewithoutpedal(JLabel cpl3_bicyclewithoutpedal) {
+		CapacityPlanning.cpl3_bicyclewithoutpedal = cpl3_bicyclewithoutpedal;
+	}
+
+	public static JLabel getCpl3_capacityrequirements() {
+		return cpl3_capacityrequirements;
+	}
+
+	public static void setCpl3_capacityrequirements(JLabel cpl3_capacityrequirements) {
+		CapacityPlanning.cpl3_capacityrequirements = cpl3_capacityrequirements;
+	}
+
+	public static JLabel getCpl3_setuptime() {
+		return cpl3_setuptime;
+	}
+
+	public static void setCpl3_setuptime(JLabel cpl3_setuptime) {
+		CapacityPlanning.cpl3_setuptime = cpl3_setuptime;
+	}
+
+	public static JLabel getCpl3_totalcapacity() {
+		return cpl3_totalcapacity;
+	}
+
+	public static void setCpl3_totalcapacity(JLabel cpl3_totalcapacity) {
+		CapacityPlanning.cpl3_totalcapacity = cpl3_totalcapacity;
+	}
+
+	public static JLabel getCpl3_workload() {
+		return cpl3_workload;
+	}
+
+	public static void setCpl3_workload(JLabel cpl3_workload) {
+		CapacityPlanning.cpl3_workload = cpl3_workload;
+	}
+
+	public static JLabel getCpl3_overtime() {
+		return cpl3_overtime;
+	}
+
+	public static void setCpl3_overtime(JLabel cpl3_overtime) {
+		CapacityPlanning.cpl3_overtime = cpl3_overtime;
+	}
+
+	public static JLabel getCpl4_workstation() {
+		return cpl4_workstation;
+	}
+
+	public static void setCpl4_workstation(JLabel cpl4_workstation) {
+		CapacityPlanning.cpl4_workstation = cpl4_workstation;
+	}
+
+	public static JLabel getCpl4_bicyclecomplete() {
+		return cpl4_bicyclecomplete;
+	}
+
+	public static void setCpl4_bicyclecomplete(JLabel cpl4_bicyclecomplete) {
+		CapacityPlanning.cpl4_bicyclecomplete = cpl4_bicyclecomplete;
+	}
+
+	public static JLabel getCpl4_setuptime() {
+		return cpl4_setuptime;
+	}
+
+	public static void setCpl4_setuptime(JLabel cpl4_setuptime) {
+		CapacityPlanning.cpl4_setuptime = cpl4_setuptime;
+	}
+
+	public static JLabel getCpl4_totalcapacity() {
+		return cpl4_totalcapacity;
+	}
+
+	public static void setCpl4_totalcapacity(JLabel cpl4_totalcapacity) {
+		CapacityPlanning.cpl4_totalcapacity = cpl4_totalcapacity;
+	}
+
+	public static JLabel getCpl4_workload() {
+		return cpl4_workload;
+	}
+
+	public static void setCpl4_workload(JLabel cpl4_workload) {
+		CapacityPlanning.cpl4_workload = cpl4_workload;
+	}
+
+	public static JLabel getCpl4_overtime() {
+		return cpl4_overtime;
+	}
+
+	public static void setCpl4_overtime(JLabel cpl4_overtime) {
+		CapacityPlanning.cpl4_overtime = cpl4_overtime;
+	}
+
+	public static JLabel getLblLenker() {
+		return lblLenker;
+	}
+
+	public static void setLblLenker(JLabel lblLenker) {
+		CapacityPlanning.lblLenker = lblLenker;
+	}
+
+	public static JLabel getLblKdh() {
+		return lblKdh;
+	}
+
+	public static void setLblKdh(JLabel lblKdh) {
+		CapacityPlanning.lblKdh = lblKdh;
+	}
+
+	public static JLabel getCpl6_capacityrequirements() {
+		return cpl6_capacityrequirements;
+	}
+
+	public static void setCpl6_capacityrequirements(JLabel cpl6_capacityrequirements) {
+		CapacityPlanning.cpl6_capacityrequirements = cpl6_capacityrequirements;
+	}
+
+	public static JLabel getCpl6_setuptime() {
+		return cpl6_setuptime;
+	}
+
+	public static void setCpl6_setuptime(JLabel cpl6_setuptime) {
+		CapacityPlanning.cpl6_setuptime = cpl6_setuptime;
+	}
+
+	public static JLabel getCpl6_workload() {
+		return cpl6_workload;
+	}
+
+	public static void setCpl6_workload(JLabel cpl6_workload) {
+		CapacityPlanning.cpl6_workload = cpl6_workload;
+	}
+
+	public static JLabel getCpl6_overtime() {
+		return cpl6_overtime;
+	}
+
+	public static void setCpl6_overtime(JLabel cpl6_overtime) {
+		CapacityPlanning.cpl6_overtime = cpl6_overtime;
+	}
+
+	public static JLabel getLblSchutzblechHinten() {
+		return lblSchutzblechHinten;
+	}
+
+	public static void setLblSchutzblechHinten(JLabel lblSchutzblechHinten) {
+		CapacityPlanning.lblSchutzblechHinten = lblSchutzblechHinten;
+	}
+
+	public static JLabel getLblSchutzblechVorne() {
+		return lblSchutzblechVorne;
+	}
+
+	public static void setLblSchutzblechVorne(JLabel lblSchutzblechVorne) {
+		CapacityPlanning.lblSchutzblechVorne = lblSchutzblechVorne;
+	}
+
+	public static JLabel getLblRahmen() {
+		return lblRahmen;
+	}
+
+	public static void setLblRahmen(JLabel lblRahmen) {
+		CapacityPlanning.lblRahmen = lblRahmen;
+	}
+
+	public static JLabel getLblPedale() {
+		return lblPedale;
+	}
+
+	public static void setLblPedale(JLabel lblPedale) {
+		CapacityPlanning.lblPedale = lblPedale;
+	}
+
+	public static JLabel getLblKdh_1() {
+		return lblKdh_1;
+	}
+
+	public static void setLblKdh_1(JLabel lblKdh_1) {
+		CapacityPlanning.lblKdh_1 = lblKdh_1;
+	}
+
+	public static JLabel getCpl7_capacityrequirements() {
+		return cpl7_capacityrequirements;
+	}
+
+	public static void setCpl7_capacityrequirements(JLabel cpl7_capacityrequirements) {
+		CapacityPlanning.cpl7_capacityrequirements = cpl7_capacityrequirements;
+	}
+
+	public static JLabel getCpl7_setuptime() {
+		return cpl7_setuptime;
+	}
+
+	public static void setCpl7_setuptime(JLabel cpl7_setuptime) {
+		CapacityPlanning.cpl7_setuptime = cpl7_setuptime;
+	}
+
+	public static JLabel getCpl7_totalcapacity() {
+		return cpl7_totalcapacity;
+	}
+
+	public static void setCpl7_totalcapacity(JLabel cpl7_totalcapacity) {
+		CapacityPlanning.cpl7_totalcapacity = cpl7_totalcapacity;
+	}
+
+	public static JLabel getCpl7_workload() {
+		return cpl7_workload;
+	}
+
+	public static void setCpl7_workload(JLabel cpl7_workload) {
+		CapacityPlanning.cpl7_workload = cpl7_workload;
+	}
+
+	public static JLabel getCpl7_overtime() {
+		return cpl7_overtime;
+	}
+
+	public static void setCpl7_overtime(JLabel cpl7_overtime) {
+		CapacityPlanning.cpl7_overtime = cpl7_overtime;
+	}
+
+	public static JLabel getCpl1_c() {
+		return cpl1_c;
+	}
+
+	public static void setCpl1_c(JLabel cpl1_c) {
+		CapacityPlanning.cpl1_c = cpl1_c;
+	}
+
+	public static JLabel getCpl1_l() {
+		return cpl1_l;
+	}
+
+	public static void setCpl1_l(JLabel cpl1_l) {
+		CapacityPlanning.cpl1_l = cpl1_l;
+	}
+
+	public static JLabel getCpl1_m() {
+		return cpl1_m;
+	}
+
+	public static void setCpl1_m(JLabel cpl1_m) {
+		CapacityPlanning.cpl1_m = cpl1_m;
+	}
+
+	public static JLabel getCpl2_c() {
+		return cpl2_c;
+	}
+
+	public static void setCpl2_c(JLabel cpl2_c) {
+		CapacityPlanning.cpl2_c = cpl2_c;
+	}
+
+	public static JLabel getCpl2_l() {
+		return cpl2_l;
+	}
+
+	public static void setCpl2_l(JLabel cpl2_l) {
+		CapacityPlanning.cpl2_l = cpl2_l;
+	}
+
+	public static JLabel getCpl2_m() {
+		return cpl2_m;
+	}
+
+	public static void setCpl2_m(JLabel cpl2_m) {
+		CapacityPlanning.cpl2_m = cpl2_m;
+	}
+
+	public static JLabel getCpl3_c() {
+		return cpl3_c;
+	}
+
+	public static void setCpl3_c(JLabel cpl3_c) {
+		CapacityPlanning.cpl3_c = cpl3_c;
+	}
+
+	public static JLabel getCpl3_l() {
+		return cpl3_l;
+	}
+
+	public static void setCpl3_l(JLabel cpl3_l) {
+		CapacityPlanning.cpl3_l = cpl3_l;
+	}
+
+	public static JLabel getCpl3_m() {
+		return cpl3_m;
+	}
+
+	public static void setCpl3_m(JLabel cpl3_m) {
+		CapacityPlanning.cpl3_m = cpl3_m;
+	}
+
+	public static JLabel getCpl4_l() {
+		return cpl4_l;
+	}
+
+	public static void setCpl4_l(JLabel cpl4_l) {
+		CapacityPlanning.cpl4_l = cpl4_l;
+	}
+
+	public static JLabel getCpl4_m() {
+		return cpl4_m;
+	}
+
+	public static void setCpl4_m(JLabel cpl4_m) {
+		CapacityPlanning.cpl4_m = cpl4_m;
+	}
+
+	public static JLabel getCpl4_capacityrequirements() {
+		return cpl4_capacityrequirements;
+	}
+
+	public static void setCpl4_capacityrequirements(JLabel cpl4_capacityrequirements) {
+		CapacityPlanning.cpl4_capacityrequirements = cpl4_capacityrequirements;
+	}
+
+	public static JLabel getLabel() {
+		return label;
+	}
+
+	public static void setLabel(JLabel label) {
+		CapacityPlanning.label = label;
+	}
+
+	public static JLabel getLabel_9() {
+		return label_9;
+	}
+
+	public static void setLabel_9(JLabel label_9) {
+		CapacityPlanning.label_9 = label_9;
+	}
+
+	public static JLabel getCpl6_totalcapacity() {
+		return cpl6_totalcapacity;
+	}
+
+	public static void setCpl6_totalcapacity(JLabel cpl6_totalcapacity) {
+		CapacityPlanning.cpl6_totalcapacity = cpl6_totalcapacity;
+	}
+
+	public static JLabel getLabel_4() {
+		return label_4;
+	}
+
+	public static void setLabel_4(JLabel label_4) {
+		CapacityPlanning.label_4 = label_4;
+	}
+
+	public static JLabel getLblK() {
+		return lblK;
+	}
+
+	public static void setLblK(JLabel lblK) {
+		CapacityPlanning.lblK = lblK;
+	}
+
+	public static JLabel getLblD() {
+		return lblD;
+	}
+
+	public static void setLblD(JLabel lblD) {
+		CapacityPlanning.lblD = lblD;
+	}
+
+	public static JLabel getLblH() {
+		return lblH;
+	}
+
+	public static void setLblH(JLabel lblH) {
+		CapacityPlanning.lblH = lblH;
+	}
+
+	public static JLabel getLabel_18() {
+		return label_18;
+	}
+
+	public static void setLabel_18(JLabel label_18) {
+		CapacityPlanning.label_18 = label_18;
+	}
+
+	public static JLabel getLabel_21() {
+		return label_21;
+	}
+
+	public static void setLabel_21(JLabel label_21) {
+		CapacityPlanning.label_21 = label_21;
+	}
+
+	public static JLabel getLabel_24() {
+		return label_24;
+	}
+
+	public static void setLabel_24(JLabel label_24) {
+		CapacityPlanning.label_24 = label_24;
+	}
+
+	public static JLabel getLabel_20() {
+		return label_20;
+	}
+
+	public static void setLabel_20(JLabel label_20) {
+		CapacityPlanning.label_20 = label_20;
+	}
+
+	public static JLabel getLabel_22() {
+		return label_22;
+	}
+
+	public static void setLabel_22(JLabel label_22) {
+		CapacityPlanning.label_22 = label_22;
+	}
+
+	public static JLabel getLabel_23() {
+		return label_23;
+	}
+
+	public static void setLabel_23(JLabel label_23) {
+		CapacityPlanning.label_23 = label_23;
+	}
+
+	public static JLabel getLabel_26() {
+		return label_26;
+	}
+
+	public static void setLabel_26(JLabel label_26) {
+		CapacityPlanning.label_26 = label_26;
+	}
+
+	public static JLabel getLabel_33() {
+		return label_33;
+	}
+
+	public static void setLabel_33(JLabel label_33) {
+		CapacityPlanning.label_33 = label_33;
+	}
+
+	public static JLabel getLabel_34() {
+		return label_34;
+	}
+
+	public static void setLabel_34(JLabel label_34) {
+		CapacityPlanning.label_34 = label_34;
+	}
+
+	public static JLabel getLabel_37() {
+		return label_37;
+	}
+
+	public static void setLabel_37(JLabel label_37) {
+		CapacityPlanning.label_37 = label_37;
+	}
+
+	public static JLabel getLabel_40() {
+		return label_40;
+	}
+
+	public static void setLabel_40(JLabel label_40) {
+		CapacityPlanning.label_40 = label_40;
+	}
+
+	public static JLabel getLabel_43() {
+		return label_43;
+	}
+
+	public static void setLabel_43(JLabel label_43) {
+		CapacityPlanning.label_43 = label_43;
+	}
+
+	public static JLabel getLabel_44() {
+		return label_44;
+	}
+
+	public static void setLabel_44(JLabel label_44) {
+		CapacityPlanning.label_44 = label_44;
+	}
+
+	public static JLabel getLabel_47() {
+		return label_47;
+	}
+
+	public static void setLabel_47(JLabel label_47) {
+		CapacityPlanning.label_47 = label_47;
+	}
+
+	public static JLabel getLabel_57() {
+		return label_57;
+	}
+
+	public static void setLabel_57(JLabel label_57) {
+		CapacityPlanning.label_57 = label_57;
+	}
+
+	public static JLabel getLabel_60() {
+		return label_60;
+	}
+
+	public static void setLabel_60(JLabel label_60) {
+		CapacityPlanning.label_60 = label_60;
+	}
+
+	public static JLabel getCpl8_capacityrequirements() {
+		return cpl8_capacityrequirements;
+	}
+
+	public static void setCpl8_capacityrequirements(JLabel cpl8_capacityrequirements) {
+		CapacityPlanning.cpl8_capacityrequirements = cpl8_capacityrequirements;
+	}
+
+	public static JLabel getCpl8_setuptime() {
+		return cpl8_setuptime;
+	}
+
+	public static void setCpl8_setuptime(JLabel cpl8_setuptime) {
+		CapacityPlanning.cpl8_setuptime = cpl8_setuptime;
+	}
+
+	public static JLabel getCpl8_totalcapacity() {
+		return cpl8_totalcapacity;
+	}
+
+	public static void setCpl8_totalcapacity(JLabel cpl8_totalcapacity) {
+		CapacityPlanning.cpl8_totalcapacity = cpl8_totalcapacity;
+	}
+
+	public static JLabel getCpl8_workload() {
+		return cpl8_workload;
+	}
+
+	public static void setCpl8_workload(JLabel cpl8_workload) {
+		CapacityPlanning.cpl8_workload = cpl8_workload;
+	}
+
+	public static JLabel getCpl8_overtime() {
+		return cpl8_overtime;
+	}
+
+	public static void setCpl8_overtime(JLabel cpl8_overtime) {
+		CapacityPlanning.cpl8_overtime = cpl8_overtime;
+	}
+
+	public static JLabel getLabel_10() {
+		return label_10;
+	}
+
+	public static void setLabel_10(JLabel label_10) {
+		CapacityPlanning.label_10 = label_10;
+	}
+
+	public static JLabel getLabel_19() {
+		return label_19;
+	}
+
+	public static void setLabel_19(JLabel label_19) {
+		CapacityPlanning.label_19 = label_19;
+	}
+
+	public static JLabel getLabel_25() {
+		return label_25;
+	}
+
+	public static void setLabel_25(JLabel label_25) {
+		CapacityPlanning.label_25 = label_25;
+	}
+
+	public static JLabel getLabel_56() {
+		return label_56;
+	}
+
+	public static void setLabel_56(JLabel label_56) {
+		CapacityPlanning.label_56 = label_56;
+	}
+
+	public static JLabel getLabel_63() {
+		return label_63;
+	}
+
+	public static void setLabel_63(JLabel label_63) {
+		CapacityPlanning.label_63 = label_63;
+	}
+
+	public static JLabel getLabel_66() {
+		return label_66;
+	}
+
+	public static void setLabel_66(JLabel label_66) {
+		CapacityPlanning.label_66 = label_66;
+	}
+
+	public static JLabel getLabel_73() {
+		return label_73;
+	}
+
+	public static void setLabel_73(JLabel label_73) {
+		CapacityPlanning.label_73 = label_73;
+	}
+
+	public static JLabel getLabel_77() {
+		return label_77;
+	}
+
+	public static void setLabel_77(JLabel label_77) {
+		CapacityPlanning.label_77 = label_77;
+	}
+
+	public static JLabel getLabel_80() {
+		return label_80;
+	}
+
+	public static void setLabel_80(JLabel label_80) {
+		CapacityPlanning.label_80 = label_80;
+	}
+
+	public static JLabel getLabel_83() {
+		return label_83;
+	}
+
+	public static void setLabel_83(JLabel label_83) {
+		CapacityPlanning.label_83 = label_83;
+	}
+
+	public static JLabel getLabel_84() {
+		return label_84;
+	}
+
+	public static void setLabel_84(JLabel label_84) {
+		CapacityPlanning.label_84 = label_84;
+	}
+
+	public static JLabel getLabel_87() {
+		return label_87;
+	}
+
+	public static void setLabel_87(JLabel label_87) {
+		CapacityPlanning.label_87 = label_87;
+	}
+
+	public static JLabel getLabel_91() {
+		return label_91;
+	}
+
+	public static void setLabel_91(JLabel label_91) {
+		CapacityPlanning.label_91 = label_91;
+	}
+
+	public static JLabel getCpl9_capacityrequirements() {
+		return cpl9_capacityrequirements;
+	}
+
+	public static void setCpl9_capacityrequirements(JLabel cpl9_capacityrequirements) {
+		CapacityPlanning.cpl9_capacityrequirements = cpl9_capacityrequirements;
+	}
+
+	public static JLabel getCpl9_setuptime() {
+		return cpl9_setuptime;
+	}
+
+	public static void setCpl9_setuptime(JLabel cpl9_setuptime) {
+		CapacityPlanning.cpl9_setuptime = cpl9_setuptime;
+	}
+
+	public static JLabel getCpl9_totalcapacity() {
+		return cpl9_totalcapacity;
+	}
+
+	public static void setCpl9_totalcapacity(JLabel cpl9_totalcapacity) {
+		CapacityPlanning.cpl9_totalcapacity = cpl9_totalcapacity;
+	}
+
+	public static JLabel getCpl9_workload() {
+		return cpl9_workload;
+	}
+
+	public static void setCpl9_workload(JLabel cpl9_workload) {
+		CapacityPlanning.cpl9_workload = cpl9_workload;
+	}
+
+	public static JLabel getCpl9_overtime() {
+		return cpl9_overtime;
+	}
+
+	public static void setCpl9_overtime(JLabel cpl9_overtime) {
+		CapacityPlanning.cpl9_overtime = cpl9_overtime;
+	}
+
+	public static JLabel getLabel_46() {
+		return label_46;
+	}
+
+	public static void setLabel_46(JLabel label_46) {
+		CapacityPlanning.label_46 = label_46;
+	}
+
+	public static JLabel getLblHinterrad() {
+		return lblHinterrad;
+	}
+
+	public static void setLblHinterrad(JLabel lblHinterrad) {
+		CapacityPlanning.lblHinterrad = lblHinterrad;
+	}
+
+	public static JLabel getLabel_76() {
+		return label_76;
+	}
+
+	public static void setLabel_76(JLabel label_76) {
+		CapacityPlanning.label_76 = label_76;
+	}
+
+	public static JLabel getLabel_86() {
+		return label_86;
+	}
+
+	public static void setLabel_86(JLabel label_86) {
+		CapacityPlanning.label_86 = label_86;
+	}
+
+	public static JLabel getLabel_99() {
+		return label_99;
+	}
+
+	public static void setLabel_99(JLabel label_99) {
+		CapacityPlanning.label_99 = label_99;
+	}
+
+	public static JLabel getLblVorderrad() {
+		return lblVorderrad;
+	}
+
+	public static void setLblVorderrad(JLabel lblVorderrad) {
+		CapacityPlanning.lblVorderrad = lblVorderrad;
+	}
+
+	public static JLabel getLabel_103() {
+		return label_103;
+	}
+
+	public static void setLabel_103(JLabel label_103) {
+		CapacityPlanning.label_103 = label_103;
+	}
+
+	public static JLabel getLabel_106() {
+		return label_106;
+	}
+
+	public static void setLabel_106(JLabel label_106) {
+		CapacityPlanning.label_106 = label_106;
+	}
+
+	public static JLabel getCpl10_capacityrequirements() {
+		return cpl10_capacityrequirements;
+	}
+
+	public static void setCpl10_capacityrequirements(JLabel cpl10_capacityrequirements) {
+		CapacityPlanning.cpl10_capacityrequirements = cpl10_capacityrequirements;
+	}
+
+	public static JLabel getCpl10_setuptime() {
+		return cpl10_setuptime;
+	}
+
+	public static void setCpl10_setuptime(JLabel cpl10_setuptime) {
+		CapacityPlanning.cpl10_setuptime = cpl10_setuptime;
+	}
+
+	public static JLabel getCpl10_totalcapacity() {
+		return cpl10_totalcapacity;
+	}
+
+	public static void setCpl10_totalcapacity(JLabel cpl10_totalcapacity) {
+		CapacityPlanning.cpl10_totalcapacity = cpl10_totalcapacity;
+	}
+
+	public static JLabel getCpl10_workload() {
+		return cpl10_workload;
+	}
+
+	public static void setCpl10_workload(JLabel cpl10_workload) {
+		CapacityPlanning.cpl10_workload = cpl10_workload;
+	}
+
+	public static JLabel getCpl10_overtime() {
+		return cpl10_overtime;
+	}
+
+	public static void setCpl10_overtime(JLabel cpl10_overtime) {
+		CapacityPlanning.cpl10_overtime = cpl10_overtime;
+	}
+
+	public static JLabel getLabel_127() {
+		return label_127;
+	}
+
+	public static void setLabel_127(JLabel label_127) {
+		CapacityPlanning.label_127 = label_127;
+	}
+
+	public static JLabel getLblHinterrad_1() {
+		return lblHinterrad_1;
+	}
+
+	public static void setLblHinterrad_1(JLabel lblHinterrad_1) {
+		CapacityPlanning.lblHinterrad_1 = lblHinterrad_1;
+	}
+
+	public static JLabel getLabel_130() {
+		return label_130;
+	}
+
+	public static void setLabel_130(JLabel label_130) {
+		CapacityPlanning.label_130 = label_130;
+	}
+
+	public static JLabel getLabel_133() {
+		return label_133;
+	}
+
+	public static void setLabel_133(JLabel label_133) {
+		CapacityPlanning.label_133 = label_133;
+	}
+
+	public static JLabel getLabel_136() {
+		return label_136;
+	}
+
+	public static void setLabel_136(JLabel label_136) {
+		CapacityPlanning.label_136 = label_136;
+	}
+
+	public static JLabel getLblVorderrad_1() {
+		return lblVorderrad_1;
+	}
+
+	public static void setLblVorderrad_1(JLabel lblVorderrad_1) {
+		CapacityPlanning.lblVorderrad_1 = lblVorderrad_1;
+	}
+
+	public static JLabel getLabel_140() {
+		return label_140;
+	}
+
+	public static void setLabel_140(JLabel label_140) {
+		CapacityPlanning.label_140 = label_140;
+	}
+
+	public static JLabel getLabel_143() {
+		return label_143;
+	}
+
+	public static void setLabel_143(JLabel label_143) {
+		CapacityPlanning.label_143 = label_143;
+	}
+
+	public static JLabel getLabel_146() {
+		return label_146;
+	}
+
+	public static void setLabel_146(JLabel label_146) {
+		CapacityPlanning.label_146 = label_146;
+	}
+
+	public static JLabel getCpl11_capacityrequirements() {
+		return cpl11_capacityrequirements;
+	}
+
+	public static void setCpl11_capacityrequirements(JLabel cpl11_capacityrequirements) {
+		CapacityPlanning.cpl11_capacityrequirements = cpl11_capacityrequirements;
+	}
+
+	public static JLabel getCpl11_setuptime() {
+		return cpl11_setuptime;
+	}
+
+	public static void setCpl11_setuptime(JLabel cpl11_setuptime) {
+		CapacityPlanning.cpl11_setuptime = cpl11_setuptime;
+	}
+
+	public static JLabel getCpl11_totalcapacity() {
+		return cpl11_totalcapacity;
+	}
+
+	public static void setCpl11_totalcapacity(JLabel cpl11_totalcapacity) {
+		CapacityPlanning.cpl11_totalcapacity = cpl11_totalcapacity;
+	}
+
+	public static JLabel getCpl11_workload() {
+		return cpl11_workload;
+	}
+
+	public static void setCpl11_workload(JLabel cpl11_workload) {
+		CapacityPlanning.cpl11_workload = cpl11_workload;
+	}
+
+	public static JLabel getCpl11_overtime() {
+		return cpl11_overtime;
+	}
+
+	public static void setCpl11_overtime(JLabel cpl11_overtime) {
+		CapacityPlanning.cpl11_overtime = cpl11_overtime;
+	}
+
+	public static JLabel getLabel_100() {
+		return label_100;
+	}
+
+	public static void setLabel_100(JLabel label_100) {
+		CapacityPlanning.label_100 = label_100;
+	}
+
+	public static JLabel getLabel_102() {
+		return label_102;
+	}
+
+	public static void setLabel_102(JLabel label_102) {
+		CapacityPlanning.label_102 = label_102;
+	}
+
+	public static JLabel getLabel_104() {
+		return label_104;
+	}
+
+	public static void setLabel_104(JLabel label_104) {
+		CapacityPlanning.label_104 = label_104;
+	}
+
+	public static JLabel getLabel_108() {
+		return label_108;
+	}
+
+	public static void setLabel_108(JLabel label_108) {
+		CapacityPlanning.label_108 = label_108;
+	}
+
+	public static JLabel getLabel_112() {
+		return label_112;
+	}
+
+	public static void setLabel_112(JLabel label_112) {
+		CapacityPlanning.label_112 = label_112;
+	}
+
+	public static JLabel getLabel_115() {
+		return label_115;
+	}
+
+	public static void setLabel_115(JLabel label_115) {
+		CapacityPlanning.label_115 = label_115;
+	}
+
+	public static JLabel getLabel_116() {
+		return label_116;
+	}
+
+	public static void setLabel_116(JLabel label_116) {
+		CapacityPlanning.label_116 = label_116;
+	}
+
+	public static JLabel getLabel_119() {
+		return label_119;
+	}
+
+	public static void setLabel_119(JLabel label_119) {
+		CapacityPlanning.label_119 = label_119;
+	}
+
+	public static JLabel getLabel_129() {
+		return label_129;
+	}
+
+	public static void setLabel_129(JLabel label_129) {
+		CapacityPlanning.label_129 = label_129;
+	}
+
+	public static JLabel getLabel_154() {
+		return label_154;
+	}
+
+	public static void setLabel_154(JLabel label_154) {
+		CapacityPlanning.label_154 = label_154;
+	}
+
+	public static JLabel getLabel_155() {
+		return label_155;
+	}
+
+	public static void setLabel_155(JLabel label_155) {
+		CapacityPlanning.label_155 = label_155;
+	}
+
+	public static JLabel getLabel_156() {
+		return label_156;
+	}
+
+	public static void setLabel_156(JLabel label_156) {
+		CapacityPlanning.label_156 = label_156;
+	}
+
+	public static JLabel getLabel_157() {
+		return label_157;
+	}
+
+	public static void setLabel_157(JLabel label_157) {
+		CapacityPlanning.label_157 = label_157;
+	}
+
+	public static JLabel getLabel_158() {
+		return label_158;
+	}
+
+	public static void setLabel_158(JLabel label_158) {
+		CapacityPlanning.label_158 = label_158;
+	}
+
+	public static JLabel getLabel_137() {
+		return label_137;
+	}
+
+	public static void setLabel_137(JLabel label_137) {
+		CapacityPlanning.label_137 = label_137;
+	}
+
+	public static JLabel getLabel_141() {
+		return label_141;
+	}
+
+	public static void setLabel_141(JLabel label_141) {
+		CapacityPlanning.label_141 = label_141;
+	}
+
+	public static JLabel getLabel_144() {
+		return label_144;
+	}
+
+	public static void setLabel_144(JLabel label_144) {
+		CapacityPlanning.label_144 = label_144;
+	}
+
+	public static JLabel getLabel_150() {
+		return label_150;
+	}
+
+	public static void setLabel_150(JLabel label_150) {
+		CapacityPlanning.label_150 = label_150;
+	}
+
+	public static JLabel getLabel_153() {
+		return label_153;
+	}
+
+	public static void setLabel_153(JLabel label_153) {
+		CapacityPlanning.label_153 = label_153;
+	}
+
+	public static JLabel getLabel_166() {
+		return label_166;
+	}
+
+	public static void setLabel_166(JLabel label_166) {
+		CapacityPlanning.label_166 = label_166;
+	}
+
+	public static JLabel getLabel_167() {
+		return label_167;
+	}
+
+	public static void setLabel_167(JLabel label_167) {
+		CapacityPlanning.label_167 = label_167;
+	}
+
+	public static JLabel getLabel_170() {
+		return label_170;
+	}
+
+	public static void setLabel_170(JLabel label_170) {
+		CapacityPlanning.label_170 = label_170;
+	}
+
+	public static JLabel getLabel_173() {
+		return label_173;
+	}
+
+	public static void setLabel_173(JLabel label_173) {
+		CapacityPlanning.label_173 = label_173;
+	}
+
+	public static JLabel getLabel_186() {
+		return label_186;
+	}
+
+	public static void setLabel_186(JLabel label_186) {
+		CapacityPlanning.label_186 = label_186;
+	}
+
+	public static JLabel getLabel_187() {
+		return label_187;
+	}
+
+	public static void setLabel_187(JLabel label_187) {
+		CapacityPlanning.label_187 = label_187;
+	}
+
+	public static JLabel getLabel_188() {
+		return label_188;
+	}
+
+	public static void setLabel_188(JLabel label_188) {
+		CapacityPlanning.label_188 = label_188;
+	}
+
+	public static JLabel getLabel_189() {
+		return label_189;
+	}
+
+	public static void setLabel_189(JLabel label_189) {
+		CapacityPlanning.label_189 = label_189;
+	}
+
+	public static JLabel getLabel_190() {
+		return label_190;
+	}
+
+	public static void setLabel_190(JLabel label_190) {
+		CapacityPlanning.label_190 = label_190;
+	}
+
+	public static JLabel getLabel_149() {
+		return label_149;
+	}
+
+	public static void setLabel_149(JLabel label_149) {
+		CapacityPlanning.label_149 = label_149;
+	}
+
+	public static JLabel getLabel_165() {
+		return label_165;
+	}
+
+	public static void setLabel_165(JLabel label_165) {
+		CapacityPlanning.label_165 = label_165;
+	}
+
+	public static JLabel getLabel_169() {
+		return label_169;
+	}
+
+	public static void setLabel_169(JLabel label_169) {
+		CapacityPlanning.label_169 = label_169;
+	}
+
+	public static JLabel getLabel_192() {
+		return label_192;
+	}
+
+	public static void setLabel_192(JLabel label_192) {
+		CapacityPlanning.label_192 = label_192;
+	}
+
+	public static JLabel getLabel_193() {
+		return label_193;
+	}
+
+	public static void setLabel_193(JLabel label_193) {
+		CapacityPlanning.label_193 = label_193;
+	}
+
+	public static JLabel getLabel_194() {
+		return label_194;
+	}
+
+	public static void setLabel_194(JLabel label_194) {
+		CapacityPlanning.label_194 = label_194;
+	}
+
+	public static JLabel getLabel_195() {
+		return label_195;
+	}
+
+	public static void setLabel_195(JLabel label_195) {
+		CapacityPlanning.label_195 = label_195;
+	}
+
+	public static JLabel getLabel_196() {
+		return label_196;
+	}
+
+	public static void setLabel_196(JLabel label_196) {
+		CapacityPlanning.label_196 = label_196;
+	}
+
+	public static JLabel getLabel_197() {
+		return label_197;
+	}
+
+	public static void setLabel_197(JLabel label_197) {
+		CapacityPlanning.label_197 = label_197;
+	}
+
+	public static JLabel getLabel_199() {
+		return label_199;
+	}
+
+	public static void setLabel_199(JLabel label_199) {
+		CapacityPlanning.label_199 = label_199;
+	}
+
+	public static JLabel getLabel_200() {
+		return label_200;
+	}
+
+	public static void setLabel_200(JLabel label_200) {
+		CapacityPlanning.label_200 = label_200;
+	}
+
+	public static JLabel getLabel_203() {
+		return label_203;
+	}
+
+	public static void setLabel_203(JLabel label_203) {
+		CapacityPlanning.label_203 = label_203;
+	}
+
+	public static JLabel getLabel_204() {
+		return label_204;
+	}
+
+	public static void setLabel_204(JLabel label_204) {
+		CapacityPlanning.label_204 = label_204;
+	}
+
+	public static JLabel getLabel_214() {
+		return label_214;
+	}
+
+	public static void setLabel_214(JLabel label_214) {
+		CapacityPlanning.label_214 = label_214;
+	}
+
+	public static JLabel getLabel_215() {
+		return label_215;
+	}
+
+	public static void setLabel_215(JLabel label_215) {
+		CapacityPlanning.label_215 = label_215;
+	}
+
+	public static JLabel getLabel_216() {
+		return label_216;
+	}
+
+	public static void setLabel_216(JLabel label_216) {
+		CapacityPlanning.label_216 = label_216;
+	}
+
+	public static JLabel getLabel_217() {
+		return label_217;
+	}
+
+	public static void setLabel_217(JLabel label_217) {
+		CapacityPlanning.label_217 = label_217;
+	}
+
+	public static JLabel getLabel_218() {
+		return label_218;
+	}
+
+	public static void setLabel_218(JLabel label_218) {
+		CapacityPlanning.label_218 = label_218;
+	}
+
+	public static JLabel getCpl4_c() {
+		return cpl4_c;
+	}
+
+	public static void setCpl4_c(JLabel cpl4_c) {
+		CapacityPlanning.cpl4_c = cpl4_c;
+	}
+
+	public static JLabel getLabel_2() {
+		return label_2;
+	}
+
+	public static void setLabel_2(JLabel label_2) {
+		CapacityPlanning.label_2 = label_2;
+	}
+
+	public static JLabel getLabel_3() {
+		return label_3;
+	}
+
+	public static void setLabel_3(JLabel label_3) {
+		CapacityPlanning.label_3 = label_3;
+	}
+
+	public static JLabel getLabel_6() {
+		return label_6;
+	}
+
+	public static void setLabel_6(JLabel label_6) {
+		CapacityPlanning.label_6 = label_6;
+	}
+
+	public static JLabel getLabel_50() {
+		return label_50;
+	}
+
+	public static void setLabel_50(JLabel label_50) {
+		CapacityPlanning.label_50 = label_50;
+	}
+
+	public static JLabel getLabel_53() {
+		return label_53;
+	}
+
+	public static void setLabel_53(JLabel label_53) {
+		CapacityPlanning.label_53 = label_53;
+	}
+
+	public static JLabel getLabel_54() {
+		return label_54;
+	}
+
+	public static void setLabel_54(JLabel label_54) {
+		CapacityPlanning.label_54 = label_54;
+	}
+
+	public static JLabel getLabel_109() {
+		return label_109;
+	}
+
+	public static void setLabel_109(JLabel label_109) {
+		CapacityPlanning.label_109 = label_109;
+	}
+
 	public CapacityPlanning() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public static JTextField getCptf4_v() {
+		return cptf4_v;
+	}
+
+	public static void setCptf4_v(JTextField cptf4_v) {
+		CapacityPlanning.cptf4_v = cptf4_v;
+	}
+
+	public static JLabel getCpl4_capacityold() {
+		return cpl4_capacityold;
+	}
+
+	public static void setCpl4_capacityold(JLabel cpl4_capacityold) {
+		CapacityPlanning.cpl4_capacityold = cpl4_capacityold;
+	}
+
+	public static JLabel getCpl1_capacityold() {
+		return cpl1_capacityold;
+	}
+
+	public static void setCpl1_capacityold(JLabel cpl1_capacityold) {
+		CapacityPlanning.cpl1_capacityold = cpl1_capacityold;
+	}
+
+	public static JLabel getCpl2_capacityold() {
+		return cpl2_capacityold;
+	}
+
+	public static void setCpl2_capacityold(JLabel cpl2_capacityold) {
+		CapacityPlanning.cpl2_capacityold = cpl2_capacityold;
+	}
+
+	public static JLabel getCpl3_capacityold() {
+		return cpl3_capacityold;
+	}
+
+	public static void setCpl3_capacityold(JLabel cpl3_capacityold) {
+		CapacityPlanning.cpl3_capacityold = cpl3_capacityold;
+	}
+
+	public static JLabel getCpl6_capacityold() {
+		return cpl6_capacityold;
+	}
+
+	public static void setCpl6_capacityold(JLabel cpl6_capacityold) {
+		CapacityPlanning.cpl6_capacityold = cpl6_capacityold;
+	}
+
+	public static JLabel getCpl7_capacityold() {
+		return cpl7_capacityold;
+	}
+
+	public static void setCpl7_capacityold(JLabel cpl7_capacityold) {
+		CapacityPlanning.cpl7_capacityold = cpl7_capacityold;
+	}
+
+	public static JLabel getCpl8_capacityold() {
+		return cpl8_capacityold;
+	}
+
+	public static void setCpl8_capacityold(JLabel cpl8_capacityold) {
+		CapacityPlanning.cpl8_capacityold = cpl8_capacityold;
+	}
+
+	public static JLabel getCpl9_capacityold() {
+		return cpl9_capacityold;
+	}
+
+	public static void setCpl9_capacityold(JLabel cpl9_capacityold) {
+		CapacityPlanning.cpl9_capacityold = cpl9_capacityold;
+	}
+
+	public static JLabel getCpl10_capacityold() {
+		return cpl10_capacityold;
+	}
+
+	public static void setCpl10_capacityold(JLabel cpl10_capacityold) {
+		CapacityPlanning.cpl10_capacityold = cpl10_capacityold;
+	}
+
+	public static JLabel getCpl11_capacityold() {
+		return cpl11_capacityold;
+	}
+
+	public static void setCpl11_capacityold(JLabel cpl11_capacityold) {
+		CapacityPlanning.cpl11_capacityold = cpl11_capacityold;
+	}
+
+	public static JLabel getCpl12_capacityold() {
+		return cpl12_capacityold;
+	}
+
+	public static void setCpl12_capacityold(JLabel cpl12_capacityold) {
+		CapacityPlanning.cpl12_capacityold = cpl12_capacityold;
+	}
+
+	public static JLabel getCpl13_capacityold() {
+		return cpl13_capacityold;
+	}
+
+	public static void setCpl13_capacityold(JLabel cpl13_capacityold) {
+		CapacityPlanning.cpl13_capacityold = cpl13_capacityold;
+	}
+
+	public static JLabel getCpl14_capacityold() {
+		return cpl14_capacityold;
+	}
+
+	public static void setCpl14_capacityold(JLabel cpl14_capacityold) {
+		CapacityPlanning.cpl14_capacityold = cpl14_capacityold;
+	}
+
+	public static JLabel getCpl15_capacityold() {
+		return cpl15_capacityold;
+	}
+
+	public static void setCpl15_capacityold(JLabel cpl15_capacityold) {
+		CapacityPlanning.cpl15_capacityold = cpl15_capacityold;
+	}
+
+	public static JTextField getCptf1_v() {
+		return cptf1_v;
+	}
+
+	public static void setCptf1_v(JTextField cptf1_v) {
+		CapacityPlanning.cptf1_v = cptf1_v;
+	}
+
+	public static JTextField getCptf2_v() {
+		return cptf2_v;
+	}
+
+	public static void setCptf2_v(JTextField cptf2_v) {
+		CapacityPlanning.cptf2_v = cptf2_v;
+	}
+
+	public static JTextField getCptf3_v() {
+		return cptf3_v;
+	}
+
+	public static void setCptf3_v(JTextField cptf3_v) {
+		CapacityPlanning.cptf3_v = cptf3_v;
+	}
+
+	public static JTextField getCptf6_v() {
+		return cptf6_v;
+	}
+
+	public static void setCptf6_v(JTextField cptf6_v) {
+		CapacityPlanning.cptf6_v = cptf6_v;
+	}
+
+	public static JTextField getCptf7_v() {
+		return cptf7_v;
+	}
+
+	public static void setCptf7_v(JTextField cptf7_v) {
+		CapacityPlanning.cptf7_v = cptf7_v;
+	}
+
+	public static JTextField getCptf8_v() {
+		return cptf8_v;
+	}
+
+	public static void setCptf8_v(JTextField cptf8_v) {
+		CapacityPlanning.cptf8_v = cptf8_v;
+	}
+
+	public static JTextField getCptf9_v() {
+		return cptf9_v;
+	}
+
+	public static void setCptf9_v(JTextField cptf9_v) {
+		CapacityPlanning.cptf9_v = cptf9_v;
+	}
+
+	public static JTextField getCptf10_v() {
+		return cptf10_v;
+	}
+
+	public static void setCptf10_v(JTextField cptf10_v) {
+		CapacityPlanning.cptf10_v = cptf10_v;
+	}
+
+	public static JTextField getCptf11_v() {
+		return cptf11_v;
+	}
+
+	public static void setCptf11_v(JTextField cptf11_v) {
+		CapacityPlanning.cptf11_v = cptf11_v;
+	}
+
+	public static JTextField getCptf12_v() {
+		return cptf12_v;
+	}
+
+	public static void setCptf12_v(JTextField cptf12_v) {
+		CapacityPlanning.cptf12_v = cptf12_v;
+	}
+
+	public static JTextField getCptf14_v() {
+		return cptf14_v;
+	}
+
+	public static void setCptf14_v(JTextField cptf14_v) {
+		CapacityPlanning.cptf14_v = cptf14_v;
+	}
+
+	public static JTextField getCptf15_v() {
+		return cptf15_v;
+	}
+
+	public static void setCptf15_v(JTextField cptf15_v) {
+		CapacityPlanning.cptf15_v = cptf15_v;
+	}
+
+	public static JTextField getCptf13_v() {
+		return cptf13_v;
+	}
+
+	public static void setCptf13_v(JTextField cptf13_v) {
+		CapacityPlanning.cptf13_v = cptf13_v;
 	}
 
 	/**
@@ -3390,7 +5207,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation1 = new GridBagLayout();
 		gbl_cpp_workstation1.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
 		gbl_cpp_workstation1.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation1.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0,
+		gbl_cpp_workstation1.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation1.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, Double.MIN_VALUE };
@@ -3576,24 +5393,24 @@ public class CapacityPlanning {
 		gbc_cptf1_k.gridy = 7;
 		cpp_workstation1.add(cptf1_k, gbc_cptf1_k);
 
-		label_7 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_7 = new GridBagConstraints();
-		gbc_label_7.insets = new Insets(0, 0, 5, 5);
-		gbc_label_7.gridx = 1;
-		gbc_label_7.gridy = 8;
-		cpp_workstation1.add(label_7, gbc_label_7);
+		cpl1_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl1_capacityold = new GridBagConstraints();
+		gbc_cpl1_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl1_capacityold.gridx = 1;
+		gbc_cpl1_capacityold.gridy = 8;
+		cpp_workstation1.add(cpl1_capacityold, gbc_cpl1_capacityold);
 
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_1.gridx = 7;
-		gbc_textField_1.gridy = 8;
-		cpp_workstation1.add(textField_1, gbc_textField_1);
+		cptf1_v = new JTextField();
+		cptf1_v.setEditable(false);
+		cptf1_v.setColumns(10);
+		GridBagConstraints gbc_cptf1_v = new GridBagConstraints();
+		gbc_cptf1_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf1_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf1_v.gridx = 7;
+		gbc_cptf1_v.gridy = 8;
+		cpp_workstation1.add(cptf1_v, gbc_cptf1_v);
 
-		cpl1_setuptime = new JLabel("R\u00FCstzeit");
+		cpl1_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl1_setuptime = new GridBagConstraints();
 		gbc_cpl1_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -3637,6 +5454,14 @@ public class CapacityPlanning {
 		gbc_cpl1_workload.gridy = 11;
 		cpp_workstation1.add(cpl1_workload, gbc_cpl1_workload);
 
+		cpcb1 = new JComboBox();
+		GridBagConstraints gbc_comboBox_13 = new GridBagConstraints();
+		gbc_comboBox_13.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_13.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_13.gridx = 5;
+		gbc_comboBox_13.gridy = 11;
+		cpp_workstation1.add(cpcb1, gbc_comboBox_13);
+
 		cptf1_a = new JTextField();
 		cptf1_a.setEditable(false);
 		cptf1_a.setColumns(10);
@@ -3670,7 +5495,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation2 = new GridBagLayout();
 		gbl_cpp_workstation2.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
 		gbl_cpp_workstation2.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation2.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0,
+		gbl_cpp_workstation2.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation2.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, Double.MIN_VALUE };
@@ -3856,24 +5681,25 @@ public class CapacityPlanning {
 		gbc_cptf2_k.gridy = 7;
 		cpp_workstation2.add(cptf2_k, gbc_cptf2_k);
 
-		label_8 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_8 = new GridBagConstraints();
-		gbc_label_8.insets = new Insets(0, 0, 5, 5);
-		gbc_label_8.gridx = 1;
-		gbc_label_8.gridy = 8;
-		cpp_workstation2.add(label_8, gbc_label_8);
+		cpl2_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl2_capacityold = new GridBagConstraints();
+		gbc_cpl2_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl2_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl2_capacityold.gridx = 1;
+		gbc_cpl2_capacityold.gridy = 8;
+		cpp_workstation2.add(cpl2_capacityold, gbc_cpl2_capacityold);
 
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_2.gridx = 7;
-		gbc_textField_2.gridy = 8;
-		cpp_workstation2.add(textField_2, gbc_textField_2);
+		cptf2_v = new JTextField();
+		cptf2_v.setEditable(false);
+		cptf2_v.setColumns(10);
+		GridBagConstraints gbc_cptf2_v = new GridBagConstraints();
+		gbc_cptf2_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf2_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf2_v.gridx = 7;
+		gbc_cptf2_v.gridy = 8;
+		cpp_workstation2.add(cptf2_v, gbc_cptf2_v);
 
-		cpl2_setuptime = new JLabel("R\u00FCstzeit");
+		cpl2_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl2_setuptime = new GridBagConstraints();
 		gbc_cpl2_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl2_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -3917,6 +5743,14 @@ public class CapacityPlanning {
 		gbc_cpl2_workload.gridy = 11;
 		cpp_workstation2.add(cpl2_workload, gbc_cpl2_workload);
 
+		cpcb2 = new JComboBox();
+		GridBagConstraints gbc_comboBox_12 = new GridBagConstraints();
+		gbc_comboBox_12.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_12.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_12.gridx = 5;
+		gbc_comboBox_12.gridy = 11;
+		cpp_workstation2.add(cpcb2, gbc_comboBox_12);
+
 		cptf2_a = new JTextField();
 		cptf2_a.setEditable(false);
 		cptf2_a.setColumns(10);
@@ -3950,7 +5784,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation3 = new GridBagLayout();
 		gbl_cpp_workstation3.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
 		gbl_cpp_workstation3.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation3.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0,
+		gbl_cpp_workstation3.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation3.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, Double.MIN_VALUE };
@@ -4136,24 +5970,25 @@ public class CapacityPlanning {
 		gbc_cptf3_k.gridy = 7;
 		cpp_workstation3.add(cptf3_k, gbc_cptf3_k);
 
-		label_12 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_12 = new GridBagConstraints();
-		gbc_label_12.insets = new Insets(0, 0, 5, 5);
-		gbc_label_12.gridx = 1;
-		gbc_label_12.gridy = 8;
-		cpp_workstation3.add(label_12, gbc_label_12);
+		cpl3_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl3_capacityold = new GridBagConstraints();
+		gbc_cpl3_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl3_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl3_capacityold.gridx = 1;
+		gbc_cpl3_capacityold.gridy = 8;
+		cpp_workstation3.add(cpl3_capacityold, gbc_cpl3_capacityold);
 
-		textField_3 = new JTextField();
-		textField_3.setEditable(false);
-		textField_3.setColumns(10);
-		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
-		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_3.gridx = 7;
-		gbc_textField_3.gridy = 8;
-		cpp_workstation3.add(textField_3, gbc_textField_3);
+		cptf3_v = new JTextField();
+		cptf3_v.setEditable(false);
+		cptf3_v.setColumns(10);
+		GridBagConstraints gbc_cptf3_v = new GridBagConstraints();
+		gbc_cptf3_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf3_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf3_v.gridx = 7;
+		gbc_cptf3_v.gridy = 8;
+		cpp_workstation3.add(cptf3_v, gbc_cptf3_v);
 
-		cpl3_setuptime = new JLabel("R\u00FCstzeit");
+		cpl3_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl3_setuptime = new GridBagConstraints();
 		gbc_cpl3_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl3_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -4197,6 +6032,14 @@ public class CapacityPlanning {
 		gbc_cpl3_workload.gridy = 11;
 		cpp_workstation3.add(cpl3_workload, gbc_cpl3_workload);
 
+		cpcb3 = new JComboBox();
+		GridBagConstraints gbc_comboBox_11 = new GridBagConstraints();
+		gbc_comboBox_11.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_11.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_11.gridx = 5;
+		gbc_comboBox_11.gridy = 11;
+		cpp_workstation3.add(cpcb3, gbc_comboBox_11);
+
 		cptf3_a = new JTextField();
 		cptf3_a.setEditable(false);
 		cptf3_a.setColumns(10);
@@ -4230,7 +6073,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation4 = new GridBagLayout();
 		gbl_cpp_workstation4.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 10, 60, 60, 0, 0 };
 		gbl_cpp_workstation4.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30 };
-		gbl_cpp_workstation4.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0,
+		gbl_cpp_workstation4.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation4.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, Double.MIN_VALUE };
@@ -4416,24 +6259,25 @@ public class CapacityPlanning {
 		gbc_cptf4_k.gridy = 7;
 		cpp_workstation4.add(cptf4_k, gbc_cptf4_k);
 
-		lblKapazittsbedarfVorperiode = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_lblKapazittsbedarfVorperiode = new GridBagConstraints();
-		gbc_lblKapazittsbedarfVorperiode.insets = new Insets(0, 0, 5, 5);
-		gbc_lblKapazittsbedarfVorperiode.gridx = 1;
-		gbc_lblKapazittsbedarfVorperiode.gridy = 8;
-		cpp_workstation4.add(lblKapazittsbedarfVorperiode, gbc_lblKapazittsbedarfVorperiode);
+		cpl4_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl4_capacityold = new GridBagConstraints();
+		gbc_cpl4_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl4_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl4_capacityold.gridx = 1;
+		gbc_cpl4_capacityold.gridy = 8;
+		cpp_workstation4.add(cpl4_capacityold, gbc_cpl4_capacityold);
 
-		textField = new JTextField();
-		textField.setEditable(false);
-		textField.setColumns(10);
-		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.insets = new Insets(0, 0, 5, 5);
-		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField.gridx = 7;
-		gbc_textField.gridy = 8;
-		cpp_workstation4.add(textField, gbc_textField);
+		cptf4_v = new JTextField();
+		cptf4_v.setEditable(false);
+		cptf4_v.setColumns(10);
+		GridBagConstraints gbc_cptf4_v = new GridBagConstraints();
+		gbc_cptf4_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf4_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf4_v.gridx = 7;
+		gbc_cptf4_v.gridy = 8;
+		cpp_workstation4.add(cptf4_v, gbc_cptf4_v);
 
-		cpl4_setuptime = new JLabel("R\u00FCstzeit");
+		cpl4_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl4_setuptime = new GridBagConstraints();
 		gbc_cpl4_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl4_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -4477,6 +6321,14 @@ public class CapacityPlanning {
 		gbc_cpl4_workload.gridy = 11;
 		cpp_workstation4.add(cpl4_workload, gbc_cpl4_workload);
 
+		cpcb4 = new JComboBox();
+		GridBagConstraints gbc_comboBox_10 = new GridBagConstraints();
+		gbc_comboBox_10.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_10.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_10.gridx = 5;
+		gbc_comboBox_10.gridy = 11;
+		cpp_workstation4.add(cpcb4, gbc_comboBox_10);
+
 		cptf4_a = new JTextField();
 		cptf4_a.setEditable(false);
 		cptf4_a.setColumns(10);
@@ -4513,7 +6365,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation6 = new GridBagLayout();
 		gbl_cpp_workstation6.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation6.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation6.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation6.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation6.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
@@ -4750,24 +6602,25 @@ public class CapacityPlanning {
 		gbc_cptf6_k.gridy = 9;
 		cpp_workstation6.add(cptf6_k, gbc_cptf6_k);
 
-		label_13 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_13 = new GridBagConstraints();
-		gbc_label_13.insets = new Insets(0, 0, 5, 5);
-		gbc_label_13.gridx = 1;
-		gbc_label_13.gridy = 10;
-		cpp_workstation6.add(label_13, gbc_label_13);
+		cpl6_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl6_capacityold = new GridBagConstraints();
+		gbc_cpl6_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl6_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl6_capacityold.gridx = 1;
+		gbc_cpl6_capacityold.gridy = 10;
+		cpp_workstation6.add(cpl6_capacityold, gbc_cpl6_capacityold);
 
-		textField_4 = new JTextField();
-		textField_4.setEditable(false);
-		textField_4.setColumns(10);
-		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-		gbc_textField_4.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_4.gridx = 7;
-		gbc_textField_4.gridy = 10;
-		cpp_workstation6.add(textField_4, gbc_textField_4);
+		cptf6_v = new JTextField();
+		cptf6_v.setEditable(false);
+		cptf6_v.setColumns(10);
+		GridBagConstraints gbc_cptf6_v = new GridBagConstraints();
+		gbc_cptf6_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf6_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf6_v.gridx = 7;
+		gbc_cptf6_v.gridy = 10;
+		cpp_workstation6.add(cptf6_v, gbc_cptf6_v);
 
-		cpl6_setuptime = new JLabel("R\u00FCstzeit");
+		cpl6_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl6_setuptime = new GridBagConstraints();
 		gbc_cpl6_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl6_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -4811,6 +6664,14 @@ public class CapacityPlanning {
 		gbc_cpl6_workload.gridy = 13;
 		cpp_workstation6.add(cpl6_workload, gbc_cpl6_workload);
 
+		cpcb6 = new JComboBox();
+		GridBagConstraints gbc_comboBox_9 = new GridBagConstraints();
+		gbc_comboBox_9.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_9.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_9.gridx = 5;
+		gbc_comboBox_9.gridy = 13;
+		cpp_workstation6.add(cpcb6, gbc_comboBox_9);
+
 		cptf6_a = new JTextField();
 		cptf6_a.setEditable(false);
 		cptf6_a.setColumns(10);
@@ -4848,7 +6709,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation7.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation7.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 30, 0, 0, 0,
 				0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation7.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation7.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation7.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -5359,24 +7220,25 @@ public class CapacityPlanning {
 		gbc_cptf7_k.gridy = 17;
 		cpp_workstation7.add(cptf7_k, gbc_cptf7_k);
 
-		label_14 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_14 = new GridBagConstraints();
-		gbc_label_14.insets = new Insets(0, 0, 5, 5);
-		gbc_label_14.gridx = 1;
-		gbc_label_14.gridy = 18;
-		cpp_workstation7.add(label_14, gbc_label_14);
+		cpl7_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl7_capacityold = new GridBagConstraints();
+		gbc_cpl7_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl7_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl7_capacityold.gridx = 1;
+		gbc_cpl7_capacityold.gridy = 18;
+		cpp_workstation7.add(cpl7_capacityold, gbc_cpl7_capacityold);
 
-		textField_5 = new JTextField();
-		textField_5.setEditable(false);
-		textField_5.setColumns(10);
-		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
-		gbc_textField_5.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_5.gridx = 7;
-		gbc_textField_5.gridy = 18;
-		cpp_workstation7.add(textField_5, gbc_textField_5);
+		cptf7_v = new JTextField();
+		cptf7_v.setEditable(false);
+		cptf7_v.setColumns(10);
+		GridBagConstraints gbc_cptf7_v = new GridBagConstraints();
+		gbc_cptf7_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf7_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf7_v.gridx = 7;
+		gbc_cptf7_v.gridy = 18;
+		cpp_workstation7.add(cptf7_v, gbc_cptf7_v);
 
-		cpl7_setuptime = new JLabel("R\u00FCstzeit");
+		cpl7_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl7_setuptime = new GridBagConstraints();
 		gbc_cpl7_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl7_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -5420,6 +7282,14 @@ public class CapacityPlanning {
 		gbc_cpl7_workload.gridy = 21;
 		cpp_workstation7.add(cpl7_workload, gbc_cpl7_workload);
 
+		cpcb7 = new JComboBox();
+		GridBagConstraints gbc_comboBox_8 = new GridBagConstraints();
+		gbc_comboBox_8.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_8.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_8.gridx = 5;
+		gbc_comboBox_8.gridy = 21;
+		cpp_workstation7.add(cpcb7, gbc_comboBox_8);
+
 		cptf7_a = new JTextField();
 		cptf7_a.setEditable(false);
 		cptf7_a.setColumns(10);
@@ -5457,7 +7327,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation8.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation8.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 23, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0,
 				0, 30, 30, 0 };
-		gbl_cpp_workstation8.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation8.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation8.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -5918,24 +7788,25 @@ public class CapacityPlanning {
 		gbc_cptf8_k.gridy = 15;
 		cpp_workstation8.add(cptf8_k, gbc_cptf8_k);
 
-		label_15 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_15 = new GridBagConstraints();
-		gbc_label_15.insets = new Insets(0, 0, 5, 5);
-		gbc_label_15.gridx = 1;
-		gbc_label_15.gridy = 16;
-		cpp_workstation8.add(label_15, gbc_label_15);
+		cpl8_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl8_capacityold = new GridBagConstraints();
+		gbc_cpl8_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl8_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl8_capacityold.gridx = 1;
+		gbc_cpl8_capacityold.gridy = 16;
+		cpp_workstation8.add(cpl8_capacityold, gbc_cpl8_capacityold);
 
-		textField_6 = new JTextField();
-		textField_6.setEditable(false);
-		textField_6.setColumns(10);
-		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
-		gbc_textField_6.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_6.gridx = 7;
-		gbc_textField_6.gridy = 16;
-		cpp_workstation8.add(textField_6, gbc_textField_6);
+		cptf8_v = new JTextField();
+		cptf8_v.setEditable(false);
+		cptf8_v.setColumns(10);
+		GridBagConstraints gbc_cptf8_v = new GridBagConstraints();
+		gbc_cptf8_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf8_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf8_v.gridx = 7;
+		gbc_cptf8_v.gridy = 16;
+		cpp_workstation8.add(cptf8_v, gbc_cptf8_v);
 
-		cpl8_setuptime = new JLabel("R\u00FCstzeit");
+		cpl8_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl8_setuptime = new GridBagConstraints();
 		gbc_cpl8_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl8_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -5979,6 +7850,14 @@ public class CapacityPlanning {
 		gbc_cpl8_workload.gridy = 19;
 		cpp_workstation8.add(cpl8_workload, gbc_cpl8_workload);
 
+		cpcb8 = new JComboBox();
+		GridBagConstraints gbc_comboBox_7 = new GridBagConstraints();
+		gbc_comboBox_7.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_7.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_7.gridx = 5;
+		gbc_comboBox_7.gridy = 19;
+		cpp_workstation8.add(cpcb8, gbc_comboBox_7);
+
 		cptf8_a = new JTextField();
 		cptf8_a.setEditable(false);
 		cptf8_a.setColumns(10);
@@ -6016,7 +7895,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation9.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation9.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0,
 				0, 30, 30, 0 };
-		gbl_cpp_workstation9.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation9.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation9.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -6477,24 +8356,25 @@ public class CapacityPlanning {
 		gbc_cptf9_k.gridy = 15;
 		cpp_workstation9.add(cptf9_k, gbc_cptf9_k);
 
-		label_16 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_16 = new GridBagConstraints();
-		gbc_label_16.insets = new Insets(0, 0, 5, 5);
-		gbc_label_16.gridx = 1;
-		gbc_label_16.gridy = 16;
-		cpp_workstation9.add(label_16, gbc_label_16);
+		cpl9_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl9_capacityold = new GridBagConstraints();
+		gbc_cpl9_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl9_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl9_capacityold.gridx = 1;
+		gbc_cpl9_capacityold.gridy = 16;
+		cpp_workstation9.add(cpl9_capacityold, gbc_cpl9_capacityold);
 
-		textField_7 = new JTextField();
-		textField_7.setEditable(false);
-		textField_7.setColumns(10);
-		GridBagConstraints gbc_textField_7 = new GridBagConstraints();
-		gbc_textField_7.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_7.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_7.gridx = 7;
-		gbc_textField_7.gridy = 16;
-		cpp_workstation9.add(textField_7, gbc_textField_7);
+		cptf9_v = new JTextField();
+		cptf9_v.setEditable(false);
+		cptf9_v.setColumns(10);
+		GridBagConstraints gbc_cptf9_v = new GridBagConstraints();
+		gbc_cptf9_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf9_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf9_v.gridx = 7;
+		gbc_cptf9_v.gridy = 16;
+		cpp_workstation9.add(cptf9_v, gbc_cptf9_v);
 
-		cpl9_setuptime = new JLabel("R\u00FCstzeit");
+		cpl9_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl9_setuptime = new GridBagConstraints();
 		gbc_cpl9_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl9_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -6538,6 +8418,14 @@ public class CapacityPlanning {
 		gbc_cpl9_workload.gridy = 19;
 		cpp_workstation9.add(cpl9_workload, gbc_cpl9_workload);
 
+		cpcb9 = new JComboBox();
+		GridBagConstraints gbc_comboBox_6 = new GridBagConstraints();
+		gbc_comboBox_6.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_6.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_6.gridx = 5;
+		gbc_comboBox_6.gridy = 19;
+		cpp_workstation9.add(cpcb9, gbc_comboBox_6);
+
 		cptf9_a = new JTextField();
 		cptf9_a.setEditable(false);
 		cptf9_a.setColumns(10);
@@ -6575,7 +8463,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation10.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation10.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30,
 				0 };
-		gbl_cpp_workstation10.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation10.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation10.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -6899,24 +8787,25 @@ public class CapacityPlanning {
 		gbc_cptf10_k.gridy = 11;
 		cpp_workstation10.add(cptf10_k, gbc_cptf10_k);
 
-		label_17 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_17 = new GridBagConstraints();
-		gbc_label_17.insets = new Insets(0, 0, 5, 5);
-		gbc_label_17.gridx = 1;
-		gbc_label_17.gridy = 12;
-		cpp_workstation10.add(label_17, gbc_label_17);
+		cpl10_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl10_capacityold = new GridBagConstraints();
+		gbc_cpl10_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl10_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl10_capacityold.gridx = 1;
+		gbc_cpl10_capacityold.gridy = 12;
+		cpp_workstation10.add(cpl10_capacityold, gbc_cpl10_capacityold);
 
-		textField_8 = new JTextField();
-		textField_8.setEditable(false);
-		textField_8.setColumns(10);
-		GridBagConstraints gbc_textField_8 = new GridBagConstraints();
-		gbc_textField_8.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_8.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_8.gridx = 7;
-		gbc_textField_8.gridy = 12;
-		cpp_workstation10.add(textField_8, gbc_textField_8);
+		cptf10_v = new JTextField();
+		cptf10_v.setEditable(false);
+		cptf10_v.setColumns(10);
+		GridBagConstraints gbc_cptf10_v = new GridBagConstraints();
+		gbc_cptf10_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf10_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf10_v.gridx = 7;
+		gbc_cptf10_v.gridy = 12;
+		cpp_workstation10.add(cptf10_v, gbc_cptf10_v);
 
-		cpl10_setuptime = new JLabel("R\u00FCstzeit");
+		cpl10_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl10_setuptime = new GridBagConstraints();
 		gbc_cpl10_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl10_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -6960,6 +8849,14 @@ public class CapacityPlanning {
 		gbc_cpl10_workload.gridy = 15;
 		cpp_workstation10.add(cpl10_workload, gbc_cpl10_workload);
 
+		cpcb10 = new JComboBox();
+		GridBagConstraints gbc_comboBox_5 = new GridBagConstraints();
+		gbc_comboBox_5.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_5.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_5.gridx = 5;
+		gbc_comboBox_5.gridy = 15;
+		cpp_workstation10.add(cpcb10, gbc_comboBox_5);
+
 		cptf10_a = new JTextField();
 		cptf10_a.setEditable(false);
 		cptf10_a.setColumns(10);
@@ -6997,7 +8894,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation11.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation11.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30,
 				0 };
-		gbl_cpp_workstation11.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation11.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation11.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -7321,24 +9218,25 @@ public class CapacityPlanning {
 		gbc_cptf11_k.gridy = 11;
 		cpp_workstation11.add(cptf11_k, gbc_cptf11_k);
 
-		label_27 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_27 = new GridBagConstraints();
-		gbc_label_27.insets = new Insets(0, 0, 5, 5);
-		gbc_label_27.gridx = 1;
-		gbc_label_27.gridy = 12;
-		cpp_workstation11.add(label_27, gbc_label_27);
+		cpl11_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl11_capacityold = new GridBagConstraints();
+		gbc_cpl11_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl11_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl11_capacityold.gridx = 1;
+		gbc_cpl11_capacityold.gridy = 12;
+		cpp_workstation11.add(cpl11_capacityold, gbc_cpl11_capacityold);
 
-		textField_9 = new JTextField();
-		textField_9.setEditable(false);
-		textField_9.setColumns(10);
-		GridBagConstraints gbc_textField_9 = new GridBagConstraints();
-		gbc_textField_9.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_9.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_9.gridx = 7;
-		gbc_textField_9.gridy = 12;
-		cpp_workstation11.add(textField_9, gbc_textField_9);
+		cptf11_v = new JTextField();
+		cptf11_v.setEditable(false);
+		cptf11_v.setColumns(10);
+		GridBagConstraints gbc_cptf11_v = new GridBagConstraints();
+		gbc_cptf11_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf11_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf11_v.gridx = 7;
+		gbc_cptf11_v.gridy = 12;
+		cpp_workstation11.add(cptf11_v, gbc_cptf11_v);
 
-		cpl11_setuptime = new JLabel("R\u00FCstzeit");
+		cpl11_setuptime = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_cpl11_setuptime = new GridBagConstraints();
 		gbc_cpl11_setuptime.anchor = GridBagConstraints.WEST;
 		gbc_cpl11_setuptime.insets = new Insets(0, 0, 5, 5);
@@ -7382,6 +9280,14 @@ public class CapacityPlanning {
 		gbc_cpl11_workload.gridy = 15;
 		cpp_workstation11.add(cpl11_workload, gbc_cpl11_workload);
 
+		cpcb11 = new JComboBox();
+		GridBagConstraints gbc_comboBox_4 = new GridBagConstraints();
+		gbc_comboBox_4.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_4.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_4.gridx = 5;
+		gbc_comboBox_4.gridy = 15;
+		cpp_workstation11.add(cpcb11, gbc_comboBox_4);
+
 		cptf11_a = new JTextField();
 		cptf11_a.setEditable(false);
 		cptf11_a.setColumns(10);
@@ -7419,7 +9325,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation12.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation12.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30,
 				0 };
-		gbl_cpp_workstation12.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation12.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation12.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -7743,24 +9649,25 @@ public class CapacityPlanning {
 		gbc_cptf12_k.gridy = 11;
 		cpp_workstation12.add(cptf12_k, gbc_cptf12_k);
 
-		label_28 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_28 = new GridBagConstraints();
-		gbc_label_28.insets = new Insets(0, 0, 5, 5);
-		gbc_label_28.gridx = 1;
-		gbc_label_28.gridy = 12;
-		cpp_workstation12.add(label_28, gbc_label_28);
+		cpl12_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl12_capacityold = new GridBagConstraints();
+		gbc_cpl12_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl12_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl12_capacityold.gridx = 1;
+		gbc_cpl12_capacityold.gridy = 12;
+		cpp_workstation12.add(cpl12_capacityold, gbc_cpl12_capacityold);
 
-		textField_10 = new JTextField();
-		textField_10.setEditable(false);
-		textField_10.setColumns(10);
-		GridBagConstraints gbc_textField_10 = new GridBagConstraints();
-		gbc_textField_10.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_10.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_10.gridx = 7;
-		gbc_textField_10.gridy = 12;
-		cpp_workstation12.add(textField_10, gbc_textField_10);
+		cptf12_v = new JTextField();
+		cptf12_v.setEditable(false);
+		cptf12_v.setColumns(10);
+		GridBagConstraints gbc_cptf12_v = new GridBagConstraints();
+		gbc_cptf12_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf12_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf12_v.gridx = 7;
+		gbc_cptf12_v.gridy = 12;
+		cpp_workstation12.add(cptf12_v, gbc_cptf12_v);
 
-		label_155 = new JLabel("R\u00FCstzeit");
+		label_155 = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_label_155 = new GridBagConstraints();
 		gbc_label_155.anchor = GridBagConstraints.WEST;
 		gbc_label_155.insets = new Insets(0, 0, 5, 5);
@@ -7804,6 +9711,14 @@ public class CapacityPlanning {
 		gbc_label_157.gridy = 15;
 		cpp_workstation12.add(label_157, gbc_label_157);
 
+		cpcb12 = new JComboBox();
+		GridBagConstraints gbc_comboBox_3 = new GridBagConstraints();
+		gbc_comboBox_3.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_3.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_3.gridx = 5;
+		gbc_comboBox_3.gridy = 15;
+		cpp_workstation12.add(cpcb12, gbc_comboBox_3);
+
 		cptf12_a = new JTextField();
 		cptf12_a.setEditable(false);
 		cptf12_a.setColumns(10);
@@ -7841,7 +9756,7 @@ public class CapacityPlanning {
 		gbl_cpp_workstation13.columnWidths = new int[] { 30, 70, 20, 40, 40, 60, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation13.rowHeights = new int[] { 40, 0, 30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30,
 				0 };
-		gbl_cpp_workstation13.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation13.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation13.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, 0.0, 0.0, 4.9E-324, 0.0, Double.MIN_VALUE };
@@ -8165,24 +10080,25 @@ public class CapacityPlanning {
 		gbc_cptf13_k.gridy = 11;
 		cpp_workstation13.add(cptf13_k, gbc_cptf13_k);
 
-		label_29 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_29 = new GridBagConstraints();
-		gbc_label_29.insets = new Insets(0, 0, 5, 5);
-		gbc_label_29.gridx = 1;
-		gbc_label_29.gridy = 12;
-		cpp_workstation13.add(label_29, gbc_label_29);
+		cpl13_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl13_capacityold = new GridBagConstraints();
+		gbc_cpl13_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl13_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl13_capacityold.gridx = 1;
+		gbc_cpl13_capacityold.gridy = 12;
+		cpp_workstation13.add(cpl13_capacityold, gbc_cpl13_capacityold);
 
-		textField_13 = new JTextField();
-		textField_13.setEditable(false);
-		textField_13.setColumns(10);
-		GridBagConstraints gbc_textField_13 = new GridBagConstraints();
-		gbc_textField_13.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_13.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_13.gridx = 7;
-		gbc_textField_13.gridy = 12;
-		cpp_workstation13.add(textField_13, gbc_textField_13);
+		cptf13_v = new JTextField();
+		cptf13_v.setEditable(false);
+		cptf13_v.setColumns(10);
+		GridBagConstraints gbc_cptf13_v = new GridBagConstraints();
+		gbc_cptf13_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf13_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf13_v.gridx = 7;
+		gbc_cptf13_v.gridy = 12;
+		cpp_workstation13.add(cptf13_v, gbc_cptf13_v);
 
-		label_187 = new JLabel("R\u00FCstzeit");
+		label_187 = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_label_187 = new GridBagConstraints();
 		gbc_label_187.anchor = GridBagConstraints.WEST;
 		gbc_label_187.insets = new Insets(0, 0, 5, 5);
@@ -8226,6 +10142,14 @@ public class CapacityPlanning {
 		gbc_label_189.gridy = 15;
 		cpp_workstation13.add(label_189, gbc_label_189);
 
+		cpcb13 = new JComboBox();
+		GridBagConstraints gbc_comboBox_2 = new GridBagConstraints();
+		gbc_comboBox_2.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_2.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_2.gridx = 5;
+		gbc_comboBox_2.gridy = 15;
+		cpp_workstation13.add(cpcb13, gbc_comboBox_2);
+
 		cptf13_a = new JTextField();
 		cptf13_a.setEditable(false);
 		cptf13_a.setColumns(10);
@@ -8259,7 +10183,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation14 = new GridBagLayout();
 		gbl_cpp_workstation14.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation14.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation14.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation14.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation14.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, Double.MIN_VALUE };
@@ -8358,24 +10282,25 @@ public class CapacityPlanning {
 		gbc_cptf14_k.gridy = 5;
 		cpp_workstation14.add(cptf14_k, gbc_cptf14_k);
 
-		label_30 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_30 = new GridBagConstraints();
-		gbc_label_30.insets = new Insets(0, 0, 5, 5);
-		gbc_label_30.gridx = 1;
-		gbc_label_30.gridy = 6;
-		cpp_workstation14.add(label_30, gbc_label_30);
+		cpl14_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl14_capacityold = new GridBagConstraints();
+		gbc_cpl14_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl14_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl14_capacityold.gridx = 1;
+		gbc_cpl14_capacityold.gridy = 6;
+		cpp_workstation14.add(cpl14_capacityold, gbc_cpl14_capacityold);
 
-		textField_11 = new JTextField();
-		textField_11.setEditable(false);
-		textField_11.setColumns(10);
-		GridBagConstraints gbc_textField_11 = new GridBagConstraints();
-		gbc_textField_11.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_11.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_11.gridx = 7;
-		gbc_textField_11.gridy = 6;
-		cpp_workstation14.add(textField_11, gbc_textField_11);
+		cptf14_v = new JTextField();
+		cptf14_v.setEditable(false);
+		cptf14_v.setColumns(10);
+		GridBagConstraints gbc_cptf14_v = new GridBagConstraints();
+		gbc_cptf14_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf14_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf14_v.gridx = 7;
+		gbc_cptf14_v.gridy = 6;
+		cpp_workstation14.add(cptf14_v, gbc_cptf14_v);
 
-		label_193 = new JLabel("R\u00FCstzeit");
+		label_193 = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_label_193 = new GridBagConstraints();
 		gbc_label_193.anchor = GridBagConstraints.WEST;
 		gbc_label_193.insets = new Insets(0, 0, 5, 5);
@@ -8419,6 +10344,14 @@ public class CapacityPlanning {
 		gbc_label_195.gridy = 9;
 		cpp_workstation14.add(label_195, gbc_label_195);
 
+		cpcb14 = new JComboBox();
+		GridBagConstraints gbc_comboBox_1 = new GridBagConstraints();
+		gbc_comboBox_1.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox_1.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox_1.gridx = 5;
+		gbc_comboBox_1.gridy = 9;
+		cpp_workstation14.add(cpcb14, gbc_comboBox_1);
+
 		cptf14_a = new JTextField();
 		cptf14_a.setEditable(false);
 		cptf14_a.setColumns(10);
@@ -8452,7 +10385,7 @@ public class CapacityPlanning {
 		GridBagLayout gbl_cpp_workstation15 = new GridBagLayout();
 		gbl_cpp_workstation15.columnWidths = new int[] { 30, 70, 20, 40, 40, 78, 20, 60, 60, 0, 0, 0 };
 		gbl_cpp_workstation15.rowHeights = new int[] { 40, 0, 30, 0, 30, 0, 30, 0, 0, 0, 0, 0, 0, 30, 30, 0 };
-		gbl_cpp_workstation15.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
+		gbl_cpp_workstation15.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 4.9E-324, 0.0,
 				Double.MIN_VALUE };
 		gbl_cpp_workstation15.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				0.0, 0.0, 0.0, Double.MIN_VALUE };
@@ -8602,24 +10535,25 @@ public class CapacityPlanning {
 		gbc_cptf15_k.gridy = 7;
 		cpp_workstation15.add(cptf15_k, gbc_cptf15_k);
 
-		label_31 = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
-		GridBagConstraints gbc_label_31 = new GridBagConstraints();
-		gbc_label_31.insets = new Insets(0, 0, 5, 5);
-		gbc_label_31.gridx = 1;
-		gbc_label_31.gridy = 8;
-		cpp_workstation15.add(label_31, gbc_label_31);
+		cpl15_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
+		GridBagConstraints gbc_cpl15_capacityold = new GridBagConstraints();
+		gbc_cpl15_capacityold.anchor = GridBagConstraints.WEST;
+		gbc_cpl15_capacityold.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl15_capacityold.gridx = 1;
+		gbc_cpl15_capacityold.gridy = 8;
+		cpp_workstation15.add(cpl15_capacityold, gbc_cpl15_capacityold);
 
-		textField_12 = new JTextField();
-		textField_12.setEditable(false);
-		textField_12.setColumns(10);
-		GridBagConstraints gbc_textField_12 = new GridBagConstraints();
-		gbc_textField_12.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_12.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_12.gridx = 7;
-		gbc_textField_12.gridy = 8;
-		cpp_workstation15.add(textField_12, gbc_textField_12);
+		cptf15_v = new JTextField();
+		cptf15_v.setEditable(false);
+		cptf15_v.setColumns(10);
+		GridBagConstraints gbc_cptf15_v = new GridBagConstraints();
+		gbc_cptf15_v.insets = new Insets(0, 0, 5, 5);
+		gbc_cptf15_v.fill = GridBagConstraints.HORIZONTAL;
+		gbc_cptf15_v.gridx = 7;
+		gbc_cptf15_v.gridy = 8;
+		cpp_workstation15.add(cptf15_v, gbc_cptf15_v);
 
-		label_215 = new JLabel("R\u00FCstzeit");
+		label_215 = new JLabel("R\u00FCstzeit + R\u00FCstzeit Vorperiode");
 		GridBagConstraints gbc_label_215 = new GridBagConstraints();
 		gbc_label_215.anchor = GridBagConstraints.WEST;
 		gbc_label_215.insets = new Insets(0, 0, 5, 5);
@@ -8663,6 +10597,14 @@ public class CapacityPlanning {
 		gbc_label_217.gridy = 11;
 		cpp_workstation15.add(label_217, gbc_label_217);
 
+		cpcb15 = new JComboBox();
+		GridBagConstraints gbc_comboBox = new GridBagConstraints();
+		gbc_comboBox.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox.fill = GridBagConstraints.HORIZONTAL;
+		gbc_comboBox.gridx = 5;
+		gbc_comboBox.gridy = 11;
+		cpp_workstation15.add(cpcb15, gbc_comboBox);
+
 		cptf15_a = new JTextField();
 		cptf15_a.setEditable(false);
 		cptf15_a.setColumns(10);
@@ -8691,7 +10633,75 @@ public class CapacityPlanning {
 		gbc_cptf15_u.gridy = 12;
 		cpp_workstation15.add(cptf15_u, gbc_cptf15_u);
 
+		cpcb15.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb14.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb13.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb12.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb11.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb10.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb9.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb8.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb7.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb6.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb4.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb3.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb2.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb1.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+
+		ActionListener cbActionListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+				try {
+					Utility.calculateOvertime();
+				} catch (SecurityException | IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		};
+
+		cpcb15.addActionListener(cbActionListener);
+		cpcb14.addActionListener(cbActionListener);
+		cpcb13.addActionListener(cbActionListener);
+		cpcb12.addActionListener(cbActionListener);
+		cpcb11.addActionListener(cbActionListener);
+		cpcb10.addActionListener(cbActionListener);
+		cpcb9.addActionListener(cbActionListener);
+		cpcb8.addActionListener(cbActionListener);
+		cpcb7.addActionListener(cbActionListener);
+		cpcb6.addActionListener(cbActionListener);
+		cpcb4.addActionListener(cbActionListener);
+		cpcb3.addActionListener(cbActionListener);
+		cpcb2.addActionListener(cbActionListener);
+		cpcb1.addActionListener(cbActionListener);
+
 		return capacityplanningPane;
+	}
+
+	public static String getFirstShift() {
+		return firstShift;
+	}
+
+	public static void setFirstShift(String firstShift) {
+		CapacityPlanning.firstShift = firstShift;
+	}
+
+	public static String getSecondShift() {
+		return secondShift;
+	}
+
+	public static void setSecondShift(String secondShift) {
+		CapacityPlanning.secondShift = secondShift;
+	}
+
+	public static String getThirdShift() {
+		return thirdShift;
+	}
+
+	public static void setThirdShift(String thirdShift) {
+		CapacityPlanning.thirdShift = thirdShift;
 	}
 
 }

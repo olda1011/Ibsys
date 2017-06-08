@@ -62,7 +62,7 @@ public class Main {
 		kaufteileVerwendungMerged = mergeKautfteileVerwendung(p1KaufteileVerwendung, p2KaufteileVerwendung,
 				p3KaufteileVerwendung);
 
-		timeneedfill();
+		Main.timeneeded = Main.timeneedfill();
 
 		// System.out.println("Folgende Kaufteile für P1 werden benötigt:");
 		// printKaufteilmatrix(p1KaufteileVerwendung);
@@ -90,13 +90,15 @@ public class Main {
 		return false;
 	}
 
-	public static void timeneedfill() {
+	public static int[] timeneedfill() {
 
 		int[] tf = new int[16];
 		List<Workplace> workplaces = results.getWaitinglistworkstations().getWorkplace();
 		for (Workplace wp : workplaces) {
+			System.out.println(wp.getTimeneed());
 			tf[wp.getId().intValue()] = wp.getTimeneed();
 		}
+		return tf;
 	}
 
 	public static int[][] mergeKautfteileVerwendung(int[][] p1KaufteileVerwendung2, int[][] p2KaufteileVerwendung2,

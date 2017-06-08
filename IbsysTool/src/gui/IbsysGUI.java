@@ -209,6 +209,7 @@ public class IbsysGUI {
 				try {
 					int intValue = Main.results.getPeriod().intValue();
 					Date date = new Date(System.currentTimeMillis());
+					@SuppressWarnings("deprecation")
 					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_" + (date.getYear() + 1900);
 					chooser.setSelectedFile(new File("period_" + intValue + "_export_" + dateString + ".xml"));
 
