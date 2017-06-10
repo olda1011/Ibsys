@@ -30,34 +30,34 @@ public class PrognosenObject {
 	public static JPanel prognosenPlanning() {
 		JPanel prognosenPane = new JPanel();
 		GridBagLayout gbl_prognosenPane = new GridBagLayout();
-		gbl_prognosenPane.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_prognosenPane.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+		gbl_prognosenPane.columnWidths = new int[] { 10, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_prognosenPane.rowHeights = new int[] { 0, 15, 0, 0, 0, 0, 0 };
 		gbl_prognosenPane.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };
 		gbl_prognosenPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		prognosenPane.setLayout(gbl_prognosenPane);
 
-		JLabel pl_soll = new JLabel("Soll");
+		JLabel pl_soll = new JLabel("N");
 		GridBagConstraints gbc_pl_soll = new GridBagConstraints();
 		gbc_pl_soll.insets = new Insets(0, 0, 5, 5);
 		gbc_pl_soll.gridx = 2;
 		gbc_pl_soll.gridy = 2;
 		prognosenPane.add(pl_soll, gbc_pl_soll);
 
-		JLabel pl_periode1 = new JLabel("Periode 1");
+		JLabel pl_periode1 = new JLabel("N+1");
 		GridBagConstraints gbc_pl_periode1 = new GridBagConstraints();
 		gbc_pl_periode1.insets = new Insets(0, 0, 5, 5);
 		gbc_pl_periode1.gridx = 3;
 		gbc_pl_periode1.gridy = 2;
 		prognosenPane.add(pl_periode1, gbc_pl_periode1);
 
-		pl_periode2 = new JLabel("Periode 2");
+		pl_periode2 = new JLabel("N+2");
 		GridBagConstraints gbc_pl_periode2 = new GridBagConstraints();
 		gbc_pl_periode2.insets = new Insets(0, 0, 5, 5);
 		gbc_pl_periode2.gridx = 4;
 		gbc_pl_periode2.gridy = 2;
 		prognosenPane.add(pl_periode2, gbc_pl_periode2);
 
-		pl_periode3 = new JLabel("Periode 3");
+		pl_periode3 = new JLabel("N+3");
 		GridBagConstraints gbc_pl_periode3 = new GridBagConstraints();
 		gbc_pl_periode3.insets = new Insets(0, 0, 5, 5);
 		gbc_pl_periode3.gridx = 5;

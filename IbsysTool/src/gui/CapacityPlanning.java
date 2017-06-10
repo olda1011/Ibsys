@@ -1216,7 +1216,7 @@ public class CapacityPlanning {
 	public static JLabel cpl4_totalcapacity;
 	public static JLabel cpl4_workload;
 	public static JLabel cpl4_overtime;
-	public static JLabel lblLenker;
+	public static JLabel cpl6_lenker;
 	public static JLabel lblKdh;
 	public static JLabel cpl6_capacityrequirements;
 	public static JLabel cpl6_setuptime;
@@ -1244,7 +1244,7 @@ public class CapacityPlanning {
 	public static JLabel cpl4_l;
 	public static JLabel cpl4_m;
 	public static JLabel cpl4_capacityrequirements;
-	public static JLabel label;
+	public static JLabel cpl6_arbeitsplatz;
 	public static JLabel label_9;
 	public static JLabel cpl6_totalcapacity;
 	public static JLabel label_4;
@@ -1364,7 +1364,7 @@ public class CapacityPlanning {
 	public static JLabel label_217;
 	public static JLabel label_218;
 	public static JLabel cpl4_c;
-	public static JLabel label_2;
+	public static JLabel cpl6_frame;
 	public static JLabel label_3;
 	public static JLabel label_6;
 	public static JLabel label_50;
@@ -3726,14 +3726,6 @@ public class CapacityPlanning {
 		CapacityPlanning.cpl4_overtime = cpl4_overtime;
 	}
 
-	public static JLabel getLblLenker() {
-		return lblLenker;
-	}
-
-	public static void setLblLenker(JLabel lblLenker) {
-		CapacityPlanning.lblLenker = lblLenker;
-	}
-
 	public static JLabel getLblKdh() {
 		return lblKdh;
 	}
@@ -3950,12 +3942,28 @@ public class CapacityPlanning {
 		CapacityPlanning.cpl4_capacityrequirements = cpl4_capacityrequirements;
 	}
 
-	public static JLabel getLabel() {
-		return label;
+	public static JLabel getCpl6_lenker() {
+		return cpl6_lenker;
 	}
 
-	public static void setLabel(JLabel label) {
-		CapacityPlanning.label = label;
+	public static void setCpl6_lenker(JLabel cpl6_lenker) {
+		CapacityPlanning.cpl6_lenker = cpl6_lenker;
+	}
+
+	public static JLabel getCpl6_arbeitsplatz() {
+		return cpl6_arbeitsplatz;
+	}
+
+	public static void setCpl6_arbeitsplatz(JLabel cpl6_arbeitsplatz) {
+		CapacityPlanning.cpl6_arbeitsplatz = cpl6_arbeitsplatz;
+	}
+
+	public static JLabel getCpl6_frame() {
+		return cpl6_frame;
+	}
+
+	public static void setCpl6_frame(JLabel cpl6_frame) {
+		CapacityPlanning.cpl6_frame = cpl6_frame;
 	}
 
 	public static JLabel getLabel_9() {
@@ -4908,14 +4916,6 @@ public class CapacityPlanning {
 
 	public static void setCpl4_c(JLabel cpl4_c) {
 		CapacityPlanning.cpl4_c = cpl4_c;
-	}
-
-	public static JLabel getLabel_2() {
-		return label_2;
-	}
-
-	public static void setLabel_2(JLabel label_2) {
-		CapacityPlanning.label_2 = label_2;
 	}
 
 	public static JLabel getLabel_3() {
@@ -6371,13 +6371,13 @@ public class CapacityPlanning {
 				0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		cpp_workstation6.setLayout(gbl_cpp_workstation6);
 
-		label = new JLabel("Arbeitsplatz");
-		GridBagConstraints gbc_label = new GridBagConstraints();
-		gbc_label.anchor = GridBagConstraints.WEST;
-		gbc_label.insets = new Insets(0, 0, 5, 5);
-		gbc_label.gridx = 1;
-		gbc_label.gridy = 1;
-		cpp_workstation6.add(label, gbc_label);
+		cpl6_arbeitsplatz = new JLabel("Arbeitsplatz");
+		GridBagConstraints gbc_cpl6_arbeitsplatz = new GridBagConstraints();
+		gbc_cpl6_arbeitsplatz.anchor = GridBagConstraints.WEST;
+		gbc_cpl6_arbeitsplatz.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl6_arbeitsplatz.gridx = 1;
+		gbc_cpl6_arbeitsplatz.gridy = 1;
+		cpp_workstation6.add(cpl6_arbeitsplatz, gbc_cpl6_arbeitsplatz);
 
 		JLabel label_1 = new JLabel("6");
 		GridBagConstraints gbc_label_1 = new GridBagConstraints();
@@ -6386,13 +6386,13 @@ public class CapacityPlanning {
 		gbc_label_1.gridy = 1;
 		cpp_workstation6.add(label_1, gbc_label_1);
 
-		lblLenker = new JLabel("Lenker");
-		GridBagConstraints gbc_lblLenker = new GridBagConstraints();
-		gbc_lblLenker.anchor = GridBagConstraints.WEST;
-		gbc_lblLenker.insets = new Insets(0, 0, 5, 5);
-		gbc_lblLenker.gridx = 1;
-		gbc_lblLenker.gridy = 3;
-		cpp_workstation6.add(lblLenker, gbc_lblLenker);
+		cpl6_lenker = new JLabel("Lenker");
+		GridBagConstraints gbc_cpl6_lenker = new GridBagConstraints();
+		gbc_cpl6_lenker.anchor = GridBagConstraints.WEST;
+		gbc_cpl6_lenker.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl6_lenker.gridx = 1;
+		gbc_cpl6_lenker.gridy = 3;
+		cpp_workstation6.add(cpl6_lenker, gbc_cpl6_lenker);
 
 		lblKdh = new JLabel("KDH");
 		GridBagConstraints gbc_lblKdh = new GridBagConstraints();
@@ -6437,14 +6437,14 @@ public class CapacityPlanning {
 		gbc_cptfr6_16.gridy = 3;
 		cpp_workstation6.add(cptfr6_16, gbc_cptfr6_16);
 
-		label_2 = new JLabel("Fahrrad komplett");
-		GridBagConstraints gbc_label_2 = new GridBagConstraints();
-		gbc_label_2.anchor = GridBagConstraints.WEST;
-		gbc_label_2.gridheight = 3;
-		gbc_label_2.insets = new Insets(0, 0, 5, 5);
-		gbc_label_2.gridx = 1;
-		gbc_label_2.gridy = 5;
-		cpp_workstation6.add(label_2, gbc_label_2);
+		cpl6_frame = new JLabel("Rahmen");
+		GridBagConstraints gbc_cpl6_frame = new GridBagConstraints();
+		gbc_cpl6_frame.anchor = GridBagConstraints.WEST;
+		gbc_cpl6_frame.gridheight = 3;
+		gbc_cpl6_frame.insets = new Insets(0, 0, 5, 5);
+		gbc_cpl6_frame.gridx = 1;
+		gbc_cpl6_frame.gridy = 5;
+		cpp_workstation6.add(cpl6_frame, gbc_cpl6_frame);
 
 		label_3 = new JLabel("K");
 		GridBagConstraints gbc_label_3 = new GridBagConstraints();
@@ -7008,6 +7008,7 @@ public class CapacityPlanning {
 
 		lblRahmen = new JLabel("Rahmen");
 		GridBagConstraints gbc_lblRahmen = new GridBagConstraints();
+		gbc_lblRahmen.anchor = GridBagConstraints.WEST;
 		gbc_lblRahmen.gridheight = 3;
 		gbc_lblRahmen.insets = new Insets(0, 0, 5, 5);
 		gbc_lblRahmen.gridx = 1;
@@ -7145,6 +7146,7 @@ public class CapacityPlanning {
 
 		lblPedale = new JLabel("Pedale");
 		GridBagConstraints gbc_lblPedale = new GridBagConstraints();
+		gbc_lblPedale.anchor = GridBagConstraints.WEST;
 		gbc_lblPedale.insets = new Insets(0, 0, 5, 5);
 		gbc_lblPedale.gridx = 1;
 		gbc_lblPedale.gridy = 15;
@@ -7626,6 +7628,7 @@ public class CapacityPlanning {
 
 		label_53 = new JLabel("Rahmen");
 		GridBagConstraints gbc_label_53 = new GridBagConstraints();
+		gbc_label_53.anchor = GridBagConstraints.WEST;
 		gbc_label_53.gridheight = 3;
 		gbc_label_53.insets = new Insets(0, 0, 5, 5);
 		gbc_label_53.gridx = 1;
@@ -8194,6 +8197,7 @@ public class CapacityPlanning {
 
 		label_83 = new JLabel("Rahmen");
 		GridBagConstraints gbc_label_83 = new GridBagConstraints();
+		gbc_label_83.anchor = GridBagConstraints.WEST;
 		gbc_label_83.gridheight = 3;
 		gbc_label_83.insets = new Insets(0, 0, 5, 5);
 		gbc_label_83.gridx = 1;

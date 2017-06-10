@@ -230,12 +230,14 @@ public class Utility {
 					shiftvalue = 7200;
 				} else if (totalcapacity > 7200) {
 					invokeC.setSelectedIndex(2);
+					System.out.println("bin drin");
 					shiftvalue = 7200;
 					totalcapacity = 7200;
 				}
 
 				int workload = totalcapacity * 100 / shiftvalue;
 				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
+				System.out.println("workstation" + j + " " + overtime);
 				overtime = overtime / 5;
 				invokeK.setText("" + capacity);
 				invokeV.setText("" + capacityold);
@@ -488,6 +490,10 @@ public class Utility {
 				}
 				int totalcapacity = capacity + setuptime + capacityold;
 
+				if (totalcapacity > 7200) {
+					totalcapacity = 7200;
+				}
+
 				if (invokeC.getSelectedIndex() == 0) {
 					shiftvalue = 2400;
 				} else if (invokeC.getSelectedIndex() == 1) {
@@ -495,6 +501,7 @@ public class Utility {
 				} else if (invokeC.getSelectedIndex() == 2) {
 					shiftvalue = 7200;
 				}
+				System.out.println("ich war auch hier drin");
 				int workload = totalcapacity * 100 / shiftvalue;
 				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
 				overtime = overtime / 5;

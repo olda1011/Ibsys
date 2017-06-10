@@ -328,10 +328,10 @@ public class IbsysGUI {
 				CapacityPlanning.cpl6_setuptime.setText("Rüstzeit");
 				CapacityPlanning.cpl6_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl6_workload.setText("Auslastung %");
-				CapacityPlanning.label.setText("Arbeitsplatz");
-				CapacityPlanning.lblLenker.setText("Lenker");
+				CapacityPlanning.cpl6_arbeitsplatz.setText("Arbeitsplatz");
+				CapacityPlanning.cpl6_lenker.setText("Lenker");
 				CapacityPlanning.lblKdh.setText("K/D/H");
-				CapacityPlanning.label_2.setText("Fahrrad komplett");
+				CapacityPlanning.cpl6_frame.setText("Rahmen");
 				CapacityPlanning.label_3.setText("K");
 				CapacityPlanning.label_6.setText("D");
 				CapacityPlanning.label_9.setText("H");
@@ -582,10 +582,10 @@ public class IbsysGUI {
 				CapacityPlanning.cpl6_setuptime.setText("Setup time");
 				CapacityPlanning.cpl6_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl6_workload.setText("Workload %");
-				CapacityPlanning.label.setText("Workstation");
-				CapacityPlanning.lblLenker.setText("Handlebar");
+				CapacityPlanning.cpl6_arbeitsplatz.setText("Workstation");
+				CapacityPlanning.cpl6_lenker.setText("Handlebar");
 				CapacityPlanning.lblKdh.setText("C/F/M");
-				CapacityPlanning.label_2.setText("Bicycle complete");
+				CapacityPlanning.cpl6_frame.setText("Bicycle complete");
 				CapacityPlanning.label_3.setText("C");
 				CapacityPlanning.label_6.setText("F");
 				CapacityPlanning.label_9.setText("M");
