@@ -10666,6 +10666,7 @@ public class CapacityPlanning {
 				}
 			}
 		};
+		setShiftStrings();
 
 		cpcb15.addActionListener(cbActionListener);
 		cpcb14.addActionListener(cbActionListener);
@@ -10707,6 +10708,23 @@ public class CapacityPlanning {
 
 	public static void setThirdShift(String thirdShift) {
 		CapacityPlanning.thirdShift = thirdShift;
+	}
+
+	public static void setShiftStrings() {
+		cpcb15.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb14.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb13.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb12.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb11.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb10.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb9.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb8.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb7.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb6.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb4.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb3.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb2.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
+		cpcb1.setModel(new DefaultComboBoxModel(new String[] { firstShift, secondShift, thirdShift }));
 	}
 
 }

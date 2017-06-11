@@ -496,6 +496,11 @@ public class IbsysGUI {
 				CapacityPlanning.getCpl12_capacityold().setText("Kapazitätsbedarf Vorperiode");
 				CapacityPlanning.getCpl13_capacityold().setText("Kapazitätsbedarf Vorperiode");
 
+				CapacityPlanning.setFirstShift("1.Schicht");
+				CapacityPlanning.setSecondShift("2.Schicht");
+				CapacityPlanning.setThirdShift("3.Schicht");
+				CapacityPlanning.setShiftStrings();
+
 				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
@@ -789,6 +794,11 @@ public class IbsysGUI {
 				CapacityPlanning.getCpl11_capacityold().setText("Capacity previous period");
 				CapacityPlanning.getCpl12_capacityold().setText("Capacity previous period");
 				CapacityPlanning.getCpl13_capacityold().setText("Capacity previous period");
+
+				CapacityPlanning.setFirstShift("1.Shift");
+				CapacityPlanning.setSecondShift("2.Shift");
+				CapacityPlanning.setThirdShift("3.Shift");
+				CapacityPlanning.setShiftStrings();
 
 				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
