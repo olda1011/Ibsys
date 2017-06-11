@@ -429,10 +429,10 @@ public class Main {
 			matrix = matrix1;
 		} else if (produktionFall == 2) {
 			int[][] matrix2 = { { 2, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 2), 0, 0, 0 },
-					{ 26, 0, 0, geplanterLagerbestand, mod26, 0, 0, 0 },
+					{ 26, 0, 0, geplanterLagerbestand, menge26, 0, 0, 0 },
 					{ 56, 0, 0, geplanterLagerbestand, findAmountById(articles, 56), 0, 0, 0 },
-					{ 16, 0, 0, geplanterLagerbestand, mod16, 0, 0, 0 },
-					{ 17, 0, 0, geplanterLagerbestand, mod17, 0, 0, 0 },
+					{ 16, 0, 0, geplanterLagerbestand, menge16, 0, 0, 0 },
+					{ 17, 0, 0, geplanterLagerbestand, menge17, 0, 0, 0 },
 					{ 55, 0, 0, geplanterLagerbestand, findAmountById(articles, 55), 0, 0, 0 },
 					{ 5, 0, 0, geplanterLagerbestand, findAmountById(articles, 5), 0, 0, 0 },
 					{ 11, 0, 0, geplanterLagerbestand, findAmountById(articles, 11), 0, 0, 0 },
@@ -443,10 +443,10 @@ public class Main {
 			matrix = matrix2;
 		} else if (produktionFall == 3) {
 			int[][] matrix3 = { { 3, geplantVerkauf, 0, geplanterLagerbestand, findAmountById(articles, 3), 0, 0, 0 },
-					{ 26, 0, 0, geplanterLagerbestand, mod26, 0, 0, 0 },
+					{ 26, 0, 0, geplanterLagerbestand, menge26, 0, 0, 0 },
 					{ 31, 0, 0, geplanterLagerbestand, findAmountById(articles, 31), 0, 0, 0 },
-					{ 16, 0, 0, geplanterLagerbestand, mod16, 0, 0, 0 },
-					{ 17, 0, 0, geplanterLagerbestand, mod17, 0, 0, 0 },
+					{ 16, 0, 0, geplanterLagerbestand, menge16, 0, 0, 0 },
+					{ 17, 0, 0, geplanterLagerbestand, menge17, 0, 0, 0 },
 					{ 30, 0, 0, geplanterLagerbestand, findAmountById(articles, 30), 0, 0, 0 },
 					{ 6, 0, 0, geplanterLagerbestand, findAmountById(articles, 6), 0, 0, 0 },
 					{ 12, 0, 0, geplanterLagerbestand, findAmountById(articles, 12), 0, 0, 0 },
