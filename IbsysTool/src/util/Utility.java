@@ -340,7 +340,6 @@ public class Utility {
 					setuptime += Main.setuptime[j - 1];
 				}
 				int totalcapacity = capacity + setuptime + capacityold;
-				System.out.println(totalcapacity);
 				if (totalcapacity >= 0 && totalcapacity < 3866) {
 					invokeC.setSelectedIndex(0);
 					shiftvalue = 2400;

@@ -5395,6 +5395,7 @@ public class CapacityPlanning {
 
 		cpl1_capacityold = new JLabel("Kapazit\u00E4tsbedarf Vorperiode ");
 		GridBagConstraints gbc_cpl1_capacityold = new GridBagConstraints();
+		gbc_cpl1_capacityold.anchor = GridBagConstraints.WEST;
 		gbc_cpl1_capacityold.insets = new Insets(0, 0, 5, 5);
 		gbc_cpl1_capacityold.gridx = 1;
 		gbc_cpl1_capacityold.gridy = 8;

@@ -286,8 +286,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl1_capacityrequirements.setText("Kapazitätsbedarf");
 				CapacityPlanning.cpl1_frontwheelcomplete.setText("Vorderrad Komplett");
-				CapacityPlanning.cpl1_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl1_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl1_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl1_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl1_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl1_workload.setText("Auslastung %");
 				CapacityPlanning.cpl1_workstation.setText("Arbeitsplatz");
@@ -297,8 +297,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl2_capacityrequirements.setText("Kapazitätsbedarf");
 				CapacityPlanning.cpl2_frameandwheels.setText("Rahmen und Räder");
-				CapacityPlanning.cpl2_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl2_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl2_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl2_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl2_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl2_workload.setText("Auslastung %");
 				CapacityPlanning.cpl2_workstation.setText("Arbeitsplatz");
@@ -308,8 +308,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl3_bicyclewithoutpedal.setText("Fahrrad ohne Pedale");
 				CapacityPlanning.cpl3_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl3_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl3_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl3_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl3_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl3_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl3_workload.setText("Auslastung %");
 				CapacityPlanning.cpl3_workstation.setText("Arbeitsplatz");
@@ -318,8 +318,8 @@ public class IbsysGUI {
 				CapacityPlanning.cpl3_m.setText("H");
 
 				CapacityPlanning.cpl4_bicyclecomplete.setText("Fahrrad komplett");
-				CapacityPlanning.cpl4_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl4_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl4_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl4_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl4_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl4_workload.setText("Auslastung %");
 				CapacityPlanning.cpl4_workstation.setText("Arbeitsplatz");
@@ -329,8 +329,8 @@ public class IbsysGUI {
 				CapacityPlanning.cpl4_m.setText("H");
 
 				CapacityPlanning.cpl6_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl6_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl6_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl6_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl6_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl6_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl6_workload.setText("Auslastung %");
 				CapacityPlanning.cpl6_arbeitsplatz.setText("Arbeitsplatz");
@@ -342,8 +342,8 @@ public class IbsysGUI {
 				CapacityPlanning.label_9.setText("H");
 
 				CapacityPlanning.cpl7_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl7_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl7_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl7_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl7_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl7_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl7_workload.setText("Auslastung %");
 				CapacityPlanning.label_4.setText("Arbeitsplatz");
@@ -364,8 +364,8 @@ public class IbsysGUI {
 				CapacityPlanning.lblKdh_1.setText("K/D/H");
 				// workstation
 				CapacityPlanning.cpl8_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl8_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl8_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl8_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl8_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl8_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl8_workload.setText("Auslastung %");
 				CapacityPlanning.label_26.setText("Arbeitsplatz");
@@ -384,8 +384,8 @@ public class IbsysGUI {
 
 				// ws
 				CapacityPlanning.cpl9_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl9_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl9_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl9_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl9_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl9_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl9_workload.setText("Auslastung %");
 				CapacityPlanning.label_10.setText("Arbeitsplatz");
@@ -403,8 +403,8 @@ public class IbsysGUI {
 				CapacityPlanning.label_91.setText("H");
 				// ws
 				CapacityPlanning.cpl10_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl10_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl10_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl10_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl10_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl10_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl10_workload.setText("Auslastung %");
 				CapacityPlanning.label_46.setText("Arbeitsplatz");
@@ -418,8 +418,8 @@ public class IbsysGUI {
 				CapacityPlanning.label_109.setText("H");
 				// ws
 				CapacityPlanning.cpl11_capacityrequirements.setText("Kapazitätsbedarf");
-				CapacityPlanning.cpl11_overtime.setText("Überstunden (min)");
-				CapacityPlanning.cpl11_setuptime.setText("Rüstzeit");
+				CapacityPlanning.cpl11_overtime.setText("Überstunden pro Tag (min)");
+				CapacityPlanning.cpl11_setuptime.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.cpl11_totalcapacity.setText("Totale Kapazität");
 				CapacityPlanning.cpl11_workload.setText("Auslastung %");
 				CapacityPlanning.label_127.setText("Arbeitsplatz");
@@ -433,10 +433,10 @@ public class IbsysGUI {
 				CapacityPlanning.label_146.setText("H");
 
 				CapacityPlanning.label_154.setText("Kapazitätsbedarf");
-				CapacityPlanning.label_155.setText("Rüstzeit");
+				CapacityPlanning.label_155.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.label_156.setText("Totale Kapazität");
 				CapacityPlanning.label_157.setText("Auslastung %");
-				CapacityPlanning.label_158.setText("Überstunden (min)");
+				CapacityPlanning.label_158.setText("Überstunden pro Tag (min)");
 				CapacityPlanning.label_100.setText("Arbeitsplatz");
 				CapacityPlanning.label_102.setText("Schutzblech hinten");
 				CapacityPlanning.label_104.setText("K");
@@ -448,10 +448,10 @@ public class IbsysGUI {
 				CapacityPlanning.label_129.setText("H");
 
 				CapacityPlanning.label_186.setText("Kapazitätsbedarf");
-				CapacityPlanning.label_187.setText("Rüstzeit");
+				CapacityPlanning.label_187.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.label_188.setText("Totale Kapazität");
 				CapacityPlanning.label_189.setText("Auslastung %");
-				CapacityPlanning.label_190.setText("Überstunden (min)");
+				CapacityPlanning.label_190.setText("Überstunden pro Tag (min)");
 				CapacityPlanning.label_137.setText("Arbeitsplatz");
 				CapacityPlanning.label_141.setText("Schutzblech hinten");
 				CapacityPlanning.label_144.setText("K");
@@ -463,34 +463,59 @@ public class IbsysGUI {
 				CapacityPlanning.label_173.setText("H");
 
 				CapacityPlanning.label_192.setText("Kapazitätsbedarf");
-				CapacityPlanning.label_193.setText("Rüstzeit");
+				CapacityPlanning.label_193.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.label_194.setText("Totale Kapazität");
 				CapacityPlanning.label_195.setText("Auslastung %");
-				CapacityPlanning.label_196.setText("Überstunden (min)");
+				CapacityPlanning.label_196.setText("Überstunden pro Tag (min)");
 				CapacityPlanning.label_149.setText("Arbeitsplatz");
 				CapacityPlanning.label_165.setText("Lenker");
 				CapacityPlanning.label_169.setText("K/D/H");
 
 				CapacityPlanning.label_214.setText("Kapazitätsbedarf");
-				CapacityPlanning.label_215.setText("Rüstzeit");
+				CapacityPlanning.label_215.setText("Rüstzeit + Rüstzeit Vorperiode");
 				CapacityPlanning.label_216.setText("Totale Kapazität");
 				CapacityPlanning.label_217.setText("Auslastung %");
-				CapacityPlanning.label_218.setText("Überstunden (min)");
+				CapacityPlanning.label_218.setText("Überstunden pro Tag (min)");
 				CapacityPlanning.label_197.setText("Arbeitsplatz");
 				CapacityPlanning.label_199.setText("Sattel");
 				CapacityPlanning.label_200.setText("K/D/H");
 				CapacityPlanning.label_203.setText("Pedale");
 				CapacityPlanning.label_204.setText("K/D/H");
 
+				CapacityPlanning.getCpl1_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl2_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl3_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl4_capacityold().setText("Kapazitätsbedarf Vorperiode");
+
+				CapacityPlanning.getCpl6_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl7_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl8_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl9_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl10_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl11_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl12_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl13_capacityold().setText("Kapazitätsbedarf Vorperiode");
+
 				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Kaufteil");
-				table.getColumnModel().getColumn(1).setHeaderValue("Lagerbestand");
-				table.getColumnModel().getColumn(2).setHeaderValue("Bedarf in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Bedarf in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Bedarf in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Bedarf in N+3");
+				table.getColumnModel().getColumn(0).setHeaderValue("ID");
+				table.getColumnModel().getColumn(1).setHeaderValue("Lager");
+				table.getColumnModel().getColumn(2).setHeaderValue("Di");
+				table.getColumnModel().getColumn(3).setHeaderValue("Mi");
+				table.getColumnModel().getColumn(4).setHeaderValue("Do");
+				table.getColumnModel().getColumn(5).setHeaderValue("Fr");
+				table.getColumnModel().getColumn(6).setHeaderValue("Mo+1");
+				table.getColumnModel().getColumn(11).setHeaderValue("Bestellen");
+				table.getColumnModel().getColumn(12).setHeaderValue("Eil");
+
+				// SequencePlanning
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(0).setHeaderValue("Priorität");
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(1).setHeaderValue("Teil");
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(2).setHeaderValue("Menge");
+				SequencePlanningObject.getSpb_down().setText("Runter");
+				SequencePlanningObject.getSpb_up().setText("Hoch");
+				SequencePlanningObject.getSpb_split().setText("Teilen");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Daten");
@@ -554,8 +579,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl1_capacityrequirements.setText("Capacity requirements");
 				CapacityPlanning.cpl1_frontwheelcomplete.setText("Front wheel complete");
-				CapacityPlanning.cpl1_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl1_setuptime.setText("Setup time");
+				CapacityPlanning.cpl1_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl1_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl1_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl1_workload.setText("Workload %");
 				CapacityPlanning.cpl1_workstation.setText("Workstation");
@@ -565,8 +590,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl2_capacityrequirements.setText("Capacity requirements");
 				CapacityPlanning.cpl2_frameandwheels.setText("Frame and wheels");
-				CapacityPlanning.cpl2_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl2_setuptime.setText("Setup time");
+				CapacityPlanning.cpl2_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl2_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl2_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl2_workload.setText("Workload %");
 				CapacityPlanning.cpl2_workstation.setText("Workstation");
@@ -576,8 +601,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl3_bicyclewithoutpedal.setText("Bicycle without pedal");
 				CapacityPlanning.cpl3_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl3_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl3_setuptime.setText("Setup time");
+				CapacityPlanning.cpl3_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl3_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl3_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl3_workload.setText("Workload %");
 				CapacityPlanning.cpl3_workstation.setText("Workstation");
@@ -587,8 +612,8 @@ public class IbsysGUI {
 
 				CapacityPlanning.cpl4_bicyclecomplete.setText("Bicycle complete");
 				CapacityPlanning.cpl4_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl4_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl4_setuptime.setText("Setup time");
+				CapacityPlanning.cpl4_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl4_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl4_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl4_workload.setText("Workload %");
 				CapacityPlanning.cpl4_workstation.setText("Workstation");
@@ -597,8 +622,8 @@ public class IbsysGUI {
 				CapacityPlanning.cpl4_m.setText("M");
 
 				CapacityPlanning.cpl6_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl6_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl6_setuptime.setText("Setup time");
+				CapacityPlanning.cpl6_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl6_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl6_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl6_workload.setText("Workload %");
 				CapacityPlanning.cpl6_arbeitsplatz.setText("Workstation");
@@ -611,8 +636,8 @@ public class IbsysGUI {
 
 				// workstation
 				CapacityPlanning.cpl7_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl7_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl7_setuptime.setText("Setup time");
+				CapacityPlanning.cpl7_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl7_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl7_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl7_workload.setText("Workload %");
 				CapacityPlanning.label_4.setText("Workstation");
@@ -633,8 +658,8 @@ public class IbsysGUI {
 				CapacityPlanning.lblKdh_1.setText("C/F/M");
 				// workstation
 				CapacityPlanning.cpl8_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl8_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl8_setuptime.setText("Setup time");
+				CapacityPlanning.cpl8_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl8_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl8_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl8_workload.setText("Workload %");
 				CapacityPlanning.label_26.setText("Workstation");
@@ -652,8 +677,8 @@ public class IbsysGUI {
 				CapacityPlanning.label_60.setText("M");
 				// ws
 				CapacityPlanning.cpl9_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl9_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl9_setuptime.setText("Setup time");
+				CapacityPlanning.cpl9_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl9_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl9_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl9_workload.setText("Workload %");
 				CapacityPlanning.label_10.setText("Workstation");
@@ -671,8 +696,8 @@ public class IbsysGUI {
 				CapacityPlanning.label_91.setText("M");
 				// ws
 				CapacityPlanning.cpl10_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl10_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl10_setuptime.setText("Setup time");
+				CapacityPlanning.cpl10_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl10_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl10_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl10_workload.setText("Workload %");
 				CapacityPlanning.label_46.setText("Workstation");
@@ -687,8 +712,8 @@ public class IbsysGUI {
 
 				// ws
 				CapacityPlanning.cpl11_capacityrequirements.setText("Capacity requirements");
-				CapacityPlanning.cpl11_overtime.setText("Overtime (min)");
-				CapacityPlanning.cpl11_setuptime.setText("Setup time");
+				CapacityPlanning.cpl11_overtime.setText("Overtime per day (min)");
+				CapacityPlanning.cpl11_setuptime.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.cpl11_totalcapacity.setText("Total capacity");
 				CapacityPlanning.cpl11_workload.setText("Workload %");
 				CapacityPlanning.label_127.setText("Workstation");
@@ -702,10 +727,10 @@ public class IbsysGUI {
 				CapacityPlanning.label_146.setText("M");
 
 				CapacityPlanning.label_154.setText("Capacity requirements");
-				CapacityPlanning.label_155.setText("Setup time");
+				CapacityPlanning.label_155.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.label_156.setText("Total capacity");
 				CapacityPlanning.label_157.setText("Workload %");
-				CapacityPlanning.label_158.setText("Overtime (min)");
+				CapacityPlanning.label_158.setText("Overtime per day (min)");
 				CapacityPlanning.label_100.setText("Workstation");
 				CapacityPlanning.label_102.setText("Fender back");
 				CapacityPlanning.label_104.setText("C");
@@ -717,10 +742,10 @@ public class IbsysGUI {
 				CapacityPlanning.label_129.setText("M");
 
 				CapacityPlanning.label_186.setText("Capacity requirements");
-				CapacityPlanning.label_187.setText("Setup time");
+				CapacityPlanning.label_187.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.label_188.setText("Total capacity");
 				CapacityPlanning.label_189.setText("Workload %");
-				CapacityPlanning.label_190.setText("Overtime (min)");
+				CapacityPlanning.label_190.setText("Overtime per day (min)");
 				CapacityPlanning.label_137.setText("Workstation");
 				CapacityPlanning.label_141.setText("Fender back");
 				CapacityPlanning.label_144.setText("C");
@@ -732,34 +757,58 @@ public class IbsysGUI {
 				CapacityPlanning.label_173.setText("M");
 
 				CapacityPlanning.label_192.setText("Capacity requirements");
-				CapacityPlanning.label_193.setText("Setup time");
+				CapacityPlanning.label_193.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.label_194.setText("Total Capacity");
 				CapacityPlanning.label_195.setText("Workload %");
-				CapacityPlanning.label_196.setText("Overtime (min)");
+				CapacityPlanning.label_196.setText("Overtime per day (min)");
 				CapacityPlanning.label_149.setText("Workstation");
 				CapacityPlanning.label_165.setText("Handlebar");
 				CapacityPlanning.label_169.setText("C/F/M");
 
 				CapacityPlanning.label_214.setText("Capacity requirements");
-				CapacityPlanning.label_215.setText("Setup time");
+				CapacityPlanning.label_215.setText("Setuptime + previous Setuptime");
 				CapacityPlanning.label_216.setText("Total Capacity");
 				CapacityPlanning.label_217.setText("Workload %");
-				CapacityPlanning.label_218.setText("Overtime (min)");
+				CapacityPlanning.label_218.setText("Overtime per day (min)");
 				CapacityPlanning.label_197.setText("Workstation");
 				CapacityPlanning.label_199.setText("Saddle");
 				CapacityPlanning.label_200.setText("C/F/M");
 				CapacityPlanning.label_203.setText("Pedal");
 				CapacityPlanning.label_204.setText("C/F/M");
 
+				CapacityPlanning.getCpl1_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl2_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl3_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl4_capacityold().setText("Capacity previous period");
+
+				CapacityPlanning.getCpl6_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl7_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl8_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl9_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl10_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl11_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl12_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl13_capacityold().setText("Capacity previous period");
+
 				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Purchaseitem");
+				table.getColumnModel().getColumn(0).setHeaderValue("ID");
 				table.getColumnModel().getColumn(1).setHeaderValue("Inventory");
-				table.getColumnModel().getColumn(2).setHeaderValue("Needed in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Needed in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Needed in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Needed in N+3");
+				table.getColumnModel().getColumn(2).setHeaderValue("Tu");
+				table.getColumnModel().getColumn(3).setHeaderValue("We");
+				table.getColumnModel().getColumn(4).setHeaderValue("Th");
+				table.getColumnModel().getColumn(5).setHeaderValue("Fr");
+				table.getColumnModel().getColumn(6).setHeaderValue("Mo+1");
+				table.getColumnModel().getColumn(11).setHeaderValue("Order");
+				table.getColumnModel().getColumn(12).setHeaderValue("fast");
+
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(0).setHeaderValue("Priority");
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(1).setHeaderValue("Item");
+				SequencePlanningObject.spt_table.getColumnModel().getColumn(2).setHeaderValue("Ammount");
+				SequencePlanningObject.getSpb_down().setText("Down");
+				SequencePlanningObject.getSpb_up().setText("Up");
+				SequencePlanningObject.getSpb_split().setText("Split");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Data");
