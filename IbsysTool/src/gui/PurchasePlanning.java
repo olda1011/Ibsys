@@ -64,7 +64,7 @@ public class PurchasePlanning {
 						{ "57", null, null, null, null, null, null, null, null, null, null, null, null },
 						{ "58", null, null, null, null, null, null, null, null, null, null, null, null },
 						{ "59", null, null, null, null, null, null, null, null, null, null, null, null }, },
-				new String[] { "Purchaseitems", "Inventory", "Mo", "Di", "Mi", "Do", "Fr", "N", "N+1", "N+2", "N+3",
+				new String[] { "ID", "Inventory", "Di", "Mi", "Do", "Fr", "Mo(N+1)", "N", "N+1", "N+2", "N+3",
 						"Bestellungen", "Eil" });
 
 		table = new JTable(model) {

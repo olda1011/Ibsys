@@ -18,6 +18,7 @@ import generated.Input.Selldirect.Item;
 import generated.Input.Sellwish;
 import generated.Input.Workingtimelist;
 import generated.Input.Workingtimelist.Workingtime;
+import generated.Results.Inwardstockmovement.Order;
 import gui.CapacityPlanning;
 import gui.IbsysGUI;
 import gui.PurchasePlanning;
@@ -134,15 +135,96 @@ public class Utility {
 
 		for (int i = 0; i < kaufteileVerwendungMerged.length; i++) {
 			for (int j = 0; j < kaufteileVerwendungMerged[i].length; j++) {
-				if (j == 0) {
-
-				} else {
+				if (j < 2) {
 					purchasePlanningTable.setValueAt(kaufteileVerwendungMerged[i][j], i, j);
+				} else {
+					int g = j + 5;
+					purchasePlanningTable.setValueAt(kaufteileVerwendungMerged[i][j], i, g);
 				}
 			}
 
 		}
 
+		// Inwardstock
+		System.out.println(Main.inwardstockmovement.size());
+		for (Order o : Main.inwardstockmovement) {
+			int time = o.getTime();
+			int amount = o.getAmount();
+			int tempcalc = (time % 7200) / 1440;
+			int calctime = ((time % 7200) / 1440);
+			if (calctime == 0) {
+				calctime = 5;
+			}
+			int article = o.getArticle();
+			System.out.println("Artikel: " + article + " calctime: " + calctime + "temcalctime: " + tempcalc);
+			int row = 0;
+			for (int i = 0; i < purchasePlanningTable.getRowCount(); i++) {
+				if ((Integer) purchasePlanningTable.getValueAt(i, 0) == article) {
+					if (purchasePlanningTable.getValueAt(i, calctime + 1) != null) {
+						amount += (Integer) purchasePlanningTable.getValueAt(i, calctime + 1);
+					}
+					row = i;
+				}
+			}
+			purchasePlanningTable.setValueAt(amount, row, calctime + 1);
+		}
+
+		// Orders
+		for (int i = 0; i < purchasePlanningTable.getRowCount(); i++) {
+			int ordertime = Main.ordertime[(Integer) purchasePlanningTable.getValueAt(i, 0)];
+			int lager = (Integer) purchasePlanningTable.getValueAt(i, 1);
+			int verbrauch = 0;
+			switch (ordertime) {
+			case 1:
+				verbrauch += (Integer) purchasePlanningTable.getValueAt(i, 7);
+				break;
+			case 2:
+				verbrauch += (Integer) purchasePlanningTable.getValueAt(i, 7)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 8);
+				break;
+			case 3:
+				verbrauch += (Integer) purchasePlanningTable.getValueAt(i, 7)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 8)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 9);
+				break;
+			case 4:
+				verbrauch += (Integer) purchasePlanningTable.getValueAt(i, 7)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 8)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 9)
+						+ (Integer) purchasePlanningTable.getValueAt(i, 10);
+				break;
+			}
+			int n = 0;
+			int n1 = 0;
+			int n2 = 0;
+			int n3 = 0;
+			int n4 = 0;
+			if (purchasePlanningTable.getValueAt(i, 2) != null) {
+				n = (Integer) purchasePlanningTable.getValueAt(i, 2);
+			}
+			if (purchasePlanningTable.getValueAt(i, 3) != null) {
+				n1 = (Integer) purchasePlanningTable.getValueAt(i, 3);
+			}
+			if (purchasePlanningTable.getValueAt(i, 4) != null) {
+				n2 = (Integer) purchasePlanningTable.getValueAt(i, 4);
+			}
+			if (purchasePlanningTable.getValueAt(i, 5) != null) {
+				n3 = (Integer) purchasePlanningTable.getValueAt(i, 5);
+			}
+			if (purchasePlanningTable.getValueAt(i, 6) != null) {
+				n4 = (Integer) purchasePlanningTable.getValueAt(i, 6);
+			}
+
+			int zugang = n + n1 + n2 + n3 + n4;
+
+			if ((lager + zugang) < verbrauch) {
+				System.out.println("lager: " + lager + "verbrauch: " + verbrauch);
+				int bestell = verbrauch;
+				purchasePlanningTable.setValueAt(bestell, i, 11);
+
+			}
+
+		}
 		// Capacity Planning init
 
 		// 16 17 26
@@ -215,7 +297,7 @@ public class Utility {
 					capacityold = Main.timeneeded[j];
 				}
 				if (capacityold != 0) {
-					setuptime += Main.setuptime[j];
+					setuptime += Main.setuptime[j - 1];
 				}
 				int totalcapacity = capacity + setuptime + capacityold;
 
@@ -230,7 +312,6 @@ public class Utility {
 					shiftvalue = 7200;
 				} else if (totalcapacity > 7200) {
 					invokeC.setSelectedIndex(2);
-					System.out.println("bin drin");
 					shiftvalue = 7200;
 					totalcapacity = 7200;
 				}
@@ -287,6 +368,35 @@ public class Utility {
 			}
 
 		}
+
+	}
+
+	public static void raiseSetupTime(int id)
+			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		for (int j = 1; j <= 15; j++) {
+			String methodNameID = "getCptf" + j + "_" + id;
+			String methodNameR = "getCptf" + j + "_r";
+
+			Method methodR = null;
+			Method methodID = null;
+
+			try {
+				methodID = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameID);
+
+				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
+
+			} catch (Exception e) {
+			}
+			if (methodR != null && methodID != null) {
+				JTextField invokeID = (JTextField) methodID.invoke(methodNameID);
+				JTextField invokeR = (JTextField) methodR.invoke(methodNameR);
+				int setuptime = Main.setuptime[j - 1];
+				int oldvalue = Integer.parseInt(invokeR.getText());
+				int newvalue = setuptime + oldvalue;
+				invokeR.setText("" + newvalue);
+			}
+		}
+
 	}
 
 	private static int getCapacityOfWorkstation(int workstation)
@@ -326,7 +436,7 @@ public class Utility {
 				JTextField invoke = (JTextField) method.invoke(methodName);
 				value = Integer.parseInt(invoke.getText());
 				if (value > 0) {
-					setuptime += Main.setuptime[workstation];
+					setuptime += Main.setuptime[workstation - 1];
 				}
 
 			}
@@ -501,7 +611,6 @@ public class Utility {
 				} else if (invokeC.getSelectedIndex() == 2) {
 					shiftvalue = 7200;
 				}
-				System.out.println("ich war auch hier drin");
 				int workload = totalcapacity * 100 / shiftvalue;
 				int overtime = (totalcapacity - shiftvalue) > 0 ? totalcapacity - shiftvalue : 0;
 				overtime = overtime / 5;

@@ -12,6 +12,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import generated.Results;
+import generated.Results.Inwardstockmovement.Order;
 import generated.Results.Ordersinwork;
 import generated.Results.Waitinglistworkstations.Workplace;
 import generated.Results.Waitinglistworkstations.Workplace.Waitinglist;
@@ -26,12 +27,14 @@ public class Main {
 	public static int[][] p1KaufteileVerwendung;
 	public static int[][] p2KaufteileVerwendung;
 	public static int[][] p3KaufteileVerwendung;
-	public static int[] setuptime = { 20, 30, 20, 20, 20, 15, 20, 20, 15, 20, 10, 0, 0, 0, 0, 15 };
+	public static int[] setuptime = { 20, 30, 20, 20, 0, 15, 20, 20, 15, 20, 10, 0, 0, 0, 15 };
 	public static int[] timeneeded;
 
 	public static int[][] kaufteileVerwendungMerged;
 	public static Results results;
 	public static int geplanterLagerbestand;
+	public static List<Order> inwardstockmovement;
+	public static int[] ordertime;
 
 	private Main() {
 
@@ -63,6 +66,8 @@ public class Main {
 				p3KaufteileVerwendung);
 
 		Main.timeneeded = Main.timeneedfill();
+		Main.inwardstockmovement = Main.inwardstockmovementfill();
+		Main.ordertime = ordertimes();
 
 		// System.out.println("Folgende Kaufteile für P1 werden benötigt:");
 		// printKaufteilmatrix(p1KaufteileVerwendung);
@@ -703,6 +708,47 @@ public class Main {
 		}
 		return warteschlange;
 
+	}
+
+	private static int[] ordertimes() {
+		int[] times = new int[60];
+		times[21] = 3;
+		times[22] = 3;
+		times[23] = 2;
+		times[24] = 4;
+		times[25] = 2;
+		times[27] = 2;
+		times[28] = 3;
+		times[32] = 3;
+		times[33] = 3;
+		times[34] = 2;
+		times[35] = 3;
+		times[36] = 2;
+		times[37] = 2;
+		times[38] = 3;
+		times[39] = 2;
+		times[40] = 2;
+		times[41] = 2;
+		times[42] = 2;
+		times[43] = 3;
+		times[44] = 2;
+		times[45] = 3;
+		times[46] = 2;
+		times[47] = 2;
+		times[48] = 2;
+		times[52] = 3;
+		times[53] = 2;
+		times[57] = 3;
+		times[58] = 3;
+		times[59] = 1;
+
+		return times;
+
+	}
+
+	private static List<Order> inwardstockmovementfill() {
+		List<Order> orders = results.getInwardstockmovement().getOrder();
+		return orders;
 	}
 
 	private static int findAmountById(List<Article> articles, int i) {

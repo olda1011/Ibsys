@@ -2487,7 +2487,7 @@ public class Results {
 			@XmlAttribute(name = "amount")
 			protected Short amount;
 			@XmlAttribute(name = "time")
-			protected Short time;
+			protected int time;
 			@XmlAttribute(name = "materialcosts")
 			protected String materialcosts;
 			@XmlAttribute(name = "ordercosts")
@@ -2629,7 +2629,7 @@ public class Results {
 			 * @return possible object is {@link Short }
 			 * 
 			 */
-			public Short getTime() {
+			public int getTime() {
 				return time;
 			}
 
@@ -2640,7 +2640,7 @@ public class Results {
 			 *            allowed object is {@link Short }
 			 * 
 			 */
-			public void setTime(Short value) {
+			public void setTime(int value) {
 				this.time = value;
 			}
 
