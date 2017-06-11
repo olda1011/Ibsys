@@ -85,11 +85,13 @@ public class IbsysGUI {
 		frmSupplyChainManager.setTitle("Supply Chain Manager v1.0");
 		frmSupplyChainManager.setBounds(100, 100, 890, 581);
 		frmSupplyChainManager.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmSupplyChainManager.getContentPane().setLayout(new CardLayout(0, 0));
+		frmSupplyChainManager.getContentPane()
+				.setLayout(new CardLayout(0, 0));
 
 		JPanel planningPanel = new JPanel();
 
-		frmSupplyChainManager.getContentPane().add(planningPanel, "name_588858563580255");
+		frmSupplyChainManager.getContentPane()
+				.add(planningPanel, "name_588858563580255");
 
 		planningPanel.setLayout(new GridLayout(0, 1, 0, 0));
 
@@ -116,7 +118,8 @@ public class IbsysGUI {
 
 		JPanel viewPanel = new JPanel();
 
-		frmSupplyChainManager.getContentPane().add(viewPanel, "name_588868208714905");
+		frmSupplyChainManager.getContentPane()
+				.add(viewPanel, "name_588868208714905");
 
 		menuBar = new JMenuBar();
 		frmSupplyChainManager.setJMenuBar(menuBar);
@@ -135,13 +138,15 @@ public class IbsysGUI {
 		closeApp.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				frmSupplyChainManager.dispatchEvent(new WindowEvent(frmSupplyChainManager, WindowEvent.WINDOW_CLOSING));
+				frmSupplyChainManager.dispatchEvent(
+						new WindowEvent(frmSupplyChainManager, WindowEvent.WINDOW_CLOSING));
 			}
 		});
 		mnView.add(closeApp);
 
 		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png").getPath()));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblgerman = new JLabel(imageIcon);
 			menuBar.add(lblgerman);
@@ -154,7 +159,8 @@ public class IbsysGUI {
 		}
 
 		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png").getPath()));
+			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png")
+					.getPath()));
 			ImageIcon imageIcon = new ImageIcon(buttonIcon);
 			JLabel lblEnglish = new JLabel(imageIcon);
 			menuBar.add(lblEnglish);
@@ -172,7 +178,8 @@ public class IbsysGUI {
 
 				if (showOpenDialog == JFileChooser.APPROVE_OPTION) {
 
-					String path = chooser.getSelectedFile().getPath();
+					String path = chooser.getSelectedFile()
+							.getPath();
 					try {
 						if (Main.loadXmlData(path)) {
 							JOptionPane.showMessageDialog(new JFrame(),
@@ -183,8 +190,9 @@ public class IbsysGUI {
 								Utility.initValues();
 								MaterialPlanning.enableEditable();
 
-							} catch (NoSuchMethodException | SecurityException | IllegalAccessException
-									| IllegalArgumentException | InvocationTargetException e) {
+							} catch (NoSuchMethodException | SecurityException
+									| IllegalAccessException | IllegalArgumentException
+									| InvocationTargetException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
@@ -192,8 +200,8 @@ public class IbsysGUI {
 					} catch (Exception e) {
 						e.printStackTrace();
 						JOptionPane.showMessageDialog(new JFrame(),
-								"Please choose a valid file! The file has to be a .xml file!", "Error",
-								JOptionPane.ERROR_MESSAGE);
+								"Please choose a valid file! The file has to be a .xml file!",
+								"Error", JOptionPane.ERROR_MESSAGE);
 					}
 				}
 			}
@@ -204,14 +212,18 @@ public class IbsysGUI {
 			public void actionPerformed(ActionEvent arg0) {
 
 				JFileChooser chooser = new JFileChooser();
-				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml", "xml");
+				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml",
+						"xml");
 				chooser.addChoosableFileFilter(extensionFilter);
 				try {
-					int intValue = Main.results.getPeriod().intValue();
+					int intValue = Main.results.getPeriod()
+							.intValue();
 					Date date = new Date(System.currentTimeMillis());
 					@SuppressWarnings("deprecation")
-					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_" + (date.getYear() + 1900);
-					chooser.setSelectedFile(new File("period_" + intValue + "_export_" + dateString + ".xml"));
+					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_"
+							+ (date.getYear() + 1900);
+					chooser.setSelectedFile(
+							new File("period_" + intValue + "_export_" + dateString + ".xml"));
 
 					int showSaveDialog = chooser.showSaveDialog(null);
 					if (showSaveDialog == JFileChooser.CANCEL_OPTION) {
@@ -219,23 +231,25 @@ public class IbsysGUI {
 					}
 					if (showSaveDialog == JFileChooser.APPROVE_OPTION) {
 
-						Input unmarshal = JAXB.unmarshal(Main.class.getResourceAsStream("input.xml"), Input.class);
-
 						File selectedFile = chooser.getSelectedFile();
 						String path = selectedFile.getPath();
-						if (path.charAt((path.length() - 4)) == '.' && path.charAt((path.length() - 3)) == 'x'
-								&& path.charAt((path.length() - 2)) == 'm' && path.charAt((path.length() - 1)) == 'l') {
+						if (path.charAt((path.length() - 4)) == '.'
+								&& path.charAt((path.length() - 3)) == 'x'
+								&& path.charAt((path.length() - 2)) == 'm'
+								&& path.charAt((path.length() - 1)) == 'l') {
 
 						} else {
 							path += ".xml";
 						}
+
 						Input input = Utility.generateInputXmlObject();
 
-						JAXB.marshal(unmarshal, path);
+						JAXB.marshal(input, path);
 
 					}
 				} catch (Exception ex) {
-					JOptionPane.showMessageDialog(new JFrame(), "No data inserted: Please import data first!", "Error",
+					JOptionPane.showMessageDialog(new JFrame(),
+							"No data inserted: Please import data first!", "Error",
 							JOptionPane.ERROR_MESSAGE);
 					ex.printStackTrace();
 
@@ -477,15 +491,28 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedale");
 				CapacityPlanning.label_204.setText("K/D/H");
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Kaufteil");
-				table.getColumnModel().getColumn(1).setHeaderValue("Lagerbestand");
-				table.getColumnModel().getColumn(2).setHeaderValue("Bedarf in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Bedarf in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Bedarf in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Bedarf in N+3");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Kaufteil");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Lagerbestand");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Bedarf in N");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("Bedarf in N+1");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Bedarf in N+2");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Bedarf in N+3");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Daten");
@@ -495,6 +522,20 @@ public class IbsysGUI {
 				item2.setText("Speichere Daten als XML...");
 				JMenuItem item3 = menu.getItem(2);
 				item3.setText("Schlieﬂen");
+
+				Utility.QUALITYCONTROL = "Bitte w‰hlen Sie die Qualit‰tskontrolle:\n"
+						+ "<0>++ Fehlerquote in Prozent 0 in Minuten 8\n"
+						+ "<1>++ Fehlerquote in Prozent 1 in Minuten 8\n"
+						+ "<2>++ Fehlerquote in Prozent 2 in Minuten 7\n"
+						+ "<3> + Fehlerquote in Prozent 3 in Minuten 7\n"
+						+ "<4> + Fehlerquote in Prozent 4 in Minuten 6\n"
+						+ "<5> 0 Fehlerquote in Prozent 5 in Minuten 5\n"
+						+ "<6> - Fehlerquote in Prozent 6 in Minuten 4\n"
+						+ "<7> - Fehlerquote in Prozent 7 in Minuten 3\n"
+						+ "<8> - Fehlerquote in Prozent 8 in Minuten 2\n"
+						+ "<9>-- Fehlerquote in Prozent 9 in Minuten 1\n"
+						+ "<10>-- Fehlerquote in Prozent 10 in Minuten 0\n\n"
+						+ "W‰hlen Sie eine Nummer zwischen 0 und 10!";
 
 			}
 		});
@@ -732,15 +773,28 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedal");
 				CapacityPlanning.label_204.setText("C/F/M");
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("Purchaseitem");
-				table.getColumnModel().getColumn(1).setHeaderValue("Inventory");
-				table.getColumnModel().getColumn(2).setHeaderValue("Needed in N");
-				table.getColumnModel().getColumn(3).setHeaderValue("Needed in N+1");
-				table.getColumnModel().getColumn(4).setHeaderValue("Needed in N+2");
-				table.getColumnModel().getColumn(5).setHeaderValue("Needed in N+3");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Purchaseitem");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Inventory");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Needed in N");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("Needed in N+1");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Needed in N+2");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Needed in N+3");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Data");
@@ -750,6 +804,20 @@ public class IbsysGUI {
 				item2.setText("Save data as XML...");
 				JMenuItem item3 = menu.getItem(2);
 				item3.setText("Close");
+
+				Utility.QUALITYCONTROL = "Please choose qualitycontrol:\n"
+						+ "<0>++ Rejection in percent 0 in minutes 8\n"
+						+ "<1>++ Rejection in percent 1 in minutes 8\n"
+						+ "<2>++ Rejection in percent 2 in minutes 7\n"
+						+ "<3> + Rejection in percent 3 in minutes 7\n"
+						+ "<4> + Rejection in percent 4 in minutes 6\n"
+						+ "<5> 0 Rejection in percent 5 in minutes 5\n"
+						+ "<6> - Rejection in percent 6 in minutes 4\n"
+						+ "<7> - Rejection in percent 7 in minutes 3\n"
+						+ "<8> - Rejection in percent 8 in minutes 2\n"
+						+ "<9>-- Rejection in percent 9 in minutes 1\n"
+						+ "<10>-- Rejection in percent 10 in minutes 0\n\n"
+						+ "Enter a number between 0 and 10!";
 
 			}
 		});
