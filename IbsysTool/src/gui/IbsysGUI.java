@@ -8,13 +8,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowEvent;
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
@@ -37,6 +34,11 @@ import util.Utility;
 
 public class IbsysGUI {
 
+	public static String ERROR = "Error";
+	private static String NO_DATA_INSERTED_PLEASE_IMPORT_DATA_FIRST = "No data inserted: Please import data first!";
+	private static String PLEASE_CHOOSE_A_VALID_FILE_THE_FILE_HAS_TO_BE_A_XML_FILE = "Please choose a valid file! The file has to be a .xml file!";
+	private static String PLEASE_CHOOSE_A_VALID_FILE_WHICH_IS_NOT_EMPTY = "Please choose a valid file which is not empty!";
+	private static String PLEASE_FILL_IN_VALUES_FIRST = "Please fill in values first!";
 	private static final String PURCHASE_PLANNING = "Purchase Planning";
 	private static final String CAPACITY_PLANNING = "Capacity Planning";
 	private static final String MATERIAL_PLANNING = "Material Planning";
@@ -85,11 +87,13 @@ public class IbsysGUI {
 		frmSupplyChainManager.setTitle("Supply Chain Manager v1.0");
 		frmSupplyChainManager.setBounds(100, 100, 890, 581);
 		frmSupplyChainManager.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmSupplyChainManager.getContentPane().setLayout(new CardLayout(0, 0));
+		frmSupplyChainManager.getContentPane()
+				.setLayout(new CardLayout(0, 0));
 
 		JPanel planningPanel = new JPanel();
 
-		frmSupplyChainManager.getContentPane().add(planningPanel, "name_588858563580255");
+		frmSupplyChainManager.getContentPane()
+				.add(planningPanel, "name_588858563580255");
 
 		planningPanel.setLayout(new GridLayout(0, 1, 0, 0));
 
@@ -116,7 +120,8 @@ public class IbsysGUI {
 
 		JPanel viewPanel = new JPanel();
 
-		frmSupplyChainManager.getContentPane().add(viewPanel, "name_588868208714905");
+		frmSupplyChainManager.getContentPane()
+				.add(viewPanel, "name_588868208714905");
 
 		menuBar = new JMenuBar();
 		frmSupplyChainManager.setJMenuBar(menuBar);
@@ -135,40 +140,31 @@ public class IbsysGUI {
 		closeApp.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				frmSupplyChainManager.dispatchEvent(new WindowEvent(frmSupplyChainManager, WindowEvent.WINDOW_CLOSING));
+				frmSupplyChainManager.dispatchEvent(
+						new WindowEvent(frmSupplyChainManager, WindowEvent.WINDOW_CLOSING));
 			}
 		});
 		mnView.add(closeApp);
 
-		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("german.png").getPath()));
-			ImageIcon imageIcon = new ImageIcon(buttonIcon);
-			JLabel lblgerman = new JLabel(imageIcon);
-			menuBar.add(lblgerman);
-			JLabel lblspacer = new JLabel(" | ");
-			menuBar.add(lblspacer);
-			changeToGerman(lblgerman);
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		ImageIcon imageIcon = new ImageIcon(Main.class.getResource("german.png"));
 
-		try {
-			BufferedImage buttonIcon = ImageIO.read(new File(Main.class.getResource("english.png").getPath()));
-			ImageIcon imageIcon = new ImageIcon(buttonIcon);
-			JLabel lblEnglish = new JLabel(imageIcon);
-			menuBar.add(lblEnglish);
-			changeToEnglish(lblEnglish);
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		JLabel lblgerman = new JLabel(imageIcon);
+		menuBar.add(lblgerman);
+		JLabel lblspacer = new JLabel(" | ");
+		menuBar.add(lblspacer);
+		changeToGerman(lblgerman);
+
+		ImageIcon imageIcon2 = new ImageIcon(Main.class.getResource("english.png"));
+		JLabel lblEnglish = new JLabel(imageIcon2);
+		menuBar.add(lblEnglish);
+		changeToEnglish(lblEnglish);
 
 		openDialog.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if (Main.prognosen[0][1] == 0 && Main.prognosen[1][1] == 0 && Main.prognosen[2][1] == 0) {
-					JOptionPane.showMessageDialog(new JFrame(), "Please fill in values first!", "Error",
+				if (Main.prognosen[0][1] == 0 && Main.prognosen[1][1] == 0
+						&& Main.prognosen[2][1] == 0) {
+					JOptionPane.showMessageDialog(new JFrame(), PLEASE_FILL_IN_VALUES_FIRST, ERROR,
 							JOptionPane.ERROR_MESSAGE);
 					return;
 				}
@@ -178,19 +174,21 @@ public class IbsysGUI {
 
 				if (showOpenDialog == JFileChooser.APPROVE_OPTION) {
 
-					String path = chooser.getSelectedFile().getPath();
+					String path = chooser.getSelectedFile()
+							.getPath();
 					try {
 						if (Main.loadXmlData(path)) {
 							JOptionPane.showMessageDialog(new JFrame(),
-									"Please choose a valid file which is not empty!", "Error",
+									PLEASE_CHOOSE_A_VALID_FILE_WHICH_IS_NOT_EMPTY, ERROR,
 									JOptionPane.ERROR_MESSAGE);
 						} else {
 							try {
 								Utility.initValues();
 								MaterialPlanning.enableEditable();
 
-							} catch (NoSuchMethodException | SecurityException | IllegalAccessException
-									| IllegalArgumentException | InvocationTargetException e) {
+							} catch (NoSuchMethodException | SecurityException
+									| IllegalAccessException | IllegalArgumentException
+									| InvocationTargetException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
@@ -198,7 +196,7 @@ public class IbsysGUI {
 					} catch (Exception e) {
 						e.printStackTrace();
 						JOptionPane.showMessageDialog(new JFrame(),
-								"Please choose a valid file! The file has to be a .xml file!", "Error",
+								PLEASE_CHOOSE_A_VALID_FILE_THE_FILE_HAS_TO_BE_A_XML_FILE, ERROR,
 								JOptionPane.ERROR_MESSAGE);
 					}
 				}
@@ -210,14 +208,18 @@ public class IbsysGUI {
 			public void actionPerformed(ActionEvent arg0) {
 
 				JFileChooser chooser = new JFileChooser();
-				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml", "xml");
+				FileNameExtensionFilter extensionFilter = new FileNameExtensionFilter(".xml",
+						"xml");
 				chooser.addChoosableFileFilter(extensionFilter);
 				try {
-					int intValue = Main.results.getPeriod().intValue();
+					int intValue = Main.results.getPeriod()
+							.intValue();
 					Date date = new Date(System.currentTimeMillis());
 					@SuppressWarnings("deprecation")
-					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_" + (date.getYear() + 1900);
-					chooser.setSelectedFile(new File("period_" + intValue + "_export_" + dateString + ".xml"));
+					String dateString = "" + date.getDay() + "_" + date.getMonth() + "_"
+							+ (date.getYear() + 1900);
+					chooser.setSelectedFile(
+							new File("period_" + intValue + "_export_" + dateString + ".xml"));
 
 					int showSaveDialog = chooser.showSaveDialog(null);
 					if (showSaveDialog == JFileChooser.CANCEL_OPTION) {
@@ -227,8 +229,10 @@ public class IbsysGUI {
 
 						File selectedFile = chooser.getSelectedFile();
 						String path = selectedFile.getPath();
-						if (path.charAt((path.length() - 4)) == '.' && path.charAt((path.length() - 3)) == 'x'
-								&& path.charAt((path.length() - 2)) == 'm' && path.charAt((path.length() - 1)) == 'l') {
+						if (path.charAt((path.length() - 4)) == '.'
+								&& path.charAt((path.length() - 3)) == 'x'
+								&& path.charAt((path.length() - 2)) == 'm'
+								&& path.charAt((path.length() - 1)) == 'l') {
 
 						} else {
 							path += ".xml";
@@ -240,7 +244,8 @@ public class IbsysGUI {
 
 					}
 				} catch (Exception ex) {
-					JOptionPane.showMessageDialog(new JFrame(), "No data inserted: Please import data first!", "Error",
+					JOptionPane.showMessageDialog(new JFrame(),
+							NO_DATA_INSERTED_PLEASE_IMPORT_DATA_FIRST, ERROR,
 							JOptionPane.ERROR_MESSAGE);
 					ex.printStackTrace();
 
@@ -482,45 +487,85 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedale");
 				CapacityPlanning.label_204.setText("K/D/H");
 
-				CapacityPlanning.getCpl1_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl2_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl3_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl4_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl1_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl2_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl3_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl4_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
 
-				CapacityPlanning.getCpl6_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl7_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl8_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl9_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl10_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl11_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl12_capacityold().setText("Kapazitätsbedarf Vorperiode");
-				CapacityPlanning.getCpl13_capacityold().setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl6_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl7_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl8_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl9_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl10_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl11_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl12_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
+				CapacityPlanning.getCpl13_capacityold()
+						.setText("Kapazitätsbedarf Vorperiode");
 
 				CapacityPlanning.setFirstShift("1.Schicht");
 				CapacityPlanning.setSecondShift("2.Schicht");
 				CapacityPlanning.setThirdShift("3.Schicht");
 				CapacityPlanning.setShiftStrings();
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("ID");
-				table.getColumnModel().getColumn(1).setHeaderValue("Lager");
-				table.getColumnModel().getColumn(2).setHeaderValue("Di");
-				table.getColumnModel().getColumn(3).setHeaderValue("Mi");
-				table.getColumnModel().getColumn(4).setHeaderValue("Do");
-				table.getColumnModel().getColumn(5).setHeaderValue("Fr");
-				table.getColumnModel().getColumn(6).setHeaderValue("Mo+1");
-				table.getColumnModel().getColumn(11).setHeaderValue("Bestellen");
-				table.getColumnModel().getColumn(12).setHeaderValue("Eil");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("ID");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Lager");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Di");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("Mi");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Do");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Fr");
+				table.getColumnModel()
+						.getColumn(6)
+						.setHeaderValue("Mo+1");
+				table.getColumnModel()
+						.getColumn(11)
+						.setHeaderValue("Bestellen");
+				table.getColumnModel()
+						.getColumn(12)
+						.setHeaderValue("Eil");
 
 				// SequencePlanning
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(0).setHeaderValue("Priorität");
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(1).setHeaderValue("Teil");
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(2).setHeaderValue("Menge");
-				SequencePlanningObject.getSpb_down().setText("Runter");
-				SequencePlanningObject.getSpb_up().setText("Hoch");
-				SequencePlanningObject.getSpb_split().setText("Teilen");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Priorität");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Teil");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Menge");
+				SequencePlanningObject.getSpb_down()
+						.setText("Runter");
+				SequencePlanningObject.getSpb_up()
+						.setText("Hoch");
+				SequencePlanningObject.getSpb_split()
+						.setText("Teilen");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Daten");
@@ -545,6 +590,12 @@ public class IbsysGUI {
 						+ "<10>-- Fehlerquote in Prozent 10 in Minuten 0\n\n"
 						+ "Wählen Sie eine Nummer zwischen 0 und 10!";
 
+				NO_DATA_INSERTED_PLEASE_IMPORT_DATA_FIRST = "Es wurden keine Daten gefunden: Bitte laden Sie die Daten!";
+				PLEASE_CHOOSE_A_VALID_FILE_THE_FILE_HAS_TO_BE_A_XML_FILE = "Bitte wählen Sie eine gültige Datei! Die Datei muss eine .xml sein.";
+				PLEASE_CHOOSE_A_VALID_FILE_WHICH_IS_NOT_EMPTY = "Bitte wählen Sie eine gültige Datei, die nicht leer ist!";
+				PLEASE_FILL_IN_VALUES_FIRST = "Bitte füllen Sie erst die Werte ein!";
+				ERROR = "Fehler";
+				Utility.PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10 = "Bitte wählen Sie nur Zahlen zwischen 0 und 10!";
 			}
 		});
 	}
@@ -781,44 +832,84 @@ public class IbsysGUI {
 				CapacityPlanning.label_203.setText("Pedal");
 				CapacityPlanning.label_204.setText("C/F/M");
 
-				CapacityPlanning.getCpl1_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl2_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl3_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl4_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl1_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl2_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl3_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl4_capacityold()
+						.setText("Capacity previous period");
 
-				CapacityPlanning.getCpl6_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl7_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl8_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl9_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl10_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl11_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl12_capacityold().setText("Capacity previous period");
-				CapacityPlanning.getCpl13_capacityold().setText("Capacity previous period");
+				CapacityPlanning.getCpl6_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl7_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl8_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl9_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl10_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl11_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl12_capacityold()
+						.setText("Capacity previous period");
+				CapacityPlanning.getCpl13_capacityold()
+						.setText("Capacity previous period");
 
 				CapacityPlanning.setFirstShift("1.Shift");
 				CapacityPlanning.setSecondShift("2.Shift");
 				CapacityPlanning.setThirdShift("3.Shift");
 				CapacityPlanning.setShiftStrings();
 
-				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel.getComponent(0);
+				JScrollPane component = (JScrollPane) PurchasePlanning.purchasePlanningPanel
+						.getComponent(0);
 				JViewport component2 = (JViewport) component.getComponent(0);
 				JTable table = (JTable) component2.getComponent(0);
-				table.getColumnModel().getColumn(0).setHeaderValue("ID");
-				table.getColumnModel().getColumn(1).setHeaderValue("Inventory");
-				table.getColumnModel().getColumn(2).setHeaderValue("Tu");
-				table.getColumnModel().getColumn(3).setHeaderValue("We");
-				table.getColumnModel().getColumn(4).setHeaderValue("Th");
-				table.getColumnModel().getColumn(5).setHeaderValue("Fr");
-				table.getColumnModel().getColumn(6).setHeaderValue("Mo+1");
-				table.getColumnModel().getColumn(11).setHeaderValue("Order");
-				table.getColumnModel().getColumn(12).setHeaderValue("fast");
+				table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("ID");
+				table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Inventory");
+				table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Tu");
+				table.getColumnModel()
+						.getColumn(3)
+						.setHeaderValue("We");
+				table.getColumnModel()
+						.getColumn(4)
+						.setHeaderValue("Th");
+				table.getColumnModel()
+						.getColumn(5)
+						.setHeaderValue("Fr");
+				table.getColumnModel()
+						.getColumn(6)
+						.setHeaderValue("Mo+1");
+				table.getColumnModel()
+						.getColumn(11)
+						.setHeaderValue("Order");
+				table.getColumnModel()
+						.getColumn(12)
+						.setHeaderValue("fast");
 
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(0).setHeaderValue("Priority");
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(1).setHeaderValue("Item");
-				SequencePlanningObject.spt_table.getColumnModel().getColumn(2).setHeaderValue("Ammount");
-				SequencePlanningObject.getSpb_down().setText("Down");
-				SequencePlanningObject.getSpb_up().setText("Up");
-				SequencePlanningObject.getSpb_split().setText("Split");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(0)
+						.setHeaderValue("Priority");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(1)
+						.setHeaderValue("Item");
+				SequencePlanningObject.spt_table.getColumnModel()
+						.getColumn(2)
+						.setHeaderValue("Ammount");
+				SequencePlanningObject.getSpb_down()
+						.setText("Down");
+				SequencePlanningObject.getSpb_up()
+						.setText("Up");
+				SequencePlanningObject.getSpb_split()
+						.setText("Split");
 
 				JMenu menu = menuBar.getMenu(0);
 				menu.setText("Data");
@@ -830,12 +921,25 @@ public class IbsysGUI {
 				item3.setText("Close");
 
 				Utility.QUALITYCONTROL = "Please choose qualitycontrol:\n"
-						+ "<0>++ Rejection in percent 0 in minutes 8\n" + "<1>++ Rejection in percent 1 in minutes 8\n"
-						+ "<2>++ Rejection in percent 2 in minutes 7\n" + "<3> + Rejection in percent 3 in minutes 7\n"
-						+ "<4> + Rejection in percent 4 in minutes 6\n" + "<5> 0 Rejection in percent 5 in minutes 5\n"
-						+ "<6> - Rejection in percent 6 in minutes 4\n" + "<7> - Rejection in percent 7 in minutes 3\n"
-						+ "<8> - Rejection in percent 8 in minutes 2\n" + "<9>-- Rejection in percent 9 in minutes 1\n"
-						+ "<10>-- Rejection in percent 10 in minutes 0\n\n" + "Enter a number between 0 and 10!";
+						+ "<0>++ Rejection in percent 0 in minutes 8\n"
+						+ "<1>++ Rejection in percent 1 in minutes 8\n"
+						+ "<2>++ Rejection in percent 2 in minutes 7\n"
+						+ "<3> + Rejection in percent 3 in minutes 7\n"
+						+ "<4> + Rejection in percent 4 in minutes 6\n"
+						+ "<5> 0 Rejection in percent 5 in minutes 5\n"
+						+ "<6> - Rejection in percent 6 in minutes 4\n"
+						+ "<7> - Rejection in percent 7 in minutes 3\n"
+						+ "<8> - Rejection in percent 8 in minutes 2\n"
+						+ "<9>-- Rejection in percent 9 in minutes 1\n"
+						+ "<10>-- Rejection in percent 10 in minutes 0\n\n"
+						+ "Enter a number between 0 and 10!";
+
+				NO_DATA_INSERTED_PLEASE_IMPORT_DATA_FIRST = "No data inserted: Please import data first!";
+				PLEASE_CHOOSE_A_VALID_FILE_THE_FILE_HAS_TO_BE_A_XML_FILE = "Please choose a valid file! The file has to be a .xml file!";
+				PLEASE_CHOOSE_A_VALID_FILE_WHICH_IS_NOT_EMPTY = "Please choose a valid file which is not empty!";
+				PLEASE_FILL_IN_VALUES_FIRST = "Please fill in values first!";
+				ERROR = "Error";
+				Utility.PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10 = "Please choose only numbers between 0 and 10!";
 
 			}
 		});
