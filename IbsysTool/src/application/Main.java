@@ -20,7 +20,7 @@ import generated.Results.Warehousestock.Article;
 
 public class Main {
 
-	public static int[][] prognosen;
+	public static int[][] prognosen = new int[3][5];;
 	public static int[][] p1Prod;
 	public static int[][] p2Prod;
 	public static int[][] p3Prod;
@@ -44,7 +44,9 @@ public class Main {
 
 		geplanterLagerbestand = 50;
 
-		prognosen = new int[][] { { 1, 150, 50, 200, 200 }, { 2, 250, 150, 200, 200 }, { 3, 100, 50, 200, 200 } };
+		prognosen[0][0] = 1;
+		prognosen[1][0] = 2;
+		prognosen[2][0] = 3;
 
 		// Matrix für Disposition anlegen
 
