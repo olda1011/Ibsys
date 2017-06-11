@@ -233,7 +233,7 @@ public class PrognosenObject {
 					Main.prognosen[0][4] = Integer.parseInt(p1_n3.getText());
 					Main.prognosen[1][4] = Integer.parseInt(p2_n3.getText());
 					Main.prognosen[2][4] = Integer.parseInt(p3_n3.getText());
-					Utility.calculateAfterChange();
+					Utility.calculateAfterChangeWithMatrix();
 				} catch (NullPointerException | NoSuchMethodException | SecurityException | IllegalAccessException
 						| IllegalArgumentException | InvocationTargetException e) {
 					JOptionPane.showMessageDialog(new JFrame(), "Please load values!", "Error",

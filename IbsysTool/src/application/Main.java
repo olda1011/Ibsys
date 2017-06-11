@@ -471,7 +471,8 @@ public class Main {
 
 		// Produktion P1 berechnen
 
-		matrix[0][7] = matrix[0][1] + matrix[0][2] + matrix[0][3] - matrix[0][4] - matrix[0][5] - matrix[0][6];
+		int value1 = matrix[0][1] + matrix[0][2] + matrix[0][3] - matrix[0][4] - matrix[0][5] - matrix[0][6];
+		matrix[0][7] = (value1 > 0) ? value1 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		matrix[1][1] = matrix[0][7];
@@ -489,8 +490,10 @@ public class Main {
 			matrix[1][6] += modWiP26;
 		}
 
-		matrix[1][7] = matrix[1][1] + matrix[1][2] + matrix[1][3] - matrix[1][4] - matrix[1][5] - matrix[1][6];
-		matrix[2][7] = matrix[2][1] + matrix[2][2] + matrix[2][3] - matrix[2][4] - matrix[2][5] - matrix[2][6];
+		int value2 = matrix[1][1] + matrix[1][2] + matrix[1][3] - matrix[1][4] - matrix[1][5] - matrix[1][6];
+		int value3 = matrix[2][1] + matrix[2][2] + matrix[2][3] - matrix[2][4] - matrix[2][5] - matrix[2][6];
+		matrix[1][7] = (value2 > 0) ? value2 : 0;
+		matrix[2][7] = (value3 > 0) ? value3 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		matrix[3][1] = matrix[2][7];
@@ -522,9 +525,12 @@ public class Main {
 			matrix[4][6] += modWip17;
 		}
 
-		matrix[3][7] = matrix[3][1] + matrix[3][2] + matrix[3][3] - matrix[3][4] - matrix[3][5] - matrix[3][6];
-		matrix[4][7] = matrix[4][1] + matrix[4][2] + matrix[4][3] - matrix[4][4] - matrix[4][5] - matrix[4][6];
-		matrix[5][7] = matrix[5][1] + matrix[5][2] + matrix[5][3] - matrix[5][4] - matrix[5][5] - matrix[5][6];
+		int value4 = matrix[3][1] + matrix[3][2] + matrix[3][3] - matrix[3][4] - matrix[3][5] - matrix[3][6];
+		int value5 = matrix[4][1] + matrix[4][2] + matrix[4][3] - matrix[4][4] - matrix[4][5] - matrix[4][6];
+		int value6 = matrix[5][1] + matrix[5][2] + matrix[5][3] - matrix[5][4] - matrix[5][5] - matrix[5][6];
+		matrix[3][7] = (value4 > 0) ? value4 : 0;
+		matrix[4][7] = (value5 > 0) ? value5 : 0;
+		matrix[5][7] = (value6 > 0) ? value6 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		matrix[6][1] = matrix[5][7];
@@ -536,9 +542,12 @@ public class Main {
 		matrix[8][1] = matrix[5][7];
 		matrix[8][2] = matrix[5][5];
 
-		matrix[6][7] = matrix[6][1] + matrix[6][2] + matrix[6][3] - matrix[6][4] - matrix[6][5] - matrix[6][6];
-		matrix[7][7] = matrix[7][1] + matrix[7][2] + matrix[7][3] - matrix[7][4] - matrix[7][5] - matrix[7][6];
-		matrix[8][7] = matrix[8][1] + matrix[8][2] + matrix[8][3] - matrix[8][4] - matrix[8][5] - matrix[8][6];
+		int value7 = matrix[6][1] + matrix[6][2] + matrix[6][3] - matrix[6][4] - matrix[6][5] - matrix[6][6];
+		int value8 = matrix[7][1] + matrix[7][2] + matrix[7][3] - matrix[7][4] - matrix[7][5] - matrix[7][6];
+		int value9 = matrix[8][1] + matrix[8][2] + matrix[8][3] - matrix[8][4] - matrix[8][5] - matrix[8][6];
+		matrix[6][7] = (value7 > 0) ? value7 : 0;
+		matrix[7][7] = (value8 > 0) ? value8 : 0;
+		matrix[8][7] = (value9 > 0) ? value9 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		matrix[9][1] = matrix[8][7];
@@ -550,9 +559,12 @@ public class Main {
 		matrix[11][1] = matrix[8][7];
 		matrix[11][2] = matrix[8][5];
 
-		matrix[9][7] = matrix[9][1] + matrix[9][2] + matrix[9][3] - matrix[9][4] - matrix[9][5] - matrix[9][6];
-		matrix[10][7] = matrix[10][1] + matrix[10][2] + matrix[10][3] - matrix[10][4] - matrix[10][5] - matrix[10][6];
-		matrix[11][7] = matrix[11][1] + matrix[11][2] + matrix[11][3] - matrix[11][4] - matrix[11][5] - matrix[11][6];
+		int value10 = matrix[9][1] + matrix[9][2] + matrix[9][3] - matrix[9][4] - matrix[9][5] - matrix[9][6];
+		int value11 = matrix[10][1] + matrix[10][2] + matrix[10][3] - matrix[10][4] - matrix[10][5] - matrix[10][6];
+		int value12 = matrix[11][1] + matrix[11][2] + matrix[11][3] - matrix[11][4] - matrix[11][5] - matrix[11][6];
+		matrix[9][7] = matrix[8][7] = (value10 > 0) ? value10 : 0;
+		matrix[10][7] = matrix[8][7] = (value11 > 0) ? value11 : 0;
+		matrix[11][7] = matrix[8][7] = (value12 > 0) ? value12 : 0;
 
 		return matrix;
 	}
@@ -560,9 +572,9 @@ public class Main {
 	public static int[][] calculateProduction(int[][] prodMatrix, int produktionsfall) {
 
 		// Produktion berechnen
-
-		prodMatrix[0][7] = prodMatrix[0][1] + prodMatrix[0][2] + prodMatrix[0][3] - prodMatrix[0][4] - prodMatrix[0][5]
+		int value1 = prodMatrix[0][1] + prodMatrix[0][2] + prodMatrix[0][3] - prodMatrix[0][4] - prodMatrix[0][5]
 				- prodMatrix[0][6];
+		prodMatrix[0][7] = (value1 > 0) ? value1 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		prodMatrix[1][1] = prodMatrix[0][7];
@@ -571,10 +583,12 @@ public class Main {
 		prodMatrix[2][1] = prodMatrix[0][7];
 		prodMatrix[2][2] = prodMatrix[0][5];
 
-		prodMatrix[1][7] = prodMatrix[1][1] + prodMatrix[1][2] + prodMatrix[1][3] - prodMatrix[1][4] - prodMatrix[1][5]
+		int value2 = prodMatrix[1][1] + prodMatrix[1][2] + prodMatrix[1][3] - prodMatrix[1][4] - prodMatrix[1][5]
 				- prodMatrix[1][6];
-		prodMatrix[2][7] = prodMatrix[2][1] + prodMatrix[2][2] + prodMatrix[2][3] - prodMatrix[2][4] - prodMatrix[2][5]
+		int value3 = prodMatrix[2][1] + prodMatrix[2][2] + prodMatrix[2][3] - prodMatrix[2][4] - prodMatrix[2][5]
 				- prodMatrix[2][6];
+		prodMatrix[1][7] = (value2 > 0) ? value2 : 0;
+		prodMatrix[2][7] = (value3 > 0) ? value3 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		prodMatrix[3][1] = prodMatrix[2][7];
@@ -586,12 +600,15 @@ public class Main {
 		prodMatrix[5][1] = prodMatrix[2][7];
 		prodMatrix[5][2] = prodMatrix[2][5];
 
-		prodMatrix[3][7] = prodMatrix[3][1] + prodMatrix[3][2] + prodMatrix[3][3] - prodMatrix[3][4] - prodMatrix[3][5]
+		int value4 = prodMatrix[3][1] + prodMatrix[3][2] + prodMatrix[3][3] - prodMatrix[3][4] - prodMatrix[3][5]
 				- prodMatrix[3][6];
-		prodMatrix[4][7] = prodMatrix[4][1] + prodMatrix[4][2] + prodMatrix[4][3] - prodMatrix[4][4] - prodMatrix[4][5]
+		int value5 = prodMatrix[4][1] + prodMatrix[4][2] + prodMatrix[4][3] - prodMatrix[4][4] - prodMatrix[4][5]
 				- prodMatrix[4][6];
-		prodMatrix[5][7] = prodMatrix[5][1] + prodMatrix[5][2] + prodMatrix[5][3] - prodMatrix[5][4] - prodMatrix[5][5]
+		int value6 = prodMatrix[5][1] + prodMatrix[5][2] + prodMatrix[5][3] - prodMatrix[5][4] - prodMatrix[5][5]
 				- prodMatrix[5][6];
+		prodMatrix[3][7] = (value4 > 0) ? value4 : 0;
+		prodMatrix[4][7] = (value5 > 0) ? value5 : 0;
+		prodMatrix[5][7] = (value6 > 0) ? value6 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		prodMatrix[6][1] = prodMatrix[5][7];
@@ -603,12 +620,15 @@ public class Main {
 		prodMatrix[8][1] = prodMatrix[5][7];
 		prodMatrix[8][2] = prodMatrix[5][5];
 
-		prodMatrix[6][7] = prodMatrix[6][1] + prodMatrix[6][2] + prodMatrix[6][3] - prodMatrix[6][4] - prodMatrix[6][5]
+		int value7 = prodMatrix[6][1] + prodMatrix[6][2] + prodMatrix[6][3] - prodMatrix[6][4] - prodMatrix[6][5]
 				- prodMatrix[6][6];
-		prodMatrix[7][7] = prodMatrix[7][1] + prodMatrix[7][2] + prodMatrix[7][3] - prodMatrix[7][4] - prodMatrix[7][5]
+		int value8 = prodMatrix[7][1] + prodMatrix[7][2] + prodMatrix[7][3] - prodMatrix[7][4] - prodMatrix[7][5]
 				- prodMatrix[7][6];
-		prodMatrix[8][7] = prodMatrix[8][1] + prodMatrix[8][2] + prodMatrix[8][3] - prodMatrix[8][4] - prodMatrix[8][5]
+		int value9 = prodMatrix[8][1] + prodMatrix[8][2] + prodMatrix[8][3] - prodMatrix[8][4] - prodMatrix[8][5]
 				- prodMatrix[8][6];
+		prodMatrix[6][7] = (value7 > 0) ? value7 : 0;
+		prodMatrix[7][7] = (value8 > 0) ? value8 : 0;
+		prodMatrix[8][7] = (value9 > 0) ? value9 : 0;
 
 		// Produktion in geplanter Verkauf übertragen
 		prodMatrix[9][1] = prodMatrix[8][7];
@@ -620,12 +640,15 @@ public class Main {
 		prodMatrix[11][1] = prodMatrix[8][7];
 		prodMatrix[11][2] = prodMatrix[8][5];
 
-		prodMatrix[9][7] = prodMatrix[9][1] + prodMatrix[9][2] + prodMatrix[9][3] - prodMatrix[9][4] - prodMatrix[9][5]
+		int value10 = prodMatrix[9][1] + prodMatrix[9][2] + prodMatrix[9][3] - prodMatrix[9][4] - prodMatrix[9][5]
 				- prodMatrix[9][6];
-		prodMatrix[10][7] = prodMatrix[10][1] + prodMatrix[10][2] + prodMatrix[10][3] - prodMatrix[10][4]
-				- prodMatrix[10][5] - prodMatrix[10][6];
-		prodMatrix[11][7] = prodMatrix[11][1] + prodMatrix[11][2] + prodMatrix[11][3] - prodMatrix[11][4]
-				- prodMatrix[11][5] - prodMatrix[11][6];
+		int value11 = prodMatrix[10][1] + prodMatrix[10][2] + prodMatrix[10][3] - prodMatrix[10][4] - prodMatrix[10][5]
+				- prodMatrix[10][6];
+		int value12 = prodMatrix[11][1] + prodMatrix[11][2] + prodMatrix[11][3] - prodMatrix[11][4] - prodMatrix[11][5]
+				- prodMatrix[11][6];
+		prodMatrix[9][7] = (value10 > 0) ? value10 : 0;
+		prodMatrix[10][7] = (value11 > 0) ? value11 : 0;
+		prodMatrix[11][7] = (value12 > 0) ? value12 : 0;
 
 		if (produktionsfall == 1)
 			p1KaufteileVerwendung = generiereKaufteileVerwendung(produktionsfall, p1Prod);

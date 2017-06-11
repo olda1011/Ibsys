@@ -39,6 +39,30 @@ public class Utility {
 
 		// Produktionsprogramm berechnen
 
+		Main.p1Prod = Main.calculateProduction(Main.p1Prod, 1);
+		Main.p2Prod = Main.calculateProduction(Main.p2Prod, 2);
+		Main.p3Prod = Main.calculateProduction(Main.p3Prod, 3);
+
+		// Kaufteilbedarf errechnen
+
+		Main.p1KaufteileVerwendung = Main.generiereKaufteileVerwendung(1, Main.p1Prod);
+		Main.p2KaufteileVerwendung = Main.generiereKaufteileVerwendung(2, Main.p2Prod);
+		Main.p3KaufteileVerwendung = Main.generiereKaufteileVerwendung(3, Main.p3Prod);
+		Main.kaufteileVerwendungMerged = Main.mergeKautfteileVerwendung(Main.p1KaufteileVerwendung,
+				Main.p2KaufteileVerwendung, Main.p3KaufteileVerwendung);
+
+		// Warteschlangeholen
+
+		Main.timeneeded = Main.timeneedfill();
+
+		fillValues();
+	}
+
+	public static void calculateAfterChangeWithMatrix() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+
+		// Produktionsprogramm berechnen
+
 		Main.p1Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[0][1], 1, Main.results);
 		Main.p2Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[1][1], 2, Main.results);
 		Main.p3Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[2][1], 3, Main.results);
@@ -316,8 +340,8 @@ public class Utility {
 					setuptime += Main.setuptime[j - 1];
 				}
 				int totalcapacity = capacity + setuptime + capacityold;
-
-				if (totalcapacity > 0 && totalcapacity < 3866) {
+				System.out.println(totalcapacity);
+				if (totalcapacity >= 0 && totalcapacity < 3866) {
 					invokeC.setSelectedIndex(0);
 					shiftvalue = 2400;
 				} else if (totalcapacity > 3866 && totalcapacity < 6666) {
