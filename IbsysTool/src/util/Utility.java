@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
 import application.Main;
 import generated.Input;
@@ -62,6 +63,48 @@ public class Utility {
 
 		Main.timeneeded = Main.timeneedfill();
 
+		DefaultTableModel model = new DefaultTableModel(
+				new String[] { "Priorität", "Teil", "Menge" }, 0);
+		for (int i = 0; i < 30; i++) {
+			model.addRow(new Object[] { i + 1, null, null });
+		}
+
+		SequencePlanningObject.spt_table.setModel(model);
+
+		DefaultTableModel modelPurchase = new DefaultTableModel(new Object[][] {
+				{ "21", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "22", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "23", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "24", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "25", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "27", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "28", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "32", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "33", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "34", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "35", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "36", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "37", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "38", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "39", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "40", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "41", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "42", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "43", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "44", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "45", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "46", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "47", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "48", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "52", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "53", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "57", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "58", null, null, null, null, null, null, null, null, null, null, null, null },
+				{ "59", null, null, null, null, null, null, null, null, null, null, null, null }, },
+				new String[] { "ID", "Inventory", "Di", "Mi", "Do", "Fr", "Mo(N+1)", "N", "N+1",
+						"N+2", "N+3", "Bestellungen", "Eil" });
+
+		PurchasePlanning.table.setModel(modelPurchase);
 		fillValues();
 	}
 
