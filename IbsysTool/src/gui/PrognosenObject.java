@@ -33,6 +33,15 @@ public class PrognosenObject {
 	private static JLabel pl_periode2;
 	private static JLabel pl_periode3;
 	private static JButton calculate;
+
+	public static JButton getCalculate() {
+		return calculate;
+	}
+
+	public static void setCalculate(JButton calculate) {
+		PrognosenObject.calculate = calculate;
+	}
+
 	private static JLabel lblNewLabel_1;
 	private static JButton btnNewButton;
 
