@@ -44,6 +44,8 @@ public class IbsysGUI {
 	private static final String MATERIAL_PLANNING = "Material Planning";
 	private static final String SEQUENCE_PLANNING = "Sequence Planning";
 	private static final String PROGNOSEN_PLANNING = "Forecast";
+	protected static Object WERTE_WURDEN_GELADEN = "Werte wurden geladen!";
+	protected static final String INFO = "Information";
 	private JFrame frmSupplyChainManager;
 	public static PurchasePlanning purchasePlanningObject;
 	public static MaterialPlanning materialPlanningObject;
@@ -186,6 +188,8 @@ public class IbsysGUI {
 							try {
 								Utility.initValues();
 								MaterialPlanning.enableEditable();
+								JOptionPane.showMessageDialog(new JFrame(), WERTE_WURDEN_GELADEN,
+										INFO, JOptionPane.INFORMATION_MESSAGE);
 
 							} catch (NoSuchMethodException | SecurityException
 									| IllegalAccessException | IllegalArgumentException
@@ -609,6 +613,7 @@ public class IbsysGUI {
 		ERROR = "Fehler";
 		Utility.PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10 = "Bitte wählen Sie nur Zahlen zwischen 0 und 10!";
 		PrognosenObject.PLEASE_LOAD_VALUES = "Bitte laden Sie die Werte!";
+		WERTE_WURDEN_GELADEN = "Werte wurden geladen!";
 	}
 
 	public void changeToEnglish(JLabel label) {
@@ -960,6 +965,7 @@ public class IbsysGUI {
 				Utility.PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10 = "Please choose only numbers between 0 and 10!";
 
 				PrognosenObject.PLEASE_LOAD_VALUES = "Please fill in values!";
+				WERTE_WURDEN_GELADEN = "Values were loaded!";
 
 			}
 		});
