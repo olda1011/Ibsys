@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.table.DefaultTableModel;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
@@ -17,6 +18,8 @@ import generated.Results.Ordersinwork;
 import generated.Results.Waitinglistworkstations.Workplace;
 import generated.Results.Waitinglistworkstations.Workplace.Waitinglist;
 import generated.Results.Warehousestock.Article;
+import gui.PurchasePlanning;
+import gui.SequencePlanningObject;
 
 public class Main {
 
@@ -70,6 +73,48 @@ public class Main {
 		Main.timeneeded = Main.timeneedfill();
 		Main.inwardstockmovement = Main.inwardstockmovementfill();
 		Main.ordertime = ordertimes();
+
+		DefaultTableModel model = new DefaultTableModel(new String[] { "Priorität", "Teil", "Menge" }, 0);
+		for (int i = 0; i < 30; i++) {
+			model.addRow(new Object[] { i + 1, null, null });
+		}
+
+		SequencePlanningObject.spt_table.setModel(model);
+
+		DefaultTableModel modelPurchase = new DefaultTableModel(
+				new Object[][] { { "21", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "22", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "23", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "24", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "25", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "27", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "28", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "32", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "33", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "34", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "35", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "36", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "37", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "38", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "39", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "40", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "41", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "42", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "43", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "44", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "45", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "46", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "47", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "48", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "52", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "53", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "57", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "58", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "59", null, null, null, null, null, null, null, null, null, null, null, null }, },
+				new String[] { "ID", "Inventory", "Di", "Mi", "Do", "Fr", "Mo(N+1)", "N", "N+1", "N+2", "N+3",
+						"Bestellungen", "Eil" });
+
+		PurchasePlanning.table.setModel(modelPurchase);
 
 		// System.out.println("Folgende Kaufteile für P1 werden benötigt:");
 		// printKaufteilmatrix(p1KaufteileVerwendung);

@@ -56,10 +56,9 @@ public class PrognosenObject {
 		GridBagLayout gbl_prognosenPane = new GridBagLayout();
 		gbl_prognosenPane.columnWidths = new int[] { 10, 0, 0, 0, 0, 0, 0, 0, 0 };
 		gbl_prognosenPane.rowHeights = new int[] { 20, 15, 20, 0, 0, 0, 0, 20, 0, 0, 0, 0 };
-		gbl_prognosenPane.columnWeights = new double[] { 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+		gbl_prognosenPane.columnWeights = new double[] { 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, Double.MIN_VALUE };
+		gbl_prognosenPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 				Double.MIN_VALUE };
-		gbl_prognosenPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				0.0, 0.0, Double.MIN_VALUE };
 		prognosenPane.setLayout(gbl_prognosenPane);
 
 		lblNewLabel_1 = new JLabel("Bitte Werte eintragen");
@@ -248,11 +247,10 @@ public class PrognosenObject {
 					Main.prognosen[1][4] = Integer.parseInt(p2_n3.getText());
 					Main.prognosen[2][4] = Integer.parseInt(p3_n3.getText());
 					Utility.calculateAfterChangeWithMatrix();
-				} catch (NullPointerException | NoSuchMethodException | SecurityException
-						| IllegalAccessException | IllegalArgumentException
-						| InvocationTargetException e) {
-					JOptionPane.showMessageDialog(new JFrame(), PLEASE_LOAD_VALUES, "Error",
-							JOptionPane.ERROR_MESSAGE);
+				} catch (NullPointerException | NoSuchMethodException | SecurityException | IllegalAccessException
+						| IllegalArgumentException | InvocationTargetException e) {
+					JOptionPane.showMessageDialog(new JFrame(), PLEASE_LOAD_VALUES, "Info",
+							JOptionPane.INFORMATION_MESSAGE);
 				}
 
 			}
@@ -318,8 +316,7 @@ public class PrognosenObject {
 					Main.prognosen[0][1] = Integer.parseInt(p1_n.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -332,8 +329,7 @@ public class PrognosenObject {
 					Main.prognosen[1][1] = Integer.parseInt(p2_n.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -345,8 +341,7 @@ public class PrognosenObject {
 					Main.prognosen[2][1] = Integer.parseInt(p3_n.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -358,8 +353,7 @@ public class PrognosenObject {
 					Main.prognosen[0][2] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -371,8 +365,7 @@ public class PrognosenObject {
 					Main.prognosen[1][2] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -384,8 +377,7 @@ public class PrognosenObject {
 					Main.prognosen[2][2] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -397,8 +389,7 @@ public class PrognosenObject {
 					Main.prognosen[0][3] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -410,8 +401,7 @@ public class PrognosenObject {
 					Main.prognosen[1][3] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -423,8 +413,7 @@ public class PrognosenObject {
 					Main.prognosen[2][3] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -436,8 +425,7 @@ public class PrognosenObject {
 					Main.prognosen[0][4] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -449,8 +437,7 @@ public class PrognosenObject {
 					Main.prognosen[1][4] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
@@ -462,8 +449,7 @@ public class PrognosenObject {
 					Main.prognosen[2][4] = Integer.parseInt(p1_n1.getText());
 
 				} catch (Exception e2) {
-					JOptionPane.showMessageDialog(new JFrame(),
-							"Please choose only valid numbers! (0-9)", "Error",
+					JOptionPane.showMessageDialog(new JFrame(), "Please choose only valid numbers! (0-9)", "Error",
 							JOptionPane.ERROR_MESSAGE);
 				}
 			}
