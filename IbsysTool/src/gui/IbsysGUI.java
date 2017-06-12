@@ -89,7 +89,8 @@ public class IbsysGUI {
 		frmSupplyChainManager.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmSupplyChainManager.getContentPane()
 				.setLayout(new CardLayout(0, 0));
-
+		frmSupplyChainManager
+				.setIconImage(new ImageIcon(Main.class.getResource("Icon.png")).getImage());
 		JPanel planningPanel = new JPanel();
 
 		frmSupplyChainManager.getContentPane()
