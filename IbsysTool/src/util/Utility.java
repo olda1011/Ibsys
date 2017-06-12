@@ -735,57 +735,57 @@ public class Utility {
 		if (counter == 0) {
 			qualitycontrol.setDelay((byte) 8);
 			qualitycontrol.setLosequantity((byte) 0);
-			qualitycontrol.setType("++");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 1) {
 			qualitycontrol.setDelay((byte) 8);
 			qualitycontrol.setLosequantity((byte) 1);
-			qualitycontrol.setType("++");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 2) {
 			qualitycontrol.setDelay((byte) 7);
 			qualitycontrol.setLosequantity((byte) 2);
-			qualitycontrol.setType("++");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 3) {
 			qualitycontrol.setDelay((byte) 7);
 			qualitycontrol.setLosequantity((byte) 3);
-			qualitycontrol.setType("+");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 4) {
 			qualitycontrol.setDelay((byte) 6);
 			qualitycontrol.setLosequantity((byte) 4);
-			qualitycontrol.setType("+");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 5) {
 			qualitycontrol.setDelay((byte) 5);
 			qualitycontrol.setLosequantity((byte) 5);
-			qualitycontrol.setType("0");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 6) {
 			qualitycontrol.setDelay((byte) 4);
 			qualitycontrol.setLosequantity((byte) 6);
-			qualitycontrol.setType("-");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 7) {
 			qualitycontrol.setDelay((byte) 3);
 			qualitycontrol.setLosequantity((byte) 7);
-			qualitycontrol.setType("-");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 8) {
 			qualitycontrol.setDelay((byte) 2);
 			qualitycontrol.setLosequantity((byte) 8);
-			qualitycontrol.setType("-");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 9) {
 			qualitycontrol.setDelay((byte) 1);
 			qualitycontrol.setLosequantity((byte) 9);
-			qualitycontrol.setType("--");
+			qualitycontrol.setType("yes");
 		}
 		if (counter == 10) {
 			qualitycontrol.setDelay((byte) 0);
 			qualitycontrol.setLosequantity((byte) 10);
-			qualitycontrol.setType("--");
+			qualitycontrol.setType("no");
 		}
 		return qualitycontrol;
 	}
