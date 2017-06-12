@@ -5821,8 +5821,6 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[0][3] = Integer.parseInt(tf1_0301.getText());
-					Main.p2Prod[0][3] = Integer.parseInt(tf1_0301.getText());
-					Main.p3Prod[0][3] = Integer.parseInt(tf1_0301.getText());
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5853,8 +5851,6 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[2][3] = Integer.parseInt(tf1_0303.getText());
-					Main.p2Prod[2][3] = Integer.parseInt(tf1_0303.getText());
-					Main.p3Prod[2][3] = Integer.parseInt(tf1_0303.getText());
 
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
@@ -5902,8 +5898,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[5][3] = Integer.parseInt(tf1_0306.getText());
-					Main.p2Prod[5][3] = Integer.parseInt(tf1_0306.getText());
-					Main.p3Prod[5][3] = Integer.parseInt(tf1_0306.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5918,8 +5913,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[6][3] = Integer.parseInt(tf1_0307.getText());
-					Main.p2Prod[6][3] = Integer.parseInt(tf1_0307.getText());
-					Main.p3Prod[6][3] = Integer.parseInt(tf1_0307.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5934,8 +5928,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[7][3] = Integer.parseInt(tf1_0308.getText());
-					Main.p2Prod[7][3] = Integer.parseInt(tf1_0308.getText());
-					Main.p3Prod[7][3] = Integer.parseInt(tf1_0308.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5950,8 +5943,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[8][3] = Integer.parseInt(tf1_0309.getText());
-					Main.p2Prod[8][3] = Integer.parseInt(tf1_0309.getText());
-					Main.p3Prod[8][3] = Integer.parseInt(tf1_0309.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5966,8 +5958,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[9][3] = Integer.parseInt(tf1_0310.getText());
-					Main.p2Prod[9][3] = Integer.parseInt(tf1_0310.getText());
-					Main.p3Prod[9][3] = Integer.parseInt(tf1_0310.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5982,8 +5973,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[10][3] = Integer.parseInt(tf1_0311.getText());
-					Main.p2Prod[10][3] = Integer.parseInt(tf1_0311.getText());
-					Main.p3Prod[10][3] = Integer.parseInt(tf1_0311.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -5998,8 +5988,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p1Prod[11][3] = Integer.parseInt(tf1_0312.getText());
-					Main.p2Prod[11][3] = Integer.parseInt(tf1_0312.getText());
-					Main.p3Prod[11][3] = Integer.parseInt(tf1_0312.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6030,8 +6019,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[0][3] = Integer.parseInt(tf2_0301.getText());
-					Main.p1Prod[0][3] = Integer.parseInt(tf2_0301.getText());
-					Main.p3Prod[0][3] = Integer.parseInt(tf2_0301.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6062,8 +6050,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[2][3] = Integer.parseInt(tf2_0303.getText());
-					Main.p1Prod[2][3] = Integer.parseInt(tf2_0303.getText());
-					Main.p3Prod[2][3] = Integer.parseInt(tf2_0303.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6110,8 +6097,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[5][3] = Integer.parseInt(tf2_0306.getText());
-					Main.p1Prod[5][3] = Integer.parseInt(tf2_0306.getText());
-					Main.p3Prod[5][3] = Integer.parseInt(tf2_0306.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6126,8 +6112,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[6][3] = Integer.parseInt(tf2_0307.getText());
-					Main.p1Prod[6][3] = Integer.parseInt(tf2_0307.getText());
-					Main.p3Prod[6][3] = Integer.parseInt(tf2_0307.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6142,8 +6127,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[7][3] = Integer.parseInt(tf2_0308.getText());
-					Main.p1Prod[7][3] = Integer.parseInt(tf2_0308.getText());
-					Main.p3Prod[7][3] = Integer.parseInt(tf2_0308.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6158,8 +6142,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[8][3] = Integer.parseInt(tf2_0309.getText());
-					Main.p1Prod[8][3] = Integer.parseInt(tf2_0309.getText());
-					Main.p3Prod[8][3] = Integer.parseInt(tf2_0309.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6174,8 +6157,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[9][3] = Integer.parseInt(tf2_0310.getText());
-					Main.p1Prod[9][3] = Integer.parseInt(tf2_0310.getText());
-					Main.p3Prod[9][3] = Integer.parseInt(tf2_0310.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6190,8 +6172,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[10][3] = Integer.parseInt(tf2_0311.getText());
-					Main.p1Prod[10][3] = Integer.parseInt(tf2_0311.getText());
-					Main.p3Prod[10][3] = Integer.parseInt(tf2_0311.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6206,8 +6187,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p2Prod[11][3] = Integer.parseInt(tf2_0312.getText());
-					Main.p1Prod[11][3] = Integer.parseInt(tf2_0312.getText());
-					Main.p3Prod[11][3] = Integer.parseInt(tf2_0312.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6238,8 +6218,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[0][3] = Integer.parseInt(tf3_0301.getText());
-					Main.p2Prod[0][3] = Integer.parseInt(tf3_0301.getText());
-					Main.p1Prod[0][3] = Integer.parseInt(tf3_0301.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6270,8 +6249,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[2][3] = Integer.parseInt(tf3_0303.getText());
-					Main.p2Prod[2][3] = Integer.parseInt(tf3_0303.getText());
-					Main.p1Prod[2][3] = Integer.parseInt(tf3_0303.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6318,8 +6296,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[5][3] = Integer.parseInt(tf3_0306.getText());
-					Main.p2Prod[5][3] = Integer.parseInt(tf3_0306.getText());
-					Main.p1Prod[5][3] = Integer.parseInt(tf3_0306.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6334,8 +6311,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[6][3] = Integer.parseInt(tf3_0307.getText());
-					Main.p2Prod[6][3] = Integer.parseInt(tf3_0307.getText());
-					Main.p1Prod[6][3] = Integer.parseInt(tf3_0307.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6350,8 +6326,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[7][3] = Integer.parseInt(tf3_0308.getText());
-					Main.p2Prod[7][3] = Integer.parseInt(tf3_0308.getText());
-					Main.p1Prod[7][3] = Integer.parseInt(tf3_0308.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6366,8 +6341,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[8][3] = Integer.parseInt(tf3_0309.getText());
-					Main.p2Prod[8][3] = Integer.parseInt(tf3_0309.getText());
-					Main.p1Prod[8][3] = Integer.parseInt(tf3_0309.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6382,8 +6356,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[9][3] = Integer.parseInt(tf3_0310.getText());
-					Main.p2Prod[9][3] = Integer.parseInt(tf3_0310.getText());
-					Main.p1Prod[9][3] = Integer.parseInt(tf3_0310.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6398,8 +6371,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[10][3] = Integer.parseInt(tf3_0311.getText());
-					Main.p2Prod[10][3] = Integer.parseInt(tf3_0311.getText());
-					Main.p1Prod[10][3] = Integer.parseInt(tf3_0311.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
@@ -6414,8 +6386,7 @@ public class MaterialPlanning {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Main.p3Prod[11][3] = Integer.parseInt(tf3_0312.getText());
-					Main.p2Prod[11][3] = Integer.parseInt(tf3_0312.getText());
-					Main.p1Prod[11][3] = Integer.parseInt(tf3_0312.getText());
+
 					Utility.calculateAfterChange();
 				} catch (Exception e2) {
 					JOptionPane.showMessageDialog(new JFrame(),
