@@ -384,8 +384,10 @@ public class Utility {
 					|| (p2PartID == 16 || p2PartID == 17 || p2PartID == 26)
 					|| (p3PartID == 16 || p3PartID == 17 || p3PartID == 26)) {
 				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + " p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: " + p2PartID + " Menge: "
+				// + p2PartAmount + " p3: " + p3PartID + " Menge: " +
+				// p3PartAmount + " Counter:" + counter);
 				if (sumPartAmount > 0) {
 					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
 					IbsysGUI.sequencePlanningObject.getSpt_table()
@@ -410,8 +412,10 @@ public class Utility {
 					counter++;
 				}
 
-				System.out.println("p1: " + p1PartID + " Menge: " + p1PartAmount + " p2: " + p2PartID + " Menge: "
-						+ p2PartAmount + "p3: " + p3PartID + " Menge: " + p3PartAmount + " Counter:" + counter);
+				// System.out.println("p1: " + p1PartID + " Menge: " +
+				// p1PartAmount + " p2: " + p2PartID + " Menge: "
+				// + p2PartAmount + "p3: " + p3PartID + " Menge: " +
+				// p3PartAmount + " Counter:" + counter);
 
 			}
 
