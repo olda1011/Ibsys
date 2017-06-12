@@ -50,7 +50,7 @@ public class IbsysGUI {
 	public static CapacityPlanning capacityPlanningObject;
 	public static JTabbedPane paneContainer;
 	public static SequencePlanningObject sequencePlanningObject;
-	private PrognosenObject prognosenObject;
+
 	private static JMenuBar menuBar;
 
 	/**
@@ -100,7 +100,6 @@ public class IbsysGUI {
 		paneContainer = new JTabbedPane(JTabbedPane.TOP);
 		planningPanel.add(paneContainer);
 
-		prognosenObject = new PrognosenObject();
 		paneContainer.addTab(PROGNOSEN_PLANNING, null, PrognosenObject.prognosenPlanning(), null);
 
 		materialPlanningObject = new MaterialPlanning();
