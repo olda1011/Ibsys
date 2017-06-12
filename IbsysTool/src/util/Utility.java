@@ -201,7 +201,6 @@ public class Utility {
 		for (Order o : Main.inwardstockmovement) {
 			int time = o.getTime();
 			int amount = o.getAmount();
-			int tempcalc = (time % 7200) / 1440;
 			int calctime = ((time % 7200) / 1440);
 			if (calctime == 0) {
 				calctime = 5;
@@ -659,6 +658,7 @@ public class Utility {
 					input.getOrderlist()
 							.getOrder()
 							.add(order);
+
 				}
 
 			}
