@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -45,6 +46,7 @@ public class PrognosenObject {
 
 	private static JLabel lblNewLabel_1;
 	private static JButton btnNewButton;
+	private static JLabel lblIconbig;
 
 	/**
 	 * @wbp.parser.entryPoint
@@ -52,47 +54,47 @@ public class PrognosenObject {
 	public static JPanel prognosenPlanning() {
 		JPanel prognosenPane = new JPanel();
 		GridBagLayout gbl_prognosenPane = new GridBagLayout();
-		gbl_prognosenPane.columnWidths = new int[] { 10, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_prognosenPane.rowHeights = new int[] { 20, 15, 20, 0, 0, 0, 0, 20, 0, 0 };
-		gbl_prognosenPane.columnWeights = new double[] { 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+		gbl_prognosenPane.columnWidths = new int[] { 10, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_prognosenPane.rowHeights = new int[] { 20, 15, 20, 0, 0, 0, 0, 20, 0, 0, 0, 0 };
+		gbl_prognosenPane.columnWeights = new double[] { 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0,
 				Double.MIN_VALUE };
 		gbl_prognosenPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-				Double.MIN_VALUE };
+				0.0, 0.0, Double.MIN_VALUE };
 		prognosenPane.setLayout(gbl_prognosenPane);
 
 		lblNewLabel_1 = new JLabel("Bitte Werte eintragen");
 		GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
 		gbc_lblNewLabel_1.gridwidth = 4;
 		gbc_lblNewLabel_1.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNewLabel_1.gridx = 2;
+		gbc_lblNewLabel_1.gridx = 3;
 		gbc_lblNewLabel_1.gridy = 1;
 		prognosenPane.add(lblNewLabel_1, gbc_lblNewLabel_1);
 
 		JLabel pl_soll = new JLabel("N");
 		GridBagConstraints gbc_pl_soll = new GridBagConstraints();
 		gbc_pl_soll.insets = new Insets(0, 0, 5, 5);
-		gbc_pl_soll.gridx = 2;
+		gbc_pl_soll.gridx = 3;
 		gbc_pl_soll.gridy = 3;
 		prognosenPane.add(pl_soll, gbc_pl_soll);
 
 		JLabel pl_periode1 = new JLabel("N+1");
 		GridBagConstraints gbc_pl_periode1 = new GridBagConstraints();
 		gbc_pl_periode1.insets = new Insets(0, 0, 5, 5);
-		gbc_pl_periode1.gridx = 3;
+		gbc_pl_periode1.gridx = 4;
 		gbc_pl_periode1.gridy = 3;
 		prognosenPane.add(pl_periode1, gbc_pl_periode1);
 
 		pl_periode2 = new JLabel("N+2");
 		GridBagConstraints gbc_pl_periode2 = new GridBagConstraints();
 		gbc_pl_periode2.insets = new Insets(0, 0, 5, 5);
-		gbc_pl_periode2.gridx = 4;
+		gbc_pl_periode2.gridx = 5;
 		gbc_pl_periode2.gridy = 3;
 		prognosenPane.add(pl_periode2, gbc_pl_periode2);
 
 		pl_periode3 = new JLabel("N+3");
 		GridBagConstraints gbc_pl_periode3 = new GridBagConstraints();
 		gbc_pl_periode3.insets = new Insets(0, 0, 5, 5);
-		gbc_pl_periode3.gridx = 5;
+		gbc_pl_periode3.gridx = 6;
 		gbc_pl_periode3.gridy = 3;
 		prognosenPane.add(pl_periode3, gbc_pl_periode3);
 
@@ -109,7 +111,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p1_n = new GridBagConstraints();
 		gbc_p1_n.insets = new Insets(0, 0, 5, 5);
 		gbc_p1_n.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p1_n.gridx = 2;
+		gbc_p1_n.gridx = 3;
 		gbc_p1_n.gridy = 4;
 		prognosenPane.add(p1_n, gbc_p1_n);
 
@@ -118,7 +120,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p1_n1 = new GridBagConstraints();
 		gbc_p1_n1.insets = new Insets(0, 0, 5, 5);
 		gbc_p1_n1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p1_n1.gridx = 3;
+		gbc_p1_n1.gridx = 4;
 		gbc_p1_n1.gridy = 4;
 		prognosenPane.add(p1_n1, gbc_p1_n1);
 
@@ -127,7 +129,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p1_n2 = new GridBagConstraints();
 		gbc_p1_n2.insets = new Insets(0, 0, 5, 5);
 		gbc_p1_n2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p1_n2.gridx = 4;
+		gbc_p1_n2.gridx = 5;
 		gbc_p1_n2.gridy = 4;
 		prognosenPane.add(p1_n2, gbc_p1_n2);
 
@@ -136,7 +138,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p1_n3 = new GridBagConstraints();
 		gbc_p1_n3.insets = new Insets(0, 0, 5, 5);
 		gbc_p1_n3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p1_n3.gridx = 5;
+		gbc_p1_n3.gridx = 6;
 		gbc_p1_n3.gridy = 4;
 		prognosenPane.add(p1_n3, gbc_p1_n3);
 
@@ -153,7 +155,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p2_n = new GridBagConstraints();
 		gbc_p2_n.insets = new Insets(0, 0, 5, 5);
 		gbc_p2_n.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p2_n.gridx = 2;
+		gbc_p2_n.gridx = 3;
 		gbc_p2_n.gridy = 5;
 		prognosenPane.add(p2_n, gbc_p2_n);
 
@@ -162,7 +164,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p2_n1 = new GridBagConstraints();
 		gbc_p2_n1.insets = new Insets(0, 0, 5, 5);
 		gbc_p2_n1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p2_n1.gridx = 3;
+		gbc_p2_n1.gridx = 4;
 		gbc_p2_n1.gridy = 5;
 		prognosenPane.add(p2_n1, gbc_p2_n1);
 
@@ -171,7 +173,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p2_n2 = new GridBagConstraints();
 		gbc_p2_n2.insets = new Insets(0, 0, 5, 5);
 		gbc_p2_n2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p2_n2.gridx = 4;
+		gbc_p2_n2.gridx = 5;
 		gbc_p2_n2.gridy = 5;
 		prognosenPane.add(p2_n2, gbc_p2_n2);
 
@@ -180,7 +182,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p2_n3 = new GridBagConstraints();
 		gbc_p2_n3.insets = new Insets(0, 0, 5, 5);
 		gbc_p2_n3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p2_n3.gridx = 5;
+		gbc_p2_n3.gridx = 6;
 		gbc_p2_n3.gridy = 5;
 		prognosenPane.add(p2_n3, gbc_p2_n3);
 
@@ -197,7 +199,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p3_n = new GridBagConstraints();
 		gbc_p3_n.insets = new Insets(0, 0, 5, 5);
 		gbc_p3_n.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p3_n.gridx = 2;
+		gbc_p3_n.gridx = 3;
 		gbc_p3_n.gridy = 6;
 		prognosenPane.add(p3_n, gbc_p3_n);
 
@@ -206,7 +208,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p3_n1 = new GridBagConstraints();
 		gbc_p3_n1.insets = new Insets(0, 0, 5, 5);
 		gbc_p3_n1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p3_n1.gridx = 3;
+		gbc_p3_n1.gridx = 4;
 		gbc_p3_n1.gridy = 6;
 		prognosenPane.add(p3_n1, gbc_p3_n1);
 
@@ -215,7 +217,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p3_n2 = new GridBagConstraints();
 		gbc_p3_n2.insets = new Insets(0, 0, 5, 5);
 		gbc_p3_n2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p3_n2.gridx = 4;
+		gbc_p3_n2.gridx = 5;
 		gbc_p3_n2.gridy = 6;
 		prognosenPane.add(p3_n2, gbc_p3_n2);
 
@@ -224,7 +226,7 @@ public class PrognosenObject {
 		GridBagConstraints gbc_p3_n3 = new GridBagConstraints();
 		gbc_p3_n3.insets = new Insets(0, 0, 5, 5);
 		gbc_p3_n3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_p3_n3.gridx = 5;
+		gbc_p3_n3.gridx = 6;
 		gbc_p3_n3.gridy = 6;
 		prognosenPane.add(p3_n3, gbc_p3_n3);
 
@@ -289,16 +291,25 @@ public class PrognosenObject {
 		});
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
-		gbc_btnNewButton.gridx = 4;
+		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton.gridx = 5;
 		gbc_btnNewButton.gridy = 8;
 		prognosenPane.add(btnNewButton, gbc_btnNewButton);
 		GridBagConstraints gbc_calculate = new GridBagConstraints();
 		gbc_calculate.fill = GridBagConstraints.HORIZONTAL;
-		gbc_calculate.insets = new Insets(0, 0, 0, 5);
-		gbc_calculate.gridx = 5;
+		gbc_calculate.insets = new Insets(0, 0, 5, 5);
+		gbc_calculate.gridx = 6;
 		gbc_calculate.gridy = 8;
 		prognosenPane.add(calculate, gbc_calculate);
+
+		ImageIcon imageIcon = new ImageIcon(Main.class.getResource("Logo_bearbeitet.png"));
+		lblIconbig = new JLabel(imageIcon);
+		GridBagConstraints gbc_lblIconbig = new GridBagConstraints();
+		gbc_lblIconbig.gridwidth = 5;
+		gbc_lblIconbig.insets = new Insets(0, 0, 0, 5);
+		gbc_lblIconbig.gridx = 2;
+		gbc_lblIconbig.gridy = 10;
+		prognosenPane.add(lblIconbig, gbc_lblIconbig);
 
 		p1_n.addActionListener(new ActionListener() {
 			@Override
