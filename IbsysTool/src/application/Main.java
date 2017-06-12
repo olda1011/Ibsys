@@ -45,7 +45,7 @@ public class Main {
 
 	public static void main() {
 
-		geplanterLagerbestand = 50;
+		geplanterLagerbestand = 100;
 
 		prognosen[0][0] = 1;
 		prognosen[1][0] = 2;

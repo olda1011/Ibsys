@@ -29,21 +29,15 @@ public class Utility {
 
 	public static String PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10 = "Please choose only numbers between 0 and 10!";
 	public static String QUALITYCONTROL = "Please choose qualitycontrol:\n"
-			+ "<0>++ Rejection in percent 0 in minutes 8\n"
-			+ "<1>++ Rejection in percent 1 in minutes 8\n"
-			+ "<2>++ Rejection in percent 2 in minutes 7\n"
-			+ "<3> + Rejection in percent 3 in minutes 7\n"
-			+ "<4> + Rejection in percent 4 in minutes 6\n"
-			+ "<5> 0 Rejection in percent 5 in minutes 5\n"
-			+ "<6> - Rejection in percent 6 in minutes 4\n"
-			+ "<7> - Rejection in percent 7 in minutes 3\n"
-			+ "<8> - Rejection in percent 8 in minutes 2\n"
-			+ "<9>-- Rejection in percent 9 in minutes 1\n"
-			+ "<10>-- Rejection in percent 10 in minutes 0\n\n"
-			+ "Enter a number between 0 and 10!";
+			+ "<0>++ Rejection in percent 0 in minutes 8\n" + "<1>++ Rejection in percent 1 in minutes 8\n"
+			+ "<2>++ Rejection in percent 2 in minutes 7\n" + "<3> + Rejection in percent 3 in minutes 7\n"
+			+ "<4> + Rejection in percent 4 in minutes 6\n" + "<5> 0 Rejection in percent 5 in minutes 5\n"
+			+ "<6> - Rejection in percent 6 in minutes 4\n" + "<7> - Rejection in percent 7 in minutes 3\n"
+			+ "<8> - Rejection in percent 8 in minutes 2\n" + "<9>-- Rejection in percent 9 in minutes 1\n"
+			+ "<10>-- Rejection in percent 10 in minutes 0\n\n" + "Enter a number between 0 and 10!";
 
-	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void calculateAfterChange() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 
 		// Produktionsprogramm berechnen
 
@@ -63,63 +57,59 @@ public class Utility {
 
 		Main.timeneeded = Main.timeneedfill();
 
-		DefaultTableModel model = new DefaultTableModel(
-				new String[] { "Priorität", "Teil", "Menge" }, 0);
+		DefaultTableModel model = new DefaultTableModel(new String[] { "Priorität", "Teil", "Menge" }, 0);
 		for (int i = 0; i < 30; i++) {
 			model.addRow(new Object[] { i + 1, null, null });
 		}
 
 		SequencePlanningObject.spt_table.setModel(model);
+		SequencePlanningObject.setModel(model);
 
-		DefaultTableModel modelPurchase = new DefaultTableModel(new Object[][] {
-				{ "21", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "22", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "23", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "24", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "25", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "27", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "28", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "32", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "33", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "34", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "35", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "36", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "37", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "38", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "39", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "40", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "41", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "42", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "43", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "44", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "45", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "46", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "47", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "48", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "52", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "53", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "57", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "58", null, null, null, null, null, null, null, null, null, null, null, null },
-				{ "59", null, null, null, null, null, null, null, null, null, null, null, null }, },
-				new String[] { "ID", "Inventory", "Di", "Mi", "Do", "Fr", "Mo(N+1)", "N", "N+1",
-						"N+2", "N+3", "Bestellungen", "Eil" });
+		DefaultTableModel modelPurchase = new DefaultTableModel(
+				new Object[][] { { "21", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "22", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "23", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "24", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "25", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "27", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "28", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "32", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "33", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "34", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "35", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "36", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "37", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "38", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "39", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "40", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "41", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "42", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "43", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "44", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "45", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "46", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "47", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "48", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "52", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "53", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "57", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "58", null, null, null, null, null, null, null, null, null, null, null, null },
+						{ "59", null, null, null, null, null, null, null, null, null, null, null, null }, },
+				new String[] { "ID", "Inventory", "Di", "Mi", "Do", "Fr", "Mo(N+1)", "N", "N+1", "N+2", "N+3",
+						"Bestellungen", "Eil" });
 
 		PurchasePlanning.table.setModel(modelPurchase);
 		fillValues();
 	}
 
-	public static void calculateAfterChangeWithMatrix()
-			throws NoSuchMethodException, SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
+	public static void calculateAfterChangeWithMatrix() throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
 		// Produktionsprogramm berechnen
 
-		Main.p1Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[0][1], 1,
-				Main.results);
-		Main.p2Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[1][1], 2,
-				Main.results);
-		Main.p3Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[2][1], 3,
-				Main.results);
+		Main.p1Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[0][1], 1, Main.results);
+		Main.p2Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[1][1], 2, Main.results);
+		Main.p3Prod = Main.matrixAnlegen(Main.geplanterLagerbestand, Main.prognosen[2][1], 3, Main.results);
 
 		Main.p1Prod = Main.calculateProduction(Main.p1Prod, 1);
 		Main.p2Prod = Main.calculateProduction(Main.p2Prod, 2);
@@ -140,14 +130,14 @@ public class Utility {
 		fillValues();
 	}
 
-	public static void initValues() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void initValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 		Main.main();
 		fillValues();
 	}
 
-	public static void fillValues() throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void fillValues() throws NoSuchMethodException, SecurityException, IllegalAccessException,
+			IllegalArgumentException, InvocationTargetException {
 
 		int[][] p1Prod = Main.p1Prod;
 		int[][] p2Prod = Main.p2Prod;
@@ -165,8 +155,7 @@ public class Utility {
 					} else {
 						methodName = "getTf1_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p1Prod[i][j + 1]);
@@ -188,8 +177,7 @@ public class Utility {
 					} else {
 						methodName = "getTf2_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p2Prod[i][j + 1]);
@@ -211,8 +199,7 @@ public class Utility {
 					} else {
 						methodName = "getTf3_0" + (j + 1) + "" + (i + 1);
 					}
-					Method method = IbsysGUI.materialPlanningObject.getClass()
-							.getMethod(methodName);
+					Method method = IbsysGUI.materialPlanningObject.getClass().getMethod(methodName);
 					if (method != null) {
 						JTextField invoke = (JTextField) method.invoke(methodName);
 						invoke.setText("" + p3Prod[i][j + 1]);
@@ -327,16 +314,11 @@ public class Utility {
 		int e16 = p3Prod[3][7] + p2Prod[3][7] + p1Prod[3][7];
 		int e17 = p3Prod[4][7] + p2Prod[4][7] + p1Prod[4][7];
 		int e26 = p3Prod[1][7] + p2Prod[1][7] + p1Prod[1][7];
-		CapacityPlanning.getCptf14_16()
-				.setText("" + e16);
-		CapacityPlanning.getCptf6_16()
-				.setText("" + e16);
-		CapacityPlanning.getCptf15_17()
-				.setText("" + e17);
-		CapacityPlanning.getCptf7_26()
-				.setText("" + e26);
-		CapacityPlanning.getCptf15_26()
-				.setText("" + e26);
+		CapacityPlanning.getCptf14_16().setText("" + e16);
+		CapacityPlanning.getCptf6_16().setText("" + e16);
+		CapacityPlanning.getCptf15_17().setText("" + e17);
+		CapacityPlanning.getCptf7_26().setText("" + e26);
+		CapacityPlanning.getCptf15_26().setText("" + e26);
 
 		// p1 p2 p3
 		for (int i = 0; i <= 11; i++) {
@@ -369,24 +351,17 @@ public class Utility {
 			Method methodC = null;
 			Method methodU = null;
 			try {
-				methodK = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameK);
-				methodV = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameV);
-				methodR = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameR);
-				methodT = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameT);
-				methodA = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameA);
-				methodC = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameC);
-				methodU = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameU);
+				methodK = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameK);
+				methodV = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameV);
+				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
+				methodT = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameT);
+				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+				methodC = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameC);
+				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
 			} catch (Exception e) {
 			}
-			if (methodK != null && methodR != null && methodT != null && methodU != null
-					&& methodV != null && methodC != null) {
+			if (methodK != null && methodR != null && methodT != null && methodU != null && methodV != null
+					&& methodC != null) {
 				JTextField invokeK = (JTextField) methodK.invoke(methodNameK);
 				JTextField invokeV = (JTextField) methodV.invoke(methodNameV);
 				JTextField invokeR = (JTextField) methodR.invoke(methodNameR);
@@ -450,15 +425,13 @@ public class Utility {
 			if ((p1PartID == 16 || p1PartID == 17 || p1PartID == 26)
 					|| (p2PartID == 16 || p2PartID == 17 || p2PartID == 26)
 					|| (p3PartID == 16 || p3PartID == 17 || p3PartID == 26)) {
-				IbsysGUI.sequencePlanningObject.getSpt_table()
-						.setValueAt(p3PartAmount, counter + 2, 2);
+				IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter + 2, 2);
 				// System.out.println("p1: " + p1PartID + " Menge: " +
 				// p1PartAmount + " p2: " + p2PartID + " Menge: "
 				// + p2PartAmount + " p3: " + p3PartID + " Menge: " +
 				// p3PartAmount + " Counter:" + counter);
 				if (sumPartAmount > 0) {
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p1PartID, counter, 1);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
 					IbsysGUI.sequencePlanningObject.getSpt_table()
 							.setValueAt(p1PartAmount + p2PartAmount + p3PartAmount, counter, 2);
 					counter++;
@@ -466,24 +439,18 @@ public class Utility {
 
 			} else {
 				if (p1PartAmount > 0) {
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p1PartID, counter, 1);
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p1PartAmount, counter, 2);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartID, counter, 1);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p1PartAmount, counter, 2);
 					counter++;
 				}
 				if (p2PartAmount > 0) {
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p2PartID, counter, 1);
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p2PartAmount, counter, 2);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartID, counter, 1);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p2PartAmount, counter, 2);
 					counter++;
 				}
 				if (p3PartAmount > 0) {
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p3PartID, counter, 1);
-					IbsysGUI.sequencePlanningObject.getSpt_table()
-							.setValueAt(p3PartAmount, counter, 2);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartID, counter, 1);
+					IbsysGUI.sequencePlanningObject.getSpt_table().setValueAt(p3PartAmount, counter, 2);
 					counter++;
 				}
 
@@ -508,11 +475,9 @@ public class Utility {
 			Method methodID = null;
 
 			try {
-				methodID = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameID);
+				methodID = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameID);
 
-				methodR = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameR);
+				methodR = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameR);
 
 			} catch (Exception e) {
 			}
@@ -536,8 +501,7 @@ public class Utility {
 			Method method = null;
 
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodName);
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
 			} catch (Exception e) {
 
 			}
@@ -558,8 +522,7 @@ public class Utility {
 			int value = 0;
 
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodName);
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
 			} catch (Exception e) {
 
 			}
@@ -588,12 +551,9 @@ public class Utility {
 			int sharedValue = 0;
 			int mult = 0;
 			try {
-				method = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodName);
-				methodMult = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameMult);
-				methodResult = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameResult);
+				method = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodName);
+				methodMult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameMult);
+				methodResult = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameResult);
 			} catch (Exception e) {
 
 			}
@@ -608,8 +568,7 @@ public class Utility {
 
 			if (methodMult != null) {
 				JLabel invoke = (JLabel) methodMult.invoke(methodNameMult);
-				mult = Integer.parseInt(invoke.getText()
-						.replaceAll("\\D", ""));
+				mult = Integer.parseInt(invoke.getText().replaceAll("\\D", ""));
 			}
 
 			if (methodResult != null) {
@@ -631,9 +590,8 @@ public class Utility {
 
 		String showInputDialog = JOptionPane.showInputDialog(null, QUALITYCONTROL);
 		int counter = Integer.parseInt(showInputDialog);
-		if (counter == 0 || counter == 1 || counter == 2 || counter == 3 || counter == 4
-				|| counter == 5 || counter == 6 || counter == 7 || counter == 8 || counter == 9
-				|| counter == 10) {
+		if (counter == 0 || counter == 1 || counter == 2 || counter == 3 || counter == 4 || counter == 5 || counter == 6
+				|| counter == 7 || counter == 8 || counter == 9 || counter == 10) {
 
 			// Qualitycontrol
 
@@ -645,62 +603,51 @@ public class Utility {
 			Input.Sellwish.Item iSW1 = new Input.Sellwish.Item();
 			iSW1.setArticle((byte) 1);
 			iSW1.setQuantity((short) Main.p1Prod[0][1]);
-			sellWish.getItem()
-					.add(iSW1);
+			sellWish.getItem().add(iSW1);
 			Input.Sellwish.Item iSW2 = new Input.Sellwish.Item();
 			iSW2.setArticle((byte) 2);
 			iSW2.setQuantity((short) Main.p2Prod[0][1]);
-			sellWish.getItem()
-					.add(iSW2);
+			sellWish.getItem().add(iSW2);
 			Input.Sellwish.Item iSW3 = new Input.Sellwish.Item();
 			iSW3.setArticle((byte) 3);
 			iSW3.setQuantity((short) Main.p3Prod[0][1]);
-			sellWish.getItem()
-					.add(iSW3);
+			sellWish.getItem().add(iSW3);
 			input.setSellwish(sellWish);
 
 			// Order hinzufügen
 			int standard = 5;
 			input.setOrderlist(new Orderlist());
-			for (int i = 0; i < PurchasePlanning.table.getModel()
-					.getRowCount(); i++) {
+			for (int i = 0; i < PurchasePlanning.table.getModel().getRowCount(); i++) {
 
 				generated.Input.Orderlist.Order order = new generated.Input.Orderlist.Order();
 
-				order.setArticle((int) PurchasePlanning.table.getModel()
-						.getValueAt(i, 0));
-				if (PurchasePlanning.table.getModel()
-						.getValueAt(i, 12) == null) {
+				order.setArticle((int) PurchasePlanning.table.getModel().getValueAt(i, 0));
+				if (PurchasePlanning.table.getModel().getValueAt(i, 12) == null) {
 					order.setModus(5);
 				} else {
-					if ((boolean) PurchasePlanning.table.getModel()
-							.getValueAt(i, 12)) {
+					if ((boolean) PurchasePlanning.table.getModel().getValueAt(i, 12)) {
 						order.setModus(4);
+					} else {
+						order.setModus(5);
 					}
 				}
 
-				if (PurchasePlanning.table.getModel()
-						.getValueAt(i, 11) == null) {
+				if (PurchasePlanning.table.getModel().getValueAt(i, 11) == null) {
 					order.setQuantity(0);
 				} else {
-					Object valueAt = PurchasePlanning.table.getModel()
-							.getValueAt(i, 11);
+					Object valueAt = PurchasePlanning.table.getModel().getValueAt(i, 11);
 					if (valueAt instanceof String) {
 						order.setQuantity(
-								Integer.parseInt((String) PurchasePlanning.table.getModel()
-										.getValueAt(i, 11)));
+								Integer.parseInt((String) PurchasePlanning.table.getModel().getValueAt(i, 11)));
 					}
 					if (valueAt instanceof Integer) {
-						order.setQuantity((int) PurchasePlanning.table.getModel()
-								.getValueAt(i, 11));
+						order.setQuantity((int) PurchasePlanning.table.getModel().getValueAt(i, 11));
 					}
 
 				}
 				int quantity = order.getQuantity();
 				if (order.getQuantity() != 0) {
-					input.getOrderlist()
-							.getOrder()
-							.add(order);
+					input.getOrderlist().getOrder().add(order);
 
 				}
 
@@ -709,15 +656,13 @@ public class Utility {
 			// Productionlist
 			Input.Productionlist productionsList = new Input.Productionlist();
 			input.setProductionlist(productionsList);
-			for (int i = 0; i < SequencePlanningObject.spt_table.getModel()
-					.getRowCount(); i++) {
+			for (int i = 0; i < SequencePlanningObject.spt_table.getModel().getRowCount(); i++) {
 				Production p1 = new Production();
 				if (SequencePlanningObject.spt_table.getValueAt(i, 1) == null) {
 
 				} else {
 					if (SequencePlanningObject.spt_table.getValueAt(i, 1) instanceof String) {
-						p1.setArticle(Integer.parseInt(
-								(String) SequencePlanningObject.spt_table.getValueAt(i, 1)));
+						p1.setArticle(Integer.parseInt((String) SequencePlanningObject.spt_table.getValueAt(i, 1)));
 					}
 					if (SequencePlanningObject.spt_table.getValueAt(i, 1) instanceof Integer) {
 						p1.setArticle((int) SequencePlanningObject.spt_table.getValueAt(i, 1));
@@ -728,17 +673,14 @@ public class Utility {
 
 				} else {
 					if (SequencePlanningObject.spt_table.getValueAt(i, 2) instanceof String) {
-						p1.setQuantity(Integer.parseInt(
-								(String) SequencePlanningObject.spt_table.getValueAt(i, 2)));
+						p1.setQuantity(Integer.parseInt((String) SequencePlanningObject.spt_table.getValueAt(i, 2)));
 					}
 					if (SequencePlanningObject.spt_table.getValueAt(i, 2) instanceof Integer) {
 						p1.setQuantity((int) SequencePlanningObject.spt_table.getValueAt(i, 2));
 					}
 				}
 
-				input.getProductionlist()
-						.getProduction()
-						.add(p1);
+				input.getProductionlist().getProduction().add(p1);
 			}
 
 			// Workingtime
@@ -757,12 +699,9 @@ public class Utility {
 					Method methodC = null;
 					Method methodU = null;
 					try {
-						methodA = IbsysGUI.capacityPlanningObject.getClass()
-								.getMethod(methodNameA);
-						methodC = IbsysGUI.capacityPlanningObject.getClass()
-								.getMethod(methodNameC);
-						methodU = IbsysGUI.capacityPlanningObject.getClass()
-								.getMethod(methodNameU);
+						methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+						methodC = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameC);
+						methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
 					} catch (Exception e) {
 						e.printStackTrace();
 						continue;
@@ -774,15 +713,13 @@ public class Utility {
 						w1.setStation(j1);
 						w1.setShift(invokeC.getSelectedIndex() + 1);
 						w1.setOvertime(Integer.parseInt(invokeU.getText()));
-						input.getWorkingtimelist()
-								.getWorkingtime()
-								.add(w1);
+						input.getWorkingtimelist().getWorkingtime().add(w1);
 					}
 				}
 			}
 		} else {
-			JOptionPane.showMessageDialog(new JFrame(), PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10,
-					IbsysGUI.ERROR, JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(new JFrame(), PLEASE_CHOOSE_ONLY_NUMBERS_BETWEEN_0_AND_10, IbsysGUI.ERROR,
+					JOptionPane.ERROR_MESSAGE);
 		}
 		return input;
 	}
@@ -859,12 +796,9 @@ public class Utility {
 			Method methodC = null;
 			Method methodU = null;
 			try {
-				methodA = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameA);
-				methodC = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameC);
-				methodU = IbsysGUI.capacityPlanningObject.getClass()
-						.getMethod(methodNameU);
+				methodA = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameA);
+				methodC = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameC);
+				methodU = IbsysGUI.capacityPlanningObject.getClass().getMethod(methodNameU);
 			} catch (Exception e) {
 
 			}

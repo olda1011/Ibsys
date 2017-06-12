@@ -26,6 +26,14 @@ public class SequencePlanningObject {
 	private static JSpinner sps_splitnumber;
 	private static DefaultTableModel model;
 
+	public static DefaultTableModel getModel() {
+		return model;
+	}
+
+	public static void setModel(DefaultTableModel model) {
+		SequencePlanningObject.model = model;
+	}
+
 	public static JButton getSpb_up() {
 		return spb_up;
 	}

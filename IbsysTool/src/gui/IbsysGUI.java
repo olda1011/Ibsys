@@ -266,7 +266,7 @@ public class IbsysGUI {
 		MaterialPlanning.l1_passedperiod.setText("Vorherige Periode");
 		MaterialPlanning.l1_productionorders.setText("Produktionsaufträge");
 		MaterialPlanning.l1_waitingqueue.setText("Warteschlange");
-		MaterialPlanning.l1_workinprogress.setText("Arbeitsprozess");
+		MaterialPlanning.l1_workinprogress.setText("In Bearbeitung");
 
 		MaterialPlanning.l2_warehousestock.setText("Lagerbestand");
 		MaterialPlanning.l2_salesorders.setText("Vertriebsauftrag");
@@ -274,7 +274,7 @@ public class IbsysGUI {
 		MaterialPlanning.l2_passedperiod.setText("Vorherige Periode");
 		MaterialPlanning.l2_productionorders.setText("Produktionsaufträge");
 		MaterialPlanning.l2_waitingqueue.setText("Warteschlange");
-		MaterialPlanning.l2_workinprogress.setText("Arbeitsprozess");
+		MaterialPlanning.l2_workinprogress.setText("In Bearbeitung");
 
 		MaterialPlanning.l3_warehousestock.setText("Lagerbestand");
 		MaterialPlanning.l3_salesorders.setText("Vertriebsauftrag");
@@ -282,7 +282,7 @@ public class IbsysGUI {
 		MaterialPlanning.l3_passedperiod.setText("Vorherige Periode");
 		MaterialPlanning.l3_productionorders.setText("Produktionsaufträge");
 		MaterialPlanning.l3_waitingqueue.setText("Warteschlange");
-		MaterialPlanning.l3_workinprogress.setText("Arbeitsprozess");
+		MaterialPlanning.l3_workinprogress.setText("In Bearbeitung");
 
 		CapacityPlanning.cpl1_capacityrequirements.setText("Kapazitätsbedarf");
 		CapacityPlanning.cpl1_frontwheelcomplete.setText("Vorderrad Komplett");
