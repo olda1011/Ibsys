@@ -80,6 +80,7 @@ public class Main {
 		}
 
 		SequencePlanningObject.spt_table.setModel(model);
+		SequencePlanningObject.setModel(model);
 
 		DefaultTableModel modelPurchase = new DefaultTableModel(
 				new Object[][] { { "21", null, null, null, null, null, null, null, null, null, null, null, null },
